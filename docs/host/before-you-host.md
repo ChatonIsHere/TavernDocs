@@ -1,6 +1,12 @@
 ---
 title: Before you host
 description: What you're signing up for when you run a server, and how to keep it and yourself safe.
+summary:
+    - "Only forward the ports listed on the ports page, and keep console port **1760** closed unless you need remote admin."
+    - "Treat your console token like a password. Never post it, and rotate it if it leaks."
+    - "Listing your server shows your IP address to everyone who opens Community Servers."
+    - "Use a password or the whitelist for private games, and only install mods from sources you trust."
+    - "For a small server (up to about 5 players) plan 2 cores and 4 GB of RAM. For about 12 players, 4 cores and 8 GB."
 ---
 
 # Before you host

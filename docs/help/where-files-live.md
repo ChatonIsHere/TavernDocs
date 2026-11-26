@@ -1,6 +1,12 @@
 ---
 title: Where files live
 description: Every folder the launcher, the game and TavernLib use on your PC.
+summary:
+    - "To open a folder, press `Win+R`, paste the path and press Enter."
+    - 'The launcher and your tokens are in `%APPDATA%\\TheModdingTavern`.'
+    - 'The game''s settings and logs are in `%APPDATA%\\A Township Tale`.'
+    - 'Your game folder is usually `C:\\Games\\Alta\\A Township Tale`. Your mods are in `Mods\\`.'
+    - 'Never share your `tokens\\` folder.'
 ---
 
 # Where files live

@@ -1,6 +1,12 @@
 ---
 title: Join by name (SRV records)
 description: Give your server a name like play.example.com, move its ports, and run two servers on one address.
+summary:
+    - "On default ports, a normal A record pointing your name at the server's IP is enough."
+    - "Players' launchers look up `_townshiptale._tcp.<name>` to find the login port, and use 1762 if there isn't one."
+    - "To move ports, set them in `tavern_server.json` (or in `.env` on Docker), restart, and update your port forwards."
+    - "Add an SRV record that points at your login port, with a target name that has an A record."
+    - "To run two servers on one address, give each its own four ports and its own name."
 ---
 
 # Join by name (SRV records)

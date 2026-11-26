@@ -1,6 +1,12 @@
 ---
 title: Staying up to date
 description: How the launcher, Setup and your mods get updated.
+summary:
+    - "Three things get updates: the launcher, Setup and your mods."
+    - "When the launcher asks **Update Available**, click **Yes**."
+    - "When the **Setup** button flashes, open it and click **Update**."
+    - "When **Mod Manager** shows a count, update those mods in **Get Mods**."
+    - "Mods a server needs are updated for you when you join."
 ---
 
 # Staying up to date

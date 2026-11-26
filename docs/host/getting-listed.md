@@ -1,6 +1,12 @@
 ---
 title: Getting listed
 description: Put your server on the Community Servers list so players can find it.
+summary:
+    - "Listing is optional and shows your IP address to everyone, so leave it off if you host from home."
+    - "In the Server launcher, tick **List on community server browser** and pick your **Region**. Elsewhere, set `community_listed` to `true` and `region` in `server_settings.json`."
+    - "Restart the server. It only lists if `community_listed` was on at startup."
+    - "Set `public_hostname` to a name you own, with an A record pointing at your IP, to show a name instead."
+    - "Leave `community_listing_token` alone. If the server shows as Offline, check your port forwards."
 ---
 
 # Getting listed

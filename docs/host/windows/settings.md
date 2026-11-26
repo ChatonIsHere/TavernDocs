@@ -1,6 +1,12 @@
 ---
 title: Settings
 description: Name, password, player limit, listing and auto-reboot in the Server launcher.
+summary:
+    - "Click **Settings**, change what you want, then click **Save Settings**."
+    - "Set **SERVER NAME**, **MAX PLAYERS** (24 by default) and a **PASSWORD** with **Set Password**."
+    - "Listing on the community server browser shows your IP. Leave it off if you host from home and don't want that."
+    - "Turn on **Auto-reboot** so a server that runs for days stays fast."
+    - "**Wipe Server Data** deletes every server world on this PC and can't be undone."
 ---
 
 # Settings

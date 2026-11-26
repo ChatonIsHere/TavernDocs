@@ -1,6 +1,12 @@
 ---
 title: General troubleshooting
 description: Fixes that work for lots of problems, from the gentle ones to starting fresh.
+summary:
+    - "Restart the game, the launcher, and SteamVR or the Meta Quest Link app."
+    - "Right-click the launcher and pick **Run as administrator**."
+    - "Open **Setup** and click **Install**, **Update** or **Repair** on any part that isn't **Up to date**."
+    - "Reinstall mods marked **Damaged**, or click **Clear Mod Cache**."
+    - "If nothing works, restore your game from your backup and run **Setup** again."
 ---
 
 # General troubleshooting

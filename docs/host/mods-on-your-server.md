@@ -1,6 +1,12 @@
 ---
 title: Mods on your server
 description: Install mods on a server, keep them installed with a modlist, and how players get matched to them.
+summary:
+    - "Mods run code on your server, so stick to the default TavernMods source unless you trust another one."
+    - "On the Windows Server launcher, stop the server, install mods in **Mod Manager**, then start it again."
+    - "Headless servers keep mods with a `modlist.json` in TavernLib's config folder, or the `MODLIST` setting."
+    - "Players who join through the launcher get matched to your mods automatically."
+    - "To add another mod source, run `modmanager addrepo <url>` in the console."
 ---
 
 # Mods on your server

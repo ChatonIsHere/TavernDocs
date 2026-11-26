@@ -1,6 +1,12 @@
 ---
 title: Install the launcher
 description: Download TavernLauncher and open it for the first time.
+summary:
+    - "Go to the TavernLauncher releases page on GitHub and download **TavernLauncher-Client-vX.Y.Z.zip**."
+    - "Only download it from that page."
+    - "Right-click the zip, pick **Extract All...**, and choose a folder you'll find again."
+    - "Double-click **TavernLauncher - Client.exe** to open it."
+    - 'If Windows says "Windows protected your PC", click **More info**, then **Run anyway**.'
 ---
 
 import Tabs from '@theme/Tabs';

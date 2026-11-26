@@ -1,6 +1,12 @@
 ---
 title: Back up your game
 description: Make a safe copy of your game before you change anything.
+summary:
+    - "The game can't be downloaded any more, so back it up first."
+    - 'Open your game folder, usually `C:\\Games\\Alta\\A Township Tale`, and press **Ctrl+A**.'
+    - "Right-click the files, pick **Send to**, then **Compressed (zipped) folder**."
+    - "Move the zip somewhere safe, like another drive or cloud storage."
+    - "Never play from the backup. Keep it clean."
 ---
 
 # Back up your game

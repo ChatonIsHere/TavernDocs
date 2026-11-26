@@ -1,6 +1,12 @@
 ---
 title: "Linux: Wine without Docker"
 description: Run the server straight under Wine on Linux, set up the same way the container does it.
+summary:
+    - "The server runs under Wine on Linux. Use the Docker container if you can, and use this page if you'd rather not."
+    - "Run the server as its own user and install Wine stable 10.0 or newer from WineHQ."
+    - "Set `WINEDLLOVERRIDES` with `version=n,b`, or the game starts with no mods and no error."
+    - "Turn off sound, patch the game with MelonLoader, TavernLib and the patch, then write `start.sh` and `stop.sh`."
+    - "Run it as a systemd service, and open `1757` UDP and `1761`, `1762` TCP. Leave `1760` closed."
 ---
 
 # Linux: Wine without Docker

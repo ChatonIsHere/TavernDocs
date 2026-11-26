@@ -1,6 +1,12 @@
 ---
 title: Saved and recent servers
 description: Keep your favourite servers handy and get back to ones you played on.
+summary:
+    - "Click **Saved** to open the **Saved & Recent Servers** window."
+    - "**Favourites** holds servers you saved. **Recent** holds servers you joined lately."
+    - "Pick a server and click **Connect**, then **Join Server**."
+    - "Use **Save as Fav** on **Recent** to move a server into **Favourites**."
+    - "Use **Remove** to take a server off the list."
 ---
 
 # Saved and recent servers

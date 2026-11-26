@@ -1,6 +1,12 @@
 ---
 title: On a VPS
 description: Rent a small Linux server, secure it, and run a-township-container on it.
+summary:
+    - "Make an SSH key with PuTTYgen, then rent an Ubuntu LTS VPS with a dedicated IPv4 address and add your public key."
+    - "Update Ubuntu, create a user called `att`, and turn off root and password SSH login after testing `att` works."
+    - "Set up UFW with SSH allowed, and install Docker from Docker's own repository."
+    - "Zip your `game-source` contents, upload them with WinSCP, unzip them, then run `docker compose up -d`."
+    - "Keep console port `1760` closed, and use an SSH tunnel to reach the console from your PC."
 ---
 
 # Docker on a VPS

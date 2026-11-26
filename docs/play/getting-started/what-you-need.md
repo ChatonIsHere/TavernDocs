@@ -1,6 +1,12 @@
 ---
 title: What you need
 description: The computer, headset and game files you need to play.
+summary:
+    - "You need a Windows 10 or 11 PC. Mac and Linux don't work."
+    - "You need a VR headset that works with SteamVR, or a Meta Quest or Rift using the Meta Quest Link app."
+    - 'You need your own copy of **A Township Tale**, usually in `C:\\Games\\Alta\\A Township Tale`.'
+    - "Look for **A Township Tale.exe** in that folder to check you have it."
+    - "You need to be online for the first setup."
 ---
 
 import Tabs from '@theme/Tabs';

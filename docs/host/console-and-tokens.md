@@ -1,6 +1,12 @@
 ---
 title: Console and tokens
 description: Run admin commands on your server, give other people limited access, and rotate a token that leaked.
+summary:
+    - "The console runs admin commands like `player kick`, `save now` and `modmanager list`. It listens on port 1760 by default."
+    - "The owner token gives full control. Never share it, and get it from **Copy Console Token** or `console_token.txt`."
+    - "Give helpers a named token with `token create`, so they only get the commands they need."
+    - "If a token leaks, run `token rotate owner` straight away, or `token revoke` a named token."
+    - "Keep the console port closed to the internet and use an SSH tunnel to reach it from your PC."
 ---
 
 # Console and tokens

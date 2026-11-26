@@ -1,6 +1,12 @@
 ---
 title: Mod sources
 description: Add other places to get mods from, and why to be careful.
+summary:
+    - "A mod source is a list of mods the launcher can install from."
+    - "You start with **TavernMods**, and it can't be removed."
+    - "Other sources aren't checked by anyone but whoever runs them."
+    - "To add one, open **Get Mods**, click **Manage Sources**, then **+ Add source**."
+    - "Only add a source if you trust who runs it."
 ---
 
 # Mod sources

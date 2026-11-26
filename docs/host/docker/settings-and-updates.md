@@ -1,6 +1,12 @@
 ---
 title: Settings and updates
 description: The container's settings, updating it, backups, and CPU limits.
+summary:
+    - "Put container settings like `SCENE` and `MODLIST` in a `.env` file next to `docker-compose.yml`, then run `docker compose up -d`."
+    - "To change the name or password, stop the server, edit `tavern-config/server_settings.json`, and start it again."
+    - "Update with `docker compose pull` then `docker compose up -d`. Your game files, saves and config are not touched."
+    - "For backups, run `docker compose down`, archive `server-data` and `tavern-config`, then start again."
+    - "To cap CPU and RAM, set `cpus` and `mem_limit` in the compose file, and keep at least 4 CPUs."
 ---
 
 # Settings and updates

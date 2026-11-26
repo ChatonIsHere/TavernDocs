@@ -1,6 +1,12 @@
 ---
 title: Community Servers
 description: Find a server on the Community Servers list and join it.
+summary:
+    - "Click **Community Servers** and pick a server from the list."
+    - "Click **Connect**, then click **Join Server**."
+    - "The list shows players, region and ping. Closer and lower ping is smoother."
+    - "A 🔒 means the server needs a password."
+    - "Pick a server and click **Save as Favorite** to find it again."
 ---
 
 import Tabs from '@theme/Tabs';

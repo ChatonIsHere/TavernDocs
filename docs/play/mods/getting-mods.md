@@ -1,6 +1,12 @@
 ---
 title: Getting mods
 description: Find and install mods with Get Mods.
+summary:
+    - "Close the game, then click **Mod Manager**, then **Get Mods**."
+    - "Pick a mod and click **Install**. It's loaded the next time you start the game."
+    - "If a mod needs other mods, pick **Install all**."
+    - "Mods come from **TavernMods**, which checks every mod."
+    - "If a download keeps failing, click **Clear Mod Cache** and try again."
 ---
 
 # Getting mods

@@ -1,6 +1,12 @@
 ---
 title: Servers with mods
 description: What happens when you join a server that runs mods.
+summary:
+    - "The launcher checks your mods against the server's before the game starts."
+    - "If they don't match, the **Mod Comparison** window opens. Click **Apply changes** to join."
+    - "Mods you turn off for a server stay installed. They aren't deleted."
+    - "If the game says you're missing mods, try joining the same server again within 10 minutes."
+    - "Tick **Quick Join** to skip the questions."
 ---
 
 # Servers with mods

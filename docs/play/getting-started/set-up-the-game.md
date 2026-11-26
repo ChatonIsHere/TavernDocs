@@ -1,6 +1,12 @@
 ---
 title: Set up the game
 description: Point the launcher at your game and let Setup get it ready for community servers.
+summary:
+    - "Click **Browse** and pick **A Township Tale.exe** from your game folder."
+    - "Click **Setup**, then **Automatic Setup**."
+    - "It installs **Patch**, **MelonLoader** and **TavernLib**."
+    - "When all three say **Up to date**, you're done."
+    - "If a part won't install, click **Install ... manually...** on that row."
 ---
 
 import Tabs from '@theme/Tabs';

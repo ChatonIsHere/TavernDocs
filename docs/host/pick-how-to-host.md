@@ -1,6 +1,11 @@
 ---
 title: Pick how to host
 description: The three ways to run a server, and who each one suits.
+summary:
+    - "There are three ways to host: the Windows Server launcher, Docker with a-township-container, or Wine on Linux without Docker."
+    - "If you're not sure, start with the Server launcher. It has buttons for everything."
+    - "Use Docker for a server that's always on, on Linux, a home server, WSL or a VPS."
+    - "To move a world, stop the server and copy two folders: the world saves and the server config."
 ---
 
 # Pick how to host

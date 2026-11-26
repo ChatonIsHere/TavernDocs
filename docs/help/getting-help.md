@@ -1,6 +1,12 @@
 ---
 title: Getting help
 description: Where to ask, what to include, and what never to send.
+summary:
+    - "Ask on The Modding Tavern's Discord. Everyone there is a volunteer."
+    - "Say what you were trying to do and what happened instead."
+    - "Include the exact error message and your launcher version."
+    - 'Send logs like `MelonLoader\\Latest.log` from your game folder.'
+    - "Never send anything in your `tokens` folder."
 ---
 
 # Getting help

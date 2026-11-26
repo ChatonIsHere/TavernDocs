@@ -1,6 +1,12 @@
 ---
 title: Set up and start
 description: Install the Server launcher, set up its game copy, and open your server.
+summary:
+    - "Download `TavernLauncher-Server-vX.Y.Z.zip` from the releases page, extract it, and run `TavernLauncher - Server.exe`."
+    - "Click **Browse** and pick `A Township Tale.exe`, then click **Setup** and **Automatic Setup**."
+    - "Type a name in **SERVER NAME** and leave **GAME PORT** at `1757` unless you run more than one server."
+    - "Click **Open Server** and allow it in Windows Firewall. Wait a few minutes before joining a new world."
+    - "Click **Close Server** to stop it. It saves first, so let it finish."
 ---
 
 # Windows: set up and start

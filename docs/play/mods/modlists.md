@@ -1,6 +1,12 @@
 ---
 title: Modlists
 description: Share your set of mods with a friend, or load someone else's.
+summary:
+    - "A modlist is a small file that lists mods and their versions."
+    - "To share yours, open **Mod Manager** and click **Export Modlist**."
+    - "To load one, close the game, open **Mod Manager** and click **Import Modlist**."
+    - "Check what it will install, then go ahead."
+    - "A modlist only installs from sources you've already added."
 ---
 
 # Modlists

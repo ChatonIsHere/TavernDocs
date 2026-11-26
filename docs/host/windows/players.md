@@ -1,6 +1,12 @@
 ---
 title: Players, roles and whitelist
 description: Manage players, give out roles, and run a whitelist.
+summary:
+    - "Click **Players** to open the Player Manager. Use **Kick** or **Kick & Ban** on a player."
+    - "Add a role with **Edit Roles**, type it, click **+ Add**, then **Save Roles**."
+    - "Give yourself `owner` if you host. Players without `owner`, `moderator` or `fly` are kicked for **Fly** mode."
+    - "The blacklist and whitelist take usernames or IPs. A whitelisted IP lets in everyone on that connection."
+    - "With the whitelist on, **Approve** or **Deny** requests from players who want to join."
 ---
 
 # Players, roles and whitelist

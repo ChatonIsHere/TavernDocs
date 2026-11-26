@@ -1,6 +1,12 @@
 ---
 title: Config reference
 description: Every server config file, where it lives, and what's in it.
+summary:
+    - "Stop the server before editing any config file by hand."
+    - "TavernLib's config holds `server_settings.json`, `users.json` and `tavern_server.json`. Back up the whole folder with the world."
+    - "`server_settings.json` sets the name, `password`, `max_players` (24 by default), listing and backups."
+    - "`ServerConfiguration.json` holds the game's own settings like autosave, PvP, death rules and time speed."
+    - "Keep `console_token.txt`, `server_secret.key` and `users.json` secret."
 ---
 
 # Config reference

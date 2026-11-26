@@ -1,6 +1,12 @@
 ---
 title: Join by address or name
 description: Join a friend's server, or any server, by typing its address.
+summary:
+    - "Type the server's address in **Destination**."
+    - "Click **Check Server** to see if it's there. You can skip this."
+    - "Click **Join Server**."
+    - "If the server has a password, type it when the launcher asks."
+    - "If it has a whitelist, the launcher offers to send the owner a request."
 ---
 
 import Tabs from '@theme/Tabs';

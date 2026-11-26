@@ -1,6 +1,12 @@
 ---
 title: Ports and port forwarding
 description: Which ports a server uses, which ones to open, and how port forwarding works.
+summary:
+    - "Forward **1757 UDP**, **1761 TCP** and **1762 TCP** to your server."
+    - "Leave **1760** (the console) closed unless you need remote admin. Add **1759 UDP** if you run TavernVoice."
+    - "Give your PC a fixed local IP in your router, then add the three forwarding rules and allow them in Windows Firewall."
+    - "Test from outside your home, for example with a friend pressing **Check Server** in their launcher."
+    - "If your provider uses CGNAT, port forwarding can't work. Ask for a public IPv4 address or use a VPS."
 ---
 
 # Ports and port forwarding

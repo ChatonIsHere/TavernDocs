@@ -1,6 +1,12 @@
 ---
 title: Game panels
 description: Run the server under Pterodactyl, Pelican, Calagopus or CubeCoders AMP.
+summary:
+    - "Use the `latest-egg` image for Pterodactyl, Pelican and Calagopus, and `latest-amp` for CubeCoders AMP."
+    - "You provide the game files, with `A Township Tale.exe` and `A Township Tale_Data` directly inside `game-source`."
+    - "Give the server four ports: `1757` UDP for the game, and `1760`, `1761` and `1762` TCP. Keep `1760` closed to the internet."
+    - "Import the egg or add the AMP template, create the server, upload the zipped game files, then start it."
+    - "The panel shows the server online once TavernLib logs `Starting auth listening cycle`."
 ---
 
 # Game panels

@@ -1,6 +1,12 @@
 ---
 title: Welcome
 description: Play A Township Tale again on community servers. Start here.
+summary:
+    - "The official servers are gone, so you play on community servers."
+    - "**TavernLauncher** is how you get on them."
+    - "You need your own copy of the game. It can't be downloaded any more."
+    - "Install the launcher, set up the game, pick a name, then join a server."
+    - "It takes about 10 minutes, plus download time."
 ---
 
 # Play A Township Tale

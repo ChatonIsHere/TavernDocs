@@ -1,6 +1,12 @@
 ---
 title: Save format
 description: What's in the world save, what each file holds, and what's safe to back up, edit or delete.
+summary:
+    - "The world is in `Servers/-1/`. Stop the server before you copy, edit or delete anything there."
+    - "`Save/Chunks` is the world, and `Save/Players/<id>` holds each player's character and inventory."
+    - "Most files are binary and not meant to be edited. `ServerConfiguration.json` and `InfoBoard` files are safe to change."
+    - "Back up `Servers/-1/` and TavernLib's config folder together. You can leave out `Backups/`, `Logs/` and `Cache/`."
+    - "`save full-wipe` deletes the whole `Servers/-1/` folder including your backups, so copy them first."
 ---
 
 # Save format

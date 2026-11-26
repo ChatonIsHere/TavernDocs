@@ -1,6 +1,12 @@
 ---
 title: On your own Linux machine
 description: Run a-township-container with Docker on a Linux box you own, or in WSL on Windows.
+summary:
+    - "You need a 64-bit x86_64 Linux machine (or WSL), Docker Engine with Compose, and about 10GB of free disk."
+    - "Put your game files directly in `~/att-server/game-source`, with `A Township Tale.exe` and `A Township Tale_Data` inside it."
+    - "Create `docker-compose.yml`, then run `docker compose up -d` and `docker compose logs -f`."
+    - "The first start is slow, and a new world needs a few minutes to make the forest before anyone joins."
+    - "Back up `server-data` (world saves) and `tavern-config` (`server_settings.json`, `users.json`)."
 ---
 
 # Docker on your own Linux machine

@@ -1,6 +1,12 @@
 ---
 title: Managing your mods
 description: Update, turn off, remove and fix your mods in the Mod Manager.
+summary:
+    - "Click **Mod Manager** to see every mod in your game folder. Close the game first."
+    - "Pick a mod, then use **Disable** or **Enable** to turn it off or on."
+    - "Use **Uninstall** to remove a mod."
+    - "If a mod says **Update ready**, update it in **Get Mods**."
+    - "If a mod says **Needs mods**, click **Install Dependencies**."
 bot_aliases: [mod manager]
 ---
 

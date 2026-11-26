@@ -1,6 +1,12 @@
 ---
 title: Troubleshooting
 description: Fixes for common server problems.
+summary:
+    - "If nobody can connect, check the server finished starting, then your port forwards (`1757` UDP, `1761` and `1762` TCP) and firewalls."
+    - "If the forest is broken, players joined too early. Restart and wait a few minutes, and make sure `1761` TCP is open."
+    - "If mod changes do nothing, restart the server. Mods only change when it starts."
+    - "If saves are lost on stop, give it time to save. On Docker, keep `stop_grace_period: 5m` and at least 4 CPUs."
+    - "If every console login is refused, `server_secret.key` is missing or unreadable. Restore it from a backup."
 ---
 
 # Server troubleshooting

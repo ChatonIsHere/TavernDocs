@@ -1,6 +1,12 @@
 ---
 title: Pick your name and headset
 description: Choose your username and headset, and learn about the token that keeps your account safe.
+summary:
+    - "Type a name under **CHOOSE YOUR USERNAME**. It can be up to 16 characters."
+    - "Under **CHOOSE YOUR PLATFORM**, pick **SteamVR** or **Quest**."
+    - "Start SteamVR or the Meta Quest Link app before you join a server."
+    - "The first time you join a server, the launcher makes a token file for you."
+    - "Keep your token safe and don't share it. Without it you can't get back into your account."
 ---
 
 import Tabs from '@theme/Tabs';

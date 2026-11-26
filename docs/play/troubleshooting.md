@@ -1,6 +1,12 @@
 ---
 title: Troubleshooting
 description: Fixes for the common problems when setting up and playing.
+summary:
+    - "If the launcher won't open, click **More info**, then **Run anyway**. Make sure you extracted the zip."
+    - "If **Setup** won't finish, try **Install** again or run the launcher as administrator."
+    - "If you end up in the main menu or a black screen, copy the files from the **Patch** folder in by hand."
+    - "If you can't join, check the address, your password and your name."
+    - "Start SteamVR or the Meta Quest Link app before you click **Join Server**."
 ---
 
 import Tabs from '@theme/Tabs';

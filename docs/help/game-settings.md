@@ -1,6 +1,12 @@
 ---
 title: Game settings
 description: What each setting in GameConfiguration.json does, the file the launcher's Game Settings window edits.
+summary:
+    - "Your in-game settings are in `GameConfiguration.json`."
+    - 'It''s usually in `%APPDATA%\\A Township Tale`.'
+    - "The launcher's **Game Settings** window edits this file."
+    - "Close the game before you edit it by hand."
+    - "A key you leave out keeps its default."
 ---
 
 # Game settings

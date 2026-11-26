@@ -1,6 +1,12 @@
 ---
 title: Saves and backups
 description: Where the world is saved, and how to back it up and restore it.
+summary:
+    - 'Your world is in `%APPDATA%\A Township Tale\Servers\-1`. Server settings and players are in `%APPDATA%\TheModdingTavern`.'
+    - "Turn on automatic backups in **Settings**, **Advanced** with `ServerBackupTime` (hours) and `ServerBackupMaxBackups`."
+    - "Backups stay on the same PC, so copy one to another drive or cloud storage now and then."
+    - "To restore, **Close Server**, rename `-1` to `-1-old`, extract the backup zip into `Servers`, then **Open Server**."
+    - "To move to another PC or Docker, copy both folders across."
 ---
 
 # Saves and backups
