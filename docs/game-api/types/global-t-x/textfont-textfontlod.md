@@ -19,9 +19,9 @@ One LOD level of a `TextFont`: the letter meshes for lower case, upper case, num
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TextFontLOD()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TextFontLOD()"}</code> | Creates a `TextFont.TextFontLOD` with default values. |
 
 ## Fields
 

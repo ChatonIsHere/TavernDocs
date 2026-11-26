@@ -19,9 +19,9 @@ Older prefab scoring component that names its sense with the `SenseOld` enum. In
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OldSenseOperation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OldSenseOperation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -23,9 +23,9 @@ An asset listing which atmosphere plugins (sky, fog, ambient audio) to turn on o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AtmosphereSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AtmosphereSet()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

@@ -19,17 +19,17 @@ Integer 3D grid point used by `MiningBaseGenerator` to lay out parts.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Point(int x = 0, int y = 0, int z = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Point(int x = 0, int y = 0, int z = 0)"}</code> | Creates a `MiningBaseGenerator.Point` from `x`, `y` and `z`. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-x" /><code>{"int X { get; set; }"}</code> |  |
+| <Link id="m-x" /><code>{"int X { get; set; }"}</code> | X coordinate of the point. |
 | <Link id="m-y" /><code>{"int Y { get; set; }"}</code> | Vertical coordinate; `Rotate` leaves it unchanged. |
-| <Link id="m-z" /><code>{"int Z { get; set; }"}</code> |  |
+| <Link id="m-z" /><code>{"int Z { get; set; }"}</code> | Z coordinate of the point. |
 
 ## Methods
 

@@ -18,9 +18,9 @@ One saved row of the global communal storage: an item, its material and how many
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StorageData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StorageData()"}</code> | Creates a `StorageData` with default values. |
 
 ## Fields
 

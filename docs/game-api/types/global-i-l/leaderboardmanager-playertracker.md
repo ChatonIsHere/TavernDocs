@@ -19,9 +19,9 @@ Server side timing state for one player, keyed by user id in `LeaderboardManager
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerTracker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerTracker()"}</code> | Creates a `LeaderboardManager.PlayerTracker` with default values. |
 
 ## Fields
 

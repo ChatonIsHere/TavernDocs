@@ -19,9 +19,9 @@ A space-defined area of `SpacePoint`s that sets `DarknessTrigger` when the playe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DarknessArea()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DarknessArea()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

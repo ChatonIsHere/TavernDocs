@@ -19,9 +19,9 @@ Debug component that turns budgeted update module timing on or off from the insp
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfilerComponent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfilerComponent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

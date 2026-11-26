@@ -19,9 +19,9 @@ Status of an Agones game server: its state, address and ports.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Status()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Status()"}</code> | Creates a `Status` with default values. |
 
 ## Properties
 

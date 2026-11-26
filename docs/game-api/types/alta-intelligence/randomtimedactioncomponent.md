@@ -20,9 +20,9 @@ Base for AI action components that run for a random length of time, set in the i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected RandomTimedActionComponent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected RandomTimedActionComponent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

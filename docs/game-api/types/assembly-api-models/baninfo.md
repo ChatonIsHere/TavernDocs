@@ -18,9 +18,9 @@ API model for a ban on a user, IP address or device, with its reason, scope and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BanInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BanInfo()"}</code> | Creates a `BanInfo` with default values. |
 
 ## Properties
 

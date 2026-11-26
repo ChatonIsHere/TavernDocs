@@ -19,9 +19,9 @@ JSON property attribute that caps a float at a maximum whenever the property is 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonMaxAttribute(float max)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonMaxAttribute(float max)"}</code> | Creates a `JsonMaxAttribute` from `max`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ The client side `ISync` that `SyncFactory.Create` makes when not on the server. 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientSync("}<Link to="/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientSync("}<Link to="/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" type)"}</code> | Creates a `ClientSync` from `entity` and `type`. |
 
 ## Methods
 

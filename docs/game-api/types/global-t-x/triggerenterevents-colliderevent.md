@@ -20,9 +20,9 @@ Serializable event that passes a collider, raised by `TriggerEnterEvents` when s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColliderEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColliderEvent()"}</code> | Creates a `TriggerEnterEvents.ColliderEvent` with default values. |
 
 ## Used in
 

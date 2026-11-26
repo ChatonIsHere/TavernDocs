@@ -20,9 +20,9 @@ Marks a save data class with the component type it saves and its version number.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SaveStructureAttribute(Type type, uint version)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SaveStructureAttribute(Type type, uint version)"}</code> | Creates a `SaveStructureAttribute` from `type` and `version`. |
 
 ## Properties
 

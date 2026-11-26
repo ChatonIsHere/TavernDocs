@@ -20,9 +20,9 @@ A text input field in the game's world-space menus, showing its text through a `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InputField()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InputField()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

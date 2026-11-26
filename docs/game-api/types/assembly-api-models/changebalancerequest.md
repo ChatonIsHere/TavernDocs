@@ -18,9 +18,9 @@ Request body for changing a balance by an amount, probably a user's virtual curr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChangeBalanceRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChangeBalanceRequest()"}</code> | Creates a `ChangeBalanceRequest` with default values. |
 
 ## Properties
 

@@ -20,9 +20,9 @@ Runs very early (execution order -15000) and creates the project lifetime scope 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DependencyInjectionInitializer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DependencyInjectionInitializer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

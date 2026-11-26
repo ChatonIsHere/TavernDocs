@@ -19,9 +19,9 @@ A **class** in `Alta.Coroutines`, no namespace.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EditorCoroutine()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EditorCoroutine()"}</code> | Creates an `EditorCoroutine` with default values. |
 
 ## Methods
 

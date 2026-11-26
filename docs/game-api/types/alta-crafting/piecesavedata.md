@@ -18,9 +18,9 @@ Saved state of one carpentry timber piece: whether it has been hit, how far it i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PieceSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PieceSaveData()"}</code> | Creates a `PieceSaveData` with default values. |
 
 ## Fields
 

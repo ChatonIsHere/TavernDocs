@@ -19,9 +19,9 @@ A synced bool parameter on a `NetworkAnimator`. Setting it updates the Unity ani
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedBool(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedBool(string name)"}</code> | Creates an `AnimatedBool` from `name`. |
 
 ## Fields
 

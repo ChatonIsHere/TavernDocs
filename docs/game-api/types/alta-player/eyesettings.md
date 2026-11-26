@@ -18,9 +18,9 @@ The character dummy's eye blit materials, held on `CharacterDummy.Eyes`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EyeSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EyeSettings()"}</code> | Creates an `EyeSettings` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Makes a character's eyes blink at random intervals by firing left and right eye 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BlinkingController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BlinkingController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

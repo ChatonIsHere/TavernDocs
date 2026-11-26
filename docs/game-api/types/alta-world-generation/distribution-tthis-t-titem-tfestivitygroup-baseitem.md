@@ -21,9 +21,9 @@ One weighted entry in a distribution: the result object and how its weight chang
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BaseItem()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BaseItem()"}</code> | Creates a `Distribution` with default values. |
 
 ## Fields
 

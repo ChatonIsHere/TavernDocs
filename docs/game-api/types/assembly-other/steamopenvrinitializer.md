@@ -19,9 +19,9 @@ XR support system for Valve OpenVR mode. Touches the SteamVR settings and instan
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SteamOpenVrInitializer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SteamOpenVrInitializer()"}</code> | Creates a `SteamOpenVrInitializer` with default values. |
 
 ## Fields
 

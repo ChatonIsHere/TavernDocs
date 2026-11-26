@@ -18,9 +18,9 @@ A summary of a network entity returned by console commands: IDs, prefab, positio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EntityInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EntityInfo()"}</code> | Creates an `EntityInfo` with default values. |
 
 ## Properties
 

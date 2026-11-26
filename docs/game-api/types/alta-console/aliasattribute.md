@@ -20,9 +20,9 @@ Gives a console module or command extra names it can be called by, such as `mic`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AliasAttribute(params string[] aliases)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AliasAttribute(params string[] aliases)"}</code> | Creates an `AliasAttribute` from `aliases`. |
 
 ## Properties
 

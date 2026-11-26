@@ -19,9 +19,9 @@ Small helper that exposes one named bool of a `NetworkAnimator` as a `Set` metho
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedBoolAccess()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedBoolAccess()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

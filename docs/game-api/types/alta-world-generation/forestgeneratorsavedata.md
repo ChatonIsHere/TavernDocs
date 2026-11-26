@@ -21,9 +21,9 @@ Save data for a `ForestGenerator` (save structure version 1). Holds only the for
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForestGeneratorSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForestGeneratorSaveData()"}</code> | Creates a `ForestGeneratorSaveData` with default values. |
 
 ## Fields
 

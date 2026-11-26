@@ -19,9 +19,9 @@ Base request body for a purchase: which saved payment method to charge.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PurchaseRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PurchaseRequest()"}</code> | Creates a `PurchaseRequest` with default values. |
 
 ## Properties
 

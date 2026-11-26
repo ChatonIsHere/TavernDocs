@@ -19,9 +19,9 @@ Makes a collider group ignore a pickup's colliders while an Interactor holds it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InteractionCollisionController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InteractionCollisionController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Animator state behaviour that plays a sound at the animated object when the stat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaySound()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaySound()"}</code> | Creates a `PlaySound` with default values. |
 
 ## Fields
 

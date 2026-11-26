@@ -21,9 +21,9 @@ Save data (version 1) for the `PopulationDefinitionManager`: a value per populat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationDefinitionManagerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationDefinitionManagerData()"}</code> | Creates a `PopulationDefinitionManagerData` with default values. |
 
 ## Fields
 

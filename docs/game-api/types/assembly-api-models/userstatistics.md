@@ -18,9 +18,9 @@ Account stats from the Alta API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserStatistics()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserStatistics()"}</code> | Creates an `UserStatistics` with default values. |
 
 ## Properties
 

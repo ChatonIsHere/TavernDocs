@@ -22,9 +22,9 @@ Online client for a player's shop account: balance, owned items and gifts. Reach
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"internal ShopAccount("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"internal ShopAccount("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates a `ShopAccount` from `clientManager`. |
 
 </details>
 

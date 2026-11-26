@@ -18,9 +18,9 @@ Settings for one Vivox voice or text channel; `VivoxManager` makes one for the s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VivoxChannel(string name, bool isTextEnabled, bool isVoiceEnabled, Channel3DProperties positionalProperties = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VivoxChannel(string name, bool isTextEnabled, bool isVoiceEnabled, Channel3DProperties positionalProperties = null)"}</code> | Creates a `VivoxChannel` from `name`, `isTextEnabled`, `isVoiceEnabled` and `positionalProperties`. |
 
 ## Properties
 

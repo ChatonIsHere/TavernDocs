@@ -21,9 +21,9 @@ A named set of prefabs and quantities that the server spawns with `PackageManage
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DebugPackage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DebugPackage()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

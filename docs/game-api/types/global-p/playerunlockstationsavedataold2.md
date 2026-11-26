@@ -20,9 +20,9 @@ Old save data (version 2) for a `PlayerUnlockStation`. Migrates to `PlayerUnlock
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveDataOld2()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveDataOld2()"}</code> | Creates a `PlayerUnlockStationSaveDataOld2` with default values. |
 
 ## Fields
 

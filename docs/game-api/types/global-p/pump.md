@@ -19,9 +19,9 @@ Turns lever strokes into a pouring strength that slowly drains, and sends it out
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Pump()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Pump()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

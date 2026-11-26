@@ -20,6 +20,6 @@ Editor menu folder `Edit`: menu item classes inherit it to appear under that pat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Edit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Edit()"}</code> | Creates an `AltaMenuItemBase.Edit` with default values. |

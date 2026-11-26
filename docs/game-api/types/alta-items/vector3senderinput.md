@@ -20,6 +20,6 @@ A serializable input slot that links a receiver to a `LogicVector3Sender`, as us
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Vector3SenderInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Vector3SenderInput()"}</code> | Creates a `Vector3SenderInput` with default values. |

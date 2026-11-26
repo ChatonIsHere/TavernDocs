@@ -21,9 +21,9 @@ Scene entity that runs the `GlobalPopulationDefinition` assets on the server: in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GlobalPopulationsManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GlobalPopulationsManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

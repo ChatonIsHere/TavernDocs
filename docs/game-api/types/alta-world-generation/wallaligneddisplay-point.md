@@ -19,9 +19,9 @@ One cell offset inside `WallAlignedDisplay`'s check radius, with a weight that f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Point(int x, int y, Vector2 direction, float value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Point(int x, int y, Vector2 direction, float value)"}</code> | Creates a `WallAlignedDisplay.Point` from `x`, `y`, `direction` and `value`. |
 
 ## Properties
 

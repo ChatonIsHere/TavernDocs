@@ -20,9 +20,9 @@ A cave map generator part that stamps a blob (a centre circle plus smaller circl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BlobEdge()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BlobEdge()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Scrolling list board driven by pulling ropes: places its element transforms alon
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RopePoweredElementBoard()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RopePoweredElementBoard()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

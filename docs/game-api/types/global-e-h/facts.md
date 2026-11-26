@@ -18,9 +18,9 @@ Serializable holder for a hard-coded list of 167 trivia strings. Nothing else in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Facts()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Facts()"}</code> | Creates a `Facts` with default values. |
 
 ## Fields
 

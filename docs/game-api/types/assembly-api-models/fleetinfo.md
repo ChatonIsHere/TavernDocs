@@ -18,9 +18,9 @@ Info about a fleet of game servers.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FleetInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FleetInfo()"}</code> | Creates a `FleetInfo` with default values. |
 
 ## Properties
 

@@ -23,9 +23,9 @@ The `/debug_helper` service: copies the game's NLog output into MelonLoader's lo
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"internal DebugHelper()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"internal DebugHelper()"}</code> | Subscribes `OnGui` so the log level toggles are drawn. |
 
 </details>
 
@@ -34,9 +34,9 @@ The `/debug_helper` service: copies the game's NLog output into MelonLoader's lo
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logcatcher" /><code>{"private readonly "}<Link to="/tavernlib-api/types/debugging/nlogcatcher">{"NLogCatcher"}</Link>{" _logCatcher"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logcatcher" /><code>{"private readonly "}<Link to="/tavernlib-api/types/debugging/nlogcatcher">{"NLogCatcher"}</Link>{" _logCatcher"}</code> | The `NLogCatcher` that feeds game log lines to MelonLoader. |
 
 </details>
 
@@ -45,8 +45,8 @@ The `/debug_helper` service: copies the game's NLog output into MelonLoader's lo
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-ongui" /><code>{"private void OnGui()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ongui" /><code>{"private void OnGui()"}</code> | Draws a toggle for each log level, which turns that level on or off in the log catcher. |
 
 </details>

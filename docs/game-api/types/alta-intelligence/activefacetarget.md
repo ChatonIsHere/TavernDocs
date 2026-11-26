@@ -20,9 +20,9 @@ Server: running action that turns a creature until its target is close enough to
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveFaceTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveFaceTarget()"}</code> | Creates an `ActiveFaceTarget` with default values. |
 
 ## Fields
 

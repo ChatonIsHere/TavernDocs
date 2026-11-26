@@ -20,9 +20,9 @@ Transition into the combat state. Fires when the player is hurt by a tool within
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ToCombatTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ToCombatTransition()"}</code> | Creates a `ToCombatTransition` with default values. |
 
 ## Properties
 

@@ -21,9 +21,9 @@ Forest spawn filter that scales weight by distance to the forest's border.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DistanceToEdgeFilter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DistanceToEdgeFilter()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Methods
 

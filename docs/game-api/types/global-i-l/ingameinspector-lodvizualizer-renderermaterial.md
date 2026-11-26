@@ -19,9 +19,9 @@ A renderer and its original shared material, so the LOD visualizer can put the m
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RendererMaterial(Renderer renderer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RendererMaterial(Renderer renderer)"}</code> | Creates an `InGameInspector.LODVizualizer.RendererMaterial` from `renderer`. |
 
 ## Properties
 

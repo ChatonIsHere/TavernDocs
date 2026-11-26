@@ -19,9 +19,9 @@ An `IChunkLoader` for a player that picks which chunks to keep loaded around the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OptimisedChunkLoader("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OptimisedChunkLoader("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Creates an `OptimisedChunkLoader` from `player`. |
 
 ## Fields
 

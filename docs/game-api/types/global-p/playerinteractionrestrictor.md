@@ -21,9 +21,9 @@ Limits how many times each player can use something per in-game day, such as tak
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictor()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

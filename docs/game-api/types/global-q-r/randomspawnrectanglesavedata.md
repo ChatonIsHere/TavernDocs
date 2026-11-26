@@ -21,9 +21,9 @@ Save data for `RandomSpawnRectangle`: the distribution, box size, count range an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RandomSpawnRectangleSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RandomSpawnRectangleSaveData()"}</code> | Creates a `RandomSpawnRectangleSaveData` with default values. |
 
 ## Fields
 

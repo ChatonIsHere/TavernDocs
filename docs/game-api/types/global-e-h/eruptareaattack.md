@@ -19,9 +19,9 @@ Networked creature attack that makes an object erupt from the ground near the ag
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EruptAreaAttack()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EruptAreaAttack()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

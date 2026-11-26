@@ -21,9 +21,9 @@ Forest fill spawn modifier that sets each spawn point's prefab to a static envir
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SetPrefabModifier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SetPrefabModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

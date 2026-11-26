@@ -19,9 +19,9 @@ A running `Timeline` timer on a `SerializedTimedEvent` and which setup step it b
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimerData()"}</code> | Creates a `SerializedTimedEvent.TimerData` with default values. |
 
 ## Properties
 

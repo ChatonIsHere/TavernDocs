@@ -18,9 +18,9 @@ Web API model holding the three JWTs a login returns.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TokenResultResponse(JwtSecurityToken accessToken, JwtSecurityToken refreshToken, JwtSecurityToken identityToken)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TokenResultResponse(JwtSecurityToken accessToken, JwtSecurityToken refreshToken, JwtSecurityToken identityToken)"}</code> | Creates a `TokenResultResponse` from `accessToken`, `refreshToken` and `identityToken`. |
 
 ## Properties
 

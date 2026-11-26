@@ -18,9 +18,9 @@ Request body for sending a message to a list of users.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SendMessageRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SendMessageRequest()"}</code> | Creates a `SendMessageRequest` with default values. |
 
 ## Properties
 

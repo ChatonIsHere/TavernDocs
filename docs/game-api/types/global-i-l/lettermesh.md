@@ -18,9 +18,9 @@ One character and its 3D mesh, used by `TextFont` for letters and digits.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LetterMesh()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LetterMesh()"}</code> | Creates a `LetterMesh` with default values. |
 
 ## Fields
 

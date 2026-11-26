@@ -19,9 +19,9 @@ Fires a float event every frame with the current scene loading progress from `Al
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SceneLoadingProgress()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SceneLoadingProgress()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

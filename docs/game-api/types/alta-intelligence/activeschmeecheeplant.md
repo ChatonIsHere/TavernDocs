@@ -19,9 +19,9 @@ Schmeechee action where it buries itself in the ground and sleeps for a while, t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveSchmeecheePlant()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveSchmeecheePlant()"}</code> | Creates an `ActiveSchmeecheePlant` with default values. |
 
 ## Fields
 

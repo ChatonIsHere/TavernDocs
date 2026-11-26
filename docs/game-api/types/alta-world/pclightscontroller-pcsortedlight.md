@@ -20,9 +20,9 @@ A light with its distance from the player's head, used on PC to pick which light
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PCSortedLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light, Vector3 cameraPosition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PCSortedLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light, Vector3 cameraPosition)"}</code> | Creates a `PCLightsController.PCSortedLight` from `light` and `cameraPosition`. |
 
 ## Properties
 

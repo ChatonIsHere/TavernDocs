@@ -20,6 +20,6 @@ Editor menu entry that creates a new `SurfaceMaterial` asset. Not used at runtim
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `SurfaceMaterial.Create` with default values. |

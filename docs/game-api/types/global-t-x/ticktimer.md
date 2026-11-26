@@ -18,9 +18,9 @@ Repeating timer on the game `Timeline` that fires `Ticked` at a fixed interval, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TickTimer(TimeSpan interval)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TickTimer(TimeSpan interval)"}</code> | Creates a `TickTimer` from `interval`. |
 
 ## Fields
 

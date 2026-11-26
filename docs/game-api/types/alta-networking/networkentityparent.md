@@ -20,9 +20,9 @@ Base of `NetworkPrefab` and `NetworkScene`. Holds the list of child network enti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityParent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityParent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

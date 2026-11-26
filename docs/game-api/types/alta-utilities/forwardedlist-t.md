@@ -20,9 +20,9 @@ A read-only view onto another listened list that can be swapped at runtime. It f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForwardedList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForwardedList()"}</code> | Creates a `ForwardedList` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Global settings for how the editor talks to the web API: offline mode, which end
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EditorApiSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EditorApiSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

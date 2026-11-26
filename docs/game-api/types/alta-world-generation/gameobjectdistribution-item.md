@@ -21,6 +21,6 @@ Concrete weighted entry for `GameObjectDistribution`, holding a `GameObject`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `GameObjectDistribution.Item` with default values. |

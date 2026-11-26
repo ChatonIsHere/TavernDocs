@@ -21,9 +21,9 @@ World generation spawn modifier that rotates spawned objects to face along the g
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AlignWithNormalModifier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AlignWithNormalModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Dev tool that swaps the deferred shading shader for a debug one while enabled an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LightModelTester()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LightModelTester()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

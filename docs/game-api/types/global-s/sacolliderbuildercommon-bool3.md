@@ -19,9 +19,9 @@ Serializable x, y, z set of flags used by SAColliderBuilder (third party, editor
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Bool3(bool x, bool y, bool z)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Bool3(bool x, bool y, bool z)"}</code> | Creates a `SAColliderBuilderCommon.Bool3` from `x`, `y` and `z`. |
 
 ## Fields
 

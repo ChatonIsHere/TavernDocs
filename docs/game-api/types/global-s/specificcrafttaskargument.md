@@ -21,9 +21,9 @@ Game task action argument sent when a player joins one crafting part into anothe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpecificCraftTaskArgument("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insert)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpecificCraftTaskArgument("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slot, "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insert)"}</code> | Creates a `SpecificCraftTaskArgument` from `slot` and `insert`. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ A forest generation step that places generation cores along the river per chunk:
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverEncounters()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverEncounters()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

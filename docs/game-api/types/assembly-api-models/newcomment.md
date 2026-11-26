@@ -18,9 +18,9 @@ Body for adding a comment, which may be hidden.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NewComment()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NewComment()"}</code> | Creates a `NewComment` with default values. |
 
 ## Properties
 

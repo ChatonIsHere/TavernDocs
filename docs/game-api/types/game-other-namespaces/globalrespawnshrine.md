@@ -19,9 +19,9 @@ The global respawn shrine. Touching it resets the player's respawn back to the g
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GlobalRespawnShrine()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GlobalRespawnShrine()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

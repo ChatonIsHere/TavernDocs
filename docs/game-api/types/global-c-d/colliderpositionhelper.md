@@ -19,9 +19,9 @@ A `PositionFromOriginHelper` that gives the closest point on a collider to the o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColliderPositionHelper()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColliderPositionHelper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

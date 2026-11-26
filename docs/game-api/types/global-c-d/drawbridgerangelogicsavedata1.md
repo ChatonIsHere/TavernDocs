@@ -20,9 +20,9 @@ Old save format for `DrawBridgeRangeLogic` with full up and down angle vectors, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData1()"}</code> | Creates a `DrawBridgeRangeLogicSaveData1` with default values. |
 
 ## Fields
 

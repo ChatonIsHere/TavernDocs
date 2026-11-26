@@ -19,9 +19,9 @@ Server: tracks one player's hand camera and destroys it if the player is destroy
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerCameraHandler("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, float maxDistanceSquared, float timeToDespawn, float outOfRangeHaptic, Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyCamera)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerCameraHandler("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, "}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, float maxDistanceSquared, float timeToDespawn, float outOfRangeHaptic, Action<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyCamera)"}</code> | Creates a `HandyCameraManager.PlayerCameraHandler` from `player`, `camera`, `maxDistanceSquared`, `timeToDespawn`, `outOfRangeHaptic` and `destroyCamera`. |
 
 ## Fields
 

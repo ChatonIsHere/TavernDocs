@@ -20,6 +20,6 @@ Editor menu entry that creates a `HandSettings` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `HandSettings.Create` with default values. |

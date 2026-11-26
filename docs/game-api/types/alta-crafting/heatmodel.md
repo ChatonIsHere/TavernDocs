@@ -21,6 +21,6 @@ The usual heat colour model: metal heat points drive the red channel and there a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HeatModel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HeatModel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

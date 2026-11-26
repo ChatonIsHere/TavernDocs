@@ -18,9 +18,9 @@ API response when a server session is started.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StartServerSessionResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StartServerSessionResponse()"}</code> | Creates a `StartServerSessionResponse` with default values. |
 
 ## Properties
 

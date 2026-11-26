@@ -19,9 +19,9 @@ Body of an Alta web API request to create an account, with optional Oculus or Pi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RegisterRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RegisterRequest()"}</code> | Creates a `RegisterRequest` with default values. |
 
 ## Properties
 

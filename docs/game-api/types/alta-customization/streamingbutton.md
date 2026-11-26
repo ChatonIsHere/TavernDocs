@@ -19,9 +19,9 @@ Hand camera button whose light blinks while the camera is streaming. Client only
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StreamingButton()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StreamingButton()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

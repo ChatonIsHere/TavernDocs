@@ -19,9 +19,9 @@ Internal exception type for an object that has been destroyed. Nothing in this b
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ObjectDestroyedException()"}</code> |
-| <Link id="m-ctor-2" /><code>{"ObjectDestroyedException(string message)"}</code> |
-| <Link id="m-ctor-3" /><code>{"ObjectDestroyedException(string message, Exception innerException)"}</code> |
-| <Link id="m-ctor-4" /><code>{"protected ObjectDestroyedException(SerializationInfo info, StreamingContext context)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ObjectDestroyedException()"}</code> | Creates the exception with `info`, `context`. |
+| <Link id="m-ctor-2" /><code>{"ObjectDestroyedException(string message)"}</code> | Creates the exception with `info`, `context`. |
+| <Link id="m-ctor-3" /><code>{"ObjectDestroyedException(string message, Exception innerException)"}</code> | Creates the exception with `info`, `context`. |
+| <Link id="m-ctor-4" /><code>{"protected ObjectDestroyedException(SerializationInfo info, StreamingContext context)"}</code> | Creates the exception with `info`, `context`. |

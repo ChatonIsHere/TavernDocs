@@ -18,9 +18,9 @@ Fetches service status notices from Alta's Strapi site (strapi.townshiptale.dev)
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatusAPI(int timeOutInSeconds = 15)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatusAPI(int timeOutInSeconds = 15)"}</code> | Creates a `StatusAPI` from `timeOutInSeconds`. |
 
 ## Fields
 

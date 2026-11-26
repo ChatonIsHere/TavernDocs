@@ -19,9 +19,9 @@ One practice object spawned in a skill shrine's testing area. Server side: it re
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnedEntity("}<Link to="/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{" positionedPrefab, "}<Link to="/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnedEntity("}<Link to="/game-api/types/global-p/positionednetworkprefab">{"PositionedNetworkPrefab"}</Link>{" positionedPrefab, "}<Link to="/game-api/types/global-s/skillshrinetestingarea">{"SkillShrineTestingArea"}</Link>{" testingArea)"}</code> | Creates a `SkillShrineTestingArea.SpawnedEntity` from `positionedPrefab` and `testingArea`. |
 
 ## Fields
 

@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Township/Debug.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Debug()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Debug()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Debug` with default values. |

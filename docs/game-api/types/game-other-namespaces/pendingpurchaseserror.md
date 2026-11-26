@@ -19,6 +19,6 @@ A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop.Errors`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PendingPurchasesError(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PendingPurchasesError(string message)"}</code> | Creates a `PendingPurchasesError` from `message`. |

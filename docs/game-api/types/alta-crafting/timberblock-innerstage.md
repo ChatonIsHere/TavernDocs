@@ -20,9 +20,9 @@ The middle chiselling stage of a `TimberBlock`. Finishing it moves the block on 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InnerStage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InnerStage()"}</code> | Creates a `TimberBlock.InnerStage` with default values. |
 
 ## Properties
 

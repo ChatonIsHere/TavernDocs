@@ -19,9 +19,9 @@ A vertex attribute list (such as a UV channel) used while recombining static mes
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnchoredList(Func<int> getCount)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnchoredList(Func<int> getCount)"}</code> | Creates a `StaticBatchedRecombiner.AnchoredList` from `getCount`. |
 
 ## Fields
 

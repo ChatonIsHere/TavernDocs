@@ -22,9 +22,9 @@ Internal base for the high level web API client parts; each holds a reference to
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"internal HighLevelApiClientBase("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"internal HighLevelApiClientBase("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclientmanager">{"IHighLevelApiClientManager"}</Link>{" clientManager)"}</code> | Creates a `HighLevelApiClientBase` from `clientManager`. |
 
 </details>
 

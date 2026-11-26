@@ -19,9 +19,9 @@ Sets the customization category scrubber's step count once the customization man
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CategoryScrubberController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CategoryScrubberController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

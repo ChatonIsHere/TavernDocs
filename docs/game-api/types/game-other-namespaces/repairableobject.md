@@ -18,9 +18,9 @@ A game-condition entry naming a repairable object by prefab hash and the build s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RepairableObject(uint targetHash, "}<Link to="/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RepairableObject(uint targetHash, "}<Link to="/game-api/types/game-other-namespaces/repairableobjectbuildstate">{"RepairableObjectBuildState"}</Link>{" requirement)"}</code> | Creates a `RepairableObject` from `targetHash` and `requirement`. |
 
 ## Fields
 

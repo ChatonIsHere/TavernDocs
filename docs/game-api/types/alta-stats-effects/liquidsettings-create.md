@@ -20,6 +20,6 @@ Editor menu entry for creating the `LiquidSettings` global settings asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `LiquidSettings.Create` with default values. |

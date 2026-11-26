@@ -19,9 +19,9 @@ Private: one generated room in `BuildingRooms`, as a grid position and size.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Room()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Room()"}</code> | Creates a `BuildingRooms.Room` with default values. |
 
 ## Fields
 

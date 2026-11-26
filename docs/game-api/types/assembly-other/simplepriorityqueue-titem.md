@@ -19,8 +19,8 @@ A **class** in `Alta.Timing.Runtime`, `Alta.Timing.PriorityQueue`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimplePriorityQueue()"}</code> |
-| <Link id="m-ctor-2" /><code>{"SimplePriorityQueue(IComparer<float> comparer)"}</code> |
-| <Link id="m-ctor-3" /><code>{"SimplePriorityQueue(Comparison<float> comparer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimplePriorityQueue()"}</code> | Creates a `SimplePriorityQueue` from `comparer`. |
+| <Link id="m-ctor-2" /><code>{"SimplePriorityQueue(IComparer<float> comparer)"}</code> | Creates a `SimplePriorityQueue` from `comparer`. |
+| <Link id="m-ctor-3" /><code>{"SimplePriorityQueue(Comparison<float> comparer)"}</code> | Creates a `SimplePriorityQueue` from `comparer`. |

@@ -20,9 +20,9 @@ Base scriptable object for an effect a hand camera filter turns on and off on th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected FilterAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected FilterAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Methods
 

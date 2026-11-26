@@ -18,9 +18,9 @@ Roles read from a user's identity token by `UserRolesUtility.GetRolesFromIdentit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserRoles()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserRoles()"}</code> | Creates an `UserRoles` with default values. |
 
 ## Properties
 

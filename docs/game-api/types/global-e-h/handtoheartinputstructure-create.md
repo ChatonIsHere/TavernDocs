@@ -20,6 +20,6 @@ Editor menu entry that creates a `HandToHeartInputStructure` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `HandToHeartInputStructure.Create` with default values. |

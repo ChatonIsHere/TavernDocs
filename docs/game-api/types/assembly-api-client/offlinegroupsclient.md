@@ -19,9 +19,9 @@ Offline stand-in for the groups client. Every member throws `OfflineException`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineGroupsClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineGroupsClient()"}</code> | Creates an `OfflineGroupsClient` with default values. |
 
 ## Properties
 

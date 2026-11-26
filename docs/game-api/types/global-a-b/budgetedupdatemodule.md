@@ -20,9 +20,9 @@ An `UpdateModule` with a time budget: each update runs registered methods until 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BudgetedUpdateModule(string name, float msAllowance, "}<Link to="/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" segment, bool includeInServerProfiling = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BudgetedUpdateModule(string name, float msAllowance, "}<Link to="/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" segment, bool includeInServerProfiling = false)"}</code> | Creates a `BudgetedUpdateModule` from `name`, `msAllowance`, `segment` and `includeInServerProfiling`. |
 
 ## Fields
 

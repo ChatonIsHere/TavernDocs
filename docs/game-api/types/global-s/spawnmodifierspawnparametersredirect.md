@@ -19,9 +19,9 @@ Forest spawn modifier for spawn parameter stages that switches the rest of the f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnModifierSpawnParametersRedirect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnModifierSpawnParametersRedirect()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

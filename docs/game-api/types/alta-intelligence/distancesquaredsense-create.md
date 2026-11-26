@@ -20,6 +20,6 @@ Editor menu item for making a `DistanceSquaredSense` asset. Does nothing at runt
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `DistanceSquaredSense.Create` with default values. |

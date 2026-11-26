@@ -18,9 +18,9 @@ A server region, with the fixed list of known regions. Note the constructor argu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Region(string friendlyName, string shortName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Region(string friendlyName, string shortName)"}</code> | Creates a `Region` from `friendlyName` and `shortName`. |
 
 ## Fields
 

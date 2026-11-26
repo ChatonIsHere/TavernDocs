@@ -19,10 +19,10 @@ Saved interaction trackers for one player in `PlayerInteractionManager`'s save d
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerData()"}</code> |
-| <Link id="m-ctor-2" /><code>{"PlayerData(int playerIdentifier, Dictionary<int, "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> trackers)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerData()"}</code> | Creates a `PlayerInteractionManagerData.PlayerData` from `playerIdentifier` and `trackers`. |
+| <Link id="m-ctor-2" /><code>{"PlayerData(int playerIdentifier, Dictionary<int, "}<Link to="/game-api/types/global-p/playerinteractionmanager-tracker">{"PlayerInteractionManager.Tracker"}</Link>{"> trackers)"}</code> | Creates a `PlayerInteractionManagerData.PlayerData` from `playerIdentifier` and `trackers`. |
 
 ## Fields
 

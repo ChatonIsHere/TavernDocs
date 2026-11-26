@@ -22,9 +22,9 @@ Colour model whose red channel is a list of metal heat points, used to show heat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected HeatModel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected HeatModel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

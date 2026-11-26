@@ -20,6 +20,6 @@ Editor menu folder `Township/Features/Cooking`: menu item classes inherit it to 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Cooking()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Cooking()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Cooking` with default values. |

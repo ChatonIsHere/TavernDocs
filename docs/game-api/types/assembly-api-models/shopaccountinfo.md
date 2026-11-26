@@ -19,9 +19,9 @@ Web API reply with a user's shop balance: shards, wallet money and supporter sub
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopAccountInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopAccountInfo()"}</code> | Creates a `ShopAccountInfo` with default values. |
 
 ## Properties
 

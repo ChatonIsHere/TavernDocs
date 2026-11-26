@@ -18,9 +18,9 @@ How a cluster generator scatters child objects (such as crystals or mushrooms) a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClusterSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClusterSettings()"}</code> | Creates a `ClusterSettings` with default values. |
 
 ## Fields
 

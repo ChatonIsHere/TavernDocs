@@ -19,10 +19,10 @@ One finger of a `HandGrip`: its configuration and its joints. Thumbs get `ThumbG
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GripFinger()"}</code> |
-| <Link id="m-ctor-2" /><code>{"GripFinger("}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger">{"HandGripConfiguration.Finger"}</Link>{" finger, Transform[] jointTransforms, "}<Link to="/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GripFinger()"}</code> | Creates a `HandGrip.GripFinger` from `hand`, `finger`, `jointTransforms` and `rotations`. |
+| <Link id="m-ctor-2" /><code>{"GripFinger("}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger">{"HandGripConfiguration.Finger"}</Link>{" finger, Transform[] jointTransforms, "}<Link to="/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations)"}</code> | Creates a `HandGrip.GripFinger` from `hand`, `finger`, `jointTransforms` and `rotations`. |
 
 ## Fields
 

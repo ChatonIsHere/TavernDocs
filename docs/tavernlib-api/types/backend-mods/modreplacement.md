@@ -19,9 +19,9 @@ One entry of a source's `replaced` list: a retired mod id and the mod that takes
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModReplacement(string oldId, string by, string note, string sourceRepo)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModReplacement(string oldId, string by, string note, string sourceRepo)"}</code> | Stores the retired id, the id that replaces it, a note, and the source repo. |
 
 ## Properties
 

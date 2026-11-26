@@ -20,9 +20,9 @@ Per-hand component that holds the hand's `ControllerActions` and adds, sets or r
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ControllerActionsManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ControllerActionsManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

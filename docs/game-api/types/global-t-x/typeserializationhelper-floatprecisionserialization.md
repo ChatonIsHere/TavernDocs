@@ -20,9 +20,9 @@ Meant to write a `float` in a range at a given precision (`SyncFloat` with min, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FloatPrecisionSerialization(float minimum, float maximum, float precision)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatPrecisionSerialization(float minimum, float maximum, float precision)"}</code> | Creates a `TypeSerializationHelper.FloatPrecisionSerialization` from `minimum`, `maximum` and `precision`. |
 
 ## Fields
 

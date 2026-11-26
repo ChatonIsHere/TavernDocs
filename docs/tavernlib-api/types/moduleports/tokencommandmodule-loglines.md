@@ -20,9 +20,9 @@ The answer to `token log`: the newest lines of `console_token_log.jsonl`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogLines()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogLines()"}</code> | Makes an empty log answer. |
 
 ## Properties
 

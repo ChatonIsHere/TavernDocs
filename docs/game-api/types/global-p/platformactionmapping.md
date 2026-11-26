@@ -18,9 +18,9 @@ The input-to-action mappings for one platform within a controller action mode: w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformActionMapping()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformActionMapping()"}</code> | Creates a `PlatformActionMapping` with default values. |
 
 ## Fields
 

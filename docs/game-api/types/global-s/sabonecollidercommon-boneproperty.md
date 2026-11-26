@@ -19,9 +19,9 @@ Per-bone option for the SA bone collider builder (a third-party editor tool for 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoneProperty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoneProperty()"}</code> | Creates a `SABoneColliderCommon.BoneProperty` with default values. |
 
 ## Fields
 

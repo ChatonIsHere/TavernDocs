@@ -19,9 +19,9 @@ Serializable event with a `TreeAttachment` argument, used for a tree attachment'
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttachmentEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttachmentEvent()"}</code> | Creates an `AttachmentEvent` with default values. |
 
 ## Used in
 

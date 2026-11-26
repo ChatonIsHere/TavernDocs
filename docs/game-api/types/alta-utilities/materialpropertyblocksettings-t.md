@@ -20,6 +20,6 @@ Generic base for hashed settings assets used with material property blocks. Adds
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialPropertyBlockSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialPropertyBlockSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |

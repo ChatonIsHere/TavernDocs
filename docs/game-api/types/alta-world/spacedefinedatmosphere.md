@@ -20,9 +20,9 @@ Blends between atmosphere sets using placed ambience points: the closer point pa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpaceDefinedAtmosphere()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpaceDefinedAtmosphere()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

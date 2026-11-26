@@ -19,9 +19,9 @@ Pooled working state for a fuel-based fire: which fuel pickups are in it, groupe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FuelConsumptionState()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FuelConsumptionState()"}</code> | Creates a `Fire.FuelConsumptionState` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ A price in the shop: an amount and its currency. Defaults to 1 shard.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopPrice()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopPrice()"}</code> | Creates a `ShopPrice` with default values. |
 
 ## Properties
 

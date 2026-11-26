@@ -20,6 +20,6 @@ Editor menu folder `Tools/Misc`: menu item classes inherit it to appear under th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Misc()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Misc()"}</code> | Creates an `AltaMenuItemBase.Tools.Misc` with default values. |

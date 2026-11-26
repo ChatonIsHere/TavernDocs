@@ -18,9 +18,9 @@ One analytics event as sent to the Alta web API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnalyticsEventData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnalyticsEventData()"}</code> | Creates an `AnalyticsEventData` with default values. |
 
 ## Properties
 

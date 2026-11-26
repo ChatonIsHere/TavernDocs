@@ -19,9 +19,9 @@ Lets an effect object leave normal chunking: on the server it stops being saved 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnchunkedEffectPlayer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnchunkedEffectPlayer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

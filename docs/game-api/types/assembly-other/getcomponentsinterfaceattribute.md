@@ -20,9 +20,9 @@ Array field attribute that fills the field with every component implementing an 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetComponentsInterfaceAttribute(Type type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetComponentsInterfaceAttribute(Type type)"}</code> | Creates a `GetComponentsInterfaceAttribute` from `type`. |
 
 ## Fields
 

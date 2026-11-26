@@ -20,9 +20,9 @@ The first chiselling stage of a `TimberBlock`. The pieces chiselled off here dec
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OuterStage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OuterStage()"}</code> | Creates a `TimberBlock.OuterStage` with default values. |
 
 ## Properties
 

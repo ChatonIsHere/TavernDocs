@@ -19,10 +19,10 @@ Serializable pair of values tied to a `BiomeAttribute`, used in biome generation
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttributeDoubleValue()"}</code> |
-| <Link id="m-ctor-2" /><code>{"AttributeDoubleValue("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" topic, float value1, float value2)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttributeDoubleValue()"}</code> | Creates an `AttributeDoubleValue` from `topic`, `value1` and `value2`. |
+| <Link id="m-ctor-2" /><code>{"AttributeDoubleValue("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" topic, float value1, float value2)"}</code> | Creates an `AttributeDoubleValue` from `topic`, `value1` and `value2`. |
 
 ## Used in
 

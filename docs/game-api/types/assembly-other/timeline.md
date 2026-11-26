@@ -21,9 +21,9 @@ The game's scheduler for callbacks at a game time or on a repeat (respawns, deca
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Timeline(TimeSpan startingTime)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Timeline(TimeSpan startingTime)"}</code> | Creates a `Timeline` from `startingTime`. |
 
 ## Fields
 

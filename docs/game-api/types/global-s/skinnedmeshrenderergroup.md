@@ -19,9 +19,9 @@ Group of `SkinnedMeshRenderer`s on one object, with helpers to toggle them, swap
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SkinnedMeshRendererGroup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SkinnedMeshRendererGroup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

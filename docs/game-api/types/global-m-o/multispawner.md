@@ -19,9 +19,9 @@ Spawner that spawns set counts of several prefabs and distributions into its ent
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MultiSpawner()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MultiSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

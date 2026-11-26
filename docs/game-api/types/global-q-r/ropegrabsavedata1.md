@@ -20,9 +20,9 @@ Old save data (version 1) for a `RopeGrab`, migrated to `RopeGrabSaveData` on lo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RopeGrabSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RopeGrabSaveData1()"}</code> | Creates a `RopeGrabSaveData1` with default values. |
 
 ## Fields
 

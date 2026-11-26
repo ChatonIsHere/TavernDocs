@@ -19,9 +19,9 @@ Plays the object collision sound at the contact point on a hit, with layer filte
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CollisionSoundEmitter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CollisionSoundEmitter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

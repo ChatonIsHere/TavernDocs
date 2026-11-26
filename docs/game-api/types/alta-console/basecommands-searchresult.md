@@ -19,9 +19,9 @@ One match found by the `search` console command: a module or command whose name 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SearchResult("}<Link to="/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SearchResult("}<Link to="/game-api/types/alta-console/basepart">{"BasePart"}</Link>{" part)"}</code> | Creates a `BaseCommands.SearchResult` from `part`. |
 
 ## Properties
 

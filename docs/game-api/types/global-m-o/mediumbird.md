@@ -19,9 +19,9 @@ Test driver for a bird's animator: pushes inspector values into the animator eac
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MediumBird()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MediumBird()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

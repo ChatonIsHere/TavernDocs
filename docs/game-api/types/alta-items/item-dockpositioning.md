@@ -20,9 +20,9 @@ Where an item sits when stored in a dock: a local position and rotation. `Pickup
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DockPositioning(Vector3 storePosition, Vector3 storeEuler)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DockPositioning(Vector3 storePosition, Vector3 storeEuler)"}</code> | Creates an `Item.DockPositioning` from `storePosition` and `storeEuler`. |
 
 ## Fields
 

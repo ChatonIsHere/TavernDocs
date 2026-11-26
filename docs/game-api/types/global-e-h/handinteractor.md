@@ -20,9 +20,9 @@ Client: detects hand to hand gestures like high fives or fist bumps when two emp
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandInteractor()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandInteractor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

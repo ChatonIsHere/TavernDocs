@@ -19,9 +19,9 @@ A networked animator trigger: the server sets it and clients fire the same trigg
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedTrigger(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedTrigger(string name)"}</code> | Creates an `AnimatedTrigger` from `name`. |
 
 ## Properties
 

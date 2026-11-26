@@ -20,9 +20,9 @@ Wraps a Json.NET `IValueProvider` so values are clamped to a range both when rea
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonRangeValueProviderFilter(IValueProvider baseProvider)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonRangeValueProviderFilter(IValueProvider baseProvider)"}</code> | Creates a `JsonRangeValueProviderFilter` from `baseProvider`. |
 
 ## Fields
 

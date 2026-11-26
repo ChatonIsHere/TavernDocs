@@ -19,9 +19,9 @@ A row in the cave teleporter list command: one available cave layer's teleporter
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporterDetails("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxy">{"CaveTeleporterProxy"}</Link>{" proxy)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CaveTeleporterDetails("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxy">{"CaveTeleporterProxy"}</Link>{" proxy)"}</code> | Creates a `ProgressCommandModule.CaveTeleporterDetails` from `proxy`. |
 
 ## Properties
 

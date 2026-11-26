@@ -19,9 +19,9 @@ Sets local rotation between two Euler angles from a progress value, through a co
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CorrectedRotationSlerp()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CorrectedRotationSlerp()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

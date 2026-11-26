@@ -20,9 +20,9 @@ Client: settings option that lists Vivox input devices and switches the micropho
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MicrophoneEnumSettingAccess()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MicrophoneEnumSettingAccess()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

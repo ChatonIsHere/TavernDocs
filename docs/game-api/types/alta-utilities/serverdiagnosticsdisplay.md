@@ -19,9 +19,9 @@ Client live data display showing the diagnostics text the server sends. It asks 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerDiagnosticsDisplay()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerDiagnosticsDisplay()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Properties
 

@@ -20,9 +20,9 @@ A box collider set up on a hand's palm bone by `CharacterCollisionControllerHelp
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandPalmCollider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandPalmCollider()"}</code> | Creates a `CharacterCollisionControllerHelper.HandPalmCollider` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Two queues that swap: entries collect in one until a timer runs out or it is ful
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DoubleBufferedQueue(int lifetimeMs, int maxEntries)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DoubleBufferedQueue(int lifetimeMs, int maxEntries)"}</code> | Creates a `DoubleBufferedQueue` from `lifetimeMs` and `maxEntries`. |
 
 ## Fields
 

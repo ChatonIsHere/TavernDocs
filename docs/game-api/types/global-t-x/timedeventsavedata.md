@@ -22,9 +22,9 @@ Save data (version 1) for `SerializedTimedEvent`: whether its timers have starte
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimedEventSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimedEventSaveData()"}</code> | Creates a `TimedEventSaveData` with default values. |
 
 ## Fields
 

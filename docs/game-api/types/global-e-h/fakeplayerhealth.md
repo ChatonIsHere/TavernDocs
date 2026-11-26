@@ -20,9 +20,9 @@ A training dummy that shows the damage it takes as popups and a text list of rec
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FakePlayerHealth()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FakePlayerHealth()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

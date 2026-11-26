@@ -20,9 +20,9 @@ Base for a button on an in-world touch screen (such as the camera or menus): tra
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected BasicTouchScreenButton()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected BasicTouchScreenButton()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

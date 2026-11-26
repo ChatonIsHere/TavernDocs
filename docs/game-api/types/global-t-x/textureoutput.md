@@ -18,10 +18,10 @@ Settings for one texture a texture-baking tool writes out: name, size, channels,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TextureOutput()"}</code> |
-| <Link id="m-ctor-2" /><code>{"TextureOutput(bool a, string n, "}<Link to="/game-api/types/global-t-x/texturescale">{"TextureScale"}</Link>{" s, bool sr, "}<Link to="/game-api/types/global-t-x/texturechannels">{"TextureChannels"}</Link>{" c, "}<Link to="/game-api/types/global-t-x/texturecompression">{"TextureCompression"}</Link>{" nc, "}<Link to="/game-api/types/global-i-l/imageformat">{"ImageFormat"}</Link>{" i)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TextureOutput()"}</code> | Creates a `TextureOutput` from `a`, `n`, `s`, `sr`, `c`, `nc` and `i`. |
+| <Link id="m-ctor-2" /><code>{"TextureOutput(bool a, string n, "}<Link to="/game-api/types/global-t-x/texturescale">{"TextureScale"}</Link>{" s, bool sr, "}<Link to="/game-api/types/global-t-x/texturechannels">{"TextureChannels"}</Link>{" c, "}<Link to="/game-api/types/global-t-x/texturecompression">{"TextureCompression"}</Link>{" nc, "}<Link to="/game-api/types/global-i-l/imageformat">{"ImageFormat"}</Link>{" i)"}</code> | Creates a `TextureOutput` from `a`, `n`, `s`, `sr`, `c`, `nc` and `i`. |
 
 ## Fields
 

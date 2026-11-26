@@ -19,9 +19,9 @@ Converter that finds a `PlayerUnlock` from text: a number is looked up as a hash
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlockConverter()"}</code> | Creates a `PlayerUnlockConverter` with default values. |
 
 ## Methods
 

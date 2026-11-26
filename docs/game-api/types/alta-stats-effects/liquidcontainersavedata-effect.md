@@ -19,9 +19,9 @@ One saved effect on a custom liquid.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Effect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Effect()"}</code> | Creates a `LiquidContainerSaveData.Effect` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Settings for one rotating part of the old pickup rotation puzzle. Serializable d
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RotationBucketOLD()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RotationBucketOLD()"}</code> | Creates a `RotationBucketOLD` with default values. |
 
 ## Fields
 

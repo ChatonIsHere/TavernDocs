@@ -20,9 +20,9 @@ Client singleton that logs in to Vivox voice chat with the player's Alta account
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VivoxManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VivoxManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

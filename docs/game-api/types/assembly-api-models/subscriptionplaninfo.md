@@ -18,9 +18,9 @@ Web API model for a supporter subscription plan.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SubscriptionPlanInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SubscriptionPlanInfo()"}</code> | Creates a `SubscriptionPlanInfo` with default values. |
 
 ## Properties
 

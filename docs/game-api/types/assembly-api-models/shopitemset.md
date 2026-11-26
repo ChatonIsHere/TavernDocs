@@ -19,9 +19,9 @@ API model for a set of shop items sold together under one SKU.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemSet()"}</code> | Creates a `ShopItemSet` with default values. |
 
 ## Properties
 

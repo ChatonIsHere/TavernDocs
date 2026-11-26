@@ -19,9 +19,9 @@ An input source made of a primary and optional secondary input (for example a ke
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InputSourcePair()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InputSourcePair()"}</code> | Creates an `InputSourcePair` with default values. |
 
 ## Fields
 

@@ -22,9 +22,9 @@ One point of temperature on an object. The server conducts heat between neighbou
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HeatPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HeatPoint()"}</code> | Creates a `HeatPoint` with default values. |
 
 ## Fields
 

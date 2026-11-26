@@ -19,9 +19,9 @@ One bubble in the quick access menu, showing an action and running it when chose
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"QuickAccessMenuBubble()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"QuickAccessMenuBubble()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

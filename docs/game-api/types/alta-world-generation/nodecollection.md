@@ -18,9 +18,9 @@ A set of grid nodes from the PAGaC procedural generator, with a running bounding
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NodeCollection()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NodeCollection()"}</code> | Creates a `NodeCollection` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Simple pool of plain (non-networked) prefab instances, keyed by prefab. Used by 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InstancedPrefab()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InstancedPrefab()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

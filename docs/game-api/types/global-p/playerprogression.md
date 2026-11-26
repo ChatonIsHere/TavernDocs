@@ -19,9 +19,9 @@ Server: a log record of a progression event (level up, skill bought or skill sol
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerProgression("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/global-p/playerprogression-eventtypeenum">{"PlayerProgression.EventTypeEnum"}</Link>{" eventType, uint currentLevel, uint hash = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerProgression("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/global-p/playerprogression-eventtypeenum">{"PlayerProgression.EventTypeEnum"}</Link>{" eventType, uint currentLevel, uint hash = 0)"}</code> | Creates a `PlayerProgression` from `player`, `path`, `eventType`, `currentLevel` and `hash`. |
 
 ## Properties
 

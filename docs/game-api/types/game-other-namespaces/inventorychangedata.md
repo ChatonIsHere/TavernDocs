@@ -19,9 +19,9 @@ Payload of the `ConsoleEvents.InventoryChanged` console event, raised on the ser
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InventoryChangeData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InventoryChangeData()"}</code> | Creates an `InventoryChangeData` with default values. |
 
 ## Fields
 

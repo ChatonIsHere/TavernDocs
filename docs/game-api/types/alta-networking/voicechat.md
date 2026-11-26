@@ -20,9 +20,9 @@ Client voice chat mute logic: who you can hear (everyone, friends or no one) plu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VoiceChat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VoiceChat()"}</code> | Creates a `VoiceChat` with default values. |
 
 ## Fields
 

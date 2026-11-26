@@ -19,9 +19,9 @@ Internal base for the per-shader atlas blitters. `AtlasDefinition` picks a subcl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ShaderBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ShaderBlit()"}</code> | Creates a `ShaderBlit` with default values. |
 
 ## Methods
 

@@ -20,9 +20,9 @@ Keeps re-checking the grip on a held pickup every frame while it is held, withou
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UpdateGripEachFrame()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UpdateGripEachFrame()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

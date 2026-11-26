@@ -19,9 +19,9 @@ A shop item set as staff create or edit it: a shop item plus the items in the se
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemSetModificationRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemSetModificationRequest()"}</code> | Creates a `ShopItemSetModificationRequest` with default values. |
 
 ## Properties
 

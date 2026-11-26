@@ -19,9 +19,9 @@ Player controller for the desktop (non VR) main menu; only supplies the head tra
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MainMenuDesktopController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MainMenuDesktopController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

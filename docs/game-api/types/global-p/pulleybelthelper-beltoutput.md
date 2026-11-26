@@ -19,9 +19,9 @@ One candidate tangent line from a pulley circle to the next, worked out by `Pull
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BeltOutput(Vector3 tangent, bool isAExternal, bool isBExternal, bool isCExternal)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BeltOutput(Vector3 tangent, bool isAExternal, bool isBExternal, bool isCExternal)"}</code> | Creates a `PulleyBeltHelper.BeltOutput` from `tangent`, `isAExternal`, `isBExternal` and `isCExternal`. |
 
 ## Fields
 

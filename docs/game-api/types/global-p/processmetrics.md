@@ -20,9 +20,9 @@ Old CPU and RAM sampler for one `Process`, marked obsolete in favour of the new 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProcessMetrics(Process process)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProcessMetrics(Process process)"}</code> | Creates a `ProcessMetrics` from `process`. |
 
 ## Fields
 

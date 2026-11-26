@@ -19,9 +19,9 @@ Serializable event with a float value and the `HandleHandler` that raised it. Us
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandleValueEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandleValueEvent()"}</code> | Creates a `HandleValueEvent` with default values. |
 
 ## Used in
 

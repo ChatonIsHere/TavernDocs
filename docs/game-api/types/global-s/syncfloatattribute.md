@@ -20,8 +20,8 @@ Obsolete `SyncAttribute` that marks a float field for syncing, either full preci
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SyncFloatAttribute()"}</code> |
-| <Link id="m-ctor-2" /><code>{"SyncFloatAttribute(float minimum, float maximum, int bits)"}</code> |
-| <Link id="m-ctor-3" /><code>{"SyncFloatAttribute(float minimum, float maximum, float precision)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SyncFloatAttribute()"}</code> | Creates a `SyncFloatAttribute` from `minimum`, `maximum` and `precision`. |
+| <Link id="m-ctor-2" /><code>{"SyncFloatAttribute(float minimum, float maximum, int bits)"}</code> | Creates a `SyncFloatAttribute` from `minimum`, `maximum` and `precision`. |
+| <Link id="m-ctor-3" /><code>{"SyncFloatAttribute(float minimum, float maximum, float precision)"}</code> | Creates a `SyncFloatAttribute` from `minimum`, `maximum` and `precision`. |

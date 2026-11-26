@@ -19,9 +19,9 @@ Character component that runs a Final IK solver as part of the character's fixed
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IKSolverManagerWrapper()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IKSolverManagerWrapper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

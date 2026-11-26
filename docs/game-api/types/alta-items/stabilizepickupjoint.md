@@ -21,9 +21,9 @@ Keeps a jointed pickup (such as a bag on a joint) stable: limits its distance an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StabilizePickupJoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StabilizePickupJoint()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

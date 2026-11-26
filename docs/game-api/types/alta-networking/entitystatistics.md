@@ -20,9 +20,9 @@ Network profiling list of bytes sent per entity, indexed by entity identifier, w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EntityStatistics()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EntityStatistics()"}</code> | Creates an `EntityStatistics` with default values. |
 
 ## Fields
 

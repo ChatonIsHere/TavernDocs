@@ -19,9 +19,9 @@ Offline stand-in for the achievement client: no requests, nothing is stored.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineAchievementApiClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineAchievementApiClient()"}</code> | Creates an `OfflineAchievementApiClient` with default values. |
 
 ## Methods
 

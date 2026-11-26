@@ -21,9 +21,9 @@ A logic receiver for a bool signal (for example a lever or button). Invokes even
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicBoolReceiver()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicBoolReceiver()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

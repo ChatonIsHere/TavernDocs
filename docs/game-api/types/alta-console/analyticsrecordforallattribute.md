@@ -20,9 +20,9 @@ Obsolete. Marked a class or struct so the old `AnalyticsTools.Serialize` include
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnalyticsRecordForAllAttribute("}<Link to="/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" option = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnalyticsRecordForAllAttribute("}<Link to="/game-api/types/alta-console/analyticsoptions">{"AnalyticsOptions"}</Link>{" option = 0)"}</code> | Creates an `AnalyticsRecordForAllAttribute` from `option`. |
 
 ## Properties
 

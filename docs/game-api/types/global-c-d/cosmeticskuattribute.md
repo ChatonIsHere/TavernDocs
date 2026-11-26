@@ -19,6 +19,6 @@ Inspector marker for a string field that stores a cosmetic SKU, as on `GameAchie
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticSkuAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticSkuAttribute()"}</code> | Creates a `CosmeticSkuAttribute` with default values. |

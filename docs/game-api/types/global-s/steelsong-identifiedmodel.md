@@ -19,9 +19,9 @@ A forged model that the local player is working with the Steel Song skill, with 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IdentifiedModel("}<Link to="/game-api/types/alta-crafting/forgedmodel">{"ForgedModel"}</Link>{" model, uint identifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IdentifiedModel("}<Link to="/game-api/types/alta-crafting/forgedmodel">{"ForgedModel"}</Link>{" model, uint identifier)"}</code> | Creates a `SteelSong.IdentifiedModel` from `model` and `identifier`. |
 
 ## Properties
 

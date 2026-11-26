@@ -19,9 +19,9 @@ A temporary `BodyControllerSettings` override on a `BodyController`, kept while 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BodyControllerSettingsOverride("}<Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" settings, Func<bool> relevantCheck)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BodyControllerSettingsOverride("}<Link to="/game-api/types/alta-player/bodycontrollersettings">{"BodyControllerSettings"}</Link>{" settings, Func<bool> relevantCheck)"}</code> | Creates a `BodyController.BodyControllerSettingsOverride` from `settings` and `relevantCheck`. |
 
 ## Fields
 

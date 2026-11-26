@@ -18,10 +18,10 @@ Network state of an `Embeddable` item: whether it is stuck in something and wher
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmbedArguments(bool isEmbedded, Vector3 embedPosition, Quaternion embedRotation, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" connected, int rigidbodyIndex, float scale)"}</code> |
-| <Link id="m-ctor-2" /><code>{"EmbedArguments()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmbedArguments(bool isEmbedded, Vector3 embedPosition, Quaternion embedRotation, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" connected, int rigidbodyIndex, float scale)"}</code> | Creates an `EmbedArguments` with default values. |
+| <Link id="m-ctor-2" /><code>{"EmbedArguments()"}</code> | Creates an `EmbedArguments` with default values. |
 
 ## Fields
 

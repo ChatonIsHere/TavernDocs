@@ -19,9 +19,9 @@ Debug text for one player's last three attacks: damage, type and the follow, dir
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DamageHolder()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DamageHolder()"}</code> | Creates a `DamageDebugDisplay.DamageHolder` with default values. |
 
 ## Fields
 

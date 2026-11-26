@@ -22,9 +22,9 @@ Save data for a `LiquidContainer` (save version 1): its fill level, whether it c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LiquidContainerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LiquidContainerSaveData()"}</code> | Creates a `LiquidContainerSaveData` with default values. |
 
 ## Fields
 

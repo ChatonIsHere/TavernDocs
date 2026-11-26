@@ -20,9 +20,9 @@ Old save data (version 1) for `ClimbingTowerTeleporterNode`, migrated to version
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveDataOld1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveDataOld1()"}</code> | Creates a `ClimbingTowerTeleporterNodeSaveDataOld1` with default values. |
 
 ## Fields
 

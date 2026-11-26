@@ -18,10 +18,10 @@ One field-level validation error in an API error response.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ValidationError(string field, string message)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ValidationError()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ValidationError(string field, string message)"}</code> | Creates a `ValidationError` with default values. |
+| <Link id="m-ctor-2" /><code>{"ValidationError()"}</code> | Creates a `ValidationError` with default values. |
 
 ## Properties
 

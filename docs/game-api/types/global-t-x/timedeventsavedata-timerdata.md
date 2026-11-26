@@ -19,9 +19,9 @@ Saved state of one running timer of a `SerializedTimedEvent`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimerData()"}</code> | Creates a `TimedEventSaveData.TimerData` with default values. |
 
 ## Fields
 

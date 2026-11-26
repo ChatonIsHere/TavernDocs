@@ -21,9 +21,9 @@ Save data for `ParticlesToPlayer`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ParticlesToPlayerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ParticlesToPlayerSaveData()"}</code> | Creates a `ParticlesToPlayerSaveData` with default values. |
 
 ## Fields
 

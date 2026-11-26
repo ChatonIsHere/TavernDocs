@@ -20,9 +20,9 @@ Lets tools stick into a surface: a hard enough hit wedges the tool in with a spr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmbeddableSurface()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmbeddableSurface()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

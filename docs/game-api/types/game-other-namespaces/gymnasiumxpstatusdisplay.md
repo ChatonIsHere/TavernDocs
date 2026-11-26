@@ -19,9 +19,9 @@ Debug panel in the feature test gymnasium that shows and changes the nearest pla
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GymnasiumXpStatusDisplay()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GymnasiumXpStatusDisplay()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

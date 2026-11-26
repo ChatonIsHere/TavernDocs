@@ -18,10 +18,10 @@ Body of an Alta web API request to send a password reset email.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RequestPasswordResetRequest()"}</code> |
-| <Link id="m-ctor-2" /><code>{"RequestPasswordResetRequest(string email)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RequestPasswordResetRequest()"}</code> | Creates a `RequestPasswordResetRequest` from `email`. |
+| <Link id="m-ctor-2" /><code>{"RequestPasswordResetRequest(string email)"}</code> | Creates a `RequestPasswordResetRequest` from `email`. |
 
 ## Properties
 

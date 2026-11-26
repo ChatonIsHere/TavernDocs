@@ -19,9 +19,9 @@ Inspector attribute that shows, hides or locks a field based on whether another 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ValueConditionAttribute(string valueField, float higherThanToTrue, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" trueMode = 2, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" falseMode = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ValueConditionAttribute(string valueField, float higherThanToTrue, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" trueMode = 2, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" falseMode = 0)"}</code> | Creates a `ValueConditionAttribute` from `valueField`, `higherThanToTrue`, `trueMode` and `falseMode`. |
 
 ## Properties
 

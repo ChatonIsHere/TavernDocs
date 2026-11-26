@@ -20,9 +20,9 @@ Editor asset that stores the health of every network prefab as a list of `Instan
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HealthData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HealthData()"}</code> | Creates a `HealthData` with default values. |
 
 ## Fields
 

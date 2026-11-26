@@ -19,9 +19,9 @@ UNET transport statistics for one host ID: message queue sizes plus outgoing mes
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportHostStatistic(int hostIdentifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportHostStatistic(int hostIdentifier)"}</code> | Creates a `NetworkTransportHostStatistic` from `hostIdentifier`. |
 
 ## Fields
 

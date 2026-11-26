@@ -20,9 +20,9 @@ Base ScriptableObject for an installer that registers platform-specific services
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformSpecificScriptableObjectInstaller()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformSpecificScriptableObjectInstaller()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Methods
 

@@ -19,9 +19,9 @@ Value provider used by `JsonRangeAttribute`: clamps an int property between `min
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonRangeValueProvider(IValueProvider baseProvider, int min, int max)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonRangeValueProvider(IValueProvider baseProvider, int min, int max)"}</code> | Creates a `JsonRangeValueProvider` from `baseProvider`, `min` and `max`. |
 
 ## Fields
 

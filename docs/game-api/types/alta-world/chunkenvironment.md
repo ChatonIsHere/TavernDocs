@@ -18,9 +18,9 @@ Per-chunk environment settings on a `LocationChunk`: ambient temperature overrid
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkEnvironment()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkEnvironment()"}</code> | Creates a `ChunkEnvironment` with default values. |
 
 ## Fields
 

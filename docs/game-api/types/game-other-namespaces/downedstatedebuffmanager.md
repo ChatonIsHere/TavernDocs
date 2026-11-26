@@ -18,9 +18,9 @@ Tracks the timed stat debuffs a player gets on respawning from the downed state,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DownedStateDebuffManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DownedStateDebuffManager()"}</code> | Creates a `DownedStateDebuffManager` with default values. |
 
 ## Fields
 

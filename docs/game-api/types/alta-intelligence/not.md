@@ -20,9 +20,9 @@ Logical NOT in the unused Prolog-like logic engine, with weightings: a half-true
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Not("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Not("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> | Creates a `Not` from `right`. |
 
 ## Properties
 

@@ -21,9 +21,9 @@ Current save data (version 2) for a `TreeSpawner`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData()"}</code> | Creates a `TreeSpawnerSaveData` with default values. |
 
 ## Fields
 

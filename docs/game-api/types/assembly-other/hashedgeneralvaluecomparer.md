@@ -23,9 +23,9 @@ Equality comparer that treats `HashedGeneralValue` assets as equal when their ha
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private HashedGeneralValueComparer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private HashedGeneralValueComparer()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 </details>
 

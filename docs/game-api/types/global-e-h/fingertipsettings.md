@@ -18,9 +18,9 @@ Per-character setup of each hand's index finger tip transform and hand triangle.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FingerTipSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FingerTipSettings()"}</code> | Creates a `FingerTipSettings` with default values. |
 
 ## Fields
 

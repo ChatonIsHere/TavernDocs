@@ -21,9 +21,9 @@ Save data for a `PageInstance`: either a reference to a page from a page provide
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PageInstanceSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PageInstanceSaveData()"}</code> | Creates a `PageInstanceSaveData` with default values. |
 
 ## Fields
 

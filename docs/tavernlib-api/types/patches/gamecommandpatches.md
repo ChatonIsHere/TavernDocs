@@ -34,11 +34,11 @@ Patches for game console commands that answered Success having done nothing: `ti
 | Member | What it is |
 | --- | --- |
 | <Link id="m-apply" /><code>{"internal static void Apply(Harmony harmony)"}</code> | Internal: patches each command, and swaps `time ofday` for a version that returns the time. Logs a warning and skips any method the game lacks. |
-| <Link id="m-patch" /><code>{"private static void Patch(Harmony harmony, Type type, string name, string prefix = null, string postfix = null)"}</code> |  |
-| <Link id="m-replace" /><code>{"private static void Replace(string moduleName, string name, MethodInfo method)"}</code> |  |
-| <Link id="m-requireselection" /><code>{"private static void RequireSelection()"}</code> |  |
-| <Link id="m-teleporttocavelayer" /><code>{"private static async Task<string> TeleportToCaveLayer("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, int layer)"}</code> |  |
-| <Link id="m-timemanager" /><code>{"private static "}<Link to="/game-api/types/global-e-h/gametimemanager">{"GameTimeManager"}</Link>{" TimeManager()"}</code> |  |
-| <Link id="m-timeofday" /><code>{"private static float TimeOfDay(bool isNormalised = false)"}</code> |  |
+| <Link id="m-patch" /><code>{"private static void Patch(Harmony harmony, Type type, string name, string prefix = null, string postfix = null)"}</code> | Applies a prefix or postfix to a game method, and logs a warning instead of throwing if it is missing or can't be patched. |
+| <Link id="m-replace" /><code>{"private static void Replace(string moduleName, string name, MethodInfo method)"}</code> | Swaps a console command for a new one built on the given method, keeping the old one's aliases, requirements and priority. |
+| <Link id="m-requireselection" /><code>{"private static void RequireSelection()"}</code> | Throws a `CommandException` when nothing is selected. |
+| <Link id="m-teleporttocavelayer" /><code>{"private static async Task<string> TeleportToCaveLayer("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players, int layer)"}</code> | Teleports the players to a cave layer's portal, generating the layers first if needed, and answers who it moved. |
+| <Link id="m-timemanager" /><code>{"private static "}<Link to="/game-api/types/global-e-h/gametimemanager">{"GameTimeManager"}</Link>{" TimeManager()"}</code> | Returns `GameTimeManager.Instance`, or throws a `CommandException` if the server has no day and night. |
+| <Link id="m-timeofday" /><code>{"private static float TimeOfDay(bool isNormalised = false)"}</code> | Replacement for the `time ofday` command; returns the current time, normalised if asked. |
 
 </details>

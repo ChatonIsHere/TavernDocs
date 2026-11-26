@@ -18,9 +18,9 @@ The API's answer after a coupon is redeemed: what it gave.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CouponRedeemedResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CouponRedeemedResponse()"}</code> | Creates a `CouponRedeemedResponse` with default values. |
 
 ## Properties
 

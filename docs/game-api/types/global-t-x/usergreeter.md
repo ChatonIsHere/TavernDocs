@@ -19,9 +19,9 @@ A `LoggedInTool` that shows a random greeting with the logged-in username on a t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserGreeter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserGreeter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

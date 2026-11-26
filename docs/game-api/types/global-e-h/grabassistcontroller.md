@@ -19,9 +19,9 @@ Client helper on each `Interactor` that runs grab assist: while the grab assist 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrabAssistController("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, LayerMask collisionMask, Action onAttemptInteraction)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrabAssistController("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, LayerMask collisionMask, Action onAttemptInteraction)"}</code> | Creates a `GrabAssistController` from `interactor`, `collisionMask` and `onAttemptInteraction`. |
 
 ## Fields
 

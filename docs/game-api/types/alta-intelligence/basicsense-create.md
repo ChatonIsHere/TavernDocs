@@ -20,6 +20,6 @@ Editor menu item for making a `BasicSense` asset (under the Township creatures c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `BasicSense.Create` with default values. |

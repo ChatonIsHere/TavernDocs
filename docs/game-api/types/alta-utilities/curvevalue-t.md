@@ -19,10 +19,10 @@ Pairs a topic with an animation curve. Base of `AttributeCurveValue` for biome a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CurveValue()"}</code> |
-| <Link id="m-ctor-2" /><code>{"CurveValue(T topic, AnimationCurve curve)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CurveValue()"}</code> | Creates a `CurveValue` from `topic` and `curve`. |
+| <Link id="m-ctor-2" /><code>{"CurveValue(T topic, AnimationCurve curve)"}</code> | Creates a `CurveValue` from `topic` and `curve`. |
 
 ## Fields
 

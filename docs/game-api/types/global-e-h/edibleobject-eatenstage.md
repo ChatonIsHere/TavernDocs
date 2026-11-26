@@ -19,9 +19,9 @@ Bite settings for an `EdibleObject`: how many bites, how long each takes and the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EatenStage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EatenStage()"}</code> | Creates an `EdibleObject.EatenStage` with default values. |
 
 ## Fields
 

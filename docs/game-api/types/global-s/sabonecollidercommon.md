@@ -19,6 +19,6 @@ Settings types shared by the SA Collider Builder's bone collider tools: bone wei
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SABoneColliderCommon()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SABoneColliderCommon()"}</code> | Creates a `SABoneColliderCommon` with default values. |

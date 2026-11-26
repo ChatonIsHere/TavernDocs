@@ -20,9 +20,9 @@ A forest's generated layout: outline, entrances and a path graph of nodes, edges
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForestGeneration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForestGeneration()"}</code> | Creates a `ForestGeneration` with default values. |
 
 ## Fields
 

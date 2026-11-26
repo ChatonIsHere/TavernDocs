@@ -21,9 +21,9 @@ Internal save data (version 1) for a `CaveLayerStreamer`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CaveLayerStreamerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CaveLayerStreamerSaveData()"}</code> | Creates a `CaveLayerStreamerSaveData` with default values. |
 
 ## Fields
 

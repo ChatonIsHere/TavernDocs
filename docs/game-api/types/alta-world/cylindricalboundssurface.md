@@ -20,9 +20,9 @@ Spawn surface that finds points by raycasting sideways (outward or inward) insid
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CylindricalBoundsSurface()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CylindricalBoundsSurface()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

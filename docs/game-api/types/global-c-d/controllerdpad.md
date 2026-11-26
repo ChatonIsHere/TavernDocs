@@ -18,9 +18,9 @@ Turns a hand's touchpad and thumbstick input into numbered directions and four-w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ControllerDPad("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ControllerDPad("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | Creates a `ControllerDPad` from `playerInput`. |
 
 ## Fields
 

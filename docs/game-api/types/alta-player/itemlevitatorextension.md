@@ -19,9 +19,9 @@ Base component that adds a condition to the `ItemLevitator` on the same object: 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ItemLevitatorExtension()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ItemLevitatorExtension()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

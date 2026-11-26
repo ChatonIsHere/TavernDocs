@@ -19,9 +19,9 @@ Console requirement: the command only runs outside play mode (in the Unity edito
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EditorOnlyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EditorOnlyAttribute()"}</code> | Creates an `EditorOnlyAttribute` with default values. |
 
 ## Methods
 

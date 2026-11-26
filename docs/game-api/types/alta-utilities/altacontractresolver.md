@@ -19,9 +19,9 @@ Json.NET contract resolver that lets a `JsonPropertyFilterAttribute` on a member
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaContractResolver()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaContractResolver()"}</code> | Creates an `AltaContractResolver` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Stacking instructions asset that packs spheres in a box grid inside a dock. Crea
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstruction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstruction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

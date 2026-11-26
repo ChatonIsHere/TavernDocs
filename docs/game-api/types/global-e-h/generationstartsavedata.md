@@ -20,9 +20,9 @@ Save data for a `GenerationStarter`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GenerationStartSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GenerationStartSaveData()"}</code> | Creates a `GenerationStartSaveData` with default values. |
 
 ## Fields
 

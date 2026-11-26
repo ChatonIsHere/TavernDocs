@@ -18,9 +18,9 @@ A social media link shown in the launcher, part of `LauncherGameInfoFull.SocialM
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SocialMediaInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SocialMediaInfo()"}</code> | Creates a `SocialMediaInfo` with default values. |
 
 ## Properties
 

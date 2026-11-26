@@ -20,9 +20,9 @@ A slot that shows a ghost preview when a matching `GhostSnapObject` is brought n
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GhostSnapSlot()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GhostSnapSlot()"}</code> | Creates a `GhostSnapSlot` with default values. |
 
 ## Fields
 

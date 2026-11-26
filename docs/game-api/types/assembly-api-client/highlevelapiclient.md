@@ -22,9 +22,9 @@ The online client for Alta's web API, one sub-client per area. Made by `HighLeve
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"internal HighLevelApiClient(string endpointUri, string websocketUri, string userAgent = null, int timeout = 40)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"internal HighLevelApiClient(string endpointUri, string websocketUri, string userAgent = null, int timeout = 40)"}</code> | Creates a `HighLevelApiClient` from `endpointUri`, `websocketUri`, `userAgent` and `timeout`. |
 
 </details>
 
@@ -35,7 +35,7 @@ The online client for Alta's web API, one sub-client per area. Made by `HighLeve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | Logger for this class. |
 | <Link id="m-websocketuri" /><code>{"private string websocketUri"}</code> | Websocket address passed in by the factory. Stored but not read by this class. |
 
 </details>

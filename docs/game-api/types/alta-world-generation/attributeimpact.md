@@ -18,9 +18,9 @@ Weights where a global population spawns by one biome attribute. `GlobalPopulati
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttributeImpact()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttributeImpact()"}</code> | Creates an `AttributeImpact` with default values. |
 
 ## Fields
 

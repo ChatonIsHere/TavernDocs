@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/Items/Docking`: menu item cl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Docking()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Docking()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Items.Docking` with default values. |

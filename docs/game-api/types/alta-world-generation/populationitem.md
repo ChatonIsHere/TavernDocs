@@ -21,9 +21,9 @@ Marks an entity as spawned by a `PopulationSample`, with the spawn point it used
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationItem()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationItem()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Properties
 

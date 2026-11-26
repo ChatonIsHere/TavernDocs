@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/Mining`: menu item classes i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Mining()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Mining()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Mining` with default values. |

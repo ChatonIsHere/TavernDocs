@@ -18,9 +18,9 @@ Inspector-editable render texture settings that can hand out a temporary render 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedRenderTextureDescriptor()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedRenderTextureDescriptor()"}</code> | Creates a `SerializedRenderTextureDescriptor` with default values. |
 
 ## Fields
 

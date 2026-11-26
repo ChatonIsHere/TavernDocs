@@ -21,9 +21,9 @@ Settings for a box collider on a character bone, used by `CharacterCollisionCont
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoneBoxCollider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoneBoxCollider()"}</code> | Creates a `CharacterCollisionControllerHelper.BoneBoxCollider` with default values. |
 
 ## Fields
 

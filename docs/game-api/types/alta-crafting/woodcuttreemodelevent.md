@@ -19,9 +19,9 @@ Serializable `AltaEvent` raised with a `WoodcutTreeModel`, used for `WoodcutConn
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeModelEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeModelEvent()"}</code> | Creates a `WoodcutTreeModelEvent` with default values. |
 
 ## Used in
 

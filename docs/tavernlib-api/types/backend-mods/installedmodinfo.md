@@ -19,9 +19,9 @@ A tracked mod from `ModInstaller.ScanMods`: its record and whether it's enabled.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InstalledModInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InstalledModInfo()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 

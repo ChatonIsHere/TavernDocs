@@ -19,9 +19,9 @@ Write-only JSON converter that writes a `Type` as its name string.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StringTypeConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StringTypeConverter()"}</code> | Creates a `StringTypeConverter` with default values. |
 
 ## Properties
 

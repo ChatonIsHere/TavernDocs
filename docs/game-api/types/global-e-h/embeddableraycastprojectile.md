@@ -19,9 +19,9 @@ Links a `RaycastProjectile` to an `Embeddable`, so a raycast hit makes the proje
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmbeddableRaycastProjectile()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmbeddableRaycastProjectile()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

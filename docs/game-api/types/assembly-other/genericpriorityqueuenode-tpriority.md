@@ -19,9 +19,9 @@ Base class for items in a `GenericPriorityQueue`, with any comparable priority t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GenericPriorityQueueNode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GenericPriorityQueueNode()"}</code> | Creates a `GenericPriorityQueueNode` with default values. |
 
 ## Properties
 

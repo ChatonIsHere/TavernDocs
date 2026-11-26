@@ -19,9 +19,9 @@ One page of the settings panel: the board it shows and the lever that switches t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SettingsPanelConfiguration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SettingsPanelConfiguration()"}</code> | Creates a `SettingsPanel.SettingsPanelConfiguration` with default values. |
 
 ## Fields
 

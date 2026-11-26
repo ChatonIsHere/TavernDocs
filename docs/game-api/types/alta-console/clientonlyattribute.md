@@ -19,9 +19,9 @@ Console requirement: the module or command is only available when the current ga
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientOnlyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientOnlyAttribute()"}</code> | Creates a `ClientOnlyAttribute` with default values. |
 
 ## Methods
 

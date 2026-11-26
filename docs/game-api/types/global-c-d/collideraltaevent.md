@@ -19,9 +19,9 @@ Serializable `AltaEvent` that passes a `Collider`, for inspector-wired callbacks
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColliderAltaEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColliderAltaEvent()"}</code> | Creates a `ColliderAltaEvent` with default values. |
 
 ## Used in
 

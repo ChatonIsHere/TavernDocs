@@ -19,6 +19,6 @@ Exception a command can throw to report a failure. `CommandService` catches it s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CommandException(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CommandException(string message)"}</code> | Creates the exception with `message`. |

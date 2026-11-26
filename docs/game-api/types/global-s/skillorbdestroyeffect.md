@@ -19,9 +19,9 @@ Pooled skill orb effect that starts its dissolve animation as soon as it is take
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SkillOrbDestroyEffect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SkillOrbDestroyEffect()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Methods
 

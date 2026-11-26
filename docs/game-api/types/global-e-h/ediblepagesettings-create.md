@@ -20,6 +20,6 @@ Editor menu entry for creating the `EdiblePageSettings` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `EdiblePageSettings.Create` with default values. |

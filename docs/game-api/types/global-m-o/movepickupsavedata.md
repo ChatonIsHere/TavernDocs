@@ -21,9 +21,9 @@ Save data (version 2) for `MovePickup`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MovePickupSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MovePickupSaveData()"}</code> | Creates a `MovePickupSaveData` with default values. |
 
 ## Fields
 

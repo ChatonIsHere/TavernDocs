@@ -18,9 +18,9 @@ Pairs a collider with an `ImpactDetectorColliderModifier`, so an `ImpactDetector
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColliderMap(Collider collider, "}<Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColliderMap(Collider collider, "}<Link to="/game-api/types/alta-items/impactdetectorcollidermodifier">{"ImpactDetectorColliderModifier"}</Link>{" modifier)"}</code> | Creates a `ColliderMap` from `collider` and `modifier`. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data (version 2) for `GeneratedLoot`. Internal.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GeneratedLootSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GeneratedLootSaveData()"}</code> | Creates a `GeneratedLootSaveData` with default values. |
 
 ## Fields
 

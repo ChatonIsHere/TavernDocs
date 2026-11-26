@@ -21,9 +21,9 @@ The player state for the character customization room. The client spawns the roo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomizationState(IPostProcessController postProcessController)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomizationState(IPostProcessController postProcessController)"}</code> | Creates a `CustomizationState` from `postProcessController`. |
 
 ## Fields
 

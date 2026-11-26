@@ -19,9 +19,9 @@ All the settings of one SA mesh collider build (split, reducer, collider and rig
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SAMeshColliderProperty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SAMeshColliderProperty()"}</code> | Creates a `SAMeshColliderCommon.SAMeshColliderProperty` with default values. |
 
 ## Fields
 

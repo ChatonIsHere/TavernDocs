@@ -20,9 +20,9 @@ Holds the active transitions out of one player state and runs them. The server-s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StateTransitionsManager("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" parentState)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StateTransitionsManager("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" parentState)"}</code> | Creates a `StateTransitionsManager` from `parentState`. |
 
 ## Fields
 

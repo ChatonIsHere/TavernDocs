@@ -20,9 +20,9 @@ Server: running action that does nothing, so the creature sits idle while it run
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveDisabled()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveDisabled()"}</code> | Creates an `ActiveDisabled` with default values. |
 
 ## Methods
 

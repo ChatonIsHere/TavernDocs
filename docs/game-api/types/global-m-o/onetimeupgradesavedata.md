@@ -21,9 +21,9 @@ Save format (version 1) for `OneTimeUpgradeInteraction`, holding the players who
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OneTimeUpgradeSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OneTimeUpgradeSaveData()"}</code> | Creates an `OneTimeUpgradeSaveData` with default values. |
 
 ## Fields
 

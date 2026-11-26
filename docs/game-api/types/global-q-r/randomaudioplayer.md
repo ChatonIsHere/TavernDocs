@@ -19,9 +19,9 @@ Client: plays a random sound from a `SoundEffectSet` on this object over and ove
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RandomAudioPlayer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RandomAudioPlayer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

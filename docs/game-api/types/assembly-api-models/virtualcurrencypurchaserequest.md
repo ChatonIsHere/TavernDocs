@@ -19,9 +19,9 @@ Request body for buying a virtual currency package with a payment method.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VirtualCurrencyPurchaseRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VirtualCurrencyPurchaseRequest()"}</code> | Creates a `VirtualCurrencyPurchaseRequest` with default values. |
 
 ## Properties
 

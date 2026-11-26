@@ -20,12 +20,12 @@ Thread-safe group of disposables that are disposed together. Anything added afte
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CompositeDisposable()"}</code> |
-| <Link id="m-ctor-2" /><code>{"CompositeDisposable(int capacity)"}</code> |
-| <Link id="m-ctor-3" /><code>{"CompositeDisposable(params IDisposable[] disposables)"}</code> |
-| <Link id="m-ctor-4" /><code>{"CompositeDisposable(IEnumerable<IDisposable> disposables)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CompositeDisposable()"}</code> | Creates a `CompositeDisposable` from `disposables`. |
+| <Link id="m-ctor-2" /><code>{"CompositeDisposable(int capacity)"}</code> | Creates a `CompositeDisposable` from `disposables`. |
+| <Link id="m-ctor-3" /><code>{"CompositeDisposable(params IDisposable[] disposables)"}</code> | Creates a `CompositeDisposable` from `disposables`. |
+| <Link id="m-ctor-4" /><code>{"CompositeDisposable(IEnumerable<IDisposable> disposables)"}</code> | Creates a `CompositeDisposable` from `disposables`. |
 
 ## Fields
 

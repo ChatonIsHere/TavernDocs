@@ -20,9 +20,9 @@ Generation part that points the object's forward axis along the terrain normal a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AlignWithTerrainSlope()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AlignWithTerrainSlope()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Methods
 

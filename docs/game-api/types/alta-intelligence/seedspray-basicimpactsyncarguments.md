@@ -19,9 +19,9 @@ Network copy of a seed's hit, sent by the server so clients apply the same impac
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicImpactSyncArguments("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" toolHit, uint struckID)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicImpactSyncArguments("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" toolHit, uint struckID)"}</code> | Creates a `SeedSpray.BasicImpactSyncArguments` from `toolHit` and `struckID`. |
 
 ## Fields
 

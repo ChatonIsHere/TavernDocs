@@ -21,9 +21,9 @@ A private NLog filter that drops the game's log lines that print the whole text 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RefusedLoginFilter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RefusedLoginFilter()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Methods
 
@@ -35,8 +35,8 @@ A private NLog filter that drops the game's log lines that print the whole text 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-add" /><code>{"private static void Add(LoggingRule rule)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-add" /><code>{"private static void Add(LoggingRule rule)"}</code> | Adds the filter to a logging rule, and to its child rules, if it isn't there yet. |
 
 </details>

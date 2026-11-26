@@ -19,9 +19,9 @@ A tiny component whose `ToggleActive` flips every direct child on or off. Meant 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ToggleChildrenActive()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ToggleChildrenActive()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Methods
 

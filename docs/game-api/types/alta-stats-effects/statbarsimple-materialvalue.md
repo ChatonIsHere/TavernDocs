@@ -19,9 +19,9 @@ One float on a stat bar's material that can be set straight away or eased toward
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialValue(string property, "}<Link to="/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar, float lerpSpeed)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialValue(string property, "}<Link to="/game-api/types/alta-stats-effects/statbarsimple">{"StatBarSimple"}</Link>{" bar, float lerpSpeed)"}</code> | Creates a `StatBarSimple.MaterialValue` from `property`, `bar` and `lerpSpeed`. |
 
 ## Fields
 

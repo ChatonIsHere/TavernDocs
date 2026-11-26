@@ -18,9 +18,9 @@ Client-side lookup of micro tutorial step instances by player id and step. Owned
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientStepInstanceMap()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientStepInstanceMap()"}</code> | Creates a `ClientStepInstanceMap` with default values. |
 
 ## Fields
 

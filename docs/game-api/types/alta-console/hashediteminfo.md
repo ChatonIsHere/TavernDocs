@@ -18,9 +18,9 @@ A hash and name pair for console output, such as the list of spawnable prefabs. 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HashedItemInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HashedItemInfo()"}</code> | Creates a `HashedItemInfo` with default values. |
 
 ## Properties
 

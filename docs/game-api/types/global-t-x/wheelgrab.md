@@ -21,9 +21,9 @@ Turns a wheel's rotation into a saved 0 to 1 progress value. Runs every frame on
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WheelGrab()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WheelGrab()"}</code> | Creates a `WheelGrab` with default values. |
 
 ## Fields
 

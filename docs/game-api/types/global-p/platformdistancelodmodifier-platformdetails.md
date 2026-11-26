@@ -19,9 +19,9 @@ LOD distances to use on one platform, applied to a `DistanceLODGroup` at bake ti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> | Creates a `PlatformDistanceLODModifier.PlatformDetails` with default values. |
 
 ## Fields
 

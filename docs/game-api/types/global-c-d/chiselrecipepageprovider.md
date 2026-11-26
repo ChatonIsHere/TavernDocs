@@ -19,9 +19,9 @@ Page provider (id 4) that makes recipe pages for chisel shapes, built from `Chis
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChiselRecipePageProvider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChiselRecipePageProvider()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

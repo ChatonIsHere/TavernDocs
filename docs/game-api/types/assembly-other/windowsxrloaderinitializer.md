@@ -19,9 +19,9 @@ PC startup service (VContainer) that picks OpenXR, Valve OpenVR or no VR, swaps 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WindowsXRLoaderInitializer("}<Link to="/game-api/types/assembly-other/iwindowsxrloadersettings">{"IWindowsXRLoaderSettings"}</Link>{" settings, "}<Link to="/game-api/types/assembly-other/ixrmanagersettingscontroller">{"IXRManagerSettingsController"}</Link>{" xrManagerController, IEnumerable<"}<Link to="/game-api/types/assembly-other/ixrsupportsystem">{"IXRSupportSystem"}</Link>{"> xrSupportSystems)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WindowsXRLoaderInitializer("}<Link to="/game-api/types/assembly-other/iwindowsxrloadersettings">{"IWindowsXRLoaderSettings"}</Link>{" settings, "}<Link to="/game-api/types/assembly-other/ixrmanagersettingscontroller">{"IXRManagerSettingsController"}</Link>{" xrManagerController, IEnumerable<"}<Link to="/game-api/types/assembly-other/ixrsupportsystem">{"IXRSupportSystem"}</Link>{"> xrSupportSystems)"}</code> | Creates a `WindowsXRLoaderInitializer` from `settings`, `xrManagerController` and `xrSupportSystems`. |
 
 ## Fields
 

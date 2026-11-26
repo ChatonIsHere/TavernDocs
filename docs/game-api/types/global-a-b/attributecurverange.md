@@ -19,10 +19,10 @@ A curve and value range for one biome attribute, as a serializable `CurveRange` 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttributeCurveRange()"}</code> |
-| <Link id="m-ctor-2" /><code>{"AttributeCurveRange("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" topic, AnimationCurve curve, float value1, float value2)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttributeCurveRange()"}</code> | Creates an `AttributeCurveRange` from `topic`, `curve`, `value1` and `value2`. |
+| <Link id="m-ctor-2" /><code>{"AttributeCurveRange("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" topic, AnimationCurve curve, float value1, float value2)"}</code> | Creates an `AttributeCurveRange` from `topic`, `curve`, `value1` and `value2`. |
 
 ## Used in
 

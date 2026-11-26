@@ -19,10 +19,10 @@ The river network for a forest: nodes, the overground paths and waterfalls. It c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, float overgroundVolumeThreshold, float nodeWidthMultiplier, float maxVolume)"}</code> |
-| <Link id="m-ctor-2" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, float overgroundVolumeThreshold, float nodeWidthMultiplier, float maxVolume)"}</code> | Creates a `RiverGeneration` from `forest`. |
+| <Link id="m-ctor-2" /><code>{"RiverGeneration("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest)"}</code> | Creates a `RiverGeneration` from `forest`. |
 
 ## Fields
 

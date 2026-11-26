@@ -20,9 +20,9 @@ A **class** in `Alta.IO`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FileInfoWrapper(FileInfo file)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FileInfoWrapper(FileInfo file)"}</code> | Creates a `FileInfoWrapper` from `file`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ A small character figure that shows a saved cosmetic preset and can be picked up
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticPresetTrophy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticPresetTrophy()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -20,6 +20,6 @@ Editor menu entry that creates a new `FireSettings` asset under the Township Mis
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `FireSettings.Create` with default values. |

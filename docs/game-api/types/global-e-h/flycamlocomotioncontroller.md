@@ -20,9 +20,9 @@ Moves the fly cam from keyboard, mouse and gamepad, with optional cinematic smoo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FlyCamLocomotionController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FlyCamLocomotionController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ A temperature and the time food must spend at it, used for the weak, optimal and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CookingTemperatureDuration(float temperature, float duration)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CookingTemperatureDuration(float temperature, float duration)"}</code> | Creates a `CookingTemperatureDuration` from `temperature` and `duration`. |
 
 ## Fields
 

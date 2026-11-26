@@ -19,9 +19,9 @@ Server: one connected remote console client. Made by `ServerRemoteConsole` from 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientHandler(Socket clientSocket, JwtSecurityToken token)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientHandler(Socket clientSocket, JwtSecurityToken token)"}</code> | Creates a `ClientHandler` from `clientSocket` and `token`. |
 
 ## Properties
 

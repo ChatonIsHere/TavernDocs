@@ -19,9 +19,9 @@ A UI outline effect that draws eight shadow copies around a graphic, with an opt
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomOutline()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomOutline()"}</code> | Creates a `CustomOutline` with default values. |
 
 ## Fields
 

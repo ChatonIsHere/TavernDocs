@@ -19,9 +19,9 @@ Build bake step that sets a skinned mesh renderer's bone quality on chosen platf
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SkinnedMeshPlatformQualityController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SkinnedMeshPlatformQualityController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

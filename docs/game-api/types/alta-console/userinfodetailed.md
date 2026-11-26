@@ -19,9 +19,9 @@ A `UserInfo` with a player's body, chunk and head and hand transforms, returned 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserInfoDetailed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserInfoDetailed("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Creates an `UserInfoDetailed` from `player`. |
 
 ## Properties
 

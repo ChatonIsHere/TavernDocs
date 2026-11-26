@@ -18,9 +18,9 @@ What a client knows about one map landmark: its map, index, position, icons and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MarkerInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MarkerInfo()"}</code> | Creates a `MarkerInfo` with default values. |
 
 ## Properties
 

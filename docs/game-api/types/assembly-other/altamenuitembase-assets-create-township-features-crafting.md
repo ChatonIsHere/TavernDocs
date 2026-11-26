@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Township/Features/Crafting.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Crafting()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Crafting()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Crafting` with default values. |

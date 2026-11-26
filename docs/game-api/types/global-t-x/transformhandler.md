@@ -20,9 +20,9 @@ A serializable `UnityEvent` that passes a `Transform`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TransformHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransformHandler()"}</code> | Creates a `TransformHandler` with default values. |
 
 ## Used in
 

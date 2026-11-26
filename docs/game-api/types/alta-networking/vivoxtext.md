@@ -18,9 +18,9 @@ Client: wraps text messaging on a Vivox channel session, raising an event for ea
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VivoxText(IChannelSession session)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VivoxText(IChannelSession session)"}</code> | Creates a `VivoxText` from `session`. |
 
 ## Fields
 

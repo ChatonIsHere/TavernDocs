@@ -20,18 +20,18 @@ Patches `GarbageCollectTimer.Start` to set the timer's interval from `garbage_co
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GarbageCollectIntervalPatch()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GarbageCollectIntervalPatch()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-intervalfield" /><code>{"private static readonly FieldInfo IntervalField"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-intervalfield" /><code>{"private static readonly FieldInfo IntervalField"}</code> | Reflection handle on the private `interval` field of `GarbageCollectTimer`. |
 
 </details>
 

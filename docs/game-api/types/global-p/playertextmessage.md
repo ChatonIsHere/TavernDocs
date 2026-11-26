@@ -18,9 +18,9 @@ A text message and how long to show it, sent from the server to one player by `P
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerTextMessage(string message, float displayDuration)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerTextMessage(string message, float displayDuration)"}</code> | Creates a `PlayerTextMessage` from `message` and `displayDuration`. |
 
 ## Fields
 

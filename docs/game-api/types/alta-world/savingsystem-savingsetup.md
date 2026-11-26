@@ -19,9 +19,9 @@ How one savable type is saved: its hash, every save data version registered with
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SavingSetup(Type topic)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SavingSetup(Type topic)"}</code> | Creates a `SavingSystem.SavingSetup` from `topic`. |
 
 ## Fields
 

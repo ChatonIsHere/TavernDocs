@@ -19,9 +19,9 @@ Seeded 32-bit xxHash, a `HashFunction`. Cave generation uses it to get repeatabl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"XXHash(int seed)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"XXHash(int seed)"}</code> | Creates a `XXHash` from `seed`. |
 
 ## Fields
 

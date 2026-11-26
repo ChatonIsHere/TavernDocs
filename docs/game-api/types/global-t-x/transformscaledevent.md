@@ -19,9 +19,9 @@ Serializable event with a transform and a scale value, used for the scaled hit-g
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TransformScaledEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransformScaledEvent()"}</code> | Creates a `TransformScaledEvent` with default values. |
 
 ## Used in
 

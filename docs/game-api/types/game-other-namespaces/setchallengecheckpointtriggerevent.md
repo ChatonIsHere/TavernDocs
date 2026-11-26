@@ -20,9 +20,9 @@ Zone event asset that records the zone as the last challenge checkpoint, for cha
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SetChallengeCheckpointTriggerEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SetChallengeCheckpointTriggerEvent()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Methods
 

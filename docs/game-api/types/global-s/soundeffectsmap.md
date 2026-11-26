@@ -21,9 +21,9 @@ Audio asset that maps each `SoundEffect` value to its `SoundEffectSet`. Later se
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SoundEffectsMap()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SoundEffectsMap()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

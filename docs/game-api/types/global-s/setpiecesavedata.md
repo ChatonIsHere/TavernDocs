@@ -21,9 +21,9 @@ Save data (version 1) for a `SetPiece`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SetPieceSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SetPieceSaveData()"}</code> | Creates a `SetPieceSaveData` with default values. |
 
 ## Fields
 

@@ -19,10 +19,10 @@ One player in a leaderboard ranking: their user info, id and time.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RankedPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int time)"}</code> |
-| <Link id="m-ctor-2" /><code>{"RankedPlayer(int playerID, int time)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RankedPlayer("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int time)"}</code> | Creates a `LeaderboardManager.RankedPlayer` from `playerID` and `time`. |
+| <Link id="m-ctor-2" /><code>{"RankedPlayer(int playerID, int time)"}</code> | Creates a `LeaderboardManager.RankedPlayer` from `playerID` and `time`. |
 
 ## Properties
 

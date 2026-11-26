@@ -19,9 +19,9 @@ A shop page layout with a banner image taken from the game home configuration.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopPageConfigurationWithBanner()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopPageConfigurationWithBanner()"}</code> | Creates a `ShopPageConfigurationWithBanner` with default values. |
 
 ## Properties
 

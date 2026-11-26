@@ -20,9 +20,9 @@ Serializer for `bool`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoolSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoolSerialization()"}</code> | Creates a `TypeSerializationHelper.BoolSerialization` with default values. |
 
 ## Methods
 

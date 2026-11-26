@@ -19,9 +19,9 @@ An enchantment applied to one `Enchantable`: the live triggers and effects built
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EnchantmentApplication("}<Link to="/game-api/types/alta-crafting/enchantable">{"Enchantable"}</Link>{" enchantable, "}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" enchantment)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EnchantmentApplication("}<Link to="/game-api/types/alta-crafting/enchantable">{"Enchantable"}</Link>{" enchantable, "}<Link to="/game-api/types/alta-crafting/enchantment">{"Enchantment"}</Link>{" enchantment)"}</code> | Creates an `EnchantmentApplication` from `enchantable` and `enchantment`. |
 
 ## Fields
 

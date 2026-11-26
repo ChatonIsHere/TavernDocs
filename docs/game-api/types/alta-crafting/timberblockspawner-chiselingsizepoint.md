@@ -19,9 +19,9 @@ A stop along the `TimberBlockSpawner` slider and the largest block size allowed 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChiselingSizePoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChiselingSizePoint()"}</code> | Creates a `TimberBlockSpawner.ChiselingSizePoint` with default values. |
 
 ## Fields
 

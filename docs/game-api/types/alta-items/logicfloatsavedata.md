@@ -21,9 +21,9 @@ Save data for a `LogicFloatSender`: its logic link data and its float value.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatSaveData()"}</code> | Creates a `LogicFloatSaveData` with default values. |
 
 ## Fields
 

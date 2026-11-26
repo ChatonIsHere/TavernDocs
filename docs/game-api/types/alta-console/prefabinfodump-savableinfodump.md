@@ -19,9 +19,9 @@ One savable component type on an entity, as listed by `PrefabInfoDump`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SavableInfoDump()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SavableInfoDump()"}</code> | Creates a `PrefabInfoDump.SavableInfoDump` with default values. |
 
 ## Properties
 

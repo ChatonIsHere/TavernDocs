@@ -21,6 +21,6 @@ Editor-only menu item base that adds an Assets/Create entry under Township/Featu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Skills.ScriptableObject` with default values. |

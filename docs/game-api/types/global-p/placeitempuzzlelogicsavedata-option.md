@@ -19,9 +19,9 @@ A group of items that all give the same puzzle output.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Option()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Option()"}</code> | Creates a `PlaceItemPuzzleLogicSaveData.Option` with default values. |
 
 ## Fields
 

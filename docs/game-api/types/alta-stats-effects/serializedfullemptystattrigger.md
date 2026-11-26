@@ -20,6 +20,6 @@ A `FullEmptyStatTrigger` that saves whether its stat was full, so it does not fi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedFullEmptyStatTrigger()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedFullEmptyStatTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

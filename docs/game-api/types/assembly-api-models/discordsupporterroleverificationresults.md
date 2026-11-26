@@ -18,9 +18,9 @@ Result of checking supporters against the Discord supporter role: who gained it 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DiscordSupporterRoleVerificationResults()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DiscordSupporterRoleVerificationResults()"}</code> | Creates a `DiscordSupporterRoleVerificationResults` with default values. |
 
 ## Properties
 

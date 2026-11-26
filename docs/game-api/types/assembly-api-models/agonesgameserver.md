@@ -19,9 +19,9 @@ An Agones `GameServer` Kubernetes object, as sent to or read from the Agones API
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AgonesGameServer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AgonesGameServer()"}</code> | Creates an `AgonesGameServer` with default values. |
 
 ## Properties
 

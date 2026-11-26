@@ -20,9 +20,9 @@ Serializer for logic value data, sent as its logic identifier and looked up in t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicValueDataSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicValueDataSerialization()"}</code> | Creates a `TypeSerializationHelper.LogicValueDataSerialization` with default values. |
 
 ## Methods
 

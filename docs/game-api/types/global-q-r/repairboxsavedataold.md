@@ -20,9 +20,9 @@ Version 1 save data for `RepairBox`, migrated to `RepairBoxSaveData` on load.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RepairBoxSaveDataOld()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RepairBoxSaveDataOld()"}</code> | Creates a `RepairBoxSaveDataOld` with default values. |
 
 ## Fields
 

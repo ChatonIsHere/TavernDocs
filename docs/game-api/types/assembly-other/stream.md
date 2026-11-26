@@ -22,9 +22,9 @@ The bit reader and writer under every network message and save file. Each `Seria
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Stream(bool isReading, bool isWriting)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Stream(bool isReading, bool isWriting)"}</code> | Creates a `Stream` from `isReading` and `isWriting`. |
 
 ## Fields
 

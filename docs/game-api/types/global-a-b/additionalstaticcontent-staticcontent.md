@@ -19,9 +19,9 @@ One prefab entry in `AdditionalStaticContent`, with the local position, rotation
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StaticContent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StaticContent()"}</code> | Creates an `AdditionalStaticContent.StaticContent` with default values. |
 
 ## Fields
 

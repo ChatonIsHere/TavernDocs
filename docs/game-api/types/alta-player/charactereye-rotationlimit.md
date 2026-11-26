@@ -19,9 +19,9 @@ Inspector settings that `CharacterEye.Bake` copies onto the `RotationLimitSpline
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RotationLimit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RotationLimit()"}</code> | Creates a `CharacterEye.RotationLimit` with default values. |
 
 ## Fields
 

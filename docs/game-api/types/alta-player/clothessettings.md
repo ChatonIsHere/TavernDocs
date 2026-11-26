@@ -18,9 +18,9 @@ The character dummy's clothing renderers (opaque and transparent, body and head)
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClothesSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClothesSettings()"}</code> | Creates a `ClothesSettings` with default values. |
 
 ## Fields
 

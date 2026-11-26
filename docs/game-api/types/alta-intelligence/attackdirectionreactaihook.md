@@ -20,9 +20,9 @@ AI hook that runs an attack direction reaction (from `AttackDirectionCoreSetting
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttackDirectionReactAIHook()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttackDirectionReactAIHook()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

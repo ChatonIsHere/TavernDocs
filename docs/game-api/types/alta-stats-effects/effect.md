@@ -19,9 +19,9 @@ Base of the legacy effect classes (`DurationEffect`, `EnvironmentalEffect`). It 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Effect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Effect()"}</code> | Creates an `Effect` with default values. |
 
 ## Properties
 

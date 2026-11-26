@@ -18,9 +18,9 @@ Watches a set of transforms and fires `AllTransformsFrozen` once none has moved 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TransformDeltaChangeChecker(IEnumerable<Transform> transformsToCheck, float maxLocalPositionDelta, float maxLocalRotationDelta, float minTimeToRegisterFreeze)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransformDeltaChangeChecker(IEnumerable<Transform> transformsToCheck, float maxLocalPositionDelta, float maxLocalRotationDelta, float minTimeToRegisterFreeze)"}</code> | Creates a `TransformDeltaChangeChecker` from `transformsToCheck`, `maxLocalPositionDelta`, `maxLocalRotationDelta` and `minTimeToRegisterFreeze`. |
 
 ## Fields
 

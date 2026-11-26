@@ -18,9 +18,9 @@ Network payload for a shot from a bow or `Shooter`: the projectile entity, where
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShootArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" shot, float strength)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShootArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" shot, float strength)"}</code> | Creates a `ShootArguments` from `shot` and `strength`. |
 
 ## Fields
 

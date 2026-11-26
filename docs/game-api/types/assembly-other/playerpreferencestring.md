@@ -19,9 +19,9 @@ A string player preference stored under a key through `PlayerPreferences`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerPreferenceString(string key)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerPreferenceString(string key)"}</code> | Creates a `PlayerPreferenceString` from `key`. |
 
 ## Used in
 

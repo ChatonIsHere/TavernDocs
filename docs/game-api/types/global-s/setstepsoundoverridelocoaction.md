@@ -20,9 +20,9 @@ Locomotion modifier action asset that swaps the player's footstep sound while it
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SetStepSoundOverrideLocoAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SetStepSoundOverrideLocoAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

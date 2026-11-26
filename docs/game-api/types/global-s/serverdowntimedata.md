@@ -18,9 +18,9 @@ A date and time split into fields, probably for a planned server downtime. Not u
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerDowntimeData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerDowntimeData()"}</code> | Creates a `ServerDowntimeData` with default values. |
 
 ## Fields
 

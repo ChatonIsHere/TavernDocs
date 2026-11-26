@@ -19,9 +19,9 @@ Layout data for one page of the in-game shop as sent by the web API: its subtitl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopPageConfiguration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopPageConfiguration()"}</code> | Creates a `ShopPageConfiguration` with default values. |
 
 ## Properties
 

@@ -18,9 +18,9 @@ A condition from the Alta web API on a query (probably a form question), with al
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Condition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Condition()"}</code> | Creates a `Condition` with default values. |
 
 ## Properties
 

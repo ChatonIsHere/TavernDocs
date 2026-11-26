@@ -19,9 +19,9 @@ Client: when enabled, shows the deeplink popup if the game was launched from an 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TutorialAndDeeplinkRedirector()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TutorialAndDeeplinkRedirector()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

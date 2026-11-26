@@ -19,9 +19,9 @@ Unity editor menu item that opens the client logs folder in Explorer.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OpenClientLogs()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OpenClientLogs()"}</code> | Creates an `OpenClientLogs` with default values. |
 
 ## Properties
 

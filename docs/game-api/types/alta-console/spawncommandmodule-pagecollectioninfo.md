@@ -19,9 +19,9 @@ A row in the page collection list console command.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PageCollectionInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PageCollectionInfo()"}</code> | Creates a `SpawnCommandModule.PageCollectionInfo` with default values. |
 
 ## Properties
 

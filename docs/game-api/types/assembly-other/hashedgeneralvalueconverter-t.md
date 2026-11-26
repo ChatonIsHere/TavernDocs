@@ -21,9 +21,9 @@ Type converter that turns a string (a hash number or a name) into a `HashedGener
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HashedGeneralValueConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HashedGeneralValueConverter()"}</code> | Creates a `HashedGeneralValueConverter` with default values. |
 
 ## Fields
 

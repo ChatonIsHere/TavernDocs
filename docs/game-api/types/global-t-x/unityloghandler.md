@@ -19,9 +19,9 @@ A Unity `ILogHandler` that sends Unity's own logs and exceptions into NLog, pref
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnityLogHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnityLogHandler()"}</code> | Creates an `UnityLogHandler` with default values. |
 
 ## Fields
 

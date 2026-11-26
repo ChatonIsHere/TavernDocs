@@ -19,9 +19,9 @@ Tracks one hand's rigidbody inside a `SwipeInteractionController` trigger and wo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SwipeTracker(Rigidbody rigidbody, "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, Vector3 swipeDirection, float swipeMinDistance, bool needToReenterAfterInteract, Action<Rigidbody> removeRigidbody)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SwipeTracker(Rigidbody rigidbody, "}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, Vector3 swipeDirection, float swipeMinDistance, bool needToReenterAfterInteract, Action<Rigidbody> removeRigidbody)"}</code> | Creates a `SwipeInteractionController.SwipeTracker` from `rigidbody`, `controller`, `swipeDirection`, `swipeMinDistance`, `needToReenterAfterInteract` and `removeRigidbody`. |
 
 ## Fields
 

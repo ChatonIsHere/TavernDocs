@@ -20,9 +20,9 @@ Settings for `ActiveSchmeecheePlay`: a schmeechee runs about at random until it 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SchmeecheePlaySettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SchmeecheePlaySettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Methods
 

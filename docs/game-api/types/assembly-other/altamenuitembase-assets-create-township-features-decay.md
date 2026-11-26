@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Township/Features/Decay.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Decay()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Decay()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Decay` with default values. |

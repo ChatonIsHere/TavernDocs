@@ -20,9 +20,9 @@ VContainer scope for the game scene. Registers the respawn system and, outside t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameLifetimeScope()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameLifetimeScope()"}</code> | Creates a `GameLifetimeScope` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Body of the Alta web API call a locally run server makes to start a session (`St
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LaunchLocalServerRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LaunchLocalServerRequest()"}</code> | Creates a `LaunchLocalServerRequest` with default values. |
 
 ## Properties
 

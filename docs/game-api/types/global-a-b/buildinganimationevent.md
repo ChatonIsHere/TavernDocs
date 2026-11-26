@@ -19,9 +19,9 @@ Serializable `AltaEvent` raised with a `BuildingAnimation`, used for its started
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BuildingAnimationEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BuildingAnimationEvent()"}</code> | Creates a `BuildingAnimationEvent` with default values. |
 
 ## Used in
 

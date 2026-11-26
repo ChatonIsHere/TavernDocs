@@ -18,9 +18,9 @@ Wrapper around the Vivox voice and text chat client: login, audio devices, chann
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VivoxClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VivoxClient()"}</code> | Creates a `VivoxClient` with default values. |
 
 ## Fields
 

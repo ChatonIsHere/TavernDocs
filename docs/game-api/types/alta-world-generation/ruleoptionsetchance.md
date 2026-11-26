@@ -18,9 +18,9 @@ A nested `RuleOptionSet` with a 0 to 1 chance of being evaluated.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RuleOptionSetChance()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RuleOptionSetChance()"}</code> | Creates a `RuleOptionSetChance` with default values. |
 
 ## Fields
 

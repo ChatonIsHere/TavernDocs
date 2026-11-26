@@ -19,9 +19,9 @@ Timer logic that switches on for a while each time an impact detector is hit, ra
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ImpactDetectionLogic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ImpactDetectionLogic()"}</code> | Creates an `ImpactDetectionLogic` with default values. |
 
 ## Fields
 

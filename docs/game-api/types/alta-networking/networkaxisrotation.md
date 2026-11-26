@@ -19,9 +19,9 @@ A `NetworkAxisValue` that syncs a rotation around one local axis, in degrees fro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkAxisRotation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkAxisRotation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

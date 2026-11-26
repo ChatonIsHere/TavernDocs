@@ -19,9 +19,9 @@ A join type choice on the create and edit server panels: its button, the group t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ButtonData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ButtonData()"}</code> | Creates a `ServerDetailsPanel.ButtonData` with default values. |
 
 ## Fields
 

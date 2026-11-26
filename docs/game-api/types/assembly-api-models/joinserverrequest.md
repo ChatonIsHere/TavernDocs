@@ -18,9 +18,9 @@ Body for joining a server or connecting the console through the Alta web API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JoinServerRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JoinServerRequest()"}</code> | Creates a `JoinServerRequest` with default values. |
 
 ## Properties
 

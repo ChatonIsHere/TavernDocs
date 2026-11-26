@@ -18,9 +18,9 @@ Request body for launching a game server instance.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LaunchInstanceRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LaunchInstanceRequest()"}</code> | Creates a `LaunchInstanceRequest` with default values. |
 
 ## Properties
 

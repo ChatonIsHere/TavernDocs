@@ -21,9 +21,9 @@ Save data (version 2) for `LogicGateReceiver`: the gate type, whether the output
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicGateSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicGateSaveData()"}</code> | Creates a `LogicGateSaveData` with default values. |
 
 ## Fields
 

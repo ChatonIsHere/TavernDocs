@@ -20,6 +20,6 @@ Editor menu folder `Tools/Graveyard`: menu item classes inherit it to appear und
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Graveyard()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Graveyard()"}</code> | Creates an `AltaMenuItemBase.Tools.Graveyard` with default values. |

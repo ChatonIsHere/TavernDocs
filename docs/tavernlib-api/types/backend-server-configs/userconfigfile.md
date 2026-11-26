@@ -20,9 +20,9 @@ The `ServerConfigFile` for `users.json`, with lookups on the last read. Use the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserConfigFile(string filePath)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserConfigFile(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
 
 ## Methods
 

@@ -22,9 +22,9 @@ Works out every mod a mod needs, from the merged index and fetched manifests, fo
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-maxdepth" /><code>{"private const int MaxDepth"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maxdepth" /><code>{"private const int MaxDepth"}</code> | Deepest dependency chain allowed before resolving throws. |
 
 </details>
 

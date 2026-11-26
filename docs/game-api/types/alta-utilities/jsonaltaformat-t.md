@@ -20,9 +20,9 @@ A **class** in `Root.Township`, `Alta.Utilities`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonAltaFormat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonAltaFormat()"}</code> | Creates a `JsonAltaFormat` with default values. |
 
 ## Properties
 

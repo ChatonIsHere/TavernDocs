@@ -18,9 +18,9 @@ Made by `PlayerUnlockManager` to set the player's light brightness from how many
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerOrbLight("}<Link to="/game-api/types/global-p/playerunlockmanager">{"PlayerUnlockManager"}</Link>{" unlockManager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerOrbLight("}<Link to="/game-api/types/global-p/playerunlockmanager">{"PlayerUnlockManager"}</Link>{" unlockManager)"}</code> | Creates a `PlayerOrbLight` from `unlockManager`. |
 
 ## Fields
 

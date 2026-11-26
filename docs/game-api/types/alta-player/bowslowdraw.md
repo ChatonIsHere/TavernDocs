@@ -21,6 +21,6 @@ Bow draw skill asset for slowdraw. Adds nothing to `BowDrawSkill`; the differenc
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BowSlowdraw()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BowSlowdraw()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |

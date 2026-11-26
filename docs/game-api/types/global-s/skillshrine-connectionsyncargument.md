@@ -19,10 +19,10 @@ Network message telling clients which skill orbs on a shrine to draw connections
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConnectionSyncArgument()"}</code> |
-| <Link id="m-ctor-2" /><code>{"ConnectionSyncArgument(Dictionary<uint, "}<Link to="/game-api/types/global-s/skillshrine-apliedslottuple">{"SkillShrine.ApliedSlotTuple"}</Link>{"> spawnedOrbs)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConnectionSyncArgument()"}</code> | Creates a `SkillShrine.ConnectionSyncArgument` from `spawnedOrbs`. |
+| <Link id="m-ctor-2" /><code>{"ConnectionSyncArgument(Dictionary<uint, "}<Link to="/game-api/types/global-s/skillshrine-apliedslottuple">{"SkillShrine.ApliedSlotTuple"}</Link>{"> spawnedOrbs)"}</code> | Creates a `SkillShrine.ConnectionSyncArgument` from `spawnedOrbs`. |
 
 ## Properties
 

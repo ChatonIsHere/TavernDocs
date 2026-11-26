@@ -20,9 +20,9 @@ Old version 1 save data for a `HeatSourceBase`, kept so old saves load.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData1()"}</code> | Creates a `HeatSourceBaseSaveData1` with default values. |
 
 ## Fields
 

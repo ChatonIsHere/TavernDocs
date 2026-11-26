@@ -21,9 +21,9 @@ Base for operators that change a particle system's emission module.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected EmissionOperator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected EmissionOperator()"}</code> | Creates a `ValueOperatedParticleSystem.EmissionOperator` with default values. |
 
 ## Fields
 

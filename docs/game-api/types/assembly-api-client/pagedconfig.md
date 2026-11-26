@@ -18,9 +18,9 @@ Page size and continuation token for paged API calls.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PagedConfig()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PagedConfig()"}</code> | Creates a `PagedConfig` with default values. |
 
 ## Properties
 

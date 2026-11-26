@@ -18,9 +18,9 @@ Platform account details sent when registering an Oculus or Pico user, so the ne
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AccountLinkData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AccountLinkData()"}</code> | Creates an `AccountLinkData` with default values. |
 
 ## Properties
 

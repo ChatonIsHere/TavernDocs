@@ -19,9 +19,9 @@ Plain Wwise playback helper: posts an event on a game object and calls back when
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimpleAudioControl()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimpleAudioControl()"}</code> | Creates a `SimpleAudioControl` with default values. |
 
 ## Methods
 

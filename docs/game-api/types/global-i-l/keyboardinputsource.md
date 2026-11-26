@@ -19,9 +19,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KeyboardInputSource(Key keyCode, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KeyboardInputSource(Key keyCode, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `KeyboardInputSource` from `keyCode` and `controller`. |
 
 ## Fields
 

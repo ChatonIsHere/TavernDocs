@@ -19,9 +19,9 @@ A per-second rate worked out from a running total, used by the obsolete `NewNetw
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkStat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkStat()"}</code> | Creates a `NewNetworkingProfiler.NetworkStat` with default values. |
 
 ## Fields
 

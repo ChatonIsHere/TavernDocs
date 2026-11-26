@@ -20,9 +20,9 @@ Base class for spawn modifiers that work on a `NetworkEntity`. It adds nothing t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected NetworkEntityModifiers()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected NetworkEntityModifiers()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Used in
 

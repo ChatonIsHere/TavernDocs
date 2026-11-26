@@ -20,9 +20,9 @@ NLog layout renderer `${fullstacktrace}`: the full stack trace with file and lin
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FullStackTraceRenderer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FullStackTraceRenderer()"}</code> | Creates a `FullStackTraceRenderer` with default values. |
 
 ## Properties
 

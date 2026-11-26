@@ -19,9 +19,9 @@ Results for one load and unload pass of `ProfileChunkLoading`, a dev tool that f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProfileData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProfileData()"}</code> | Creates a `ProfileChunkLoading.ProfileData` with default values. |
 
 ## Properties
 

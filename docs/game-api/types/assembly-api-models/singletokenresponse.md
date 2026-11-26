@@ -18,9 +18,9 @@ An API response holding a single JWT token.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SingleTokenResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SingleTokenResponse()"}</code> | Creates a `SingleTokenResponse` with default values. |
 
 ## Properties
 

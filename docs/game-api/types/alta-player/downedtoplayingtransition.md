@@ -19,9 +19,9 @@ Moves a downed player back to Playing when revived. `DownedState` calls `HandleR
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DownedToPlayingTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DownedToPlayingTransition()"}</code> | Creates a `DownedToPlayingTransition` with default values. |
 
 ## Methods
 

@@ -21,9 +21,9 @@ Save structure (version 1) for a `Crank`: stores its current value. Internal; us
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CrankSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CrankSaveData()"}</code> | Creates a `CrankSaveData` with default values. |
 
 ## Fields
 

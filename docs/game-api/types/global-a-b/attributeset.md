@@ -20,9 +20,9 @@ Biome attribute values (such as for spawning) with an optional parent set to fal
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{"("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" parent)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{"("}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" parent)"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

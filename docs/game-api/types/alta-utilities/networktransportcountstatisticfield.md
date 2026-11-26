@@ -19,9 +19,9 @@ A network transport profiling statistic that counts events, such as packets, rea
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportCountStatisticField(Func<int> getValueFunction)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportCountStatisticField(Func<int> getValueFunction)"}</code> | Creates a `NetworkTransportCountStatisticField` from `getValueFunction`. |
 
 ## Methods
 

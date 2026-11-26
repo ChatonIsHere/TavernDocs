@@ -20,9 +20,9 @@ Counter for one kind of network message in the transport metrics: how many were 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkingStatistic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkingStatistic()"}</code> | Creates a `NetworkingStatistic` with default values. |
 
 ## Fields
 

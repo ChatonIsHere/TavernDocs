@@ -19,9 +19,9 @@ Server: the `ITransportConnection` for one client's KCP connection, wrapping a k
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KcpServerConnection("}<Link to="/game-api/types/assembly-other/kcptransport">{"KcpTransport"}</Link>{" transport, KcpServer server, int connectionId)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KcpServerConnection("}<Link to="/game-api/types/assembly-other/kcptransport">{"KcpTransport"}</Link>{" transport, KcpServer server, int connectionId)"}</code> | Creates a `KcpServerConnection` from `transport`, `server` and `connectionId`. |
 
 ## Fields
 

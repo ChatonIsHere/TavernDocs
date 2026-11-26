@@ -19,9 +19,9 @@ Server side of the KCP transport: wraps a kcp2k `KcpServer` as an `ITransportSer
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KcpServerWrapper("}<Link to="/game-api/types/assembly-other/kcptransport">{"KcpTransport"}</Link>{" transport, "}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KcpServerWrapper("}<Link to="/game-api/types/assembly-other/kcptransport">{"KcpTransport"}</Link>{" transport, "}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" settings)"}</code> | Creates a `KcpServerWrapper` from `transport` and `settings`. |
 
 ## Fields
 

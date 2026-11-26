@@ -18,9 +18,9 @@ Decorative corner and middle pieces for the front and back faces at a book's spi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpineFaceFlairs()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpineFaceFlairs()"}</code> | Creates a `SpineFaceFlairs` with default values. |
 
 ## Fields
 

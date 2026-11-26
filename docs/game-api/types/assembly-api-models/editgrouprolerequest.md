@@ -18,9 +18,9 @@ Request body for changing a group role.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EditGroupRoleRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EditGroupRoleRequest()"}</code> | Creates an `EditGroupRoleRequest` with default values. |
 
 ## Properties
 

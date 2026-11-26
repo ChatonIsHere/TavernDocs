@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Township/Features/Blacksmithing.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Blacksmithing()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Blacksmithing()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Blacksmithing` with default values. |

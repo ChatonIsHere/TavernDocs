@@ -20,9 +20,9 @@ A colour model point that always gives 0 and never changes. A placeholder for wh
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NullColorModelPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NullColorModelPoint()"}</code> | Creates a `NullColorModelPoint` with default values. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Passes log calls from the Agones SDK (game server hosting) to NLog.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AgonesLogger()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AgonesLogger()"}</code> | Creates an `AgonesLogger` with default values. |
 
 ## Fields
 

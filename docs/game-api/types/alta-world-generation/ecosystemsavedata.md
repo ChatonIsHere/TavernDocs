@@ -22,9 +22,9 @@ Save data (version 1) for an `Ecosystem`: the spawn point positions of each popu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EcosystemSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EcosystemSaveData()"}</code> | Creates an `EcosystemSaveData` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Asset that sets the title and cut-off date of a user settings analytics report. 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsReporterConfiguration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsReporterConfiguration()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

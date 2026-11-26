@@ -20,6 +20,6 @@ Editor menu entry for creating an `AudioEnvironmentBlendSettings` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `AudioEnvironmentBlendSettings.Create` with default values. |

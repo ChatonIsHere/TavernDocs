@@ -20,6 +20,6 @@ Editor menu entry for creating a `GhostHandSettings` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `GhostHandSettings.Create` with default values. |

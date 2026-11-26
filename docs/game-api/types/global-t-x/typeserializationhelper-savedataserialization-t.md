@@ -20,9 +20,9 @@ Serializer for `SaveData` objects: writes the save structure hash, the data's bi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SaveDataSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SaveDataSerialization()"}</code> | Creates a `TypeSerializationHelper.SaveDataSerialization` with default values. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Analytics event for micro tutorials (enter, exit, step completed), with the tuto
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialAnalyticsEvent(string eventName, "}<Link to="/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" tutorial, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialAnalyticsEvent(string eventName, "}<Link to="/game-api/types/game-other-namespaces/imicrotutorial">{"IMicroTutorial"}</Link>{" tutorial, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Creates a `MicroTutorialAnalyticsEvent` from `eventName`, `tutorial` and `player`. |
 
 ## Fields
 

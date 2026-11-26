@@ -20,9 +20,9 @@ Base for in-world text fields typed into with the virtual keyboard. Shows placeh
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected VirtualInputFieldBase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected VirtualInputFieldBase()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Social analytics event for banning a player, with where the ban was made and the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BanPlayerSocialAnalyticsEvent("}<Link to="/game-api/types/global-s/socialanalyticseventorigin">{"SocialAnalyticsEventOrigin"}</Link>{" origin, "}<Link to="/game-api/types/global-a-b/banrole">{"BanRole"}</Link>{" banRole, "}<Link to="/game-api/types/global-s/socialanalyticsbanmenupanelorigin">{"SocialAnalyticsBanMenuPanelOrigin"}</Link>{"? menuPanelOrigin = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BanPlayerSocialAnalyticsEvent("}<Link to="/game-api/types/global-s/socialanalyticseventorigin">{"SocialAnalyticsEventOrigin"}</Link>{" origin, "}<Link to="/game-api/types/global-a-b/banrole">{"BanRole"}</Link>{" banRole, "}<Link to="/game-api/types/global-s/socialanalyticsbanmenupanelorigin">{"SocialAnalyticsBanMenuPanelOrigin"}</Link>{"? menuPanelOrigin = null)"}</code> | Creates a `BanPlayerSocialAnalyticsEvent` from `origin`, `banRole` and `menuPanelOrigin`. |
 
 ## Fields
 

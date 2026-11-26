@@ -20,9 +20,9 @@ Controller for the VR main menu scene (singleton `Instance`): starts a local tes
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VrMainMenu()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VrMainMenu()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -32,7 +32,7 @@ Controller for the VR main menu scene (singleton `Instance`): starts a local tes
 | Member | What it is |
 | --- | --- |
 | <Link id="m-localscene" /><code>{"private "}<Link to="/game-api/types/global-i-l/localnetworkscene">{"LocalNetworkScene"}</Link>{" localScene"}</code> | The menu's local network scene, emptied by `PrepareForUnload`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-serverselection" /><code>{"private "}<Link to="/game-api/types/global-s/serverselectionmenu">{"ServerSelectionMenu"}</Link>{" serverSelection"}</code> | The server list menu, paused while a game starts. |
 | <Link id="m-startinggametask" /><code>{"private Task startingGameTask"}</code> | The game start in progress, used to block a second start. |
 | <Link id="m-startlocaltest" /><code>{"private bool startLocalTest"}</code> | Inspector button for `StartLocalTest`. |

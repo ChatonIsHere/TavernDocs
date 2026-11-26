@@ -19,9 +19,9 @@ Private helper for `TextRenderer` that shows or hides text renderers with a max 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TextRendererDistanceChecker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TextRendererDistanceChecker()"}</code> | Creates a `TextRenderer.TextRendererDistanceChecker` with default values. |
 
 ## Fields
 

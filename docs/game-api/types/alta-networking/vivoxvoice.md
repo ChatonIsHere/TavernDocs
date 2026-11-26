@@ -19,9 +19,9 @@ Client: positional Vivox voice for one channel session. Connects the audio and s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VivoxVoice(IChannelSession session)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VivoxVoice(IChannelSession session)"}</code> | Creates a `VivoxVoice` from `session`. |
 
 ## Fields
 

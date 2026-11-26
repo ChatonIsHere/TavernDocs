@@ -21,9 +21,9 @@ Save data (version 1) for a `PlayerProxy`, a stand-in player with a name, title 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerProxyData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerProxyData()"}</code> | Creates a `PlayerProxyData` with default values. |
 
 ## Fields
 

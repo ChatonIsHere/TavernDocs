@@ -19,9 +19,9 @@ The payload of one analytics event: its name, optional user ID and a list of nam
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnalyticsData(string eventName, int? userId = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnalyticsData(string eventName, int? userId = null)"}</code> | Creates an `AnalyticsData` from `eventName` and `userId`. |
 
 ## Fields
 

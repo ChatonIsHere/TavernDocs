@@ -20,9 +20,9 @@ Logical AND in the unused Prolog-like logic engine (`Predicate`, `KnowledgeHolde
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"And("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"And("}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" left, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" right)"}</code> | Creates an `And` from `left` and `right`. |
 
 ## Methods
 

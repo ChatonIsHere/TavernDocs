@@ -19,9 +19,9 @@ Payload for the `ConsoleEvents.PlayerMovedChunk` console event, sent when a play
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerMoveChunkData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" oldChunk, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerMoveChunkData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" oldChunk, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" newChunk)"}</code> | Creates a `PlayerMoveChunkData` from `player`, `oldChunk` and `newChunk`. |
 
 ## Fields
 

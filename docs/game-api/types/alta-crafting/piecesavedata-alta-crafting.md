@@ -18,9 +18,9 @@ Save data for one generic-crafting piece: which piece, whether it's done, its ma
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PieceSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PieceSaveData()"}</code> | Creates a `PieceSaveData` with default values. |
 
 ## Fields
 

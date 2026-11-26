@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/Pages/Flairs`: menu item cla
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Flairs()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Flairs()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Pages.Flairs` with default values. |

@@ -20,9 +20,9 @@ Do-nothing serializer returned when no serializer fits a type. Fields using it a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FailedTypeSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FailedTypeSerialization()"}</code> | Creates a `TypeSerializationHelper.FailedTypeSerialization` with default values. |
 
 ## Methods
 

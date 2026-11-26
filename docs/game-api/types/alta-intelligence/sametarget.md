@@ -19,9 +19,9 @@ Scoring rule that returns one value if the target is the creature's current targ
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SameTarget(float sameValue, float differentValue = 1)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SameTarget(float sameValue, float differentValue = 1)"}</code> | Creates a `SameTarget` from `sameValue` and `differentValue`. |
 
 ## Fields
 

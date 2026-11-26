@@ -20,6 +20,6 @@ Empty per-slot save element for `GhostSnapSlotCollectionSaveData`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Element()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Element()"}</code> | Creates a `GhostSnapSlotCollectionSaveData.Element` with default values. |

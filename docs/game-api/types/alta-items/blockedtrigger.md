@@ -20,9 +20,9 @@ Fires an inspector event when its `ImpactTool` blocks a hit with enough effectiv
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BlockedTrigger()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BlockedTrigger()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

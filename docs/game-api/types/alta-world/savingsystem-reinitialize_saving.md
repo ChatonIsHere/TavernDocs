@@ -20,9 +20,9 @@ Editor tools menu entry that rebuilds the saving system's type setups.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Reinitialize_Saving()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Reinitialize_Saving()"}</code> | Creates a `SavingSystem.Reinitialize_Saving` with default values. |
 
 ## Methods
 

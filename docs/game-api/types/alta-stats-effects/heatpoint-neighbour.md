@@ -19,9 +19,9 @@ A heat point this one conducts heat to every fixed update, set up in the Inspect
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Neighbour()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Neighbour()"}</code> | Creates a `HeatPoint.Neighbour` with default values. |
 
 ## Fields
 

@@ -18,10 +18,10 @@ Serializable width and height pair for a stream. Defaults to 0 by 0.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StreamSettings(int _width, int _height)"}</code> |
-| <Link id="m-ctor-2" /><code>{"StreamSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StreamSettings(int _width, int _height)"}</code> | Creates a `StreamSettings` with default values. |
+| <Link id="m-ctor-2" /><code>{"StreamSettings()"}</code> | Creates a `StreamSettings` with default values. |
 
 ## Fields
 

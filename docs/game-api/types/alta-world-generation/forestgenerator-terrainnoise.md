@@ -19,9 +19,9 @@ One layer of simplex noise `ForestGenerator` adds to forest terrain height.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TerrainNoise()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TerrainNoise()"}</code> | Creates a `ForestGenerator.TerrainNoise` with default values. |
 
 ## Fields
 

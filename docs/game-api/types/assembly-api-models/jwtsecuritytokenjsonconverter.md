@@ -19,9 +19,9 @@ JSON converter that stores a `JwtSecurityToken` as its encoded string.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JwtSecurityTokenJsonConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JwtSecurityTokenJsonConverter()"}</code> | Creates a `JwtSecurityTokenJsonConverter` with default values. |
 
 ## Methods
 

@@ -19,9 +19,9 @@ Spawn information that asks an `ISpawnPositions` source for points by index and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimplePopulationValue("}<Link to="/game-api/types/global-i-l/ispawnpositions">{"ISpawnPositions"}</Link>{" positions, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimplePopulationValue("}<Link to="/game-api/types/global-i-l/ispawnpositions">{"ISpawnPositions"}</Link>{" positions, "}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Creates a `SimplePopulationValue` from `positions` and `spawnData`. |
 
 ## Fields
 

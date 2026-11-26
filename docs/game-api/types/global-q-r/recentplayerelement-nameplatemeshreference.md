@@ -19,9 +19,9 @@ A nameplate mesh on a recent player element that gets recoloured with the player
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NameplateMeshReference()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NameplateMeshReference()"}</code> | Creates a `RecentPlayerElement.NameplateMeshReference` with default values. |
 
 ## Fields
 

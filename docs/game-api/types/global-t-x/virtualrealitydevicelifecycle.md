@@ -20,9 +20,9 @@ Base `DeviceLifecycle` for VR headsets (`SteamVRDeviceLifecycle` and `OpenXRDevi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VirtualRealityDeviceLifecycle("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VirtualRealityDeviceLifecycle("}<Link to="/game-api/types/global-i-l/iplatformplayer">{"IPlatformPlayer"}</Link>{" player, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice)"}</code> | Creates a `VirtualRealityDeviceLifecycle` from `player` and `platformDevice`. |
 
 ## Fields
 
@@ -35,7 +35,7 @@ Base `DeviceLifecycle` for VR headsets (`SteamVRDeviceLifecycle` and `OpenXRDevi
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-maximumadaptiveresolution" /><code>{"private float maximumAdaptiveResolution"}</code> | Highest render scale (1.0), raised if the eye texture scale is already higher. |
 | <Link id="m-minimumadaptiveresolution" /><code>{"private float minimumAdaptiveResolution"}</code> | Lowest render scale allowed (0.7). |
 

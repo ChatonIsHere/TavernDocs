@@ -18,9 +18,9 @@ Lays out a number of positions on an arc around a transform's forward axis. Used
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RotatedPositionHelper(Transform origin, int instancesCount, float spread, float radius, "}<Link to="/game-api/types/global-p/positioningmode">{"PositioningMode"}</Link>{" positionedMode = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RotatedPositionHelper(Transform origin, int instancesCount, float spread, float radius, "}<Link to="/game-api/types/global-p/positioningmode">{"PositioningMode"}</Link>{" positionedMode = 0)"}</code> | Creates a `RotatedPositionHelper` from `origin`, `instancesCount`, `spread`, `radius` and `positionedMode`. |
 
 ## Properties
 

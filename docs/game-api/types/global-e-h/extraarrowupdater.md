@@ -20,9 +20,9 @@ Bow component that spawns extra arrows next to the knocked one, keeps them lined
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ExtraArrowUpdater()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ExtraArrowUpdater()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

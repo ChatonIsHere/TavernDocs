@@ -22,11 +22,11 @@ Installs, verifies, enables and scans the mods in `Mods`, keeping a record (`man
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-downloadstallseconds" /><code>{"private const int DownloadStallSeconds"}</code> |
-| <Link id="m-zipmaxentries" /><code>{"private const int ZipMaxEntries"}</code> |
-| <Link id="m-zipmaxtotaluncompressed" /><code>{"private const long ZipMaxTotalUncompressed"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-downloadstallseconds" /><code>{"private const int DownloadStallSeconds"}</code> | How long a download may go without data before it is given up on. |
+| <Link id="m-zipmaxentries" /><code>{"private const int ZipMaxEntries"}</code> | Most entries a mod zip may hold before extraction is refused. |
+| <Link id="m-zipmaxtotaluncompressed" /><code>{"private const long ZipMaxTotalUncompressed"}</code> | Most bytes a zip may extract to, and the cap on any one download. |
 
 </details>
 
@@ -46,16 +46,16 @@ Installs, verifies, enables and scans the mods in `Mods`, keeping a record (`man
 <details>
 <summary>9 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-checksamelibrary" /><code>{"private static void CheckSameLibrary("}<Link to="/tavernlib-api/types/backend-mods/librarydependency">{"LibraryDependency"}</Link>{" a, string aOwner, "}<Link to="/tavernlib-api/types/backend-mods/librarydependency">{"LibraryDependency"}</Link>{" b, string bOwner)"}</code> |
-| <Link id="m-disableshadowedloosedlls" /><code>{"private static void DisableShadowedLooseDlls(string gameDir, string modId, string targetDir)"}</code> |
-| <Link id="m-displaceforeign" /><code>{"private static void DisplaceForeign(string gameDir, string modId)"}</code> |
-| <Link id="m-downloadverifymove" /><code>{"private static void DownloadVerifyMove("}<Link to="/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, string url, string sha256, string destPath, DateTime deadlineUtc)"}</code> |
-| <Link id="m-hashtree" /><code>{"private static Dictionary<string, string> HashTree(string baseDir)"}</code> |
-| <Link id="m-moveaside" /><code>{"private static void MoveAside(string modDir, string aside, ICollection<string> keep, bool legacy, string modId)"}</code> |
-| <Link id="m-safeextractzip" /><code>{"private static void SafeExtractZip(string zipPath, string destDir)"}</code> |
-| <Link id="m-sha256file" /><code>{"private static string Sha256File(string path)"}</code> |
-| <Link id="m-verifieddownload" /><code>{"private static void VerifiedDownload("}<Link to="/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, string url, string sha256, string workDir, DateTime deadlineUtc, Action<string> use)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-checksamelibrary" /><code>{"private static void CheckSameLibrary("}<Link to="/tavernlib-api/types/backend-mods/librarydependency">{"LibraryDependency"}</Link>{" a, string aOwner, "}<Link to="/tavernlib-api/types/backend-mods/librarydependency">{"LibraryDependency"}</Link>{" b, string bOwner)"}</code> | Throws if two mods pin the same library file with different SHA-256 values. |
+| <Link id="m-disableshadowedloosedlls" /><code>{"private static void DisableShadowedLooseDlls(string gameDir, string modId, string targetDir)"}</code> | Renames a loose `Mods` DLL with the same name as one just installed, so MelonLoader doesn't load it twice. |
+| <Link id="m-displaceforeign" /><code>{"private static void DisplaceForeign(string gameDir, string modId)"}</code> | Moves a mod folder this manager didn't install into `Mods/.displaced` instead of deleting it. |
+| <Link id="m-downloadverifymove" /><code>{"private static void DownloadVerifyMove("}<Link to="/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, string url, string sha256, string destPath, DateTime deadlineUtc)"}</code> | Downloads and verifies a file, then moves it to its destination path. |
+| <Link id="m-hashtree" /><code>{"private static Dictionary<string, string> HashTree(string baseDir)"}</code> | Returns the SHA-256 of every file under a folder, keyed by relative path. |
+| <Link id="m-moveaside" /><code>{"private static void MoveAside(string modDir, string aside, ICollection<string> keep, bool legacy, string modId)"}</code> | Moves what an install replaces into an aside folder, and puts it back if a file is in use. |
+| <Link id="m-safeextractzip" /><code>{"private static void SafeExtractZip(string zipPath, string destDir)"}</code> | Extracts a zip, refusing absolute paths, colons, symlinks, escaping paths and oversized archives. |
+| <Link id="m-sha256file" /><code>{"private static string Sha256File(string path)"}</code> | Returns the lowercase hex SHA-256 of a file. |
+| <Link id="m-verifieddownload" /><code>{"private static void VerifiedDownload("}<Link to="/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, string url, string sha256, string workDir, DateTime deadlineUtc, Action<string> use)"}</code> | Downloads a URL to a temp file, checks its SHA-256, hands the file to a callback, then deletes the temp. |
 
 </details>

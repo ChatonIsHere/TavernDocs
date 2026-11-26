@@ -20,6 +20,6 @@ Editor menu entry for creating a `PickupDockSettings` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PickupDockSettings.Create` with default values. |

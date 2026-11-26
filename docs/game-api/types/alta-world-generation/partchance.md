@@ -18,9 +18,9 @@ A PAGaC part with a 0 to 1 chance of being picked, used in `RuleOptionSet` and o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PartChance()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PartChance()"}</code> | Creates a `PartChance` with default values. |
 
 ## Fields
 

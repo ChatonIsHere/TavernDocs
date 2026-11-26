@@ -20,9 +20,9 @@ One network link between the server and a client: per channel send queues, recei
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Connection("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket, "}<Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{" connection, string ipAddress, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Connection("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket, "}<Link to="/game-api/types/assembly-other/itransportconnection">{"ITransportConnection"}</Link>{" connection, string ipAddress, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels)"}</code> | Creates a `Connection` from `socket`, `connection`, `ipAddress` and `channels`. |
 
 ## Fields
 

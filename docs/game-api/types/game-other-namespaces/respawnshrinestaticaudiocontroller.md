@@ -19,9 +19,9 @@ Plays a respawn shrine's looping sound while it has at least one subscriber.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RespawnShrineStaticAudioController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RespawnShrineStaticAudioController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

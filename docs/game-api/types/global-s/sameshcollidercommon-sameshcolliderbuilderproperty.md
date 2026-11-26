@@ -19,9 +19,9 @@ Settings for the SA mesh collider builder (third-party editor tool): how to spli
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SAMeshColliderBuilderProperty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SAMeshColliderBuilderProperty()"}</code> | Creates a `SAMeshColliderCommon.SAMeshColliderBuilderProperty` with default values. |
 
 ## Fields
 

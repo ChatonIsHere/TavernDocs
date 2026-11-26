@@ -20,9 +20,9 @@ Base for a skill orb at a skill shrine that a player holds to buy or sell a skil
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ProgressionSlotContainer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ProgressionSlotContainer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

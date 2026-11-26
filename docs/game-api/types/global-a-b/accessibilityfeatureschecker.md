@@ -19,9 +19,9 @@ Shows the accessibility popup once, if the features are off and the player hasn'
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AccessibilityFeaturesChecker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AccessibilityFeaturesChecker()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

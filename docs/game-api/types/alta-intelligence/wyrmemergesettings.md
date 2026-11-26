@@ -20,9 +20,9 @@ Action settings for a burrowed wyrm coming up when a target is close (`ActiveEme
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WyrmEmergeSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WyrmEmergeSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

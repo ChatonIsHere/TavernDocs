@@ -21,9 +21,9 @@ AI hook that changes one of the creature's stats (its base, min or max) by a fix
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FixedStatChangeHook()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FixedStatChangeHook()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Case-insensitive autocomplete over an `IAutoCompletionSource`: prefix matches fi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AutoComplete("}<Link to="/game-api/types/alta-menus/iautocompletionsource">{"IAutoCompletionSource"}</Link>{" autoCompletions, int maxCompletions = 4)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AutoComplete("}<Link to="/game-api/types/alta-menus/iautocompletionsource">{"IAutoCompletionSource"}</Link>{" autoCompletions, int maxCompletions = 4)"}</code> | Creates an `AutoComplete` from `autoCompletions` and `maxCompletions`. |
 
 ## Fields
 

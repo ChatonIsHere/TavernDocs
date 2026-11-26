@@ -20,9 +20,9 @@ Serializer for `Color`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColorSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColorSerialization()"}</code> | Creates a `TypeSerializationHelper.ColorSerialization` with default values. |
 
 ## Methods
 

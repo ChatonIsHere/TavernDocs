@@ -19,9 +19,9 @@ One shader the texture atlas tool supports, with the blit shaders it uses to cop
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShaderBlits()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShaderBlits()"}</code> | Creates an `AtlasSettings.ShaderBlits` with default values. |
 
 ## Fields
 

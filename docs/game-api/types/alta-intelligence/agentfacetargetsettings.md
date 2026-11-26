@@ -20,9 +20,9 @@ Settings for `ActiveFaceTarget`: turn the creature until the target is well insi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AgentFaceTargetSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AgentFaceTargetSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

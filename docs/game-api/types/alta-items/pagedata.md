@@ -18,9 +18,9 @@ The content of a book or paper page: a list of placed glyphs, or data from a `Pa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PageData("}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{" pageProvider, object providerData)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PageData("}<Link to="/game-api/types/global-p/pageprovider">{"PageProvider"}</Link>{" pageProvider, object providerData)"}</code> | Creates a `PageData` from `pageProvider` and `providerData`. |
 
 ## Fields
 

@@ -20,6 +20,6 @@ Editor menu folder `Tools/Analytics`: menu item classes inherit it to appear und
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Analytics()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Analytics()"}</code> | Creates an `AltaMenuItemBase.Tools.Analytics` with default values. |

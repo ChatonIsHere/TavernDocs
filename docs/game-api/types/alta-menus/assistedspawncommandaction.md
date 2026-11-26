@@ -19,9 +19,9 @@ Client dev tools board control for an assisted spawn command: quantity buttons p
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AssistedSpawnCommandAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AssistedSpawnCommandAction()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

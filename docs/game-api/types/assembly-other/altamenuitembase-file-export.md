@@ -21,6 +21,6 @@ Editor menu folder `File/Export`: menu item classes inherit it to appear under t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Export()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Export()"}</code> | Creates an `AltaMenuItemBase.File.Export` with default values. |

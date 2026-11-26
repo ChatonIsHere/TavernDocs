@@ -22,9 +22,9 @@ Saved config for `PlaceItemNoDockFirePuzzleLogic`. The fire puzzle only checks f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData()"}</code> | Creates a `PlaceItemNoDockFirePuzzleLogicSaveData` with default values. |
 
 ## Fields
 

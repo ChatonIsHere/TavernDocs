@@ -20,9 +20,9 @@ Saved state of one woodcut point.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Element()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Element()"}</code> | Creates a `WoodcutPointCollectionSaveData.Element` with default values. |
 
 ## Fields
 

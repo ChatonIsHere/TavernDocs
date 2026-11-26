@@ -20,10 +20,10 @@ A thumb joint of a `HandGrip`. The root thumb joint resets to the current thumb 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ThumbGripJoint()"}</code> |
-| <Link id="m-ctor-2" /><code>{"ThumbGripJoint("}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{" joint, Transform transform, "}<Link to="/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations, bool isRoot)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ThumbGripJoint()"}</code> | Creates a `HandGrip.ThumbGripJoint` from `hand`, `joint`, `transform`, `rotations` and `isRoot`. |
+| <Link id="m-ctor-2" /><code>{"ThumbGripJoint("}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{" joint, Transform transform, "}<Link to="/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations, bool isRoot)"}</code> | Creates a `HandGrip.ThumbGripJoint` from `hand`, `joint`, `transform`, `rotations` and `isRoot`. |
 
 ## Fields
 

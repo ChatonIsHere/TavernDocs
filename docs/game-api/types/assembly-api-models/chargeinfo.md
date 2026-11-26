@@ -18,9 +18,9 @@ How much a subscription plan charges and how often.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChargeInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChargeInfo()"}</code> | Creates a `ChargeInfo` with default values. |
 
 ## Properties
 

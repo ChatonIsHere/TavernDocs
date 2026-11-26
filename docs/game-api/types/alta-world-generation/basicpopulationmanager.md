@@ -20,9 +20,9 @@ Server population manager that spawns one item into a population folder at a poi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicPopulationManager("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicPopulationManager("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Creates a `BasicPopulationManager` from `spawnData`. |
 
 ## Fields
 

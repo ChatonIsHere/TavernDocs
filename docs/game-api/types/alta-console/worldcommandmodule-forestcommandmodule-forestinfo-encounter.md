@@ -19,9 +19,9 @@ A G-core encounter placed in a forest, in a `ForestInfo`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Encounter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Encounter()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Encounter` with default values. |
 
 ## Fields
 

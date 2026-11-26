@@ -20,9 +20,9 @@ Drives a physics ragdoll to follow an animated skeleton: each ragdoll bone has a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedRagdoll()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedRagdoll()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

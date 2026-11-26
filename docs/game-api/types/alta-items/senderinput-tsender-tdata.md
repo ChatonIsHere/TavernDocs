@@ -20,9 +20,9 @@ A logic input that listens to one logic sender's value (for wired logic like lev
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SenderInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SenderInput()"}</code> | Creates a `SenderInput` with default values. |
 
 ## Fields
 

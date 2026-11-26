@@ -19,9 +19,9 @@ One network entity inside a prefab, as listed by `PrefabInfoDump`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityInfoDump()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityInfoDump()"}</code> | Creates a `PrefabInfoDump.NetworkEntityInfoDump` with default values. |
 
 ## Properties
 

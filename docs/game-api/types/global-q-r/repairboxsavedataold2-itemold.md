@@ -19,9 +19,9 @@ One required item in version 2 of the `RepairBox` save format. Migrated to `Repa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ItemOld()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ItemOld()"}</code> | Creates a `RepairBoxSaveDataOld2.ItemOld` with default values. |
 
 ## Fields
 

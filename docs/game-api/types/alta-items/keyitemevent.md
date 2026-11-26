@@ -19,9 +19,9 @@ A serializable event with a `KeyItem` argument, such as a lock's key turn event.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KeyItemEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KeyItemEvent()"}</code> | Creates a `KeyItemEvent` with default values. |
 
 ## Used in
 

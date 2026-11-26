@@ -18,10 +18,10 @@ Pairs a stat with the visual effects shown when it goes up (buff) or down (debuf
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatEffectHolder()"}</code> |
-| <Link id="m-ctor-2" /><code>{"StatEffectHolder("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatEffectHolder()"}</code> | Creates a `StatEffectHolder` from `statDefinition`. |
+| <Link id="m-ctor-2" /><code>{"StatEffectHolder("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition)"}</code> | Creates a `StatEffectHolder` from `statDefinition`. |
 
 ## Fields
 

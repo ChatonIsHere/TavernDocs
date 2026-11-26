@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Township/Features/Customization.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Customization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Customization()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Customization` with default values. |

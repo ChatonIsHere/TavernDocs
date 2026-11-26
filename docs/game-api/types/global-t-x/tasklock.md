@@ -18,10 +18,10 @@ Runs one async task at a time: `Run` does nothing if a previous task is still go
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TaskLock(bool shouldLogOnCancel)"}</code> |
-| <Link id="m-ctor-2" /><code>{"TaskLock()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TaskLock(bool shouldLogOnCancel)"}</code> | Creates a `TaskLock` with default values. |
+| <Link id="m-ctor-2" /><code>{"TaskLock()"}</code> | Creates a `TaskLock` with default values. |
 
 ## Fields
 

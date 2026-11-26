@@ -18,9 +18,9 @@ Holds a forest's biome spheres and answers which biome a point belongs to. Owned
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BiomeSphereManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BiomeSphereManager()"}</code> | Creates a `BiomeSphereManager` with default values. |
 
 ## Fields
 

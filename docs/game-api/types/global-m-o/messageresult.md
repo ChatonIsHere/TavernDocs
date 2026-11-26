@@ -19,9 +19,9 @@ Simple success flag plus error text. Nothing else in the server build uses it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MessageResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MessageResult()"}</code> | Creates a `MessageResult` with default values. |
 
 ## Fields
 

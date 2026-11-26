@@ -18,9 +18,9 @@ Pair of `ScalingFadeAnimator`s, used to fade from one UI panel to another.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatorSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatorSetup()"}</code> | Creates an `AnimatorSetup` with default values. |
 
 ## Fields
 

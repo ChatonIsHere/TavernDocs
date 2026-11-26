@@ -20,9 +20,9 @@ One console command built from a method with a `CommandAttribute`. Matches typed
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Command(MethodInfo method, "}<Link to="/game-api/types/alta-console/module">{"Module"}</Link>{" parent, "}<Link to="/game-api/types/alta-console/commandattribute">{"CommandAttribute"}</Link>{" attribute)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Command(MethodInfo method, "}<Link to="/game-api/types/alta-console/module">{"Module"}</Link>{" parent, "}<Link to="/game-api/types/alta-console/commandattribute">{"CommandAttribute"}</Link>{" attribute)"}</code> | Creates a `Command` from `method`, `parent` and `attribute`. |
 
 ## Fields
 
@@ -64,7 +64,7 @@ One console command built from a method with a `CommandAttribute`. Matches typed
 | --- | --- |
 | <Link id="m-areparametersviable" /><code>{"private "}<Link to="/game-api/types/alta-console/commandsearchresult">{"CommandSearchResult"}</Link>{" AreParametersViable(string[] lower, string[] cased, int index)"}</code> | Checks the argument count against the parameters and converts them. A last string or array parameter takes the rest. |
 | <Link id="m-attemptconvertarguments" /><code>{"private bool AttemptConvertArguments(int matchedCount, string[] argumentParts, int index, object[] convertedArguments)"}</code> | Converts each argument with its parameter type's converter. Fails on a null result unless `AllowNull` is set. |
-| <Link id="m-invoke" /><code>{"private async Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> Invoke("}<Link to="/game-api/types/alta-console/progressivehandler">{"ProgressiveHandler"}</Link>{" progressivehandler, object[] args)"}</code> |  |
+| <Link id="m-invoke" /><code>{"private async Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> Invoke("}<Link to="/game-api/types/alta-console/progressivehandler">{"ProgressiveHandler"}</Link>{" progressivehandler, object[] args)"}</code> | Calls the command method with no instance (so it must be static) and wraps what it returns in a `CommandResult`. Progressive commands return an error. |
 
 </details>
 

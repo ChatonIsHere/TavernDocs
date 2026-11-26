@@ -20,9 +20,9 @@ Same as `NetworkingStatisticsList<T>` but the statistics list is not serialized,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected NetworkingStatisticsListNonSerialized()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected NetworkingStatisticsListNonSerialized()"}</code> | Creates a `NetworkingStatisticsListNonSerialized` with default values. |
 
 ## Fields
 

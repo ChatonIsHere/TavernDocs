@@ -24,10 +24,10 @@ The `player inventory` submodule: view an online player's inventory, and save or
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-inventory" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"> "}<Link to="/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players) (iterator)"}</code> |
-| <Link id="m-load" /><code>{"private static async Task Load("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, string save)"}</code> |
-| <Link id="m-save" /><code>{"private static async Task<string> Save("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-inventory" /><code>{"private static IEnumerable<"}<Link to="/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"> "}<Link to="/game-api/types/alta-console/inventory">{"Inventory"}</Link>{"("}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{" players) (iterator)"}</code> | `player inventory`: server only, shows online players' inventories. |
+| <Link id="m-load" /><code>{"private static async Task Load("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user, string save)"}</code> | `player inventory load`: server only, writes inventory data into an offline player's save. |
+| <Link id="m-save" /><code>{"private static async Task<string> Save("}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{" user)"}</code> | `player inventory save`: server only, returns a player's inventory data as text, from the live player or from their save file. |
 
 </details>

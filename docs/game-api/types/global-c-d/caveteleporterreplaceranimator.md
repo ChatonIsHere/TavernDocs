@@ -22,9 +22,9 @@ Runs the dissolve swap between a cave teleporter and its replacement using the m
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private CaveTeleporterReplacerAnimator("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private CaveTeleporterReplacerAnimator("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" originalRenderers, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" replacing, Action<"}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{"> finished)"}</code> | Creates a `CaveTeleporterReplacerAnimator` from `originalRenderers`, `replacing` and `finished`. |
 
 </details>
 

@@ -20,6 +20,6 @@ Editor menu entry that creates a new `ArmorDefinition` asset under the Township 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ArmorDefinition.Create` with default values. |

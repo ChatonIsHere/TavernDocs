@@ -19,9 +19,9 @@ A spot on a pickup where a hand can hold it, with a rule for how the hand may tu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrabPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrabPoint()"}</code> | Creates a `GrabPoint` with default values. |
 
 ## Fields
 

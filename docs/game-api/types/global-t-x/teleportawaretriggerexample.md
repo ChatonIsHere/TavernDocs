@@ -19,9 +19,9 @@ Example `ITeleportAwareTrigger` that logs when a player teleports through the tr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected TeleportAwareTriggerExample()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected TeleportAwareTriggerExample()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Methods
 

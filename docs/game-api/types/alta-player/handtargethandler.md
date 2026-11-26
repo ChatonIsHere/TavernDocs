@@ -19,9 +19,9 @@ Holds the IK hand target transform for a hand and rebuilds it if something destr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandTargetHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandTargetHandler()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -33,7 +33,7 @@ Holds the IK hand target transform for a hand and rebuilds it if something destr
 | <Link id="m-defaultsave" /><code>{"private TransformSave defaultSave"}</code> | The target's starting transform and parent, reapplied to new targets. |
 | <Link id="m-entity" /><code>{"private "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity"}</code> | The network entity this hand belongs to. |
 | <Link id="m-handtarget" /><code>{"private Transform handTarget"}</code> | The target transform set on the prefab. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-targetname" /><code>{"private string targetName"}</code> | Name given to a regenerated target. |
 
 </details>

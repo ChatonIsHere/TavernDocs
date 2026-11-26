@@ -20,9 +20,9 @@ Old `BasicDecay` save data (version 2) without the disabled flag. Migrates to `B
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicDecayData2()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicDecayData2()"}</code> | Creates a `BasicDecayData2` with default values. |
 
 ## Fields
 

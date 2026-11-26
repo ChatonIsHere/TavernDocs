@@ -20,9 +20,9 @@ Serializable link from a logic receiver to a bool sender (`LogicBoolSender`).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoolSenderInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoolSenderInput()"}</code> | Creates a `BoolSenderInput` with default values. |
 
 ## Used in
 

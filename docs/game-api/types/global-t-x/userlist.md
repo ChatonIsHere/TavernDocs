@@ -21,9 +21,9 @@ A list of users parsed from a comma-separated console argument of names or user 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserList(IEnumerable<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> range)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserList(IEnumerable<"}<Link to="/game-api/types/global-t-x/userinfoaccess">{"UserInfoAccess"}</Link>{"> range)"}</code> | Creates an `UserList` from `range`. |
 
 ## Fields
 

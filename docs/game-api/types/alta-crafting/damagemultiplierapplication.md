@@ -19,9 +19,9 @@ A `DamageMultiplier` effect active on one item. When its trigger fires with an `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DamageMultiplierApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/game-api/types/alta-crafting/damagemultiplier">{"DamageMultiplier"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DamageMultiplierApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/game-api/types/alta-crafting/damagemultiplier">{"DamageMultiplier"}</Link>{" settings)"}</code> | Creates a `DamageMultiplierApplication` from `enchantment` and `settings`. |
 
 ## Fields
 
@@ -36,6 +36,6 @@ A `DamageMultiplier` effect active on one item. When its trigger fires with an `
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"override void Invoke(object data)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"override void Invoke(object data)"}</code> | Multiplies the hit's damage by the enchantment's multiplier; logs an error if the data isn't an `ImpactHit`. |

@@ -21,9 +21,9 @@ Save data for a `ButtonCounter`: its current amount.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ButtonCounterSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ButtonCounterSaveData()"}</code> | Creates a `ButtonCounterSaveData` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ A stored install or update event as the API returns it; the read side of `Instal
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InstallationEventInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InstallationEventInfo()"}</code> | Creates an `InstallationEventInfo` with default values. |
 
 ## Properties
 

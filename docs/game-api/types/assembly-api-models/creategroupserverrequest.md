@@ -18,9 +18,9 @@ Request body for creating a game server for a group.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CreateGroupServerRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CreateGroupServerRequest()"}</code> | Creates a `CreateGroupServerRequest` with default values. |
 
 ## Properties
 

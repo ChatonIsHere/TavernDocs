@@ -21,9 +21,9 @@ Save data (version 2) for `TimerLogic`: its duration and start and retrigger set
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimerLogicSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimerLogicSaveData()"}</code> | Creates a `TimerLogicSaveData` with default values. |
 
 ## Fields
 

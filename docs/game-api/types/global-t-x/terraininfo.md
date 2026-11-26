@@ -20,9 +20,9 @@ Singleton (`SingletonBehaviour<TerrainInfo>.Instance`) wrapping the world's Unit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TerrainInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TerrainInfo()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -37,7 +37,7 @@ Singleton (`SingletonBehaviour<TerrainInfo>.Instance`) wrapping the world's Unit
 | --- | --- |
 | <Link id="m-splatcontrol" /><code>{"private static readonly int _SplatControl"}</code> | Shader property ID of the terrain material's splat control texture. |
 | <Link id="m-instantiatedsplat" /><code>{"private Texture2D instantiatedSplat"}</code> | Runtime copy of `sourceSplat`, made on first use of `Splat`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-sourcesplat" /><code>{"private Texture2D sourceSplat"}</code> | The splat map asset copied for `Splat`. |
 | <Link id="m-terrain" /><code>{"private Terrain terrain"}</code> | The Unity `Terrain` on this object. |
 

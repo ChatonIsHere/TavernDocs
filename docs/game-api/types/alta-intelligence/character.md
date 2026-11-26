@@ -18,9 +18,9 @@ A named character in the AI knowledge system with its own atom and knowledge, op
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/alta-intelligence/character">{"Character"}</Link>{"(string name, "}<Link to="/game-api/types/alta-intelligence/character">{"Character"}</Link>{" parent, params "}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{"[] parentingKnowledge)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/alta-intelligence/character">{"Character"}</Link>{"(string name, "}<Link to="/game-api/types/alta-intelligence/character">{"Character"}</Link>{" parent, params "}<Link to="/game-api/types/alta-intelligence/knowledgeholder">{"KnowledgeHolder"}</Link>{"[] parentingKnowledge)"}</code> | Creates a `Character` from `name`, `parent` and `parentingKnowledge`. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ A colour value in the atmosphere system that blends smoothly to a new target and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AtmosphereColor(Action<Color> setValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AtmosphereColor(Action<Color> setValue)"}</code> | Creates an `AtmosphereColor` from `setValue`. |
 
 ## Methods
 

@@ -21,9 +21,9 @@ Controls whether a liquid container item can dock while full and keeps its liqui
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupLiquidContainerEnabler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupLiquidContainerEnabler()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

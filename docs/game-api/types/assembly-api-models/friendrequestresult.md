@@ -18,9 +18,9 @@ The web API's reply to a friend request: what happened, plus the friendship reco
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FriendRequestResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FriendRequestResult()"}</code> | Creates a `FriendRequestResult` with default values. |
 
 ## Properties
 

@@ -18,9 +18,9 @@ A list response from the Alta API: the items plus query metadata.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaApiResponse(IEnumerable<T> data, "}<Link to="/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" meta)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaApiResponse(IEnumerable<T> data, "}<Link to="/game-api/types/assembly-api-models/querymeta">{"QueryMeta"}</Link>{" meta)"}</code> | Creates an `AltaApiResponse` from `data` and `meta`. |
 
 ## Properties
 

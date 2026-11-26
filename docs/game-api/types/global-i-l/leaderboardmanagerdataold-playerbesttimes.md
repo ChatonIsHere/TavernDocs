@@ -19,9 +19,9 @@ Old save format for one player's best leaderboard times, migrated to `Leaderboar
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> | Creates a `LeaderboardManagerDataOld.PlayerBestTimes` with default values. |
 
 ## Fields
 

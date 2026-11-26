@@ -20,9 +20,9 @@ Sets a console command overload's priority. When several commands match, higher 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PriorityAttribute(int priority = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PriorityAttribute(int priority = 0)"}</code> | Creates a `PriorityAttribute` from `priority`. |
 
 ## Properties
 

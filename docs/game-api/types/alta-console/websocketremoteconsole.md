@@ -19,9 +19,9 @@ The server's websocket remote console: a Fleck server on port 1760 that makes a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebSocketRemoteConsole()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebSocketRemoteConsole()"}</code> | Creates a `WebSocketRemoteConsole` with default values. |
 
 ## Fields
 

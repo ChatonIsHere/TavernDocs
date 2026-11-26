@@ -20,9 +20,9 @@ Private: wraps a `ShellAnimationHandler` so it can sit in the animator's priorit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShellAnimationHandlerNode("}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShellAnimationHandlerNode("}<Link to="/game-api/types/alta-player/shellanimationhandler">{"ShellAnimationHandler"}</Link>{" handler)"}</code> | Creates a `StatEffectShellAnimator.ShellAnimationHandlerNode` from `handler`. |
 
 ## Properties
 

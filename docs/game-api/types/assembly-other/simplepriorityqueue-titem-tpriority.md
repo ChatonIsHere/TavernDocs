@@ -21,11 +21,11 @@ Thread-safe priority queue for any item type: it wraps items in nodes for you, g
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimplePriorityQueue()"}</code> |
-| <Link id="m-ctor-2" /><code>{"SimplePriorityQueue(IComparer<TPriority> comparer)"}</code> |
-| <Link id="m-ctor-3" /><code>{"SimplePriorityQueue(Comparison<TPriority> comparer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimplePriorityQueue()"}</code> | Creates a `SimplePriorityQueue` from `comparer`. |
+| <Link id="m-ctor-2" /><code>{"SimplePriorityQueue(IComparer<TPriority> comparer)"}</code> | Creates a `SimplePriorityQueue` from `comparer`. |
+| <Link id="m-ctor-3" /><code>{"SimplePriorityQueue(Comparison<TPriority> comparer)"}</code> | Creates a `SimplePriorityQueue` from `comparer`. |
 
 ## Fields
 

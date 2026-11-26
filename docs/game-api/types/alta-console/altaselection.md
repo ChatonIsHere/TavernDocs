@@ -18,9 +18,9 @@ The entity a console user has selected, kept on their `CommandContext` as `Selec
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaSelection()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaSelection()"}</code> | Creates an `AltaSelection` with default values. |
 
 ## Properties
 

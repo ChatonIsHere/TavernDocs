@@ -20,9 +20,9 @@ Quick access menu action that records a 600-frame profiler sample and tells the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnityProfilerSessionQuickAccessAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnityProfilerSessionQuickAccessAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

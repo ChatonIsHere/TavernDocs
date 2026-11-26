@@ -18,9 +18,9 @@ One cell in a PAGaC generation grid: its position and the tag it currently holds
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Node(int x, int y, int z, "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" tag)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Node(int x, int y, int z, "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" tag)"}</code> | Creates a `Node` from `x`, `y`, `z` and `tag`. |
 
 ## Properties
 

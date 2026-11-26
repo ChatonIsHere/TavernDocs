@@ -18,9 +18,9 @@ Save record linking one saved child of a population folder to the spawn point it
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationSaveDataChild()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationSaveDataChild()"}</code> | Creates a `PopulationSaveDataChild` with default values. |
 
 ## Fields
 

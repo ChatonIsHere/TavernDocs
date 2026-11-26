@@ -22,9 +22,9 @@ Static helpers that write and read a player's cosmetics as a bit stream (item ha
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Logger for this class. |
 
 </details>
 

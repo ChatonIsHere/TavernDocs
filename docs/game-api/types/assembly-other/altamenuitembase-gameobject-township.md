@@ -21,6 +21,6 @@ Editor menu folder `GameObject/Township`: menu item classes inherit it to appear
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Township()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Township()"}</code> | Creates an `AltaMenuItemBase.GameObject.Township` with default values. |

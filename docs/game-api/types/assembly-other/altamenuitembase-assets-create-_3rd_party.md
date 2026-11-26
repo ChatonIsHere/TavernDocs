@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/3rd Party`: menu item classes inherit it to ap
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected _3rd_Party()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected _3rd_Party()"}</code> | Creates an `AltaMenuItemBase.Assets.Create._3rd_Party` with default values. |

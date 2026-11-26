@@ -21,9 +21,9 @@ Save data (version 1) for a `Book`: its page collection and the pages inside it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BookSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BookSaveData()"}</code> | Creates a `BookSaveData` with default values. |
 
 ## Fields
 

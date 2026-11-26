@@ -20,9 +20,9 @@ A modlist file, as `/modlist` reads it: the mod ids, each optionally pinned to a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModsList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModsList()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 

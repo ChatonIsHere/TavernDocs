@@ -19,9 +19,9 @@ One parameter of a console `Command`, built from the method's `ParameterInfo`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Parameter(ParameterInfo parameterInfo, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command, string description)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Parameter(ParameterInfo parameterInfo, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command, string description)"}</code> | Creates a `Parameter` from `parameterInfo`, `command` and `description`. |
 
 ## Properties
 

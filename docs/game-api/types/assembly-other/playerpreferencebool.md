@@ -19,9 +19,9 @@ A bool player preference stored under a key with `PlayerPreferences.SetBool` and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerPreferenceBool(string key)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerPreferenceBool(string key)"}</code> | Creates a `PlayerPreferenceBool` from `key`. |
 
 ## Used in
 

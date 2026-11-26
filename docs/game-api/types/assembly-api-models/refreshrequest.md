@@ -19,9 +19,9 @@ Request body for refreshing login tokens, and the base of the login requests.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RefreshRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RefreshRequest()"}</code> | Creates a `RefreshRequest` with default values. |
 
 ## Properties
 

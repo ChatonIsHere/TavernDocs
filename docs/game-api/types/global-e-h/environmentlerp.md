@@ -19,9 +19,9 @@ Blends audio environment values (reverb) from the current settings to a target `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EnvironmentLerp("}<Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" defaultEnvironment)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EnvironmentLerp("}<Link to="/game-api/types/global-e-h/environmentnode">{"EnvironmentNode"}</Link>{" defaultEnvironment)"}</code> | Creates an `EnvironmentLerp` from `defaultEnvironment`. |
 
 ## Fields
 

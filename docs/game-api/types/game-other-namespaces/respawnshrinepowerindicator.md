@@ -19,9 +19,9 @@ Fills the shrine's power gauge renderers to show how much fuel is left.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RespawnShrinePowerIndicator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RespawnShrinePowerIndicator()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

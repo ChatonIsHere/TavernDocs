@@ -18,9 +18,9 @@ One question on a web API form page (`Page.Queries`).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Query()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Query()"}</code> | Creates a `Query` with default values. |
 
 ## Properties
 

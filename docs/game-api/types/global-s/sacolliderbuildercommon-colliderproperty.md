@@ -19,9 +19,9 @@ Editor collider builder options for generated colliders.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColliderProperty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColliderProperty()"}</code> | Creates a `SAColliderBuilderCommon.ColliderProperty` with default values. |
 
 ## Fields
 

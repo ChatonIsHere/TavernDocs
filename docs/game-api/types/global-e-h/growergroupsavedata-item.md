@@ -19,9 +19,9 @@ Saved state of one growing item in a `GrowerGroup`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `GrowerGroupSaveData.Item` with default values. |
 
 ## Fields
 

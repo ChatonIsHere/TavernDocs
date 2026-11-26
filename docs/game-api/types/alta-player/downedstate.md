@@ -21,9 +21,9 @@ The player state between being knocked down and dying, used when the server's do
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DownedState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState, "}<Link to="/game-api/types/game-other-namespaces/downedstatedebuffmanager">{"DownedStateDebuffManager"}</Link>{" newDebuffManager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DownedState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState, "}<Link to="/game-api/types/game-other-namespaces/downedstatedebuffmanager">{"DownedStateDebuffManager"}</Link>{" newDebuffManager)"}</code> | Creates a `DownedState` from `playingState` and `newDebuffManager`. |
 
 ## Fields
 

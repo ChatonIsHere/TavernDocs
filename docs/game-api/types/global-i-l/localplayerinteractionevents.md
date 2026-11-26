@@ -19,9 +19,9 @@ Fires Unity events when the local player starts or stops using an `Interactable`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LocalPlayerInteractionEvents()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LocalPlayerInteractionEvents()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

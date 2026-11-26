@@ -19,9 +19,9 @@ Caches the result of a function for the last input only. A new input reruns the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MemoizeOne(Func<TInput, TOutput> evaluate, IEqualityComparer<TInput> comparer = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MemoizeOne(Func<TInput, TOutput> evaluate, IEqualityComparer<TInput> comparer = null)"}</code> | Creates a `MemoizeOne` from `evaluate` and `comparer`. |
 
 ## Fields
 

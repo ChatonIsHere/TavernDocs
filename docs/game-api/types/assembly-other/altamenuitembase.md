@@ -19,9 +19,9 @@ Root of a nested class tree that mirrors Unity editor menu paths. Menu items inh
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaMenuItemBase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaMenuItemBase()"}</code> | Creates an `AltaMenuItemBase` with default values. |
 
 ## Fields
 

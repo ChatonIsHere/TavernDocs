@@ -21,9 +21,9 @@ Climbing tower gauge and rune display. On clients it lights the rune for the hig
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerProgressionVisualizer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerProgressionVisualizer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

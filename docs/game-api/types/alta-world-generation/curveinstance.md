@@ -19,9 +19,9 @@ Runtime instance of the `Curve` plugin part: remaps every cell through an animat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CurveInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/curve">{"Curve"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CurveInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/curve">{"Curve"}</Link>{" part)"}</code> | Creates a `CurveInstance` from `plugin` and `part`. |
 
 ## Methods
 

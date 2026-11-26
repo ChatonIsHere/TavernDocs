@@ -19,9 +19,9 @@ A named camera spot (position and rotation) in the `ProfilingPositionCycler` glo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProfilingPosition(Transform refTransform)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProfilingPosition(Transform refTransform)"}</code> | Creates a `ProfilingPositionCycler.ProfilingPosition` from `refTransform`. |
 
 ## Fields
 

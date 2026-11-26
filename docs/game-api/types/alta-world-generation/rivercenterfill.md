@@ -20,9 +20,9 @@ Forest fill step that places objects on points along the middle of rivers.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverCenterFill()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverCenterFill()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -33,7 +33,7 @@ Forest fill step that places objects on points along the middle of rivers.
 | --- | --- |
 | <Link id="m-extraradius" /><code>{"private float extraRadius"}</code> | Extra radius passed to the segments when getting points. |
 | <Link id="m-isspawningonwaterfalls" /><code>{"private bool isSpawningOnWaterfalls"}</code> | Also use waterfall segments. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-river" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/rivergenerator">{"RiverGenerator"}</Link>{" river"}</code> | River generator to read segments from. |
 | <Link id="m-step" /><code>{"private float step"}</code> | Spacing between points. |
 

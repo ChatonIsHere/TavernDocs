@@ -19,9 +19,9 @@ Static lookup for event buses by interface type. `ProjectLifetimeScope` register
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EventBusLocator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EventBusLocator()"}</code> | Creates an `EventBusLocator` with default values. |
 
 ## Fields
 

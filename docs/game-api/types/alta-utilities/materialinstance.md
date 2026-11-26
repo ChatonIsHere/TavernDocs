@@ -20,9 +20,9 @@ Takes a renderer's own material copy (`renderer.material`) and cleans it up when
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialInstance(Renderer renderer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialInstance(Renderer renderer)"}</code> | Creates a `MaterialInstance` from `renderer`. |
 
 ## Properties
 

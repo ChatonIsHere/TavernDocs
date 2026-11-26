@@ -19,9 +19,9 @@ One source material inside an `AtlasDefinition` and where it sits in the baked t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AtlasedMaterial()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AtlasedMaterial()"}</code> | Creates an `AtlasDefinition.AtlasedMaterial` with default values. |
 
 ## Fields
 

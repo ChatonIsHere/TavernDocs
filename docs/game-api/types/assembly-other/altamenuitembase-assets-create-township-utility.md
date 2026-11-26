@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Utility`: menu item classes inherit i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Utility()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Utility()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Utility` with default values. |

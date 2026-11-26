@@ -20,9 +20,9 @@ Base for a named event that websocket console users can subscribe to. Messages a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConsoleEvent(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConsoleEvent(string name)"}</code> | Creates a `ConsoleEvent` from `name`. |
 
 ## Fields
 
@@ -54,7 +54,7 @@ Base for a named event that websocket console users can subscribe to. Messages a
 | Member | What it is |
 | --- | --- |
 | <Link id="m-deregister" /><code>{"virtual void Deregister()"}</code> | Removes every listener from `Invoked`. The generic version also removes the event from `ConsoleEventProcessor`. |
-| <Link id="m-invoke" /><code>{"protected void Invoke("}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{" response)"}</code> |  |
+| <Link id="m-invoke" /><code>{"protected void Invoke("}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsedata">{"WebSocketCommandHandler.ResponseData"}</Link>{" response)"}</code> | Queues the event to be sent to subscribed console connections. |
 
 ## Used in
 

@@ -19,9 +19,9 @@ One open area found by the room fix flood fill.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Room(int startX, int startY, int totalX, int totalY, int count, int group)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Room(int startX, int startY, int totalX, int totalY, int count, int group)"}</code> | Creates a `RoomFixes.Room` from `startX`, `startY`, `totalX`, `totalY`, `count` and `group`. |
 
 ## Fields
 

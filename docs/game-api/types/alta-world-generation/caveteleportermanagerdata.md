@@ -21,9 +21,9 @@ Save data for the `CaveTeleporterManager` (version 1).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporterManagerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CaveTeleporterManagerData()"}</code> | Creates a `CaveTeleporterManagerData` with default values. |
 
 ## Fields
 

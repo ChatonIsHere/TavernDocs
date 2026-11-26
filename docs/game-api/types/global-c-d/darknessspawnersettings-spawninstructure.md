@@ -19,9 +19,9 @@ A point and surface normal found for one darkness spawn.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnInstructure(Vector3 position, Vector3 normal)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnInstructure(Vector3 position, Vector3 normal)"}</code> | Creates a `DarknessSpawnerSettings.SpawnInstructure` from `position` and `normal`. |
 
 ## Fields
 

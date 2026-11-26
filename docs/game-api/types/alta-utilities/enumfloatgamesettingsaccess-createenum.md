@@ -20,6 +20,6 @@ Editor menu entry that creates an `EnumFloatGameSettingsAccess` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CreateEnum()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CreateEnum()"}</code> | Creates an `EnumFloatGameSettingsAccess.CreateEnum` with default values. |

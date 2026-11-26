@@ -20,9 +20,9 @@ Analytics event for a social action (friends, reports, bans), always with where 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SocialAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-s/socialanalyticseventorigin">{"SocialAnalyticsEventOrigin"}</Link>{" eventOrigin)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SocialAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-s/socialanalyticseventorigin">{"SocialAnalyticsEventOrigin"}</Link>{" eventOrigin)"}</code> | Creates a `SocialAnalyticsEvent` from `eventName` and `eventOrigin`. |
 
 ## Fields
 

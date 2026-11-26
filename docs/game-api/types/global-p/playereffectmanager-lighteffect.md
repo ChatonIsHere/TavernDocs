@@ -19,9 +19,9 @@ Wraps the pooled light shown while a player's body is burning.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LightEffect("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LightEffect("}<Link to="/game-api/types/global-p/pooledobject">{"PooledObject"}</Link>{" pooledObject)"}</code> | Creates a `PlayerEffectManager.LightEffect` from `pooledObject`. |
 
 ## Fields
 

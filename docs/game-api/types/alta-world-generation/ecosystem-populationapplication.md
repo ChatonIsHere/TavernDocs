@@ -19,9 +19,9 @@ One population entry in an `Ecosystem` asset: which population, how big it can g
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationApplication()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationApplication()"}</code> | Creates an `Ecosystem.PopulationApplication` with default values. |
 
 ## Fields
 

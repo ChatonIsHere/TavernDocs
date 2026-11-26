@@ -20,9 +20,9 @@ Server: the saved contents of a player's gold bank account (one coin count), sto
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerGoldBankAccountData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerGoldBankAccountData()"}</code> | Creates a `PlayerGoldBankAccountData` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Server: keeps communal storage contents across server wipes, saved in the `Globa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GlobalCommunalStorageValues()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GlobalCommunalStorageValues()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

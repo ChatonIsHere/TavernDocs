@@ -19,9 +19,9 @@ A synced animator float that clients ease towards the received value instead of 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedFloatLerp(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedFloatLerp(string name)"}</code> | Creates an `AnimatedFloatLerp` from `name`. |
 
 ## Fields
 

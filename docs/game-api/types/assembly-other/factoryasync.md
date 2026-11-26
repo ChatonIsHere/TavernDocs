@@ -20,9 +20,9 @@ Base for factories that spawn a prefab loaded through Addressables. The prefab's
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> | Creates a `FactoryAsync` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data for an `Enchantable` (save structure version 1): the enchantments on t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EnchantableData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EnchantableData()"}</code> | Creates an `EnchantableData` with default values. |
 
 ## Fields
 

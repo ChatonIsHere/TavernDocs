@@ -19,9 +19,9 @@ One bridge piece `ForestBridges` can place across a river, with spline settings 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Option()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Option()"}</code> | Creates a `ForestBridges.Option` with default values. |
 
 ## Fields
 

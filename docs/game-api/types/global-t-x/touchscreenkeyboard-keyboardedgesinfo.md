@@ -19,9 +19,9 @@ Layout data for the current virtual keyboard, used when adding extra keys to the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KeyBoardEdgesInfo(Vector2Int[] edgeIndexPairs, Vector2Int[] rowStackSizes, float standardKeySpacing, "}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{"[] keysInfo, int spaceKeyIndex)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KeyBoardEdgesInfo(Vector2Int[] edgeIndexPairs, Vector2Int[] rowStackSizes, float standardKeySpacing, "}<Link to="/game-api/types/global-t-x/virtualkeyinfo">{"VirtualKeyInfo"}</Link>{"[] keysInfo, int spaceKeyIndex)"}</code> | Creates a `TouchScreenKeyboard.KeyBoardEdgesInfo` from `edgeIndexPairs`, `rowStackSizes`, `standardKeySpacing`, `keysInfo` and `spaceKeyIndex`. |
 
 ## Fields
 

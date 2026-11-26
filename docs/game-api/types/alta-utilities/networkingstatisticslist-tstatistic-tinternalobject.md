@@ -20,6 +20,6 @@ A `NetworkingStatisticsList` filled once in the constructor by mapping each item
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkingStatisticsList(ICollection<TInternalObject> listToCreateFrom, Func<TInternalObject, TStatistic> createStatisticObject, string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkingStatisticsList(ICollection<TInternalObject> listToCreateFrom, Func<TInternalObject, TStatistic> createStatisticObject, string name)"}</code> | Creates a `NetworkingStatisticsList` from `listToCreateFrom`, `createStatisticObject` and `name`. |

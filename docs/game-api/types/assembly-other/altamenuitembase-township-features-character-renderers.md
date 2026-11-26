@@ -20,6 +20,6 @@ Editor menu folder `Township/Features/Character/Renderers`: menu item classes in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Renderers()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Renderers()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Character.Renderers` with default values. |

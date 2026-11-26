@@ -18,9 +18,9 @@ Options passed to `CharacterIKController.EnableIKControl` and `DisableIKControl`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IKControllSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IKControllSettings()"}</code> | Creates an `IKControllSettings` with default values. |
 
 ## Fields
 

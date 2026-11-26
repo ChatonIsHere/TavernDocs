@@ -19,9 +19,9 @@ Moves a player from Playing to Combat when they take a tool hit within range or 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingToCombatTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingToCombatTransition()"}</code> | Creates a `PlayingToCombatTransition` with default values. |
 
 ## Used in
 

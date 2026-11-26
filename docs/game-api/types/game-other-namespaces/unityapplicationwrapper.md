@@ -19,9 +19,9 @@ Thin wrapper over `UnityEngine.Application` so code can be tested with a fake. U
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnityApplicationWrapper()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnityApplicationWrapper()"}</code> | Creates an `UnityApplicationWrapper` with default values. |
 
 ## Fields
 

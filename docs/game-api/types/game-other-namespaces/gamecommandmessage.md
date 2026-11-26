@@ -18,9 +18,9 @@ Message carrying a game command type. Nothing else in this build uses it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameCommandMessage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameCommandMessage()"}</code> | Creates a `GameCommandMessage` with default values. |
 
 ## Properties
 

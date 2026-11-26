@@ -21,9 +21,9 @@ Save data for a `BuildupPickup`: which saved child goes in each of its build-up 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BuildupPickupSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BuildupPickupSaveData()"}</code> | Creates a `BuildupPickupSaveData` with default values. |
 
 ## Fields
 

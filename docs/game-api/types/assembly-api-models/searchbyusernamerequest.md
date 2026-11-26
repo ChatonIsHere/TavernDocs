@@ -18,9 +18,9 @@ Body of an Alta web API request to find users by username.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SearchByUsernameRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SearchByUsernameRequest()"}</code> | Creates a `SearchByUsernameRequest` with default values. |
 
 ## Properties
 

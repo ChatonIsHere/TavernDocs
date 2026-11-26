@@ -19,9 +19,9 @@ Serializable `AltaEvent` that passes an `Embeddable`, so inspector-wired listene
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmbeddableEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmbeddableEvent()"}</code> | Creates an `EmbeddableEvent` with default values. |
 
 ## Used in
 

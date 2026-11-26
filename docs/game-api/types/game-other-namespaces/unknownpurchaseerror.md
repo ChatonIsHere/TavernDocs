@@ -19,6 +19,6 @@ A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop.Errors`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnknownPurchaseError(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnknownPurchaseError(string message)"}</code> | Creates an `UnknownPurchaseError` from `message`. |

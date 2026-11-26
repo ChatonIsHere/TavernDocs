@@ -21,9 +21,9 @@ Pooled object definition whose instances are `MeshReplacePooledObject`s given a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PooledMeshReplaceObjectDefinition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PooledMeshReplaceObjectDefinition()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

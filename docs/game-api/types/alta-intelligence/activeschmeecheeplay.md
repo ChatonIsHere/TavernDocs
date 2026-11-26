@@ -19,9 +19,9 @@ Schmeechee action where it runs around at random, slowing as its energy runs dow
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveSchmeecheePlay()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveSchmeecheePlay()"}</code> | Creates an `ActiveSchmeecheePlay` with default values. |
 
 ## Fields
 

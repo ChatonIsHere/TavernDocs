@@ -18,9 +18,9 @@ Web API model for the patch notes of a game version, part of `LauncherGameInfoFu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PatchNotes()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PatchNotes()"}</code> | Creates a `PatchNotes` with default values. |
 
 ## Properties
 

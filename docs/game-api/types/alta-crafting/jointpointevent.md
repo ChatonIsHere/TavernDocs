@@ -19,9 +19,9 @@ Inspector event that passes a `JointPoint`. Used for a joint point's connected a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JointPointEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JointPointEvent()"}</code> | Creates a `JointPointEvent` with default values. |
 
 ## Used in
 

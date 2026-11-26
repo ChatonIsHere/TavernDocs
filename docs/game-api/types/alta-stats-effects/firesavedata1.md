@@ -20,9 +20,9 @@ Old version 1 save data for a `Fire`, kept so old saves load.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FireSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FireSaveData1()"}</code> | Creates a `FireSaveData1` with default values. |
 
 ## Fields
 

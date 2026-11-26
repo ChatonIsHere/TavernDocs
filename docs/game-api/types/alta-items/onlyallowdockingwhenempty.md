@@ -19,9 +19,9 @@ Blocks a container from being docked while its own docks hold anything, and bloc
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OnlyAllowDockingWhenEmpty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OnlyAllowDockingWhenEmpty()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

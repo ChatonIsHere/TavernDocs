@@ -20,9 +20,9 @@ Forest fill step that places objects along both sides of paths scored by a `Cuto
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CutoutPathEdgeFill()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CutoutPathEdgeFill()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -33,7 +33,7 @@ Forest fill step that places objects along both sides of paths scored by a `Cuto
 | --- | --- |
 | <Link id="m-cutoutpath" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/cutoutpathmodifier">{"CutoutPathModifier"}</Link>{" cutoutPath"}</code> | Modifier whose node scores decide which paths get edging. |
 | <Link id="m-extraradius" /><code>{"private float extraRadius"}</code> | Distance beyond the path radius to place objects. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-step" /><code>{"private float step"}</code> | Metres between points along a path. |
 
 </details>

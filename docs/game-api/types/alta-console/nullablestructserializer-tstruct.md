@@ -19,9 +19,9 @@ JSON converter for a nullable struct that writes null or hands the value to the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NullableStructSerializer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NullableStructSerializer()"}</code> | Creates a `NullableStructSerializer` with default values. |
 
 ## Methods
 

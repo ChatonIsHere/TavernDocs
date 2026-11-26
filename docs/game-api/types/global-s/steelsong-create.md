@@ -20,6 +20,6 @@ Editor menu entry for creating a `SteelSong` skill asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `SteelSong.Create` with default values. |

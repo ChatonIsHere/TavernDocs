@@ -21,9 +21,9 @@ Save data (version 2) for a `PlayerDetect` trigger: its detection radius, or box
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerDetectSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerDetectSaveData()"}</code> | Creates a `PlayerDetectSaveData` with default values. |
 
 ## Fields
 

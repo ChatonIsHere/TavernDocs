@@ -18,9 +18,9 @@ Line editor for the Windows server console: keeps a typed line at the bottom whi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConsoleInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConsoleInput()"}</code> | Creates a `ConsoleInput` with default values. |
 
 ## Fields
 

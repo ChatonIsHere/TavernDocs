@@ -19,6 +19,6 @@ Marks a settings property as developer only, for example `ServerSettings.IsAutoS
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DevOnlyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DevOnlyAttribute()"}</code> | Creates a `DevOnlyAttribute` with default values. |

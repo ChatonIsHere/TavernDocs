@@ -19,9 +19,9 @@ Client store of muted player IDs, saved as JSON in Unity `PlayerPrefs` under `Mu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VivoxPlayerPrefsMutedPlayerStore()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VivoxPlayerPrefsMutedPlayerStore()"}</code> | Creates a `VivoxPlayerPrefsMutedPlayerStore` with default values. |
 
 ## Fields
 

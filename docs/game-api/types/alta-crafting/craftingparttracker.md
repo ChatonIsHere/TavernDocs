@@ -18,9 +18,9 @@ Tracks a crafting part inside a `GenericAssemblyStation`'s trigger, with the col
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CraftingPartTracker("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CraftingPartTracker("}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" part)"}</code> | Creates a `CraftingPartTracker` from `part`. |
 
 ## Properties
 

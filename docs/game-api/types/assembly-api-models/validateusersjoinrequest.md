@@ -18,9 +18,9 @@ Request body for checking that a player may join a game server, probably sent by
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ValidateUsersJoinRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ValidateUsersJoinRequest()"}</code> | Creates a `ValidateUsersJoinRequest` with default values. |
 
 ## Properties
 

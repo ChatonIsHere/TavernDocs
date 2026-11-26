@@ -22,9 +22,9 @@ Save data for `LeaderboardManager` (version 2): each course's top players and ea
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LeaderboardManagerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LeaderboardManagerData()"}</code> | Creates a `LeaderboardManagerData` with default values. |
 
 ## Fields
 

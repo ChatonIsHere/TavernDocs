@@ -21,9 +21,9 @@ The player's local game options, saved as JSON in the storage folder as `GameCon
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameSettings()"}</code> | Creates a `GameSettings` with default values. |
 
 ## Properties
 

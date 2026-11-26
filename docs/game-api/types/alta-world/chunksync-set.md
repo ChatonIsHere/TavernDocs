@@ -19,9 +19,9 @@ Server: per-player list of chunk spawn and despawn syncs in progress, used by `C
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Set()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Set()"}</code> | Creates a `ChunkSync.Set` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ A user's answers for one form page, part of a `FormResponse`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PageResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PageResponse()"}</code> | Creates a `PageResponse` with default values. |
 
 ## Properties
 

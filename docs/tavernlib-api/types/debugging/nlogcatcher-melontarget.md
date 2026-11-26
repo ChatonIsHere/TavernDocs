@@ -21,9 +21,9 @@ An NLog target that writes the game's log lines to TavernLib's MelonLoader log, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MelonTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MelonTarget()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 

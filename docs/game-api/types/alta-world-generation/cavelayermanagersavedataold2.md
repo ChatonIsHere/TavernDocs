@@ -20,9 +20,9 @@ Old save data for the `CaveLayerManager` (version 2): seed and layer count.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveDataOld2()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveDataOld2()"}</code> | Creates a `CaveLayerManagerSaveDataOld2` with default values. |
 
 ## Fields
 

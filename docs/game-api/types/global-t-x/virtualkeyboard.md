@@ -19,9 +19,9 @@ In-world VR keyboard that builds keys from a `VirtualKeyboardSetup`, optionally 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VirtualKeyboard()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VirtualKeyboard()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ The Harmony patch behind `TavernEvents.SocketCreated`: a postfix on the `Alta.Ne
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EventPatches()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EventPatches()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Methods
 

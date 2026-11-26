@@ -18,9 +18,9 @@ Settings for simulating a bad connection: send and receive delays in ms and a pa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConnectionSimulatorConfiguration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConnectionSimulatorConfiguration()"}</code> | Creates a `ConnectionSimulatorConfiguration` with default values. |
 
 ## Fields
 

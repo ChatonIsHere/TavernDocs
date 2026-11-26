@@ -18,9 +18,9 @@ Server: finds and loads per-player save files. `ServerSaveUtility` makes one ove
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveUtility("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerSaveUtility("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder)"}</code> | Creates a `PlayerSaveUtility` from `folder`. |
 
 ## Properties
 

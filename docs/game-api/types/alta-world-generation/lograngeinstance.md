@@ -19,9 +19,9 @@ Runtime instance of the `LogRange` debug plugin part: logs the minimum, maximum 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogRangeInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/logrange">{"LogRange"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogRangeInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/logrange">{"LogRange"}</Link>{" part)"}</code> | Creates a `LogRangeInstance` from `plugin` and `part`. |
 
 ## Methods
 

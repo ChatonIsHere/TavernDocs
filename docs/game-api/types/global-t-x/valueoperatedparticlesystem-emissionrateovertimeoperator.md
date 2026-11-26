@@ -20,9 +20,9 @@ Operator that drives a particle system's emission rate over time.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmissionRateOverTimeOperator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmissionRateOverTimeOperator()"}</code> | Creates a `ValueOperatedParticleSystem.EmissionRateOverTimeOperator` with default values. |
 
 ## Methods
 

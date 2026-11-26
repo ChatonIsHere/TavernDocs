@@ -21,9 +21,9 @@ Save data for a `GrowerComponent`: definition, stage, start time and which child
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrowthSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrowthSaveData()"}</code> | Creates a `GrowthSaveData` with default values. |
 
 ## Fields
 

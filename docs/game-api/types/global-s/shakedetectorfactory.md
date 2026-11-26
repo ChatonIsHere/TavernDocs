@@ -18,9 +18,9 @@ Serializable set of shake settings that builds a `ShakeDetectorHelper` for a giv
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShakeDetectorFactory()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShakeDetectorFactory()"}</code> | Creates a `ShakeDetectorFactory` with default values. |
 
 ## Fields
 

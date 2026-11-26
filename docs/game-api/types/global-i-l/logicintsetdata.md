@@ -21,9 +21,9 @@ Save data (version 1) for `LogicIntSet`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicIntSetData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicIntSetData()"}</code> | Creates a `LogicIntSetData` with default values. |
 
 ## Fields
 

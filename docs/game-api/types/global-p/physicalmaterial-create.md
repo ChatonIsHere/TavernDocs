@@ -20,6 +20,6 @@ Unity editor menu item that creates a `PhysicalMaterial` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PhysicalMaterial.Create` with default values. |

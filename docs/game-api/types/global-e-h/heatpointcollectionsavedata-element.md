@@ -20,9 +20,9 @@ Saved state of one heat point.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Element()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Element()"}</code> | Creates a `HeatPointCollectionSaveData.Element` with default values. |
 
 ## Fields
 

@@ -18,10 +18,10 @@ Paths to one game server's save folders (save, chunks, cache, logs and player sa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerSaveUtility("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ServerSaveUtility("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerSaveUtility("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess)"}</code> | Creates a `ServerSaveUtility` from `server`. |
+| <Link id="m-ctor-2" /><code>{"ServerSaveUtility("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Creates a `ServerSaveUtility` from `server`. |
 
 ## Fields
 

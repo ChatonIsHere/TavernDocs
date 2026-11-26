@@ -19,9 +19,9 @@ Adapter the woodcutting tree baker uses to read meshes, materials and LODs from 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected WoodcutTreeBakerAccess()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected WoodcutTreeBakerAccess()"}</code> | Creates a `WoodcutTreeBakerAccess` with default values. |
 
 ## Properties
 

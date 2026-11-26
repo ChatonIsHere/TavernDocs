@@ -21,9 +21,9 @@ Save data for `OrbBasinVfxController`: the state of its three effects.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData()"}</code> | Creates an `OrbBasinVfxControllerSaveData` with default values. |
 
 ## Fields
 

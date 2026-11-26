@@ -18,9 +18,9 @@ Profiling stats for one update module: average update time and number of registe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UpdateModuleInfo("}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UpdateModuleInfo("}<Link to="/game-api/types/assembly-other/averagenumber">{"AverageNumber"}</Link>{" duration)"}</code> | Creates an `UpdateModuleInfo` from `duration`. |
 
 ## Fields
 

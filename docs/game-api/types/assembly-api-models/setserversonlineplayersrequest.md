@@ -18,9 +18,9 @@ Body of the Alta web API call a server makes to report who is online (`SetOnline
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SetServersOnlinePlayersRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SetServersOnlinePlayersRequest()"}</code> | Creates a `SetServersOnlinePlayersRequest` with default values. |
 
 ## Properties
 

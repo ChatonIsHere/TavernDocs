@@ -19,9 +19,9 @@ Probably a leftover from before the service registry: TavernLib never creates or
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TavernMessageHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TavernMessageHandler()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 

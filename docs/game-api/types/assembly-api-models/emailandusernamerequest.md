@@ -19,9 +19,9 @@ Request body holding an email and a username.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmailAndUsernameRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmailAndUsernameRequest()"}</code> | Creates an `EmailAndUsernameRequest` with default values. |
 
 ## Properties
 

@@ -20,9 +20,9 @@ The in-world virtual keyboard players type on with their fingers. Client only; o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TouchScreenKeyboard()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TouchScreenKeyboard()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

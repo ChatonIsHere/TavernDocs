@@ -21,9 +21,9 @@ Save data for a `Tracker`, the component that registers a network entity under a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TrackerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TrackerData()"}</code> | Creates a `TrackerData` with default values. |
 
 ## Fields
 

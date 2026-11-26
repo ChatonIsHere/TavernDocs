@@ -21,9 +21,9 @@ Save data for `RespawnOnDestroy`: delay range, the object to respawn and any pen
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RespawnOnDestroySaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RespawnOnDestroySaveData()"}</code> | Creates a `RespawnOnDestroySaveData` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Offline stand-in for the server client. It hands out `GameServerInfo.OfflineServ
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineServerApiClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineServerApiClient()"}</code> | Creates an `OfflineServerApiClient` with default values. |
 
 ## Methods
 

@@ -19,9 +19,9 @@ One timed step on a `SerializedTimedEvent`: an event to fire a set time after th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimedEventSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimedEventSetup()"}</code> | Creates a `SerializedTimedEvent.TimedEventSetup` with default values. |
 
 ## Fields
 
@@ -44,9 +44,9 @@ One timed step on a `SerializedTimedEvent`: an event to fire a set time after th
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"void Invoke()"}</code> | Fires `onTimeReached`. |
 
 ## Used in
 

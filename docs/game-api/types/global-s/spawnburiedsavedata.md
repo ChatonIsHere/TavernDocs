@@ -21,9 +21,9 @@ Save data for a `SpawnBuried` dig spot (version 1).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnBuriedSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnBuriedSaveData()"}</code> | Creates a `SpawnBuriedSaveData` with default values. |
 
 ## Fields
 

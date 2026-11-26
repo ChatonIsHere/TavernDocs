@@ -20,9 +20,9 @@ Township event bus event broadcast by `PlayerInPositionObserver` when the tutori
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerInPositionEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerInPositionEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Creates a `PlayerInPositionEvent` from `player`. |
 
 ## Properties
 

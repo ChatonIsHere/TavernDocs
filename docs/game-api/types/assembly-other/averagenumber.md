@@ -18,9 +18,9 @@ Keeps a running total, count, min and max of recorded numbers. Used for simple s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AverageNumber()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AverageNumber()"}</code> | Creates an `AverageNumber` with default values. |
 
 ## Fields
 

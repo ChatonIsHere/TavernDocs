@@ -19,6 +19,6 @@ Inspector attribute, probably to edit a tangent value as an angle. No code of it
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TanFromAngle()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TanFromAngle()"}</code> | Creates a `TanFromAngle` with default values. |

@@ -19,9 +19,9 @@ File format that stores a file's whole content as one string.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TextFileFormat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TextFileFormat()"}</code> | Creates a `TextFileFormat` with default values. |
 
 ## Properties
 

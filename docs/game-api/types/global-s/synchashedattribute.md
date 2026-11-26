@@ -20,6 +20,6 @@ Obsolete `SyncAttribute` that marks a field for syncing with the serialization f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SyncHashedAttribute(Type type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SyncHashedAttribute(Type type)"}</code> | Creates a `SyncHashedAttribute` from `type`. |

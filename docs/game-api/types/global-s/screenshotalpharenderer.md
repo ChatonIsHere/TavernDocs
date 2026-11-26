@@ -19,9 +19,9 @@ Renderer for the `ScreenShotAlpha` post effect, using the `Hidden/DepthToAlpha` 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ScreenShotAlphaRenderer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ScreenShotAlphaRenderer()"}</code> | Creates a `ScreenShotAlphaRenderer` with default values. |
 
 ## Methods
 

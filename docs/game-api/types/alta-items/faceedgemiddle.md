@@ -21,9 +21,9 @@ A book flair asset for the middle of a cover's edge. A `BookFlair` ScriptableObj
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FaceEdgeMiddle()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FaceEdgeMiddle()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Used in
 

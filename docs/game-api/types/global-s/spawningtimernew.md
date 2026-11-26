@@ -19,9 +19,9 @@ Disposable timer for spawning code: wrap work in a `using` and it logs name, mes
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawningTimerNew(string message, string objectName = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawningTimerNew(string message, string objectName = null)"}</code> | Creates a `SpawningTimerNew` from `message` and `objectName`. |
 
 ## Fields
 

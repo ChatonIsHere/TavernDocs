@@ -20,9 +20,9 @@ Builds a `GeneratedBiome` by blending weighted biomes: attribute ranges and elem
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GeneratingBiome()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GeneratingBiome()"}</code> | Creates a `GeneratingBiome` with default values. |
 
 ## Fields
 

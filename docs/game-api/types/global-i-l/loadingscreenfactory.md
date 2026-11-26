@@ -18,9 +18,9 @@ Picks the loading screen prefab for the platform (Quest, Pico or default). Bound
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LoadingScreenFactory()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LoadingScreenFactory()"}</code> | Creates a `LoadingScreenFactory` with default values. |
 
 ## Fields
 

@@ -22,10 +22,10 @@ Server: the outcome of checking whether a player may join, either their user inf
 <details>
 <summary>2 private and internal constructors</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private PlayerJoinResult("}<Link to="/game-api/types/global-t-x/userinfoandrole">{"UserInfoAndRole"}</Link>{" userInfo)"}</code> |
-| <Link id="m-ctor-2" /><code>{"private PlayerJoinResult(string error)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private PlayerJoinResult("}<Link to="/game-api/types/global-t-x/userinfoandrole">{"UserInfoAndRole"}</Link>{" userInfo)"}</code> | Creates a `ServerPlayerConnectionHandlerOld.PlayerJoinResult` from `error`. |
+| <Link id="m-ctor-2" /><code>{"private PlayerJoinResult(string error)"}</code> | Creates a `ServerPlayerConnectionHandlerOld.PlayerJoinResult` from `error`. |
 
 </details>
 

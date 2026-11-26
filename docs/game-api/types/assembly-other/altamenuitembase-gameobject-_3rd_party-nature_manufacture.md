@@ -20,6 +20,6 @@ Editor menu folder `GameObject/3rd Party/Nature Manufacture`: menu item classes 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Nature_Manufacture()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Nature_Manufacture()"}</code> | Creates an `AltaMenuItemBase.GameObject._3rd_Party.Nature_Manufacture` with default values. |

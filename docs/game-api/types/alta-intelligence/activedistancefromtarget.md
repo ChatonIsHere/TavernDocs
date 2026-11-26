@@ -20,9 +20,9 @@ Navigation action that makes the agent wander relative to its target's ground po
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveDistanceFromTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveDistanceFromTarget()"}</code> | Creates an `ActiveDistanceFromTarget` with default values. |
 
 ## Methods
 

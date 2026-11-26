@@ -19,9 +19,9 @@ Stops a `HeatArea` affecting chosen heat points, such as the object's own, by fi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HeatPointCollectionAreaFilter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HeatPointCollectionAreaFilter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

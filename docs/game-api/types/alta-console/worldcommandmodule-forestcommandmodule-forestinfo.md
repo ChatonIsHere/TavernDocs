@@ -20,9 +20,9 @@ The result of the `forest info` console command: a forest's layout, biomes and e
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForestInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForestInfo()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo` with default values. |
 
 ## Fields
 

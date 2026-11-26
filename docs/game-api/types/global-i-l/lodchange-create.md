@@ -20,6 +20,6 @@ Editor menu entry that creates a `LODChange` debug asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `LODChange.Create` with default values. |

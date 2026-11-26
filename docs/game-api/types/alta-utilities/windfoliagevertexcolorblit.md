@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/WindFoliageVertexColor` shader. `A
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WindFoliageVertexColorBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WindFoliageVertexColorBlit()"}</code> | Creates a `WindFoliageVertexColorBlit` with default values. |
 
 ## Fields
 

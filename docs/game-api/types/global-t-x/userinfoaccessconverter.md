@@ -19,9 +19,9 @@ Type converter that turns a console argument string into a `UserInfoAccess`: a n
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserInfoAccessConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserInfoAccessConverter()"}</code> | Creates an `UserInfoAccessConverter` with default values. |
 
 ## Methods
 

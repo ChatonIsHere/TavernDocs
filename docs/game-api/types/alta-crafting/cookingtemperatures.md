@@ -18,9 +18,9 @@ Temperature bands and times for cooking food: weak, optimal and burning, plus an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CookingTemperatures()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CookingTemperatures()"}</code> | Creates a `CookingTemperatures` with default values. |
 
 ## Fields
 

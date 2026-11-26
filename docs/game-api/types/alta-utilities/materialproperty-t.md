@@ -19,9 +19,9 @@ Base for a typed shader property that can be set on a material or on a `Material
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialProperty(string propertyName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialProperty(string propertyName)"}</code> | Creates a `MaterialProperty` from `propertyName`. |
 
 ## Properties
 

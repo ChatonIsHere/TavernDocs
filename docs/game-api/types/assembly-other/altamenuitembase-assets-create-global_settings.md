@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Global Settings.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Global_Settings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Global_Settings()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Global_Settings` with default values. |

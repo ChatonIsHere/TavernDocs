@@ -18,9 +18,9 @@ Body of a webhook call carrying one message.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebhookPayload()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebhookPayload()"}</code> | Creates a `WebhookPayload` with default values. |
 
 ## Properties
 

@@ -20,9 +20,9 @@ HTTP string content holding an object serialized to UTF-8 JSON. Used by the JSON
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonContent(object obj)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonContent(object obj)"}</code> | Creates a `HttpClientExtensions.JsonContent` from `obj`. |
 
 ## Methods
 

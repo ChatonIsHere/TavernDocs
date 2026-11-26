@@ -20,11 +20,11 @@ A game build version: stream plus title, season, major, minor and changeset numb
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameVersion()"}</code> |
-| <Link id="m-ctor-2" /><code>{"GameVersion(string stream, int title, int season, int major, int minor, int changeSet)"}</code> |
-| <Link id="m-ctor-3" /><code>{"GameVersion(string stream, int season, int major, int minor, int changeSet)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameVersion()"}</code> | Creates a `GameVersion` from `stream`, `season`, `major`, `minor` and `changeSet`. |
+| <Link id="m-ctor-2" /><code>{"GameVersion(string stream, int title, int season, int major, int minor, int changeSet)"}</code> | Creates a `GameVersion` from `stream`, `season`, `major`, `minor` and `changeSet`. |
+| <Link id="m-ctor-3" /><code>{"GameVersion(string stream, int season, int major, int minor, int changeSet)"}</code> | Creates a `GameVersion` from `stream`, `season`, `major`, `minor` and `changeSet`. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Thrown when an API method is called while the client is in offline mode. The mes
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineException()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineException()"}</code> | Creates the exception. |
 
 ## Methods
 

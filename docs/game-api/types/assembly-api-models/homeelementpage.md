@@ -18,9 +18,9 @@ Web API model for one page inside a `HomeElement` on the home screen.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HomeElementPage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HomeElementPage()"}</code> | Creates a `HomeElementPage` with default values. |
 
 ## Properties
 

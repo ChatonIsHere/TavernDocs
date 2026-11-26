@@ -19,9 +19,9 @@ Default `IChunkLoader` for a player, created by `PlayerChunkManager`. Loads the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NormalChunkLoader("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NormalChunkLoader("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Creates a `NormalChunkLoader` from `player`. |
 
 ## Fields
 

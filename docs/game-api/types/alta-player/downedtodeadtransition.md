@@ -19,9 +19,9 @@ Moves a downed player to Dead when they are killed.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DownedToDeadTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DownedToDeadTransition()"}</code> | Creates a `DownedToDeadTransition` with default values. |
 
 ## Fields
 

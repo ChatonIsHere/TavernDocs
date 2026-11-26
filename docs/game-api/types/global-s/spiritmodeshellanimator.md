@@ -19,9 +19,9 @@ Shell effect around a player character for spirit mode, driven by the shell mate
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpiritModeShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpiritModeShellAnimator("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, Material shellMaterialSample)"}</code> | Creates a `SpiritModeShellAnimator` from `character` and `shellMaterialSample`. |
 
 ## Fields
 

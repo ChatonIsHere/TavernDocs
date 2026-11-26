@@ -21,9 +21,9 @@ Save data for `GlobalLogicManager`: every logic value it holds and the next free
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicManagerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicManagerData()"}</code> | Creates a `LogicManagerData` with default values. |
 
 ## Fields
 

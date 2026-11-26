@@ -21,9 +21,9 @@ Save data for `LogicFloatChangeOnBool`, which moves a float between two values w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData()"}</code> | Creates a `LogicFloatChangeOnBoolSaveData` with default values. |
 
 ## Fields
 

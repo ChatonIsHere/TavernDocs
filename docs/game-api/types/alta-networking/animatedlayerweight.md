@@ -20,9 +20,9 @@ A networked `Animator` layer weight, synced as a 0 to 1 float. Set up by `Networ
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedLayerWeight(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedLayerWeight(string name)"}</code> | Creates an `AnimatedLayerWeight` from `name`. |
 
 ## Fields
 

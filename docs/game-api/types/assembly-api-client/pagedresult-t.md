@@ -19,9 +19,9 @@ Pages through a paged Alta API endpoint, following the `paginationToken` respons
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PagedResult(Func<"}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{", Task<HttpResponseMessage>> getNext, "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PagedResult(Func<"}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{", Task<HttpResponseMessage>> getNext, "}<Link to="/game-api/types/assembly-api-client/pagedconfig">{"PagedConfig"}</Link>{" config = null)"}</code> | Creates a `PagedResult` from `getNext` and `config`. |
 
 ## Fields
 

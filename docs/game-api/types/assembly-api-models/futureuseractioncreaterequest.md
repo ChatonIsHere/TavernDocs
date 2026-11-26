@@ -18,9 +18,9 @@ Body of the Alta web API call that queues an action to apply to a user later (`C
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FutureUserActionCreateRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FutureUserActionCreateRequest()"}</code> | Creates a `FutureUserActionCreateRequest` with default values. |
 
 ## Properties
 

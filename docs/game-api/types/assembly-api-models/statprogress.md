@@ -18,9 +18,9 @@ Progress on one achievement action stat, read from and sent to the web API by th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatProgress()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatProgress()"}</code> | Creates a `StatProgress` with default values. |
 
 ## Properties
 

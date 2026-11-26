@@ -20,9 +20,9 @@ A pooled copy of a static environment piece (rock, plant and so on) placed by wo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StaticEnvironmentPieceInstance()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StaticEnvironmentPieceInstance()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

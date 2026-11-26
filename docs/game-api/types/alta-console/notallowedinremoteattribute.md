@@ -19,9 +19,9 @@ Console requirement: the command can only be run by the locally logged-in user, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NotAllowedInRemoteAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NotAllowedInRemoteAttribute()"}</code> | Creates a `NotAllowedInRemoteAttribute` with default values. |
 
 ## Methods
 

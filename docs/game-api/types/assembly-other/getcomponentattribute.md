@@ -20,10 +20,10 @@ Field attribute that fills the field with a component from the same object when 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetComponentAttribute()"}</code> |
-| <Link id="m-ctor-2" /><code>{"GetComponentAttribute(Type type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetComponentAttribute()"}</code> | Creates a `GetComponentAttribute` from `type`. |
+| <Link id="m-ctor-2" /><code>{"GetComponentAttribute(Type type)"}</code> | Creates a `GetComponentAttribute` from `type`. |
 
 ## Fields
 

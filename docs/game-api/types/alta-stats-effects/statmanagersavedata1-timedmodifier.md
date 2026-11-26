@@ -19,9 +19,9 @@ Version 1 save record of a timed stat modifier, with time in seconds. Migrated t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimedModifier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimedModifier()"}</code> | Creates a `StatManagerSaveData1.TimedModifier` with default values. |
 
 ## Fields
 

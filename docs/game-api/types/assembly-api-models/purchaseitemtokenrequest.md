@@ -18,9 +18,9 @@ Alta web API request body for buying a shop item.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PurchaseItemTokenRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PurchaseItemTokenRequest()"}</code> | Creates a `PurchaseItemTokenRequest` with default values. |
 
 ## Properties
 

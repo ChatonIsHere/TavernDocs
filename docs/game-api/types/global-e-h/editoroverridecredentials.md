@@ -18,9 +18,9 @@ Plain username and password pair, probably for signing in from the Unity editor 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EditorOverrideCredentials()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EditorOverrideCredentials()"}</code> | Creates an `EditorOverrideCredentials` with default values. |
 
 ## Fields
 

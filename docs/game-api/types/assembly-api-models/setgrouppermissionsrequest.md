@@ -19,9 +19,9 @@ Request body for setting group permissions with the older Member, Moderator and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SetGroupPermissionsRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SetGroupPermissionsRequest()"}</code> | Creates a `SetGroupPermissionsRequest` with default values. |
 
 ## Properties
 

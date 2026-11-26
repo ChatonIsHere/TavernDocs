@@ -19,9 +19,9 @@ Inspector attribute that shows a list as a reorderable list, with options for dr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ReorderableListAttribute(bool isDraggable = true, bool isDisplayingHeader = true, bool isDisplayingAddButton = true, bool isDisplayingRemoveButton = true)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ReorderableListAttribute(bool isDraggable = true, bool isDisplayingHeader = true, bool isDisplayingAddButton = true, bool isDisplayingRemoveButton = true)"}</code> | Creates a `ReorderableListAttribute` from `isDraggable`, `isDisplayingHeader`, `isDisplayingAddButton` and `isDisplayingRemoveButton`. |
 
 ## Properties
 

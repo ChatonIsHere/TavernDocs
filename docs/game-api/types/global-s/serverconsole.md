@@ -20,9 +20,9 @@ Base for the dedicated server's text console (Windows, Linux or a null console).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerConsole()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerConsole()"}</code> | Creates a `ServerConsole` with default values. |
 
 ## Fields
 

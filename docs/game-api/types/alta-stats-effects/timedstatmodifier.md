@@ -19,10 +19,10 @@ A stat modifier that removes itself after a duration, using the `Timeline`. Can 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimedStatModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier)"}</code> |
-| <Link id="m-ctor-2" /><code>{"TimedStatModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier, float duration)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimedStatModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier)"}</code> | Creates a `TimedStatModifier` from `modifier` and `duration`. |
+| <Link id="m-ctor-2" /><code>{"TimedStatModifier("}<Link to="/game-api/types/alta-stats-effects/statmodifier">{"StatModifier"}</Link>{" modifier, float duration)"}</code> | Creates a `TimedStatModifier` from `modifier` and `duration`. |
 
 ## Fields
 

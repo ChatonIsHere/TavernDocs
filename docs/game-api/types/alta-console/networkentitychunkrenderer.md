@@ -20,9 +20,9 @@ NLog layout renderer `${entity-chunk}`: the chunk of a `NetworkEntity` passed as
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityChunkRenderer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityChunkRenderer()"}</code> | Creates a `NetworkEntityChunkRenderer` with default values. |
 
 ## Methods
 

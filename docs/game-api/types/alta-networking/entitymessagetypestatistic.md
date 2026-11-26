@@ -20,9 +20,9 @@ Network traffic statistic for one entity message type.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EntityMessageTypeStatistic("}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EntityMessageTypeStatistic("}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType)"}</code> | Creates an `EntityMessageTypeStatistic` from `messageType`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Base for a VR device or fly cam input source (SteamVR, OpenXR, fly cam). Fills a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected DeviceInputController("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected DeviceInputController("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `DeviceInputController` from `controller`. |
 
 ## Fields
 

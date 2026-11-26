@@ -18,9 +18,9 @@ Title and description text shown when a micro tutorial is completed. Set in the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TutorialCompletedMessage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TutorialCompletedMessage()"}</code> | Creates a `TutorialCompletedMessage` with default values. |
 
 ## Properties
 

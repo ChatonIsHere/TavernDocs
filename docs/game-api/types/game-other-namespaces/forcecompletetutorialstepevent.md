@@ -20,9 +20,9 @@ Township event bus event that completes a player's current micro tutorial step. 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForceCompleteTutorialStepEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" sender)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForceCompleteTutorialStepEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" sender)"}</code> | Creates a `ForceCompleteTutorialStepEvent` from `sender`. |
 
 ## Properties
 

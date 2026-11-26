@@ -19,9 +19,9 @@ Streams the server's console log to a remote console client over TCP. One is mad
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientLogSender()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientLogSender()"}</code> | Creates a `ClientLogSender` with default values. |
 
 ## Fields
 

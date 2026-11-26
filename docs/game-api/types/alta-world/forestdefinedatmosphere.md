@@ -20,9 +20,9 @@ Blends from the overworld atmosphere to a forest's own atmosphere as the local p
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForestDefinedAtmosphere()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForestDefinedAtmosphere()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

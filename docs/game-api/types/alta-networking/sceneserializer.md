@@ -18,9 +18,9 @@ Sends and reads the regular state updates of every `EntitySerializer` in a netwo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SceneSerializer("}<Link to="/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" networkScene, "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SceneSerializer("}<Link to="/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" networkScene, "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager)"}</code> | Creates a `SceneSerializer` from `networkScene` and `entityManager`. |
 
 ## Fields
 
@@ -38,7 +38,7 @@ Sends and reads the regular state updates of every `EntitySerializer` in a netwo
 | --- | --- |
 | <Link id="m-connections" /><code>{"private List<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> connections"}</code> | Reused list of the connections to send to this pass. |
 | <Link id="m-entitymanager" /><code>{"private "}<Link to="/game-api/types/alta-networking/entitymanager">{"EntityManager"}</Link>{" entityManager"}</code> | Where the serialized entities come from. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-networkscene" /><code>{"private "}<Link to="/game-api/types/alta-networking/inetworksceneinternal">{"INetworkSceneInternal"}</Link>{" networkScene"}</code> | The scene being serialized. |
 | <Link id="m-serializeframeindex" /><code>{"private int serializeFrameIndex"}</code> | Counter that staggers which entities get an on frame. |
 | <Link id="m-timer" /><code>{"private static Stopwatch timer"}</code> | Stopwatch for the serialization timing stats. |

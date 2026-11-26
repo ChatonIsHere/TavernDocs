@@ -19,9 +19,9 @@ Serializable `AltaEvent` that passes a `PlayerController`, for inspector-wired c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CharacterControllerEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CharacterControllerEvent()"}</code> | Creates a `CharacterControllerEvent` with default values. |
 
 ## Used in
 

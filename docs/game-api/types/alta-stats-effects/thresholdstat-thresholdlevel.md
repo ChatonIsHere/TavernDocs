@@ -19,9 +19,9 @@ One level of a `ThresholdStat`: a name, the fraction it starts at, and the stat 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ThresholdLevel(string name, float minThreshold)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ThresholdLevel(string name, float minThreshold)"}</code> | Creates a `ThresholdStat.ThresholdLevel` from `name` and `minThreshold`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Base for an enchantment effect active on one item, holding its `EnchantmentEffec
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EnchantmentEffectApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, T settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EnchantmentEffectApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, T settings)"}</code> | Creates an `EnchantmentEffectApplication` from `enchantment` and `settings`. |
 
 ## Fields
 
@@ -57,6 +57,6 @@ Base for an enchantment effect active on one item, holding its `EnchantmentEffec
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"virtual void Invoke(object data)"}</code> |  |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(object data)"}</code> | Called when the enchanted tool hits: records the hit point, sends the effect to players and plays it. Overrides apply the actual change. |
 | <Link id="m-runevent" /><code>{"void RunEvent()"}</code> | Plays the effect's hit events at the stored hit point. Does nothing on a headless server. |
 | <Link id="m-sendmessage" /><code>{"virtual void SendMessage("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Writes or reads the hit position and rotation; on a remote client it then plays the hit events. |

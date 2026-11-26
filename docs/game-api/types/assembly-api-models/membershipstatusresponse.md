@@ -18,9 +18,9 @@ Whether a user has a supporter membership, from `LowLevelApiClient.GetMembership
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MembershipStatusResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MembershipStatusResponse()"}</code> | Creates a `MembershipStatusResponse` with default values. |
 
 ## Properties
 

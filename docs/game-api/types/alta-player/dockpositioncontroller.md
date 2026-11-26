@@ -19,9 +19,9 @@ Moves a player character's tool belt and pouch docks in or out from a centre poi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DockPositionController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DockPositionController()"}</code> | Creates a `DockPositionController` with default values. |
 
 ## Fields
 

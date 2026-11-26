@@ -18,9 +18,9 @@ Request body naming a shop item to delete.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DeleteItemRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DeleteItemRequest()"}</code> | Creates a `DeleteItemRequest` with default values. |
 
 ## Properties
 

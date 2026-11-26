@@ -19,9 +19,9 @@ Skill input that turns on while a held item touches heat: it copies the item's c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TemperatureCheckInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TemperatureCheckInput()"}</code> | Creates a `TemperatureCheckInput` with default values. |
 
 ## Fields
 

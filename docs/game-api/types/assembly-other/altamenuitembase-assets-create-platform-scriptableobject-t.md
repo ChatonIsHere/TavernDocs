@@ -21,6 +21,6 @@ Base for an Assets/Create/Platform menu entry that creates a `T` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Platform.ScriptableObject` with default values. |

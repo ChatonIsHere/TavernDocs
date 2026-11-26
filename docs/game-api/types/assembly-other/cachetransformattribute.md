@@ -19,9 +19,9 @@ Prefab-apply attribute for a `Transform` field: when the prefab is applied, sets
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CacheTransformAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CacheTransformAttribute()"}</code> | Creates a `CacheTransformAttribute` with default values. |
 
 ## Fields
 

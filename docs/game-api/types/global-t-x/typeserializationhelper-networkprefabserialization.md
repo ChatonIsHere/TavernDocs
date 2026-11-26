@@ -20,9 +20,9 @@ Serializer for `NetworkPrefab`, sent as its prefab hash (0 for null).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkPrefabSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkPrefabSerialization()"}</code> | Creates a `TypeSerializationHelper.NetworkPrefabSerialization` with default values. |
 
 ## Methods
 

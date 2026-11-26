@@ -18,9 +18,9 @@ Identifies a shop item by its numeric id and SKU.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemIdentifier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemIdentifier()"}</code> | Creates a `ShopItemIdentifier` with default values. |
 
 ## Properties
 

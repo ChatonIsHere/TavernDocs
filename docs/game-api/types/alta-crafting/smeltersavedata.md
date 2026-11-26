@@ -21,9 +21,9 @@ Save data for a `Smelter` (version 1): fuel, progress and what it is smelting.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SmelterSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SmelterSaveData()"}</code> | Creates a `SmelterSaveData` with default values. |
 
 ## Fields
 

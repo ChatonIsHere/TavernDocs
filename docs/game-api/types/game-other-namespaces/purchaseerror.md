@@ -19,10 +19,10 @@ Base for an error from the Talem shop (the in-game store), made from an exceptio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected PurchaseError(Exception exception)"}</code> |
-| <Link id="m-ctor-2" /><code>{"protected PurchaseError(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PurchaseError(Exception exception)"}</code> | Creates a `PurchaseError` from `message`. |
+| <Link id="m-ctor-2" /><code>{"protected PurchaseError(string message)"}</code> | Creates a `PurchaseError` from `message`. |
 
 ## Fields
 

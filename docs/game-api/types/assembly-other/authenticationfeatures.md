@@ -20,9 +20,9 @@ Authentication features for the generic (non-store) platform: no access tokens, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AuthenticationFeatures()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AuthenticationFeatures()"}</code> | Creates an `AuthenticationFeatures` with default values. |
 
 ## Properties
 

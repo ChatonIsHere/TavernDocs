@@ -20,6 +20,6 @@ Editor menu item under Assets/Create/Township/Features/Player that makes a new `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `SpiritStateSettings.Create` with default values. |

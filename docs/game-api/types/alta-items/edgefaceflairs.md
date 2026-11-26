@@ -18,9 +18,9 @@ Decorative corner and middle pieces for the front and back faces at a book's out
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EdgeFaceFlairs()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EdgeFaceFlairs()"}</code> | Creates an `EdgeFaceFlairs` with default values. |
 
 ## Fields
 

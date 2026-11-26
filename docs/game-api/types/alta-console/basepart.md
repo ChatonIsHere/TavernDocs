@@ -19,9 +19,9 @@ Base of console command pieces that have a name and description: `CommandPart` a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasePart(string name, string description)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasePart(string name, string description)"}</code> | Creates a `BasePart` from `name` and `description`. |
 
 ## Properties
 

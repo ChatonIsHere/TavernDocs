@@ -19,9 +19,9 @@ Subscribes a component's handler to an event and unsubscribes itself, with an er
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ComponentEventSubscriber(Component component, Func<Action, Action> subscriber, Action<Action> unsubscriber)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ComponentEventSubscriber(Component component, Func<Action, Action> subscriber, Action<Action> unsubscriber)"}</code> | Creates a `ComponentEventSubscriber` from `component`, `subscriber` and `unsubscriber`. |
 
 ## Fields
 
@@ -49,7 +49,7 @@ Subscribes a component's handler to an event and unsubscribes itself, with an er
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"private void Invoke()"}</code> |  |
+| <Link id="m-invoke" /><code>{"private void Invoke()"}</code> | Runs the action, or unsubscribes and logs an error if the owning object has been destroyed. |
 | <Link id="m-updatepath" /><code>{"private void UpdatePath()"}</code> | Stores the component's full hierarchy path, used in the error log. |
 
 </details>

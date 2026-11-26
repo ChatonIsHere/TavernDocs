@@ -21,9 +21,9 @@ Save data for a `TaxManager`: whether taxing is running and the time saved for i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TaxSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TaxSaveData()"}</code> | Creates a `TaxSaveData` with default values. |
 
 ## Fields
 

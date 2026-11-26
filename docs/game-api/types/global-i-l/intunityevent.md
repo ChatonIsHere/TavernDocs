@@ -20,9 +20,9 @@ A serializable `UnityEvent` with an int argument, for wiring int callbacks in th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IntUnityEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IntUnityEvent()"}</code> | Creates an `IntUnityEvent` with default values. |
 
 ## Used in
 

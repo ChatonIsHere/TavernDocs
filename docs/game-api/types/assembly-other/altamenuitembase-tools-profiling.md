@@ -20,6 +20,6 @@ Editor menu folder `Tools/Profiling`: menu item classes inherit it to appear und
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Profiling()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Profiling()"}</code> | Creates an `AltaMenuItemBase.Tools.Profiling` with default values. |

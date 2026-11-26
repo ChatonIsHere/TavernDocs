@@ -20,9 +20,9 @@ A shop item category, which can sit under a parent category.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TownshipItemCategory()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TownshipItemCategory()"}</code> | Creates a `TownshipItemCategory` with default values. |
 
 ## Properties
 

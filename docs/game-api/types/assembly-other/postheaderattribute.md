@@ -19,9 +19,9 @@ Inspector attribute carrying header text, probably drawn after the field it is o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PostHeaderAttribute(string headerText)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PostHeaderAttribute(string headerText)"}</code> | Creates a `PostHeaderAttribute` from `headerText`. |
 
 ## Properties
 

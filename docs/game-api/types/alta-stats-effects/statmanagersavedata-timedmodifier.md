@@ -19,9 +19,9 @@ A saved stat modifier that ends after a time, reapplied to the `StatManager` on 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimedModifier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimedModifier()"}</code> | Creates a `StatManagerSaveData.TimedModifier` with default values. |
 
 ## Fields
 

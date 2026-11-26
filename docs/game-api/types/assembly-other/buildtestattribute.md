@@ -20,6 +20,6 @@ Marks a method as a build test. Nothing in the server build looks for it, so it'
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BuildTestAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BuildTestAttribute()"}</code> | Creates a `BuildTestAttribute` with default values. |

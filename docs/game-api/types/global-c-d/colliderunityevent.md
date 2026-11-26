@@ -20,6 +20,6 @@ Serializable `UnityEvent` that passes a `Collider`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColliderUnityEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColliderUnityEvent()"}</code> | Creates a `ColliderUnityEvent` with default values. |

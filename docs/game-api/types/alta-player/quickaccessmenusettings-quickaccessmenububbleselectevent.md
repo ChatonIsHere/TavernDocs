@@ -27,9 +27,9 @@ Pair of sound and visual effects played when a quick access bubble is selected, 
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"void Invoke("}<Link to="/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" bubble)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"void Invoke("}<Link to="/game-api/types/alta-player/quickaccessmenububble">{"QuickAccessMenuBubble"}</Link>{" bubble)"}</code> | Plays the sound and visual effect for the bubble, using the active or inactive set depending on its state. |
 
 ## Used in
 

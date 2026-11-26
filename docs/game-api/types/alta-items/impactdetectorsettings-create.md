@@ -20,6 +20,6 @@ Editor menu entry that creates a new `ImpactDetectorSettings` asset under the To
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ImpactDetectorSettings.Create` with default values. |

@@ -20,9 +20,9 @@ Base for field attributes that fill in or check a field when a prefab is applied
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected PrefabApplyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PrefabApplyAttribute()"}</code> | Creates a `PrefabApplyAttribute` with default values. |
 
 ## Methods
 

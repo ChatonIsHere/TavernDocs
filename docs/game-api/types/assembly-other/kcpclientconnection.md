@@ -19,9 +19,9 @@ Client: the `ITransportConnection` for the client's single KCP connection to the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KcpClientConnection("}<Link to="/game-api/types/assembly-other/kcptransport">{"KcpTransport"}</Link>{" transport, KcpClient client)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KcpClientConnection("}<Link to="/game-api/types/assembly-other/kcptransport">{"KcpTransport"}</Link>{" transport, KcpClient client)"}</code> | Creates a `KcpClientConnection` from `transport` and `client`. |
 
 ## Fields
 

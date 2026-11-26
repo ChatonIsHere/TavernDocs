@@ -19,9 +19,9 @@ One body dock handled by `AccessibleDocks`: its normal position and the position
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DockSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DockSetup()"}</code> | Creates an `AccessibleDocks.DockSetup` with default values. |
 
 ## Fields
 

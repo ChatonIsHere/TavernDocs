@@ -19,6 +19,6 @@ Property attribute with no fields, probably telling the inspector to show a refe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ExposedScriptableObjectAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ExposedScriptableObjectAttribute()"}</code> | Creates an `ExposedScriptableObjectAttribute` with default values. |

@@ -20,9 +20,9 @@ NLog layout renderer `${entity-id}`: the identifier of a `NetworkEntity` passed 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityIdentifierRenderer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityIdentifierRenderer()"}</code> | Creates a `NetworkEntityIdentifierRenderer` with default values. |
 
 ## Methods
 

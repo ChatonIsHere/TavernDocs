@@ -21,9 +21,9 @@ Save data for a `PlayerInteractionRestrictor`: its id and its interaction limit.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictorData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerInteractionRestrictorData()"}</code> | Creates a `PlayerInteractionRestrictorData` with default values. |
 
 ## Fields
 

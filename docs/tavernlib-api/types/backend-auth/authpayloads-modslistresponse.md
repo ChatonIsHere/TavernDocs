@@ -21,19 +21,19 @@ The answer to `mods_list`: the server's mods and enabled untracked mods, sent wi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModsListResponse(List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{"> mods, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{"> untracked)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModsListResponse(List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{"> mods, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{"> untracked)"}</code> | Sets the mod and untracked lists. |
 
 ## Properties
 
 <details>
 <summary>3 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-mods" /><code>{"private List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{"> Mods { get; }"}</code> |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |
-| <Link id="m-untracked" /><code>{"private List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{"> Untracked { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-mods" /><code>{"private List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{"> Mods { get; }"}</code> | The enabled server mods. |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `ok`. |
+| <Link id="m-untracked" /><code>{"private List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{"> Untracked { get; }"}</code> | The enabled mods that this manager did not install. |
 
 </details>

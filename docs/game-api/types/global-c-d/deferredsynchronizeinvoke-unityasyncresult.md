@@ -20,9 +20,9 @@ A queued call in `DeferredSynchronizeInvoke` and its result.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnityAsyncResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnityAsyncResult()"}</code> | Creates a `DeferredSynchronizeInvoke.UnityAsyncResult` with default values. |
 
 ## Fields
 

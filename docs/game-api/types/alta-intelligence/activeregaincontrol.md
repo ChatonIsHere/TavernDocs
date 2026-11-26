@@ -20,9 +20,9 @@ Server: running action for a creature recovering after being knocked about. Wait
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveRegainControl()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveRegainControl()"}</code> | Creates an `ActiveRegainControl` with default values. |
 
 ## Fields
 

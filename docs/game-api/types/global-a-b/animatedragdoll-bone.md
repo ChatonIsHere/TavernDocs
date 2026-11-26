@@ -19,9 +19,9 @@ One bone of an `AnimatedRagdoll`: the animated bone it follows, the physics body
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Bone()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Bone()"}</code> | Creates an `AnimatedRagdoll.Bone` with default values. |
 
 ## Fields
 

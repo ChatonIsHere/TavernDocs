@@ -21,9 +21,9 @@ A list of stat and player pairs, with a type converter so console commands can t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatList(IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> range)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatList(IEnumerable<"}<Link to="/game-api/types/alta-stats-effects/statplayerpair">{"StatPlayerPair"}</Link>{"> range)"}</code> | Creates a `StatList` from `range`. |
 
 ## Fields
 

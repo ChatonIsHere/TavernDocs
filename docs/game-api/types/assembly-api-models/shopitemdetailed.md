@@ -20,9 +20,9 @@ API model for a shop item with its full details: description, category, images a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemDetailed()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemDetailed()"}</code> | Creates a `ShopItemDetailed` with default values. |
 
 ## Properties
 

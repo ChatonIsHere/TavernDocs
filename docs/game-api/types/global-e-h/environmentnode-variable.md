@@ -19,9 +19,9 @@ An optional float setting on an `EnvironmentNode` (used for reverb). It either o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Variable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Variable()"}</code> | Creates an `EnvironmentNode.Variable` with default values. |
 
 ## Fields
 

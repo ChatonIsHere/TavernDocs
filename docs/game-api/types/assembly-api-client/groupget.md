@@ -22,9 +22,9 @@ Paged list of joinable groups of one group type, fetched from the Alta web API a
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"internal GroupGet("}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" type, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"internal GroupGet("}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" type, "}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api)"}</code> | Creates a `GroupGet` from `type` and `api`. |
 
 </details>
 

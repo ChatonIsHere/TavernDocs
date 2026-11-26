@@ -20,9 +20,9 @@ The always-true goal in the unused Prolog-like logic engine. A definition with n
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"True()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"True()"}</code> | Creates a `True` with default values. |
 
 ## Methods
 

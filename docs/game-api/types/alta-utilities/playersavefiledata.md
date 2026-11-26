@@ -21,9 +21,9 @@ Basic save data inside a `PlayerSave`: the player's last position and home point
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveFileData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerSaveFileData()"}</code> | Creates a `PlayerSaveFileData` with default values. |
 
 ## Fields
 

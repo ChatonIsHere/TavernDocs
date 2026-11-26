@@ -18,10 +18,10 @@ Layout data for one key of the in-game touch screen keyboard: where it sits, whi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VirtualKeyInfo()"}</code> |
-| <Link id="m-ctor-2" /><code>{"VirtualKeyInfo(KeyCode key)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VirtualKeyInfo()"}</code> | Creates a `VirtualKeyInfo` from `key`. |
+| <Link id="m-ctor-2" /><code>{"VirtualKeyInfo(KeyCode key)"}</code> | Creates a `VirtualKeyInfo` from `key`. |
 
 ## Fields
 

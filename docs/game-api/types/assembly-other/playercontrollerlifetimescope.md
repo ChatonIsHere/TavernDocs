@@ -21,9 +21,9 @@ VContainer scope on a player controller. Injects the object like `GameObjectLife
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerControllerLifetimeScope()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerControllerLifetimeScope()"}</code> | Creates a `PlayerControllerLifetimeScope` with default values. |
 
 ## Fields
 

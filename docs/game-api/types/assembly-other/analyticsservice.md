@@ -20,9 +20,9 @@ The analytics hub: events sent to it are injected and their data passed to every
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnalyticsService(IObjectResolver resolver)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnalyticsService(IObjectResolver resolver)"}</code> | Built by the game's dependency injection (VContainer), which passes the services in. |
 
 ## Fields
 

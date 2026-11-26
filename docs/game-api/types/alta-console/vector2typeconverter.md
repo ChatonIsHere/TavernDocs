@@ -19,9 +19,9 @@ JSON converter that writes a `Vector2` as a two-number array and reads it back.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Vector2TypeConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Vector2TypeConverter()"}</code> | Creates a `Vector2TypeConverter` with default values. |
 
 ## Methods
 

@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Utility/Scrapper`: menu item classes 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Scrapper()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Scrapper()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Utility.Scrapper` with default values. |

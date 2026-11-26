@@ -20,6 +20,6 @@ A `ComponentGroup` of `PickupDockGroup`s, probably the docks on a player charact
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CharacterDockManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CharacterDockManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

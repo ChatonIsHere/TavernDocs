@@ -21,9 +21,9 @@ Client visuals for the floating chunks in a liquid container (such as stew piece
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LiquidChunkVisuals()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LiquidChunkVisuals()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

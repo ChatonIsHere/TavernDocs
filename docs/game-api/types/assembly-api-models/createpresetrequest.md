@@ -18,9 +18,9 @@ Body of the Alta web API call that saves a cosmetic preset (`CreateCosmeticPrese
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CreatePresetRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CreatePresetRequest()"}</code> | Creates a `CreatePresetRequest` with default values. |
 
 ## Properties
 

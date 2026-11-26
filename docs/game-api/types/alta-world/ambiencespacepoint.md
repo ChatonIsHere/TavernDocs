@@ -20,9 +20,9 @@ Client: a point in a `SpaceDefinedAtmosphere` area that blends between two atmos
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AmbienceSpacePoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AmbienceSpacePoint()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

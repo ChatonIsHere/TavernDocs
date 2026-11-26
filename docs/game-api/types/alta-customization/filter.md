@@ -18,9 +18,9 @@ A hand camera filter: a list of actions run on the camera and its post process v
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Filter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Filter()"}</code> | Creates a `Filter` with default values. |
 
 ## Fields
 

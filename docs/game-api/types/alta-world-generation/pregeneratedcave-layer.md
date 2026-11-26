@@ -19,9 +19,9 @@ One layer of a pregenerated cave asset: its baked mesh.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Layer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Layer()"}</code> | Creates a `PregeneratedCave.Layer` with default values. |
 
 ## Fields
 

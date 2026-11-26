@@ -19,9 +19,9 @@ A `StaticObjectCombiner` for scene objects that can swap itself for a pre-baked 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SceneStaticObjectCombiner()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SceneStaticObjectCombiner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

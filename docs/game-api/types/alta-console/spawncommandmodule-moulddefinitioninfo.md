@@ -19,9 +19,9 @@ A row in the mould list console command.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MouldDefinitionInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MouldDefinitionInfo()"}</code> | Creates a `SpawnCommandModule.MouldDefinitionInfo` with default values. |
 
 ## Properties
 

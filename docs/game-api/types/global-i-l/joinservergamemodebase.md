@@ -20,9 +20,9 @@ Base for client game modes that join a server. Sets up the client's network scen
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected JoinServerGameModeBase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected JoinServerGameModeBase()"}</code> | Creates a `JoinServerGameModeBase` with default values. |
 
 ## Fields
 

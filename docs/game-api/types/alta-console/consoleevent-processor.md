@@ -20,9 +20,9 @@ Background task that takes queued console event messages and raises each event's
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Processor()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Processor()"}</code> | Creates a `ConsoleEvent.Processor` with default values. |
 
 ## Fields
 

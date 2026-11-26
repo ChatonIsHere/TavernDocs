@@ -21,9 +21,9 @@ Base for inspector tools that use the teleport button themselves. While enabled 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NonTeleporterInGameTool("}<Link to="/game-api/types/global-i-l/ingameinspector">{"InGameInspector"}</Link>{" inspector)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NonTeleporterInGameTool("}<Link to="/game-api/types/global-i-l/ingameinspector">{"InGameInspector"}</Link>{" inspector)"}</code> | Creates an `InGameInspector.NonTeleporterInGameTool` from `inspector`. |
 
 ## Fields
 

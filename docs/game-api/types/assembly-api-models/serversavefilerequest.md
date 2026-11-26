@@ -18,9 +18,9 @@ Request body asking for a server's save files by path; the matching answer is pr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerSaveFileRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerSaveFileRequest()"}</code> | Creates a `ServerSaveFileRequest` with default values. |
 
 ## Properties
 

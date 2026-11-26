@@ -19,7 +19,7 @@ Internal exception for a corrupt player save file. Nothing in this build throws 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CorruptPlayerSaveFileException()"}</code> |
-| <Link id="m-ctor-2" /><code>{"CorruptPlayerSaveFileException(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CorruptPlayerSaveFileException()"}</code> | Creates the exception with `message`. |
+| <Link id="m-ctor-2" /><code>{"CorruptPlayerSaveFileException(string message)"}</code> | Creates the exception with `message`. |

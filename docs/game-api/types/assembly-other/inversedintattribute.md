@@ -19,9 +19,9 @@ Property attribute with a label, probably for an editor drawer that shows an int
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InversedIntAttribute(string label)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InversedIntAttribute(string label)"}</code> | Creates an `InversedIntAttribute` from `label`. |
 
 ## Properties
 

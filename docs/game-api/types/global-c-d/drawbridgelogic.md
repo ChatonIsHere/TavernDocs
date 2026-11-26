@@ -20,9 +20,9 @@ Saved, non-networked drawbridge that rotates its transform around local Z by a s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeLogic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DrawBridgeLogic()"}</code> | Creates a `DrawBridgeLogic` with default values. |
 
 ## Fields
 

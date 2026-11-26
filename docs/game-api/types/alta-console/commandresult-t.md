@@ -21,10 +21,10 @@ A console command result carrying a typed value. Logs the value as text, a table
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected CommandResult("}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |
-| <Link id="m-ctor-2" /><code>{"protected CommandResult(string resultString, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected CommandResult("}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | Creates a `CommandResult` from `resultString` and `command`. |
+| <Link id="m-ctor-2" /><code>{"protected CommandResult(string resultString, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command)"}</code> | Creates a `CommandResult` from `resultString` and `command`. |
 
 ## Properties
 

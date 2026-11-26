@@ -20,9 +20,9 @@ A lever with an on and off position: a `Trigger` whose state follows the handle'
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TwoStepLever()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TwoStepLever()"}</code> | Creates a `TwoStepLever` with default values. |
 
 ## Fields
 

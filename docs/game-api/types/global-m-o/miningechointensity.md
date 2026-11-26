@@ -21,9 +21,9 @@ Profession skill asset that `MiningEcho` checks for to turn on its stronger "int
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MiningEchoIntensity()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MiningEchoIntensity()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Used in
 

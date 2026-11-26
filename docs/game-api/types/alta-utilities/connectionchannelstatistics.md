@@ -19,6 +19,6 @@ Named "Connection Channels" list of `ConnectionChannelStatistic` entries, built 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConnectionChannelStatistics(Dictionary<"}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{", "}<Link to="/game-api/types/alta-utilities/connectionchannelstatistic">{"ConnectionChannelStatistic"}</Link>{"> messageDictionary)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConnectionChannelStatistics(Dictionary<"}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{", "}<Link to="/game-api/types/alta-utilities/connectionchannelstatistic">{"ConnectionChannelStatistic"}</Link>{"> messageDictionary)"}</code> | Creates a `ConnectionChannelStatistics` from `messageDictionary`. |

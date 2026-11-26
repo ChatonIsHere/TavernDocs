@@ -19,9 +19,9 @@ The loot entries a `LootTable` offers for one rarity, plus extra lists per festi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RarityList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RarityList()"}</code> | Creates a `LootTable.RarityList` with default values. |
 
 ## Fields
 

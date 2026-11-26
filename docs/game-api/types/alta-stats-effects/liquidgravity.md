@@ -18,9 +18,9 @@ Simulates which way a liquid surface points as its container moves and tips, wit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LiquidGravity(Transform relativeTo)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LiquidGravity(Transform relativeTo)"}</code> | Creates a `LiquidGravity` from `relativeTo`. |
 
 ## Fields
 

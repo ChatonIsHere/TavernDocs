@@ -20,6 +20,6 @@ Editor menu entry for creating a `ThumbConfiguration` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ThumbConfiguration.Create` with default values. |

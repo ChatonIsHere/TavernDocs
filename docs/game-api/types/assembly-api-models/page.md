@@ -18,9 +18,9 @@ One page of a web API form (`Form.Pages`): its questions and the rules for which
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Page()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Page()"}</code> | Creates a `Page` with default values. |
 
 ## Properties
 

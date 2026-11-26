@@ -18,9 +18,9 @@ A line segment between two world points.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Line(Vector3 from, Vector3 to)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Line(Vector3 from, Vector3 to)"}</code> | Creates a `Line` from `from` and `to`. |
 
 ## Properties
 

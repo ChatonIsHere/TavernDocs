@@ -19,9 +19,9 @@ Typed access to the `PlayingBase` action map of `InputMap`, one `InputAction` pe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingBaseActions("}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingBaseActions("}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> | Creates an `InputMap.PlayingBaseActions` from `wrapper`. |
 
 ## Fields
 

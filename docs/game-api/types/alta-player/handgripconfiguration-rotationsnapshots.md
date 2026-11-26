@@ -19,9 +19,9 @@ Saved finger bone rotations for one hand in four poses (default, open, splayed, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RotationSnapshots()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RotationSnapshots()"}</code> | Creates a `HandGripConfiguration.RotationSnapshots` with default values. |
 
 ## Fields
 

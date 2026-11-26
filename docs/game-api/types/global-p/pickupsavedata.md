@@ -21,9 +21,9 @@ Save format (version 2) for `Pickup`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupSaveData()"}</code> | Creates a `PickupSaveData` with default values. |
 
 ## Fields
 

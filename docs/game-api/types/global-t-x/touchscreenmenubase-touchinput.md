@@ -19,10 +19,10 @@ Tracks one fingertip against a touch screen menu: whether it is close, touching,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TouchInput(Transform fingerTip, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, float touchThreshold, float touchReleaseThreshold)"}</code> |
-| <Link id="m-ctor-2" /><code>{"TouchInput(Transform fingerTip, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, float touchThreshold, float touchReleaseThreshold, float minDistanceToRenderSquared)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TouchInput(Transform fingerTip, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, float touchThreshold, float touchReleaseThreshold)"}</code> | Creates a `TouchScreenMenuBase.TouchInput` from `fingerTip`, `interactor`, `touchThreshold`, `touchReleaseThreshold` and `minDistanceToRenderSquared`. |
+| <Link id="m-ctor-2" /><code>{"TouchInput(Transform fingerTip, "}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, float touchThreshold, float touchReleaseThreshold, float minDistanceToRenderSquared)"}</code> | Creates a `TouchScreenMenuBase.TouchInput` from `fingerTip`, `interactor`, `touchThreshold`, `touchReleaseThreshold` and `minDistanceToRenderSquared`. |
 
 ## Fields
 

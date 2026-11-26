@@ -18,10 +18,10 @@ The message a client sends to ask to join a server: player id, credentials, play
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RequestJoinMessage()"}</code> |
-| <Link id="m-ctor-2" /><code>{"RequestJoinMessage(int playerId, string userCredentials, "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode, "}<Link to="/game-api/types/assembly-other/platformtarget">{"PlatformTarget"}</Link>{" platformTarget, string version)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RequestJoinMessage()"}</code> | Creates a `RequestJoinMessage` from `playerId`, `userCredentials`, `playerMode`, `platformTarget` and `version`. |
+| <Link id="m-ctor-2" /><code>{"RequestJoinMessage(int playerId, string userCredentials, "}<Link to="/game-api/types/assembly-other/playermode">{"PlayerMode"}</Link>{" playerMode, "}<Link to="/game-api/types/assembly-other/platformtarget">{"PlatformTarget"}</Link>{" platformTarget, string version)"}</code> | Creates a `RequestJoinMessage` from `playerId`, `userCredentials`, `playerMode`, `platformTarget` and `version`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Payload for the manager's effect message: where a hand camera appeared or vanish
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EffectArguments(Vector3 position, bool isSpawn, uint playerIdentifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EffectArguments(Vector3 position, bool isSpawn, uint playerIdentifier)"}</code> | Creates a `HandyCameraManager.EffectArguments` from `position`, `isSpawn` and `playerIdentifier`. |
 
 ## Fields
 

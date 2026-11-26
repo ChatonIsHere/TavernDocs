@@ -22,9 +22,9 @@ Save data for a `GrowerGroup`: one entry per growing child.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrowerGroupSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrowerGroupSaveData()"}</code> | Creates a `GrowerGroupSaveData` with default values. |
 
 ## Fields
 

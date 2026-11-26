@@ -20,9 +20,9 @@ Old save format (version 1) for `Pickup`, migrated to `PickupSaveData` on load.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupSaveDataOld1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupSaveDataOld1()"}</code> | Creates a `PickupSaveDataOld1` with default values. |
 
 ## Fields
 

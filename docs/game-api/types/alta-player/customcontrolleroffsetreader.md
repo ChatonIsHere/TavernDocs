@@ -20,9 +20,9 @@ Client service (created by VContainer) that reads per-hand position and scale of
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomControllerOffsetReader()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomControllerOffsetReader()"}</code> | Creates a `CustomControllerOffsetReader` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data for a `StewManager` (version 1): the stew's ingredients, garnishes and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StewManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StewManagerSaveData()"}</code> | Creates a `StewManagerSaveData` with default values. |
 
 ## Fields
 

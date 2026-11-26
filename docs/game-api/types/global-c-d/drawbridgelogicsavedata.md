@@ -21,9 +21,9 @@ Save data for a `DrawBridgeLogic`: its angle, up state and rotation time.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeLogicSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DrawBridgeLogicSaveData()"}</code> | Creates a `DrawBridgeLogicSaveData` with default values. |
 
 ## Fields
 

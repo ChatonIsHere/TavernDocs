@@ -19,9 +19,9 @@ Private: prefabs a population spawns instead of its normal ones while a festivit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FestivePrefabGroup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FestivePrefabGroup()"}</code> | Creates a `PopulationDefinition.FestivePrefabGroup` with default values. |
 
 ## Fields
 

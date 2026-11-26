@@ -19,9 +19,9 @@ JSON converter for strings that masks secrets: any value whose JSON path contain
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SensitiveStringConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SensitiveStringConverter()"}</code> | Creates a `SensitiveStringConverter` with default values. |
 
 ## Methods
 

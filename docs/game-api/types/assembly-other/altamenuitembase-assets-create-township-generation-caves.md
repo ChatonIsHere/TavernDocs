@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Generation/Caves`: menu item classes 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Caves()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Caves()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Generation.Caves` with default values. |

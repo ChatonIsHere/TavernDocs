@@ -21,9 +21,9 @@ Saved setup for a `PresetLootModule`: which preset loot set it spawns and whethe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PresetLootModuleSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PresetLootModuleSaveData()"}</code> | Creates a `PresetLootModuleSaveData` with default values. |
 
 ## Fields
 

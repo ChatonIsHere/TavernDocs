@@ -19,9 +19,9 @@ A serialisable `AltaEvent` that passes a `Transform`, for inspector-wired callba
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TransformEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransformEvent()"}</code> | Creates a `TransformEvent` with default values. |
 
 ## Used in
 

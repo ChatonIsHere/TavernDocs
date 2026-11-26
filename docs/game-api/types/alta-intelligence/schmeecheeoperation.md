@@ -19,9 +19,9 @@ Prefab scoring component for schmeechees: one value when the schmeechee is groun
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SchmeecheeOperation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SchmeecheeOperation()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

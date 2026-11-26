@@ -20,9 +20,9 @@ Version 1 save data for a `PickupDock`, migrated to `PickupDockSaveData` when lo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupDockSaveDataOld()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupDockSaveDataOld()"}</code> | Creates a `PickupDockSaveDataOld` with default values. |
 
 ## Fields
 

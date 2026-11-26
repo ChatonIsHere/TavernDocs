@@ -19,9 +19,9 @@ Simple view of a player character's hands and body docks, made by `PlayerCharact
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Inventory("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Inventory("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character)"}</code> | Creates an `Inventory` from `character`. |
 
 ## Properties
 

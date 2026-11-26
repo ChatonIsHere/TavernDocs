@@ -20,9 +20,9 @@ Base for the small classes that write one value into a particle system module.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ParticleSystemValueOperator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ParticleSystemValueOperator()"}</code> | Creates a `ValueOperatedParticleSystem.ParticleSystemValueOperator` with default values. |
 
 ## Methods
 

@@ -19,10 +19,10 @@ A serializable pair of a loot `Origin` and a float value, the `SingleValue` form
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OriginSingleValue()"}</code> |
-| <Link id="m-ctor-2" /><code>{"OriginSingleValue("}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin, float value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OriginSingleValue()"}</code> | Creates an `OriginSingleValue` from `origin` and `value`. |
+| <Link id="m-ctor-2" /><code>{"OriginSingleValue("}<Link to="/game-api/types/alta-world-generation/origin">{"Origin"}</Link>{" origin, float value)"}</code> | Creates an `OriginSingleValue` from `origin` and `value`. |
 
 ## Used in
 

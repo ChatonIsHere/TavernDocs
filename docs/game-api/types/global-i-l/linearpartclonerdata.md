@@ -21,9 +21,9 @@ Save data for `LinearPartCloner`: how many parts it has spawned.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LinearPartClonerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LinearPartClonerData()"}</code> | Creates a `LinearPartClonerData` with default values. |
 
 ## Fields
 

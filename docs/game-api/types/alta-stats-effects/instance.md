@@ -19,9 +19,9 @@ One entry in a `HealthData` asset: a prefab and the base health it should get. E
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Instance(GameObject prefab, float health)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Instance(GameObject prefab, float health)"}</code> | Creates an `Instance` from `prefab` and `health`. |
 
 ## Fields
 

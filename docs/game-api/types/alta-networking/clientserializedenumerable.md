@@ -19,9 +19,9 @@ Client-side enumerator over the entities the client serializes, in identifier or
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientSerializedEnumerable(SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientSerializedEnumerable(SortedList<uint, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"> pairs)"}</code> | Creates a `ClientSerializedEnumerable` from `pairs`. |
 
 ## Fields
 

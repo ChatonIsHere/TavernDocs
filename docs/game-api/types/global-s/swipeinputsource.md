@@ -19,9 +19,9 @@ Input source that fires a single press and release when the controller's d-pad r
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SwipeInputSource(int direction, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SwipeInputSource(int direction, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `SwipeInputSource` from `direction` and `controller`. |
 
 ## Fields
 

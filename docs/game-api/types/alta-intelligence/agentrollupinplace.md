@@ -21,9 +21,9 @@ Server: running action that turns an upside down or tipped crawler back upright 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AgentRollUpInPlace()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AgentRollUpInPlace()"}</code> | Creates an `AgentRollUpInPlace` with default values. |
 
 ## Fields
 

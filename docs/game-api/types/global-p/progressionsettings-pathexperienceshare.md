@@ -20,9 +20,9 @@ Per-path multipliers for shared experience, read by `GetExperienceSharedMultipli
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PathExperienceShare()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PathExperienceShare()"}</code> | Creates a `ProgressionSettings.PathExperienceShare` with default values. |
 
 ## Fields
 

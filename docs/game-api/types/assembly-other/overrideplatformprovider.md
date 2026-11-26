@@ -18,9 +18,9 @@ Internal: holds a platform override for testing. The override only counts in the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OverridePlatformProvider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OverridePlatformProvider()"}</code> | Creates an `OverridePlatformProvider` with default values. |
 
 ## Properties
 

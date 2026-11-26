@@ -19,9 +19,9 @@ Server-side quick draw trigger on one item: pulling the tool out of a valid dock
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"QuickDrawApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/game-api/types/alta-crafting/quickdrawtrigger">{"QuickDrawTrigger"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"QuickDrawApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/game-api/types/alta-crafting/quickdrawtrigger">{"QuickDrawTrigger"}</Link>{" settings)"}</code> | Creates a `QuickDrawApplication` from `enchantment` and `settings`. |
 
 ## Fields
 

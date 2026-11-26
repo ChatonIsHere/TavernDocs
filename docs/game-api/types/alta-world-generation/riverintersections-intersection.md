@@ -19,9 +19,9 @@ One place where a forest edge crosses a river path.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Intersection()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Intersection()"}</code> | Creates a `RiverIntersections.Intersection` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Old save data (version 1) for `Trigger`, migrated to `TriggerSaveData`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TriggerSaveDataOLD1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TriggerSaveDataOLD1()"}</code> | Creates a `TriggerSaveDataOLD1` with default values. |
 
 ## Fields
 

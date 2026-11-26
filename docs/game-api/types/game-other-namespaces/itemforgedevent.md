@@ -20,9 +20,9 @@ Township event bus event broadcast when a player forges an item. Server (and loc
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ItemForgedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, uint itemHash)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ItemForgedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, uint itemHash)"}</code> | Creates an `ItemForgedEvent` from `player` and `itemHash`. |
 
 ## Properties
 

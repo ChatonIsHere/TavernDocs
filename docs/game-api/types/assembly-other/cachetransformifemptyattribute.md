@@ -19,9 +19,9 @@ Prefab-apply attribute for a `Transform` field: fills it with the component's ow
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CacheTransformIfEmptyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CacheTransformIfEmptyAttribute()"}</code> | Creates a `CacheTransformIfEmptyAttribute` with default values. |
 
 ## Fields
 

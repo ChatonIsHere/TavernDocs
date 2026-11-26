@@ -19,9 +19,9 @@ A shop category as staff create or edit it. Same as `TownshipItemCategory` but t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TownshipItemCategoryModificationRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TownshipItemCategoryModificationRequest()"}</code> | Creates a `TownshipItemCategoryModificationRequest` with default values. |
 
 ## Properties
 

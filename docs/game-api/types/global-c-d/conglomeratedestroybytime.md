@@ -19,9 +19,9 @@ Pooled effect that merges with active copies nearby: it releases them and grows 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConglomerateDestroyByTime()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConglomerateDestroyByTime()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

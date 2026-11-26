@@ -19,9 +19,9 @@ A cave layer that uses its own streamer prefab instead of the default cave strea
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpecialLayer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpecialLayer()"}</code> | Creates a `StreamingSettings.SpecialLayer` with default values. |
 
 ## Fields
 

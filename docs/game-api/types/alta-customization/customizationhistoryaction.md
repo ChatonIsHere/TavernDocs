@@ -19,9 +19,9 @@ One undo/redo step in the character customiser: the look before and after a chan
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomizationHistoryAction("}<Link to="/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target, "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState, "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomizationHistoryAction("}<Link to="/game-api/types/alta-customization/customizationwrapper">{"CustomizationWrapper"}</Link>{" target, "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" oldState, "}<Link to="/game-api/types/alta-customization/cosmeticpresetdata">{"CosmeticPresetData"}</Link>{" newState)"}</code> | Creates a `CustomizationHistoryAction` from `target`, `oldState` and `newState`. |
 
 ## Fields
 

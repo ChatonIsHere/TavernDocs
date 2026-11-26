@@ -19,9 +19,9 @@ Property attribute that stores a min and max for an inspector float range.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FloatRangeSettings(float min, float max, bool hasValues = true)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatRangeSettings(float min, float max, bool hasValues = true)"}</code> | Creates a `FloatRangeSettings` from `min`, `max` and `hasValues`. |
 
 ## Properties
 

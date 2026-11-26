@@ -21,9 +21,9 @@ Save data (version 1) for a `RockCluster`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RockClusterSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RockClusterSaveData()"}</code> | Creates a `RockClusterSaveData` with default values. |
 
 ## Fields
 

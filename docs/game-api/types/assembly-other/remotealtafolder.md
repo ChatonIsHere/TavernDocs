@@ -19,9 +19,9 @@ Save folder that mirrors a local folder to a second directory on disk. Files and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RemoteAltaFolder("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" localFolder, DirectoryInfo remoteInfo)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RemoteAltaFolder("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" localFolder, DirectoryInfo remoteInfo)"}</code> | Creates a `RemoteAltaFolder` from `localFolder` and `remoteInfo`. |
 
 ## Fields
 

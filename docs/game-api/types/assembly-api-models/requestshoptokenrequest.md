@@ -18,9 +18,9 @@ Empty body of the Alta web API call that gets a shop token (`GetShopTokenAsync`)
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RequestShopTokenRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RequestShopTokenRequest()"}</code> | Creates a `RequestShopTokenRequest` with default values. |
 
 ## Used in
 

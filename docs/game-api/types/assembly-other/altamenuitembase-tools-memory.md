@@ -20,6 +20,6 @@ Editor menu folder `Tools/Memory`: menu item classes inherit it to appear under 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Memory()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Memory()"}</code> | Creates an `AltaMenuItemBase.Tools.Memory` with default values. |

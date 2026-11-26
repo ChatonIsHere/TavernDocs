@@ -21,9 +21,9 @@ Base for a running creature action: one go of an action on one agent, which ends
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected BasicActiveAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected BasicActiveAction()"}</code> | Creates a `BasicActiveAction` with default values. |
 
 ## Fields
 

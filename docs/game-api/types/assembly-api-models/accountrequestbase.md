@@ -19,9 +19,9 @@ Web API request body for Oculus account linking: the platform account ID, its pr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AccountRequestBase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AccountRequestBase()"}</code> | Creates an `AccountRequestBase` with default values. |
 
 ## Properties
 

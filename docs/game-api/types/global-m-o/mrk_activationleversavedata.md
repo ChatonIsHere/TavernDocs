@@ -21,9 +21,9 @@ Save data (version 1) for `MRK_ActivationLever`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MRK_ActivationLeverSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MRK_ActivationLeverSaveData()"}</code> | Creates a `MRK_ActivationLeverSaveData` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Settings for the SA bone collider builder (third-party editor tool): how to spli
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SABoneColliderBuilderProperty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SABoneColliderBuilderProperty()"}</code> | Creates a `SABoneColliderCommon.SABoneColliderBuilderProperty` with default values. |
 
 ## Fields
 

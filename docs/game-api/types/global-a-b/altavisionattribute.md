@@ -19,6 +19,6 @@ Empty inspector `PropertyAttribute`. Nothing in the server build uses it, so it 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaVisionAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaVisionAttribute()"}</code> | Creates an `AltaVisionAttribute` with default values. |

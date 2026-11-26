@@ -18,9 +18,9 @@ Body for adding a comment that also marks something resolved or not.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ResolveComment()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ResolveComment()"}</code> | Creates a `ResolveComment` with default values. |
 
 ## Properties
 

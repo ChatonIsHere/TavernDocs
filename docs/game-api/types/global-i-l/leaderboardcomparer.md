@@ -22,9 +22,9 @@ Compares leaderboard definitions by their hash, so they work as dictionary keys 
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private LeaderboardComparer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private LeaderboardComparer()"}</code> | Creates a `LeaderboardComparer` with default values. |
 
 </details>
 

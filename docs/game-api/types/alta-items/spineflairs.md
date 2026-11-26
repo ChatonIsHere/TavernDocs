@@ -18,9 +18,9 @@ Decorative top, middle and bottom pieces for a book's spine. Used by `FlairSetti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpineFlairs()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpineFlairs()"}</code> | Creates a `SpineFlairs` with default values. |
 
 ## Fields
 

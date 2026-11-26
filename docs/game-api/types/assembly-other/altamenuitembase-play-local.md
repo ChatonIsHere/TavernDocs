@@ -20,6 +20,6 @@ Editor menu folder `Play/Local`: menu item classes inherit it to appear under th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Local()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Local()"}</code> | Creates an `AltaMenuItemBase.Play.Local` with default values. |

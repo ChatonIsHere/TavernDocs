@@ -19,9 +19,9 @@ Type converter that turns a stat name into the `Stat` on the last parsed player,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatConverter()"}</code> | Creates a `StatConverter` with default values. |
 
 ## Properties
 

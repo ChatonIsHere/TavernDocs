@@ -21,9 +21,9 @@ Save data (version 1) for a `SafePositionSetter`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SafePositionSetterData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SafePositionSetterData()"}</code> | Creates a `SafePositionSetterData` with default values. |
 
 ## Fields
 

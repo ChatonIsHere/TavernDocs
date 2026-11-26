@@ -19,9 +19,9 @@ A user's public info plus their private name and email, from the Alta web API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PersonalUserInfoResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PersonalUserInfoResponse()"}</code> | Creates a `PersonalUserInfoResponse` with default values. |
 
 ## Properties
 

@@ -20,9 +20,9 @@ Base asset for a shop item or cosmetic that can be owned, loaded through Address
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Purchasable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Purchasable()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 
@@ -44,7 +44,7 @@ Base asset for a shop item or cosmetic that can be owned, loaded through Address
 | <Link id="m-islocked" /><code>{"private bool isLocked"}</code> | Backing field for `IsLocked`. |
 | <Link id="m-lastcatalogrefresh" /><code>{"private static DateTime lastCatalogRefresh"}</code> | When the catalog was last loaded or checked. |
 | <Link id="m-linuxtargeturl" /><code>{"private const string LinuxTargetUrl"}</code> | Address of Alta's Linux cosmetics bundles. That host is gone. |
-| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static readonly Logger Logger"}</code> | Logger for this class. |
 | <Link id="m-overridehash" /><code>{"private uint overrideHash"}</code> | Backing field for `OverrideHash`. |
 | <Link id="m-windowstargeturl" /><code>{"private const string WindowsTargetUrl"}</code> | Address of Alta's Windows cosmetics bundles. That host is gone. |
 

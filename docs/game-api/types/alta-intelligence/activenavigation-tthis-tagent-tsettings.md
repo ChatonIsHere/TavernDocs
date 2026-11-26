@@ -20,9 +20,9 @@ Base for creature actions that walk the agent to its target. Applies speed and a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveNavigation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveNavigation()"}</code> | Creates an `ActiveNavigation` with default values. |
 
 ## Methods
 

@@ -18,9 +18,9 @@ Holds one lazily created instance of every player state transition (playing, com
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AllTransitions()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AllTransitions()"}</code> | Creates an `AllTransitions` with default values. |
 
 ## Fields
 

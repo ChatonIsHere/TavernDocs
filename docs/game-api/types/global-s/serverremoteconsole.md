@@ -20,9 +20,9 @@ The TCP remote console: listens on port 1758 on a background thread, checks the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerRemoteConsole()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerRemoteConsole()"}</code> | Creates a `ServerRemoteConsole` with default values. |
 
 ## Fields
 

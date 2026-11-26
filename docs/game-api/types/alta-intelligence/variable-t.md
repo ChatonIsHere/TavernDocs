@@ -19,6 +19,6 @@ A logic variable that stands for a value of type `T` (for example a position) in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Variable(int value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Variable(int value)"}</code> | Creates a `Variable` from `value`. |

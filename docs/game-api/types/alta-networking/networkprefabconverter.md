@@ -19,9 +19,9 @@ Type converter that turns a string (a prefab hash or name) into a `NetworkPrefab
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkPrefabConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkPrefabConverter()"}</code> | Creates a `NetworkPrefabConverter` with default values. |
 
 ## Methods
 

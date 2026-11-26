@@ -20,9 +20,9 @@ Private comparer that treats floats within 0.01 of each other as equal, so `Wait
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FloatComparer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatComparer()"}</code> | Creates a `CoroutineYields.FloatComparer` with default values. |
 
 ## Fields
 

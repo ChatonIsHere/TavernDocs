@@ -19,9 +19,9 @@ Serializable `AltaEvent` that passes a `HealthObject`, for inspector-wired liste
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HealthObjectEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HealthObjectEvent()"}</code> | Creates a `HealthObjectEvent` with default values. |
 
 ## Used in
 

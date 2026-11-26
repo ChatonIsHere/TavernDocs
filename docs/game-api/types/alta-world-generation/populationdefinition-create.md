@@ -20,6 +20,6 @@ Editor menu item under Assets/Create/Township/Features/Creatures that makes a ne
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PopulationDefinition.Create` with default values. |

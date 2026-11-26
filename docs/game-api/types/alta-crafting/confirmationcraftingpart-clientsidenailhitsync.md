@@ -19,9 +19,9 @@ Message a client sends when it hits one of a confirmation crafting part's nails.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientSideNailHitSync(int nailIndex, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientSideNailHitSync(int nailIndex, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> | Creates a `ConfirmationCraftingPart.ClientSideNailHitSync` from `nailIndex` and `impactWithTool`. |
 
 ## Fields
 

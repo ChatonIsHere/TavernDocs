@@ -19,10 +19,10 @@ Conditional label attribute that picks one of two labels (and default values) ba
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType)"}</code> |
-| <Link id="m-ctor-2" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType, float hasDefaultValue, float dontHasDefaultValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType)"}</code> | Creates a `HasComponentLabel` from `hasName`, `dontHasName`, `componentType`, `hasDefaultValue` and `dontHasDefaultValue`. |
+| <Link id="m-ctor-2" /><code>{"HasComponentLabel(string hasName, string dontHasName, Type componentType, float hasDefaultValue, float dontHasDefaultValue)"}</code> | Creates a `HasComponentLabel` from `hasName`, `dontHasName`, `componentType`, `hasDefaultValue` and `dontHasDefaultValue`. |
 
 ## Properties
 

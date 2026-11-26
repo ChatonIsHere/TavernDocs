@@ -19,9 +19,9 @@ Prefab apply attribute for a bool field: keeps it set to whether another named f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HasReferenceValueAttribute(string targetField)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HasReferenceValueAttribute(string targetField)"}</code> | Creates a `HasReferenceValueAttribute` from `targetField`. |
 
 ## Fields
 

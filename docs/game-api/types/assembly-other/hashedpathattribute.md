@@ -20,9 +20,9 @@ Put on a hashed value type (a `HashedGeneralValue` asset type) to set which asse
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HashedPathAttribute(params string[] paths)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HashedPathAttribute(params string[] paths)"}</code> | Creates a `HashedPathAttribute` from `paths`. |
 
 ## Properties
 

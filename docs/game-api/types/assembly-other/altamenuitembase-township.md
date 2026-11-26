@@ -21,6 +21,6 @@ Editor menu folder `Township`: menu item classes inherit it to appear under that
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Township()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Township()"}</code> | Creates an `AltaMenuItemBase.Township` with default values. |

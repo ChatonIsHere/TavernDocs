@@ -18,9 +18,9 @@ Body of an Alta web API request to unlink an outside account.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnlinkAccountRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnlinkAccountRequest()"}</code> | Creates an `UnlinkAccountRequest` with default values. |
 
 ## Properties
 

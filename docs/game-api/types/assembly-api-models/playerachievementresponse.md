@@ -18,9 +18,9 @@ Web API model listing the achievements a player has.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerAchievementResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerAchievementResponse()"}</code> | Creates a `PlayerAchievementResponse` with default values. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Runtime instance of the `CellularAutomata` plugin part: sets each cell to one of
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CellularAutomataInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/cellularautomata">{"CellularAutomata"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CellularAutomataInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/cellularautomata">{"CellularAutomata"}</Link>{" part)"}</code> | Creates a `CellularAutomataInstance` from `plugin` and `part`. |
 
 ## Methods
 

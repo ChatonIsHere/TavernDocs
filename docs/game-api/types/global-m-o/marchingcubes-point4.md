@@ -19,9 +19,9 @@ An integer grid point with a fourth value. In the marching cubes edge table `w` 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Point4(int x, int y, int z, int w)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Point4(int x, int y, int z, int w)"}</code> | Creates a `MarchingCubes.Point4` from `x`, `y`, `z` and `w`. |
 
 ## Fields
 

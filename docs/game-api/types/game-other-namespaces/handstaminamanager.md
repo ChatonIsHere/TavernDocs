@@ -19,9 +19,9 @@ Per-hand climbing stamina: drains the hand's stamina stat while gripping and reg
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandStaminaManager("}<Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" climbingHand, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stamina, "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" climbingHandler)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandStaminaManager("}<Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" climbingHand, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stamina, "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" climbingHandler)"}</code> | Creates a `HandStaminaManager` from `climbingHand`, `stamina` and `climbingHandler`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Old save format (version 1) for `LogicGateReceiver`, before the inverted-output 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicGateSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicGateSaveData1()"}</code> | Creates a `LogicGateSaveData1` with default values. |
 
 ## Fields
 

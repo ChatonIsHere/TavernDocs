@@ -18,9 +18,9 @@ Web API model for one game server as listed inside a group's details (`GroupInfo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GroupServerInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GroupServerInfo()"}</code> | Creates a `GroupServerInfo` with default values. |
 
 ## Properties
 

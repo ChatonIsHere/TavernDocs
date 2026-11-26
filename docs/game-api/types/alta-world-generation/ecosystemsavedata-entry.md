@@ -19,9 +19,9 @@ Saved spawn points for one population in an ecosystem chunk.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Entry()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Entry()"}</code> | Creates an `EcosystemSaveData.Entry` with default values. |
 
 ## Fields
 

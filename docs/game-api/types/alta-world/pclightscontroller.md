@@ -20,9 +20,9 @@ Client lights controller on PC: every 0.5 seconds makes the nearest lights per-p
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PCLightsController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PCLightsController()"}</code> | Creates a `PCLightsController` with default values. |
 
 ## Fields
 

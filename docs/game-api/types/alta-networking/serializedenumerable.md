@@ -20,9 +20,9 @@ Walks the linked list of serialized entities from a start index, returning each 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedEnumerable("}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] links)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedEnumerable("}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"[] links)"}</code> | Creates a `SerializedEnumerable` from `links`. |
 
 ## Fields
 

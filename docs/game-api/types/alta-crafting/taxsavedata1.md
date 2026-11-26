@@ -20,9 +20,9 @@ Old version 1 save data for a `TaxManager`, with the time in float seconds. Migr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TaxSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TaxSaveData1()"}</code> | Creates a `TaxSaveData1` with default values. |
 
 ## Fields
 

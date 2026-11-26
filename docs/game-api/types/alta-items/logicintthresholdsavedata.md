@@ -21,9 +21,9 @@ Save data for `LogicIntThresholdReceiver`: the threshold settings and the linked
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicIntThresholdSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicIntThresholdSaveData()"}</code> | Creates a `LogicIntThresholdSaveData` with default values. |
 
 ## Fields
 

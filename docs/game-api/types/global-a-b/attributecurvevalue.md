@@ -19,10 +19,10 @@ A `CurveValue` keyed by a `BiomeAttribute`: an animation curve tied to one biome
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttributeCurveValue()"}</code> |
-| <Link id="m-ctor-2" /><code>{"AttributeCurveValue("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" topic, AnimationCurve curve)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttributeCurveValue()"}</code> | Creates an `AttributeCurveValue` from `topic` and `curve`. |
+| <Link id="m-ctor-2" /><code>{"AttributeCurveValue("}<Link to="/game-api/types/global-a-b/biomeattribute">{"BiomeAttribute"}</Link>{" topic, AnimationCurve curve)"}</code> | Creates an `AttributeCurveValue` from `topic` and `curve`. |
 
 ## Used in
 

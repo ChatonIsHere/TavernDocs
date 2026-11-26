@@ -20,9 +20,9 @@ Per progression path entry in `ProgressionSettings` that sets how much experienc
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PathExperiencePerDamage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PathExperiencePerDamage()"}</code> | Creates a `ProgressionSettings.PathExperiencePerDamage` with default values. |
 
 ## Fields
 

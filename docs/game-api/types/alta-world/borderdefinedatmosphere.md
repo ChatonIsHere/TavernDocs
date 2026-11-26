@@ -20,9 +20,9 @@ Client: an area outlined by corner transforms that blends the atmosphere from an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BorderDefinedAtmosphere()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BorderDefinedAtmosphere()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -38,7 +38,7 @@ Client: an area outlined by corner transforms that blends the atmosphere from an
 | <Link id="m-distancefrombordertoconsiderinside" /><code>{"private float distanceFromBorderToConsiderInside"}</code> | Distance in from the border over which the blend goes from outside to fully inside. |
 | <Link id="m-insideset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" insideSet"}</code> | Atmosphere used inside the area. |
 | <Link id="m-ischeckingatendofframe" /><code>{"private bool isCheckingAtEndOfFrame"}</code> | Guards against more than one recheck per frame. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Logger for this class. |
 | <Link id="m-orderedbordercorners" /><code>{"private Transform[] orderedBorderCorners"}</code> | Corner transforms in order around the outline. |
 | <Link id="m-outsideset" /><code>{"private "}<Link to="/game-api/types/alta-world/atmosphereset">{"AtmosphereSet"}</Link>{" outsideSet"}</code> | Atmosphere used outside the area. |
 | <Link id="m-updateplayerposition" /><code>{"private "}<Link to="/game-api/types/global-i-l/iunityupdatemethod">{"IUnityUpdateMethod"}</Link>{" updatePlayerPosition"}</code> | Registered per-frame check, while the player is near. |

@@ -19,9 +19,9 @@ Client game mode for joining a game server: connects with retries, loads the ser
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JoinedServerGameMode("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JoinedServerGameMode("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" server)"}</code> | Creates a `JoinedServerGameMode` from `server`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/MetalNonForging`, `Custom/Metal` a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MetalNonForgingBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MetalNonForgingBlit()"}</code> | Creates a `MetalNonForgingBlit` with default values. |
 
 ## Fields
 

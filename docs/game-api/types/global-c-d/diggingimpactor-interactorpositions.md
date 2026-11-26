@@ -19,9 +19,9 @@ Where a hand was when it grabbed a buried `DiggingImpactor`, used to measure the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InteractorPositions(Transform transform, Vector3 position, float distanceToPivot)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InteractorPositions(Transform transform, Vector3 position, float distanceToPivot)"}</code> | Creates a `DiggingImpactor.InteractorPositions` from `transform`, `position` and `distanceToPivot`. |
 
 ## Fields
 

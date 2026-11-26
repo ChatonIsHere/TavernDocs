@@ -19,9 +19,9 @@ A cosmetic set that `ModellingCharacter` puts on its character, with per-item co
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OverrideSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OverrideSet()"}</code> | Creates a `ModellingCharacter.OverrideSet` with default values. |
 
 ## Fields
 

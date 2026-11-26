@@ -19,9 +19,9 @@ The customization wrapper for player cosmetics: loads `PlayerCosmeticDefinition`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerCosmeticWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerCosmeticWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> | Creates a `PlayerCosmeticWrapper` from `manager`. |
 
 ## Fields
 

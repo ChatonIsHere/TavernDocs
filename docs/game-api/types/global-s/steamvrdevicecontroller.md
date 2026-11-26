@@ -19,9 +19,9 @@ XR SDK controller for SteamVR (OpenVR). Creates the SteamVR lifecycle and input 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SteamVRDeviceController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SteamVRDeviceController()"}</code> | Creates a `SteamVRDeviceController` with default values. |
 
 ## Properties
 

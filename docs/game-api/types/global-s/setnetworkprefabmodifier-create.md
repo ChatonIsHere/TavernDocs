@@ -20,6 +20,6 @@ Editor menu entry for creating a `SetNetworkPrefabModifier` asset under the Town
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `SetNetworkPrefabModifier.Create` with default values. |

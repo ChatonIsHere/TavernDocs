@@ -19,9 +19,9 @@ The API client used when the game starts offline (`ApiAccess.StartOffline`). It 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineHighLevelApiClient("}<Link to="/game-api/types/assembly-api-client/logincredentials">{"LoginCredentials"}</Link>{" credentials)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineHighLevelApiClient("}<Link to="/game-api/types/assembly-api-client/logincredentials">{"LoginCredentials"}</Link>{" credentials)"}</code> | Creates an `OfflineHighLevelApiClient` from `credentials`. |
 
 ## Properties
 

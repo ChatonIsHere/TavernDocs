@@ -19,9 +19,9 @@ Component on an item that unlocks a smelter upgrade. `SmelterRecipeUnlock` reads
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ItemSmelterRecipeUnlock()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ItemSmelterRecipeUnlock()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

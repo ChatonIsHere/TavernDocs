@@ -22,9 +22,9 @@ Bake-time tool on static prefabs that merges LOD groups, joins meshes by materia
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StaticObjectCombiner()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StaticObjectCombiner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

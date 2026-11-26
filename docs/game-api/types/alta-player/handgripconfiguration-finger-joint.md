@@ -19,9 +19,9 @@ Size and curl limits of one finger joint, used by `HandGrip` to curl fingers aro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Joint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Joint()"}</code> | Creates a `HandGripConfiguration.Finger.Joint` with default values. |
 
 ## Fields
 

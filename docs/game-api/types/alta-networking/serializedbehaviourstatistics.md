@@ -19,9 +19,9 @@ Profiling list of bytes sent, one statistic per serialized behaviour name.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistics()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistics()"}</code> | Creates a `SerializedBehaviourStatistics` with default values. |
 
 ## Methods
 

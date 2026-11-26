@@ -19,9 +19,9 @@ A group of `PlatformSpecificScriptableObjectInstaller` assets that only run on t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformConstrainedInstallers()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformConstrainedInstallers()"}</code> | Creates a `GlobalSettingsInstaller.PlatformConstrainedInstallers` with default values. |
 
 ## Fields
 

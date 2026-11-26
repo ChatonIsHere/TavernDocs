@@ -19,9 +19,9 @@ Server version of `CacheManager`: loads or generates cache files in the server's
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerCacheManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerCacheManager()"}</code> | Creates a `ServerCacheManager` with default values. |
 
 ## Fields
 

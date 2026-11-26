@@ -19,9 +19,9 @@ Editor tool for the Gymnasium test scene: rebuilds its grid of chunks as `Locati
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GymnasiumChunkResizer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GymnasiumChunkResizer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

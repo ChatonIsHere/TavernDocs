@@ -19,9 +19,9 @@ Shader variant collections to warm up on one platform, part of `ShaderVariantWar
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformCollection()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformCollection()"}</code> | Creates a `ShaderVariantWarmer.PlatformCollection` with default values. |
 
 ## Fields
 

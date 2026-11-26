@@ -20,9 +20,9 @@ A shop item as staff create or edit it through the API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemModificationRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemModificationRequest()"}</code> | Creates a `ShopItemModificationRequest` with default values. |
 
 ## Properties
 

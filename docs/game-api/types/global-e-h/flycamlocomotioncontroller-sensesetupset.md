@@ -19,9 +19,9 @@ One set of sense setups for the fly cam. The controller cycles through these set
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SenseSetupSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SenseSetupSet()"}</code> | Creates a `FlyCamLocomotionController.SenseSetupSet` with default values. |
 
 ## Fields
 

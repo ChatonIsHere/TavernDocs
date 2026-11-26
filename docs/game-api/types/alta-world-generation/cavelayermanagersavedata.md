@@ -21,9 +21,9 @@ Current save data for the `CaveLayerManager` (version 4): seed and per-layer pre
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveData()"}</code> | Creates a `CaveLayerManagerSaveData` with default values. |
 
 ## Fields
 

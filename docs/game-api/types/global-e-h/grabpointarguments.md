@@ -19,9 +19,9 @@ Network argument sent when a hand grabs a pickup. It carries the pickup ID, whic
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrabPointArguments("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isForced = false, bool isForcingHold = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrabPointArguments("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isForced = false, bool isForcingHold = false)"}</code> | Creates a `GrabPointArguments` from `pickup`, `isForced` and `isForcingHold`. |
 
 ## Fields
 

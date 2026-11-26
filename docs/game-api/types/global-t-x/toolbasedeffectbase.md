@@ -20,9 +20,9 @@ Base for pooled skill visuals that copy an object's meshes (skipping docks) and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ToolBasedEffectBase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ToolBasedEffectBase()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Settings for `AgentRollUpInPlace`: turn the creature's body upright on the neare
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AgentRollUpInPlaceSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AgentRollUpInPlaceSettings()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -19,6 +19,6 @@ Serializable list of whole number values, one per skill level (a `ValuePerLevel<
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IntValuesPerLevel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IntValuesPerLevel()"}</code> | Creates an `IntValuesPerLevel` with default values. |

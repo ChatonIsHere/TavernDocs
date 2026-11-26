@@ -19,9 +19,9 @@ Private: the render materials for one channel of a `PhysicalMaterial`, plus its 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialChannel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialChannel()"}</code> | Creates a `PhysicalMaterial.MaterialChannel` with default values. |
 
 ## Fields
 

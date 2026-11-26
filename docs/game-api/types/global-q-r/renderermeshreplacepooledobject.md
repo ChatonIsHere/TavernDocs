@@ -19,9 +19,9 @@ Pooled object that swaps the mesh and material on a set of renderers when set up
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RendererMeshReplacePooledObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RendererMeshReplacePooledObject()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Puzzle trigger that reports whether a lit fire (such as a torch) is inside it, f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogic()"}</code> | Creates a `PlaceItemNoDockFirePuzzleLogic` with default values. |
 
 ## Fields
 

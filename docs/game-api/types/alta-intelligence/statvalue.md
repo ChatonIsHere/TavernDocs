@@ -19,9 +19,9 @@ Scoring rule on a stat of the creature or the target, mapped onto 0 to 1. Made b
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatValue("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition, float from, float to, bool isTargetStat, bool isRatio)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatValue("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition, float from, float to, bool isTargetStat, bool isRatio)"}</code> | Creates a `StatValue` from `statDefinition`, `from`, `to`, `isTargetStat` and `isRatio`. |
 
 ## Fields
 

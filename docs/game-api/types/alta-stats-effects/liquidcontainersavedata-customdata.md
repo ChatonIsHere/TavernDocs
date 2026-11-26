@@ -19,9 +19,9 @@ Saved description of a custom (non-preset) liquid: its colour, visuals, effects 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomData()"}</code> | Creates a `LiquidContainerSaveData.CustomData` with default values. |
 
 ## Fields
 

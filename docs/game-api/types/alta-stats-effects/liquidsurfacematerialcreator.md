@@ -19,9 +19,9 @@ Makes the liquid surface material from a liquid's visual data: colours, rim, fre
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LiquidSurfaceMaterialCreator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LiquidSurfaceMaterialCreator()"}</code> | Creates a `LiquidSurfaceMaterialCreator` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Serializable check that a bool game setting has an expected value.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoolSettingValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoolSettingValue()"}</code> | Creates a `BoolSettingValue` with default values. |
 
 ## Fields
 

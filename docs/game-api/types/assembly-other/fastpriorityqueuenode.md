@@ -19,9 +19,9 @@ Base class for items in a `FastPriorityQueue` with a float priority. The queue s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FastPriorityQueueNode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FastPriorityQueueNode()"}</code> | Creates a `FastPriorityQueueNode` with default values. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Animator state machine behaviour that sets a float parameter to a random value o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RandomFloatEntrySelect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RandomFloatEntrySelect()"}</code> | Creates a `RandomFloatEntrySelect` with default values. |
 
 ## Fields
 

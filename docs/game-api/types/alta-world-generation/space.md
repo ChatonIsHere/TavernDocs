@@ -19,9 +19,9 @@ One triangle of a procedural forest's layout graph, made of three nodes and the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Space(int index, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeA, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeB, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeC, "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" ab, "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" bc, "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" ca)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Space(int index, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeA, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeB, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeC, "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" ab, "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" bc, "}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{" ca)"}</code> | Creates a `Space` from `index`, `nodeA`, `nodeB`, `nodeC`, `ab`, `bc` and `ca`. |
 
 ## Properties
 

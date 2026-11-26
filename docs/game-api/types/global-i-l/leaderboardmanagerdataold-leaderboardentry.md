@@ -19,9 +19,9 @@ Old save format for one leaderboard, kept so saves can be migrated to `Leaderboa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LeaderboardEntry()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LeaderboardEntry()"}</code> | Creates a `LeaderboardManagerDataOld.LeaderboardEntry` with default values. |
 
 ## Fields
 

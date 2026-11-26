@@ -19,9 +19,9 @@ Keeps the hand camera viewfinder within a set distance of the local player's hea
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandCameraViewfinderResizer(Transform targetTransform, "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings">{"HandCameraViewfinderResizerSettings"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandCameraViewfinderResizer(Transform targetTransform, "}<Link to="/game-api/types/alta-customization/handcameraviewfinderresizersettings">{"HandCameraViewfinderResizerSettings"}</Link>{" settings)"}</code> | Creates a `HandCameraViewfinderResizerSettings.HandCameraViewfinderResizer` from `targetTransform` and `settings`. |
 
 ## Fields
 

@@ -21,18 +21,18 @@ Status `error` with a message, for every other refusal (blacklisted, name taken,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GenericFail(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GenericFail(string message)"}</code> | Sets the error message. |
 
 ## Properties
 
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-message" /><code>{"private string Message { get; }"}</code> |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-message" /><code>{"private string Message { get; }"}</code> | The error text sent to the player. |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `error`. |
 
 </details>

@@ -19,9 +19,9 @@ Editor issue log entry: an object and the problem messages logged about it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Issue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Issue()"}</code> | Creates an `ObjectIssueLog.Issue` with default values. |
 
 ## Fields
 

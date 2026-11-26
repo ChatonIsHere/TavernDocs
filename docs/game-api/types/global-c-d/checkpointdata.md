@@ -21,9 +21,9 @@ Save data for a `CheckPoint`: the leaderboards it begins and ends.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CheckPointData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CheckPointData()"}</code> | Creates a `CheckPointData` with default values. |
 
 ## Fields
 

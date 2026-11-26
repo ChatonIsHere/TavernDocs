@@ -18,9 +18,9 @@ Body of an Alta web API request that sets a new password with a reset token.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ResetPasswordRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ResetPasswordRequest()"}</code> | Creates a `ResetPasswordRequest` with default values. |
 
 ## Properties
 

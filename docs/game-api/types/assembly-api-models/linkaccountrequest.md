@@ -19,9 +19,9 @@ Body of an Alta web API request to link an outside account to an Alta user.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LinkAccountRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LinkAccountRequest()"}</code> | Creates a `LinkAccountRequest` with default values. |
 
 ## Properties
 

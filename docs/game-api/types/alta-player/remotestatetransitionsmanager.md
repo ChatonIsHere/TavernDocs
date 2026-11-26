@@ -19,9 +19,9 @@ Client-side transitions manager. Player states on a client get this one, so a tr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RemoteStateTransitionsManager("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" parentState)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RemoteStateTransitionsManager("}<Link to="/game-api/types/alta-player/iplayerstate">{"IPlayerState"}</Link>{" parentState)"}</code> | Creates a `RemoteStateTransitionsManager` from `parentState`. |
 
 ## Methods
 

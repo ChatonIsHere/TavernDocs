@@ -19,9 +19,9 @@ Lists of modifiers that forest fill runs on a spawn candidate at each stage (poi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnModifiers()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnModifiers()"}</code> | Creates a `SpawnModifiers` with default values. |
 
 ## Fields
 

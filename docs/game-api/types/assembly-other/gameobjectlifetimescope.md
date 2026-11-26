@@ -22,9 +22,9 @@ VContainer scope on a single game object. With `autoInjectSelf` on, the object i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameObjectLifetimeScope()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameObjectLifetimeScope()"}</code> | Creates a `GameObjectLifetimeScope` with default values. |
 
 ## Fields
 

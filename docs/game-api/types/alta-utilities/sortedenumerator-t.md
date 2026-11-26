@@ -19,9 +19,9 @@ Enumerator over an array snapshot, returned by `SortedList`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SortedEnumerator(T[] list)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SortedEnumerator(T[] list)"}</code> | Creates a `SortedEnumerator` from `list`. |
 
 ## Fields
 

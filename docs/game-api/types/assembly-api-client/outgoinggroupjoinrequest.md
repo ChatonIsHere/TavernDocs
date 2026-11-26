@@ -23,9 +23,9 @@ A join request the current user has sent to a group. Revoke it to withdraw.
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"internal OutgoingGroupJoinRequest("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" group)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"internal OutgoingGroupJoinRequest("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, "}<Link to="/game-api/types/assembly-api-models/groupinfo">{"GroupInfo"}</Link>{" group)"}</code> | Creates an `OutgoingGroupJoinRequest` from `api` and `group`. |
 
 </details>
 

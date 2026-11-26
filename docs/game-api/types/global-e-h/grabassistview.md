@@ -18,9 +18,9 @@ Client: draws the grab assist path and target marker for one hand, using meshes 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrabAssistView("}<Link to="/game-api/types/global-e-h/grabassistcontroller">{"GrabAssistController"}</Link>{" controller, bool isRightHand)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrabAssistView("}<Link to="/game-api/types/global-e-h/grabassistcontroller">{"GrabAssistController"}</Link>{" controller, bool isRightHand)"}</code> | Creates a `GrabAssistView` from `controller` and `isRightHand`. |
 
 ## Fields
 

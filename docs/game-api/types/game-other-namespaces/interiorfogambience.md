@@ -19,9 +19,9 @@ Atmosphere plugin for interiors such as basements: while it has priority, it ble
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InteriorFogAmbience()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InteriorFogAmbience()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

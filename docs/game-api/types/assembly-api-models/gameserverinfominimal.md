@@ -20,16 +20,16 @@ A game server's id and name only, as Alta's web API returned in short lists.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameServerInfoMinimal()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameServerInfoMinimal()"}</code> | Creates a `GameServerInfoMinimal` with default values. |
 
 ## Properties
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-identifier" /><code>{"int Identifier { get; set; }"}</code> | The server id. |
-| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> |  |
+| <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | The server's name. |
 
 ## Used in
 

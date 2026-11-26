@@ -19,9 +19,9 @@ Property attribute for an array indexed by an enum, so the inspector can label e
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EnumArrayAttribute(Type enumType, int startIndex = 0, bool isFlagEnum = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EnumArrayAttribute(Type enumType, int startIndex = 0, bool isFlagEnum = false)"}</code> | Creates an `EnumArrayAttribute` from `enumType`, `startIndex` and `isFlagEnum`. |
 
 ## Properties
 

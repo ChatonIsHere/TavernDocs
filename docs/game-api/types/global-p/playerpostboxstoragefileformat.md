@@ -20,9 +20,9 @@ Server: file format for one player's postbox storage: a list of saved object ver
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerPostboxStorageFileFormat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerPostboxStorageFileFormat()"}</code> | Creates a `PlayerPostboxStorageFileFormat` with default values. |
 
 ## Fields
 

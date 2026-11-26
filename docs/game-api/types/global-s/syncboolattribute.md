@@ -20,6 +20,6 @@ Obsolete `SyncAttribute` that marks a field to be synced with the default `bool`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SyncBoolAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SyncBoolAttribute()"}</code> | Creates a `SyncBoolAttribute` with default values. |

@@ -18,9 +18,9 @@ Loads a server's `server_config` JSON file, creating an empty `ServerConfigurati
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerConfigFileManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerConfigFileManager()"}</code> | Creates a `ServerConfigFileManager` with default values. |
 
 ## Fields
 

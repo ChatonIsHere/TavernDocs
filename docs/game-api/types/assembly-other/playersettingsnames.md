@@ -18,9 +18,9 @@ Preference key names for the login screen.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerSettingsNames()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerSettingsNames()"}</code> | Creates a `PlayerSettingsNames` with default values. |
 
 ## Fields
 

@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Township/Features/Creatures.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Creatures()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Creatures()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Creatures` with default values. |

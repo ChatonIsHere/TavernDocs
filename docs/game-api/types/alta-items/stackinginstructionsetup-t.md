@@ -20,9 +20,9 @@ Base for a stack layout built from a specific `StackingInstructions` type. Subcl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected StackingInstructionSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected StackingInstructionSetup()"}</code> | Creates a `StackingInstructionSetup` with default values. |
 
 ## Methods
 

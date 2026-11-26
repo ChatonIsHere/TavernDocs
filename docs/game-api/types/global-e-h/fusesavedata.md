@@ -21,9 +21,9 @@ Save data for a `Fuse`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FuseSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FuseSaveData()"}</code> | Creates a `FuseSaveData` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Base asset for a rule that limits what a `ConstrainedSpawnerDisplay` spawns in a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected SpawnConstrain()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected SpawnConstrain()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Methods
 

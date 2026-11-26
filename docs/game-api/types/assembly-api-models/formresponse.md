@@ -19,9 +19,9 @@ A full submitted answer to a `Form`: the answers per page plus staff comments.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FormResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FormResponse()"}</code> | Creates a `FormResponse` with default values. |
 
 ## Properties
 

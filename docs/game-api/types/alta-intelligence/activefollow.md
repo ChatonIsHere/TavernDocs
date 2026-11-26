@@ -20,9 +20,9 @@ Navigation action that follows the agent's target until within reach, or gives u
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveFollow()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveFollow()"}</code> | Creates an `ActiveFollow` with default values. |
 
 ## Fields
 

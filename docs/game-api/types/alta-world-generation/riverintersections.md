@@ -19,9 +19,9 @@ Generation helper that finds where forest edges cross above-ground river paths, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverIntersections()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverIntersections()"}</code> | Creates a `RiverIntersections` with default values. |
 
 ## Fields
 

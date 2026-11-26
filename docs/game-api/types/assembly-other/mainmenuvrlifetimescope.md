@@ -20,9 +20,9 @@ VContainer scope for the VR main menu. Makes sure the inbox, friends, recent pla
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MainMenuVrLifetimeScope()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MainMenuVrLifetimeScope()"}</code> | Creates a `MainMenuVrLifetimeScope` with default values. |
 
 ## Fields
 

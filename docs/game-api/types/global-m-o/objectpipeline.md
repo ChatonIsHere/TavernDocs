@@ -18,9 +18,9 @@ A serializable chain that turns an input object (usually a `Distribution`) into 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ObjectPipeline()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ObjectPipeline()"}</code> | Creates an `ObjectPipeline` with default values. |
 
 ## Fields
 

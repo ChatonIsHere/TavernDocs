@@ -21,6 +21,6 @@ Concrete weighted entry for `Distribution`, holding any Unity object.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `Distribution.Item` with default values. |

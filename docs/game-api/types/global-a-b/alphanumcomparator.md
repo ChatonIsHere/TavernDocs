@@ -20,9 +20,9 @@ Non-generic comparer for natural string sorting, so "item2" sorts before "item10
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AlphanumComparator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AlphanumComparator()"}</code> | Creates an `AlphanumComparator` with default values. |
 
 ## Methods
 

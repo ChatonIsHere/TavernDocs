@@ -21,9 +21,9 @@ Save data for `TeleportationPoint` (version 1).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TeleportationPointSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TeleportationPointSaveData()"}</code> | Creates a `TeleportationPointSaveData` with default values. |
 
 ## Fields
 

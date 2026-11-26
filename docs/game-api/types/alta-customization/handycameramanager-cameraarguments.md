@@ -19,9 +19,9 @@ Private message struct holding a camera and player identifier. Not used anywhere
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CameraArguments(uint cameraIdentifier, int playerIdentifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CameraArguments(uint cameraIdentifier, int playerIdentifier)"}</code> | Creates a `HandyCameraManager.CameraArguments` from `cameraIdentifier` and `playerIdentifier`. |
 
 ## Fields
 

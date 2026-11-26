@@ -18,9 +18,9 @@ A small WebSocket client for the Alta API that sends JSON messages and routes in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebSocketManager(string authToken, string apiKey, string uri)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebSocketManager(string authToken, string apiKey, string uri)"}</code> | Creates a `WebSocketManager` from `authToken`, `apiKey` and `uri`. |
 
 ## Fields
 

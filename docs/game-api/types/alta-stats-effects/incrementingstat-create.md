@@ -20,6 +20,6 @@ Editor menu entry that creates a new `IncrementingStat` asset. Not used at runti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `IncrementingStat.Create` with default values. |

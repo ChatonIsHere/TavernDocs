@@ -20,6 +20,6 @@ Editor menu entry for creating a `BowQuickdraw` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `BowQuickdraw.Create` with default values. |

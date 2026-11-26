@@ -19,6 +19,6 @@ Inspector attribute for a field that picks a cosmetic set. Editor use only, for 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticSetFilterAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticSetFilterAttribute()"}</code> | Creates a `CosmeticSetFilterAttribute` with default values. |

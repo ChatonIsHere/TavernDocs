@@ -19,9 +19,9 @@ Request body for quickly creating a server in a region.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"QuickCreateRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"QuickCreateRequest()"}</code> | Creates a `QuickCreateRequest` with default values. |
 
 ## Properties
 

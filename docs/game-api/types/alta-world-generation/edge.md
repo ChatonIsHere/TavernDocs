@@ -19,9 +19,9 @@ A connection between two nodes in the forest generator's graph, with a path in e
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Edge("}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeA, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeB, "}<Link to="/game-api/types/alta-world-generation/edgetype">{"EdgeType"}</Link>{" type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Edge("}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeA, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" nodeB, "}<Link to="/game-api/types/alta-world-generation/edgetype">{"EdgeType"}</Link>{" type)"}</code> | Creates an `Edge` from `nodeA`, `nodeB` and `type`. |
 
 ## Properties
 

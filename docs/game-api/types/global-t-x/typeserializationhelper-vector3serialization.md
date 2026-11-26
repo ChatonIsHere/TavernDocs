@@ -20,9 +20,9 @@ Serializer for `Vector3`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Vector3Serialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Vector3Serialization()"}</code> | Creates a `TypeSerializationHelper.Vector3Serialization` with default values. |
 
 ## Methods
 

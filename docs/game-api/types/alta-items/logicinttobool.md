@@ -21,9 +21,9 @@ Turns an int logic input into a bool: true when the value is in a list of correc
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicIntToBool()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicIntToBool()"}</code> | Creates a `LogicIntToBool` with default values. |
 
 ## Fields
 

@@ -20,10 +20,10 @@ One finger joint of a hand grip. It curls in steps until it touches a grabbed ob
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GripJoint()"}</code> |
-| <Link id="m-ctor-2" /><code>{"GripJoint("}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{" joint, Transform transform, "}<Link to="/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GripJoint()"}</code> | Creates a `HandGrip.GripJoint` from `hand`, `joint`, `transform` and `rotations`. |
+| <Link id="m-ctor-2" /><code>{"GripJoint("}<Link to="/game-api/types/alta-player/handgrip">{"HandGrip"}</Link>{" hand, "}<Link to="/game-api/types/alta-player/handgripconfiguration-finger-joint">{"HandGripConfiguration.Finger.Joint"}</Link>{" joint, Transform transform, "}<Link to="/game-api/types/alta-player/handgripconfiguration-rotationsnapshots">{"HandGripConfiguration.RotationSnapshots"}</Link>{" rotations)"}</code> | Creates a `HandGrip.GripJoint` from `hand`, `joint`, `transform` and `rotations`. |
 
 ## Fields
 

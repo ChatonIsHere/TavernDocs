@@ -19,9 +19,9 @@ Network entity that holds the micro tutorial controllers. VContainer injects it,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialSystem()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialSystem()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Properties
 

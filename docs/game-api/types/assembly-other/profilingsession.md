@@ -19,9 +19,9 @@ A timed, nestable profiling scope. Making one starts it and makes it the current
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProfilingSession(string name, params string[] groups)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProfilingSession(string name, params string[] groups)"}</code> | Creates a `ProfilingSession` from `name` and `groups`. |
 
 ## Fields
 

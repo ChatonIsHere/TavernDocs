@@ -19,10 +19,10 @@ A generation instruction that spawns a generation core on a river node or path. 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverGCoreInstruction()"}</code> |
-| <Link id="m-ctor-2" /><code>{"RiverGCoreInstruction("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, uint seed, Vector3 position, Quaternion rotation, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" node, "}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" path)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverGCoreInstruction()"}</code> | Creates a `RiverGCoreInstruction` from `core`, `seed`, `position`, `rotation`, `node` and `path`. |
+| <Link id="m-ctor-2" /><code>{"RiverGCoreInstruction("}<Link to="/game-api/types/global-e-h/generationcore">{"GenerationCore"}</Link>{" core, uint seed, Vector3 position, Quaternion rotation, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" node, "}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" path)"}</code> | Creates a `RiverGCoreInstruction` from `core`, `seed`, `position`, `rotation`, `node` and `path`. |
 
 ## Fields
 

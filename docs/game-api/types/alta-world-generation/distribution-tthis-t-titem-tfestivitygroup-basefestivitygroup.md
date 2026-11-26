@@ -20,9 +20,9 @@ A set of distribution items tied to a `Festivity`; they are only included in ran
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BaseFestivityGroup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BaseFestivityGroup()"}</code> | Creates a `Distribution` with default values. |
 
 ## Fields
 

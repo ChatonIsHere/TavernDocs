@@ -19,9 +19,9 @@ Wyrm action that dodges a dangerous, fast moving target within reach. Runs on th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveDodge()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveDodge()"}</code> | Creates an `ActiveDodge` with default values. |
 
 ## Methods
 

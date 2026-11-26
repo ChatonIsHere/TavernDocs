@@ -19,9 +19,9 @@ Property attribute that adds text to a field's inspector label, such as a unit l
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LabelAdd(string labelAddition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LabelAdd(string labelAddition)"}</code> | Creates a `LabelAdd` from `labelAddition`. |
 
 ## Properties
 

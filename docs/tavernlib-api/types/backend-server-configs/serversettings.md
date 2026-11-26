@@ -20,9 +20,9 @@ The contents of `server_settings.json`. Unknown keys are kept. Read it through `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerSettings()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 
@@ -55,9 +55,9 @@ The contents of `server_settings.json`. Unknown keys are kept. Read it through `
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | Holds JSON keys TavernLib doesn't model, so they are written back unchanged. |
 
 </details>
 

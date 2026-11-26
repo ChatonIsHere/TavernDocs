@@ -20,9 +20,9 @@ Version 1 save data for `TimeManager`, kept to migrate old saves.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimeManagerSaveDataOld1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimeManagerSaveDataOld1()"}</code> | Creates a `TimeManagerSaveDataOld1` with default values. |
 
 ## Fields
 

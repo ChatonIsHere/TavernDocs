@@ -20,9 +20,9 @@ Inspector attribute that limits a cosmetic definition field to one category and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticFilterAttribute(string category, bool isFree)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticFilterAttribute(string category, bool isFree)"}</code> | Creates a `CosmeticFilterAttribute` from `category` and `isFree`. |
 
 ## Properties
 

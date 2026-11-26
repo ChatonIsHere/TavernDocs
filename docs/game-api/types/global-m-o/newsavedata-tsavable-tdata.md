@@ -20,9 +20,9 @@ Base for the current version of a component's save data. `Apply` hands the data 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected NewSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected NewSaveData()"}</code> | Creates a `NewSaveData` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Version 4 save data for `RepairBox`, without the dev tool flag. Migrated to `Rep
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RepairBoxSaveDataOld4()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RepairBoxSaveDataOld4()"}</code> | Creates a `RepairBoxSaveDataOld4` with default values. |
 
 ## Fields
 

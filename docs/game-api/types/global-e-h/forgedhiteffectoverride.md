@@ -18,9 +18,9 @@ Per-tool override for forging hit effects and the heat a hit adds. Heart call sk
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForgedHitEffectOverride()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForgedHitEffectOverride()"}</code> | Creates a `ForgedHitEffectOverride` with default values. |
 
 ## Fields
 

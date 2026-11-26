@@ -19,17 +19,17 @@ Filter for `MeltingModel.isAllowedFilter`. Handlers can set `isAllowed` to false
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MeltingModelAllowed(object object, IntPtr method)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MeltingModelAllowed(object object, IntPtr method)"}</code> | Made by the compiler when you assign a method to this delegate; you don't call it directly. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model, ref bool isAllowed, AsyncCallback callback, object object)"}</code> |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(ref bool isAllowed, IAsyncResult result)"}</code> |
-| <Link id="m-invoke" /><code>{"virtual void Invoke("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model, ref bool isAllowed)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model, ref bool isAllowed, AsyncCallback callback, object object)"}</code> | Starts the call on another thread; not supported in Unity, so use `Invoke`. |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(ref bool isAllowed, IAsyncResult result)"}</code> | Waits for a call started with `BeginInvoke`; not supported in Unity. |
+| <Link id="m-invoke" /><code>{"virtual void Invoke("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" model, ref bool isAllowed)"}</code> | Calls every method on this delegate with these arguments. |
 
 ## Used in
 

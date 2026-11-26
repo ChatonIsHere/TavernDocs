@@ -20,9 +20,9 @@ Marks a scrapper behaviour with the component type and fields it sets, so the sc
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ScrapperArgumentAttribute(Type type, "}<Link to="/game-api/types/alta-crafting/applicationtype">{"ApplicationType"}</Link>{" applicationType, params string[] fields)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ScrapperArgumentAttribute(Type type, "}<Link to="/game-api/types/alta-crafting/applicationtype">{"ApplicationType"}</Link>{" applicationType, params string[] fields)"}</code> | Creates a `ScrapperArgumentAttribute` from `type`, `applicationType` and `fields`. |
 
 ## Properties
 

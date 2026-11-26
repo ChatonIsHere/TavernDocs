@@ -18,9 +18,9 @@ Server: one player's landmark knowledge. Loads their save file, sends their mark
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerClientLandmarkManager("}<Link to="/game-api/types/alta-world/serverlandmarkmanager">{"ServerLandmarkManager"}</Link>{" landmarkManager, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" initialSync, "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" changeSync)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerClientLandmarkManager("}<Link to="/game-api/types/alta-world/serverlandmarkmanager">{"ServerLandmarkManager"}</Link>{" landmarkManager, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" initialSync, "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" changeSync)"}</code> | Creates a `ServerClientLandmarkManager` from `landmarkManager`, `player`, `initialSync` and `changeSync`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Old version 1 save data for a `TradeVendor`. Migrates to `TradeVendorSaveData`, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TradeVendorSaveDataOld()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TradeVendorSaveDataOld()"}</code> | Creates a `TradeVendorSaveDataOld` with default values. |
 
 ## Fields
 

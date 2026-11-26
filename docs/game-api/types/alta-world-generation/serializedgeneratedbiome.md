@@ -18,9 +18,9 @@ Saved description of a blended biome: two biomes, how far between them and a see
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedGeneratedBiome()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedGeneratedBiome()"}</code> | Creates a `SerializedGeneratedBiome` with default values. |
 
 ## Fields
 

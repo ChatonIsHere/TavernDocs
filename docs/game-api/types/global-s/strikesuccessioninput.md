@@ -19,9 +19,9 @@ Skill input that counts a run of good tool hits on a matching channel; reaching 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StrikeSuccessionInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StrikeSuccessionInput()"}</code> | Creates a `StrikeSuccessionInput` with default values. |
 
 ## Fields
 

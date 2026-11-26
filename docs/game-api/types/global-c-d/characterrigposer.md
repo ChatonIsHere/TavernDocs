@@ -18,9 +18,9 @@ Copies a player character's pose onto a dummy rig, bone by bone from the root ou
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CharacterRigPoser(Transform dummyRootBone, Transform dummyBodyTransform, Transform characterRigRootBone, Transform characterBodyTransform, Func<Transform, bool> dummyBonesFilter, Func<Transform, Transform> boneMapFromPlayerToDummy, float minTimeBetweenPoses = 2)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CharacterRigPoser(Transform dummyRootBone, Transform dummyBodyTransform, Transform characterRigRootBone, Transform characterBodyTransform, Func<Transform, bool> dummyBonesFilter, Func<Transform, Transform> boneMapFromPlayerToDummy, float minTimeBetweenPoses = 2)"}</code> | Creates a `CharacterRigPoser` from `dummyRootBone`, `dummyBodyTransform`, `characterRigRootBone`, `characterBodyTransform`, `dummyBonesFilter`, `boneMapFromPlayerToDummy` and `minTimeBetweenPoses`. |
 
 ## Fields
 

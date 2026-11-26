@@ -22,9 +22,9 @@ A named constant term in the AI's logic system (predicates, compounds and variab
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BaseAtom(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BaseAtom(string name)"}</code> | Creates a `BaseAtom` from `name`. |
 
 ## Properties
 

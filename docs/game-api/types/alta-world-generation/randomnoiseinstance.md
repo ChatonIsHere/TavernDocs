@@ -19,9 +19,9 @@ Runtime instance of the `RandomNoise` plugin part: hashed per-cell random values
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RandomNoiseInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/randomnoise">{"RandomNoise"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RandomNoiseInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/randomnoise">{"RandomNoise"}</Link>{" part)"}</code> | Creates a `RandomNoiseInstance` from `plugin` and `part`. |
 
 ## Methods
 

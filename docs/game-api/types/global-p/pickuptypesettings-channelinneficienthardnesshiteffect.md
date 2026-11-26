@@ -19,9 +19,9 @@ Pairs an impact channel with the impact effect to play when a hit on that channe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChannelInneficientHardnessHitEffect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChannelInneficientHardnessHitEffect()"}</code> | Creates a `PickupTypeSettings.ChannelInneficientHardnessHitEffect` with default values. |
 
 ## Fields
 

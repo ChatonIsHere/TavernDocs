@@ -19,9 +19,9 @@ Fixed size binary heap of nodes with a float priority, lowest value first. Nodes
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FastPriorityQueue(int maxNodes)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FastPriorityQueue(int maxNodes)"}</code> | Creates a `FastPriorityQueue` from `maxNodes`. |
 
 ## Fields
 

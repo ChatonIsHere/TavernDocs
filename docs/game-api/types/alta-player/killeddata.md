@@ -19,9 +19,9 @@ What killed a player, built from the killing hit: the tool, who held it and the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KilledData("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KilledData("}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> | Creates a `KilledData` from `killingHit`. |
 
 ## Fields
 

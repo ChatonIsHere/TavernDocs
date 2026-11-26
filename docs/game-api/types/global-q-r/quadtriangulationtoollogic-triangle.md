@@ -19,10 +19,10 @@ Private triangle used by `QuadTriangulationToolLogic`, holding vertex indices an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Triangle(Vector3[] vertices, int[] triangles, int start)"}</code> |
-| <Link id="m-ctor-2" /><code>{"Triangle(List<Vector3> sharedVertices, List<Vector3> uniqueVertices, List<int> sharedIndices, List<int> uniqueIndices, int index)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Triangle(Vector3[] vertices, int[] triangles, int start)"}</code> | Creates a `QuadTriangulationToolLogic.Triangle` from `sharedVertices`, `uniqueVertices`, `sharedIndices`, `uniqueIndices` and `index`. |
+| <Link id="m-ctor-2" /><code>{"Triangle(List<Vector3> sharedVertices, List<Vector3> uniqueVertices, List<int> sharedIndices, List<int> uniqueIndices, int index)"}</code> | Creates a `QuadTriangulationToolLogic.Triangle` from `sharedVertices`, `uniqueVertices`, `sharedIndices`, `uniqueIndices` and `index`. |
 
 ## Fields
 

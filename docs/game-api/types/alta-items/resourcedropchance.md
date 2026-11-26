@@ -18,9 +18,9 @@ One possible resource drop with its weighting, used in `BoulderDefinition.Resour
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ResourceDropChance()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ResourceDropChance()"}</code> | Creates a `ResourceDropChance` with default values. |
 
 ## Fields
 

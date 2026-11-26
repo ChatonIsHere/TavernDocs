@@ -19,9 +19,9 @@ A named shader property that takes a `Vector3`, set by cached property id.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Vector3MaterialProperty(string propertyName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Vector3MaterialProperty(string propertyName)"}</code> | Creates a `Vector3MaterialProperty` from `propertyName`. |
 
 ## Methods
 

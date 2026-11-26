@@ -20,9 +20,9 @@ Base for the spawn point source a population sample uses: gives random or indexe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationSpawnInformation("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationSpawnInformation("}<Link to="/game-api/types/global-s/spawndata">{"SpawnData"}</Link>{" spawnData)"}</code> | Creates a `PopulationSpawnInformation` from `spawnData`. |
 
 ## Properties
 

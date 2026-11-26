@@ -20,9 +20,9 @@ Old save data (version 1) for `TimerLogic`, migrated to `TimerLogicSaveData` on 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimerLogicSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimerLogicSaveData1()"}</code> | Creates a `TimerLogicSaveData1` with default values. |
 
 ## Fields
 

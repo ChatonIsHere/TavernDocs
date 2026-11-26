@@ -21,10 +21,10 @@ Marks a static method as a console command. `CommandCollection` finds these meth
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CommandAttribute(string command, string description)"}</code> |
-| <Link id="m-ctor-2" /><code>{"CommandAttribute(string command)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CommandAttribute(string command, string description)"}</code> | Creates a `CommandAttribute` from `command`. |
+| <Link id="m-ctor-2" /><code>{"CommandAttribute(string command)"}</code> | Creates a `CommandAttribute` from `command`. |
 
 ## Properties
 

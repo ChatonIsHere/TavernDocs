@@ -19,9 +19,9 @@ Routes an entity's network messages: sends them to the players the entity is spa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EntityMessageHandler("}<Link to="/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" networkEntity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EntityMessageHandler("}<Link to="/game-api/types/alta-networking/inetworkentity">{"INetworkEntity"}</Link>{" networkEntity)"}</code> | Creates an `EntityMessageHandler` from `networkEntity`. |
 
 ## Fields
 

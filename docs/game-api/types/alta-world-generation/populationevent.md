@@ -19,9 +19,9 @@ Serializable Alta event that passes a `PopulationSample`, settable in the inspec
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationEvent()"}</code> | Creates a `PopulationEvent` with default values. |
 
 ## Used in
 

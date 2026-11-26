@@ -18,9 +18,9 @@ A user's subscription (supporter membership) and its billing dates.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserSubscription()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserSubscription()"}</code> | Creates an `UserSubscription` with default values. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Remembers the last username or email checked against the API on the registration
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LastCheckedField("}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker-accountregisteringsteps">{"AltaAccountRegistererAndLinker.AccountRegisteringSteps"}</Link>{" step, "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker">{"AltaAccountRegistererAndLinker"}</Link>{" manager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LastCheckedField("}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker-accountregisteringsteps">{"AltaAccountRegistererAndLinker.AccountRegisteringSteps"}</Link>{" step, "}<Link to="/game-api/types/alta-menus/altaaccountregistererandlinker">{"AltaAccountRegistererAndLinker"}</Link>{" manager)"}</code> | Creates an `AltaAccountRegistererAndLinker.LastCheckedField` from `step` and `manager`. |
 
 ## Fields
 

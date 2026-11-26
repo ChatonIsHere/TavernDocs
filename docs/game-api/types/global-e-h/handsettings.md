@@ -21,9 +21,9 @@ Settings asset for player hands, read by `Hand` from the player controller's set
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 
@@ -34,7 +34,7 @@ Settings asset for player hands, read by `Hand` from the player controller's set
 | --- | --- |
 | <Link id="m-armlength" /><code>{"private float armLength"}</code> | Arm reach (default 0.3). The hand joints clamp the held point to this distance from the shoulder. |
 | <Link id="m-isalwaysrenderingpickupatikhand" /><code>{"private bool isAlwaysRenderingPickupAtIKHand"}</code> | Default for `Hand.IsAlwaysRenderingPickupAtIKHand`, copied when the hand is set up. On by default. |
-| <Link id="m-isdebugging" /><code>{"private bool isDebugging"}</code> |  |
+| <Link id="m-isdebugging" /><code>{"private bool isDebugging"}</code> | Backing field for `IsDebugging`. |
 | <Link id="m-isfixingikhandtopickups" /><code>{"private bool isFixingIKHandToPickups"}</code> | When on, the hand calls `Detach` when an interaction ends. Off by default. |
 | <Link id="m-ismovingcenterofmasstogrippoint" /><code>{"private bool isMovingCenterOfMassToGripPoint"}</code> | When on, grabbing an item moves its centre of mass to the grip point and letting go resets it. On by default. |
 

@@ -21,9 +21,9 @@ Save data (version 2) for `Trigger`: its toggle and sync-with-sender settings.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TriggerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TriggerSaveData()"}</code> | Creates a `TriggerSaveData` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Result type for console commands that write a file for the caller, stored under 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FileDownload(string url)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FileDownload(string url)"}</code> | Creates a `FileDownload` from `url`. |
 
 ## Fields
 

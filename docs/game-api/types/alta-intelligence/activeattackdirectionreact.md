@@ -20,9 +20,9 @@ Server: running action that drives an `AttackDirectionCore` (reacting to the dir
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveAttackDirectionReact()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveAttackDirectionReact()"}</code> | Creates an `ActiveAttackDirectionReact` with default values. |
 
 ## Fields
 

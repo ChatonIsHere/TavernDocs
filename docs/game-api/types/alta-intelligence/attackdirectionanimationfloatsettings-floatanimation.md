@@ -20,9 +20,9 @@ Per-creature driver made by `AttackDirectionAnimationFloatSettings`: eases a net
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FloatAnimation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatAnimation()"}</code> | Creates an `AttackDirectionAnimationFloatSettings.FloatAnimation` with default values. |
 
 ## Fields
 

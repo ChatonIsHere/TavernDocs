@@ -20,9 +20,9 @@ A **class** in `Alta.LifecycleManagement.Runtime`, `Alta.LifecycleManagement`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Disposer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Disposer()"}</code> | Creates a `Disposer` with default values. |
 
 ## Fields
 

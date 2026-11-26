@@ -19,9 +19,9 @@ Prefab apply attribute naming a sound effect field to migrate. In this build `Ha
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MigrateSoundEffectAttribute(string field)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MigrateSoundEffectAttribute(string field)"}</code> | Creates a `MigrateSoundEffectAttribute` from `field`. |
 
 ## Fields
 

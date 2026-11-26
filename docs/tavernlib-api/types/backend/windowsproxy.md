@@ -22,9 +22,9 @@ Reads the current user's Windows proxy settings from the registry. Used by `Serv
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-internetsettingskey" /><code>{"private const string InternetSettingsKey"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-internetsettingskey" /><code>{"private const string InternetSettingsKey"}</code> | Registry path of the current user's Internet Settings. |
 
 </details>
 
@@ -37,9 +37,9 @@ Reads the current user's Windows proxy settings from the registry. Used by `Serv
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-parseproxyserver" /><code>{"private static Uri ParseProxyServer(string proxyServer, string protocol)"}</code> |
-| <Link id="m-regexescapeforbypass" /><code>{"private static string RegexEscapeForBypass(string wildcardEntry)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-parseproxyserver" /><code>{"private static Uri ParseProxyServer(string proxyServer, string protocol)"}</code> | Reads the `ProxyServer` value (a single host:port or a per-protocol list) into a URI for the given protocol, or null. |
+| <Link id="m-regexescapeforbypass" /><code>{"private static string RegexEscapeForBypass(string wildcardEntry)"}</code> | Turns a wildcard proxy override entry into an anchored regex for the bypass list. |
 
 </details>

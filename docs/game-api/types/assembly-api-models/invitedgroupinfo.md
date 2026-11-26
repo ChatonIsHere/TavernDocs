@@ -19,9 +19,9 @@ Group details from the Alta web API for a group the user was invited to.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InvitedGroupInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InvitedGroupInfo()"}</code> | Creates an `InvitedGroupInfo` with default values. |
 
 ## Properties
 

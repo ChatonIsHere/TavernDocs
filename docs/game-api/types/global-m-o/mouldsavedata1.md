@@ -20,9 +20,9 @@ Old save data (version 1) for `Mould`, migrated to `MouldSaveData`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MouldSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MouldSaveData1()"}</code> | Creates a `MouldSaveData1` with default values. |
 
 ## Fields
 

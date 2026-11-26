@@ -19,9 +19,9 @@ A `DurabilitySaveEnchantment` effect active on one item. When its trigger fires 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DurabilitySaveEnchantmentApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/game-api/types/alta-crafting/durabilitysaveenchantment">{"DurabilitySaveEnchantment"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DurabilitySaveEnchantmentApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, "}<Link to="/game-api/types/alta-crafting/durabilitysaveenchantment">{"DurabilitySaveEnchantment"}</Link>{" settings)"}</code> | Creates a `DurabilitySaveEnchantmentApplication` from `enchantment` and `settings`. |
 
 ## Fields
 
@@ -36,6 +36,6 @@ A `DurabilitySaveEnchantment` effect active on one item. When its trigger fires 
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"override void Invoke(object data)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"override void Invoke(object data)"}</code> | Scales how much durability the tool loses on this hit; logs an error if the data isn't an `ImpactHitWithTool`. |

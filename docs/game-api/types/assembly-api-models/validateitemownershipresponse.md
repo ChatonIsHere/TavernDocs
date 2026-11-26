@@ -18,9 +18,9 @@ Web API answer to `ValidateItemsOwnershipAsync`, which checks that a user owns a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ValidateItemOwnershipResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ValidateItemOwnershipResponse()"}</code> | Creates a `ValidateItemOwnershipResponse` with default values. |
 
 ## Properties
 

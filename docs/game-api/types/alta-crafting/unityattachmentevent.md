@@ -20,6 +20,6 @@ Serializable Unity event that passes a `TreeAttachment`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnityAttachmentEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnityAttachmentEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

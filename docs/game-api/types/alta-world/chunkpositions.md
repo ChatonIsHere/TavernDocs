@@ -18,9 +18,9 @@ A location chunk's set of weighted surfaces for picking random spawn points. Hel
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkPositions()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkPositions()"}</code> | Creates a `ChunkPositions` with default values. |
 
 ## Fields
 

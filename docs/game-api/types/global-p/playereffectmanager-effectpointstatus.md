@@ -20,9 +20,9 @@ The effect state of one body point: which temperature level it is at and the smo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EffectPointStatus("}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition, "}<Link to="/game-api/types/global-p/playereffectmanager">{"PlayerEffectManager"}</Link>{" manager, "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EffectPointStatus("}<Link to="/game-api/types/global-p/playereffectmanager-effectposition">{"PlayerEffectManager.EffectPosition"}</Link>{" effectPosition, "}<Link to="/game-api/types/global-p/playereffectmanager">{"PlayerEffectManager"}</Link>{" manager, "}<Link to="/game-api/types/global-p/playereffectmanager-overridesettings">{"PlayerEffectManager.OverrideSettings"}</Link>{" settings)"}</code> | Creates a `PlayerEffectManager.EffectPointStatus` from `effectPosition`, `manager` and `settings`. |
 
 ## Fields
 

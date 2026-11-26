@@ -19,6 +19,6 @@ Inspector attribute with no members; probably shows a `Quaternion` field as Eule
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"QuaternionVector3Attribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"QuaternionVector3Attribute()"}</code> | Creates a `QuaternionVector3Attribute` with default values. |

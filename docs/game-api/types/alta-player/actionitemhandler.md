@@ -18,9 +18,9 @@ Tracks one quick-access action item spawned for a player: fades it in and out, a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActionItemHandler("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int itemIndex, "}<Link to="/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{" data, Action<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActionItemHandler("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, int itemIndex, "}<Link to="/game-api/types/alta-player/actionitemdata">{"ActionItemData"}</Link>{" data, Action<int, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{"> destroyItem)"}</code> | Creates an `ActionItemHandler` from `player`, `itemIndex`, `data` and `destroyItem`. |
 
 ## Fields
 

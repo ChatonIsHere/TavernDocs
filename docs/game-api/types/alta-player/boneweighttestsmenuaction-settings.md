@@ -19,9 +19,9 @@ Private: one test preset for `BoneWeightTestsMenuAction`, setting the global ski
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Settings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Settings()"}</code> | Creates a `BoneWeightTestsMenuAction.Settings` with default values. |
 
 ## Fields
 

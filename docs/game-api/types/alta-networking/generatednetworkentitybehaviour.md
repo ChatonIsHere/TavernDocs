@@ -20,9 +20,9 @@ Base for an entity behaviour that builds its content procedurally when it first 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected GeneratedNetworkEntityBehaviour()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected GeneratedNetworkEntityBehaviour()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Properties
 

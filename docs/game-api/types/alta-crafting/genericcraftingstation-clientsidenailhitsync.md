@@ -19,9 +19,9 @@ Message a client sends when it hits a nail on a piece in a generic crafting stat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientSideNailHitSync(int pieceIndex, int nailIndex, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientSideNailHitSync(int pieceIndex, int nailIndex, "}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> | Creates a `GenericCraftingStation.ClientSideNailHitSync` from `pieceIndex`, `nailIndex` and `impactWithTool`. |
 
 ## Fields
 

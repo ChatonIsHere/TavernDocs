@@ -20,9 +20,9 @@ Base for retired save data formats. Its `Apply` refuses to load them.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected OldSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected OldSaveData()"}</code> | Creates an `OldSaveData` with default values. |
 
 ## Fields
 

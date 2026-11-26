@@ -20,10 +20,10 @@ An effect with a strength multiplier and optional duration, as carried by liquid
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EffectDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify, float strengthMultiplier, int durationInSeconds = 0)"}</code> |
-| <Link id="m-ctor-2" /><code>{"EffectDefinitionApplication()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EffectDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/effectdefinition">{"EffectDefinition"}</Link>{" effectToModify, float strengthMultiplier, int durationInSeconds = 0)"}</code> | Creates an `EffectDefinitionApplication` with default values. |
+| <Link id="m-ctor-2" /><code>{"EffectDefinitionApplication()"}</code> | Creates an `EffectDefinitionApplication` with default values. |
 
 ## Fields
 

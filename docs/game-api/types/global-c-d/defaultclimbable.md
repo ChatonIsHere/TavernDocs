@@ -19,9 +19,9 @@ The climbable used when a grabbed collider has no climbable of its own, so plain
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DefaultClimbable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DefaultClimbable()"}</code> | Creates a `DefaultClimbable` with default values. |
 
 ## Properties
 

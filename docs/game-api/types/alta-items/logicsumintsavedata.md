@@ -21,9 +21,9 @@ Save data for `LogicSumIntReceiver`: its own output value data and the int input
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicSumIntSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicSumIntSaveData()"}</code> | Creates a `LogicSumIntSaveData` with default values. |
 
 ## Fields
 

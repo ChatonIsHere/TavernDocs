@@ -18,9 +18,9 @@ Request body answering a friend request.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FriendRequestResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FriendRequestResponse()"}</code> | Creates a `FriendRequestResponse` with default values. |
 
 ## Properties
 

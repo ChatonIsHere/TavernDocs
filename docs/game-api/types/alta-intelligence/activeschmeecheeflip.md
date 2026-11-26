@@ -19,9 +19,9 @@ Schmeechee action that flips it back over when upside down: a pop animation, the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveSchmeecheeFlip()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveSchmeecheeFlip()"}</code> | Creates an `ActiveSchmeecheeFlip` with default values. |
 
 ## Fields
 

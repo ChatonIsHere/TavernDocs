@@ -20,9 +20,9 @@ Base for a device SDK controller (one per player mode): starts the SDK, makes th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected XrDeviceSdkController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected XrDeviceSdkController()"}</code> | Creates a `XrDeviceSdkController` with default values. |
 
 ## Fields
 

@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/PAGaC`: menu item classes in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected PAGaC()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PAGaC()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.PAGaC` with default values. |

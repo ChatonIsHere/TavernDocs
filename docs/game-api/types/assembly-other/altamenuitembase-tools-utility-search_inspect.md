@@ -20,6 +20,6 @@ Editor menu folder `Tools/Utility/Search Inspect`: menu item classes inherit it 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Search_Inspect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Search_Inspect()"}</code> | Creates an `AltaMenuItemBase.Tools.Utility.Search_Inspect` with default values. |

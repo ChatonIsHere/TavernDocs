@@ -19,9 +19,9 @@ An elbow guide data point made at runtime, mostly by `ElbowGuideDataPoint.Mirror
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ElbowGuideDataPointRuntime()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ElbowGuideDataPointRuntime()"}</code> | Creates an `ElbowGuideDataPointRuntime` with default values. |
 
 ## Properties
 

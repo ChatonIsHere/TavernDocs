@@ -18,9 +18,9 @@ A damage multiplier for one impact type, used by armour and health settings.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttackTypeMultiplier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttackTypeMultiplier()"}</code> | Creates an `AttackTypeMultiplier` with default values. |
 
 ## Fields
 

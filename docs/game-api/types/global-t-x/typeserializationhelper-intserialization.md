@@ -20,9 +20,9 @@ Serializer for `int`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IntSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IntSerialization()"}</code> | Creates a `TypeSerializationHelper.IntSerialization` with default values. |
 
 ## Methods
 

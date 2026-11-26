@@ -21,6 +21,6 @@ Editor menu folder `Township/Features/Chunking`: menu item classes inherit it to
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Chunking()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Chunking()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Chunking` with default values. |

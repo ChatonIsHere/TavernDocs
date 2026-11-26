@@ -21,9 +21,9 @@ Save data for a `Leaderboard`: the course definition it shows.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LeaderboardData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LeaderboardData()"}</code> | Creates a `LeaderboardData` with default values. |
 
 ## Fields
 

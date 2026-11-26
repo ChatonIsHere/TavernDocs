@@ -19,10 +19,10 @@ A cosmetic every player must wear in a category unless they pick another, with i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DefaultCosmeticInfo()"}</code> |
-| <Link id="m-ctor-2" /><code>{"DefaultCosmeticInfo("}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category, "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" definition, IEnumerable<"}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"> colors)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DefaultCosmeticInfo()"}</code> | Creates a `DefaultCosmeticInfo` from `category`, `definition` and `colors`. |
+| <Link id="m-ctor-2" /><code>{"DefaultCosmeticInfo("}<Link to="/game-api/types/alta-customization/customizationcategory">{"CustomizationCategory"}</Link>{" category, "}<Link to="/game-api/types/alta-customization/playercosmeticdefinition">{"PlayerCosmeticDefinition"}</Link>{" definition, IEnumerable<"}<Link to="/game-api/types/alta-customization/twocolors">{"TwoColors"}</Link>{"> colors)"}</code> | Creates a `DefaultCosmeticInfo` from `category`, `definition` and `colors`. |
 
 ## Fields
 

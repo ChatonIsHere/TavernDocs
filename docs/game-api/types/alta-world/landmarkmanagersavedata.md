@@ -21,9 +21,9 @@ Save data for the `LandmarkManager` (save structure version 1). Holds the map ma
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LandmarkManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LandmarkManagerSaveData()"}</code> | Creates a `LandmarkManagerSaveData` with default values. |
 
 ## Properties
 

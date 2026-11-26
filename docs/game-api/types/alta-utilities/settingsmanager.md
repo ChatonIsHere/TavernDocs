@@ -21,9 +21,9 @@ Gives access to the game's settings files: `GameConfiguration` in the storage fo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SettingsManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SettingsManager()"}</code> | Creates a `SettingsManager` with default values. |
 
 ## Fields
 

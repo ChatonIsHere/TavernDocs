@@ -19,9 +19,9 @@ Skill input method for skills triggered just by holding a pickup. It only stores
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupGrabInputMethod()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupGrabInputMethod()"}</code> | Creates a `PickupGrabInputMethod` with default values. |
 
 ## Fields
 

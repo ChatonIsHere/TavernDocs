@@ -20,9 +20,9 @@ Inspector attribute that shows, hides or locks a field depending on a bool membe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConditionAttribute(string boolean, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" trueMode = 2, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" falseMode = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConditionAttribute(string boolean, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" trueMode = 2, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" falseMode = 0)"}</code> | Creates a `ConditionAttribute` from `boolean`, `trueMode` and `falseMode`. |
 
 ## Properties
 

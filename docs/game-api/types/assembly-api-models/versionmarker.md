@@ -18,9 +18,9 @@ A named game version shown in the launcher, part of `LauncherGameInfoFull.Versio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VersionMarker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VersionMarker()"}</code> | Creates a `VersionMarker` with default values. |
 
 ## Properties
 

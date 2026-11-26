@@ -19,6 +19,6 @@ A `LogicIntSet` that marks an object as a sender an `AreaOfInfluenceReceiver` re
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AreaOfInfluenceSender()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AreaOfInfluenceSender()"}</code> | Creates an `AreaOfInfluenceSender` with default values. |

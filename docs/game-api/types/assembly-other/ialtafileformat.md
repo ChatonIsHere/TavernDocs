@@ -20,9 +20,9 @@ Base for a file format the game can read from and write to a stream, such as a s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected IAltaFileFormat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected IAltaFileFormat()"}</code> | Creates an `IAltaFileFormat` with default values. |
 
 ## Properties
 

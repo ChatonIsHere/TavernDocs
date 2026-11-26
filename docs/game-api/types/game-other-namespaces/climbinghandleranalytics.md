@@ -19,9 +19,9 @@ Editor-only climbing telemetry: records jump-off speeds and stamina used per cli
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingHandlerAnalytics()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingHandlerAnalytics()"}</code> | Creates a `ClimbingHandlerAnalytics` with default values. |
 
 ## Fields
 

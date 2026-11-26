@@ -19,9 +19,9 @@ The generated wrapper for the "PlayingGeneric" input action map: the same in-gam
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingGenericActions("}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingGenericActions("}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> | Creates an `InputMap.PlayingGenericActions` from `wrapper`. |
 
 ## Fields
 

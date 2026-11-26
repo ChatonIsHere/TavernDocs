@@ -21,9 +21,9 @@ Save data for `LogicIntRangeReceiver`: the range settings and the linked int sen
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicIntRangeSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicIntRangeSaveData()"}</code> | Creates a `LogicIntRangeSaveData` with default values. |
 
 ## Fields
 

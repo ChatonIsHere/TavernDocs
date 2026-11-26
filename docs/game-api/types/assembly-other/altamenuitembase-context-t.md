@@ -20,9 +20,9 @@ Editor menu item base for a Unity inspector context menu entry on component type
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected CONTEXT()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected CONTEXT()"}</code> | Creates an `AltaMenuItemBase.CONTEXT` with default values. |
 
 ## Properties
 

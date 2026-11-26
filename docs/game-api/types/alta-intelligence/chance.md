@@ -19,9 +19,9 @@ Scoring rule that rolls a dice on every evaluation: returns `success` with proba
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Chance(float chance, float success = 1, float failure = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Chance(float chance, float success = 1, float failure = 0)"}</code> | Creates a `Chance` from `chance`, `success` and `failure`. |
 
 ## Fields
 

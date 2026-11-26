@@ -19,9 +19,9 @@ Console requirement: on a simple server the caller needs all the listed group pe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GroupPermissionAttribute(params "}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] permissions)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GroupPermissionAttribute(params "}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] permissions)"}</code> | Creates a `GroupPermissionAttribute` from `permissions`. |
 
 ## Fields
 

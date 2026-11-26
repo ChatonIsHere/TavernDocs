@@ -19,9 +19,9 @@ Receives OpenXR input action callbacks and turns them into per-hand `OpenXRContr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OpenXRWrapper()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OpenXRWrapper()"}</code> | Creates an `OpenXRWrapper` with default values. |
 
 ## Fields
 

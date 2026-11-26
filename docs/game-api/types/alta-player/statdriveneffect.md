@@ -18,10 +18,10 @@ Visuals for one side (buff or debuff) of a stat effect: a pooled effect, a curve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatDrivenEffect()"}</code> |
-| <Link id="m-ctor-2" /><code>{"StatDrivenEffect(bool isBuff)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatDrivenEffect()"}</code> | Creates a `StatDrivenEffect` from `isBuff`. |
+| <Link id="m-ctor-2" /><code>{"StatDrivenEffect(bool isBuff)"}</code> | Creates a `StatDrivenEffect` from `isBuff`. |
 
 ## Fields
 

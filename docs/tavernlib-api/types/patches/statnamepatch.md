@@ -20,19 +20,19 @@ Prefixes `StatManager.Awake` to rename the stat definition with hash 44538 from 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatNamePatch()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatNamePatch()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-crippledamageprotectionhash" /><code>{"private const uint CrippleDamageProtectionHash"}</code> |
-| <Link id="m-done" /><code>{"private static bool done"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-crippledamageprotectionhash" /><code>{"private const uint CrippleDamageProtectionHash"}</code> | Hash of the stat definition that gets renamed. |
+| <Link id="m-done" /><code>{"private static bool done"}</code> | Set once the stat has been found, so the rename runs once. |
 
 </details>
 

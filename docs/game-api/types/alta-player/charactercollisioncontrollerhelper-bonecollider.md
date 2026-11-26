@@ -20,9 +20,9 @@ Base settings for a collider built on one character bone. Subclasses add capsule
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoneCollider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoneCollider()"}</code> | Creates a `CharacterCollisionControllerHelper.BoneCollider` with default values. |
 
 ## Fields
 

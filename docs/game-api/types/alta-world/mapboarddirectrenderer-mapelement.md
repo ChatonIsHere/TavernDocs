@@ -19,9 +19,9 @@ Private serializable pair of a texture and its offset and scale. Not used by any
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MapElement()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MapElement()"}</code> | Creates a `MapBoardDirectRenderer.MapElement` with default values. |
 
 ## Fields
 

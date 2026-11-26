@@ -19,9 +19,9 @@ A serializable `AltaEvent` that carries a `Vector3` position, for wiring in the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionEvent()"}</code> | Creates a `PositionEvent` with default values. |
 
 ## Used in
 

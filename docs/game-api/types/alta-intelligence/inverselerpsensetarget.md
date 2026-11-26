@@ -19,9 +19,9 @@ Scoring rule that reads a sense of the target, mapped onto 0 to 1. Made by `Crea
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InverseLerpSenseTarget("}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense, float from, float to)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InverseLerpSenseTarget("}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense, float from, float to)"}</code> | Creates an `InverseLerpSenseTarget` from `sense`, `from` and `to`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ One biome sphere in a `ForestInfo`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Biome()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Biome()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Biome` with default values. |
 
 ## Fields
 

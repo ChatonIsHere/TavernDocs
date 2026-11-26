@@ -19,9 +19,9 @@ Serializable inspector event that passes a `Projectile`, built on `AltaEvent` wi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProjectileAltaEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProjectileAltaEvent()"}</code> | Creates a `ProjectileAltaEvent` with default values. |
 
 ## Used in
 

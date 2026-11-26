@@ -21,22 +21,22 @@ The answer to an accepted join: the player's user id, whether the Quest or tutor
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AuthenticateOk(ulong userId, bool questSceneRequired, bool tutorialSceneRequired, int gamePort, int webPort)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AuthenticateOk(ulong userId, bool questSceneRequired, bool tutorialSceneRequired, int gamePort, int webPort)"}</code> | Sets every field of the join reply. |
 
 ## Properties
 
 <details>
 <summary>6 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-gameport" /><code>{"private int GamePort { get; }"}</code> |
-| <Link id="m-questscenerequired" /><code>{"private bool QuestSceneRequired { get; }"}</code> |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |
-| <Link id="m-tutorialscenerequired" /><code>{"private bool TutorialSceneRequired { get; }"}</code> |
-| <Link id="m-userid" /><code>{"private ulong UserId { get; }"}</code> |
-| <Link id="m-webport" /><code>{"private int WebPort { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-gameport" /><code>{"private int GamePort { get; }"}</code> | The game port. |
+| <Link id="m-questscenerequired" /><code>{"private bool QuestSceneRequired { get; }"}</code> | Whether the server runs the quest scene. |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `ok`. |
+| <Link id="m-tutorialscenerequired" /><code>{"private bool TutorialSceneRequired { get; }"}</code> | Whether the server runs the tutorial scene. |
+| <Link id="m-userid" /><code>{"private ulong UserId { get; }"}</code> | The player's user id. |
+| <Link id="m-webport" /><code>{"private int WebPort { get; }"}</code> | The web port. |
 
 </details>

@@ -20,9 +20,9 @@ Small Harmony patches that let the game run without Alta's services: local cosme
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TeenyPatches()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TeenyPatches()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Methods
 
@@ -46,8 +46,8 @@ Small Harmony patches that let the game run without Alta's services: local cosme
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-joinresult" /><code>{"private static ServerPlayerConnectionHandlerOld.PlayerJoinResult JoinResult(string tokenString, int playerId)"}</code> |  |
+| <Link id="m-joinresult" /><code>{"private static ServerPlayerConnectionHandlerOld.PlayerJoinResult JoinResult(string tokenString, int playerId)"}</code> | Server side: checks the join token's user id and the player limit and returns an allowed or denied result. |
 | <Link id="m-memberstatusfromroles" /><code>{"internal static "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" MemberStatusFromRoles(string username)"}</code> | Internal: the game status for a username from its roles: `dev` is Developer, `mod` is AltaMod, `supporter` is Subscriber. |
-| <Link id="m-webportarg" /><code>{"private static int? WebPortArg()"}</code> |  |
+| <Link id="m-webportarg" /><code>{"private static int? WebPortArg()"}</code> | The web port from the dev server web port argument, or null if it is missing or out of range. |
 
 </details>

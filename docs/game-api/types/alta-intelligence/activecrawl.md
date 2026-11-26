@@ -20,9 +20,9 @@ Server: running action that makes a creature crawl over any surface (walls, ceil
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveCrawl()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveCrawl()"}</code> | Creates an `ActiveCrawl` with default values. |
 
 ## Fields
 

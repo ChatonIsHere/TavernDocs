@@ -20,9 +20,9 @@ Old version 1 save data for a `PopulationSpawnArea`, kept so old saves can load.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationSpawnAreaSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationSpawnAreaSaveData1()"}</code> | Creates a `PopulationSpawnAreaSaveData1` with default values. |
 
 ## Fields
 

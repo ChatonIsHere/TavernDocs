@@ -20,9 +20,9 @@ Public user info plus statistics and supporter status.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PublicUserInfoResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PublicUserInfoResponse()"}</code> | Creates a `PublicUserInfoResponse` with default values. |
 
 ## Properties
 

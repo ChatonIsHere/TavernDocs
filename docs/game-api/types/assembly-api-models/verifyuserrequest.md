@@ -18,10 +18,10 @@ Body of an Alta web API request to verify an account with a token.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VerifyUserRequest(string verificationToken)"}</code> |
-| <Link id="m-ctor-2" /><code>{"VerifyUserRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VerifyUserRequest(string verificationToken)"}</code> | Creates a `VerifyUserRequest` with default values. |
+| <Link id="m-ctor-2" /><code>{"VerifyUserRequest()"}</code> | Creates a `VerifyUserRequest` with default values. |
 
 ## Properties
 

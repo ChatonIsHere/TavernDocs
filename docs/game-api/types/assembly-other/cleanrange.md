@@ -19,9 +19,9 @@ Inspector attribute for a range slider on a number field, with an optional line 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CleanRange(float min, float max, bool hasLine = false, float lineHeight = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CleanRange(float min, float max, bool hasLine = false, float lineHeight = 0)"}</code> | Creates a `CleanRange` from `min`, `max`, `hasLine` and `lineHeight`. |
 
 ## Properties
 

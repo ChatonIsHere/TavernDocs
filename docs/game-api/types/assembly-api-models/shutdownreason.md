@@ -18,11 +18,11 @@ Why a game server shut down, as a message and whether the shutdown was expected.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShutdownReason(string reason, bool isExpected)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ShutdownReason(string reason)"}</code> |
-| <Link id="m-ctor-3" /><code>{"ShutdownReason()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShutdownReason(string reason, bool isExpected)"}</code> | Creates a `ShutdownReason` with default values. |
+| <Link id="m-ctor-2" /><code>{"ShutdownReason(string reason)"}</code> | Creates a `ShutdownReason` with default values. |
+| <Link id="m-ctor-3" /><code>{"ShutdownReason()"}</code> | Creates a `ShutdownReason` with default values. |
 
 ## Properties
 

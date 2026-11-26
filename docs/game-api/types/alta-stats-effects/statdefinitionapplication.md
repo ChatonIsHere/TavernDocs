@@ -19,10 +19,10 @@ A stat definition paired with its default value and range, as set up on a `StatM
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition, float baseValue)"}</code> |
-| <Link id="m-ctor-2" /><code>{"StatDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition, float baseValue)"}</code> | Creates a `StatDefinitionApplication` from `definition`. |
+| <Link id="m-ctor-2" /><code>{"StatDefinitionApplication("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" definition)"}</code> | Creates a `StatDefinitionApplication` from `definition`. |
 
 ## Fields
 

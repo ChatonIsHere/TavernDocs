@@ -19,9 +19,9 @@ Private helper in `BoughtSkillVisualizer` that spaces a number of points evenly 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionMachine(Transform transform, int instancesCount, float radius)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionMachine(Transform transform, int instancesCount, float radius)"}</code> | Creates a `BoughtSkillVisualizer.PositionMachine` from `transform`, `instancesCount` and `radius`. |
 
 ## Fields
 

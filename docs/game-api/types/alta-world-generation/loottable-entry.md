@@ -19,9 +19,9 @@ One item in a loot table with a count range.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Entry()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Entry()"}</code> | Creates a `LootTable.Entry` with default values. |
 
 ## Fields
 

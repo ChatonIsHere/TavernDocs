@@ -19,9 +19,9 @@ Writes values bit by bit into a buffer of 32 bit words, the writing half of the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BitWriter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BitWriter()"}</code> | Creates a `BitWriter` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ One orb of a `PlayerUnlock`: the prefab, its weight and where it sits on the pla
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OrbProperties()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OrbProperties()"}</code> | Creates a `PlayerUnlock.OrbProperties` with default values. |
 
 ## Fields
 

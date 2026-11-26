@@ -19,6 +19,6 @@ Settings types for the SA Collider Builder's mesh collider tools: split modes, s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SAMeshColliderCommon()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SAMeshColliderCommon()"}</code> | Creates a `SAMeshColliderCommon` with default values. |

@@ -19,9 +19,9 @@ Pairs a `ForestBiome` with the fill set to use for points in that biome.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Biome()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Biome()"}</code> | Creates a `BiomeSwitchFilter.Biome` with default values. |
 
 ## Fields
 

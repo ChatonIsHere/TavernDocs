@@ -18,9 +18,9 @@ Message a `RockCluster` sends a joining player with its boulder definition and t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClusterEntitiesRegisterArguments(uint optionHash, int count, uint[] entities)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClusterEntitiesRegisterArguments(uint optionHash, int count, uint[] entities)"}</code> | Creates a `ClusterEntitiesRegisterArguments` from `optionHash`, `count` and `entities`. |
 
 ## Fields
 

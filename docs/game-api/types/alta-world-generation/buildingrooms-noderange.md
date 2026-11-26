@@ -19,9 +19,9 @@ A run of nodes from one node to another, used by `BuildingRooms` to describe a w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NodeRange("}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" start, "}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" end)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NodeRange("}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" start, "}<Link to="/game-api/types/alta-world-generation/node-alta-pagac">{"Node"}</Link>{" end)"}</code> | Creates a `BuildingRooms.NodeRange` from `start` and `end`. |
 
 ## Properties
 

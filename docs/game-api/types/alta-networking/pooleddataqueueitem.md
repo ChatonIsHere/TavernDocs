@@ -21,9 +21,9 @@ A pooled wrapper around a received packet's bytes, used by `QueuedConnectionRece
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private PooledDataQueueItem()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private PooledDataQueueItem()"}</code> | Creates a `PooledDataQueueItem` with default values. |
 
 </details>
 

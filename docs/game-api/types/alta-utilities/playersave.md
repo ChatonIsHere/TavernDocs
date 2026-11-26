@@ -19,10 +19,10 @@ A player's save file: position data plus binary blobs for their body, state stac
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerSave()"}</code> |
-| <Link id="m-ctor-2" /><code>{"PlayerSave(int identifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerSave()"}</code> | Creates a `PlayerSave` from `identifier`. |
+| <Link id="m-ctor-2" /><code>{"PlayerSave(int identifier)"}</code> | Creates a `PlayerSave` from `identifier`. |
 
 ## Fields
 

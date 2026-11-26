@@ -20,9 +20,9 @@ Request body for buying a shop item with a payment method.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ItemPurchaseRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ItemPurchaseRequest()"}</code> | Creates an `ItemPurchaseRequest` with default values. |
 
 ## Properties
 

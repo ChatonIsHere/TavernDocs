@@ -19,9 +19,9 @@ Alta web API response model for a stored settings entry: an id and its content a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Settings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Settings()"}</code> | Creates a `Settings` with default values. |
 
 ## Properties
 

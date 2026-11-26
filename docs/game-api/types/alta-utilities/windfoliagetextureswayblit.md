@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/WindFoliageTextureSway` shader. `A
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WindFoliageTextureSwayBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WindFoliageTextureSwayBlit()"}</code> | Creates a `WindFoliageTextureSwayBlit` with default values. |
 
 ## Fields
 

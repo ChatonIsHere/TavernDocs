@@ -19,9 +19,9 @@ Offline stand-in for the shop account: a fixed supporter account with 100000 sha
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineShopAccount()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineShopAccount()"}</code> | Creates an `OfflineShopAccount` with default values. |
 
 ## Fields
 

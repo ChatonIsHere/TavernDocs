@@ -21,9 +21,9 @@ Current save data (version 3) for a `WoodcutTree`: which preset and species it u
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData()"}</code> | Creates a `WoodcutTreeSaveData` with default values. |
 
 ## Fields
 

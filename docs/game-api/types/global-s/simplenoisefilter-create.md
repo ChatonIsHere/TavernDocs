@@ -20,6 +20,6 @@ Editor menu entry that creates a `SimpleNoiseFilter` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `SimpleNoiseFilter.Create` with default values. |

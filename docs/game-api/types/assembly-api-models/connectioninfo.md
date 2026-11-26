@@ -19,9 +19,9 @@ API model for how to reach a game server: its addresses and ports. Comes back in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConnectionInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConnectionInfo()"}</code> | Creates a `ConnectionInfo` with default values. |
 
 ## Properties
 

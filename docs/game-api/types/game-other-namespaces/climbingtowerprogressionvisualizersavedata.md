@@ -21,9 +21,9 @@ Save data for `ClimbingTowerProgressionVisualizer`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerProgressionVisualizerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerProgressionVisualizerSaveData()"}</code> | Creates a `ClimbingTowerProgressionVisualizerSaveData` with default values. |
 
 ## Fields
 

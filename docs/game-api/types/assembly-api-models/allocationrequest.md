@@ -18,9 +18,9 @@ Body of the Alta web API call that allocates a server for migration (`AllocateSe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AllocationRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AllocationRequest()"}</code> | Creates an `AllocationRequest` with default values. |
 
 ## Properties
 

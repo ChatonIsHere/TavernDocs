@@ -18,9 +18,9 @@ A named option with an id and usage text. Nothing in this build creates one.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConsoleOption(string name, int optionId, string usage)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConsoleOption(string name, int optionId, string usage)"}</code> | Creates a `ConsoleOption` from `name`, `optionId` and `usage`. |
 
 ## Properties
 

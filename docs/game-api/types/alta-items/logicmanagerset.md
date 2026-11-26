@@ -19,9 +19,9 @@ Save wrapper for the global logic manager's values, stored in `LogicManagerData.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicManagerSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicManagerSet()"}</code> | Creates a `LogicManagerSet` with default values. |
 
 ## Fields
 

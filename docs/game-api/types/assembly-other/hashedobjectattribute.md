@@ -19,9 +19,9 @@ Inspector attribute that marks a field as a hash pointing to an object of a give
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HashedObjectAttribute(Type targetType)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HashedObjectAttribute(Type targetType)"}</code> | Creates a `HashedObjectAttribute` from `targetType`. |
 
 ## Properties
 

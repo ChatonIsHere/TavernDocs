@@ -18,9 +18,9 @@ Snapshot of a `ConfigurableJoint`'s settings that can be put back later. Used by
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JointSettings(ConfigurableJoint joint)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JointSettings(ConfigurableJoint joint)"}</code> | Creates a `JointSettings` from `joint`. |
 
 ## Fields
 

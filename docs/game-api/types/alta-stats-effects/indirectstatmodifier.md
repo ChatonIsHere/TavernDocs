@@ -19,9 +19,9 @@ Combines timed `IndirectModifier`s on one stat into a single `StatModifier`, by 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IndirectStatModifier("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" targetStat, "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IndirectStatModifier("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" targetStat, "}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{" manager)"}</code> | Creates an `IndirectStatModifier` from `targetStat` and `manager`. |
 
 ## Fields
 

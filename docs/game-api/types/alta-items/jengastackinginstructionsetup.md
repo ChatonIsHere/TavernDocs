@@ -21,9 +21,9 @@ Builds the stacking layout for the Jenga instruction: layers of items that turn 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JengaStackingInstructionSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JengaStackingInstructionSetup()"}</code> | Creates a `JengaStackingInstructionSetup` with default values. |
 
 ## Fields
 

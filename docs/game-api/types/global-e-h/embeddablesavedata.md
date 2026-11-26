@@ -21,9 +21,9 @@ Save data (version 2) for an `Embeddable`: whether it is stuck in something and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmbeddableSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmbeddableSaveData()"}</code> | Creates an `EmbeddableSaveData` with default values. |
 
 ## Fields
 

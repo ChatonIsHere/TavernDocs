@@ -18,9 +18,9 @@ A server region from the Alta API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RegionInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RegionInfo()"}</code> | Creates a `RegionInfo` with default values. |
 
 ## Properties
 

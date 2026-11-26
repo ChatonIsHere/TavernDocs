@@ -18,9 +18,9 @@ Result of asking Agones (the game server hosting system) for a server: whether o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AllocationResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AllocationResult()"}</code> | Creates an `AllocationResult` with default values. |
 
 ## Properties
 

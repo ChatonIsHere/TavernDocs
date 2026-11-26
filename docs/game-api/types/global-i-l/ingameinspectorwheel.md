@@ -19,9 +19,9 @@ A physical selection wheel on the debug `InGameInspector`. It snaps its hinge to
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InGameInspectorWheel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InGameInspectorWheel()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

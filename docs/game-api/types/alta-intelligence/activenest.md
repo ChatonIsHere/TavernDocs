@@ -20,9 +20,9 @@ Night action: the agent walks to the nearest free `Nest` of its type and sleeps 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveNest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveNest()"}</code> | Creates an `ActiveNest` with default values. |
 
 ## Fields
 

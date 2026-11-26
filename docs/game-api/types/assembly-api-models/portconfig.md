@@ -18,9 +18,9 @@ A named port in an Agones game server's status.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PortConfig()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PortConfig()"}</code> | Creates a `PortConfig` with default values. |
 
 ## Properties
 

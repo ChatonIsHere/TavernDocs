@@ -20,6 +20,6 @@ Editor menu folder `Select`: menu item classes inherit it to appear under that p
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Select()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Select()"}</code> | Creates an `AltaMenuItemBase.Select` with default values. |

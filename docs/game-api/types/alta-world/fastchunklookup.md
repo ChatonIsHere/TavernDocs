@@ -18,9 +18,9 @@ Fast lookup from positions or bounds to location chunks. Overworld chunks sit in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FastChunkLookup(IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> chunks)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FastChunkLookup(IEnumerable<"}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{"> chunks)"}</code> | Creates a `FastChunkLookup` from `chunks`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Holds a whole number of units of one liquid (a bucket, a flask, a pond). Only th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LiquidContainer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LiquidContainer()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -41,7 +41,7 @@ Holds a whole number of units of one liquid (a bucket, a flask, a pond). Only th
 | <Link id="m-isallowinggradualconsumption" /><code>{"private bool isAllowingGradualConsumption"}</code> | Backing field for `IsAllowingGradualConsumption`, which `LiquidGradualDrinker` checks before drinking from it bit by bit. |
 | <Link id="m-isinfinitesource" /><code>{"private bool isInfiniteSource"}</code> | When true the container never empties or fills: level reads as `int.MaxValue` and adds and removes always succeed. |
 | <Link id="m-liquiddistribution" /><code>{"private "}<Link to="/game-api/types/alta-world-generation/distribution">{"Distribution"}</Link>{" liquidDistribution"}</code> | Liquids the container may spawn filled with, picked at random on generation with a random amount. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Logger for this class. |
 | <Link id="m-oldlevel" /><code>{"private int oldLevel"}</code> | The level when `ContentLevelChanged` last fired. |
 | <Link id="m-oldtotalliquidamountshown" /><code>{"private float oldTotalLiquidAmountShown"}</code> | The shown amount last reported, to detect changes. |
 | <Link id="m-outtransition" /><code>{"private "}<Link to="/game-api/types/alta-stats-effects/liquidtransition">{"LiquidTransition"}</Link>{" outTransition"}</code> | The transition for liquid leaving this container, made in `Awake`. |

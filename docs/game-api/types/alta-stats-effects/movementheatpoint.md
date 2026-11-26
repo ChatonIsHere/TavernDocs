@@ -19,9 +19,9 @@ A `HeatPoint` whose cooling to ambient depends on how hard it is shaken, using a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MovementHeatPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MovementHeatPoint()"}</code> | Creates a `MovementHeatPoint` with default values. |
 
 ## Fields
 

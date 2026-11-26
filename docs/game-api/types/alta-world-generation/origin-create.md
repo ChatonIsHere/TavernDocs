@@ -20,6 +20,6 @@ Editor menu entry (Assets, Create, Township, Generation, Loot) that makes a new 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `Origin.Create` with default values. |

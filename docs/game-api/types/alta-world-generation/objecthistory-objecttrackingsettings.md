@@ -19,9 +19,9 @@ Settings for an `ObjectHistory` debug tracker: which loops record the object's t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ObjectTrackingSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ObjectTrackingSettings()"}</code> | Creates an `ObjectHistory.ObjectTrackingSettings` with default values. |
 
 ## Fields
 

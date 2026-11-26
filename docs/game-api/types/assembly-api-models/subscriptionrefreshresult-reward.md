@@ -19,9 +19,9 @@ One reward granted when a supporter subscription is refreshed.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Reward()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Reward()"}</code> | Creates a `SubscriptionRefreshResult.Reward` with default values. |
 
 ## Properties
 

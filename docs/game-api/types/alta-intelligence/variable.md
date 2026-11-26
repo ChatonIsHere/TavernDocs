@@ -21,9 +21,9 @@ A numbered logic variable in the unused Prolog-like logic engine. Two variables 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Variable(int value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Variable(int value)"}</code> | Creates a `Variable` from `value`. |
 
 ## Properties
 

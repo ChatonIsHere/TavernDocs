@@ -18,9 +18,9 @@ Server: the players that have a chunk loaded. Each `Chunk` has one as `Players`,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkPlayerManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkPlayerManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Creates a `ChunkPlayerManager` from `chunk`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ A `PositionSerializer` that can reparent a target of type `T` itself, through ca
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionSerializer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Func<T, bool> isParentNull, Action<T> makeParentNull)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionSerializer("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Func<T, bool> isParentNull, Action<T> makeParentNull)"}</code> | Creates a `PositionSerializer` from `entity`, `isParentNull` and `makeParentNull`. |
 
 ## Fields
 

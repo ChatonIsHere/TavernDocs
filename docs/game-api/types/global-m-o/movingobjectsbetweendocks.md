@@ -19,9 +19,9 @@ Pooled ghost visual that shows an item flying into a dock, used by `Gatherer` an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MovingObjectsBetweenDocks()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MovingObjectsBetweenDocks()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Methods
 

@@ -19,6 +19,6 @@ Empty marker component with no code of its own.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StaticImpactDetector()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StaticImpactDetector()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

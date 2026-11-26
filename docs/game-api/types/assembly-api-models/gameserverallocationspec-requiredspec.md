@@ -19,9 +19,9 @@ Label selector in an Agones game server allocation request.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RequiredSpec()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RequiredSpec()"}</code> | Creates a `GameServerAllocationSpec.RequiredSpec` with default values. |
 
 ## Properties
 

@@ -21,9 +21,9 @@ The contents of `whitelist_requests.json`: players who asked to be whitelisted f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WhitelistRequestList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WhitelistRequestList()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 
@@ -34,8 +34,8 @@ The contents of `whitelist_requests.json`: players who asked to be whitelisted f
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | Holds JSON keys TavernLib doesn't model, so they are written back unchanged. |
 
 </details>

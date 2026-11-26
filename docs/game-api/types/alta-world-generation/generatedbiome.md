@@ -19,9 +19,9 @@ The rolled result of a biome mix for a cave layer or area: the biomes and their 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GeneratedBiome(int seed, "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" to, float transition, Dictionary<"}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{", float> biomeWeightings, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes, Dictionary<"}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{", float> elementChances)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GeneratedBiome(int seed, "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{" to, float transition, Dictionary<"}<Link to="/game-api/types/alta-world-generation/biome">{"Biome"}</Link>{", float> biomeWeightings, "}<Link to="/game-api/types/global-a-b/attributeset">{"AttributeSet"}</Link>{" attributes, Dictionary<"}<Link to="/game-api/types/alta-world-generation/element">{"Element"}</Link>{", float> elementChances)"}</code> | Creates a `GeneratedBiome` from `seed`, `from`, `to`, `transition`, `biomeWeightings`, `attributes` and `elementChances`. |
 
 ## Fields
 

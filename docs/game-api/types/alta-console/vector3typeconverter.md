@@ -19,9 +19,9 @@ JSON converter that writes a `Vector3` as a three-number array and reads it back
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Vector3TypeConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Vector3TypeConverter()"}</code> | Creates a `Vector3TypeConverter` with default values. |
 
 ## Methods
 

@@ -18,9 +18,9 @@ A message from a game server over its WebSocket: a system message, a subscriptio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameServerWebsocketResponse("}<Link to="/game-api/types/assembly-api-models/gameserverwebsocketresponsetype">{"GameServerWebsocketResponseType"}</Link>{" type, string eventType, object data, uint? commandId = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameServerWebsocketResponse("}<Link to="/game-api/types/assembly-api-models/gameserverwebsocketresponsetype">{"GameServerWebsocketResponseType"}</Link>{" type, string eventType, object data, uint? commandId = null)"}</code> | Creates a `GameServerWebsocketResponse` from `type`, `eventType`, `data` and `commandId`. |
 
 ## Fields
 

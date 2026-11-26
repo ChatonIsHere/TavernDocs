@@ -20,9 +20,9 @@ Network traffic statistic for one top-level `MessageType`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MessageTypeStatistic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MessageTypeStatistic()"}</code> | Creates a `MessageTypeStatistic` with default values. |
 
 ## Fields
 

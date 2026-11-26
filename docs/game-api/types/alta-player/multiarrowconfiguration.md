@@ -18,9 +18,9 @@ Settings for the multi-arrow bow skill (`BowMultiArrowShot`): where the extra ar
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MultiArrowConfiguration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MultiArrowConfiguration()"}</code> | Creates a `MultiArrowConfiguration` with default values. |
 
 ## Fields
 

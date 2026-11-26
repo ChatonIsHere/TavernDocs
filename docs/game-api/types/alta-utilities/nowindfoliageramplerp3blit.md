@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/WindFoliage RampLerp3 LOD1` shader
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NoWindFoliageRampLerp3Blit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NoWindFoliageRampLerp3Blit()"}</code> | Creates a `NoWindFoliageRampLerp3Blit` with default values. |
 
 ## Fields
 

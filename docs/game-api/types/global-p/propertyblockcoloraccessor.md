@@ -19,9 +19,9 @@ Sets a colour property on a list of renderers (and an optional `RendererGroup`) 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PropertyBlockColorAccessor()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PropertyBlockColorAccessor()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

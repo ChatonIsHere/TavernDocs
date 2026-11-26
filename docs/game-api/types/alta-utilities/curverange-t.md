@@ -20,10 +20,10 @@ A topic with two values and an animation curve, evaluated across the range betwe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CurveRange()"}</code> |
-| <Link id="m-ctor-2" /><code>{"CurveRange(T topic, AnimationCurve curve, float value1, float value2)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CurveRange()"}</code> | Creates a `CurveRange` from `topic`, `curve`, `value1` and `value2`. |
+| <Link id="m-ctor-2" /><code>{"CurveRange(T topic, AnimationCurve curve, float value1, float value2)"}</code> | Creates a `CurveRange` from `topic`, `curve`, `value1` and `value2`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Runtime part of an `EnchantmentTrigger` on one item: hooks game events when appl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EnchantmentTriggerApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, T settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EnchantmentTriggerApplication("}<Link to="/game-api/types/alta-crafting/enchantmentapplication">{"EnchantmentApplication"}</Link>{" enchantment, T settings)"}</code> | Creates an `EnchantmentTriggerApplication` from `enchantment` and `settings`. |
 
 ## Fields
 

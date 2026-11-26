@@ -19,10 +19,10 @@ Network argument for a teleport: target position, chunk, teleport mode and locom
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TeleportArgument()"}</code> |
-| <Link id="m-ctor-2" /><code>{"TeleportArgument(Vector3 position, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TeleportArgument()"}</code> | Creates a `LocomotionController.TeleportArgument` from `position`, `chunk`, `mode` and `function`. |
+| <Link id="m-ctor-2" /><code>{"TeleportArgument(Vector3 position, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-player/teleportmode">{"TeleportMode"}</Link>{" mode, "}<Link to="/game-api/types/global-i-l/locomotionfunction">{"LocomotionFunction"}</Link>{" function)"}</code> | Creates a `LocomotionController.TeleportArgument` from `position`, `chunk`, `mode` and `function`. |
 
 ## Fields
 

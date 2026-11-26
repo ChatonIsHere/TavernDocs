@@ -19,9 +19,9 @@ Remote-backed save file stored as an S3 object. Used when the server starts with
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"S3CloudStorageRemoteFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, "}<Link to="/game-api/types/assembly-other/s3storagefile">{"S3StorageFile"}</Link>{" remoteFileInfo)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"S3CloudStorageRemoteFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, "}<Link to="/game-api/types/assembly-other/s3storagefile">{"S3StorageFile"}</Link>{" remoteFileInfo)"}</code> | Creates a `S3CloudStorageRemoteFile` from `internalFile` and `remoteFileInfo`. |
 
 ## Methods
 

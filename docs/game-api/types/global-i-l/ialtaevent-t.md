@@ -19,6 +19,6 @@ An event with one value, raised with `Invoke`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"void Invoke(T value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"void Invoke(T value)"}</code> | Fires the event with the value. |

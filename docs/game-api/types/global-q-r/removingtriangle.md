@@ -18,9 +18,9 @@ One mesh triangle with its corners, centre, edges and normal, used when deciding
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RemovingTriangle(List<Vector3> vertices, List<int> triangles, int startIndex)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RemovingTriangle(List<Vector3> vertices, List<int> triangles, int startIndex)"}</code> | Creates a `RemovingTriangle` from `vertices`, `triangles` and `startIndex`. |
 
 ## Properties
 

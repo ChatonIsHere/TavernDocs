@@ -18,9 +18,9 @@ Body of an Alta web API request to generate a sign-up code for someone.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GenerateSignUpCodeRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GenerateSignUpCodeRequest()"}</code> | Creates a `GenerateSignUpCodeRequest` with default values. |
 
 ## Properties
 

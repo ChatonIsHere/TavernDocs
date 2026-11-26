@@ -18,9 +18,9 @@ Server: one player's achievement action progress, completed achievements and com
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerTracker(IEnumerable<"}<Link to="/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> progress, IEnumerable<uint> progressFlags)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerTracker(IEnumerable<"}<Link to="/game-api/types/assembly-api-models/statprogress">{"StatProgress"}</Link>{"> progress, IEnumerable<uint> progressFlags)"}</code> | Creates a `PlayerTracker` from `progress` and `progressFlags`. |
 
 ## Fields
 

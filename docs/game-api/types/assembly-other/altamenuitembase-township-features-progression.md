@@ -20,6 +20,6 @@ Editor menu folder `Township/Features/Progression`: menu item classes inherit it
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Progression()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Progression()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Progression` with default values. |

@@ -19,9 +19,9 @@ Sorts `ApplicationQuit` handlers by the `ApplicationShutdownOrderAttribute` on t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShutdownOrderComparer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShutdownOrderComparer()"}</code> | Creates a `ShutdownOrderComparer` with default values. |
 
 ## Methods
 

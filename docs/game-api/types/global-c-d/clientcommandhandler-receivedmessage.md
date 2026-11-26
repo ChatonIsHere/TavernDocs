@@ -19,9 +19,9 @@ Buffer that rebuilds one length-prefixed message from a `ClientCommandHandler` s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ReceivedMessage("}<Link to="/game-api/types/global-c-d/clientcommandhandler">{"ClientCommandHandler"}</Link>{" handler)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ReceivedMessage("}<Link to="/game-api/types/global-c-d/clientcommandhandler">{"ClientCommandHandler"}</Link>{" handler)"}</code> | Creates a `ClientCommandHandler.ReceivedMessage` from `handler`. |
 
 ## Fields
 

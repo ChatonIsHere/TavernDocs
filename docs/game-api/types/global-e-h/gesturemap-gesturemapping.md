@@ -19,9 +19,9 @@ One serialized D-pad direction and gesture pair in a `GestureMap`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GestureMapping()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GestureMapping()"}</code> | Creates a `GestureMap.GestureMapping` with default values. |
 
 ## Fields
 

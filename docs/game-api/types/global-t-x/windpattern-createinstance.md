@@ -20,6 +20,6 @@ Editor menu entry that creates a `WindPattern` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CreateInstance()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CreateInstance()"}</code> | Creates a `WindPattern.CreateInstance` with default values. |

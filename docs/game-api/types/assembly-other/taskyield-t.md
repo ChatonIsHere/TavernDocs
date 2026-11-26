@@ -20,9 +20,9 @@ Lets a Unity coroutine wait for a `Task<T>` and then read its result.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TaskYield(Task<T> task)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TaskYield(Task<T> task)"}</code> | Creates a `TaskYield` from `task`. |
 
 ## Properties
 

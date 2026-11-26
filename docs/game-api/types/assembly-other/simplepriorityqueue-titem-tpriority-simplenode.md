@@ -20,9 +20,9 @@ Internal node that wraps one item in `SimplePriorityQueue` so it can sit in the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimpleNode(TItem data)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimpleNode(TItem data)"}</code> | Creates a `SimplePriorityQueue` from `data`. |
 
 ## Properties
 

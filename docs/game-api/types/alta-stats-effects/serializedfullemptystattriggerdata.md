@@ -21,9 +21,9 @@ Save data for a `SerializedFullEmptyStatTrigger`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedFullEmptyStatTriggerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedFullEmptyStatTriggerData()"}</code> | Creates a `SerializedFullEmptyStatTriggerData` with default values. |
 
 ## Fields
 

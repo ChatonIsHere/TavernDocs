@@ -19,9 +19,9 @@ Saved import settings of one texture, kept by `BakeableTextureDecimator` (editor
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TextureData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TextureData()"}</code> | Creates a `BakeableTextureDecimator.TextureData` with default values. |
 
 ## Fields
 

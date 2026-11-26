@@ -21,9 +21,9 @@ Save data (version 2) for a `SpiritModeDoorway` in the climbing tower.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveData()"}</code> | Creates a `SpiritModeDoorwaySaveData` with default values. |
 
 ## Fields
 

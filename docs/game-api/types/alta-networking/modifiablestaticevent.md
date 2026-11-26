@@ -19,9 +19,9 @@ A serializable event that passes a `ModifiableStaticObject`, wired up in the ins
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModifiableStaticEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModifiableStaticEvent()"}</code> | Creates a `ModifiableStaticEvent` with default values. |
 
 ## Used in
 

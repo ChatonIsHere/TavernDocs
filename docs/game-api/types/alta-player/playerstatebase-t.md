@@ -21,9 +21,9 @@ A player state that decorates a base state of type `T`, for example `SpiritState
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerStateBase(T baseState)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerStateBase(T baseState)"}</code> | Creates a `PlayerStateBase` from `baseState`. |
 
 ## Properties
 

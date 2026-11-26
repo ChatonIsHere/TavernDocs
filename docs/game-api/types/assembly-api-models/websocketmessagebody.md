@@ -18,9 +18,9 @@ A message sent to the Alta API over its WebSocket: an HTTP-style request with me
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebsocketMessageBody()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebsocketMessageBody()"}</code> | Creates a `WebsocketMessageBody` with default values. |
 
 ## Properties
 

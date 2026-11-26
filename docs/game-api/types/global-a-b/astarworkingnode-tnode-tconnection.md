@@ -18,9 +18,9 @@ Per-node scratch data that `AStar` keeps while it searches: best cost so far and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AStarWorkingNode(TNode node)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AStarWorkingNode(TNode node)"}</code> | Creates an `AStarWorkingNode` from `node`. |
 
 ## Properties
 

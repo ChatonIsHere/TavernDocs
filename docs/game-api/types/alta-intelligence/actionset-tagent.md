@@ -19,9 +19,9 @@ An agent's available AI actions, split into actions that need a target and actio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActionSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActionSet()"}</code> | Creates an `ActionSet` with default values. |
 
 ## Fields
 

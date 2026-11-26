@@ -19,9 +19,9 @@ Property attribute that marks a serialized field as holding an object that must 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedInterfaceAttribute(Type interfaceType)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedInterfaceAttribute(Type interfaceType)"}</code> | Creates a `SerializedInterfaceAttribute` from `interfaceType`. |
 
 ## Properties
 

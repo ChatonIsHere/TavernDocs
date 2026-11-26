@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/WindFoliage` shader. `AtlasDefinit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WindFoliageBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WindFoliageBlit()"}</code> | Creates a `WindFoliageBlit` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Postfixes the `ServerHandler.PlayerLimit` getter so the limit comes from `server
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerLimitPatch()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerLimitPatch()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Methods
 

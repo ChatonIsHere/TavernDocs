@@ -20,9 +20,9 @@ Base for old-style effects that last over time, with a `Stopped` event. Part of 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected DurationEffect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected DurationEffect()"}</code> | Creates a `DurationEffect` with default values. |
 
 ## Properties
 

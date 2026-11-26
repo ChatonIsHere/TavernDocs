@@ -20,9 +20,9 @@ Payload of the `ConsoleEvents.PlayerKilled` console event, raised when a player 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerKilledData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" killedPlayer, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerKilledData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" killedPlayer, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit)"}</code> | Creates a `PlayerKilledData` from `killedPlayer` and `killingHit`. |
 
 ## Fields
 

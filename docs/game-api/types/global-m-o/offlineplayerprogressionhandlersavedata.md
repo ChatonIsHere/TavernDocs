@@ -21,9 +21,9 @@ Save data (version 1) for `OfflinePlayerProgressionHandler`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflinePlayerProgressionHandlerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflinePlayerProgressionHandlerSaveData()"}</code> | Creates an `OfflinePlayerProgressionHandlerSaveData` with default values. |
 
 ## Fields
 

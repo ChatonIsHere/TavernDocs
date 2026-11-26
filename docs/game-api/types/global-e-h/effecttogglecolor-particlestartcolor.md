@@ -20,9 +20,9 @@ A particle system whose start colour switches between an on and an off colour.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ParticleStartColor(ParticleSystem system)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ParticleStartColor(ParticleSystem system)"}</code> | Creates an `EffectToggleColor.ParticleStartColor` from `system`. |
 
 ## Fields
 

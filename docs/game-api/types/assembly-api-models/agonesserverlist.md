@@ -18,9 +18,9 @@ A list of Agones game servers as returned by Kubernetes.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AgonesServerList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AgonesServerList()"}</code> | Creates an `AgonesServerList` with default values. |
 
 ## Properties
 

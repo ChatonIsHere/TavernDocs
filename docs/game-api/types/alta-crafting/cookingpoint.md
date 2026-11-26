@@ -20,9 +20,9 @@ A `HeatPoint` on cookable food that shows a cooking or burning particle effect b
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CookingPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CookingPoint()"}</code> | Creates a `CookingPoint` with default values. |
 
 ## Fields
 

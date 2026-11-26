@@ -21,9 +21,9 @@ Save data for the feature test gymnasium's on-demand prefab spawner.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GymnasiumOnDemandPrefabSpawnerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GymnasiumOnDemandPrefabSpawnerData()"}</code> | Creates a `GymnasiumOnDemandPrefabSpawnerData` with default values. |
 
 ## Fields
 

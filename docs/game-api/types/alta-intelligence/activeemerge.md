@@ -19,9 +19,9 @@ Wyrm action that comes up out of the ground near a living target. Runs on the se
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveEmerge()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveEmerge()"}</code> | Creates an `ActiveEmerge` with default values. |
 
 ## Methods
 

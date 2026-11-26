@@ -19,9 +19,9 @@ Holds every console command module found by reflection. `CommandService.CommandC
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CommandCollection()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CommandCollection()"}</code> | Creates a `CommandCollection` with default values. |
 
 ## Properties
 

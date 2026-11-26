@@ -19,10 +19,10 @@ Private: the renderers for one LOD level of a `Book`, kept so flair renderers ca
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LODRenderers()"}</code> |
-| <Link id="m-ctor-2" /><code>{"LODRenderers(IEnumerable<Renderer> renderers)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LODRenderers()"}</code> | Creates a `Book.LODRenderers` from `renderers`. |
+| <Link id="m-ctor-2" /><code>{"LODRenderers(IEnumerable<Renderer> renderers)"}</code> | Creates a `Book.LODRenderers` from `renderers`. |
 
 ## Fields
 

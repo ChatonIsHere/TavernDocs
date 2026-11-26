@@ -19,9 +19,9 @@ Undo and redo history in a fixed size ring buffer. The oldest action is released
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HistoryManager(int maxCount)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HistoryManager(int maxCount)"}</code> | Creates a `HistoryManager` from `maxCount`. |
 
 ## Fields
 

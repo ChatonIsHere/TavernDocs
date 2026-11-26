@@ -21,9 +21,9 @@ A named list of update callbacks that `UnityUpdateManager` runs once per frame i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UpdateModule(string name, "}<Link to="/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" segment, bool includeInServerProfiling = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UpdateModule(string name, "}<Link to="/game-api/types/global-t-x/updatesegment">{"UpdateSegment"}</Link>{" segment, bool includeInServerProfiling = false)"}</code> | Creates an `UpdateModule` from `name`, `segment` and `includeInServerProfiling`. |
 
 ## Fields
 

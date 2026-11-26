@@ -20,9 +20,9 @@ Handle returned by `KeyboardEventTriggers.RegisterKeyPressed`. Pass it to `DeReg
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KeyBoardTriggerHandler(Key key, bool isDown, "}<Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" handler)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KeyBoardTriggerHandler(Key key, bool isDown, "}<Link to="/game-api/types/global-i-l/keyeventhandler">{"KeyEventHandler"}</Link>{" handler)"}</code> | Creates a `KeyboardEventTriggers.KeyBoardTriggerHandler` from `key`, `isDown` and `handler`. |
 
 ## Properties
 

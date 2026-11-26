@@ -19,9 +19,9 @@ Internal comparer that never reports two keys as equal, so a sorted list can hol
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DuplicateKeyComparer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DuplicateKeyComparer()"}</code> | Creates a `DuplicateKeyComparer` with default values. |
 
 ## Methods
 

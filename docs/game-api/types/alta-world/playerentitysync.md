@@ -19,9 +19,9 @@ Syncs a chunk's force-loaded state from the server to clients through the chunk'
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerEntitySync("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerEntitySync("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Creates a `PlayerEntitySync` from `chunk`. |
 
 ## Fields
 

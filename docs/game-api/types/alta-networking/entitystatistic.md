@@ -20,9 +20,9 @@ Network profiling stats for one entity: bytes sent, split by entity message type
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EntityStatistic(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EntityStatistic(string name)"}</code> | Creates an `EntityStatistic` from `name`. |
 
 ## Fields
 

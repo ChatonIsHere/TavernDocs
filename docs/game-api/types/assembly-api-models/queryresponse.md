@@ -18,9 +18,9 @@ A user's answer to one form question, part of a `PageResponse`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"QueryResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"QueryResponse()"}</code> | Creates a `QueryResponse` with default values. |
 
 ## Properties
 

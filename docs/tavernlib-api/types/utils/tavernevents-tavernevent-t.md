@@ -19,18 +19,18 @@ An event mods can subscribe to but only TavernLib can raise. Used for `TavernEve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TavernEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TavernEvent()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Events
 
 <details>
 <summary>1 private and internal event</summary>
 
-| Member |
-| --- |
-| <Link id="m-handlers" /><code>{"private event Action<T> Handlers"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handlers" /><code>{"private event Action<T> Handlers"}</code> | The subscribed handlers, called by `Invoke`. |
 
 </details>
 

@@ -20,9 +20,9 @@ Township event bus event broadcast when a player joins two crafting parts. Serve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ItemCraftedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, List<uint> itemPartHashes)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ItemCraftedEvent("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player, List<uint> itemPartHashes)"}</code> | Creates an `ItemCraftedEvent` from `player` and `itemPartHashes`. |
 
 ## Properties
 

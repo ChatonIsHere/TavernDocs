@@ -21,9 +21,9 @@ Saved list of logic bool senders and the values to put them back to. `ResetLogic
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicReset()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicReset()"}</code> | Creates a `LogicReset` with default values. |
 
 ## Fields
 

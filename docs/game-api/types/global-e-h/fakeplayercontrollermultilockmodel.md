@@ -19,9 +19,9 @@ Do-nothing `IPlayerControllerMultiLockModel` that is never locked. `PlayerContro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FakePlayerControllerMultiLockModel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FakePlayerControllerMultiLockModel()"}</code> | Creates a `FakePlayerControllerMultiLockModel` with default values. |
 
 ## Properties
 

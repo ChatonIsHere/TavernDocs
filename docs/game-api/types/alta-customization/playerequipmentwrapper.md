@@ -19,9 +19,9 @@ A `CustomizationWrapper` for a player's equipment, looking items up as `PlayerEq
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerEquipmentWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerEquipmentWrapper("}<Link to="/game-api/types/alta-customization/icustomizationvisualmanager">{"ICustomizationVisualManager"}</Link>{" manager)"}</code> | Creates a `PlayerEquipmentWrapper` from `manager`. |
 
 ## Methods
 

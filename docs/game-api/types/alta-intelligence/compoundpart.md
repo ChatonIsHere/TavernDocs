@@ -20,10 +20,10 @@ A list of terms (a first term and the rest) in the AI's logic system, used when 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CompoundPart("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" first, "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] remaining)"}</code> |
-| <Link id="m-ctor-2" /><code>{"CompoundPart(Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> bindings, "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] all)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CompoundPart("}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{" first, "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] remaining)"}</code> | Creates a `CompoundPart` from `bindings` and `all`. |
+| <Link id="m-ctor-2" /><code>{"CompoundPart(Dictionary<"}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{", "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"> bindings, "}<Link to="/game-api/types/alta-intelligence/iterm">{"ITerm"}</Link>{"[] all)"}</code> | Creates a `CompoundPart` from `bindings` and `all`. |
 
 ## Properties
 

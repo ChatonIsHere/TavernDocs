@@ -19,9 +19,9 @@ Do-nothing `ILinkProvider` used by `LocalNetworkScene`'s spawn manager when ther
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LocalLinkProvider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LocalLinkProvider()"}</code> | Creates a `LocalLinkProvider` with default values. |
 
 ## Methods
 

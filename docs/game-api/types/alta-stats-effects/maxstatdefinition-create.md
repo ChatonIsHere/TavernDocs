@@ -20,6 +20,6 @@ Editor menu entry that creates a new `MaxStatDefinition` asset. Not used at runt
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `MaxStatDefinition.Create` with default values. |

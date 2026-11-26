@@ -19,9 +19,9 @@ Simple real-time rate limiter: construct it with a ticks-per-second target, then
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RateLimiter(float targetTickRate)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RateLimiter(float targetTickRate)"}</code> | Creates a `RateLimiter` from `targetTickRate`. |
 
 ## Fields
 

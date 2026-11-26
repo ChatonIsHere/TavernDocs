@@ -20,6 +20,6 @@ Editor menu entry for creating a `PowerCrossSlash` skill asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PowerCrossSlash.Create` with default values. |

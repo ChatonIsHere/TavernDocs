@@ -19,9 +19,9 @@ One container in an Agones game server pod.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ContainerConfig()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ContainerConfig()"}</code> | Creates a `GameServerSpec.GameServerTemplate.GameServerTemplateSpec.ContainerConfig` with default values. |
 
 ## Properties
 

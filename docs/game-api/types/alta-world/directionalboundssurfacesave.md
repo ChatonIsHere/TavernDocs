@@ -21,9 +21,9 @@ Save data (version 1) for a `DirectionalBoundsSurface`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DirectionalBoundsSurfaceSave()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DirectionalBoundsSurfaceSave()"}</code> | Creates a `DirectionalBoundsSurfaceSave` with default values. |
 
 ## Fields
 

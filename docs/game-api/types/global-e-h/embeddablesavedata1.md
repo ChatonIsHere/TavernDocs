@@ -20,9 +20,9 @@ Old (version 1) save data for an `Embeddable`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmbeddableSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmbeddableSaveData1()"}</code> | Creates an `EmbeddableSaveData1` with default values. |
 
 ## Fields
 

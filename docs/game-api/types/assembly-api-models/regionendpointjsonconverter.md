@@ -19,9 +19,9 @@ JSON converter that stores a `Region` as its short name.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RegionEndpointJsonConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RegionEndpointJsonConverter()"}</code> | Creates a `RegionEndpointJsonConverter` with default values. |
 
 ## Methods
 

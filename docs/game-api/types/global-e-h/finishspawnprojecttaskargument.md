@@ -21,9 +21,9 @@ Game task action argument sent when a player finishes a spawn project, such as a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FinishSpawnProjectTaskArgument("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawning)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FinishSpawnProjectTaskArgument("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" spawning)"}</code> | Creates a `FinishSpawnProjectTaskArgument` from `spawning`. |
 
 ## Properties
 

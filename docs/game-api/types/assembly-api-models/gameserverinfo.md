@@ -21,9 +21,9 @@ A game server as returned by the Alta web API: id, name, status, region, owner, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameServerInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameServerInfo()"}</code> | Creates a `GameServerInfo` with default values. |
 
 ## Fields
 

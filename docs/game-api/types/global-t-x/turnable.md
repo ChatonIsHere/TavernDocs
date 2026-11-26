@@ -20,9 +20,9 @@ A gear or wheel in a simple torque network: connected turnables share torque, al
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Turnable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Turnable()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -38,7 +38,7 @@ A gear or wheel in a simple torque network: connected turnables share torque, al
 | --- | --- |
 | <Link id="m-friction" /><code>{"private float friction"}</code> | Torque lost per second while turning. |
 | <Link id="m-iscurrentflipped" /><code>{"private bool isCurrentFlipped"}</code> | Whether this gear turns the opposite way in the current cluster update (every other gear in a chain is flipped). |
-| <Link id="m-isdebug" /><code>{"private bool isDebug"}</code> |  |
+| <Link id="m-isdebug" /><code>{"private bool isDebug"}</code> | Inspector flag that nothing reads. |
 | <Link id="m-mass" /><code>{"private float mass"}</code> | Mass used for the moment of inertia (minimum 0.001). |
 | <Link id="m-speed" /><code>{"private float speed"}</code> | Starting speed, turned into torque on `Awake`. |
 | <Link id="m-torque" /><code>{"private float torque"}</code> | Current torque; `Speed` is this over the moment of inertia. |

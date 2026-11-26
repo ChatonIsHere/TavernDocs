@@ -19,9 +19,9 @@ A `ComponentGroup` of `ControllerExtension`s. `Controller` instantiates these gr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ControllerExtensionGroup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ControllerExtensionGroup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Used in
 

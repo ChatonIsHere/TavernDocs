@@ -18,9 +18,9 @@ Request body listing shop item ids.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemsRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemsRequest()"}</code> | Creates a `ShopItemsRequest` with default values. |
 
 ## Properties
 

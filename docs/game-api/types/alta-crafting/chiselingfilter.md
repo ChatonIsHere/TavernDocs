@@ -19,6 +19,6 @@ Empty marker component; nothing in the decompiled code references it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChiselingFilter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChiselingFilter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

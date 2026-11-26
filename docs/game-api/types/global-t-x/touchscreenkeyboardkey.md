@@ -21,9 +21,9 @@ One key on the in-game VR touch screen keyboard. Shows its label (changing with 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TouchScreenKeyboardKey()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TouchScreenKeyboardKey()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

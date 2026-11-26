@@ -18,9 +18,9 @@ One platform achievement stat (such as a Steam stat), as an int or a float. Sett
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Stat("}<Link to="/game-api/types/alta-player/istatmanager">{"IStatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-player/achievementstatdefinition">{"AchievementStatDefinition"}</Link>{" definition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Stat("}<Link to="/game-api/types/alta-player/istatmanager">{"IStatManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-player/achievementstatdefinition">{"AchievementStatDefinition"}</Link>{" definition)"}</code> | Creates a `Stat` from `manager` and `definition`. |
 
 ## Fields
 

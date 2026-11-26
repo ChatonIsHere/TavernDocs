@@ -20,9 +20,9 @@ Chunk loader for `DebugLoadMarker` that uses the current chunk's normal dynamic 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NormalChunkLoader()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NormalChunkLoader()"}</code> | Creates a `DebugLoadMarker.NormalChunkLoader` with default values. |
 
 ## Methods
 

@@ -19,9 +19,9 @@ Fires a UnityEvent after a delay, either on start or when `Invoke` is called (fo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DelayedEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DelayedEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -38,9 +38,9 @@ Fires a UnityEvent after a delay, either on start or when `Invoke` is called (fo
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"void Invoke()"}</code> | Fires `delayedEvent` after `duration` seconds, or straight away if the duration is 0. |
 
 <details>
 <summary>2 private and internal methods</summary>

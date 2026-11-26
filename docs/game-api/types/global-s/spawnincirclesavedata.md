@@ -21,9 +21,9 @@ Save data for `SpawnInCircle` (version 2): its ring settings.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData()"}</code> | Creates a `SpawnInCircleSaveData` with default values. |
 
 ## Fields
 

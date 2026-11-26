@@ -19,9 +19,9 @@ The `name` part of a colour API response, holding a single string.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NameObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NameObject()"}</code> | Creates a `ColorApiResponse.NameObject` with default values. |
 
 ## Fields
 

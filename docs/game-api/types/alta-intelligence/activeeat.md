@@ -19,9 +19,9 @@ Action where an agent eats its target: it interacts with it, waits `Delay`, then
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveEat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveEat()"}</code> | Creates an `ActiveEat` with default values. |
 
 ## Fields
 

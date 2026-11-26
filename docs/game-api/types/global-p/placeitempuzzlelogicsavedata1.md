@@ -20,9 +20,9 @@ Old save format (version 1) for `PlaceItemPuzzleLogic`, migrated on load.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaceItemPuzzleLogicSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaceItemPuzzleLogicSaveData1()"}</code> | Creates a `PlaceItemPuzzleLogicSaveData1` with default values. |
 
 ## Fields
 

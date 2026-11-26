@@ -19,9 +19,9 @@ Offline stand-in for shop purchases. Every method throws `OfflineException`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineShopPurchase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineShopPurchase()"}</code> | Creates an `OfflineShopPurchase` with default values. |
 
 ## Methods
 

@@ -19,9 +19,9 @@ A snapshot of one hand controller's input: buttons, sticks, finger curl and hand
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ControllerInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ControllerInput()"}</code> | Creates a `ControllerInput` with default values. |
 
 ## Fields
 

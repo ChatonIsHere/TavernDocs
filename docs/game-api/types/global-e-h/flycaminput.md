@@ -20,9 +20,9 @@ Generated Unity Input System wrapper for the fly cam (spectator camera) controls
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FlyCamInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FlyCamInput()"}</code> | Creates a `FlyCamInput` with default values. |
 
 ## Fields
 

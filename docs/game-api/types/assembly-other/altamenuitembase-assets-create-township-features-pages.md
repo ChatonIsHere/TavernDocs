@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/Pages`: menu item classes in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Pages()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Pages()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Pages` with default values. |

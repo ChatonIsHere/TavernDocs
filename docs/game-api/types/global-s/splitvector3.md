@@ -18,10 +18,10 @@ A vector stored as a unit direction plus a length. Used for hand body offsets an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SplitVector3(Vector3 original)"}</code> |
-| <Link id="m-ctor-2" /><code>{"SplitVector3(Vector3 direction, float length)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SplitVector3(Vector3 original)"}</code> | Creates a `SplitVector3` from `direction` and `length`. |
+| <Link id="m-ctor-2" /><code>{"SplitVector3(Vector3 direction, float length)"}</code> | Creates a `SplitVector3` from `direction` and `length`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Analytics record of a death: who died, where, and who killed them.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DeathAnalytics(string victim, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit, Vector3 position)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DeathAnalytics(string victim, "}<Link to="/game-api/types/alta-items/damagedata">{"DamageData"}</Link>{" killingHit, Vector3 position)"}</code> | Creates a `HealthObject.DeathAnalytics` from `victim`, `killingHit` and `position`. |
 
 ## Fields
 

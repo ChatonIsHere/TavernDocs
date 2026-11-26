@@ -21,9 +21,9 @@ The player state while dead. The server logs the killer, drops or destroys held 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DeadState()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DeadState()"}</code> | Creates a `DeadState` with default values. |
 
 ## Fields
 

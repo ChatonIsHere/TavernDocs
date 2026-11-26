@@ -20,9 +20,9 @@ Collection wrapper that logs an error with a stack trace when it is changed duri
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DebuggingCollection(ICollection<T> internalCollection)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DebuggingCollection(ICollection<T> internalCollection)"}</code> | Creates a `DebuggingCollection` from `internalCollection`. |
 
 ## Fields
 

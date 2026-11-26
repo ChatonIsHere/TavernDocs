@@ -22,9 +22,9 @@ Equality comparer for `uint` hashes that returns the hash itself as the hash cod
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private HashComparer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private HashComparer()"}</code> | Creates a `HashComparer` with default values. |
 
 </details>
 

@@ -18,10 +18,10 @@ Alta API response to buying a shop item.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> |
-| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/game-api/types/assembly-api-models/purchaseresulttype">{"PurchaseResultType"}</Link>{" result)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> | Creates a `PurchaseResult` from `result`. |
+| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/game-api/types/assembly-api-models/purchaseresulttype">{"PurchaseResultType"}</Link>{" result)"}</code> | Creates a `PurchaseResult` from `result`. |
 
 ## Properties
 

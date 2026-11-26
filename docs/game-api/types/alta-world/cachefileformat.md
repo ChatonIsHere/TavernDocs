@@ -19,10 +19,10 @@ File format for cached data such as instruction sets: a byte count followed by t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CacheFileFormat()"}</code> |
-| <Link id="m-ctor-2" /><code>{"CacheFileFormat(uint[] data, uint byteCount)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CacheFileFormat()"}</code> | Creates a `CacheFileFormat` from `data` and `byteCount`. |
+| <Link id="m-ctor-2" /><code>{"CacheFileFormat(uint[] data, uint byteCount)"}</code> | Creates a `CacheFileFormat` from `data` and `byteCount`. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data (version 1) for the `GlobalPopulationsManager`. The manager saves an e
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GlobalPopulationsManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GlobalPopulationsManagerSaveData()"}</code> | Creates a `GlobalPopulationsManagerSaveData` with default values. |
 
 ## Fields
 

@@ -21,6 +21,6 @@ Save data for a `Recycler` (version 1): the saved state of each of its output sl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RecyclerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RecyclerSaveData()"}</code> | Creates a `RecyclerSaveData` with default values. |

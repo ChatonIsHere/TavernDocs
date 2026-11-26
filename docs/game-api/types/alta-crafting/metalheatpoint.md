@@ -21,9 +21,9 @@ A heat point on a metal item. Heat moves faster or slower based on its physical 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MetalHeatPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MetalHeatPoint()"}</code> | Creates a `MetalHeatPoint` with default values. |
 
 ## Fields
 

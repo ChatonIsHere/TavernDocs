@@ -19,9 +19,9 @@ Static helper that renders the local player's camera at 4x screen size and saves
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ScreenshotTaker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ScreenshotTaker()"}</code> | Creates a `ScreenshotTaker` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Server: running action that moves a creature in to its target, then circles the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveAgentRotateClose()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveAgentRotateClose()"}</code> | Creates an `ActiveAgentRotateClose` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Private inspector entry on `ModellingCharacter`: a paid (non-free) player cosmet
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Definition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Definition()"}</code> | Creates a `ModellingCharacter.Definition` with default values. |
 
 ## Fields
 

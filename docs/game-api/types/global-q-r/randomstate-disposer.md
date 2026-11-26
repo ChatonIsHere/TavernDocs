@@ -20,9 +20,9 @@ Shared `IDisposable` returned by `RandomState.Push`, so a `using` block restores
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Disposer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Disposer()"}</code> | Creates a `RandomState.Disposer` with default values. |
 
 ## Methods
 

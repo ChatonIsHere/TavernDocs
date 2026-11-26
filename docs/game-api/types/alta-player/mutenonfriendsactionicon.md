@@ -19,9 +19,9 @@ Bubble icon for the mute non-friends action: shows the icon for the current voic
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MuteNonFriendsActionIcon()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MuteNonFriendsActionIcon()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

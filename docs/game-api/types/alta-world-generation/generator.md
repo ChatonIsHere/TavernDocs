@@ -19,9 +19,9 @@ A 3D grid of tagged nodes for procedural construction, all set to the air tag at
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Generator(int sizeX, int sizeY, int sizeZ, "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" air)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Generator(int sizeX, int sizeY, int sizeZ, "}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{" air)"}</code> | Creates a `Generator` from `sizeX`, `sizeY`, `sizeZ` and `air`. |
 
 ## Fields
 

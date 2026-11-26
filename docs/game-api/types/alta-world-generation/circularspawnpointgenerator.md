@@ -20,9 +20,9 @@ A spawn area that gives random points in a flat circle around its transform. Hei
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CircularSpawnPointGenerator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CircularSpawnPointGenerator()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/RampLerp_CosmeticTest` shader. `At
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RampLerp_CosmeticTestBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RampLerp_CosmeticTestBlit()"}</code> | Creates a `RampLerp_CosmeticTestBlit` with default values. |
 
 ## Fields
 

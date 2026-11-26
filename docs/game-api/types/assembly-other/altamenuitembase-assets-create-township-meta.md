@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Meta`: menu item classes inherit it t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Meta()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Meta()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Meta` with default values. |

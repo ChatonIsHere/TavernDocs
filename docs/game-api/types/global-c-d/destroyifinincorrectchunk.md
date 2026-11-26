@@ -19,9 +19,9 @@ Server: destroys the entity if it ends up in a chunk that isn't a `LocationChunk
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DestroyIfInIncorrectChunk()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DestroyIfInIncorrectChunk()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Methods
 

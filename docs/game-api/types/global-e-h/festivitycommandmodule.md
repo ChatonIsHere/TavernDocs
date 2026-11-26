@@ -19,9 +19,9 @@ Console module `festivities` for listing, inspecting, starting and stopping fest
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FestivityCommandModule()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FestivityCommandModule()"}</code> | Creates a `FestivityCommandModule` with default values. |
 
 ## Fields
 

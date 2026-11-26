@@ -19,9 +19,9 @@ A spine bone with a swing limit as well as the twist limit from `BoneWithTwistLi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoneWithRotationLimit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoneWithRotationLimit()"}</code> | Creates a `BoneWithRotationLimit` with default values. |
 
 ## Fields
 

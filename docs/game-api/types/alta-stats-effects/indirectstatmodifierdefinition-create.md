@@ -20,6 +20,6 @@ Editor menu entry that creates a new `IndirectStatModifierDefinition` asset. Not
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `IndirectStatModifierDefinition.Create` with default values. |

@@ -19,9 +19,9 @@ Base for a value that eases from where it is to a target over time. Call `Update
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LerpingValue(Action<T> setValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LerpingValue(Action<T> setValue)"}</code> | Creates a `LerpingValue` from `setValue`. |
 
 ## Fields
 

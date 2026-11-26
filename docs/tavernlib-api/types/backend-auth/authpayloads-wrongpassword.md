@@ -24,9 +24,9 @@ Status `wrong_password`, with the message `Wrong Password`.
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-message" /><code>{"private string Message { get; }"}</code> |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-message" /><code>{"private string Message { get; }"}</code> | Always `Wrong Password`. |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `wrong_password`. |
 
 </details>

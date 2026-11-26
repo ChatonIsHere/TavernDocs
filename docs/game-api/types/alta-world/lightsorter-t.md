@@ -19,9 +19,9 @@ Fixed-size list that keeps the nearest lights sorted by distance, capped at `Pla
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LightSorter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LightSorter()"}</code> | Creates a `LightSorter` with default values. |
 
 ## Fields
 

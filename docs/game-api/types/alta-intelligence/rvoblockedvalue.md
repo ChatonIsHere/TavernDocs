@@ -19,9 +19,9 @@ Scoring rule on whether the creature's walker is blocked by local avoidance. Mad
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RVOBlockedValue(float unblocked, float blocked)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RVOBlockedValue(float unblocked, float blocked)"}</code> | Creates a `RVOBlockedValue` from `unblocked` and `blocked`. |
 
 ## Fields
 

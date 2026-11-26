@@ -19,9 +19,9 @@ UNET transport statistics across all hosts: incoming packets and drops plus outg
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportOverallStatistics()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportOverallStatistics()"}</code> | Creates a `NetworkTransportOverallStatistics` with default values. |
 
 ## Methods
 

@@ -21,9 +21,9 @@ Player state for spirit mode during a climbing challenge (a `PlayerUnlock` with 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpiritState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpiritState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> | Creates a `SpiritState` from `playingState`. |
 
 ## Fields
 

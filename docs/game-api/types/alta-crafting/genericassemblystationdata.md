@@ -21,9 +21,9 @@ Save data for a `GenericAssemblyStation` (version 1).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GenericAssemblyStationData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GenericAssemblyStationData()"}</code> | Creates a `GenericAssemblyStationData` with default values. |
 
 ## Fields
 

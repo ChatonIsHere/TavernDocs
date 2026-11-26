@@ -19,9 +19,9 @@ Serializable event with a bool argument, shown in the inspector as a `ToggleUnit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ToggleEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ToggleEvent()"}</code> | Creates a `ToggleEvent` with default values. |
 
 ## Used in
 

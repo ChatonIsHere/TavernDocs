@@ -18,9 +18,9 @@ Web API model listing a player's action stats.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerActionStatResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerActionStatResponse()"}</code> | Creates a `PlayerActionStatResponse` with default values. |
 
 ## Properties
 

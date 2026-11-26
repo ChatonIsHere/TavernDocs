@@ -18,9 +18,9 @@ What a server tells the Alta web API when it starts its session. Built by `Serve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerStartArguments()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerStartArguments()"}</code> | Creates a `ServerStartArguments` with default values. |
 
 ## Properties
 

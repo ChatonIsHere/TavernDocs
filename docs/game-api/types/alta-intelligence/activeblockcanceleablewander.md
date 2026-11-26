@@ -19,9 +19,9 @@ A wander action that cancels itself when the agent's walker is blocked, or when 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveBlockCanceleableWander()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveBlockCanceleableWander()"}</code> | Creates an `ActiveBlockCanceleableWander` with default values. |
 
 ## Methods
 

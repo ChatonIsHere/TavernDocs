@@ -19,9 +19,9 @@ Type converter that turns a string (username or user ID) into an online player, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerConverter()"}</code> | Creates a `PlayerConverter` with default values. |
 
 ## Properties
 

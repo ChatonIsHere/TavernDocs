@@ -18,9 +18,9 @@ Registers the Windows platform services: user service, post-process controller, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WindowsInstaller(IContainerBuilder builder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WindowsInstaller(IContainerBuilder builder)"}</code> | Creates a `WindowsInstaller` from `builder`. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data (version 1, the current one) for `MapBoard`, the in-world map board.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MapBoardSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MapBoardSaveData1()"}</code> | Creates a `MapBoardSaveData1` with default values. |
 
 ## Fields
 

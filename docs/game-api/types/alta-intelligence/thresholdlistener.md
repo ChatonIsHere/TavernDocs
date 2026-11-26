@@ -18,9 +18,9 @@ Small holder for a threshold value and an event raised when it's crossed. Nothin
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ThresholdListener()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ThresholdListener()"}</code> | Creates a `ThresholdListener` with default values. |
 
 ## Properties
 

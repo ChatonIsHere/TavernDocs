@@ -18,9 +18,9 @@ A rule on a form `Page` that says which page comes next when its conditions are 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Transitions()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Transitions()"}</code> | Creates a `Transitions` with default values. |
 
 ## Properties
 

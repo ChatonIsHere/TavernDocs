@@ -18,10 +18,10 @@ Body of an Alta web API request to check an identity token.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IdentityTokenValidationRequest(string identityToken)"}</code> |
-| <Link id="m-ctor-2" /><code>{"IdentityTokenValidationRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IdentityTokenValidationRequest(string identityToken)"}</code> | Creates an `IdentityTokenValidationRequest` with default values. |
+| <Link id="m-ctor-2" /><code>{"IdentityTokenValidationRequest()"}</code> | Creates an `IdentityTokenValidationRequest` with default values. |
 
 ## Properties
 

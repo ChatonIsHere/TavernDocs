@@ -19,9 +19,9 @@ One cube of the marching cubes grid: its eight corners and their density values.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GridCell()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GridCell()"}</code> | Creates a `MarchingCubes.GridCell` with default values. |
 
 ## Fields
 

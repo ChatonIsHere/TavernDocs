@@ -20,6 +20,6 @@ Inspector attribute that marks a serialized field as obsolete. No behaviour of i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ObsoleteFieldAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ObsoleteFieldAttribute()"}</code> | Creates an `ObsoleteFieldAttribute` with default values. |

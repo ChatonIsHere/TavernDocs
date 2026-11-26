@@ -19,9 +19,9 @@ A saved network prefab with its local position and rotation, for spawning dynami
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionedNetworkPrefab()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionedNetworkPrefab()"}</code> | Creates a `PositionedNetworkPrefab` with default values. |
 
 ## Fields
 

@@ -20,6 +20,6 @@ Editor menu entry that creates a `QuickDrawTrigger` asset under Township, Featur
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `QuickDrawTrigger.Create` with default values. |

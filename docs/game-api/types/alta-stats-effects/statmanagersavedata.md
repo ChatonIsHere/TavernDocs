@@ -23,9 +23,9 @@ Save data for a `StatManager` (save structure version 2): stat values, timed mod
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatManagerSaveData()"}</code> | Creates a `StatManagerSaveData` with default values. |
 
 ## Fields
 

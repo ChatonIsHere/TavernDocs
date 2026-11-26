@@ -19,9 +19,9 @@ Keeps an interactable's `LastPlayerInteractor` when its entity is replaced by an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InteractableLastPlayerInteractorHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InteractableLastPlayerInteractorHandler()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

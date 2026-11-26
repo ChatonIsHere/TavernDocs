@@ -18,9 +18,9 @@ API response for one recent interaction with another player: who, what kind, whe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RecentPlayerInteractionInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RecentPlayerInteractionInfo()"}</code> | Creates a `RecentPlayerInteractionInfo` with default values. |
 
 ## Properties
 

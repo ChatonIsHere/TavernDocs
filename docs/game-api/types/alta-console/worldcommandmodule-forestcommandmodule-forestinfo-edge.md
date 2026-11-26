@@ -19,9 +19,9 @@ A path between two forest nodes in a `ForestInfo`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Edge()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Edge()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Edge` with default values. |
 
 ## Fields
 

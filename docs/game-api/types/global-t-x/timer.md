@@ -18,9 +18,9 @@ A small stopwatch over `Time.realtimeSinceStartup` that can be paused, resumed a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Timer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Timer()"}</code> | Creates a `Timer` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ One hand of a player's character: links the controller, IK hand target, grip ani
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Hand()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Hand()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -42,7 +42,7 @@ One hand of a player's character: links the controller, IK hand target, grip ani
 | <Link id="m-handtargetsave" /><code>{"private TransformSave handTargetSave"}</code> | The IK hand target's original transform, saved on setup and restored by `Detach`. |
 | <Link id="m-ikhandtarget" /><code>{"private "}<Link to="/game-api/types/alta-player/handtargethandler">{"HandTargetHandler"}</Link>{" ikHandTarget"}</code> | The IK hand target, used by the controller to measure distance to the ghost hand. |
 | <Link id="m-isnotfixingikhandtopickup" /><code>{"private bool isNotFixingIKHandToPickup"}</code> | When set on the prefab, skips hooking the detach and centre of mass handlers whatever `HandSettings` says. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-masterhand" /><code>{"private "}<Link to="/game-api/types/alta-player/masterhand">{"MasterHand"}</Link>{" masterHand"}</code> | The `MasterHand` with the IK and master hand roots. |
 | <Link id="m-movedpickupinthisframe" /><code>{"private bool movedPickupInThisFrame"}</code> | Unused in this build. |
 | <Link id="m-pickupstatebeforephysics" /><code>{"private TransformSave pickupStateBeforePhysics"}</code> | Unused in this build. |

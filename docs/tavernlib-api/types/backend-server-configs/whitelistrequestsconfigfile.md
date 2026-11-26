@@ -20,9 +20,9 @@ The `ServerConfigFile` for `whitelist_requests.json`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WhitelistRequestsConfigFile(string filePath)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WhitelistRequestsConfigFile(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
 
 ## Used in
 

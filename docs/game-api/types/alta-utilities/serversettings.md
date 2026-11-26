@@ -21,9 +21,9 @@ The game's own server settings, loaded from `ServerConfiguration.json`. Server: 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerSettings()"}</code> | Creates a `ServerSettings` with default values. |
 
 ## Properties
 

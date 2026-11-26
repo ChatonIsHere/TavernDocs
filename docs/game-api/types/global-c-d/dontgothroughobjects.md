@@ -19,9 +19,9 @@ Anti-tunnelling component: each physics step it raycasts along the rigidbody's m
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DontGoThroughObjects()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DontGoThroughObjects()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

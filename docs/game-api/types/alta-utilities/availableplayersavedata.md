@@ -19,6 +19,6 @@ Holds the `Available` enum: which starting inventory preset new players get (`No
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AvailablePlayerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AvailablePlayerSaveData()"}</code> | Creates an `AvailablePlayerSaveData` with default values. |

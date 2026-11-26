@@ -20,9 +20,9 @@ Saved singleton that remembers which chunks need a pre-wipe pass. `ServerWipeMan
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WipeManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WipeManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -32,7 +32,7 @@ Saved singleton that remembers which chunks need a pre-wipe pass. `ServerWipeMan
 | Member | What it is |
 | --- | --- |
 | <Link id="m-chunkstowipe" /><code>{"private HashSet<string> chunksToWipe"}</code> | Saved set of chunk identifiers to process before a wipe. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 
 </details>
 

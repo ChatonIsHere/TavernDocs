@@ -19,9 +19,9 @@ Pooled async prefab factory whose instances take one parameter on spawn through 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsyncPooled()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected FactoryAsyncPooled()"}</code> | Creates a `FactoryAsyncPooled` with default values. |
 
 ## Methods
 

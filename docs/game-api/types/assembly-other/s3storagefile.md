@@ -20,9 +20,9 @@ A file object in an S3 bucket, used through the `IFileAccess` storage interface.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"S3StorageFile(string bucketName, string fullName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"S3StorageFile(string bucketName, string fullName)"}</code> | Creates a `S3StorageFile` from `bucketName` and `fullName`. |
 
 ## Fields
 

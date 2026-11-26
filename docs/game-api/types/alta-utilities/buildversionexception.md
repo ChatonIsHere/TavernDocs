@@ -19,6 +19,6 @@ Exception for a bad build version. Nothing in this build throws it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BuildVersionException(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BuildVersionException(string message)"}</code> | Creates the exception with `message`. |

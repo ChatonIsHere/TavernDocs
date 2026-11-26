@@ -19,9 +19,9 @@ Serializable array of values, one per skill level, used by skills for level scal
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ValuePerLevel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ValuePerLevel()"}</code> | Creates a `ValuePerLevel` with default values. |
 
 ## Fields
 

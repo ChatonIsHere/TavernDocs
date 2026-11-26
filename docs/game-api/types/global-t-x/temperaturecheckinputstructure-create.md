@@ -20,6 +20,6 @@ Editor menu entry for creating a `TemperatureCheckInputStructure` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `TemperatureCheckInputStructure.Create` with default values. |

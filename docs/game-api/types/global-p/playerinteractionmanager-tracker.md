@@ -19,10 +19,10 @@ How many interactions one player has left on one limited object, keyed by id in 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Tracker()"}</code> |
-| <Link id="m-ctor-2" /><code>{"Tracker(int id, int interactionsLeft)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Tracker()"}</code> | Creates a `PlayerInteractionManager.Tracker` from `id` and `interactionsLeft`. |
+| <Link id="m-ctor-2" /><code>{"Tracker(int id, int interactionsLeft)"}</code> | Creates a `PlayerInteractionManager.Tracker` from `id` and `interactionsLeft`. |
 
 ## Fields
 

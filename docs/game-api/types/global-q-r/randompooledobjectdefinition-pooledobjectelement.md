@@ -19,9 +19,9 @@ One weighted choice in a `RandomPooledObjectDefinition`. Note the parent's pick 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PooledObjectElement()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PooledObjectElement()"}</code> | Creates a `RandomPooledObjectDefinition.PooledObjectElement` with default values. |
 
 ## Fields
 

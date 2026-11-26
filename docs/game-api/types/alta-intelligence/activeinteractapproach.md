@@ -20,9 +20,9 @@ Navigation action that walks up to the target and then runs `CanReach`, or `Cant
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveInteractApproach()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveInteractApproach()"}</code> | Creates an `ActiveInteractApproach` with default values. |
 
 ## Methods
 

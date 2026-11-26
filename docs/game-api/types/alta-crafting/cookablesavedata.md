@@ -21,9 +21,9 @@ Save data for a `Cookable` (version 1): how far it has cooked and burnt.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CookableSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CookableSaveData()"}</code> | Creates a `CookableSaveData` with default values. |
 
 ## Fields
 

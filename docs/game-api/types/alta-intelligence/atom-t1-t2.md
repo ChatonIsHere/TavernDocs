@@ -19,9 +19,9 @@ A named AI logic atom that takes two terms. `Define` turns it into a weighted de
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> | Creates an `Atom` from `name`. |
 
 ## Methods
 

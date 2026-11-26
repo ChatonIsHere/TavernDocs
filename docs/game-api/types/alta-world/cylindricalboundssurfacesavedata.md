@@ -21,9 +21,9 @@ Saved settings for a `CylindricalBoundsSurface`: the arc, height and radii it ra
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CylindricalBoundsSurfaceSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CylindricalBoundsSurfaceSaveData()"}</code> | Creates a `CylindricalBoundsSurfaceSaveData` with default values. |
 
 ## Fields
 

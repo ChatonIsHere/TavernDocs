@@ -19,9 +19,9 @@ Settings for a tunnel in a `RoomFixPlugin`: operation, start and end, radius and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Tunnel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Tunnel()"}</code> | Creates a `RoomFixPlugin.Tunnel` with default values. |
 
 ## Fields
 

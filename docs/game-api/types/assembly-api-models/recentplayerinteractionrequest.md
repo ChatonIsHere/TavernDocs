@@ -18,9 +18,9 @@ One recent player interaction sent to the Alta web API. Queued through `ApiBatch
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RecentPlayerInteractionRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RecentPlayerInteractionRequest()"}</code> | Creates a `RecentPlayerInteractionRequest` with default values. |
 
 ## Properties
 

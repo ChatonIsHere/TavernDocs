@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/Progression/Input`: menu ite
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Input()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Input()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Input` with default values. |

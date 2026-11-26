@@ -20,6 +20,6 @@ Marks a field to be shown as a byte size (KB, MB) in the inspector. Used on netw
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FormattedBytesFieldAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FormattedBytesFieldAttribute()"}</code> | Creates a `FormattedBytesFieldAttribute` with default values. |

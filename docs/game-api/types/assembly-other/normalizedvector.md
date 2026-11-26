@@ -19,6 +19,6 @@ Inspector attribute for a vector field that should be normalized. No behaviour o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NormalizedVector()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NormalizedVector()"}</code> | Creates a `NormalizedVector` with default values. |

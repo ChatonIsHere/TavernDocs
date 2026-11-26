@@ -20,9 +20,9 @@ Replaces the game's network message type header with an 8-bit one, for 256 messa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MessageExpanderPatch()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MessageExpanderPatch()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Methods
 

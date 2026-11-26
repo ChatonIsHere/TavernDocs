@@ -20,9 +20,9 @@ One row of `player progression checkallxp`: a player's level and experience on o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PathXp()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PathXp()"}</code> | Makes an empty row for `checkallxp`. |
 
 ## Properties
 

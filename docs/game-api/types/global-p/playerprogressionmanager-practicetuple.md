@@ -19,10 +19,10 @@ Network argument saying a skill slot on a path was practised. The server sends i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PracticeTuple()"}</code> |
-| <Link id="m-ctor-2" /><code>{"PracticeTuple("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, uint slotHash)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PracticeTuple()"}</code> | Creates a `PlayerProgressionManager.PracticeTuple` from `path` and `slotHash`. |
+| <Link id="m-ctor-2" /><code>{"PracticeTuple("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, uint slotHash)"}</code> | Creates a `PlayerProgressionManager.PracticeTuple` from `path` and `slotHash`. |
 
 ## Fields
 

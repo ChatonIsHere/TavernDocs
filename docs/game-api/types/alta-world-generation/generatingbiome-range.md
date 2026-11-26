@@ -19,9 +19,9 @@ A float range used by `GeneratingBiome` for a biome attribute's blended minimum 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Range(float min, float max)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Range(float min, float max)"}</code> | Creates a `GeneratingBiome.Range` from `min` and `max`. |
 
 ## Properties
 

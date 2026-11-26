@@ -19,9 +19,9 @@ Debug total of damage the local player has dealt recently. Each `Player` has one
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DamageDisplayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DamageDisplayer("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Creates a `DamageDisplayer` from `player`. |
 
 ## Fields
 

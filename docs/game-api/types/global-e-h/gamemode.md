@@ -20,9 +20,9 @@ Base for how the game runs (for example as a server or a client): starting up, l
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected GameMode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected GameMode()"}</code> | Creates a `GameMode` with default values. |
 
 ## Fields
 

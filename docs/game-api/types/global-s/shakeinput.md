@@ -19,9 +19,9 @@ Skill input method that turns on when the player shakes the held item. Created b
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShakeInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShakeInput()"}</code> | Creates a `ShakeInput` with default values. |
 
 ## Fields
 

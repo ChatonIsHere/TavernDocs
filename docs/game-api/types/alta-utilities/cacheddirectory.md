@@ -18,9 +18,9 @@ A pair of folders used by asset baking: a project folder and the temporary folde
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CachedDirectory(string projectPath, string cachePath)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CachedDirectory(string projectPath, string cachePath)"}</code> | Creates a `CachedDirectory` from `projectPath` and `cachePath`. |
 
 ## Properties
 

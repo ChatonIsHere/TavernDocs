@@ -19,9 +19,9 @@ JSON shape of the local shop override file: the shop page and the game home page
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemConfigurations()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemConfigurations()"}</code> | Creates a `ShopConfigUtility.ShopItemConfigurations` with default values. |
 
 ## Properties
 

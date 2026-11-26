@@ -19,9 +19,9 @@ Helper that scales a behaviour's transform in or out along "on" and "off" curves
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ScaleAnimator(MonoBehaviour behaviour, bool isInitiallyOn, Vector3 startScale, AnimationCurve on, AnimationCurve off, bool isDisallowingZero)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ScaleAnimator(MonoBehaviour behaviour, bool isInitiallyOn, Vector3 startScale, AnimationCurve on, AnimationCurve off, bool isDisallowingZero)"}</code> | Creates a `ScaleAnimator` from `behaviour`, `isInitiallyOn`, `startScale`, `on`, `off` and `isDisallowingZero`. |
 
 ## Fields
 

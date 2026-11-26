@@ -20,9 +20,9 @@ One piece of a saved preset tree: which tree model to spawn, its rotation, its a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Step(uint pieceHash, int rotation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Step(uint pieceHash, int rotation)"}</code> | Creates a `PresetTree.Step` from `pieceHash` and `rotation`. |
 
 ## Fields
 

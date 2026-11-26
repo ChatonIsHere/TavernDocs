@@ -18,9 +18,9 @@ The API's answer to a `ServerSaveFileRequest`: download links for the files.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerSaveFileResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerSaveFileResponse()"}</code> | Creates a `ServerSaveFileResponse` with default values. |
 
 ## Properties
 

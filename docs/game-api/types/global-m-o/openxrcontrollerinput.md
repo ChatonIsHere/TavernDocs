@@ -19,9 +19,9 @@ Raw input state for one OpenXR controller, filled by `OpenXRWrapper` from Input 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OpenXRControllerInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OpenXRControllerInput()"}</code> | Creates an `OpenXRControllerInput` with default values. |
 
 ## Fields
 

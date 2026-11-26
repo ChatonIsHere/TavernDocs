@@ -18,9 +18,9 @@ Request body for `LowLevelApiClient.RequestBufferChange`, which asked Alta's API
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BufferChangeRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BufferChangeRequest()"}</code> | Creates a `BufferChangeRequest` with default values. |
 
 ## Properties
 

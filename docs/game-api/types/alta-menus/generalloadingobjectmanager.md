@@ -19,9 +19,9 @@ Runs the loading scene: tracks the headset, sets flat lighting, spins a frame an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GeneralLoadingObjectManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GeneralLoadingObjectManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

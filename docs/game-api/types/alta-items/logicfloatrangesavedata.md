@@ -21,9 +21,9 @@ Save data for `LogicFloatRangeReceiver`: the range settings and the linked float
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatRangeSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatRangeSaveData()"}</code> | Creates a `LogicFloatRangeSaveData` with default values. |
 
 ## Fields
 

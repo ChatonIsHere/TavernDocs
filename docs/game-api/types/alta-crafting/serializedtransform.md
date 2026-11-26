@@ -18,9 +18,9 @@ A saved position, rotation and scale, used for crafting spawn offsets and piece 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedTransform()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedTransform()"}</code> | Creates a `SerializedTransform` with default values. |
 
 ## Fields
 

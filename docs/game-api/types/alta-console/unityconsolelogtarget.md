@@ -21,9 +21,9 @@ NLog target named `UnityConsoleLogTarget` that writes log lines to the Unity con
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnityConsoleLogTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnityConsoleLogTarget()"}</code> | Creates an `UnityConsoleLogTarget` with default values. |
 
 ## Fields
 

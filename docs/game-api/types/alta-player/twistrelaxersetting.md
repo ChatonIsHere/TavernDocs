@@ -18,9 +18,9 @@ One bone entry for the twist relaxer, which spreads forearm or arm twist across 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TwistRelaxerSetting()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TwistRelaxerSetting()"}</code> | Creates a `TwistRelaxerSetting` with default values. |
 
 ## Fields
 

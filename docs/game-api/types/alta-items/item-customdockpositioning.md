@@ -20,9 +20,9 @@ A store position and rotation for an item in one kind of dock. A null dock type 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomDockPositioning("}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" type, Vector3 storePosition, Vector3 storeEuler)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomDockPositioning("}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" type, Vector3 storePosition, Vector3 storeEuler)"}</code> | Creates an `Item.CustomDockPositioning` from `type`, `storePosition` and `storeEuler`. |
 
 ## Fields
 

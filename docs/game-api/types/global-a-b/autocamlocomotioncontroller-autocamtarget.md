@@ -19,9 +19,9 @@ A player body the auto camera can frame, rebuilt every frame by `AutoCamLocomoti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AutoCamTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AutoCamTarget()"}</code> | Creates an `AutoCamLocomotionController.AutoCamTarget` with default values. |
 
 ## Properties
 

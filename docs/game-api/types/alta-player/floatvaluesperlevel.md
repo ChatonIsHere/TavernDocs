@@ -19,9 +19,9 @@ A `ValuePerLevel` of floats, for skill values that change by level, such as `Bow
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FloatValuesPerLevel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatValuesPerLevel()"}</code> | Creates a `FloatValuesPerLevel` with default values. |
 
 ## Used in
 

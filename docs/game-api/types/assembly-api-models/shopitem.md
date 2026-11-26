@@ -20,9 +20,9 @@ An item in Alta's shop, such as a cosmetic or a set.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItem()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItem()"}</code> | Creates a `ShopItem` with default values. |
 
 ## Properties
 

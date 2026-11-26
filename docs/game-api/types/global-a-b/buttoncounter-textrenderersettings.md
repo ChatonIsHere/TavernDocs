@@ -19,9 +19,9 @@ A text label on a `ButtonCounter` that shows the amount, hidden below a minimum.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TextRendererSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TextRendererSettings()"}</code> | Creates a `ButtonCounter.TextRendererSettings` with default values. |
 
 ## Fields
 

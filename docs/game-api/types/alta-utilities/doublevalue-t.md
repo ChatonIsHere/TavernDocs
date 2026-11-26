@@ -20,10 +20,10 @@ A `SingleValue<T>` with a second float value.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DoubleValue()"}</code> |
-| <Link id="m-ctor-2" /><code>{"DoubleValue(T topic, float value, float value2)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DoubleValue()"}</code> | Creates a `DoubleValue` from `topic`, `value` and `value2`. |
+| <Link id="m-ctor-2" /><code>{"DoubleValue(T topic, float value, float value2)"}</code> | Creates a `DoubleValue` from `topic`, `value` and `value2`. |
 
 ## Fields
 

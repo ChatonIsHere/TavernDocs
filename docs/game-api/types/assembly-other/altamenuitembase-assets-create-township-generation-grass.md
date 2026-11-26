@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Generation/Grass`: menu item classes 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Grass()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Grass()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Generation.Grass` with default values. |

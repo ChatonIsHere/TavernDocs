@@ -20,9 +20,9 @@ The game's network socket over a transport: holds all connections, pumps receivi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Socket("}<Link to="/game-api/types/assembly-other/itransport">{"ITransport"}</Link>{" transport, int port, bool isServer, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" defaultChannel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Socket("}<Link to="/game-api/types/assembly-other/itransport">{"ITransport"}</Link>{" transport, int port, bool isServer, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{"[] channels, "}<Link to="/game-api/types/alta-networking/connectionchannel">{"ConnectionChannel"}</Link>{" defaultChannel)"}</code> | Creates a `Socket` from `transport`, `port`, `isServer`, `channels` and `defaultChannel`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Skill input that turns on after the player raises the held tool above their head
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DownwardSwingInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DownwardSwingInput()"}</code> | Creates a `DownwardSwingInput` with default values. |
 
 ## Fields
 

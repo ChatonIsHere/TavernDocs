@@ -19,10 +19,10 @@ One block of a chunk save file: the chunk data and saved objects written under o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Version()"}</code> |
-| <Link id="m-ctor-2" /><code>{"Version("}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Version()"}</code> | Creates a `ChunkSaveFormat.Version` from `versioning`. |
+| <Link id="m-ctor-2" /><code>{"Version("}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" versioning)"}</code> | Creates a `ChunkSaveFormat.Version` from `versioning`. |
 
 ## Properties
 

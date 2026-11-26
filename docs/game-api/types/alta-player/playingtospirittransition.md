@@ -19,9 +19,9 @@ Moves a player from Playing to Spirit when their unlock manager gains a current 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingToSpiritTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingToSpiritTransition()"}</code> | Creates a `PlayingToSpiritTransition` with default values. |
 
 ## Methods
 

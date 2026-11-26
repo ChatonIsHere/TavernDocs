@@ -20,9 +20,9 @@ Fluent helper for registering a type in a VContainer container, made by `contain
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Binder(IContainerBuilder container)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Binder(IContainerBuilder container)"}</code> | Creates a `Binder` from `container`. |
 
 ## Fields
 

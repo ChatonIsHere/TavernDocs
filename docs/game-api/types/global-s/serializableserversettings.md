@@ -18,10 +18,10 @@ Network form of `ServerSettings`: `ServerSettingsSync` writes the server's setti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializableServerSettings()"}</code> |
-| <Link id="m-ctor-2" /><code>{"SerializableServerSettings("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializableServerSettings()"}</code> | Creates a `SerializableServerSettings` from `stream`. |
+| <Link id="m-ctor-2" /><code>{"SerializableServerSettings("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Creates a `SerializableServerSettings` from `stream`. |
 
 ## Fields
 

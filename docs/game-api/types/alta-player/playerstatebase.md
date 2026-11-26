@@ -21,9 +21,9 @@ Base for a player state (alive, downed, dead, customising and so on). The player
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerStateBase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerStateBase()"}</code> | Creates a `PlayerStateBase` with default values. |
 
 ## Fields
 

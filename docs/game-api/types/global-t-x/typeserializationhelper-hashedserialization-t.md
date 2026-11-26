@@ -20,9 +20,9 @@ Serializer for `HashedGeneralValue` types, sent as their hash (0 for null). Made
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HashedSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HashedSerialization()"}</code> | Creates a `TypeSerializationHelper.HashedSerialization` with default values. |
 
 ## Methods
 

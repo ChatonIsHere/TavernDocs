@@ -20,9 +20,9 @@ A creature AI choice: an action, the target it applies to and how strongly it's 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActionTarget("}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float weight)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActionTarget("}<Link to="/game-api/types/alta-intelligence/iaction-intagent">{"IAction"}</Link>{"<TAgent> action, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{" target, float weight)"}</code> | Creates an `ActionTarget` from `action`, `target` and `weight`. |
 
 ## Fields
 

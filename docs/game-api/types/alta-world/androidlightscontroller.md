@@ -20,9 +20,9 @@ Client lights controller on Android: packs up to 8 lights into a global shader a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AndroidLightsController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AndroidLightsController()"}</code> | Creates an `AndroidLightsController` with default values. |
 
 ## Fields
 

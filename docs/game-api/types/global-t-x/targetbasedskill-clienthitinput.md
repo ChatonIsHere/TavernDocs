@@ -19,9 +19,9 @@ A tool hit as the client saw it (position, direction, damage, impact type), seri
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientHitInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientHitInput()"}</code> | Creates a `TargetBasedSkill.ClientHitInput` with default values. |
 
 ## Fields
 

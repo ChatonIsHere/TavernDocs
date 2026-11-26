@@ -21,6 +21,6 @@ Base for an Assets/Create/Township/Environmental menu entry that creates a `T` a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Environmental.ScriptableObject` with default values. |

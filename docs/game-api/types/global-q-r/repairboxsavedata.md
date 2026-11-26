@@ -22,9 +22,9 @@ Save data for `RepairBox` (version 5): the item costs, build state and what it s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RepairBoxSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RepairBoxSaveData()"}</code> | Creates a `RepairBoxSaveData` with default values. |
 
 ## Fields
 

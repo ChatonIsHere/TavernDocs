@@ -19,9 +19,9 @@ Serializable event raised by a `PullPickup` when it is pulled, with separate cli
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PullEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PullEvent()"}</code> | Creates a `PullEvent` with default values. |
 
 ## Used in
 

@@ -18,9 +18,9 @@ Client: updates every active `DistanceLODGroup` from the local player's position
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DistanceLODGroupManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DistanceLODGroupManager()"}</code> | Creates a `DistanceLODGroupManager` with default values. |
 
 ## Fields
 

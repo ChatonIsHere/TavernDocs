@@ -19,9 +19,9 @@ Value provider used by `JsonMinAttribute`: keeps a float property at or above `m
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonMinValueProvider(IValueProvider baseProvider, float min)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonMinValueProvider(IValueProvider baseProvider, float min)"}</code> | Creates a `JsonMinValueProvider` from `baseProvider` and `min`. |
 
 ## Fields
 

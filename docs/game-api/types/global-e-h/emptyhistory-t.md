@@ -19,9 +19,9 @@ Undo history that stores nothing: pushes, undos and redos do nothing. Use the sh
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmptyHistory()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmptyHistory()"}</code> | Creates an `EmptyHistory` with default values. |
 
 ## Properties
 

@@ -20,6 +20,6 @@ Editor menu entry for creating a `Garnisher` skill asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `Garnisher.Create` with default values. |

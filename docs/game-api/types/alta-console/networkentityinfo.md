@@ -18,9 +18,9 @@ A short summary of a network entity (ID and name) returned by console commands s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityInfo()"}</code> | Creates a `NetworkEntityInfo` with default values. |
 
 ## Properties
 

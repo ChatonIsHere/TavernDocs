@@ -20,9 +20,9 @@ Serializer for `string`. A null string is sent as empty.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StringSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StringSerialization()"}</code> | Creates a `TypeSerializationHelper.StringSerialization` with default values. |
 
 ## Methods
 

@@ -21,9 +21,9 @@ Marks a static class as a console command module. Its name becomes the word befo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModuleAttribute(string name, string description)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModuleAttribute(string name, string description)"}</code> | Creates a `ModuleAttribute` from `name` and `description`. |
 
 ## Properties
 

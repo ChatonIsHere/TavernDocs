@@ -18,9 +18,9 @@ Builds the in-game inspector's floating bubbles for a prefab: finds components w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BubbleInspector()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BubbleInspector()"}</code> | Creates a `BubbleInspector` with default values. |
 
 ## Fields
 

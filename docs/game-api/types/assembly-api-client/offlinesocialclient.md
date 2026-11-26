@@ -19,9 +19,9 @@ Offline stand-in for the friends client. Lists come back empty; changing friends
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineSocialClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineSocialClient()"}</code> | Creates an `OfflineSocialClient` with default values. |
 
 ## Methods
 

@@ -19,9 +19,9 @@ JSON converter that writes a `Vector4` as a four-number array and reads it back.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Vector4TypeConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Vector4TypeConverter()"}</code> | Creates a `Vector4TypeConverter` with default values. |
 
 ## Methods
 

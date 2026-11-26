@@ -21,9 +21,9 @@ Editor tool for prefab scenes: previews the sun, moon, sky and fog for a set tim
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PrefabSceneDayTimeManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PrefabSceneDayTimeManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -33,7 +33,7 @@ Editor tool for prefab scenes: previews the sun, moon, sky and fog for a set tim
 | Member | What it is |
 | --- | --- |
 | <Link id="m-btnconvert" /><code>{"private bool btnConvert"}</code> | Inspector button that converts the fog colour gradient each update while ticked. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-moonlight" /><code>{"private Light moonLight"}</code> | Moon light; found under the moon rotator if not set. |
 | <Link id="m-moonrotator" /><code>{"private Transform moonRotator"}</code> | Transform tagged `MoonRotator`. |
 | <Link id="m-settings" /><code>{"private "}<Link to="/game-api/types/alta-world/prefabscenesettings">{"PrefabSceneSettings"}</Link>{" settings"}</code> | Prefab scene settings with the debug time and sky curves. |

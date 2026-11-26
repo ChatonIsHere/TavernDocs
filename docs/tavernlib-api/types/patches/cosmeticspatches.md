@@ -20,9 +20,9 @@ Postfixes `ServerHostingGameMode.OnStartSucceeded` to load every cosmetic into m
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticsPatches()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticsPatches()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Methods
 

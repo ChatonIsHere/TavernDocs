@@ -21,9 +21,9 @@ Save data (version 1) for `MeshPlacement`: which placement asset it uses.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MeshPlacementSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MeshPlacementSaveData()"}</code> | Creates a `MeshPlacementSaveData` with default values. |
 
 ## Fields
 

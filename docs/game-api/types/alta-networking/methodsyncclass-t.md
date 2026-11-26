@@ -19,9 +19,9 @@ An entity network method whose handler gets a class instance to read into or wri
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MethodSyncClass("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method, "}<Link to="/game-api/types/alta-networking/recreateargumentmode">{"RecreateArgumentMode"}</Link>{" recreateArgumentMode = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MethodSyncClass("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, "}<Link to="/game-api/types/alta-networking/entitymessagetype">{"EntityMessageType"}</Link>{" messageType, "}<Link to="/game-api/types/alta-networking/serializemethod-t">{"SerializeMethod"}</Link>{"<T> method, "}<Link to="/game-api/types/alta-networking/recreateargumentmode">{"RecreateArgumentMode"}</Link>{" recreateArgumentMode = 0)"}</code> | Creates a `MethodSyncClass` from `entity`, `messageType`, `method` and `recreateArgumentMode`. |
 
 ## Fields
 

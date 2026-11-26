@@ -18,9 +18,9 @@ A prefab and the local position and rotation to spawn it at. Used for the pieces
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PrefabSpawnPosition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PrefabSpawnPosition()"}</code> | Creates a `PrefabSpawnPosition` with default values. |
 
 ## Fields
 

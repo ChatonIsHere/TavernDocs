@@ -19,9 +19,9 @@ Loot entries in a `RarityList` that apply for one festivity (a seasonal event). 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FestivityList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FestivityList()"}</code> | Creates a `LootTable.FestivityList` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ A melting model inside the recycler's smelting area and the heat points touching
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MeltingModelReference("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MeltingModelReference("}<Link to="/game-api/types/alta-crafting/meltingmodel">{"MeltingModel"}</Link>{" meltingModel)"}</code> | Creates a `Recycler.MeltingModelReference` from `meltingModel`. |
 
 ## Properties
 

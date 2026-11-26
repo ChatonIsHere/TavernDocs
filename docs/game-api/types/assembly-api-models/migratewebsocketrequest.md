@@ -18,9 +18,9 @@ Request body carrying a token for moving a WebSocket session, probably to anothe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MigrateWebsocketRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MigrateWebsocketRequest()"}</code> | Creates a `MigrateWebsocketRequest` with default values. |
 
 ## Properties
 

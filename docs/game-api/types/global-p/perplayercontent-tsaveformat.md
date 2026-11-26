@@ -20,9 +20,9 @@ Server: a save file that belongs to one player (by user ID), loaded whether or n
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PerPlayerContent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PerPlayerContent()"}</code> | Creates a `PerPlayerContent` with default values. |
 
 ## Properties
 

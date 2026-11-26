@@ -18,9 +18,9 @@ The HTTP layer under `IHighLevelApiClient`: one method per endpoint of Alta's we
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LowLevelApiClient(string baseUrl, string userAgent = null, float timeOutInSeconds = 40)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LowLevelApiClient(string baseUrl, string userAgent = null, float timeOutInSeconds = 40)"}</code> | Creates a `LowLevelApiClient` from `baseUrl`, `userAgent` and `timeOutInSeconds`. |
 
 ## Fields
 

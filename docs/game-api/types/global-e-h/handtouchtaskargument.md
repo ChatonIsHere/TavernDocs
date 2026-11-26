@@ -21,9 +21,9 @@ Game task action argument sent when a player's hand touches a hover point on an 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandTouchTaskArgument(uint hash)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandTouchTaskArgument(uint hash)"}</code> | Creates a `HandTouchTaskArgument` from `hash`. |
 
 ## Properties
 

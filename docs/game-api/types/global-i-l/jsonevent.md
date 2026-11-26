@@ -19,9 +19,9 @@ Obsolete analytics event for Xsolla events, with a user, event type and UTC time
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonEvent(string user_id, "}<Link to="/game-api/types/global-t-x/xsollaevent">{"XsollaEvent"}</Link>{" event_type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonEvent(string user_id, "}<Link to="/game-api/types/global-t-x/xsollaevent">{"XsollaEvent"}</Link>{" event_type)"}</code> | Creates a `JsonEvent` from `user_id` and `event_type`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Server: small HTTP server on its own thread that serves the save cache at `/cach
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebServerThread(int port = 1761)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebServerThread(int port = 1761)"}</code> | Creates a `WebServerThread` from `port`. |
 
 ## Fields
 

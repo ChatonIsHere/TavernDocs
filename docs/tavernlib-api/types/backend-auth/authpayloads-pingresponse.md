@@ -20,25 +20,25 @@ The auth port's answer to a ping: status `pong`, the server name, whether a pass
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PingResponse(string serverName, bool passwordRequired, bool whitelistEnabled, int gamePort, int webPort, int consolePort, string modsHash, int? modsCount)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PingResponse(string serverName, bool passwordRequired, bool whitelistEnabled, int gamePort, int webPort, int consolePort, string modsHash, int? modsCount)"}</code> | Sets every field of the ping response. |
 
 ## Properties
 
 <details>
 <summary>9 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-consoleport" /><code>{"private int ConsolePort { get; set; }"}</code> |
-| <Link id="m-gameport" /><code>{"private int GamePort { get; set; }"}</code> |
-| <Link id="m-modscount" /><code>{"private int? ModsCount { get; set; }"}</code> |
-| <Link id="m-modshash" /><code>{"private string ModsHash { get; set; }"}</code> |
-| <Link id="m-passwordrequired" /><code>{"private bool PasswordRequired { get; set; }"}</code> |
-| <Link id="m-pong" /><code>{"private string Pong { get; }"}</code> |
-| <Link id="m-servername" /><code>{"private string ServerName { get; set; }"}</code> |
-| <Link id="m-webport" /><code>{"private int WebPort { get; set; }"}</code> |
-| <Link id="m-whitelistenabled" /><code>{"private bool WhitelistEnabled { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-consoleport" /><code>{"private int ConsolePort { get; set; }"}</code> | The remote console port, which the launcher finds through this ping. |
+| <Link id="m-gameport" /><code>{"private int GamePort { get; set; }"}</code> | The game port. |
+| <Link id="m-modscount" /><code>{"private int? ModsCount { get; set; }"}</code> | Number of enabled server mods, or null if `Mods/` couldn't be read. |
+| <Link id="m-modshash" /><code>{"private string ModsHash { get; set; }"}</code> | Hash of the server's mods, or null if `Mods/` couldn't be read. |
+| <Link id="m-passwordrequired" /><code>{"private bool PasswordRequired { get; set; }"}</code> | Whether the server has a password. |
+| <Link id="m-pong" /><code>{"private string Pong { get; }"}</code> | Always `pong`, sent as `status`. |
+| <Link id="m-servername" /><code>{"private string ServerName { get; set; }"}</code> | The server's name. |
+| <Link id="m-webport" /><code>{"private int WebPort { get; set; }"}</code> | The web port. |
+| <Link id="m-whitelistenabled" /><code>{"private bool WhitelistEnabled { get; set; }"}</code> | Whether the whitelist is on. |
 
 </details>

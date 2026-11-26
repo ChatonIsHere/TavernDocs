@@ -20,6 +20,6 @@ Editor menu entry that creates a new `StaticEnvironmentPiece` asset. Not used at
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StaticEnvironmentPiece.Create` with default values. |

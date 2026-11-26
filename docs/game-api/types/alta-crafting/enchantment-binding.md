@@ -19,9 +19,9 @@ One rule in an enchantment: a set of triggers tied to the effects they set off. 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Binding()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Binding()"}</code> | Creates an `Enchantment.Binding` with default values. |
 
 ## Fields
 

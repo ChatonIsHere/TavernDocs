@@ -18,9 +18,9 @@ Queue that runs character cosmetic packing one `CosmeticPacker` at a time. Clien
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticPackScheduler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticPackScheduler()"}</code> | Creates a `CosmeticPackScheduler` with default values. |
 
 ## Fields
 

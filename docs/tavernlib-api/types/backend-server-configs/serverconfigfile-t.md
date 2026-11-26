@@ -20,18 +20,18 @@ The base class for TavernLib's JSON files. Reads into a `T`, writes through a te
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ServerConfigFile(string filePath)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ServerConfigFile(string filePath)"}</code> | Stores the path of the config file. |
 
 ## Fields
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-sync" /><code>{"private readonly object _sync"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-sync" /><code>{"private readonly object _sync"}</code> | Lock that keeps reads and writes of the file from interleaving. |
 
 </details>
 
@@ -45,10 +45,10 @@ The base class for TavernLib's JSON files. Reads into a `T`, writes through a te
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-filename" /><code>{"private string FileName { get; }"}</code> |
-| <Link id="m-filepath" /><code>{"private string FilePath { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-filename" /><code>{"private string FileName { get; }"}</code> | The file's name without its folder, used in log messages. |
+| <Link id="m-filepath" /><code>{"private string FilePath { get; set; }"}</code> | Path of the config file on disk. |
 
 </details>
 
@@ -65,9 +65,9 @@ The base class for TavernLib's JSON files. Reads into a `T`, writes through a te
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-accept" /><code>{"private T Accept(T config)"}</code> |
-| <Link id="m-write" /><code>{"private void Write(T config)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-accept" /><code>{"private T Accept(T config)"}</code> | Makes a freshly read config `LastRead` and marks the file readable. |
+| <Link id="m-write" /><code>{"private void Write(T config)"}</code> | Writes the config to a temp file, then swaps it in and keeps the old file as `.bak`. |
 
 </details>

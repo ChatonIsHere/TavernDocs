@@ -20,9 +20,9 @@ The exception the mod manager throws for a problem it can describe, such as a ba
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModManagerException(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModManagerException(string message)"}</code> | Creates the exception with the given message. |
 
 ## Methods
 

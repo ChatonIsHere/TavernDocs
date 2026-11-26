@@ -20,9 +20,9 @@ Startup service (VContainer) that finds Unity's XR manager and starts or shuts d
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"XRManagerSettingsController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"XRManagerSettingsController()"}</code> | Creates a `XRManagerSettingsController` with default values. |
 
 ## Fields
 

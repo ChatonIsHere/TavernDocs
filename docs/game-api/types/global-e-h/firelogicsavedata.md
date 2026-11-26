@@ -21,9 +21,9 @@ Save data for `FireLogic`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FireLogicSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FireLogicSaveData()"}</code> | Creates a `FireLogicSaveData` with default values. |
 
 ## Fields
 

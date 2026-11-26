@@ -20,6 +20,6 @@ Editor menu item for making a `Facing2DSense` asset. Does nothing at runtime.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `Facing2DSense.Create` with default values. |

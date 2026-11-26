@@ -21,9 +21,9 @@ Save data for a `TradeVendor` (version 2): just the vendor's owner.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TradeVendorSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TradeVendorSaveData()"}</code> | Creates a `TradeVendorSaveData` with default values. |
 
 ## Fields
 

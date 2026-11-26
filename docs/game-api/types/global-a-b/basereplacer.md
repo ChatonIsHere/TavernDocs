@@ -19,9 +19,9 @@ Base class for a replacer that is tied to a target string given in the construct
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BaseReplacer(string target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BaseReplacer(string target)"}</code> | Creates a `BaseReplacer` from `target`. |
 
 ## Properties
 

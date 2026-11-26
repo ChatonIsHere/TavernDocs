@@ -19,9 +19,9 @@ GPU check for whether one triangle of a mesh can be seen from a point: renders t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RenderingHandler(int renderResolution, float distance, Mesh sourceMesh, Mesh triangleMesh)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RenderingHandler(int renderResolution, float distance, Mesh sourceMesh, Mesh triangleMesh)"}</code> | Creates a `TriangleVisibilityUtility.RenderingHandler` from `renderResolution`, `distance`, `sourceMesh` and `triangleMesh`. |
 
 ## Fields
 

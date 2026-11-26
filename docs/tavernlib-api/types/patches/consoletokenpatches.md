@@ -24,11 +24,11 @@ Harmony patches on the game's websocket console (`ServerConsoleManager`, `WebSoc
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-authorizing" /><code>{"private static "}<Link to="/game-api/types/alta-console/websocketcommandhandler">{"WebSocketCommandHandler"}</Link>{" _authorizing"}</code> |
-| <Link id="m-verdict" /><code>{"private static bool? _verdict"}</code> |
-| <Link id="m-connectionfield" /><code>{"private static readonly FieldInfo ConnectionField"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-authorizing" /><code>{"private static "}<Link to="/game-api/types/alta-console/websocketcommandhandler">{"WebSocketCommandHandler"}</Link>{" _authorizing"}</code> | The websocket handler currently inside `ProcessAuthorization` on this thread, or null. |
+| <Link id="m-verdict" /><code>{"private static bool? _verdict"}</code> | This thread's login verdict from `CheckConsoleLogin`, which `KeepConsoleVerdict` writes back over the result. |
+| <Link id="m-connectionfield" /><code>{"private static readonly FieldInfo ConnectionField"}</code> | Reflection handle on the private `connection` field of `WebSocketCommandHandler`, used to close a session. |
 
 </details>
 
@@ -49,13 +49,13 @@ Harmony patches on the game's websocket console (`ServerConsoleManager`, `WebSoc
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addressof" /><code>{"private static string AddressOf("}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{" handler)"}</code> |  |
-| <Link id="m-close" /><code>{"private static int Close(Func<"}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{", bool> which, string whose)"}</code> |  |
+| <Link id="m-addressof" /><code>{"private static string AddressOf("}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{" handler)"}</code> | The session's remote address without the port, or null if it isn't a websocket session. |
+| <Link id="m-close" /><code>{"private static int Close(Func<"}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{", bool> which, string whose)"}</code> | Closes every connected websocket session the filter picks and returns how many it closed. |
 | <Link id="m-closeownersessions" /><code>{"internal static int CloseOwnerSessions("}<Link to="/game-api/types/alta-console/websocketcommandhandler">{"WebSocketCommandHandler"}</Link>{" keep)"}</code> | Internal: closes every websocket console session logged in with the owner token, except the one given. Returns how many it closed. |
 | <Link id="m-closesessions" /><code>{"internal static int CloseSessions(string id)"}</code> | Internal: closes every websocket console session of the named token with that id. Returns how many. Used by `token revoke`. |
-| <Link id="m-connectedhandlers" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"[] ConnectedHandlers()"}</code> |  |
+| <Link id="m-connectedhandlers" /><code>{"private static "}<Link to="/game-api/types/global-i-l/iremoteconsolehandler">{"IRemoteConsoleHandler"}</Link>{"[] ConnectedHandlers()"}</code> | Copies the list of connected console handlers, retrying when the game changes it from another thread. |
 | <Link id="m-countsessions" /><code>{"internal static int CountSessions(string id)"}</code> | Internal: how many connected console sessions are logged in with the named token with that id. |
 | <Link id="m-start" /><code>{"internal static void Start()"}</code> | Internal, server: writes console connects and disconnects to the token log and adds `RefusedLoginFilter` to NLog once the app has started. |
-| <Link id="m-wouldmatchunrestricted" /><code>{"private static bool WouldMatchUnrestricted(string command, "}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" user)"}</code> |  |
+| <Link id="m-wouldmatchunrestricted" /><code>{"private static bool WouldMatchUnrestricted(string command, "}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" user)"}</code> | True when the command would be found if the named token's own limits were left out, which makes a failure count as refused. |
 
 </details>

@@ -21,9 +21,9 @@ Saved component that runs a timer for a set duration and fires an event when it 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimerLogic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimerLogic()"}</code> | Creates a `TimerLogic` with default values. |
 
 ## Fields
 

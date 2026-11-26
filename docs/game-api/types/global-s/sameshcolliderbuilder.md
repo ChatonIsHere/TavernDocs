@@ -19,9 +19,9 @@ Editor component from the SA Collider Builder tool that builds mesh colliders fo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SAMeshColliderBuilder()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SAMeshColliderBuilder()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

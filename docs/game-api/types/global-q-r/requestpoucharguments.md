@@ -18,9 +18,9 @@ Network message from `PickupContainer` asking to pull a pouch of items out for a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RequestPouchArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" interactor, bool isFull)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RequestPouchArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" interactor, bool isFull)"}</code> | Creates a `RequestPouchArguments` from `interactor` and `isFull`. |
 
 ## Fields
 

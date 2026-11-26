@@ -20,6 +20,6 @@ Editor menu folder `3rd Party/Vertex Painter Pro`: menu item classes inherit it 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Vertex_Painter_Pro()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Vertex_Painter_Pro()"}</code> | Creates an `AltaMenuItemBase._3rd_Party.Vertex_Painter_Pro` with default values. |

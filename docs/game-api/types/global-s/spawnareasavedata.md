@@ -21,9 +21,9 @@ Save data for a `SpawnArea` (version 1): its size and placement settings.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnAreaSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnAreaSaveData()"}</code> | Creates a `SpawnAreaSaveData` with default values. |
 
 ## Fields
 

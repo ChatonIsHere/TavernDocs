@@ -19,6 +19,6 @@ A **class** in `Root.Township`, `Features.Main_Menu.Scripts.TalemShop.Errors`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnknownPurchaseExceptionError(Exception exception)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnknownPurchaseExceptionError(Exception exception)"}</code> | Creates an `UnknownPurchaseExceptionError` from `exception`. |

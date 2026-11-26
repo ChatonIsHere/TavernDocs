@@ -20,9 +20,9 @@ A notification list entry for an invite to join a group (server), with accept an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GroupInviteNotification("}<Link to="/game-api/types/assembly-api-client/incominggroupinvite">{"IncomingGroupInvite"}</Link>{" groupInvite, "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GroupInviteNotification("}<Link to="/game-api/types/assembly-api-client/incominggroupinvite">{"IncomingGroupInvite"}</Link>{" groupInvite, "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> | Creates a `GroupInviteNotification` from `groupInvite` and `panel`. |
 
 ## Fields
 

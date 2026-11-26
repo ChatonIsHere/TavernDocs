@@ -19,9 +19,9 @@ One chest's loot module for the `ow-loot` command.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LootData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LootData()"}</code> | Creates a `WackyCommandModule.LootData` with default values. |
 
 ## Fields
 

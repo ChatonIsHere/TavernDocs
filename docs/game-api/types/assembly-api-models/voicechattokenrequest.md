@@ -18,9 +18,9 @@ Body of an Alta web API request for a voice chat token, to log in or to join a s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VoiceChatTokenRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VoiceChatTokenRequest()"}</code> | Creates a `VoiceChatTokenRequest` with default values. |
 
 ## Properties
 

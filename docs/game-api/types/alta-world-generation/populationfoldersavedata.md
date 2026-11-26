@@ -21,9 +21,9 @@ Save data (version 2) for a `PopulationFolder`: its population definition, count
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationFolderSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationFolderSaveData()"}</code> | Creates a `PopulationFolderSaveData` with default values. |
 
 ## Fields
 

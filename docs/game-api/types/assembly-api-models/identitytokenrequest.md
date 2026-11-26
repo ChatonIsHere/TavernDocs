@@ -18,9 +18,9 @@ Body of the Alta web API call that generates an identity token (`GenerateIdentit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IdentityTokenRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IdentityTokenRequest()"}</code> | Creates an `IdentityTokenRequest` with default values. |
 
 ## Properties
 

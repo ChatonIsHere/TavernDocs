@@ -19,9 +19,9 @@ Makes boiling particle materials for a liquid, setting its colour and glossiness
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoilingParticlesMaterialCreator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoilingParticlesMaterialCreator()"}</code> | Creates a `BoilingParticlesMaterialCreator` with default values. |
 
 ## Fields
 

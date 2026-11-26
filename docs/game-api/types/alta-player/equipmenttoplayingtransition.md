@@ -19,9 +19,9 @@ Leaves equipment mode back to Playing, either through the quick access menu or w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EquipmentToPlayingTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EquipmentToPlayingTransition()"}</code> | Creates an `EquipmentToPlayingTransition` with default values. |
 
 ## Methods
 

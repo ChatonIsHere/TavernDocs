@@ -18,9 +18,9 @@ Leaderboard info returned by the leaderboard console command list.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LeaderboardDefinitionDataInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LeaderboardDefinitionDataInfo()"}</code> | Creates a `LeaderboardDefinitionDataInfo` with default values. |
 
 ## Properties
 

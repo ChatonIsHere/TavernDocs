@@ -18,9 +18,9 @@ A material and LOD level pair, used as a key by `StaticObjectCombiner` to group 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialLOD(Material material, int level)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialLOD(Material material, int level)"}</code> | Creates a `MaterialLOD` from `material` and `level`. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Body for sending a user a verification email.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VerificationEmailRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VerificationEmailRequest()"}</code> | Creates a `VerificationEmailRequest` with default values. |
 
 ## Properties
 

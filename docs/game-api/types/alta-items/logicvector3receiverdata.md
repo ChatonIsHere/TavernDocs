@@ -21,9 +21,9 @@ Save data for `LogicVector3Receiver`: which Vector3 sender it listens to.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicVector3ReceiverData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicVector3ReceiverData()"}</code> | Creates a `LogicVector3ReceiverData` with default values. |
 
 ## Properties
 

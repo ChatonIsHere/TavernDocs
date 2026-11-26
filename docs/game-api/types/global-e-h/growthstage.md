@@ -19,9 +19,9 @@ One stage in a `GrowthDefinition` (plants, trees and other things that grow): wh
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrowthStage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrowthStage()"}</code> | Creates a `GrowthStage` with default values. |
 
 ## Fields
 

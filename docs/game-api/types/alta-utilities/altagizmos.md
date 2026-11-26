@@ -18,9 +18,9 @@ Editor gizmo helpers. The drawing code is stripped from this build.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaGizmos()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaGizmos()"}</code> | Creates an `AltaGizmos` with default values. |
 
 ## Methods
 

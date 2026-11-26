@@ -21,9 +21,9 @@ Save data for a `HeatSourceBase` (save structure version 2).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HeatSourceBaseSaveData()"}</code> | Creates a `HeatSourceBaseSaveData` with default values. |
 
 ## Fields
 

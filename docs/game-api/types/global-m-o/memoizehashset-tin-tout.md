@@ -19,9 +19,9 @@ A cache that runs an evaluate function once per input and keeps only the inputs 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"("}<Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate, IEqualityComparer<TIn> comparer = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"("}<Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate, IEqualityComparer<TIn> comparer = null)"}</code> | Creates a `MemoizeHashset` from `evaluate` and `comparer`. |
 
 ## Fields
 

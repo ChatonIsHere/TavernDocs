@@ -19,9 +19,9 @@ Animator state machine behaviour that sets an integer parameter to a random valu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RandomEntrySelect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RandomEntrySelect()"}</code> | Creates a `RandomEntrySelect` with default values. |
 
 ## Fields
 

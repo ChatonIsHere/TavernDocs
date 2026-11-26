@@ -21,9 +21,9 @@ Obsolete base attribute for automatic member syncing.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected SyncAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected SyncAttribute()"}</code> | Creates a `SyncAttribute` with default values. |
 
 ## Properties
 

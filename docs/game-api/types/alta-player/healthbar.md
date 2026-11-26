@@ -19,9 +19,9 @@ Client debug health bar: a quad above a creature that shows its health stat. Mad
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HealthBar(Transform enemy, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" healthStat, Shader shader, Vector3 barScale, float verticalOffset, int _Progress)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HealthBar(Transform enemy, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" healthStat, Shader shader, Vector3 barScale, float verticalOffset, int _Progress)"}</code> | Creates a `HealthBar` from `enemy`, `healthStat`, `shader`, `barScale`, `verticalOffset` and `_Progress`. |
 
 ## Fields
 

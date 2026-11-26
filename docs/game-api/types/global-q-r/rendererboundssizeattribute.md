@@ -19,6 +19,6 @@ Inspector attribute with no members; probably drives an editor drawer that shows
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RendererBoundsSizeAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RendererBoundsSizeAttribute()"}</code> | Creates a `RendererBoundsSizeAttribute` with default values. |

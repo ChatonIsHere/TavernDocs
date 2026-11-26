@@ -21,9 +21,9 @@ Save data for `MicroTutorialFaceOrb`: the orb type and the tutorial it starts.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialFaceOrbSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialFaceOrbSaveData()"}</code> | Creates a `MicroTutorialFaceOrbSaveData` with default values. |
 
 ## Fields
 

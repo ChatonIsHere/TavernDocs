@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Platform.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Platform()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Platform()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Platform` with default values. |

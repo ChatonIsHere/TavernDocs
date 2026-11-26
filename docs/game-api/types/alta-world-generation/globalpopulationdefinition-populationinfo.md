@@ -19,9 +19,9 @@ A snapshot of a global population for listing: hash, name, how many are spawned 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationInfo()"}</code> | Creates a `GlobalPopulationDefinition.PopulationInfo` with default values. |
 
 ## Properties
 

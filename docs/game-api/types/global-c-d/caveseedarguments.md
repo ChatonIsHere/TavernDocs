@@ -18,9 +18,9 @@ Message the cave generator (`GenerationBase`) sends to clients so they generate 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CaveSeedArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" layerStreamer, uint seed, uint layer, Vector2 entrance, Vector2 entranceDirection)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CaveSeedArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" layerStreamer, uint seed, uint layer, Vector2 entrance, Vector2 entranceDirection)"}</code> | Creates a `CaveSeedArguments` from `layerStreamer`, `seed`, `layer`, `entrance` and `entranceDirection`. |
 
 ## Fields
 

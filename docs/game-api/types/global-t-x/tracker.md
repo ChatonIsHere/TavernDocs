@@ -21,9 +21,9 @@ Gives a network entity a saved name so it can be found again by that name, even 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Tracker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Tracker()"}</code> | Creates a `Tracker` with default values. |
 
 ## Fields
 

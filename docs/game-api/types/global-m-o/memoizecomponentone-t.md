@@ -19,9 +19,9 @@ A `MemoizeOne` that caches `GetComponent<T>` for the last component passed in, c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MemoizeComponentOne()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MemoizeComponentOne()"}</code> | Creates a `MemoizeComponentOne` with default values. |
 
 ## Used in
 

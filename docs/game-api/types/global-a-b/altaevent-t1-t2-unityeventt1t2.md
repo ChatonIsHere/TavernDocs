@@ -20,9 +20,9 @@ Two-argument event that runs both inspector-set UnityEvent listeners and C# list
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> | Creates an `AltaEvent` with default values. |
 
 ## Fields
 

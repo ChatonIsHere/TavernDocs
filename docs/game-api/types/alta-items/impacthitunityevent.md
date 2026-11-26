@@ -20,6 +20,6 @@ Serializable UnityEvent that passes an `ImpactHitWithTool`, for wiring hits in t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ImpactHitUnityevent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ImpactHitUnityevent()"}</code> | Creates an `ImpactHitUnityevent` with default values. |

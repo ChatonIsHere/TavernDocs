@@ -20,6 +20,6 @@ Editor menu entry that creates a `VirtualKeyboardSetup` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Virtual_Keyboard_Setup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Virtual_Keyboard_Setup()"}</code> | Creates a `VirtualKeyboardSetup.Virtual_Keyboard_Setup` with default values. |

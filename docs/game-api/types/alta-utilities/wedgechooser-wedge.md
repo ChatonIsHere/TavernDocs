@@ -19,9 +19,9 @@ One choice in a `WedgeChooser`: prefabs for a spline piece that turns by a given
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Wedge()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Wedge()"}</code> | Creates a `WedgeChooser.Wedge` with default values. |
 
 ## Fields
 

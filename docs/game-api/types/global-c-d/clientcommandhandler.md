@@ -19,9 +19,9 @@ Server side handler for one remote console connection: reads framed commands fro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientCommandHandler(Socket socketToClient, "}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" userInfo)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientCommandHandler(Socket socketToClient, "}<Link to="/game-api/types/assembly-api-models/userinfowithpermissions">{"UserInfoWithPermissions"}</Link>{" userInfo)"}</code> | Creates a `ClientCommandHandler` from `socketToClient` and `userInfo`. |
 
 ## Fields
 

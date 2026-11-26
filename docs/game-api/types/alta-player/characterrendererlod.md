@@ -18,10 +18,10 @@ Internal: one renderer in a character's LOD list, with a flag for whether it use
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CharacterRendererLOD(Renderer renderer)"}</code> |
-| <Link id="m-ctor-2" /><code>{"CharacterRendererLOD(Renderer renderer, bool isUsingShell)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CharacterRendererLOD(Renderer renderer)"}</code> | Creates a `CharacterRendererLOD` from `renderer` and `isUsingShell`. |
+| <Link id="m-ctor-2" /><code>{"CharacterRendererLOD(Renderer renderer, bool isUsingShell)"}</code> | Creates a `CharacterRendererLOD` from `renderer` and `isUsingShell`. |
 
 ## Fields
 

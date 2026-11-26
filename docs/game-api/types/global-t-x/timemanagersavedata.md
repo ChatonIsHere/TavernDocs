@@ -21,9 +21,9 @@ Current save data for `TimeManager` (version 3): the world's timeline time and w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimeManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimeManagerSaveData()"}</code> | Creates a `TimeManagerSaveData` with default values. |
 
 ## Fields
 

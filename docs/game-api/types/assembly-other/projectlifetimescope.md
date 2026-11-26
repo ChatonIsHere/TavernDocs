@@ -21,9 +21,9 @@ The root VContainer dependency injection scope for the whole game. Runs first (e
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProjectLifetimeScope()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProjectLifetimeScope()"}</code> | Creates a `ProjectLifetimeScope` with default values. |
 
 ## Fields
 

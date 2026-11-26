@@ -19,9 +19,9 @@ One auto focus sample point on the hand camera viewfinder: a marker renderer and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FocusPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FocusPoint()"}</code> | Creates a `FocusPuller.FocusPoint` with default values. |
 
 ## Fields
 

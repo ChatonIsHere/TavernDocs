@@ -19,10 +19,10 @@ Message data for `PositionRestrictor` syncs (reset location, haptics, item regis
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SyncArgs("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isEnabled)"}</code> |
-| <Link id="m-ctor-2" /><code>{"SyncArgs("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isEnabled, Vector3 position)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SyncArgs("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isEnabled)"}</code> | Creates a `PositionRestrictor.SyncArgs` from `entity`, `isEnabled` and `position`. |
+| <Link id="m-ctor-2" /><code>{"SyncArgs("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, bool isEnabled, Vector3 position)"}</code> | Creates a `PositionRestrictor.SyncArgs` from `entity`, `isEnabled` and `position`. |
 
 ## Fields
 

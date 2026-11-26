@@ -20,9 +20,9 @@ Editor menu entry that creates an `ImportSettings` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ImportSettings.Create` with default values. |
 
 ## Properties
 

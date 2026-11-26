@@ -19,9 +19,9 @@ JSON property attribute that clamps an int between a minimum and maximum wheneve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonRangeAttribute(int min, int max)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonRangeAttribute(int min, int max)"}</code> | Creates a `JsonRangeAttribute` from `min` and `max`. |
 
 ## Fields
 

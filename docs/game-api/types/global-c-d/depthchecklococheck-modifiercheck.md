@@ -19,9 +19,9 @@ Per-player state in a `DepthCheckLocoCheck`: the surface height and how deep the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModifierCheck(Bounds bounds)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModifierCheck(Bounds bounds)"}</code> | Creates a `DepthCheckLocoCheck.ModifierCheck` from `bounds`. |
 
 ## Properties
 

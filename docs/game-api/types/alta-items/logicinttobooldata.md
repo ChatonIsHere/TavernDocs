@@ -21,9 +21,9 @@ Save data for `LogicIntToBool`, which turns an int input into a bool.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicIntToBoolData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicIntToBoolData()"}</code> | Creates a `LogicIntToBoolData` with default values. |
 
 ## Fields
 

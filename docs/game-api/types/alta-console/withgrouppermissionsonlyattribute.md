@@ -19,9 +19,9 @@ Console requirement: the caller needs all the listed group permissions, on any s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WithGroupPermissionsOnlyAttribute(params "}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] groups)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WithGroupPermissionsOnlyAttribute(params "}<Link to="/game-api/types/assembly-api-models/grouppermissions">{"GroupPermissions"}</Link>{"[] groups)"}</code> | Creates a `WithGroupPermissionsOnlyAttribute` from `groups`. |
 
 ## Properties
 

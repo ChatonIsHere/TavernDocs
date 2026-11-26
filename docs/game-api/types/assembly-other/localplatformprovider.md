@@ -18,9 +18,9 @@ Internal: works out which platform the game is running on. In this build the Que
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LocalPlatformProvider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LocalPlatformProvider()"}</code> | Creates a `LocalPlatformProvider` with default values. |
 
 ## Methods
 

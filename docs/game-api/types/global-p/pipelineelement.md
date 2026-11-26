@@ -19,9 +19,9 @@ Base class for one step in an object processing pipeline that turns an input obj
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected PipelineElement()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PipelineElement()"}</code> | Creates a `PipelineElement` with default values. |
 
 ## Properties
 

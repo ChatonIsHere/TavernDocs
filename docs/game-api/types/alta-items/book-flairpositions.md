@@ -19,9 +19,9 @@ Private: the attach points on a `Book` model for cover decorations (edges, spine
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FlairPositions()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FlairPositions()"}</code> | Creates a `Book.FlairPositions` with default values. |
 
 ## Fields
 

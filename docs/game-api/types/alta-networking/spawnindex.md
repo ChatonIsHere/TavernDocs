@@ -18,9 +18,9 @@ Per-entity counter that orders spawns and despawns, so clients drop destroy mess
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnIndex()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnIndex()"}</code> | Creates a `SpawnIndex` with default values. |
 
 ## Fields
 

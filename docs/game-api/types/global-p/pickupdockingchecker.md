@@ -18,9 +18,9 @@ Tracks which dock a held pickup is hovering over, fires hover events, plays hapt
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupDockingChecker("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupDockingChecker("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Creates a `PickupDockingChecker` from `pickup`. |
 
 ## Fields
 

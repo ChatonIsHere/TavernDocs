@@ -19,9 +19,9 @@ What a mod record says is installed for one target.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InstalledTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InstalledTarget()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 

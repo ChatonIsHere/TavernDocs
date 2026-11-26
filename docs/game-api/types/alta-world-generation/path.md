@@ -21,9 +21,9 @@ One direction of an `Edge` in the forest generator's node graph, with links to t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Path("}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, bool isA)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Path("}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, bool isA)"}</code> | Creates a `Path` from `edge` and `isA`. |
 
 ## Properties
 

@@ -18,9 +18,9 @@ Line drawn between two skill orbs (or an orb and the shrine's ray origin) on a `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SkillOrbConnectionline(uint entityFromIdentifier, uint entityToIdentifier, "}<Link to="/game-api/types/global-s/skillshrine">{"SkillShrine"}</Link>{" shrine)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SkillOrbConnectionline(uint entityFromIdentifier, uint entityToIdentifier, "}<Link to="/game-api/types/global-s/skillshrine">{"SkillShrine"}</Link>{" shrine)"}</code> | Creates a `SkillOrbConnectionline` from `entityFromIdentifier`, `entityToIdentifier` and `shrine`. |
 
 ## Fields
 

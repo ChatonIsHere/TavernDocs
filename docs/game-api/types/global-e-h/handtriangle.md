@@ -18,9 +18,9 @@ Three transforms on a hand that form a triangle, used by `FingerTipSettings` to 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandTriangle()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandTriangle()"}</code> | Creates a `HandTriangle` with default values. |
 
 ## Fields
 

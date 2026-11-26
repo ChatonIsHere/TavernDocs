@@ -18,9 +18,9 @@ VContainer installer for analytics: registers `AnalyticsService` and the `AltaAn
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnalyticsInstaller()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnalyticsInstaller()"}</code> | Creates an `AnalyticsInstaller` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ What `Roles.RolesChanged` hands its handlers: one user whose roles in `users.jso
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RolesChange(string username, IReadOnlyList<string> oldRoles, IReadOnlyList<string> newRoles)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RolesChange(string username, IReadOnlyList<string> oldRoles, IReadOnlyList<string> newRoles)"}</code> | Sets the username and the roles before and after the change. |
 
 ## Properties
 

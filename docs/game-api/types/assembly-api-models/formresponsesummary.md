@@ -19,9 +19,9 @@ Short info about a submitted form response, without the answers.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FormResponseSummary()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FormResponseSummary()"}</code> | Creates a `FormResponseSummary` with default values. |
 
 ## Properties
 

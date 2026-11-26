@@ -19,9 +19,9 @@ Spawn data passed to things spawned on the river map during forest generation, c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverNodeMapSpawnData("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" node, "}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" edge, bool isGenerating)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverNodeMapSpawnData("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" node, "}<Link to="/game-api/types/alta-world-generation/riverpath">{"RiverPath"}</Link>{" edge, bool isGenerating)"}</code> | Creates a `RiverNodeMapSpawnData` from `forest`, `node`, `edge` and `isGenerating`. |
 
 ## Properties
 

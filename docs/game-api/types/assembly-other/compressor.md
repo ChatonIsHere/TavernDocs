@@ -19,9 +19,9 @@ A dummy `Stream` that reads and writes at once but stores nothing. Code passes `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Compressor()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Compressor()"}</code> | Creates a `Compressor` with default values. |
 
 ## Properties
 

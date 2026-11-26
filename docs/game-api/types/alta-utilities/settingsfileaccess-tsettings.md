@@ -20,11 +20,11 @@ Loads a settings class from a JSON file (with `Resources` defaults), watches the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SettingsFileAccess(string databaseIdentifier)"}</code> |
-| <Link id="m-ctor-2" /><code>{"SettingsFileAccess("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string name = null)"}</code> |
-| <Link id="m-ctor-3" /><code>{"SettingsFileAccess()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SettingsFileAccess(string databaseIdentifier)"}</code> | Creates a `SettingsFileAccess` with default values. |
+| <Link id="m-ctor-2" /><code>{"SettingsFileAccess("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string name = null)"}</code> | Creates a `SettingsFileAccess` with default values. |
+| <Link id="m-ctor-3" /><code>{"SettingsFileAccess()"}</code> | Creates a `SettingsFileAccess` with default values. |
 
 ## Fields
 

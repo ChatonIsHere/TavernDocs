@@ -20,9 +20,9 @@ One mod a joining player is missing or has the wrong version of, as sent in the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RequiredMod()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RequiredMod()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 

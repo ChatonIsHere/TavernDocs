@@ -19,9 +19,9 @@ Sets a rigidbody's centre of mass and keeps its inertia tensor sane. `Hand` adds
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CenterOfMassSetter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CenterOfMassSetter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

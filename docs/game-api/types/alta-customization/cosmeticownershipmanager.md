@@ -22,9 +22,9 @@ Which cosmetics a player has bought, owns and may pick from, by category. Get on
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private CosmeticOwnershipManager("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-customization/purchasedlist">{"PurchasedList"}</Link>{" purchasedList)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private CosmeticOwnershipManager("}<Link to="/game-api/types/alta-customization/playercharactercustomizationmanager">{"PlayerCharacterCustomizationManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-customization/purchasedlist">{"PurchasedList"}</Link>{" purchasedList)"}</code> | Creates a `CosmeticOwnershipManager` from `manager` and `purchasedList`. |
 
 </details>
 

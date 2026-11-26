@@ -18,10 +18,10 @@ Body of an Alta web API request to change the account's username, confirmed with
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChangeUsernameRequest(string newUsername, string passwordHash)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ChangeUsernameRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChangeUsernameRequest(string newUsername, string passwordHash)"}</code> | Creates a `ChangeUsernameRequest` with default values. |
+| <Link id="m-ctor-2" /><code>{"ChangeUsernameRequest()"}</code> | Creates a `ChangeUsernameRequest` with default values. |
 
 ## Properties
 

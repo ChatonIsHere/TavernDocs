@@ -19,6 +19,6 @@ Property attribute with no fields, probably used by an editor drawer to edit a d
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DotFromAngle()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DotFromAngle()"}</code> | Creates a `DotFromAngle` with default values. |

@@ -20,9 +20,9 @@ A point in the forest's river network. Water volume flows down its outgoing path
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverNode(int index, "}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" space, Vector2 position, float height, float volume)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverNode(int index, "}<Link to="/game-api/types/alta-world-generation/space">{"Space"}</Link>{" space, Vector2 position, float height, float volume)"}</code> | Creates a `RiverNode` from `index`, `space`, `position`, `height` and `volume`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ The KCP (reliable UDP) network transport the game uses by default. `NetworkManag
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KcpTransport("}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KcpTransport("}<Link to="/game-api/types/assembly-other/kcpsettings">{"KcpSettings"}</Link>{" settings)"}</code> | Creates a `KcpTransport` from `settings`. |
 
 ## Fields
 

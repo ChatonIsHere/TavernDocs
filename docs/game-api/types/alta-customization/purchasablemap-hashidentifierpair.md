@@ -19,9 +19,9 @@ Maps a store SKU to an item hash, for `PurchasableMap.ConvertStoreSKUToHash`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HashIdentifierPair()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HashIdentifierPair()"}</code> | Creates a `PurchasableMap.HashIdentifierPair` with default values. |
 
 ## Fields
 

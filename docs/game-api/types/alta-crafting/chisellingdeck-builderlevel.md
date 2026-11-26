@@ -19,9 +19,9 @@ Inspector entry on `ChisellingDeck` that maps a block size to the timber block p
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BuilderLevel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BuilderLevel()"}</code> | Creates a `ChisellingDeck.BuilderLevel` with default values. |
 
 ## Fields
 

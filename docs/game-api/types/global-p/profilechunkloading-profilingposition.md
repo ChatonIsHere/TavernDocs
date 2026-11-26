@@ -19,9 +19,9 @@ A named world position that `ProfileChunkLoading` visits when profiling chunk lo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProfilingPosition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProfilingPosition()"}</code> | Creates a `ProfileChunkLoading.ProfilingPosition` with default values. |
 
 ## Fields
 

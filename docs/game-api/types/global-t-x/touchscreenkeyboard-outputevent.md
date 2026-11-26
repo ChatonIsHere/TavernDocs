@@ -20,9 +20,9 @@ Serializable `UnityEvent` with a string. The keyboard's output event, fired with
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OutputEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OutputEvent()"}</code> | Creates a `TouchScreenKeyboard.OutputEvent` with default values. |
 
 ## Used in
 

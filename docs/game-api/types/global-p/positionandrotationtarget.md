@@ -18,10 +18,10 @@ A teleport destination: a position and a facing direction. Used by the climbing 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionAndRotationTarget(Vector3 position)"}</code> |
-| <Link id="m-ctor-2" /><code>{"PositionAndRotationTarget(Vector3 position, Vector3 rotation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionAndRotationTarget(Vector3 position)"}</code> | Creates a `PositionAndRotationTarget` from `position` and `rotation`. |
+| <Link id="m-ctor-2" /><code>{"PositionAndRotationTarget(Vector3 position, Vector3 rotation)"}</code> | Creates a `PositionAndRotationTarget` from `position` and `rotation`. |
 
 ## Fields
 

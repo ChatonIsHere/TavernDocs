@@ -19,9 +19,9 @@ Obsolete analytics record for a teleport, from the old analytics system.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TeleportationRecord(Vector3 from, Vector3 to, int fps)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TeleportationRecord(Vector3 from, Vector3 to, int fps)"}</code> | Creates a `TeleportationRecord` from `from`, `to` and `fps`. |
 
 ## Fields
 

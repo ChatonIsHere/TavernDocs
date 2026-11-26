@@ -18,9 +18,9 @@ A comment from the Alta web API, with its author and whether it is hidden or pos
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Comment()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Comment()"}</code> | Creates a `Comment` with default values. |
 
 ## Properties
 

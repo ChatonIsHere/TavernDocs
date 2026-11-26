@@ -20,9 +20,9 @@ Base for a typed value stored in `PlayerPreferences` (the local `player.prefs` f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected PlayerPreferenceValue(string key, Action<string, T> setter, Func<string, T, T> getter)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PlayerPreferenceValue(string key, Action<string, T> setter, Func<string, T, T> getter)"}</code> | Creates a `PlayerPreferenceValue` from `key`, `setter` and `getter`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Client: shows one pooled mark per player subscribed to a respawn shrine, with a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RespawnShrineSubscriberMarkController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RespawnShrineSubscriberMarkController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

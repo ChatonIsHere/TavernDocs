@@ -19,9 +19,9 @@ A list of components kept only on certain platforms. Baking destroys them on any
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformObjectSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformObjectSetup()"}</code> | Creates a `PlatformComponents.PlatformObjectSetup` with default values. |
 
 ## Fields
 

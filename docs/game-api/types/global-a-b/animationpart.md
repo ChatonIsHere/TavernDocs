@@ -18,9 +18,9 @@ One moving piece in a building animation: it slides in from an offset to its fin
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimationPart(Transform transform, Vector3 moveDirection, float distance)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimationPart(Transform transform, Vector3 moveDirection, float distance)"}</code> | Creates an `AnimationPart` from `transform`, `moveDirection` and `distance`. |
 
 ## Fields
 

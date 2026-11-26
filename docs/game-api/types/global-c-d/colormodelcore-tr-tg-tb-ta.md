@@ -18,9 +18,9 @@ Works out vertex colours for a mesh from values on its bones, one channel per po
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColorModelCore(MonoBehaviour subject)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColorModelCore(MonoBehaviour subject)"}</code> | Creates a `ColorModelCore` from `subject`. |
 
 ## Fields
 

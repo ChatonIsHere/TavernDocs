@@ -18,9 +18,9 @@ Network arguments for a request to move a quantity to another `PickupDock`. Noth
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MoveQuantityRequestArguments("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" other, int quantity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MoveQuantityRequestArguments("}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" other, int quantity)"}</code> | Creates a `MoveQuantityRequestArguments` from `other` and `quantity`. |
 
 ## Fields
 

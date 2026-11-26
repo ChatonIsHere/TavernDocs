@@ -23,11 +23,11 @@ The server's mod snapshot for the auth port's ping, `mods_list` and the join's p
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-cache" /><code>{"private static ValueTuple<string, DateTime, ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">>> _cache"}</code> |
-| <Link id="m-cachelock" /><code>{"private static readonly object CacheLock"}</code> |
-| <Link id="m-cachettlseconds" /><code>{"private const int CacheTtlSeconds"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-cache" /><code>{"private static ValueTuple<string, DateTime, ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">>> _cache"}</code> | The last snapshot with its game folder and the time it was built. |
+| <Link id="m-cachelock" /><code>{"private static readonly object CacheLock"}</code> | Lock around the snapshot cache. |
+| <Link id="m-cachettlseconds" /><code>{"private const int CacheTtlSeconds"}</code> | How long a mod snapshot is reused before `Mods/` is read again (5 seconds). |
 
 </details>
 
@@ -40,9 +40,9 @@ The server's mod snapshot for the auth port's ping, `mods_list` and the join's p
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-buildsnapshot" /><code>{"private static ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">> BuildSnapshot(string gameDir)"}</code> |
-| <Link id="m-untrackedstamp" /><code>{"private static string UntrackedStamp(string gameDir, "}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{" mod)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-buildsnapshot" /><code>{"private static ValueTuple<string, List<"}<Link to="/tavernlib-api/types/backend-mods/modhandshake-entry">{"ModHandshake.Entry"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{">> BuildSnapshot(string gameDir)"}</code> | Scans `Mods/` and builds the mod hash, the list of enabled server mods, and the untracked mods. |
+| <Link id="m-untrackedstamp" /><code>{"private static string UntrackedStamp(string gameDir, "}<Link to="/tavernlib-api/types/backend-mods/untrackedmod">{"UntrackedMod"}</Link>{" mod)"}</code> | Returns the last write time, in Unix seconds, of an untracked mod, or `?` if it can't be read. |
 
 </details>

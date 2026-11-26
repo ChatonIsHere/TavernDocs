@@ -20,9 +20,9 @@ Version 1 of the saved player position and home. Migrating moves anyone inside t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveFileData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerSaveFileData1()"}</code> | Creates a `PlayerSaveFileData1` with default values. |
 
 ## Fields
 

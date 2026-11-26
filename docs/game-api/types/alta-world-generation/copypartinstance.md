@@ -19,9 +19,9 @@ Runtime instance of the `CopyPart` plugin part: copies another plugin's layer in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CopyPartInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/copypart">{"CopyPart"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CopyPartInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/copypart">{"CopyPart"}</Link>{" part)"}</code> | Creates a `CopyPartInstance` from `plugin` and `part`. |
 
 ## Fields
 

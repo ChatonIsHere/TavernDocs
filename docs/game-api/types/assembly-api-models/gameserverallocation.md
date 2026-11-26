@@ -19,9 +19,9 @@ An Agones `GameServerAllocation` request, which asks Agones for a ready game ser
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameServerAllocation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameServerAllocation()"}</code> | Creates a `GameServerAllocation` with default values. |
 
 ## Properties
 

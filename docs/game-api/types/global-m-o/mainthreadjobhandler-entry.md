@@ -20,9 +20,9 @@ Handle for a job queued on `MainThreadJobHandler` with `Schedule`. Await it to w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Entry()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Entry()"}</code> | Creates a `MainThreadJobHandler.Entry` with default values. |
 
 ## Methods
 

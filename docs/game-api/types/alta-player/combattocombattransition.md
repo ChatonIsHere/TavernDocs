@@ -19,9 +19,9 @@ Combat to Combat transition: a new hit while in combat keeps the player in the s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CombatToCombatTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CombatToCombatTransition()"}</code> | Creates a `CombatToCombatTransition` with default values. |
 
 ## Methods
 

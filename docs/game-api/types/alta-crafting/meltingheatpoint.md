@@ -20,9 +20,9 @@ Heat point on a meltable item. Its conductivity comes from the melting model's p
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MeltingHeatPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MeltingHeatPoint()"}</code> | Creates a `MeltingHeatPoint` with default values. |
 
 ## Fields
 

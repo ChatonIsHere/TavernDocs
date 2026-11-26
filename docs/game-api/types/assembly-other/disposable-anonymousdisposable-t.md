@@ -20,9 +20,9 @@ Disposable returned by `Disposable.CreateWithState`: runs an action with a state
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnonymousDisposable(T state, Action<T> dispose)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnonymousDisposable(T state, Action<T> dispose)"}</code> | Creates a `Disposable.AnonymousDisposable` from `state` and `dispose`. |
 
 ## Fields
 

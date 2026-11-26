@@ -18,9 +18,9 @@ Alta web API reply to claiming all of a user's Oculus purchases (`ConsumeAllOcul
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClaimOculusItemsResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClaimOculusItemsResponse()"}</code> | Creates a `ClaimOculusItemsResponse` with default values. |
 
 ## Properties
 

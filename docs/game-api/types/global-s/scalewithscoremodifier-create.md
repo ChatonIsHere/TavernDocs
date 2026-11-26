@@ -20,6 +20,6 @@ Editor menu entry for creating a `ScaleWithScoreModifier` asset under the Townsh
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ScaleWithScoreModifier.Create` with default values. |

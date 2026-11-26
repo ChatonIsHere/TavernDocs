@@ -21,10 +21,10 @@ A user as returned by the Alta web API: id and username. Equal when the ids matc
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserInfo()"}</code> |
-| <Link id="m-ctor-2" /><code>{"UserInfo(int identifier, string username)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserInfo()"}</code> | Creates an `UserInfo` from `identifier` and `username`. |
+| <Link id="m-ctor-2" /><code>{"UserInfo(int identifier, string username)"}</code> | Creates an `UserInfo` from `identifier` and `username`. |
 
 ## Properties
 

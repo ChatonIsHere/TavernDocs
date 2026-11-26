@@ -19,9 +19,9 @@ Like `GetComponentsAttribute`, but collects components from this object and its 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetComponentsInChildrenAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetComponentsInChildrenAttribute()"}</code> | Creates a `GetComponentsInChildrenAttribute` with default values. |
 
 ## Methods
 

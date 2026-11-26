@@ -20,9 +20,9 @@ A serializable `UnityEvent` with a bool argument, for wiring toggle callbacks in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ToggleUnityEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ToggleUnityEvent()"}</code> | Creates a `ToggleUnityEvent` with default values. |
 
 ## Used in
 

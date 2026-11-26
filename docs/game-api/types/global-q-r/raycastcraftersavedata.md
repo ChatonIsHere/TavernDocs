@@ -21,9 +21,9 @@ Save data for `RaycastCrafter`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RaycastCrafterSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RaycastCrafterSaveData()"}</code> | Creates a `RaycastCrafterSaveData` with default values. |
 
 ## Fields
 

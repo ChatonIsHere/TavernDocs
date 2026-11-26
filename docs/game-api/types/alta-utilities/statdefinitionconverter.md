@@ -19,9 +19,9 @@ Type converter that turns a stat name or hash string into a `StatDefinition`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatDefinitionConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatDefinitionConverter()"}</code> | Creates a `StatDefinitionConverter` with default values. |
 
 ## Methods
 

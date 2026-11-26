@@ -19,9 +19,9 @@ What a `PlayerUnlock` changes while active: optional teleport and climb layer ov
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnlockingPermissionsSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnlockingPermissionsSetup()"}</code> | Creates a `PlayerUnlock.UnlockingPermissionsSetup` with default values. |
 
 ## Fields
 

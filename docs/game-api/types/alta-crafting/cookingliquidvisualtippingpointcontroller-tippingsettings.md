@@ -19,9 +19,9 @@ Tipping limits for one liquid level of a cooking container. The controller picks
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TippingSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TippingSettings()"}</code> | Creates a `CookingLiquidVisualTippingPointController.TippingSettings` with default values. |
 
 ## Fields
 

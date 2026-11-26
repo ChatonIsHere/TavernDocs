@@ -18,9 +18,9 @@ Request body carrying one console command to run, probably on a game server.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConsoleCommandRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConsoleCommandRequest()"}</code> | Creates a `ConsoleCommandRequest` with default values. |
 
 ## Properties
 

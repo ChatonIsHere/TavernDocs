@@ -21,6 +21,6 @@ Serializable `UnityEvent` with a `TransformProxy` argument, the handler type for
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TransformProxyHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransformProxyHandler()"}</code> | Creates a `BreakOnImpact.TransformProxyHandler` with default values. |

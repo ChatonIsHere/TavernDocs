@@ -19,6 +19,6 @@ Equality comparer that treats two values as equal only if they are the same obje
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ReferenceEqualsComparer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ReferenceEqualsComparer()"}</code> | Creates a `ReferenceEqualsComparer` with default values. |

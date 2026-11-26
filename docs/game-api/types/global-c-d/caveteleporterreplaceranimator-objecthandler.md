@@ -19,9 +19,9 @@ Private helper that puts one object's renderers on a copy of the animating mater
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ObjectHandler("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" rendererGroup, Material baseMaterial, AnimationCurve curve)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ObjectHandler("}<Link to="/game-api/types/global-q-r/renderergroup">{"RendererGroup"}</Link>{" rendererGroup, Material baseMaterial, AnimationCurve curve)"}</code> | Creates a `CaveTeleporterReplacerAnimator.ObjectHandler` from `rendererGroup`, `baseMaterial` and `curve`. |
 
 ## Fields
 

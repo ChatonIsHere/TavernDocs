@@ -18,9 +18,9 @@ Server: records the tutorial player's events for each step so a step can see eve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerEventBuffer("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" step, IEventBus eventBus)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerEventBuffer("}<Link to="/game-api/types/game-other-namespaces/iserverstepinstance">{"IServerStepInstance"}</Link>{" step, IEventBus eventBus)"}</code> | Creates a `PlayerEventBuffer` from `step` and `eventBus`. |
 
 ## Fields
 

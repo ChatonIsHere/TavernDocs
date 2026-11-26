@@ -20,9 +20,9 @@ Lets a logic signal light or put out a `Fire`, and reports the fire's on/off sta
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FireLogic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FireLogic()"}</code> | Creates a `FireLogic` with default values. |
 
 ## Fields
 

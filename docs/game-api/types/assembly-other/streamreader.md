@@ -20,17 +20,17 @@ A `Stream` that reads bits from a `uint` buffer. Used on both sides to read netw
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StreamReader(Func<uint[], uint[]> getMoreData, int byteCount)"}</code> |
-| <Link id="m-ctor-2" /><code>{"StreamReader(uint[] data, int byteCount)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StreamReader(Func<uint[], uint[]> getMoreData, int byteCount)"}</code> | Creates a `StreamReader` with default values. |
+| <Link id="m-ctor-2" /><code>{"StreamReader(uint[] data, int byteCount)"}</code> | Creates a `StreamReader` with default values. |
 
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor-3" /><code>{"private StreamReader()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor-3" /><code>{"private StreamReader()"}</code> | Creates a `StreamReader` with default values. |
 
 </details>
 

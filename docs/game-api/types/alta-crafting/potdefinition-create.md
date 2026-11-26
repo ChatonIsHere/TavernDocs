@@ -20,6 +20,6 @@ Unity editor menu entry (Create, Township, Features, Cooking) for making a new `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PotDefinition.Create` with default values. |

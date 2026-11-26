@@ -20,9 +20,9 @@ A river segment between two `RiverNode`s in the forest generator, with its splin
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverPath("}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" to)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverPath("}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/rivernode">{"RiverNode"}</Link>{" to)"}</code> | Creates a `RiverPath` from `from` and `to`. |
 
 ## Properties
 

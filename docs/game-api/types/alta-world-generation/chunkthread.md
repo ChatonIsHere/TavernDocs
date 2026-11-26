@@ -19,9 +19,9 @@ Runs a cave `MapChunk`'s generation on its own background thread. `MapChunk` mak
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkThread("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkThread("}<Link to="/game-api/types/alta-world-generation/mapchunk">{"MapChunk"}</Link>{" chunk)"}</code> | Creates a `ChunkThread` from `chunk`. |
 
 ## Fields
 

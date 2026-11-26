@@ -20,9 +20,9 @@ Internal modifier that runs an action on every `StatManager` update while applie
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UpdateModifier(Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> update)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UpdateModifier(Action<"}<Link to="/game-api/types/alta-stats-effects/statmanager">{"StatManager"}</Link>{"> update)"}</code> | Creates an `UpdateModifier` from `update`. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ A `BlockableCamera` that counts as blocked when a capsule in front of the lens o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CapsuleBlockableCamera()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CapsuleBlockableCamera()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

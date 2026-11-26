@@ -20,9 +20,9 @@ One row of `player list-stats`: a stat's name, limits and, for a player with a b
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatDefinitionInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatDefinitionInfo()"}</code> | Makes an empty stat info; the stat conversions fill it. |
 
 ## Properties
 

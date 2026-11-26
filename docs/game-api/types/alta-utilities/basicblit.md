@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/NO Wind Foliage` shader. `AtlasDef
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicBlit()"}</code> | Creates a `BasicBlit` with default values. |
 
 ## Fields
 

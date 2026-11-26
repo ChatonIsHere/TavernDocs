@@ -19,9 +19,9 @@ Payload of the `ConsoleEvents.SocialTabletPlayerBanned` console event, raised wh
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SocialTabletPlayerBanData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SocialTabletPlayerBanData()"}</code> | Creates a `SocialTabletPlayerBanData` with default values. |
 
 ## Fields
 

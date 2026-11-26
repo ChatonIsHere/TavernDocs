@@ -20,6 +20,6 @@ Editor menu folder `Township/Features/Items`: menu item classes inherit it to ap
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Items()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Items()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Items` with default values. |

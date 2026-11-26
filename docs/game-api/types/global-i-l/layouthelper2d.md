@@ -19,9 +19,9 @@ Lays out a number of equal elements in a grid on a background panel, shrinking t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LayoutHelper2D(Vector3 backgroundSize, Vector3 elementSize, int elementCount, bool isVertical = true, float minBuffer = 0.025)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LayoutHelper2D(Vector3 backgroundSize, Vector3 elementSize, int elementCount, bool isVertical = true, float minBuffer = 0.025)"}</code> | Creates a `LayoutHelper2D` from `backgroundSize`, `elementSize`, `elementCount`, `isVertical` and `minBuffer`. |
 
 ## Fields
 

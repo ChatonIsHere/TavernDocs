@@ -18,9 +18,9 @@ A web API response that wraps a single true or false value.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BooleanResponse(bool value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BooleanResponse(bool value)"}</code> | Creates a `BooleanResponse` from `value`. |
 
 ## Properties
 

@@ -20,6 +20,6 @@ Editor menu folder `GameObject/3rd Party/Quick LOD`: menu item classes inherit i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Quick_LOD()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Quick_LOD()"}</code> | Creates an `AltaMenuItemBase.GameObject._3rd_Party.Quick_LOD` with default values. |

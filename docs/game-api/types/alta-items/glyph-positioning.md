@@ -19,10 +19,10 @@ Where a glyph sits on a page: position, rotation and scale, snapped to steps so 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Positioning()"}</code> |
-| <Link id="m-ctor-2" /><code>{"Positioning("}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph, Vector2 position, float rotation, float scale)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Positioning()"}</code> | Creates a `Glyph.Positioning` from `glyph`, `position`, `rotation` and `scale`. |
+| <Link id="m-ctor-2" /><code>{"Positioning("}<Link to="/game-api/types/alta-items/glyph">{"Glyph"}</Link>{" glyph, Vector2 position, float rotation, float scale)"}</code> | Creates a `Glyph.Positioning` from `glyph`, `position`, `rotation` and `scale`. |
 
 ## Fields
 

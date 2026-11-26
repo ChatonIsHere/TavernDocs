@@ -18,9 +18,9 @@ Serialized settings for a world landmark: how many chunks away it stays loaded, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WorldLandmarkConfig()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WorldLandmarkConfig()"}</code> | Creates a `WorldLandmarkConfig` with default values. |
 
 ## Fields
 

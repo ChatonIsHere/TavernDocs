@@ -19,9 +19,9 @@ A key prefix in an S3 bucket treated as a folder, for listing and deleting the o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"S3StorageFolder(string bucketName, string fullName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"S3StorageFolder(string bucketName, string fullName)"}</code> | Creates a `S3StorageFolder` from `bucketName` and `fullName`. |
 
 ## Methods
 

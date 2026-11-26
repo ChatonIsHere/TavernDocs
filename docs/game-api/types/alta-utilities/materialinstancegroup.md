@@ -19,9 +19,9 @@ Makes a `MaterialInstance` for each of a set of renderers and disposes them toge
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialInstanceGroup(IEnumerable<Renderer> renderers)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialInstanceGroup(IEnumerable<Renderer> renderers)"}</code> | Creates a `MaterialInstanceGroup` from `renderers`. |
 
 ## Fields
 

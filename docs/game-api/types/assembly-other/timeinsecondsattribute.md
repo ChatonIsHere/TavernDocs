@@ -19,6 +19,6 @@ Inspector attribute, probably to show a float as a time in seconds. No code of i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimeInSecondsAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimeInSecondsAttribute()"}</code> | Creates a `TimeInSecondsAttribute` with default values. |

@@ -20,6 +20,6 @@ Editor menu entry for creating a `StructureType` (cave structure) asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StructureType.Create` with default values. |

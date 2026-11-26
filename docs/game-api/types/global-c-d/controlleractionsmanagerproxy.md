@@ -19,9 +19,9 @@ A stable set of `ControllerActionProxy` objects, one per controller action type,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ControllerActionsManagerProxy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ControllerActionsManagerProxy()"}</code> | Creates a `ControllerActionsManagerProxy` with default values. |
 
 ## Fields
 

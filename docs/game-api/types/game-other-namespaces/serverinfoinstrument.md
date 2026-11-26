@@ -19,9 +19,9 @@ Analytics instrument that adds the current server's ID to each event.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerInfoInstrument()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerInfoInstrument()"}</code> | Creates a `ServerInfoInstrument` with default values. |
 
 ## Fields
 

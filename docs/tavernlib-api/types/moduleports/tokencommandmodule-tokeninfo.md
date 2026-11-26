@@ -20,9 +20,9 @@ A named token as `token list` and `token whoami` answer it, with JSON names for 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TokenInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TokenInfo()"}</code> | Makes an empty token description. |
 
 ## Properties
 

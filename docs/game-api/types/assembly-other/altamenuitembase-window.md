@@ -20,6 +20,6 @@ Editor menu folder `Window`: menu item classes inherit it to appear under Unity'
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Window()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Window()"}</code> | Creates an `AltaMenuItemBase.Window` with default values. |

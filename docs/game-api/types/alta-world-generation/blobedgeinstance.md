@@ -19,9 +19,9 @@ Runtime instance of the `BlobEdge` plugin part: draws a main circle and hashed s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BlobEdgeInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/blobedge">{"BlobEdge"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BlobEdgeInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/blobedge">{"BlobEdge"}</Link>{" part)"}</code> | Creates a `BlobEdgeInstance` from `plugin` and `part`. |
 
 ## Fields
 

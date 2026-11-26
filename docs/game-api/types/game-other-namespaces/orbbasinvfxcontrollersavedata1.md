@@ -20,9 +20,9 @@ Old save data (version 1) for `OrbBasinVfxController`, when stamina and climbing
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OrbBasinVfxControllerSaveData1()"}</code> | Creates an `OrbBasinVfxControllerSaveData1` with default values. |
 
 ## Fields
 

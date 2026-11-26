@@ -23,16 +23,16 @@ Internal: `console_tokens.json` with an in-memory copy rebuilt after each write,
 <details>
 <summary>8 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-byid" /><code>{"private static Dictionary<string, "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenstore-entry">{"ConsoleTokenStore.Entry"}</Link>{"> _byId"}</code> |
-| <Link id="m-lastload" /><code>{"private static DateTime _lastLoad"}</code> |
-| <Link id="m-loaderrorlogged" /><code>{"private static bool _loadErrorLogged"}</code> |
-| <Link id="m-ownergeneration" /><code>{"private static int _ownerGeneration"}</code> |
-| <Link id="m-filepath" /><code>{"private static readonly string FilePath"}</code> |
-| <Link id="m-paths" /><code>{"private static readonly ConditionalWeakTable<"}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{", string> Paths"}</code> |
-| <Link id="m-retryevery" /><code>{"private static readonly TimeSpan RetryEvery"}</code> |
-| <Link id="m-tokenfile" /><code>{"private static readonly "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenfile">{"ConsoleTokenFile"}</Link>{" TokenFile"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-byid" /><code>{"private static Dictionary<string, "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenstore-entry">{"ConsoleTokenStore.Entry"}</Link>{"> _byId"}</code> | In-memory copy of the named tokens by id, rebuilt after every load or write. |
+| <Link id="m-lastload" /><code>{"private static DateTime _lastLoad"}</code> | When the file was last tried, used to space out retries. |
+| <Link id="m-loaderrorlogged" /><code>{"private static bool _loadErrorLogged"}</code> | Whether the unreadable-file error has been logged, so it is logged once. |
+| <Link id="m-ownergeneration" /><code>{"private static int _ownerGeneration"}</code> | In-memory copy of the owner token's generation from the file. |
+| <Link id="m-filepath" /><code>{"private static readonly string FilePath"}</code> | Path of `console_tokens.json` in the ModdingTavern folder. |
+| <Link id="m-paths" /><code>{"private static readonly ConditionalWeakTable<"}<Link to="/game-api/types/alta-console/commandpart">{"CommandPart"}</Link>{", string> Paths"}</code> | Cache of the typed path (for example `player progression list`) for each command or module. |
+| <Link id="m-retryevery" /><code>{"private static readonly TimeSpan RetryEvery"}</code> | How long to wait before trying again to read a token file that failed to load (5 seconds). |
+| <Link id="m-tokenfile" /><code>{"private static readonly "}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenfile">{"ConsoleTokenFile"}</Link>{" TokenFile"}</code> | The config file object used to read and write `console_tokens.json`. |
 
 </details>
 
@@ -61,10 +61,10 @@ Internal: `console_tokens.json` with an in-memory copy rebuilt after each write,
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-ancestors" /><code>{"private static IEnumerable<string> Ancestors(string path) (iterator)"}</code> |
-| <Link id="m-granted" /><code>{"private static bool Granted(HashSet<string> granted, string path)"}</code> |
-| <Link id="m-rebuild" /><code>{"private static void Rebuild("}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenlist">{"ConsoleTokenList"}</Link>{" list)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ancestors" /><code>{"private static IEnumerable<string> Ancestors(string path) (iterator)"}</code> | Yields each shorter parent path of a command path, longest first. |
+| <Link id="m-granted" /><code>{"private static bool Granted(HashSet<string> granted, string path)"}</code> | Returns whether a path, or any parent path of it, is in the granted set. |
+| <Link id="m-rebuild" /><code>{"private static void Rebuild("}<Link to="/tavernlib-api/types/backend-remoteconsole/consoletokenlist">{"ConsoleTokenList"}</Link>{" list)"}</code> | Replaces the in-memory token copy and owner generation from a token list and marks the store loaded. |
 
 </details>

@@ -19,10 +19,10 @@ Exception that carries an `ApiError` and an HTTP status code (500 unless given).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ApiErrorException("}<Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" apiError, HttpStatusCode httpCode = 500)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ApiErrorException("}<Link to="/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message, HttpStatusCode httpCode = 500)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ApiErrorException("}<Link to="/game-api/types/assembly-api-models/apierror">{"ApiError"}</Link>{" apiError, HttpStatusCode httpCode = 500)"}</code> | Creates the exception with `errorCode`, `message`, `httpCode`. |
+| <Link id="m-ctor-2" /><code>{"ApiErrorException("}<Link to="/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message, HttpStatusCode httpCode = 500)"}</code> | Creates the exception with `errorCode`, `message`, `httpCode`. |
 
 ## Properties
 

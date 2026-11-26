@@ -20,9 +20,9 @@ The contents of `tavern_server.json`: the game, auth, web and console ports. Use
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TavernServer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TavernServer()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 
@@ -49,9 +49,9 @@ The contents of `tavern_server.json`: the game, auth, web and console ports. Use
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | Holds JSON keys TavernLib doesn't model, so they are written back unchanged. |
 
 </details>
 

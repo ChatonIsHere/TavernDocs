@@ -19,9 +19,9 @@ A stat and the player it belongs to. `StatList` is a list of these, built by `St
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatPlayerPair("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatPlayerPair("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Creates a `StatPlayerPair` from `stat` and `player`. |
 
 ## Properties
 

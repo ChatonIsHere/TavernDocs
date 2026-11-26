@@ -18,9 +18,9 @@ One part that `FaceObject` turns to face the hands holding its handle pickups.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RotationBucket()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RotationBucket()"}</code> | Creates a `RotationBucket` with default values. |
 
 ## Fields
 

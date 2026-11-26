@@ -18,9 +18,9 @@ Client side of micro tutorials: creates and removes step instances when the sync
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientController("}<Link to="/game-api/types/game-other-namespaces/isynccontroller">{"ISyncController"}</Link>{" syncController)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientController("}<Link to="/game-api/types/game-other-namespaces/isynccontroller">{"ISyncController"}</Link>{" syncController)"}</code> | Creates a `ClientController` from `syncController`. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Holder for action scoring results, probably meant for AI debugging. Nothing else
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DebugResults()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DebugResults()"}</code> | Creates a `DebugResults` with default values. |
 
 ## Fields
 

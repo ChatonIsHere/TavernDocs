@@ -20,9 +20,9 @@ Internal: what one `CreateBackup` made.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BackupResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BackupResult()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 

@@ -19,14 +19,14 @@ Callback for a change of chunks: the chunks that were left and the chunk that wa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunksChanged(object object, IntPtr method)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunksChanged(object object, IntPtr method)"}</code> | Made by the compiler when you assign a method to this delegate; you don't call it directly. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> left, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" joined, AsyncCallback callback, object object)"}</code> |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> |
-| <Link id="m-invoke" /><code>{"virtual void Invoke(List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> left, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" joined)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> left, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" joined, AsyncCallback callback, object object)"}</code> | Starts the call on another thread; not supported in Unity, so use `Invoke`. |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(IAsyncResult result)"}</code> | Waits for a call started with `BeginInvoke`; not supported in Unity. |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(List<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> left, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" joined)"}</code> | Calls every method on this delegate with these arguments. |

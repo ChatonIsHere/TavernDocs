@@ -19,9 +19,9 @@ Unused serialized pair inside `PopulationDefinition`: another population and a c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationImpact()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationImpact()"}</code> | Creates a `PopulationDefinition.PopulationImpact` with default values. |
 
 ## Fields
 

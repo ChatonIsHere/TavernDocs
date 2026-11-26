@@ -21,9 +21,9 @@ Save data (version 1) for `ModifiableAdditionalStaticContent`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModifiableAdditionalStaticContentSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModifiableAdditionalStaticContentSaveData()"}</code> | Creates a `ModifiableAdditionalStaticContentSaveData` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ A named symbol in the unused Prolog-like logic engine. `Define` turns it into a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> | Creates an `Atom` from `name`. |
 
 ## Methods
 

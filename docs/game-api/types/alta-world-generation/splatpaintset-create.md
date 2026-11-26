@@ -20,6 +20,6 @@ Editor menu entry that creates a new `SplatPaintSet` asset under the Township Ge
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `SplatPaintSet.Create` with default values. |

@@ -19,9 +19,9 @@ An atom carrying a value (for example a position) in the unused Prolog-like logi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DataAtom(string name, T data)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DataAtom(string name, T data)"}</code> | Creates a `DataAtom` from `name` and `data`. |
 
 ## Properties
 

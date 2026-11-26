@@ -19,9 +19,9 @@ Launches a pickup (an arrow or any item) from a bow or similar launcher and sync
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Shooter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Shooter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -31,7 +31,7 @@ Launches a pickup (an arrow or any item) from a bow or similar launcher and sync
 | Member | What it is |
 | --- | --- |
 | <Link id="m-defaultdeviation" /><code>{"private float defaultDeviation"}</code> | Maximum random angle in degrees added to non-arrow shots fired locally. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-maxextra" /><code>{"private float maxExtra"}</code> | Extra velocity factor for arrows, scaled by the string tightness. |
 | <Link id="m-maxvelocity" /><code>{"private float maxVelocity"}</code> | Launch speed at full strength, before weight and material adjustments. |
 | <Link id="m-physicalmaterial" /><code>{"private "}<Link to="/game-api/types/global-p/physicalmaterialpart">{"PhysicalMaterialPart"}</Link>{" physicalMaterial"}</code> | Optional material of the bow string; gives tightness, minimum projectile weight and the velocity multiplier for light items. |

@@ -20,9 +20,9 @@ Per-creature driver made by `AttackDirectionAnimationBoolSettings`: sets a netwo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoolAnimation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoolAnimation()"}</code> | Creates an `AttackDirectionAnimationBoolSettings.BoolAnimation` with default values. |
 
 ## Fields
 

@@ -21,6 +21,6 @@ Base for an Assets/Create/Audio menu entry that creates a `T` asset. Subclass it
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Audio.ScriptableObject` with default values. |

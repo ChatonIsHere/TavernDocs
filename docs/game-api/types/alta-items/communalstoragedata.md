@@ -21,9 +21,9 @@ Save data for a `CommunalStorage`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CommunalStorageData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CommunalStorageData()"}</code> | Creates a `CommunalStorageData` with default values. |
 
 ## Fields
 

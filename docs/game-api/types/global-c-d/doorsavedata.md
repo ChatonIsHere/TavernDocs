@@ -21,9 +21,9 @@ Save data for a `Door`: just whether it is open.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DoorSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DoorSaveData()"}</code> | Creates a `DoorSaveData` with default values. |
 
 ## Fields
 

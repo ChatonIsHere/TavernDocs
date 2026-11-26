@@ -19,9 +19,9 @@ Legacy duration effect that does not stack: extra copies join a shared list and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EnvironmentalEffect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EnvironmentalEffect()"}</code> | Creates an `EnvironmentalEffect` with default values. |
 
 ## Fields
 

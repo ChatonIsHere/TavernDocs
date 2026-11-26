@@ -20,6 +20,6 @@ Editor menu entry for creating a `NormalFilter` asset. Not used at runtime.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `NormalFilter.Create` with default values. |

@@ -18,9 +18,9 @@ Body of an Alta web API request that sends the user's Oculus friends.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OculusFriendsList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OculusFriendsList()"}</code> | Creates an `OculusFriendsList` with default values. |
 
 ## Properties
 

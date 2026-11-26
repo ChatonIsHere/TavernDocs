@@ -19,9 +19,9 @@ Name and value pair that Unity can save. `Element` copies its `Variables` dictio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedVariable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedVariable()"}</code> | Creates an `Element.SerializedVariable` with default values. |
 
 ## Fields
 

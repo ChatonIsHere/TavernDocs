@@ -19,9 +19,9 @@ Serializable event with the interactor, the pickup and the dock it went into, ed
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupDockedEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupDockedEvent()"}</code> | Creates a `PickupDockedEvent` with default values. |
 
 ## Used in
 

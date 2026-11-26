@@ -20,9 +20,9 @@ A cacheable list of world-generation instructions for one chunk. Forest generati
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InstructionSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InstructionSet()"}</code> | Creates an `InstructionSet` with default values. |
 
 ## Fields
 

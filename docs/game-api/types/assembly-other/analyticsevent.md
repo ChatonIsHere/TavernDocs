@@ -20,9 +20,9 @@ Base class for analytics events in the current system. Holds the event data and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected AnalyticsEvent(string eventName, int? userId = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected AnalyticsEvent(string eventName, int? userId = null)"}</code> | Creates an `AnalyticsEvent` from `eventName` and `userId`. |
 
 ## Fields
 

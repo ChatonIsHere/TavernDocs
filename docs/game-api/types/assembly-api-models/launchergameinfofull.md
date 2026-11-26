@@ -19,9 +19,9 @@ Full details of a game for Alta's launcher, from `LowLevelApiClient.GetLauncherG
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LauncherGameInfoFull()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LauncherGameInfoFull()"}</code> | Creates a `LauncherGameInfoFull` with default values. |
 
 ## Properties
 

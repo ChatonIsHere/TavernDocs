@@ -19,9 +19,9 @@ Async prefab factory taking two parameters, passed to the component's `FactoryCo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected FactoryAsync()"}</code> | Creates a `FactoryAsync` with default values. |
 
 ## Methods
 

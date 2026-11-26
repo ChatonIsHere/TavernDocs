@@ -20,9 +20,9 @@ A `GameServerInfo` for a local dev server, with the address given directly inste
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DevGameServerInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DevGameServerInfo()"}</code> | Creates a `DevGameServerInfo` with default values. |
 
 ## Properties
 

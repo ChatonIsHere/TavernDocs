@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Generation/Caves/Plugins`: menu item 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Plugins()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Plugins()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Generation.Caves.Plugins` with default values. |

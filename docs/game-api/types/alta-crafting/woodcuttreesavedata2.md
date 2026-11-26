@@ -20,9 +20,9 @@ Old version 2 save data for a `WoodcutTree`, migrated to `WoodcutTreeSaveData` o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData2()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeSaveData2()"}</code> | Creates a `WoodcutTreeSaveData2` with default values. |
 
 ## Fields
 

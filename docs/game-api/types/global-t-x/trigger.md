@@ -20,9 +20,9 @@ Base of on/off inputs like `Lever` and `TwoStepLever`. Fires turned on and turne
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Trigger()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Trigger()"}</code> | Creates a `Trigger` with default values. |
 
 ## Fields
 

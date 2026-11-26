@@ -19,9 +19,9 @@ Do-nothing `IAttackDirectionAnimation` used by `AttackDirectionCore` when a laye
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmptyAttackDirectionAnimation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmptyAttackDirectionAnimation()"}</code> | Creates an `EmptyAttackDirectionAnimation` with default values. |
 
 ## Properties
 

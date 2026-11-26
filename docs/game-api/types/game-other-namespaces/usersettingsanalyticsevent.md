@@ -19,6 +19,6 @@ Analytics event that copies every entry of a settings dictionary in as propertie
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsEvent(string eventName, Dictionary<string, object> eventData)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserSettingsAnalyticsEvent(string eventName, Dictionary<string, object> eventData)"}</code> | Creates an `UserSettingsAnalyticsEvent` from `eventName` and `eventData`. |

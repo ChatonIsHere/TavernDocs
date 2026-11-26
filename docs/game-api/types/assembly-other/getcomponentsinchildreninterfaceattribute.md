@@ -19,9 +19,9 @@ Like `GetComponentsInterfaceAttribute`, but collects from this object and its ch
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetComponentsInChildrenInterfaceAttribute(Type type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetComponentsInChildrenInterfaceAttribute(Type type)"}</code> | Creates a `GetComponentsInChildrenInterfaceAttribute` from `type`. |
 
 ## Methods
 

@@ -18,9 +18,9 @@ Body of an Alta web API request to ban a user.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BanRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BanRequest()"}</code> | Creates a `BanRequest` with default values. |
 
 ## Properties
 

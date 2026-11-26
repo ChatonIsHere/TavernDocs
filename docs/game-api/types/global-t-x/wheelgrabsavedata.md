@@ -21,9 +21,9 @@ Save data for a `WheelGrab`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WheelGrabSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WheelGrabSaveData()"}</code> | Creates a `WheelGrabSaveData` with default values. |
 
 ## Fields
 

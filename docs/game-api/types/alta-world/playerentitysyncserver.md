@@ -19,9 +19,9 @@ Server: the server half of a chunk's entity sync. It spawns and despawns the chu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerEntitySyncServer("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerEntitySyncServer("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Creates a `PlayerEntitySyncServer` from `chunk`. |
 
 ## Fields
 

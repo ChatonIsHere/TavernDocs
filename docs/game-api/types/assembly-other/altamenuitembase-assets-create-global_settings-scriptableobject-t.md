@@ -21,6 +21,6 @@ Editor menu marker: a settings asset's nested `Create` class inherits it to appe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Global_Settings.ScriptableObject` with default values. |

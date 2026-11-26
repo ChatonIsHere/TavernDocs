@@ -18,9 +18,9 @@ List of addressable cubemaps for one scene, used by `ServerCubeMaps` for the mai
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SceneCubeMaps()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SceneCubeMaps()"}</code> | Creates a `SceneCubeMaps` with default values. |
 
 ## Fields
 

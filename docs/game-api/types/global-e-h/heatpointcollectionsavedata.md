@@ -22,6 +22,6 @@ Save data for `HeatPointCollection`: one element per heat point.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HeatPointCollectionSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HeatPointCollectionSaveData()"}</code> | Creates a `HeatPointCollectionSaveData` with default values. |

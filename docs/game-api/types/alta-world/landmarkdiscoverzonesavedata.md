@@ -21,9 +21,9 @@ Save data for `LandmarkDiscoverZone`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LandmarkDiscoverZoneSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LandmarkDiscoverZoneSaveData()"}</code> | Creates a `LandmarkDiscoverZoneSaveData` with default values. |
 
 ## Properties
 

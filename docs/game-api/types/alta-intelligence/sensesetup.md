@@ -18,9 +18,9 @@ A serialized pair of a sense and a value, used in AI settings. Still supports th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SenseSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SenseSetup()"}</code> | Creates a `SenseSetup` with default values. |
 
 ## Fields
 

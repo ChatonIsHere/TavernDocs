@@ -19,9 +19,9 @@ Private helper in `AtlasDefinition`: works out how much atlas space a material n
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialReferences("}<Link to="/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" materialRect)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialReferences("}<Link to="/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" materialRect)"}</code> | Creates an `AtlasDefinition.MaterialReferences` from `materialRect`. |
 
 ## Properties
 

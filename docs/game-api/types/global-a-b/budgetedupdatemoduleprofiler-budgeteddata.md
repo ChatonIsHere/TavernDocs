@@ -19,9 +19,9 @@ Timing totals for one budgeted update module, kept in `BudgetedUpdateModuleProfi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BudgetedData(string moduleName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BudgetedData(string moduleName)"}</code> | Creates a `BudgetedUpdateModuleProfiler.BudgetedData` from `moduleName`. |
 
 ## Fields
 

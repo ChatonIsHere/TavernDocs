@@ -21,9 +21,9 @@ Save data for a `DrawBridgeRangeLogic` component (save structure version 2).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DrawBridgeRangeLogicSaveData()"}</code> | Creates a `DrawBridgeRangeLogicSaveData` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ The XR SDK controller for OpenXR headsets. Client-side; it creates the OpenXR in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OpenXRDeviceController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OpenXRDeviceController()"}</code> | Creates an `OpenXRDeviceController` with default values. |
 
 ## Properties
 

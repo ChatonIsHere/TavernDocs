@@ -20,9 +20,9 @@ Board of buttons in the feature test gymnasium, one per configured prefab plus D
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GymnasiumOnDemandPrefabSpawner()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GymnasiumOnDemandPrefabSpawner()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

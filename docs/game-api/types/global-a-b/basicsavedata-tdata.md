@@ -20,9 +20,9 @@ Base for save data types that are also their own savable: applying the data copi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected BasicSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected BasicSaveData()"}</code> | Creates a `BasicSaveData` with default values. |
 
 ## Fields
 

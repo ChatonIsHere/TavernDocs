@@ -20,9 +20,9 @@ A physical lever `Trigger`: reads the handle's X rotation each physics step and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Lever()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Lever()"}</code> | Creates a `Lever` with default values. |
 
 ## Fields
 

@@ -20,10 +20,10 @@ Base for login request bodies: a password hash plus the device id and platform t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LoginRequestBase(string passwordHash, string deviceIdentifier)"}</code> |
-| <Link id="m-ctor-2" /><code>{"LoginRequestBase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LoginRequestBase(string passwordHash, string deviceIdentifier)"}</code> | Creates a `LoginRequestBase` with default values. |
+| <Link id="m-ctor-2" /><code>{"LoginRequestBase()"}</code> | Creates a `LoginRequestBase` with default values. |
 
 ## Properties
 

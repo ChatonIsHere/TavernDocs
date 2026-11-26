@@ -22,6 +22,6 @@ Save data for a `ForgedPointCollection`, one element per forged point.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForgedPointCollectionSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForgedPointCollectionSaveData()"}</code> | Creates a `ForgedPointCollectionSaveData` with default values. |

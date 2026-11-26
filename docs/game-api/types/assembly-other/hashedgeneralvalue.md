@@ -20,9 +20,9 @@ Base for game data assets identified by a hash. `HashedGeneralValue<T>` builds o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected HashedGeneralValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected HashedGeneralValue()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 
@@ -34,9 +34,9 @@ Base for game data assets identified by a hash. `HashedGeneralValue<T>` builds o
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 
 </details>
 

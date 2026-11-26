@@ -19,10 +19,10 @@ One serialized entry of an `ImpactorMap`: a collider and the impact generators t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MapElement(Collider collider, IEnumerable<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> impactors)"}</code> |
-| <Link id="m-ctor-2" /><code>{"MapElement(KeyValuePair<Collider, HashSet<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{">> element)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MapElement(Collider collider, IEnumerable<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{"> impactors)"}</code> | Creates an `ImpactorMap.MapElement` from `element`. |
+| <Link id="m-ctor-2" /><code>{"MapElement(KeyValuePair<Collider, HashSet<"}<Link to="/game-api/types/alta-items/impactgenerator">{"ImpactGenerator"}</Link>{">> element)"}</code> | Creates an `ImpactorMap.MapElement` from `element`. |
 
 ## Fields
 

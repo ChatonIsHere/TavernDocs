@@ -19,9 +19,9 @@ Works out how a `TimberPiece` tips over as it is chiselled: the axis it rotates 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RotationModel(Vector3 pivottingDirection, Vector3 size, bool inversedUp)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RotationModel(Vector3 pivottingDirection, Vector3 size, bool inversedUp)"}</code> | Creates a `TimberPiece.RotationModel` from `pivottingDirection`, `size` and `inversedUp`. |
 
 ## Fields
 

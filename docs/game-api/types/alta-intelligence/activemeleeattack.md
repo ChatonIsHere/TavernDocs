@@ -19,9 +19,9 @@ Wyrm melee attack action. Prefers living, hurt targets in reach and sometimes tu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveMeleeAttack()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveMeleeAttack()"}</code> | Creates an `ActiveMeleeAttack` with default values. |
 
 ## Methods
 

@@ -20,9 +20,9 @@ Old version 1 save data for the `GlobalPagesManager`, kept so old saves can load
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData1()"}</code> | Creates a `GlobalPagesManagerSaveData1` with default values. |
 
 ## Fields
 

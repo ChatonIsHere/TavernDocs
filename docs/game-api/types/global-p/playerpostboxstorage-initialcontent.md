@@ -19,9 +19,9 @@ A set piece that may be placed in a new player postbox, with a chance.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InitialContent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InitialContent()"}</code> | Creates a `PlayerPostboxStorage.InitialContent` with default values. |
 
 ## Fields
 

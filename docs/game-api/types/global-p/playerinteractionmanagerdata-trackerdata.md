@@ -19,9 +19,9 @@ One saved interaction tracker: its id and the interactions the player has left.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TrackerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TrackerData()"}</code> | Creates a `PlayerInteractionManagerData.TrackerData` with default values. |
 
 ## Fields
 

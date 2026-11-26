@@ -18,9 +18,9 @@ Serialized recipe for one stat modifier, set up in the inspector on a `Threshold
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatModifierConstructor()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatModifierConstructor()"}</code> | Creates a `StatModifierConstructor` with default values. |
 
 ## Fields
 

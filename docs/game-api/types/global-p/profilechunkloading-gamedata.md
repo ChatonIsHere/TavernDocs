@@ -19,9 +19,9 @@ A snapshot of spawned object counts taken when it is created, used by the chunk 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameData()"}</code> | Creates a `ProfileChunkLoading.GameData` with default values. |
 
 ## Properties
 

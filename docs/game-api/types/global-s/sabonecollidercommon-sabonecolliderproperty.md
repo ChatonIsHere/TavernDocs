@@ -19,9 +19,9 @@ Editor settings for building colliders on one bone (from the SA collider builder
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SABoneColliderProperty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SABoneColliderProperty()"}</code> | Creates a `SABoneColliderCommon.SABoneColliderProperty` with default values. |
 
 ## Fields
 

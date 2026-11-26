@@ -19,10 +19,10 @@ Payload of the `ConsoleEvents.ServerSettingsChanged` console event. `ServerSetti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerSettingsChangeData()"}</code> |
-| <Link id="m-ctor-2" /><code>{"ServerSettingsChangeData("}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings, "}<Link to="/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" age)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerSettingsChangeData()"}</code> | Creates a `ServerSettingsChangeData` from `settings` and `age`. |
+| <Link id="m-ctor-2" /><code>{"ServerSettingsChangeData("}<Link to="/game-api/types/alta-utilities/serversettings">{"ServerSettings"}</Link>{" settings, "}<Link to="/game-api/types/game-other-namespaces/serversettingsage">{"ServerSettingsAge"}</Link>{" age)"}</code> | Creates a `ServerSettingsChangeData` from `settings` and `age`. |
 
 ## Properties
 

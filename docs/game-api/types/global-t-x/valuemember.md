@@ -19,10 +19,10 @@ Inspector entry for one field or property marked with `BubbleInspectorFieldAttri
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ValueMember(FieldInfo field)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ValueMember(PropertyInfo property)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ValueMember(FieldInfo field)"}</code> | Creates a `ValueMember` from `property`. |
+| <Link id="m-ctor-2" /><code>{"ValueMember(PropertyInfo property)"}</code> | Creates a `ValueMember` from `property`. |
 
 ## Fields
 

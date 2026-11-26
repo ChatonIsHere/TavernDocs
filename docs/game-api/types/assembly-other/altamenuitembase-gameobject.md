@@ -21,6 +21,6 @@ Editor menu folder `GameObject`: menu item classes inherit it to appear under th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected GameObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected GameObject()"}</code> | Creates an `AltaMenuItemBase.GameObject` with default values. |

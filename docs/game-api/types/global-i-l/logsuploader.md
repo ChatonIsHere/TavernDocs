@@ -18,9 +18,9 @@ Packs the log folder into one gzip file. Despite the name it uploads nothing.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogsUploader()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogsUploader()"}</code> | Creates a `LogsUploader` with default values. |
 
 ## Methods
 

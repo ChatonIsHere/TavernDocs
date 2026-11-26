@@ -19,9 +19,9 @@ Mesh builder used by `LODBaker.Bake`. Collects the meshes that share one materia
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MeshBase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MeshBase()"}</code> | Creates a `LODBaker.MeshBase` with default values. |
 
 ## Fields
 

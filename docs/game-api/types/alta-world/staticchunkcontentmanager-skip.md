@@ -21,9 +21,9 @@ Private list of pointer names to skip, read from `PointersSkip.json` in the stor
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Skip()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Skip()"}</code> | Creates a `StaticChunkContentManager.Skip` with default values. |
 
 ## Fields
 

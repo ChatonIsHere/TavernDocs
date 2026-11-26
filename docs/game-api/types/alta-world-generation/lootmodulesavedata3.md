@@ -20,9 +20,9 @@ Old save format (version 3) for `LootModule`, which added `isOneOff`. Migrates t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LootModuleSaveData3()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LootModuleSaveData3()"}</code> | Creates a `LootModuleSaveData3` with default values. |
 
 ## Fields
 

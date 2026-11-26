@@ -22,9 +22,9 @@ Saved config for `PlaceItemNoDockPuzzleLogic`: which items give which output val
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockPuzzleLogicSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockPuzzleLogicSaveData()"}</code> | Creates a `PlaceItemNoDockPuzzleLogicSaveData` with default values. |
 
 ## Fields
 

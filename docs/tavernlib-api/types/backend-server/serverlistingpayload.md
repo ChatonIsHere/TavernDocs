@@ -44,8 +44,8 @@ The JSON body each heartbeat sends to the Community Servers listing, built from 
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-resolvescene" /><code>{"private static "}<Link to="/tavernlib-api/types/backend-server/serverlistingpayload-scenekind">{"ServerListingPayload.SceneKind"}</Link>{" ResolveScene("}<Link to="/tavernlib-api/types/backend-server-configs/serversettingsconfig">{"ServerSettingsConfig"}</Link>{" config)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-resolvescene" /><code>{"private static "}<Link to="/tavernlib-api/types/backend-server/serverlistingpayload-scenekind">{"ServerListingPayload.SceneKind"}</Link>{" ResolveScene("}<Link to="/tavernlib-api/types/backend-server-configs/serversettingsconfig">{"ServerSettingsConfig"}</Link>{" config)"}</code> | Decides whether the server runs the normal, quest or tutorial scene, with the launch arguments first and the settings as fallback. |
 
 </details>

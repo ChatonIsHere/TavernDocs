@@ -19,9 +19,9 @@ One movement smoothing level for remote players, picked by `PlayerSmoothManager.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SmoothingSetting()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SmoothingSetting()"}</code> | Creates a `PlayerLocomotionController.SmoothingSetting` with default values. |
 
 ## Fields
 

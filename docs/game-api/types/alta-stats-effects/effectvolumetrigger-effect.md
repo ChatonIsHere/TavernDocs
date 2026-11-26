@@ -19,9 +19,9 @@ One effect and strength that an `EffectVolumeTrigger` applies to handlers that e
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Effect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Effect()"}</code> | Creates an `EffectVolumeTrigger.Effect` with default values. |
 
 ## Fields
 

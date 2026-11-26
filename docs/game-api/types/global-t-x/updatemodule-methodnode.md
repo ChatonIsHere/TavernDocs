@@ -20,9 +20,9 @@ One registered update method in an `UpdateModule`'s linked list. `RegisterMethod
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MethodNode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MethodNode()"}</code> | Creates an `UpdateModule.MethodNode` with default values. |
 
 ## Fields
 

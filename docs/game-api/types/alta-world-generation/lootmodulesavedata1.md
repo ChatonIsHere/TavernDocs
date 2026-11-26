@@ -20,9 +20,9 @@ Old save format (version 1) for `LootModule`, with the refill timer in float sec
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LootModuleSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LootModuleSaveData1()"}</code> | Creates a `LootModuleSaveData1` with default values. |
 
 ## Fields
 

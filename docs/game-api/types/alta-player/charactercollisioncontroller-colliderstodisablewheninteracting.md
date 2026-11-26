@@ -19,9 +19,9 @@ Inspector pairing of a hand `Controller` with the body colliders to turn off whi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CollidersToDisableWhenInteracting()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CollidersToDisableWhenInteracting()"}</code> | Creates a `CharacterCollisionController.CollidersToDisableWhenInteracting` with default values. |
 
 ## Fields
 

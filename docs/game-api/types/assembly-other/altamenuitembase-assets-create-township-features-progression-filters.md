@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/Progression/Filters`: menu i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Filters()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Filters()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Progression.Filters` with default values. |

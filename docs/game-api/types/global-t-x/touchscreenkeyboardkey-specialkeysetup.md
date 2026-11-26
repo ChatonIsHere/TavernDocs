@@ -19,9 +19,9 @@ Event to run for one key code on a touch screen keyboard key, used for special k
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpecialKeySetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpecialKeySetup()"}</code> | Creates a `TouchScreenKeyboardKey.SpecialKeySetup` with default values. |
 
 ## Fields
 

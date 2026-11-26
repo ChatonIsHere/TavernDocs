@@ -18,9 +18,9 @@ Body of an Alta web API request to check an email address.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmailValidationRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmailValidationRequest()"}</code> | Creates an `EmailValidationRequest` with default values. |
 
 ## Properties
 

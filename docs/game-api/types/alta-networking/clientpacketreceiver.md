@@ -19,9 +19,9 @@ The client's packet receiver: creates or approves the server connection when the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientPacketReceiver("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientPacketReceiver("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> | Creates a `ClientPacketReceiver` from `socket`. |
 
 ## Fields
 

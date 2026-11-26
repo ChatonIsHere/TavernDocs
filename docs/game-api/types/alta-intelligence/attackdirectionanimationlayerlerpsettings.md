@@ -21,9 +21,9 @@ Asset that drives an animator layer weight from where the target's weapon is: 1 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttackDirectionAnimationLayerLerpSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttackDirectionAnimationLayerLerpSettings()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Properties
 

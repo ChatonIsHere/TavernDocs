@@ -18,9 +18,9 @@ A named on/off setting that registers itself in a static list so console command
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ToggleBool(string name, bool defaultValue = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ToggleBool(string name, bool defaultValue = false)"}</code> | Creates a `ToggleBool` from `name` and `defaultValue`. |
 
 ## Fields
 

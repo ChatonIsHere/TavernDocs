@@ -20,9 +20,9 @@ One server mod in the handshake: what a client needs to match it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Entry()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Entry()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 

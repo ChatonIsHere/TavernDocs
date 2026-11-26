@@ -19,9 +19,9 @@ Server: one prefab's entry in the `spawn infodump` command output, with its hash
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PrefabInfoDump()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PrefabInfoDump()"}</code> | Creates a `PrefabInfoDump` with default values. |
 
 ## Properties
 

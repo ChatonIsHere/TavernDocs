@@ -20,9 +20,9 @@ Saved integer that is sent to `onValueChanged` once at start. Saved and loaded t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicIntSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicIntSet()"}</code> | Creates a `LogicIntSet` with default values. |
 
 ## Fields
 

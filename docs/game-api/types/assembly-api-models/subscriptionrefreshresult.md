@@ -19,9 +19,9 @@ Result of checking for supporter subscription rewards, from `CheckForSubscriptio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SubscriptionRefreshResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SubscriptionRefreshResult()"}</code> | Creates a `SubscriptionRefreshResult` with default values. |
 
 ## Properties
 

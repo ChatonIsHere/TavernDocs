@@ -20,9 +20,9 @@ Network transport statistic for one connection channel, labelled with the channe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConnectionChannelStatistic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConnectionChannelStatistic()"}</code> | Creates a `ConnectionChannelStatistic` with default values. |
 
 ## Fields
 

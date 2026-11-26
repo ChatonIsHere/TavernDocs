@@ -19,9 +19,9 @@ Opens a native Windows console window for the game process and sends `Console` o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConsoleWindow()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConsoleWindow()"}</code> | Creates a `ConsoleWindow` with default values. |
 
 ## Fields
 

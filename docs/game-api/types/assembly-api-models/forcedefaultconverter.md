@@ -19,9 +19,9 @@ A JSON converter that can neither read nor write, so Json.NET falls back to defa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForceDefaultConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForceDefaultConverter()"}</code> | Creates a `ForceDefaultConverter` with default values. |
 
 ## Properties
 

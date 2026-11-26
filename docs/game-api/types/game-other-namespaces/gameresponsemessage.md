@@ -18,9 +18,9 @@ Reply to a game command message. Nothing else in this build uses it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameResponseMessage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameResponseMessage()"}</code> | Creates a `GameResponseMessage` with default values. |
 
 ## Properties
 

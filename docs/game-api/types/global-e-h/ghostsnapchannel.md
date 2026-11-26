@@ -21,9 +21,9 @@ Empty asset used as a tag: a `GhostSnapObject` only snaps into a `GhostSnapSlot`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GhostSnapChannel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GhostSnapChannel()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Used in
 

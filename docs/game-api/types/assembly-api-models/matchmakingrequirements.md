@@ -18,9 +18,9 @@ Body of the Alta web API call that picks the best server to join (`GetBestServer
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MatchMakingRequirements()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MatchMakingRequirements()"}</code> | Creates a `MatchMakingRequirements` with default values. |
 
 ## Properties
 

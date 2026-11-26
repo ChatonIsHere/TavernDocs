@@ -20,9 +20,9 @@ Zone trigger event asset that sends an "Area Exited" analytics event with how lo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ZoneAnalyticsTriggerEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ZoneAnalyticsTriggerEvent()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

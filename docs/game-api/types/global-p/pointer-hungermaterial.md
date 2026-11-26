@@ -19,9 +19,9 @@ A pointer colour to use at one hunger level.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HungerMaterial()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HungerMaterial()"}</code> | Creates a `Pointer.HungerMaterial` with default values. |
 
 ## Fields
 

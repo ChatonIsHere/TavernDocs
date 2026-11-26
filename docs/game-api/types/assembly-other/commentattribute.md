@@ -20,9 +20,9 @@ Inspector attribute that shows a comment box above a field.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CommentAttribute(string message, float numberOfLines = 3, "}<Link to="/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" messageType = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CommentAttribute(string message, float numberOfLines = 3, "}<Link to="/game-api/types/assembly-other/commentattribute-messagetype">{"CommentAttribute.MessageType"}</Link>{" messageType = 0)"}</code> | Creates a `CommentAttribute` from `message`, `numberOfLines` and `messageType`. |
 
 ## Properties
 

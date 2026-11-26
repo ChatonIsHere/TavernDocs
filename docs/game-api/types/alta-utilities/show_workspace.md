@@ -19,9 +19,9 @@ Editor menu item under Township/Utility. Its `Run` reads the workspace folder na
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Show_Workspace()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Show_Workspace()"}</code> | Creates a `Show_Workspace` with default values. |
 
 ## Fields
 

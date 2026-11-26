@@ -19,9 +19,9 @@ Client: drives the nightmare status effect for the local player, a particle effe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NightmareEffectController("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" nightmareStatDefinition, AnimationCurve fogDensityOverValue, "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" nightmareEffectDefinition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NightmareEffectController("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" nightmareStatDefinition, AnimationCurve fogDensityOverValue, "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" nightmareEffectDefinition)"}</code> | Creates a `PlayerHealthVisualEffectsSettings.NightmareEffectController` from `nightmareStatDefinition`, `fogDensityOverValue` and `nightmareEffectDefinition`. |
 
 ## Fields
 

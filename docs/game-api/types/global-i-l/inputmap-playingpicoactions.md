@@ -19,9 +19,9 @@ The generated wrapper for the "PlayingPico" input action map: in-game actions fo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingPicoActions("}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingPicoActions("}<Link to="/game-api/types/global-i-l/inputmap">{"InputMap"}</Link>{" wrapper)"}</code> | Creates an `InputMap.PlayingPicoActions` from `wrapper`. |
 
 ## Fields
 

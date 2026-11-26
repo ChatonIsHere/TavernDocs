@@ -18,9 +18,9 @@ One distance level in a `DistanceLODGroup`: a set of renderers turned on or off 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DistanceLOD()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DistanceLOD()"}</code> | Creates a `DistanceLOD` with default values. |
 
 ## Fields
 

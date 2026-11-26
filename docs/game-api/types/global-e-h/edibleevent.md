@@ -19,9 +19,9 @@ Serializable `AltaEvent` raised with an `EdibleObject`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EdibleEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EdibleEvent()"}</code> | Creates an `EdibleEvent` with default values. |
 
 ## Used in
 

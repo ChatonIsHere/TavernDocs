@@ -19,9 +19,9 @@ Visuals that scale in when shown and destroy themselves after scaling out. Clien
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RemoteEquipmentModeVisuals()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RemoteEquipmentModeVisuals()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

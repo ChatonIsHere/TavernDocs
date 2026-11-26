@@ -18,9 +18,9 @@ One hand's set of `ControllerAction`s, one per `ControllerActionType`, bound to 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ControllerActions("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ControllerActions("}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" playerInput)"}</code> | Creates a `ControllerActions` from `playerInput`. |
 
 ## Fields
 

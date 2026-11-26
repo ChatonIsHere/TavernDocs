@@ -20,9 +20,9 @@ Puzzle logic on a dock: when an item is docked or undocked it sends an output va
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaceItemPuzzleLogic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaceItemPuzzleLogic()"}</code> | Creates a `PlaceItemPuzzleLogic` with default values. |
 
 ## Fields
 

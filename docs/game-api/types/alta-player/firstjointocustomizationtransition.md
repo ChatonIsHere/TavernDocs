@@ -19,9 +19,9 @@ Moves a new player from FirstJoin to Customization. `FirstJoinState` triggers it
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FirstJoinToCustomizationTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FirstJoinToCustomizationTransition()"}</code> | Creates a `FirstJoinToCustomizationTransition` with default values. |
 
 ## Methods
 

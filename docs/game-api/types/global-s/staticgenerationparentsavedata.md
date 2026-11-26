@@ -21,9 +21,9 @@ Save data for `StaticGenerationParent` (version 1): the generation seed.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StaticGenerationParentSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StaticGenerationParentSaveData()"}</code> | Creates a `StaticGenerationParentSaveData` with default values. |
 
 ## Fields
 

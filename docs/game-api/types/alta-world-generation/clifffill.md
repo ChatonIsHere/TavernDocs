@@ -21,9 +21,9 @@ Forest fill step that places objects up the face of cliffs, using the points fro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CliffFill()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CliffFill()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -37,7 +37,7 @@ Forest fill step that places objects up the face of cliffs, using the points fro
 | <Link id="m-horizontalvariation" /><code>{"private float horizontalVariation"}</code> | Random sideways offset along the cliff. |
 | <Link id="m-isbottomaligned" /><code>{"private bool isBottomAligned"}</code> | Count rows up from the bottom instead of down from the top. |
 | <Link id="m-layermask" /><code>{"private LayerMask layerMask"}</code> | Layers the cliff raycasts hit. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-maximumheight" /><code>{"private float maximumHeight"}</code> | Highest point on a cliff that gets objects, in metres. |
 | <Link id="m-maximumheightratio" /><code>{"private float maximumHeightRatio"}</code> | Highest point as a fraction of the cliff's height. |
 | <Link id="m-minimumheight" /><code>{"private float minimumHeight"}</code> | Lowest point on a cliff that gets objects, in metres. |

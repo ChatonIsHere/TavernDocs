@@ -18,9 +18,9 @@ Holds a basic save data object along with its serialized bits, so it is only ser
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicSaveDataWrapper()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicSaveDataWrapper()"}</code> | Creates a `BasicSaveDataWrapper` with default values. |
 
 ## Fields
 

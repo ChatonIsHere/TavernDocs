@@ -19,9 +19,9 @@ Serializable `AltaEvent` with an `IPlayer` argument. Runs inspector-wired listen
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerEvent()"}</code> | Creates a `PlayerEvent` with default values. |
 
 ## Used in
 

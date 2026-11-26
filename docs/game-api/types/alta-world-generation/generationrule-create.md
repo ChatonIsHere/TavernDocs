@@ -20,6 +20,6 @@ Editor menu item under Assets/Create/Township/Features/PAGaC that makes a new `G
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `GenerationRule.Create` with default values. |

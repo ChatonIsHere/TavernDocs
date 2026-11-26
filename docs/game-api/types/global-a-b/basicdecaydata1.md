@@ -20,9 +20,9 @@ Old `BasicDecay` save data (version 1) with the timer in float seconds. Migrates
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicDecayData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicDecayData1()"}</code> | Creates a `BasicDecayData1` with default values. |
 
 ## Fields
 

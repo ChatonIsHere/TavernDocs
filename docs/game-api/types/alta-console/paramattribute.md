@@ -20,9 +20,9 @@ Gives a console command parameter a description, shown in the command's help.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ParamAttribute(string description)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ParamAttribute(string description)"}</code> | Creates a `ParamAttribute` from `description`. |
 
 ## Properties
 

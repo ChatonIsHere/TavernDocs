@@ -18,10 +18,10 @@ One remembered event in an AI's `History`: some knowledge atoms that fade over a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" next, "}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{" day, float lifeTime, params "}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{"[] knowledge)"}</code> |
-| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" previous)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" next, "}<Link to="/game-api/types/alta-intelligence/day">{"Day"}</Link>{" day, float lifeTime, params "}<Link to="/game-api/types/alta-intelligence/iatomdefinition">{"IAtomDefinition"}</Link>{"[] knowledge)"}</code> | Creates an `Event` from `previous`. |
+| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{"("}<Link to="/game-api/types/alta-intelligence/event">{"Event"}</Link>{" previous)"}</code> | Creates an `Event` from `previous`. |
 
 ## Fields
 

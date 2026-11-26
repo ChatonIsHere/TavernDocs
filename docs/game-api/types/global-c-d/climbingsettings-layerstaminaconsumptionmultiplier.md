@@ -19,9 +19,9 @@ Stamina use multiplier for climbing on one physics layer, read by `ClimbingSetti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LayerStaminaConsumptionMultiplier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LayerStaminaConsumptionMultiplier()"}</code> | Creates a `ClimbingSettings.LayerStaminaConsumptionMultiplier` with default values. |
 
 ## Fields
 

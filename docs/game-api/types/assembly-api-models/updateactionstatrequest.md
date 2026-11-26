@@ -18,9 +18,9 @@ Alta web API request body for updating a user's action stats.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UpdateActionStatRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UpdateActionStatRequest()"}</code> | Creates an `UpdateActionStatRequest` with default values. |
 
 ## Properties
 

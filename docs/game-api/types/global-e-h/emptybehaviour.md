@@ -19,9 +19,9 @@ A `MonoBehaviour` with no code. Probably used as a marker or a placeholder compo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmptyBehaviour()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmptyBehaviour()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Used in
 

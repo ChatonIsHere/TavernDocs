@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/WindFoliageVertexColorColorRamp` s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WindFoliageVertexColorColorRampBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WindFoliageVertexColorColorRampBlit()"}</code> | Creates a `WindFoliageVertexColorColorRampBlit` with default values. |
 
 ## Fields
 

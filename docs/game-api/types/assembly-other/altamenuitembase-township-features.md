@@ -21,6 +21,6 @@ Editor menu folder `Township/Features`: menu item classes inherit it to appear u
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Features()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Features()"}</code> | Creates an `AltaMenuItemBase.Township.Features` with default values. |

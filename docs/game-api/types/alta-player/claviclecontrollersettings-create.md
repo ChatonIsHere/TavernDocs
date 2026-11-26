@@ -20,6 +20,6 @@ Editor menu item that creates a new `ClavicleControllerSettings` asset under the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ClavicleControllerSettings.Create` with default values. |

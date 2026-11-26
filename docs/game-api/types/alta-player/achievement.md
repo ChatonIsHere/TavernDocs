@@ -18,9 +18,9 @@ One Steam achievement tracked by `AchievementManager`: its definition, text and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Achievement("}<Link to="/game-api/types/alta-player/iachievementmanager">{"IAchievementManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-player/achievementdefinition">{"AchievementDefinition"}</Link>{" definition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Achievement("}<Link to="/game-api/types/alta-player/iachievementmanager">{"IAchievementManager"}</Link>{" manager, "}<Link to="/game-api/types/alta-player/achievementdefinition">{"AchievementDefinition"}</Link>{" definition)"}</code> | Creates an `Achievement` from `manager` and `definition`. |
 
 ## Fields
 

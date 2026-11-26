@@ -18,10 +18,10 @@ Which grab point of a pickup a hand holds and where along it, so a grab can be s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrabPointParameters()"}</code> |
-| <Link id="m-ctor-2" /><code>{"GrabPointParameters("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{" grabPoint)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrabPointParameters()"}</code> | Creates a `GrabPointParameters` from `pickup` and `grabPoint`. |
+| <Link id="m-ctor-2" /><code>{"GrabPointParameters("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/global-e-h/grabpoint">{"GrabPoint"}</Link>{" grabPoint)"}</code> | Creates a `GrabPointParameters` from `pickup` and `grabPoint`. |
 
 ## Fields
 

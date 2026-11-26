@@ -19,9 +19,9 @@ Offline stand-in for the shop editor. Every method throws `OfflineException`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineShopEditor()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineShopEditor()"}</code> | Creates an `OfflineShopEditor` with default values. |
 
 ## Methods
 

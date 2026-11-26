@@ -18,9 +18,9 @@ One entry of Alta's shop configuration: an item's discount, shard price or promo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemConfiguration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemConfiguration()"}</code> | Creates a `ShopItemConfiguration` with default values. |
 
 ## Properties
 

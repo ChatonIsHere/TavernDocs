@@ -20,9 +20,9 @@ Base for the game's VContainer lifetime scopes. Subclasses register their bindin
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected AbstractAltaLifetimeScope()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected AbstractAltaLifetimeScope()"}</code> | Creates an `AbstractAltaLifetimeScope` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data (version 1) for `ManualCondition`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ManualConditionSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ManualConditionSaveData()"}</code> | Creates a `ManualConditionSaveData` with default values. |
 
 ## Fields
 

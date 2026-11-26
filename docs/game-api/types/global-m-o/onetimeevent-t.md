@@ -19,9 +19,9 @@ Event that fires once. Handlers added after it fired run straight away with the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OneTimeEvent(bool isBlockingDuplicateCall = true)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OneTimeEvent(bool isBlockingDuplicateCall = true)"}</code> | Creates an `OneTimeEvent` from `isBlockingDuplicateCall`. |
 
 ## Fields
 
@@ -45,7 +45,7 @@ Event that fires once. Handlers added after it fired run straight away with the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"override void Invoke(params object[] args)"}</code> |  |
+| <Link id="m-invoke" /><code>{"override void Invoke(params object[] args)"}</code> | Fires the event and remembers the arguments; a second call is refused with an error when `IsBlockingDuplicateCall` is set. |
 | <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-m-o/onetimeevent-t">{"OneTimeEvent"}</Link>{"<T> op_Addition("}<Link to="/game-api/types/global-m-o/onetimeevent-t">{"OneTimeEvent"}</Link>{"<T> altaEvent, T eventHandler)"}</code> | Adds a handler, or calls it at once if the event already fired. |
 | <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-m-o/onetimeevent-t">{"OneTimeEvent"}</Link>{"<T> op_Subtraction("}<Link to="/game-api/types/global-m-o/onetimeevent-t">{"OneTimeEvent"}</Link>{"<T> altaEvent, T eventHandler)"}</code> | Removes a handler. |
 

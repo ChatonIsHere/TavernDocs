@@ -19,11 +19,11 @@ Map discovery state for one player (or the shared map): which pieces of each `Ma
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerMapManager()"}</code> |
-| <Link id="m-ctor-2" /><code>{"PlayerMapManager("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> |
-| <Link id="m-ctor-3" /><code>{"PlayerMapManager("}<Link to="/game-api/types/alta-world/mapsaveformat">{"MapSaveFormat"}</Link>{" save)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerMapManager()"}</code> | Creates a `PlayerMapManager` from `save`. |
+| <Link id="m-ctor-2" /><code>{"PlayerMapManager("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" file)"}</code> | Creates a `PlayerMapManager` from `save`. |
+| <Link id="m-ctor-3" /><code>{"PlayerMapManager("}<Link to="/game-api/types/alta-world/mapsaveformat">{"MapSaveFormat"}</Link>{" save)"}</code> | Creates a `PlayerMapManager` from `save`. |
 
 ## Fields
 

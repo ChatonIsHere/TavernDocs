@@ -19,9 +19,9 @@ One message sent to a remote console client over the WebSocket: a system message
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ResponseData("}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsetype">{"WebSocketCommandHandler.ResponseType"}</Link>{" type, string eventType, object data, uint? commandId = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ResponseData("}<Link to="/game-api/types/alta-console/websocketcommandhandler-responsetype">{"WebSocketCommandHandler.ResponseType"}</Link>{" type, string eventType, object data, uint? commandId = null)"}</code> | Creates a `WebSocketCommandHandler.ResponseData` from `type`, `eventType`, `data` and `commandId`. |
 
 ## Fields
 

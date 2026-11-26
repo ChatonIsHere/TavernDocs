@@ -20,9 +20,9 @@ Async Addressables prefab factory that pools its instances. `Spawn` reuses a des
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected FactoryAsyncPooled()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected FactoryAsyncPooled()"}</code> | Creates a `FactoryAsyncPooled` with default values. |
 
 ## Fields
 

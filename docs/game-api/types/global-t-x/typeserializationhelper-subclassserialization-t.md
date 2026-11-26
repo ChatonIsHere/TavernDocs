@@ -20,9 +20,9 @@ Serializer for plain classes: a null flag, then each of the class's fields throu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SubClassSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SubClassSerialization()"}</code> | Creates a `TypeSerializationHelper.SubClassSerialization` with default values. |
 
 ## Fields
 

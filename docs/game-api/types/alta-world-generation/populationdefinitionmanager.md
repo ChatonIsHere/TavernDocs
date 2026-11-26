@@ -21,9 +21,9 @@ Holds per population respawn time overrides (set by a console command) and saves
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationDefinitionManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationDefinitionManager()"}</code> | Creates a `PopulationDefinitionManager` with default values. |
 
 ## Fields
 

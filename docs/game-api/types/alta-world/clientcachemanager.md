@@ -20,9 +20,9 @@ Client side `CacheManager`: reads cache files from the local cache folder and do
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientCacheManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientCacheManager()"}</code> | Creates a `ClientCacheManager` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Spawn information for cave populations: picks random spawn spots weighted by a m
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CavePopulationSpawnInformation("}<Link to="/game-api/types/alta-world-generation/spawnareadisplay">{"SpawnAreaDisplay"}</Link>{" display, "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" floor)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CavePopulationSpawnInformation("}<Link to="/game-api/types/alta-world-generation/spawnareadisplay">{"SpawnAreaDisplay"}</Link>{" display, "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" layer, "}<Link to="/game-api/types/alta-world-generation/mapchunklayer">{"MapChunkLayer"}</Link>{" floor)"}</code> | Creates a `CavePopulationSpawnInformation` from `display`, `layer` and `floor`. |
 
 ## Fields
 

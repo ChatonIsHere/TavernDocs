@@ -19,9 +19,9 @@ Checks one world-space particle system for `ParticleEffectDistanceController` an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ParticleSystemEvaluator(ParticleSystem system, "}<Link to="/game-api/types/global-p/particleeffectdistancecontroller">{"ParticleEffectDistanceController"}</Link>{" controller)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ParticleSystemEvaluator(ParticleSystem system, "}<Link to="/game-api/types/global-p/particleeffectdistancecontroller">{"ParticleEffectDistanceController"}</Link>{" controller)"}</code> | Creates a `ParticleEffectDistanceController.ParticleSystemEvaluator` from `system` and `controller`. |
 
 ## Fields
 

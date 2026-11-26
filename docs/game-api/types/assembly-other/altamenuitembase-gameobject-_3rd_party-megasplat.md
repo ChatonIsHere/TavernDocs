@@ -20,6 +20,6 @@ Editor menu folder `GameObject/3rd Party/MegaSplat`: menu item classes inherit i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected MegaSplat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected MegaSplat()"}</code> | Creates an `AltaMenuItemBase.GameObject._3rd_Party.MegaSplat` with default values. |

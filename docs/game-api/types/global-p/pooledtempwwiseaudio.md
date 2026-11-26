@@ -19,9 +19,9 @@ A pooled object for a temporary Wwise sound emitter. Deactivates its `AkGameObj`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PooledTempWwiseAudio()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PooledTempWwiseAudio()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ An `Action<TAgent>` that runs a `TActive` with settings `TSettings`, reusing fin
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicAction(TSettings settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicAction(TSettings settings)"}</code> | Creates a `BasicAction` from `settings`. |
 
 ## Fields
 

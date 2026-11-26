@@ -18,9 +18,9 @@ A port in an Agones game server spec.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpecPortConfig()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpecPortConfig()"}</code> | Creates a `SpecPortConfig` with default values. |
 
 ## Properties
 

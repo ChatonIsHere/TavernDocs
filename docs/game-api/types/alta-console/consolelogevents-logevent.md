@@ -19,9 +19,9 @@ Data sent with the console's log events (`TraceLog` to `FatalLog`), one per serv
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogEvent()"}</code> | Creates a `ConsoleLogEvents.LogEvent` with default values. |
 
 ## Fields
 

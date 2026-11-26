@@ -19,9 +19,9 @@ Analytics event carrying numbered jump velocity, stamina usage and distance clim
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingMovementEvent(List<float> jumpValueRecords, List<"}<Link to="/game-api/types/game-other-namespaces/staminausagerecord">{"StaminaUsageRecord"}</Link>{"> staminaUsageRecords)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingMovementEvent(List<float> jumpValueRecords, List<"}<Link to="/game-api/types/game-other-namespaces/staminausagerecord">{"StaminaUsageRecord"}</Link>{"> staminaUsageRecords)"}</code> | Creates a `ClimbingMovementEvent` from `jumpValueRecords` and `staminaUsageRecords`. |
 
 ## Fields
 

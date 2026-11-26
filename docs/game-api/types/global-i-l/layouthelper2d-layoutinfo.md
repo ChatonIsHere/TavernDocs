@@ -19,9 +19,9 @@ Result of a 2D grid layout: element positions and the scale to draw them at.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LayoutInfo(List<Vector3> positions, float scale)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LayoutInfo(List<Vector3> positions, float scale)"}</code> | Creates a `LayoutHelper2D.LayoutInfo` from `positions` and `scale`. |
 
 ## Fields
 

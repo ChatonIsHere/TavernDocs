@@ -21,9 +21,9 @@ Save data for `GameTimeManager` (version 2).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameTimeManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameTimeManagerSaveData()"}</code> | Creates a `GameTimeManagerSaveData` with default values. |
 
 ## Fields
 

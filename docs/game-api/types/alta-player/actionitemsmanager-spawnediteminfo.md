@@ -19,9 +19,9 @@ Private message data the server sends to chunks when an action item (a summoned 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnedItemInfo(int actionItemIndex, Vector3 position, bool isSpawn, uint spawnedIdentifier, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" owner)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnedItemInfo(int actionItemIndex, Vector3 position, bool isSpawn, uint spawnedIdentifier, "}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" owner)"}</code> | Creates an `ActionItemsManager.SpawnedItemInfo` from `actionItemIndex`, `position`, `isSpawn`, `spawnedIdentifier` and `owner`. |
 
 ## Fields
 

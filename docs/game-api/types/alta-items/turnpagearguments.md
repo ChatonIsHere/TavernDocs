@@ -18,10 +18,10 @@ Message payload a `Book` sends to chunks when the server turns a page.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TurnPageArguments()"}</code> |
-| <Link id="m-ctor-2" /><code>{"TurnPageArguments(int spawnedIndex, int direction, bool isSkipping)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TurnPageArguments()"}</code> | Creates a `TurnPageArguments` from `spawnedIndex`, `direction` and `isSkipping`. |
+| <Link id="m-ctor-2" /><code>{"TurnPageArguments(int spawnedIndex, int direction, bool isSkipping)"}</code> | Creates a `TurnPageArguments` from `spawnedIndex`, `direction` and `isSkipping`. |
 
 ## Fields
 

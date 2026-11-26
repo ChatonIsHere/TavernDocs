@@ -18,9 +18,9 @@ Message payload `ModifiableStaticManager` sends to chunks when a static scene ob
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModificationArguments(uint objectHash, bool isModified)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModificationArguments(uint objectHash, bool isModified)"}</code> | Creates a `ModificationArguments` from `objectHash` and `isModified`. |
 
 ## Fields
 

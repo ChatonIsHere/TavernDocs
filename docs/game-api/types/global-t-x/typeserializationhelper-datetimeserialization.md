@@ -20,9 +20,9 @@ Serializer for `DateTime`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DateTimeSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DateTimeSerialization()"}</code> | Creates a `TypeSerializationHelper.DateTimeSerialization` with default values. |
 
 ## Methods
 

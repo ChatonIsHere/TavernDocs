@@ -20,9 +20,9 @@ File format for one chunk's save: a list of versions, each with the chunk's own 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkSaveFormat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkSaveFormat()"}</code> | Creates a `ChunkSaveFormat` with default values. |
 
 ## Fields
 

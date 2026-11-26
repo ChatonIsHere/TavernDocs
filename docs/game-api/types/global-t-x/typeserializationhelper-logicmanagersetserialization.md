@@ -20,9 +20,9 @@ Serializer for a `LogicManagerSet`: a count followed by each save data entry.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicManagerSetSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicManagerSetSerialization()"}</code> | Creates a `TypeSerializationHelper.LogicManagerSetSerialization` with default values. |
 
 ## Methods
 

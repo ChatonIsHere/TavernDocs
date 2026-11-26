@@ -18,9 +18,9 @@ Wraps how a heat point or health object reports its position relative to an orig
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionFromOriginHandler(Transform transform, "}<Link to="/game-api/types/global-p/positionfromoriginhelper">{"PositionFromOriginHelper"}</Link>{" helper)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionFromOriginHandler(Transform transform, "}<Link to="/game-api/types/global-p/positionfromoriginhelper">{"PositionFromOriginHelper"}</Link>{" helper)"}</code> | Creates a `PositionFromOriginHandler` from `transform` and `helper`. |
 
 ## Fields
 

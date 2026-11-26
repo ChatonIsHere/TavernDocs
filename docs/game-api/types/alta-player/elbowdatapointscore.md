@@ -18,9 +18,9 @@ An elbow guide data point and how well it matches the current hand pose. `ElbowC
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ElbowDataPointScore("}<Link to="/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" point, float score)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ElbowDataPointScore("}<Link to="/game-api/types/alta-player/ielbowguidedatapoint">{"IElbowGuideDataPoint"}</Link>{" point, float score)"}</code> | Creates an `ElbowDataPointScore` from `point` and `score`. |
 
 ## Properties
 

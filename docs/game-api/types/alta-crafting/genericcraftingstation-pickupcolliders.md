@@ -19,10 +19,10 @@ Tracks a pickup with a generic crafting component inside a `GenericCraftingStati
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupColliders("}<Link to="/game-api/types/alta-crafting/genericcraftingcomponent">{"GenericCraftingComponent"}</Link>{" component)"}</code> |
-| <Link id="m-ctor-2" /><code>{"PickupColliders("}<Link to="/game-api/types/alta-crafting/igenericcraftingcomponent">{"IGenericCraftingComponent"}</Link>{" component, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupColliders("}<Link to="/game-api/types/alta-crafting/genericcraftingcomponent">{"GenericCraftingComponent"}</Link>{" component)"}</code> | Creates a `GenericCraftingStation.PickupColliders` from `component` and `pickup`. |
+| <Link id="m-ctor-2" /><code>{"PickupColliders("}<Link to="/game-api/types/alta-crafting/igenericcraftingcomponent">{"IGenericCraftingComponent"}</Link>{" component, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Creates a `GenericCraftingStation.PickupColliders` from `component` and `pickup`. |
 
 ## Fields
 

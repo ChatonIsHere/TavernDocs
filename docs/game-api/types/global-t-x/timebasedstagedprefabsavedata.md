@@ -21,9 +21,9 @@ Save data for `TimeBasedStagedPrefab` (version 1).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimeBasedStagedPrefabSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimeBasedStagedPrefabSaveData()"}</code> | Creates a `TimeBasedStagedPrefabSaveData` with default values. |
 
 ## Fields
 

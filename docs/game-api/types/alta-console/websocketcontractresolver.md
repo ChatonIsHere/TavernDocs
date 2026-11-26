@@ -19,9 +19,9 @@ JSON contract resolver for websocket console replies that drops `DevOnly` member
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebsocketContractResolver()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebsocketContractResolver()"}</code> | Creates a `WebsocketContractResolver` with default values. |
 
 ## Fields
 

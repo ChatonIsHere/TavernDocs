@@ -19,9 +19,9 @@ Client: one input action (such as interact or jump) for a player's hand, bound t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ControllerAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ControllerAction()"}</code> | Creates a `ControllerAction` with default values. |
 
 ## Fields
 

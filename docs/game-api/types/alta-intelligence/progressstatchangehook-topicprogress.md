@@ -19,9 +19,9 @@ Tracks one agent's stat change over time for a `ProgressStatChangeHook`, adding 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TopicProgress(float inverseDuration, "}<Link to="/game-api/types/alta-intelligence/progressstatchangehook">{"ProgressStatChangeHook"}</Link>{" hook, "}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TopicProgress(float inverseDuration, "}<Link to="/game-api/types/alta-intelligence/progressstatchangehook">{"ProgressStatChangeHook"}</Link>{" hook, "}<Link to="/game-api/types/alta-intelligence/iagent">{"IAgent"}</Link>{" topic)"}</code> | Creates a `ProgressStatChangeHook.TopicProgress` from `inverseDuration`, `hook` and `topic`. |
 
 ## Fields
 

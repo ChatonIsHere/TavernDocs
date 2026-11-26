@@ -20,9 +20,9 @@ Version 1 save data for a `LogicFloatChangeOnBool`, migrated to `LogicFloatChang
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData1()"}</code> | Creates a `LogicFloatChangeOnBoolSaveData1` with default values. |
 
 ## Fields
 

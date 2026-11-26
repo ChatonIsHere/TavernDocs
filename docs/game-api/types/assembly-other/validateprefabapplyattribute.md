@@ -19,9 +19,9 @@ Prefab-apply attribute for a bool field: when a prefab is applied, sets the fiel
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ValidatePrefabApplyAttribute(string method)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ValidatePrefabApplyAttribute(string method)"}</code> | Creates a `ValidatePrefabApplyAttribute` from `method`. |
 
 ## Fields
 

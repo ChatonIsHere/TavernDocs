@@ -19,9 +19,9 @@ Short details of a game for the list in Alta's launcher. `LauncherGameInfoFull` 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LauncherGameInfoShort()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LauncherGameInfoShort()"}</code> | Creates a `LauncherGameInfoShort` with default values. |
 
 ## Properties
 

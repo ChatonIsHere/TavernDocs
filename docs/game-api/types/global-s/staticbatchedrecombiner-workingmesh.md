@@ -19,9 +19,9 @@ Private mesh buffer that `StaticBatchedRecombiner` fills for one material before
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WorkingMesh()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WorkingMesh()"}</code> | Creates a `StaticBatchedRecombiner.WorkingMesh` with default values. |
 
 ## Fields
 

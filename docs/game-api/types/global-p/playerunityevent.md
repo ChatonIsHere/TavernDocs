@@ -20,9 +20,9 @@ Inspector event with an `IPlayer` argument.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerUnityEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerUnityEvent()"}</code> | Creates a `PlayerUnityEvent` with default values. |
 
 ## Used in
 

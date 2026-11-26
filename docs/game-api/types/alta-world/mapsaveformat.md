@@ -19,9 +19,9 @@ Save file holding which pieces of each map are still hidden. Server: loaded per 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MapSaveFormat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MapSaveFormat()"}</code> | Creates a `MapSaveFormat` with default values. |
 
 ## Fields
 

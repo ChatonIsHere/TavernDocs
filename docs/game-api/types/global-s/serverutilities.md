@@ -19,9 +19,9 @@ Static network helpers: public and local IP lookup, IPv4 validation, ping and th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerUtilities()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerUtilities()"}</code> | Creates a `ServerUtilities` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Scores an AI agent's possible actions and targets and picks the best one. Each a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActionDecider(TAgent agent)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActionDecider(TAgent agent)"}</code> | Creates an `ActionDecider` from `agent`. |
 
 ## Fields
 

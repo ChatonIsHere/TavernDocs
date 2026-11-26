@@ -20,6 +20,6 @@ Editor menu entry for creating an `AlignWithNormalModifier` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `AlignWithNormalModifier.Create` with default values. |

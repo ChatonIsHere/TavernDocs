@@ -20,9 +20,9 @@ Default `IPlayerRespawnPositionProvider`: picks a random point from the current 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DefaultPlayerRespawnPositionProvider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DefaultPlayerRespawnPositionProvider()"}</code> | Creates a `DefaultPlayerRespawnPositionProvider` with default values. |
 
 ## Methods
 

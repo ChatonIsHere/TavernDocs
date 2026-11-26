@@ -18,9 +18,9 @@ One saved stat in a `StatManager`'s save data: which stat and its base flat valu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatManagerSaveDataStat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatManagerSaveDataStat()"}</code> | Creates a `StatManagerSaveDataStat` with default values. |
 
 ## Fields
 

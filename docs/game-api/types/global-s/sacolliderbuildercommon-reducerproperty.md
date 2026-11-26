@@ -19,9 +19,9 @@ Mesh reduction settings for the third-party SA Collider Builder editor tool (how
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ReducerProperty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ReducerProperty()"}</code> | Creates a `SAColliderBuilderCommon.ReducerProperty` with default values. |
 
 ## Fields
 

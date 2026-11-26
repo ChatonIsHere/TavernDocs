@@ -20,6 +20,6 @@ Editor menu entry that creates an `InsetModifier` asset under Generation.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `InsetModifier.Create` with default values. |

@@ -19,9 +19,9 @@ Base class for items in a `FastPriorityQueueTimeSpan`, with a `TimeSpan` priorit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FastPriorityQueueNodeTimeSpan()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FastPriorityQueueNodeTimeSpan()"}</code> | Creates a `FastPriorityQueueNodeTimeSpan` with default values. |
 
 ## Properties
 

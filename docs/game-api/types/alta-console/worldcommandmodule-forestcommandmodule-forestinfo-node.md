@@ -19,9 +19,9 @@ A forest node in a `ForestInfo`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Node()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Node()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Node` with default values. |
 
 ## Fields
 

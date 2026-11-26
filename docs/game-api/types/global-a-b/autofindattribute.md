@@ -19,9 +19,9 @@ Inspector attribute for a field that should be filled automatically, optionally 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AutoFindAttribute(bool isSearchingChildren = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AutoFindAttribute(bool isSearchingChildren = false)"}</code> | Creates an `AutoFindAttribute` from `isSearchingChildren`. |
 
 ## Properties
 

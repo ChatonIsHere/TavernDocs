@@ -18,9 +18,9 @@ Holds running averages of send and process timings for client and server transpo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LlapiMetric()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LlapiMetric()"}</code> | Creates a `LlapiMetric` with default values. |
 
 ## Fields
 

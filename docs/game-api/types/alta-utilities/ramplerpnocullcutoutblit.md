@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/RampLerpNoCullCutout` shader. `Atl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RampLerpNoCullCutoutBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RampLerpNoCullCutoutBlit()"}</code> | Creates a `RampLerpNoCullCutoutBlit` with default values. |
 
 ## Fields
 

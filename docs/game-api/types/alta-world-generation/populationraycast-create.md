@@ -20,6 +20,6 @@ Editor menu item under Assets/Create/Township/Features/Populations that makes a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PopulationRaycast.Create` with default values. |

@@ -28,9 +28,9 @@ TavernLib's internal log helper. Writes through `Tavern.Logger` as `[Type.Method
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-iscompilergeneratedasyncstatemachine" /><code>{"private static bool IsCompilerGeneratedAsyncStateMachine(Type type)"}</code> |
-| <Link id="m-log" /><code>{"private static void Log(ColorARGB color, string callerName, object msg, string prefix = \"\")"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-iscompilergeneratedasyncstatemachine" /><code>{"private static bool IsCompilerGeneratedAsyncStateMachine(Type type)"}</code> | True when a type is the compiler's async state machine, so the log can name the type that owns it instead. |
+| <Link id="m-log" /><code>{"private static void Log(ColorARGB color, string callerName, object msg, string prefix = \"\")"}</code> | Writes a coloured MelonLoader log line tagged with the calling type and member name. |
 
 </details>

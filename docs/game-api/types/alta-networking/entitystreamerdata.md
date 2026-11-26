@@ -18,9 +18,9 @@ An `EntitySerializer`'s last written state data for one entity.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EntityStreamerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EntityStreamerData()"}</code> | Creates an `EntityStreamerData` with default values. |
 
 ## Fields
 

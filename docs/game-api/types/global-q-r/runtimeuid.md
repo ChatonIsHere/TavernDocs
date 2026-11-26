@@ -18,9 +18,9 @@ A per-launch ID made from the time since 2018-01-01 in 5 second units. `Generati
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RuntimeUid()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RuntimeUid()"}</code> | Creates a `RuntimeUid` with default values. |
 
 ## Properties
 

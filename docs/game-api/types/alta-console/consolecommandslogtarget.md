@@ -20,9 +20,9 @@ NLog target `ConsoleCommandsTarget` that raises static events for each log line.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConsoleCommandsLogTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConsoleCommandsLogTarget()"}</code> | Creates a `ConsoleCommandsLogTarget` with default values. |
 
 ## Events
 

@@ -20,10 +20,10 @@ Server: one population (creatures or items of one `PopulationDefinition`) in one
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationSample("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, int currentPopulation, int maximumPopulation, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, bool isOneOff = false)"}</code> |
-| <Link id="m-ctor-2" /><code>{"PopulationSample("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, int currentPopulation, int maximumPopulation, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, bool isOneOff = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationSample("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, int currentPopulation, int maximumPopulation, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, bool isOneOff = false)"}</code> | Creates a `PopulationSample` from `definition`, `currentPopulation`, `maximumPopulation`, `chunk`, `spawner`, `parent` and `isOneOff`. |
+| <Link id="m-ctor-2" /><code>{"PopulationSample("}<Link to="/game-api/types/alta-world-generation/populationdefinition">{"PopulationDefinition"}</Link>{" definition, int currentPopulation, int maximumPopulation, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk, "}<Link to="/game-api/types/alta-world-generation/ispawnsystem">{"ISpawnSystem"}</Link>{" spawner, "}<Link to="/game-api/types/alta-world-generation/populationfolderbase">{"PopulationFolderBase"}</Link>{" parent, bool isOneOff = false)"}</code> | Creates a `PopulationSample` from `definition`, `currentPopulation`, `maximumPopulation`, `chunk`, `spawner`, `parent` and `isOneOff`. |
 
 ## Fields
 

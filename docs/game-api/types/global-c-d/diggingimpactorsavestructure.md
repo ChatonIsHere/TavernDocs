@@ -21,9 +21,9 @@ Save structure (version 1) for a `DiggingImpactor`: whether and how it is buried
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DiggingImpactorSaveStructure()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DiggingImpactorSaveStructure()"}</code> | Creates a `DiggingImpactorSaveStructure` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Debug record of how one target scored for an agent's actions.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TargetResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TargetResult()"}</code> | Creates a `TargetResult` with default values. |
 
 ## Properties
 

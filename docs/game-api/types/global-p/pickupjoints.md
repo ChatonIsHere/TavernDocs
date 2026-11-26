@@ -18,9 +18,9 @@ Creates and removes the physics joints that tie a `Pickup` to each hand holding 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupJoints("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isEnvironmentalJoint, "}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" jointType)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupJoints("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, bool isEnvironmentalJoint, "}<Link to="/game-api/types/global-p/pickupjointtype">{"PickUpJointType"}</Link>{" jointType)"}</code> | Creates a `PickupJoints` from `pickup`, `isEnvironmentalJoint` and `jointType`. |
 
 ## Fields
 

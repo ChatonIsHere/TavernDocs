@@ -19,9 +19,9 @@ Private serialized settings for one effect level: a duration curve and a size.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LevelDefinition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LevelDefinition()"}</code> | Creates an `EcholocationEffect.LevelDefinition` with default values. |
 
 ## Fields
 

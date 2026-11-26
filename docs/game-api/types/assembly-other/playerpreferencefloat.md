@@ -19,6 +19,6 @@ A float stored in `PlayerPreferences` under a fixed key. Not used in this build.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerPreferenceFloat(string key)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerPreferenceFloat(string key)"}</code> | Creates a `PlayerPreferenceFloat` from `key`. |

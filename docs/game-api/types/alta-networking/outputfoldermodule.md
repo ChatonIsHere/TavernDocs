@@ -20,9 +20,9 @@ Server web module that lets a user download their own files from the `FileDownlo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OutputFolderModule(string baseRoute)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OutputFolderModule(string baseRoute)"}</code> | Creates an `OutputFolderModule` from `baseRoute`. |
 
 ## Fields
 

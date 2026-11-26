@@ -19,9 +19,9 @@ A networked layer weight that eases towards a new value instead of jumping. Big 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedLayerWeightLerp(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedLayerWeightLerp(string name)"}</code> | Creates an `AnimatedLayerWeightLerp` from `name`. |
 
 ## Fields
 

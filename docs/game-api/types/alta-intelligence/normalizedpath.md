@@ -19,9 +19,9 @@ Internal helper for `Walker`: a navigation path from the agent's position throug
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NormalizedPath(Vector3 origin, List<Vector3> points)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NormalizedPath(Vector3 origin, List<Vector3> points)"}</code> | Creates a `NormalizedPath` from `origin` and `points`. |
 
 ## Fields
 

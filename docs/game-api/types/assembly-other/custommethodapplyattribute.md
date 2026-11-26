@@ -19,9 +19,9 @@ Prefab apply attribute that calls a named method on the component when the prefa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomMethodApplyAttribute(string method)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomMethodApplyAttribute(string method)"}</code> | Creates a `CustomMethodApplyAttribute` from `method`. |
 
 ## Fields
 

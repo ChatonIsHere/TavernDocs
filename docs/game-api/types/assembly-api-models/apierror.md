@@ -19,12 +19,12 @@ Error body returned by the Alta web API: message, error code, request validation
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ApiError("}<Link to="/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ApiError("}<Link to="/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message, object context)"}</code> |
-| <Link id="m-ctor-3" /><code>{"ApiError(string message)"}</code> |
-| <Link id="m-ctor-4" /><code>{"ApiError()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ApiError("}<Link to="/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message)"}</code> | Creates an `ApiError` with default values. |
+| <Link id="m-ctor-2" /><code>{"ApiError("}<Link to="/game-api/types/assembly-api-models/errorcode">{"ErrorCode"}</Link>{" errorCode, string message, object context)"}</code> | Creates an `ApiError` with default values. |
+| <Link id="m-ctor-3" /><code>{"ApiError(string message)"}</code> | Creates an `ApiError` with default values. |
+| <Link id="m-ctor-4" /><code>{"ApiError()"}</code> | Creates an `ApiError` with default values. |
 
 ## Properties
 

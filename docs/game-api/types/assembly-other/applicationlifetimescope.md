@@ -20,9 +20,9 @@ VContainer scope for the whole application. Registers the API client, login pref
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ApplicationLifetimeScope()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ApplicationLifetimeScope()"}</code> | Creates an `ApplicationLifetimeScope` with default values. |
 
 ## Fields
 

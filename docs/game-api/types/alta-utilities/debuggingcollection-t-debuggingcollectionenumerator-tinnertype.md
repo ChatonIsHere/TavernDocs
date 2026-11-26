@@ -20,9 +20,9 @@ Enumerator for `DebuggingCollection` that tracks whether enumeration is under wa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DebuggingCollectionEnumerator(IEnumerator<TInnerType> enumerator, Action enumerationFinishedCallback)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DebuggingCollectionEnumerator(IEnumerator<TInnerType> enumerator, Action enumerationFinishedCallback)"}</code> | Creates a `DebuggingCollection` from `enumerator` and `enumerationFinishedCallback`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Makes the liquid material for bottled liquid (`BottledLiquid`), with properties 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BottleLiquidMaterialCreator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BottleLiquidMaterialCreator()"}</code> | Creates a `BottleLiquidMaterialCreator` with default values. |
 
 ## Fields
 

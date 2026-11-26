@@ -18,10 +18,10 @@ Stopwatch that logs how long a step took, at debug, warn or error level.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LoggingWatch()"}</code> |
-| <Link id="m-ctor-2" /><code>{"LoggingWatch(int errorLevel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LoggingWatch()"}</code> | Creates a `LoggingWatch` from `errorLevel`. |
+| <Link id="m-ctor-2" /><code>{"LoggingWatch(int errorLevel)"}</code> | Creates a `LoggingWatch` from `errorLevel`. |
 
 ## Fields
 

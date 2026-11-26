@@ -18,10 +18,10 @@ Internal message the server sends back to a client's join request: allowed or no
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConfirmJoinMessage(bool isAllowed, bool isDoingPrerequisites, "}<Link to="/game-api/types/global-c-d/clientjoinresult">{"ClientJoinResult"}</Link>{" joinResult, "}<Link to="/game-api/types/alta-networking/joinedserverinfo">{"JoinedServerInfo"}</Link>{" serverInfo = null, string error = null)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ConfirmJoinMessage(bool isAllowed, bool isDoingPrerequisites, "}<Link to="/game-api/types/alta-networking/joinedserverinfo">{"JoinedServerInfo"}</Link>{" serverInfo = null, string error = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConfirmJoinMessage(bool isAllowed, bool isDoingPrerequisites, "}<Link to="/game-api/types/global-c-d/clientjoinresult">{"ClientJoinResult"}</Link>{" joinResult, "}<Link to="/game-api/types/alta-networking/joinedserverinfo">{"JoinedServerInfo"}</Link>{" serverInfo = null, string error = null)"}</code> | Creates a `ConfirmJoinMessage` from `isAllowed`, `isDoingPrerequisites`, `serverInfo` and `error`. |
+| <Link id="m-ctor-2" /><code>{"ConfirmJoinMessage(bool isAllowed, bool isDoingPrerequisites, "}<Link to="/game-api/types/alta-networking/joinedserverinfo">{"JoinedServerInfo"}</Link>{" serverInfo = null, string error = null)"}</code> | Creates a `ConfirmJoinMessage` from `isAllowed`, `isDoingPrerequisites`, `serverInfo` and `error`. |
 
 ## Fields
 

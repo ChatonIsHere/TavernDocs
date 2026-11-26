@@ -19,9 +19,9 @@ Baker access for tree attachments (leaves and similar): gives the baking code ea
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeAttachmentBaker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeAttachmentBaker()"}</code> | Creates a `WoodcutTreeAttachmentBaker` with default values. |
 
 ## Properties
 

@@ -18,9 +18,9 @@ Internal record of one climb for analytics: distance travelled and the larger st
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StaminaUsageRecord(float distance, float leftStamina, float rightStamina)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StaminaUsageRecord(float distance, float leftStamina, float rightStamina)"}</code> | Creates a `StaminaUsageRecord` from `distance`, `leftStamina` and `rightStamina`. |
 
 ## Fields
 

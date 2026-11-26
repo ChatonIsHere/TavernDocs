@@ -20,9 +20,9 @@ Holds one disposable at a time: setting a new one disposes the old one. Thread-s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerialDisposable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerialDisposable()"}</code> | Creates a `SerialDisposable` with default values. |
 
 ## Fields
 

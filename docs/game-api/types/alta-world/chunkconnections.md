@@ -18,9 +18,9 @@ A location chunk's links to other chunks: forced adjacent chunks (set in the ins
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkConnections()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkConnections()"}</code> | Creates a `ChunkConnections` with default values. |
 
 ## Fields
 

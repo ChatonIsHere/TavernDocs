@@ -21,9 +21,9 @@ A position and rotation stored relative to a transform, so it follows that trans
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private RelativePoint(Transform relativeTo, Vector3 localPosition, Quaternion localRotation)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private RelativePoint(Transform relativeTo, Vector3 localPosition, Quaternion localRotation)"}</code> | Creates a `RelativePoint` from `relativeTo`, `localPosition` and `localRotation`. |
 
 </details>
 

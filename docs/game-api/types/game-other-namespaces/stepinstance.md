@@ -20,10 +20,10 @@ One running step of a micro tutorial on the client: makes a step object with sta
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor-2" /><code>{"StepInstance("}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" step, Transform parent)"}</code> |
-| <Link id="m-ctor" /><code>{"protected StepInstance("}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" step)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor-2" /><code>{"StepInstance("}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" step, Transform parent)"}</code> | Creates a `StepInstance` from `step` and `parent`. |
+| <Link id="m-ctor" /><code>{"protected StepInstance("}<Link to="/game-api/types/game-other-namespaces/microtutorialstep">{"MicroTutorialStep"}</Link>{" step)"}</code> | Creates a `StepInstance` from `step` and `parent`. |
 
 ## Fields
 

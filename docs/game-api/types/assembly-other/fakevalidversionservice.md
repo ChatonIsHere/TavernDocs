@@ -20,9 +20,9 @@ Stand-in `IValidVersionService` that always says the game version is valid, used
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FakeValidVersionService()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FakeValidVersionService()"}</code> | Creates a `FakeValidVersionService` with default values. |
 
 ## Fields
 

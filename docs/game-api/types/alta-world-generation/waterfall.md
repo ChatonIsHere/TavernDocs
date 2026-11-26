@@ -18,9 +18,9 @@ A waterfall in river generation, from a top river node to a bottom one, with the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Waterfall()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Waterfall()"}</code> | Creates a `Waterfall` with default values. |
 
 ## Fields
 

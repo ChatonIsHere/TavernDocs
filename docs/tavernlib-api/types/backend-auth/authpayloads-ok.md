@@ -24,8 +24,8 @@ A plain `ok` status, the answer to an accepted `set_mods`.
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-status" /><code>{"private string Status { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-status" /><code>{"private string Status { get; }"}</code> | Always `ok`. |
 
 </details>

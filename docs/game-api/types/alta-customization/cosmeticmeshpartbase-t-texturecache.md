@@ -19,9 +19,9 @@ Private holder for a part's PC and Android textures and normal maps. Not used an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TextureCache()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TextureCache()"}</code> | Creates a `CosmeticMeshPartBase` with default values. |
 
 ## Fields
 

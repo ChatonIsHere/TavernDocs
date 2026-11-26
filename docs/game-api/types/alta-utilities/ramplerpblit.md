@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/RampLerp` shader. `AtlasDefinition
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RampLerpBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RampLerpBlit()"}</code> | Creates a `RampLerpBlit` with default values. |
 
 ## Fields
 

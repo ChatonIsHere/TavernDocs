@@ -19,11 +19,11 @@ Fixed size binary heap with any comparable priority. Ties go to whichever node w
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GenericPriorityQueue(int maxNodes)"}</code> |
-| <Link id="m-ctor-2" /><code>{"GenericPriorityQueue(int maxNodes, IComparer<TPriority> comparer)"}</code> |
-| <Link id="m-ctor-3" /><code>{"GenericPriorityQueue(int maxNodes, Comparison<TPriority> comparer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GenericPriorityQueue(int maxNodes)"}</code> | Creates a `GenericPriorityQueue` from `maxNodes` and `comparer`. |
+| <Link id="m-ctor-2" /><code>{"GenericPriorityQueue(int maxNodes, IComparer<TPriority> comparer)"}</code> | Creates a `GenericPriorityQueue` from `maxNodes` and `comparer`. |
+| <Link id="m-ctor-3" /><code>{"GenericPriorityQueue(int maxNodes, Comparison<TPriority> comparer)"}</code> | Creates a `GenericPriorityQueue` from `maxNodes` and `comparer`. |
 
 ## Fields
 

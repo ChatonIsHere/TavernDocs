@@ -19,9 +19,9 @@ Save folder that mirrors a local folder to an S3 prefix. Hands out `S3CloudStora
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"S3RemoteFolder("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" localFolder, "}<Link to="/game-api/types/assembly-other/s3storagefolder">{"S3StorageFolder"}</Link>{" remoteFolder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"S3RemoteFolder("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" localFolder, "}<Link to="/game-api/types/assembly-other/s3storagefolder">{"S3StorageFolder"}</Link>{" remoteFolder)"}</code> | Creates a `S3RemoteFolder` from `localFolder` and `remoteFolder`. |
 
 ## Fields
 

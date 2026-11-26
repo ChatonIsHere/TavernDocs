@@ -19,9 +19,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StringBuilderReplacer(string target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StringBuilderReplacer(string target)"}</code> | Creates a `StringBuilderReplacer` from `target`. |
 
 ## Fields
 

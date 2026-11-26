@@ -18,9 +18,9 @@ Paging info for a list response from the API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"QueryMeta(int offset, bool hasMoreResults)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"QueryMeta(int offset, bool hasMoreResults)"}</code> | Creates a `QueryMeta` from `offset` and `hasMoreResults`. |
 
 ## Properties
 

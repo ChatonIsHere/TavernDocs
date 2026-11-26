@@ -19,9 +19,9 @@ Like `GetComponentAttribute`, but searches this object and its parents.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetComponentInParentAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetComponentInParentAttribute()"}</code> | Creates a `GetComponentInParentAttribute` with default values. |
 
 ## Methods
 

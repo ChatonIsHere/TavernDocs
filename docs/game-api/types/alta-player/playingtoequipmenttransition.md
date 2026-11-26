@@ -19,9 +19,9 @@ Moves a player from Playing to equipment mode. Fired through the static `Trigger
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingToEquipmentTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingToEquipmentTransition()"}</code> | Creates a `PlayingToEquipmentTransition` with default values. |
 
 ## Methods
 

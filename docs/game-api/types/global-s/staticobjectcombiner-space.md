@@ -19,9 +19,9 @@ A rotation frame used when flattening primitive colliders: box and capsule colli
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Space(Quaternion rotation, Transform root, int layer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Space(Quaternion rotation, Transform root, int layer)"}</code> | Creates a `StaticObjectCombiner.Space` from `rotation`, `root` and `layer`. |
 
 ## Fields
 

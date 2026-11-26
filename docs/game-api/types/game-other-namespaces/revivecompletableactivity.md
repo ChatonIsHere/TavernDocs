@@ -19,9 +19,9 @@ The revive minigame for a downed player: spawns a rotating ring of revive orbs a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ReviveCompletableActivity("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter, "}<Link to="/game-api/types/game-other-namespaces/downedstatesettings">{"DownedStateSettings"}</Link>{" settings, Vector3 spawnPosition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ReviveCompletableActivity("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" playerCharacter, "}<Link to="/game-api/types/game-other-namespaces/downedstatesettings">{"DownedStateSettings"}</Link>{" settings, Vector3 spawnPosition)"}</code> | Creates a `ReviveCompletableActivity` from `playerCharacter`, `settings` and `spawnPosition`. |
 
 ## Fields
 

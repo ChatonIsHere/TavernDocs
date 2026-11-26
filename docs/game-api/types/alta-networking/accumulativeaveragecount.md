@@ -18,9 +18,9 @@ A counter that keeps a running average of how many times something happened per 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AccumulativeAverageCount()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AccumulativeAverageCount()"}</code> | Creates an `AccumulativeAverageCount` with default values. |
 
 ## Fields
 

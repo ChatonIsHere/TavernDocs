@@ -18,9 +18,9 @@ Profiling helper: adds up numbers over one period, then records the total into a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AccumulativeAverageNumber()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AccumulativeAverageNumber()"}</code> | Creates an `AccumulativeAverageNumber` with default values. |
 
 ## Fields
 

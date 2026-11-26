@@ -18,9 +18,9 @@ One option button for a menu window's options popup: label, action to run and bu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OptionsConfig(string text, Action action, "}<Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OptionsConfig(string text, Action action, "}<Link to="/game-api/types/alta-menus/uibuttontype">{"UIButtonType"}</Link>{" type = 0)"}</code> | Creates an `OptionsConfig` from `text`, `action` and `type`. |
 
 ## Properties
 

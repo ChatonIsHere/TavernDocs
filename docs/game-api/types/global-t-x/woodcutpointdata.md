@@ -20,9 +20,9 @@ One damage point on a woodcut tree: a local position and how far it has been cho
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutPointData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutPointData()"}</code> | Creates a `WoodcutPointData` with default values. |
 
 ## Fields
 

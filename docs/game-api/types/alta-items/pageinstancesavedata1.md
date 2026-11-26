@@ -20,9 +20,9 @@ Old (version 1) save data for a `PageInstance`. It is migrated to `PageInstanceS
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PageInstanceSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PageInstanceSaveData1()"}</code> | Creates a `PageInstanceSaveData1` with default values. |
 
 ## Fields
 

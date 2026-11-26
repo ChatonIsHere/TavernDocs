@@ -19,9 +19,9 @@ One extra arrow nocked on a bow alongside the main arrow (multi-shot), with its 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ExtraArrowData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ExtraArrowData()"}</code> | Creates an `ExtraArrowUpdater.ExtraArrowData` with default values. |
 
 ## Properties
 

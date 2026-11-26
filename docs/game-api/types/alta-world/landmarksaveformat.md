@@ -19,9 +19,9 @@ Per-player save file of which landmarks the player knows: true for discovered, f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LandmarkSaveFormat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LandmarkSaveFormat()"}</code> | Creates a `LandmarkSaveFormat` with default values. |
 
 ## Fields
 

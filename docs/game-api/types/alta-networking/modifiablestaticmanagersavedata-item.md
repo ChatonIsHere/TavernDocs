@@ -19,9 +19,9 @@ One saved entry of `ModifiableStaticManager`: a static object's hash and its mod
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `ModifiableStaticManagerSaveData.Item` with default values. |
 
 ## Fields
 

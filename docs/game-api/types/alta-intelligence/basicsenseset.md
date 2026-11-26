@@ -22,9 +22,9 @@ A pooled array of 32 sense intensities used by AI targets. Get one with `Get` an
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private BasicSenseSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private BasicSenseSet()"}</code> | Creates a `BasicSenseSet` with default values. |
 
 </details>
 

@@ -19,9 +19,9 @@ Saved ranking for one leaderboard: player IDs and times in rank order.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LeaderboardEntry()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LeaderboardEntry()"}</code> | Creates a `LeaderboardManagerData.LeaderboardEntry` with default values. |
 
 ## Fields
 

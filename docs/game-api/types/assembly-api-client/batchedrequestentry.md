@@ -18,9 +18,9 @@ One queued request in `ApiBatchRequestService`. Entries for the same address are
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BatchedRequestEntry()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BatchedRequestEntry()"}</code> | Creates a `BatchedRequestEntry` with default values. |
 
 ## Properties
 

@@ -21,6 +21,6 @@ Menu path node for Assets/Create. Its nested classes group asset-creation entrie
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Create()"}</code> | Creates an `AltaMenuItemBase.Assets.Create` with default values. |

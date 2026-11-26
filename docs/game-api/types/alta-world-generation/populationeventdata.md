@@ -19,9 +19,9 @@ Payload of the `ConsoleEvents.PopulationModified` console event, raised by `Popu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationEventData("}<Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" sample, "}<Link to="/game-api/types/alta-world-generation/populationaction">{"PopulationAction"}</Link>{" action)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationEventData("}<Link to="/game-api/types/alta-world-generation/populationsample">{"PopulationSample"}</Link>{" sample, "}<Link to="/game-api/types/alta-world-generation/populationaction">{"PopulationAction"}</Link>{" action)"}</code> | Creates a `PopulationEventData` from `sample` and `action`. |
 
 ## Fields
 

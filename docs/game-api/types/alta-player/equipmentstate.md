@@ -21,9 +21,9 @@ Player state for the equipment (cosmetics) screen. The local player gets a custo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EquipmentState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EquipmentState("}<Link to="/game-api/types/alta-player/playingstate">{"PlayingState"}</Link>{" playingState)"}</code> | Creates an `EquipmentState` from `playingState`. |
 
 ## Fields
 

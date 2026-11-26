@@ -21,9 +21,9 @@ Post-processing effect settings ("Alta/Depth To Alpha") that write depth into th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ScreenShotAlpha()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ScreenShotAlpha()"}</code> | Creates a `ScreenShotAlpha` with default values. |
 
 ## Fields
 

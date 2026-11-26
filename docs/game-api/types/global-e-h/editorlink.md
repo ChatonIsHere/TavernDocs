@@ -18,9 +18,9 @@ Serializable link to an asset by GUID, meant for editor use. In the game build e
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EditorLink()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EditorLink()"}</code> | Creates an `EditorLink` with default values. |
 
 ## Fields
 

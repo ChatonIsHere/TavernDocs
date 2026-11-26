@@ -19,9 +19,9 @@ A mesh and material swap for one platform, applied by `PlatformMeshController` o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> | Creates a `PlatformMeshController.PlatformDetails` with default values. |
 
 ## Fields
 

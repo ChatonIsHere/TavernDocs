@@ -20,9 +20,9 @@ Old version 1 save data for `SpawnInCircle`, without the kinematic flag. Migrate
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnInCircleSaveData1()"}</code> | Creates a `SpawnInCircleSaveData1` with default values. |
 
 ## Fields
 

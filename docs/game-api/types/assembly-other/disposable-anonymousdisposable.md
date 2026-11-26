@@ -20,9 +20,9 @@ Disposable returned by `Disposable.Create`: runs an action the first time it's d
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnonymousDisposable(Action dispose)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnonymousDisposable(Action dispose)"}</code> | Creates a `Disposable.AnonymousDisposable` from `dispose`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ XR device controller for the AutoCam spectator mode: no device input, and it sup
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AutoCamDeviceController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AutoCamDeviceController()"}</code> | Creates an `AutoCamDeviceController` with default values. |
 
 ## Properties
 

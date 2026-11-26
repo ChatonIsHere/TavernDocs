@@ -19,9 +19,9 @@ Console module `quality`: LOD bias and chunk streaming distance multipliers.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"QualityCommandModule()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"QualityCommandModule()"}</code> | Creates a `QualityCommandModule` with default values. |
 
 ## Fields
 

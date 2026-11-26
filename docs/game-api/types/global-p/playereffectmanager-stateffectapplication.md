@@ -19,9 +19,9 @@ Private helper in `PlayerEffectManager` that watches one stat for a buff or a de
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatEffectApplication("}<Link to="/game-api/types/alta-player/statdriveneffect">{"StatDrivenEffect"}</Link>{" statDrive, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, bool isBuff, "}<Link to="/game-api/types/alta-player/stateffectshellanimator">{"StatEffectShellAnimator"}</Link>{" shellAnimator, Action<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", bool, bool> activeChanged, Action<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", bool, float> sizeChanged)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatEffectApplication("}<Link to="/game-api/types/alta-player/statdriveneffect">{"StatDrivenEffect"}</Link>{" statDrive, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, bool isBuff, "}<Link to="/game-api/types/alta-player/stateffectshellanimator">{"StatEffectShellAnimator"}</Link>{" shellAnimator, Action<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", bool, bool> activeChanged, Action<"}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{", bool, float> sizeChanged)"}</code> | Creates a `PlayerEffectManager.StatEffectApplication` from `statDrive`, `stat`, `isBuff`, `shellAnimator`, `activeChanged` and `sizeChanged`. |
 
 ## Fields
 

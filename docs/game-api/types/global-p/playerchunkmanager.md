@@ -18,9 +18,9 @@ Tracks which location chunk a player is in and which chunks they have loaded. Th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerChunkManager("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerChunkManager("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Creates a `PlayerChunkManager` from `player`. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data for a `CurveOutput` logic component (save structure version 1).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CurveOutputSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CurveOutputSaveData()"}</code> | Creates a `CurveOutputSaveData` with default values. |
 
 ## Fields
 

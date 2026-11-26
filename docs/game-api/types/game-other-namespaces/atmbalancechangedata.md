@@ -19,9 +19,9 @@ Payload of the `ConsoleEvents.AtmBalanceChanged` console event, raised on the se
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AtmBalanceChangeData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AtmBalanceChangeData()"}</code> | Creates an `AtmBalanceChangeData` with default values. |
 
 ## Fields
 

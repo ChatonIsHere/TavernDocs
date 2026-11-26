@@ -20,9 +20,9 @@ Customization arguments holding a primary and secondary cosmetic colour for a co
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TwoColors()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TwoColors()"}</code> | Creates a `TwoColors` with default values. |
 
 ## Fields
 

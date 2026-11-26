@@ -20,9 +20,9 @@ Serializable `UnityEvent` with a `Vector3` argument, for position events wired i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionHandler()"}</code> | Creates a `PositionHandler` with default values. |
 
 ## Used in
 

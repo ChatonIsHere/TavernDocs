@@ -20,6 +20,6 @@ Editor menu entry for creating the `PlayerControllerPrefabs` global settings ass
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PlayerControllerPrefabs.Create` with default values. |

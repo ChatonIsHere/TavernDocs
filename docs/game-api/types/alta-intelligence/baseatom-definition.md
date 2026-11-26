@@ -21,9 +21,9 @@ A rule in the creature knowledge system: when the compound holds, the goal predi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Definition("}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" compound, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Definition("}<Link to="/game-api/types/alta-intelligence/compound">{"Compound"}</Link>{" compound, "}<Link to="/game-api/types/alta-intelligence/predicate">{"Predicate"}</Link>{" goal, float weighting)"}</code> | Creates a `BaseAtom.Definition` from `compound`, `goal` and `weighting`. |
 
 ## Fields
 

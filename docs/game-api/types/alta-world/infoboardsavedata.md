@@ -21,9 +21,9 @@ Save data for an `InfoBoard`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InfoBoardSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InfoBoardSaveData()"}</code> | Creates an `InfoBoardSaveData` with default values. |
 
 ## Fields
 

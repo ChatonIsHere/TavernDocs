@@ -20,6 +20,6 @@ Editor menu folder `Township/Features/Meta`: menu item classes inherit it to app
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Meta()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Meta()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Meta` with default values. |

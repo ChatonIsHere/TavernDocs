@@ -20,9 +20,9 @@ Reads meshes and materials from woodcut tree nodes for the tree baker. Use the s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeNodeBaker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeNodeBaker()"}</code> | Creates a `WoodcutTreeNodeBaker` with default values. |
 
 ## Properties
 

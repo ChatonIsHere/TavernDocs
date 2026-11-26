@@ -20,9 +20,9 @@ Old version 1 save data for a `TreeSpawner`, migrated to `TreeSpawnerSaveData` o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TreeSpawnerSaveData1()"}</code> | Creates a `TreeSpawnerSaveData1` with default values. |
 
 ## Fields
 

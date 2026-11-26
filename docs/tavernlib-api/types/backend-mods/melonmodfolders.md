@@ -22,10 +22,10 @@ Internal: edits MelonLoader's private list of mod folders at start to match the 
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-excludednames" /><code>{"private static readonly string[] ExcludedNames"}</code> |
-| <Link id="m-otherscannames" /><code>{"private static readonly string[] OtherScanNames"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-excludednames" /><code>{"private static readonly string[] ExcludedNames"}</code> | Folder names MelonLoader skips by default: `Broken`, `Retired`, `Disabled`. |
+| <Link id="m-otherscannames" /><code>{"private static readonly string[] OtherScanNames"}</code> | Folder names under `Mods/` that MelonLoader treats as user libs or plugins, not mod folders. |
 
 </details>
 
@@ -40,10 +40,10 @@ Internal: edits MelonLoader's private list of mod folders at start to match the 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-addwithsubfolders" /><code>{"private static void AddWithSubfolders(string dir, List<string> into)"}</code> |  |
-| <Link id="m-isexcluded" /><code>{"private static bool IsExcluded(string dir)"}</code> |  |
-| <Link id="m-isunder" /><code>{"private static bool IsUnder(string path, string root)"}</code> |  |
-| <Link id="m-normalize" /><code>{"private static string Normalize(string path)"}</code> |  |
+| <Link id="m-addwithsubfolders" /><code>{"private static void AddWithSubfolders(string dir, List<string> into)"}</code> | Adds a folder and its non-excluded subfolders to a list. |
+| <Link id="m-isexcluded" /><code>{"private static bool IsExcluded(string dir)"}</code> | Returns whether MelonLoader skips the folder, by a `~` or `.` prefix or an excluded name. |
+| <Link id="m-isunder" /><code>{"private static bool IsUnder(string path, string root)"}</code> | Returns whether a path lies inside a root folder. |
+| <Link id="m-normalize" /><code>{"private static string Normalize(string path)"}</code> | Returns the full path without a trailing separator. |
 | <Link id="m-sync" /><code>{"internal static void Sync(string gameDir, string target)"}</code> | Matches MelonLoader's folder list to the disk for one target. Logs a warning and loads no managed mod if the private field can't be reached. |
 
 </details>

@@ -19,9 +19,9 @@ A cosmetic set's hash and the item hashes it contains, stored in `PurchasableMap
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticSet()"}</code> | Creates a `PurchasableMap.CosmeticSet` with default values. |
 
 ## Fields
 

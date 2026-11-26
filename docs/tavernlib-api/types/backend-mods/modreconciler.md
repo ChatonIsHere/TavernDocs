@@ -23,10 +23,10 @@ Brings `Mods` in line with a modlist before mods load on a headless server: inst
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maxseconds" /><code>{"private const int MaxSeconds"}</code> |
-| <Link id="m-target" /><code>{"private const string Target"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maxseconds" /><code>{"private const int MaxSeconds"}</code> | Time budget, in seconds, for one reconcile pass. |
+| <Link id="m-target" /><code>{"private const string Target"}</code> | The target this pass works on, `server`. |
 
 </details>
 

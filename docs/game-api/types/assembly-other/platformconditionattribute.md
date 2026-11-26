@@ -19,10 +19,10 @@ Inspector attribute that marks a field as only relevant on certain platforms, ei
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformConditionAttribute("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> |
-| <Link id="m-ctor-2" /><code>{"PlatformConditionAttribute(bool isAndroid)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformConditionAttribute("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime)"}</code> | Creates a `PlatformConditionAttribute` from `isAndroid`. |
+| <Link id="m-ctor-2" /><code>{"PlatformConditionAttribute(bool isAndroid)"}</code> | Creates a `PlatformConditionAttribute` from `isAndroid`. |
 
 ## Properties
 

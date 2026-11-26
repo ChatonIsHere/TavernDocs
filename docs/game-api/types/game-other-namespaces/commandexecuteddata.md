@@ -19,9 +19,9 @@ Payload of the `ConsoleEvents.CommandExecuted` console event, raised on the serv
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CommandExecutedData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CommandExecutedData()"}</code> | Creates a `CommandExecutedData` with default values. |
 
 ## Fields
 

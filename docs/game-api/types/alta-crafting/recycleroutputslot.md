@@ -22,9 +22,9 @@ One output slot of the recycler. It fills up with molten metal of one material a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RecyclerOutputSlot()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RecyclerOutputSlot()"}</code> | Creates a `RecyclerOutputSlot` with default values. |
 
 ## Fields
 

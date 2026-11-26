@@ -19,9 +19,9 @@ Spec of an Agones game server: its ports and pod template.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameServerSpec()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameServerSpec()"}</code> | Creates a `GameServerSpec` with default values. |
 
 ## Properties
 

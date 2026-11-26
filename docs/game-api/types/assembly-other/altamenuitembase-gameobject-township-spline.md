@@ -20,6 +20,6 @@ Editor menu folder `GameObject/Township/Spline`: menu item classes inherit it to
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Spline()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Spline()"}</code> | Creates an `AltaMenuItemBase.GameObject.Township.Spline` with default values. |

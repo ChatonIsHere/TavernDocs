@@ -18,9 +18,9 @@ One light beam cast from an `ILightEmitter`, tracking which `ILightDetector` it 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code><Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{"("}<Link to="/game-api/types/global-i-l/ilightemitter">{"ILightEmitter"}</Link>{" emitter, "}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code><Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{"("}<Link to="/game-api/types/global-i-l/ilightemitter">{"ILightEmitter"}</Link>{" emitter, "}<Link to="/game-api/types/global-a-b/beam">{"Beam"}</Link>{" beam)"}</code> | Creates a `Beam` from `emitter` and `beam`. |
 
 ## Properties
 

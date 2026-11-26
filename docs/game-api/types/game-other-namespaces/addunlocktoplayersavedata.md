@@ -21,9 +21,9 @@ Save data (version 1) for `AddUnlockToPlayer`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AddUnlockToPlayerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AddUnlockToPlayerSaveData()"}</code> | Creates an `AddUnlockToPlayerSaveData` with default values. |
 
 ## Fields
 

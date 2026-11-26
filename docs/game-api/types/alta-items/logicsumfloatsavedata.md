@@ -21,9 +21,9 @@ Save data for `LogicSumFloatReceiver`: its own output value data and the float i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicSumFloatSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicSumFloatSaveData()"}</code> | Creates a `LogicSumFloatSaveData` with default values. |
 
 ## Fields
 

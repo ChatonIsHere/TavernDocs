@@ -19,9 +19,9 @@ Server console that throws away all log output.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NullConsole()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NullConsole()"}</code> | Creates a `NullConsole` with default values. |
 
 ## Methods
 

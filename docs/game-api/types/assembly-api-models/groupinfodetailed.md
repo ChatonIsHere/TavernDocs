@@ -20,9 +20,9 @@ A group's info from the web API with its servers and roles included.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GroupInfoDetailed()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GroupInfoDetailed()"}</code> | Creates a `GroupInfoDetailed` with default values. |
 
 ## Properties
 

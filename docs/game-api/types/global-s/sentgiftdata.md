@@ -21,9 +21,9 @@ Save data (version 1) for a `SentGift`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SentGiftData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SentGiftData()"}</code> | Creates a `SentGiftData` with default values. |
 
 ## Fields
 

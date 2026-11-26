@@ -19,9 +19,9 @@ Client tablet panel in the feature test gymnasium that lists every non-default `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GymnasiumTeleportPointPage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GymnasiumTeleportPointPage()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

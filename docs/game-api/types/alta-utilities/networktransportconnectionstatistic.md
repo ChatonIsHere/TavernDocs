@@ -19,9 +19,9 @@ Transport statistics for one `Connection`. Mostly a stub: `SetupFields` and `Upd
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportConnectionStatistic("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportConnectionStatistic("}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{" connection)"}</code> | Creates a `NetworkTransportConnectionStatistic` from `connection`. |
 
 ## Fields
 

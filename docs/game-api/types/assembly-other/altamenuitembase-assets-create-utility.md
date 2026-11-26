@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Utility`: menu item classes inherit it to appe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Utility()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Utility()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Utility` with default values. |

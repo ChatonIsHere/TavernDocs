@@ -19,9 +19,9 @@ Payload of the `PlayerJoined` and `PlayerLeft` console events, built from a play
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerJoinLeaveData("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerJoinLeaveData("}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{" player)"}</code> | Creates a `PlayerJoinLeaveData` from `player`. |
 
 ## Fields
 

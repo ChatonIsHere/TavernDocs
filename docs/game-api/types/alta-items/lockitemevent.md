@@ -19,9 +19,9 @@ Inspector event that passes a `Lock`. Used for `Chest.LockJingleJangle`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LockItemEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LockItemEvent()"}</code> | Creates a `LockItemEvent` with default values. |
 
 ## Used in
 

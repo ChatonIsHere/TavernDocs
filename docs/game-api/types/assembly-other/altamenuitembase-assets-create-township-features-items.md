@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/Items`: menu item classes in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Items()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Items()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Items` with default values. |

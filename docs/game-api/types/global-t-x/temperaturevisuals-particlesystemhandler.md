@@ -19,9 +19,9 @@ A group of particle systems on a smelter's temperature visuals that fade in and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ParticleSystemHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ParticleSystemHandler()"}</code> | Creates a `TemperatureVisuals.ParticleSystemHandler` with default values. |
 
 ## Fields
 

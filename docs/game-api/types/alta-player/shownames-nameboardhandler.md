@@ -19,17 +19,17 @@ Tracks the name board for one player or `PlayerProxy` while Show Names is on: sp
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NameBoardHandler("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-player/shownames">{"ShowNames"}</Link>{" settings)"}</code> |
-| <Link id="m-ctor-2" /><code>{"NameBoardHandler("}<Link to="/game-api/types/alta-player/playerproxy">{"PlayerProxy"}</Link>{" player, "}<Link to="/game-api/types/alta-player/shownames">{"ShowNames"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NameBoardHandler("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-player/shownames">{"ShowNames"}</Link>{" settings)"}</code> | Creates a `ShowNames.NameBoardHandler` from `userName`, `userStatus`, `isFriend`, `playerHead` and `settings`. |
+| <Link id="m-ctor-2" /><code>{"NameBoardHandler("}<Link to="/game-api/types/alta-player/playerproxy">{"PlayerProxy"}</Link>{" player, "}<Link to="/game-api/types/alta-player/shownames">{"ShowNames"}</Link>{" settings)"}</code> | Creates a `ShowNames.NameBoardHandler` from `userName`, `userStatus`, `isFriend`, `playerHead` and `settings`. |
 
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor-3" /><code>{"private NameBoardHandler(string userName, int userStatus, bool isFriend, Transform playerHead, "}<Link to="/game-api/types/alta-player/shownames">{"ShowNames"}</Link>{" settings)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor-3" /><code>{"private NameBoardHandler(string userName, int userStatus, bool isFriend, Transform playerHead, "}<Link to="/game-api/types/alta-player/shownames">{"ShowNames"}</Link>{" settings)"}</code> | Creates a `ShowNames.NameBoardHandler` from `userName`, `userStatus`, `isFriend`, `playerHead` and `settings`. |
 
 </details>
 

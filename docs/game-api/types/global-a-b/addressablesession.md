@@ -19,9 +19,9 @@ Loads Unity Addressable assets and keeps them loaded until every user of the ses
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AddressableSession()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AddressableSession()"}</code> | Creates an `AddressableSession` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Internal atlas blitter for the `Township Tale/Cheap/SimpleStandard` shader. `Atl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimpleStandardBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimpleStandardBlit()"}</code> | Creates a `SimpleStandardBlit` with default values. |
 
 ## Fields
 

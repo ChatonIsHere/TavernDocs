@@ -20,9 +20,9 @@ One network traffic counter for the profiler. Reads a running total from a funct
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportStatisticField(Func<int> getValueFunction, "}<Link to="/game-api/types/alta-utilities/networktransportstatistictype">{"NetworkTransportStatisticType"}</Link>{" statisticType = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportStatisticField(Func<int> getValueFunction, "}<Link to="/game-api/types/alta-utilities/networktransportstatistictype">{"NetworkTransportStatisticType"}</Link>{" statisticType = 0)"}</code> | Creates a `NetworkTransportStatisticField` from `getValueFunction` and `statisticType`. |
 
 ## Fields
 

@@ -21,6 +21,6 @@ Editor menu folder `3rd Party` (underscores become spaces in the menu path): men
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected _3rd_Party()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected _3rd_Party()"}</code> | Creates an `AltaMenuItemBase._3rd_Party` with default values. |

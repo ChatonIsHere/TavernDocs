@@ -18,9 +18,9 @@ Per-hand controller offsets loaded from `custom_controller_offsets.json` next to
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomControllerOffset()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomControllerOffset()"}</code> | Creates a `CustomControllerOffset` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Helper that moves a float towards a target over time and pushes each new value t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LerpingFloatValue(Action<float> setValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LerpingFloatValue(Action<float> setValue)"}</code> | Creates a `LerpingFloatValue` from `setValue`. |
 
 ## Fields
 

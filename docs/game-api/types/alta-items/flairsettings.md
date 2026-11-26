@@ -19,9 +19,9 @@ How a book's cover is decorated: flair meshes for the spine, spine face and edge
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FlairSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FlairSettings()"}</code> | Creates a `FlairSettings` with default values. |
 
 ## Fields
 

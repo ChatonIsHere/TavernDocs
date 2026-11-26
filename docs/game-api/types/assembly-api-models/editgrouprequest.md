@@ -18,9 +18,9 @@ Body for updating a group's details on the Alta web API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EditGroupRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EditGroupRequest()"}</code> | Creates an `EditGroupRequest` with default values. |
 
 ## Properties
 

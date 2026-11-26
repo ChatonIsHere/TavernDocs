@@ -19,9 +19,9 @@ One layer of a jenga stack: how many items fit along X and Z, and the total.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Level(int x, int y)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Level(int x, int y)"}</code> | Creates a `JengaStackingInstructionSetup.Level` from `x` and `y`. |
 
 ## Fields
 

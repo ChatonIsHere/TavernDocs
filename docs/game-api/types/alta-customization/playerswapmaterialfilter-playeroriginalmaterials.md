@@ -19,9 +19,9 @@ For one player character, maps each LOD0 clothing renderer to its original mater
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerOriginalMaterials("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, "}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerOriginalMaterials("}<Link to="/game-api/types/alta-player/playercharacter">{"PlayerCharacter"}</Link>{" character, "}<Link to="/game-api/types/alta-customization/playerswapmaterialfilter">{"PlayerSwapMaterialFilter"}</Link>{" filter)"}</code> | Creates a `PlayerSwapMaterialFilter.PlayerOriginalMaterials` from `character` and `filter`. |
 
 ## Fields
 

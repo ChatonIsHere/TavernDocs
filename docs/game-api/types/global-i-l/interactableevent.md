@@ -19,9 +19,9 @@ Serializable event with an `Interactable` and the `Interactor` using it, editabl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InteractableEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InteractableEvent()"}</code> | Creates an `InteractableEvent` with default values. |
 
 ## Used in
 

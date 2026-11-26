@@ -19,9 +19,9 @@ A **class** in `Root.Township`, no namespace.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MessageResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MessageResult()"}</code> | Creates a `MessageResult` with default values. |
 
 ## Fields
 

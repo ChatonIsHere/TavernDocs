@@ -19,9 +19,9 @@ JSON property attribute that clamps a float between a minimum and maximum whenev
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonRangeFloatAttribute(float min, float max)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonRangeFloatAttribute(float min, float max)"}</code> | Creates a `JsonRangeFloatAttribute` from `min` and `max`. |
 
 ## Fields
 

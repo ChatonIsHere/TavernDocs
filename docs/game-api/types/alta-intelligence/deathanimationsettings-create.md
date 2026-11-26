@@ -20,6 +20,6 @@ Editor menu item that creates a new `DeathAnimationSettings` asset under the Tow
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `DeathAnimationSettings.Create` with default values. |

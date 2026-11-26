@@ -20,10 +20,10 @@ One stat's live value on a `StatManager`. The value is (base plus extras, clampe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Stat(float value, float minimum, float maximum)"}</code> |
-| <Link id="m-ctor-2" /><code>{"Stat("}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{" application)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Stat(float value, float minimum, float maximum)"}</code> | Creates a `Stat` from `application`. |
+| <Link id="m-ctor-2" /><code>{"Stat("}<Link to="/game-api/types/alta-stats-effects/statdefinitionapplication">{"StatDefinitionApplication"}</Link>{" application)"}</code> | Creates a `Stat` from `application`. |
 
 ## Fields
 

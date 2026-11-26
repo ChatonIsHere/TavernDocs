@@ -19,9 +19,9 @@ Serializable `AltaEvent` raised with a `WoodcutTree`, used for a tree's `cut` an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeEvent()"}</code> | Creates a `WoodcutTreeEvent` with default values. |
 
 ## Used in
 

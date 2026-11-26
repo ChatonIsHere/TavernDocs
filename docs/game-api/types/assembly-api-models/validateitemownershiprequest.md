@@ -18,9 +18,9 @@ Body of an Alta web API request to check whether a user owns some shop items.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ValidateItemOwnershipRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ValidateItemOwnershipRequest()"}</code> | Creates a `ValidateItemOwnershipRequest` with default values. |
 
 ## Properties
 

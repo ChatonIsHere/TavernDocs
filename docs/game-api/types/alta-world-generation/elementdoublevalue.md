@@ -19,6 +19,6 @@ Serializable pair of float values (`Value` and `Value2`) tied to an `Element`, f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ElementDoubleValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ElementDoubleValue()"}</code> | Creates an `ElementDoubleValue` with default values. |

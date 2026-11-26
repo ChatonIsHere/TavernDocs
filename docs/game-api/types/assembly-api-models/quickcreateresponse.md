@@ -18,9 +18,9 @@ Response from the groups quick-create call: the new group and its server.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"QuickCreateResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"QuickCreateResponse()"}</code> | Creates a `QuickCreateResponse` with default values. |
 
 ## Properties
 

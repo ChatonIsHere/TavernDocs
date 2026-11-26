@@ -20,9 +20,9 @@ Record of one trade deck sale, built by `TradingLogger.RecordSale` and passed to
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TradeDeckSale()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TradeDeckSale()"}</code> | Creates a `TradingLogger.TradeDeckSale` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ One line in a preset loot set: what item to spawn, how many, and on which materi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Entry()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Entry()"}</code> | Creates a `PresetLootSet.Entry` with default values. |
 
 ## Fields
 

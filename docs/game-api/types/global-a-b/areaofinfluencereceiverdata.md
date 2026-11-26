@@ -21,9 +21,9 @@ Save data for `AreaOfInfluenceReceiver` (version 1): its correct values.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AreaOfInfluenceReceiverData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AreaOfInfluenceReceiverData()"}</code> | Creates an `AreaOfInfluenceReceiverData` with default values. |
 
 ## Fields
 

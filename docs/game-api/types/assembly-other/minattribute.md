@@ -19,9 +19,9 @@ Inspector attribute that sets a minimum for a float field. The drawer that enfor
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MinAttribute(float min)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MinAttribute(float min)"}</code> | Creates a `MinAttribute` from `min`. |
 
 ## Fields
 

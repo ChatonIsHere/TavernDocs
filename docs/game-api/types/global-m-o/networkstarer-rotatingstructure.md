@@ -19,9 +19,9 @@ A chain of neck joints that `NetworkStarer` bends towards its target, each joint
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RotatingStructure()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RotatingStructure()"}</code> | Creates a `NetworkStarer.RotatingStructure` with default values. |
 
 ## Fields
 

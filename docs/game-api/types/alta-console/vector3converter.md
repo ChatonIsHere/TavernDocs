@@ -19,9 +19,9 @@ A **class** in `Root.Township`, `Alta.Console`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Vector3Converter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Vector3Converter()"}</code> | Creates a `Vector3Converter` with default values. |
 
 ## Methods
 

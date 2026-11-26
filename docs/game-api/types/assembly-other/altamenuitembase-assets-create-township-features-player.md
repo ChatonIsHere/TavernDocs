@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/Player`: menu item classes i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Player()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Player()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Player` with default values. |

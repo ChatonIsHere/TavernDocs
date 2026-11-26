@@ -20,9 +20,9 @@ A wrapper around a Unity coroutine that tracks its state, catches exceptions and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaCoroutine()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaCoroutine()"}</code> | Creates an `AltaCoroutine` with default values. |
 
 ## Fields
 

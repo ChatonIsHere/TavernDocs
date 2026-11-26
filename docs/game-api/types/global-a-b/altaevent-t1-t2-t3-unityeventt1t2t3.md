@@ -20,9 +20,9 @@ Event with three arguments that runs both an inspector `UnityEvent` and a C# eve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> | Creates an `AltaEvent` with default values. |
 
 ## Fields
 
@@ -57,6 +57,6 @@ Event with three arguments that runs both an inspector `UnityEvent` and a C# eve
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke(T1 argument1, T2 argument2, T3 argument3)"}</code> |  |
+| <Link id="m-invoke" /><code>{"void Invoke(T1 argument1, T2 argument2, T3 argument3)"}</code> | Fires the Inspector event; a handler that throws is logged and doesn't stop the caller. |
 | <Link id="m-op-addition" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-unityeventt1t2t3">{"AltaEvent"}</Link>{"<T1, T2, T3, UnityEventT1T2T3> op_Addition("}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-unityeventt1t2t3">{"AltaEvent"}</Link>{"<T1, T2, T3, UnityEventT1T2T3> altaEvent, Action<T1, T2, T3> eventHandler)"}</code> | `+` adds a handler to `Invoked`. |
 | <Link id="m-op-subtraction" /><code>{"static "}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-unityeventt1t2t3">{"AltaEvent"}</Link>{"<T1, T2, T3, UnityEventT1T2T3> op_Subtraction("}<Link to="/game-api/types/global-a-b/altaevent-t1-t2-t3-unityeventt1t2t3">{"AltaEvent"}</Link>{"<T1, T2, T3, UnityEventT1T2T3> altaEvent, Action<T1, T2, T3> eventHandler)"}</code> | `-` removes a handler from `Invoked`. |

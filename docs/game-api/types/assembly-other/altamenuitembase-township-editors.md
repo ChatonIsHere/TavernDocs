@@ -20,6 +20,6 @@ Editor menu folder `Township/Editors`: menu item classes inherit it to appear un
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Editors()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Editors()"}</code> | Creates an `AltaMenuItemBase.Township.Editors` with default values. |

@@ -19,9 +19,9 @@ A friendship returned for an Oculus friends list, from `LowLevelApiClient.GetOcu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OculusFriendInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OculusFriendInfo()"}</code> | Creates an `OculusFriendInfo` with default values. |
 
 ## Properties
 

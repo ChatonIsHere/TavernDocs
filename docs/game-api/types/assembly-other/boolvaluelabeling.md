@@ -19,10 +19,10 @@ Inspector attribute that labels a field one of two ways depending on a named boo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoolValueLabeling(string hasName, string dontHasName, string boolName)"}</code> |
-| <Link id="m-ctor-2" /><code>{"BoolValueLabeling(string hasName, string dontHasName, float hasDefaultValue, float dontHasDefaultValue, string boolName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoolValueLabeling(string hasName, string dontHasName, string boolName)"}</code> | Creates a `BoolValueLabeling` from `hasName`, `dontHasName`, `hasDefaultValue`, `dontHasDefaultValue` and `boolName`. |
+| <Link id="m-ctor-2" /><code>{"BoolValueLabeling(string hasName, string dontHasName, float hasDefaultValue, float dontHasDefaultValue, string boolName)"}</code> | Creates a `BoolValueLabeling` from `hasName`, `dontHasName`, `hasDefaultValue`, `dontHasDefaultValue` and `boolName`. |
 
 ## Properties
 

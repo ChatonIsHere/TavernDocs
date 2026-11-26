@@ -19,9 +19,9 @@ Runtime instance of the `RoofHole` plugin part: carves the sloped passage that l
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RoofHoleInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/roofhole">{"RoofHole"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RoofHoleInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/roofhole">{"RoofHole"}</Link>{" part)"}</code> | Creates a `RoofHoleInstance` from `plugin` and `part`. |
 
 ## Methods
 

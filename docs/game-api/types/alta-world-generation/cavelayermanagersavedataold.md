@@ -20,9 +20,9 @@ Oldest save data for the `CaveLayerManager` (version 1), holding only the seed.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveDataOld()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CaveLayerManagerSaveDataOld()"}</code> | Creates a `CaveLayerManagerSaveDataOld` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ The set of join locks on a server, held as `ServerHandler.ServerLocks`. While an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerLockCollection()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerLockCollection()"}</code> | Creates a `ServerLockCollection` with default values. |
 
 ## Fields
 

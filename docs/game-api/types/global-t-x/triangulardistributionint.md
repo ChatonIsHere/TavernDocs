@@ -18,9 +18,9 @@ Serializable random integer setting with a triangular distribution between a min
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TriangularDistributionInt()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TriangularDistributionInt()"}</code> | Creates a `TriangularDistributionInt` with default values. |
 
 ## Fields
 

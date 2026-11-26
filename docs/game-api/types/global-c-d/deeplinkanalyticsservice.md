@@ -20,9 +20,9 @@ Client: sends Oculus deep-link analytics events (start, join, fail, cancel) to t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DeepLinkAnalyticsService()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DeepLinkAnalyticsService()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

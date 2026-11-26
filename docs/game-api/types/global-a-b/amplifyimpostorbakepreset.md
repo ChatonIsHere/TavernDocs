@@ -20,9 +20,9 @@ Amplify Impostors bake preset asset: the shaders used to bake and draw an impost
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AmplifyImpostorBakePreset()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AmplifyImpostorBakePreset()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

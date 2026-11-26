@@ -20,9 +20,9 @@ Internal: adds a `MelonTarget` to NLog's configuration once the app has started,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NLogCatcher()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NLogCatcher()"}</code> | After late start, adds a target that forwards the game's NLog lines to MelonLoader, and re-adds it if the NLog configuration changes. |
 
 ## Properties
 

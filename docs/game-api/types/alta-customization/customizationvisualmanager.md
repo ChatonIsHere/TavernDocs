@@ -19,9 +19,9 @@ Tracks which cosmetic items are on a character, which slots they fill or disable
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomizationVisualManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomizationVisualManager()"}</code> | Creates a `CustomizationVisualManager` with default values. |
 
 ## Fields
 

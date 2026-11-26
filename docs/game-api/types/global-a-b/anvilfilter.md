@@ -19,6 +19,6 @@ Empty component. Nothing in the server build refers to it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnvilFilter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnvilFilter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

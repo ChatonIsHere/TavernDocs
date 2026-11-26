@@ -19,9 +19,9 @@ PAGaC generation step that runs a set of `GenerationRule`s over the generator's 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ApplyGenerationRule()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ApplyGenerationRule()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

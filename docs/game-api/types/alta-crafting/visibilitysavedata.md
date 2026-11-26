@@ -21,9 +21,9 @@ Save data (version 1) for `Visibility`: which visibility asset it uses.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VisibilitySaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VisibilitySaveData()"}</code> | Creates a `VisibilitySaveData` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data (version 2) for the `GlobalPagesManager`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GlobalPagesManagerSaveData()"}</code> | Creates a `GlobalPagesManagerSaveData` with default values. |
 
 ## Fields
 

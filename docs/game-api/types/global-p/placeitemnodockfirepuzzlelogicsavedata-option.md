@@ -19,9 +19,9 @@ One option in the fire puzzle's saved config.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Option()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Option()"}</code> | Creates a `PlaceItemNoDockFirePuzzleLogicSaveData.Option` with default values. |
 
 ## Fields
 

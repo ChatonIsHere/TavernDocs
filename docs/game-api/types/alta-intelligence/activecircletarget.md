@@ -20,9 +20,9 @@ Server: running action that walks a creature in a circle around its target at a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveCircleTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveCircleTarget()"}</code> | Creates an `ActiveCircleTarget` with default values. |
 
 ## Fields
 

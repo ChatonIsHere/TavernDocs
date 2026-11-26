@@ -19,9 +19,9 @@ Client: turns off a group of `NetworkRigidbody` components (inactive and kinemat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VisibleNetworkRigidbody()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VisibleNetworkRigidbody()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

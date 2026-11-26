@@ -19,9 +19,9 @@ A synced integer animator parameter. The server sets it and clients write the re
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedInt(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedInt(string name)"}</code> | Creates an `AnimatedInt` from `name`. |
 
 ## Fields
 

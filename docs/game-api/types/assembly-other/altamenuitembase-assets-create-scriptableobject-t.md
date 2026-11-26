@@ -21,9 +21,9 @@ Editor menu item base that adds an "Assets/Create" entry for a ScriptableObject 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.ScriptableObject` with default values. |
 
 ## Fields
 

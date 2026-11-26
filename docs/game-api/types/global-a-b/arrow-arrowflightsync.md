@@ -19,9 +19,9 @@ Message the server sends to chunks when an arrow starts its flight, so clients s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ArrowFlightSync(float speed, int seed)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ArrowFlightSync(float speed, int seed)"}</code> | Creates an `Arrow.ArrowFlightSync` from `speed` and `seed`. |
 
 ## Fields
 

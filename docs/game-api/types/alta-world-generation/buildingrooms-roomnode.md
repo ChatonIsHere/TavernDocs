@@ -19,9 +19,9 @@ Private helper of `BuildingRooms`: one room (or an outside space per floor) in t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RoomNode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RoomNode()"}</code> | Creates a `BuildingRooms.RoomNode` with default values. |
 
 ## Fields
 

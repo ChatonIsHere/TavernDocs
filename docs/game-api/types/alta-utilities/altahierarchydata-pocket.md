@@ -19,9 +19,9 @@ A named group of objects kept in the editor hierarchy tool's data. Editor only.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Pocket()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Pocket()"}</code> | Creates an `AltaHierarchyData.Pocket` with default values. |
 
 ## Fields
 

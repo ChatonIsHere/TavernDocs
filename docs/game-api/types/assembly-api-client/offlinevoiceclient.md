@@ -19,9 +19,9 @@ Offline stand-in for the Vivox voice token client.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineVoiceClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineVoiceClient()"}</code> | Creates an `OfflineVoiceClient` with default values. |
 
 ## Methods
 

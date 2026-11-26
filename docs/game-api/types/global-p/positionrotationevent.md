@@ -19,9 +19,9 @@ Serializable `AltaEvent` with a position and a rotation argument. Runs inspector
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionRotationEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionRotationEvent()"}</code> | Creates a `PositionRotationEvent` with default values. |
 
 ## Used in
 

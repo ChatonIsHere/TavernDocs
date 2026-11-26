@@ -18,9 +18,9 @@ OAuth client credentials sent to log in as a client rather than a user. `HighLev
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientTokenConfig()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientTokenConfig()"}</code> | Creates a `ClientTokenConfig` with default values. |
 
 ## Properties
 

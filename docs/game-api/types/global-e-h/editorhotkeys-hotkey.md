@@ -20,9 +20,9 @@ An editor menu path bound to a key combination, turned into Unity's menu hotkey 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Hotkey()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Hotkey()"}</code> | Creates an `EditorHotKeys.Hotkey` with default values. |
 
 ## Fields
 

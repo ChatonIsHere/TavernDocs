@@ -19,9 +19,9 @@ Saved indirect modifiers on one stat of a `StatManager`, with the timeline time 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IndirectStatModifier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IndirectStatModifier()"}</code> | Creates a `StatManagerSaveData.IndirectStatModifier` with default values. |
 
 ## Fields
 

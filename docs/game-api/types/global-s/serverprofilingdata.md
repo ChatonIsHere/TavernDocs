@@ -19,9 +19,9 @@ A snapshot of server performance numbers (FPS, networking, serialization, entity
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerProfilingData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerProfilingData()"}</code> | Creates a `ServerProfilingData` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Alta web API reply to `CanCreateGroups`: how many more groups the user may creat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CreateCheckResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CreateCheckResponse()"}</code> | Creates a `CreateCheckResponse` with default values. |
 
 ## Properties
 

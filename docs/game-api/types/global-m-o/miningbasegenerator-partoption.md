@@ -19,9 +19,9 @@ A structure part the mining base generator can pick, with a weight that can grow
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PartOption()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PartOption()"}</code> | Creates a `MiningBaseGenerator.PartOption` with default values. |
 
 ## Fields
 

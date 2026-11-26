@@ -19,9 +19,9 @@ A curved piece of a river's decoration outline, used to place decorations at eve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverDecorationArc(Vector2 center, float radius, float radiansStart, float priorLinear, float priorAngle, float angle)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverDecorationArc(Vector2 center, float radius, float radiansStart, float priorLinear, float priorAngle, float angle)"}</code> | Creates a `RiverDecorationArc` from `center`, `radius`, `radiansStart`, `priorLinear`, `priorAngle` and `angle`. |
 
 ## Fields
 

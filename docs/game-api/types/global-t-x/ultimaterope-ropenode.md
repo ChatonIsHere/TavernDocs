@@ -19,9 +19,9 @@ One node of a rope in the third-party Ultimate Rope physics component: a target 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RopeNode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RopeNode()"}</code> | Creates an `UltimateRope.RopeNode` with default values. |
 
 ## Fields
 

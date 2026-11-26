@@ -18,9 +18,9 @@ Request body for redeeming a coupon code.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RedeemCouponRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RedeemCouponRequest()"}</code> | Creates a `RedeemCouponRequest` with default values. |
 
 ## Properties
 

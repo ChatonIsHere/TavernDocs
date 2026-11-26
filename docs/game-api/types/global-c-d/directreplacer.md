@@ -19,9 +19,9 @@ A `BaseReplacer` that swaps its target text for a fixed string, used with the st
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DirectReplacer(string target, string replacer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DirectReplacer(string target, string replacer)"}</code> | Creates a `DirectReplacer` from `target` and `replacer`. |
 
 ## Fields
 

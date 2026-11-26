@@ -19,9 +19,9 @@ A mesh renderer and its original shared material, so `MaterialToggler` can resto
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RendererToMaterial(MeshRenderer renderer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RendererToMaterial(MeshRenderer renderer)"}</code> | Creates a `MaterialToggler.RendererToMaterial` from `renderer`. |
 
 ## Properties
 

@@ -21,9 +21,9 @@ Base attribute for a condition a console command (method or whole module class) 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected RequirementAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected RequirementAttribute()"}</code> | Creates a `RequirementAttribute` with default values. |
 
 ## Methods
 

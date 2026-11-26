@@ -20,6 +20,6 @@ Serializable `UnityEvent` that passes a `PopulationSample`; the inspector side o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationUnityEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationUnityEvent()"}</code> | Creates a `PopulationUnityEvent` with default values. |

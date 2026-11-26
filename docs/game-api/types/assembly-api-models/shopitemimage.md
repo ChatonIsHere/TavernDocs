@@ -18,9 +18,9 @@ An image for a shop item, with optional alternative formats.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemImage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemImage()"}</code> | Creates a `ShopItemImage` with default values. |
 
 ## Properties
 

@@ -22,9 +22,9 @@ Server: spreads the spawning or despawning of one chunk's entities for one playe
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private ChunkSync()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private ChunkSync()"}</code> | Creates a `ChunkSync` with default values. |
 
 </details>
 
@@ -45,7 +45,7 @@ Server: spreads the spawning or despawning of one chunk's entities for one playe
 | <Link id="m-completecallback" /><code>{"private Action<"}<Link to="/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> completeCallback"}</code> | Called when the sync finishes or is stopped with callback. |
 | <Link id="m-disconnectedconnections" /><code>{"private static HashSet<"}<Link to="/game-api/types/alta-networking/connection">{"Connection"}</Link>{"> disconnectedConnections"}</code> | Connections that dropped during a pass, cleaned up after it. |
 | <Link id="m-entitycount" /><code>{"private int entityCount"}</code> | Number of valid entries in `cachedEntities`. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-player" /><code>{"private "}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player"}</code> | Backing field for `Player`. |
 | <Link id="m-playersyncs" /><code>{"private static Dictionary<"}<Link to="/game-api/types/alta-networking/iplayer">{"IPlayer"}</Link>{", "}<Link to="/game-api/types/alta-world/chunksync-set">{"ChunkSync.Set"}</Link>{"> playerSyncs"}</code> | Queued spawn and despawn syncs, and the next send time, for each player. |
 | <Link id="m-pool" /><code>{"private static Stack<"}<Link to="/game-api/types/alta-world/chunksync">{"ChunkSync"}</Link>{"> pool"}</code> | Finished syncs kept for reuse. |

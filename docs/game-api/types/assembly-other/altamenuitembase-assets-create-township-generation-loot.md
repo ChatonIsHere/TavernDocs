@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Generation/Loot`: menu item classes i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Loot()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Loot()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Generation.Loot` with default values. |

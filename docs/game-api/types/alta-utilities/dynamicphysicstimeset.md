@@ -21,9 +21,9 @@ Server: scales the physics fixed timestep with server FPS, between the minimum a
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private DynamicPhysicsTimeSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private DynamicPhysicsTimeSet()"}</code> | Creates a `DynamicPhysicsTimeSet` with default values. |
 
 </details>
 

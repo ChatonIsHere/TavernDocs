@@ -21,9 +21,9 @@ Save data for `LogicFloatThresholdReceiver`: the threshold settings and the link
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatThresholdSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatThresholdSaveData()"}</code> | Creates a `LogicFloatThresholdSaveData` with default values. |
 
 ## Fields
 

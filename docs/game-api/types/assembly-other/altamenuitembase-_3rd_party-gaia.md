@@ -20,6 +20,6 @@ Editor menu folder `3rd Party/Gaia`: menu item classes inherit it to appear unde
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Gaia()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Gaia()"}</code> | Creates an `AltaMenuItemBase._3rd_Party.Gaia` with default values. |

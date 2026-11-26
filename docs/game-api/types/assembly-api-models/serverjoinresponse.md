@@ -18,9 +18,9 @@ Web API answer to whether a user may join a server, with ban details when they m
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerJoinResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerJoinResponse()"}</code> | Creates a `ServerJoinResponse` with default values. |
 
 ## Properties
 

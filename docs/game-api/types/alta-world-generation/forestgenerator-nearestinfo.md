@@ -19,9 +19,9 @@ Scratch arrays for forest generation: the nearest path edges to a point, with di
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NearestInfo(int size)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NearestInfo(int size)"}</code> | Creates a `ForestGenerator.NearestInfo` from `size`. |
 
 ## Fields
 

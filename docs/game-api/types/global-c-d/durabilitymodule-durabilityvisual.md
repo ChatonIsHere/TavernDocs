@@ -20,9 +20,9 @@ One damage stage of a `DurabilityModule`: the renderers to show and the integrit
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DurabilityVisual()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DurabilityVisual()"}</code> | Creates a `DurabilityModule.DurabilityVisual` with default values. |
 
 ## Fields
 

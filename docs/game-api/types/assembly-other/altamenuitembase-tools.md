@@ -21,6 +21,6 @@ Editor menu folder `Tools`: menu item classes inherit it to appear under that pa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Tools()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Tools()"}</code> | Creates an `AltaMenuItemBase.Tools` with default values. |

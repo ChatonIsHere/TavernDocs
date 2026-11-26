@@ -19,9 +19,9 @@ Moves a player from Customization to Playing. Has no listeners; `CustomizationSt
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CustomizationToPlayingTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CustomizationToPlayingTransition()"}</code> | Creates a `CustomizationToPlayingTransition` with default values. |
 
 ## Methods
 

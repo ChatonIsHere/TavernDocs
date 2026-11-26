@@ -20,9 +20,9 @@ Inspector event with a `TransformProxy` argument, used for `BreakOnImpact`'s ser
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TransformProxyEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransformProxyEvent()"}</code> | Creates a `BreakOnImpact.TransformProxyEvent` with default values. |
 
 ## Used in
 

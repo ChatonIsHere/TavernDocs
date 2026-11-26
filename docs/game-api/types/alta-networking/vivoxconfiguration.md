@@ -18,9 +18,9 @@ Client: Vivox voice settings (issuer, domain, endpoint) and how to get login and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VivoxConfiguration(string issuer, string domain, string endPoint, bool isUsingSandbox = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VivoxConfiguration(string issuer, string domain, string endPoint, bool isUsingSandbox = false)"}</code> | Creates a `VivoxConfiguration` from `issuer`, `domain`, `endPoint` and `isUsingSandbox`. |
 
 ## Fields
 

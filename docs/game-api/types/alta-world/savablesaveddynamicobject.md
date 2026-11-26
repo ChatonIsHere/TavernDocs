@@ -18,9 +18,9 @@ A saved entity in a form that can be stored inside other save data, with the chu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SavableSavedDynamicObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SavableSavedDynamicObject()"}</code> | Creates a `SavableSavedDynamicObject` with default values. |
 
 ## Fields
 

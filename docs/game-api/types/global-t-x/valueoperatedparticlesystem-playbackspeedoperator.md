@@ -20,9 +20,9 @@ Operator that drives a particle system's simulation speed.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaybackSpeedOperator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaybackSpeedOperator()"}</code> | Creates a `ValueOperatedParticleSystem.PlaybackSpeedOperator` with default values. |
 
 ## Fields
 

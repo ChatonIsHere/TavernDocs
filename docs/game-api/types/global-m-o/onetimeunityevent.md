@@ -19,9 +19,9 @@ Component wrapping an `AltaEvent` that only fires once until `ResetEvent` is cal
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OneTimeUnityEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OneTimeUnityEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -39,5 +39,5 @@ Component wrapping an `AltaEvent` that only fires once until `ResetEvent` is cal
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |  |
+| <Link id="m-invoke" /><code>{"void Invoke()"}</code> | Fires the event the first time only; later calls do nothing until `ResetEvent`. |
 | <Link id="m-resetevent" /><code>{"void ResetEvent()"}</code> | Clears the fired flag so the next `Invoke` runs the event again. |

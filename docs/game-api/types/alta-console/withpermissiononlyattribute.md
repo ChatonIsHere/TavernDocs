@@ -19,9 +19,9 @@ Console requirement: the caller needs all the listed policies (for example `serv
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WithPermissionOnlyAttribute(params string[] roles)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WithPermissionOnlyAttribute(params string[] roles)"}</code> | Creates a `WithPermissionOnlyAttribute` from `roles`. |
 
 ## Properties
 

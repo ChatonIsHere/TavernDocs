@@ -19,6 +19,6 @@ Marker component (`IDontSplit`) that probably keeps a static object's colliders 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PreventStaticBatchingCollisionSplitting()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PreventStaticBatchingCollisionSplitting()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

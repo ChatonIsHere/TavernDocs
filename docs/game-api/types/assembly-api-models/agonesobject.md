@@ -19,9 +19,9 @@ Base for Agones (Kubernetes game server manager) objects as the Alta API reads a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected AgonesObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected AgonesObject()"}</code> | Creates an `AgonesObject` with default values. |
 
 ## Properties
 

@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Township/Environmental/Atmosphere.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Atmosphere()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Atmosphere()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Environmental.Atmosphere` with default values. |

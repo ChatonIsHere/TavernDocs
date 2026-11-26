@@ -18,9 +18,9 @@ A float value made from a base value scaled by attribute curves, such as biome a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttributeUsage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttributeUsage()"}</code> | Creates an `AttributeUsage` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data for a `GenericCraftingStation` (version 1): the chosen recipe and the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GenericCraftingStationData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GenericCraftingStationData()"}</code> | Creates a `GenericCraftingStationData` with default values. |
 
 ## Fields
 

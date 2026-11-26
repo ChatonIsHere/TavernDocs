@@ -22,9 +22,9 @@ Server: one player's postbox contents, saved items waiting to be taken out. Get 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerPostboxStorage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerPostboxStorage()"}</code> | Creates a `PlayerPostboxStorage` with default values. |
 
 ## Fields
 

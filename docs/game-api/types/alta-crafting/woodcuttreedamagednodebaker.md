@@ -19,9 +19,9 @@ Node baker for chopped trunk pieces: one LOD, copies vertex colours, and uses th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeDamagedNodeBaker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeDamagedNodeBaker()"}</code> | Creates a `WoodcutTreeDamagedNodeBaker` with default values. |
 
 ## Properties
 

@@ -20,9 +20,9 @@ One mod's entry in a source's `repository.json` for one major version: the versi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModSummary()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModSummary()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 

@@ -20,9 +20,9 @@ Setup for one finger of the hand grip: its joints and how skeletal input is corr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Finger()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Finger()"}</code> | Creates a `HandGripConfiguration.Finger` with default values. |
 
 ## Fields
 

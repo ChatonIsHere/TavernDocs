@@ -18,9 +18,9 @@ One choice in a web API form question (`Query.Options`).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Option(int id, string value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Option(int id, string value)"}</code> | Creates an `Option` from `id` and `value`. |
 
 ## Properties
 

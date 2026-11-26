@@ -19,9 +19,9 @@ A triangle produced by `Polygonise`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Triangle()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Triangle()"}</code> | Creates a `MarchingCubes.Triangle` with default values. |
 
 ## Fields
 

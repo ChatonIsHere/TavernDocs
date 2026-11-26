@@ -20,9 +20,9 @@ Serializer for `TimeSpan`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimeSpanSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimeSpanSerialization()"}</code> | Creates a `TypeSerializationHelper.TimeSpanSerialization` with default values. |
 
 ## Methods
 

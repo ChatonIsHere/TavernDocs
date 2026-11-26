@@ -19,9 +19,9 @@ Runs `Resources.UnloadUnusedAssets` at the end of the frame, from a hidden objec
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ResourcesCleanup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ResourcesCleanup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

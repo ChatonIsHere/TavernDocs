@@ -20,9 +20,9 @@ Chunk loader for `DebugLoadMarker` on a simple server: loads by the streaming se
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OptimisedChunkLoader(HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> currentLoaded)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OptimisedChunkLoader(HashSet<"}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{"> currentLoaded)"}</code> | Creates a `DebugLoadMarker.OptimisedChunkLoader` from `currentLoaded`. |
 
 ## Fields
 

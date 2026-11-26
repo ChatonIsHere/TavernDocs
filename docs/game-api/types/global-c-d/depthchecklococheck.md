@@ -21,9 +21,9 @@ Locomotion modifier check asset that works out how deep a smooth-locomotion play
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DepthCheckLocoCheck()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DepthCheckLocoCheck()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data (version 3) for a `PlayerUnlockStation`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlockStationSaveData()"}</code> | Creates a `PlayerUnlockStationSaveData` with default values. |
 
 ## Fields
 

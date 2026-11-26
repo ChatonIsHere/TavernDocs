@@ -20,9 +20,9 @@ Base for network profiling lists that give each statistic type (such as a messag
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected IndexedStatisticList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected IndexedStatisticList()"}</code> | Creates an `IndexedStatisticList` with default values. |
 
 ## Fields
 

@@ -20,6 +20,6 @@ Unity editor menu entry (Create, Township, Features, Crafting) for making a new 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `JointInsertType.Create` with default values. |

@@ -21,9 +21,9 @@ Save data (version 1) for a `BasicPopulationFolder`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicPopulationFolderSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicPopulationFolderSaveData()"}</code> | Creates a `BasicPopulationFolderSaveData` with default values. |
 
 ## Fields
 

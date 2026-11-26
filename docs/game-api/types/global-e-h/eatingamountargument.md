@@ -20,9 +20,9 @@ Game task argument sent on the `EatAmount` channel when a player eats something,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EatingAmountArgument("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" eaten)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EatingAmountArgument("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" eaten)"}</code> | Creates an `EatingAmountArgument` from `eaten`. |
 
 ## Properties
 

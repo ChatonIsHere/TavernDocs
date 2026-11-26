@@ -20,9 +20,9 @@ Network traffic statistic for one serialized behaviour, by name.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistic(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedBehaviourStatistic(string name)"}</code> | Creates a `SerializedBehaviourStatistic` from `name`. |
 
 ## Fields
 

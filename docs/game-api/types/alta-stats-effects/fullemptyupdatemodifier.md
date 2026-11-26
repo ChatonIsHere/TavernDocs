@@ -19,9 +19,9 @@ Internal modifier made by `OnFullAffectTargetStatDefinition`: when the tracked s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FullEmptyUpdateModifier("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" trackedStat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" affectedStat, float builddownCooldown, float tickBuilddown, float modifierValue, bool isMultiplier, bool isContinuous, bool isRevertingOnEnd)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FullEmptyUpdateModifier("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" trackedStat, "}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" affectedStat, float builddownCooldown, float tickBuilddown, float modifierValue, bool isMultiplier, bool isContinuous, bool isRevertingOnEnd)"}</code> | Creates a `FullEmptyUpdateModifier` from `trackedStat`, `affectedStat`, `builddownCooldown`, `tickBuilddown`, `modifierValue`, `isMultiplier`, `isContinuous` and `isRevertingOnEnd`. |
 
 ## Fields
 

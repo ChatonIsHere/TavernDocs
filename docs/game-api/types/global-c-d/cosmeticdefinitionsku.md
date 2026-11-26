@@ -18,9 +18,9 @@ A cosmetic store SKU plus the customization arguments that go with it, set in th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticDefinitionSku(string sku)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticDefinitionSku(string sku)"}</code> | Creates a `CosmeticDefinitionSku` from `sku`. |
 
 ## Fields
 

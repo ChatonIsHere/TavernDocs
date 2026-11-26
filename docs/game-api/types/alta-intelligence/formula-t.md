@@ -19,9 +19,9 @@ Scoring rule that runs a function you supply on the agent (cast to `T`) and the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Formula(string name, Func<T, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", float> evaluate)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Formula(string name, Func<T, "}<Link to="/game-api/types/alta-intelligence/itarget">{"ITarget"}</Link>{", float> evaluate)"}</code> | Creates a `Formula` from `name` and `evaluate`. |
 
 ## Fields
 

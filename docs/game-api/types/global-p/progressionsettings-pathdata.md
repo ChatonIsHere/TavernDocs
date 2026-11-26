@@ -20,9 +20,9 @@ Private base for per-path entries in `ProgressionSettings`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected PathData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PathData()"}</code> | Creates a `ProgressionSettings.PathData` with default values. |
 
 ## Fields
 

@@ -18,11 +18,11 @@ A material with its offset and scale inside a texture atlas, and whether mesh UV
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialRect(Material material, Vector4 offsetScale, bool needsFixing)"}</code> |
-| <Link id="m-ctor-2" /><code>{"MaterialRect(Material material)"}</code> |
-| <Link id="m-ctor-3" /><code>{"MaterialRect("}<Link to="/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" atlasedMaterial)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialRect(Material material, Vector4 offsetScale, bool needsFixing)"}</code> | Creates a `MaterialRect` from `atlasedMaterial`. |
+| <Link id="m-ctor-2" /><code>{"MaterialRect(Material material)"}</code> | Creates a `MaterialRect` from `atlasedMaterial`. |
+| <Link id="m-ctor-3" /><code>{"MaterialRect("}<Link to="/game-api/types/alta-utilities/atlasdefinition-atlasedmaterial">{"AtlasDefinition.AtlasedMaterial"}</Link>{" atlasedMaterial)"}</code> | Creates a `MaterialRect` from `atlasedMaterial`. |
 
 ## Properties
 

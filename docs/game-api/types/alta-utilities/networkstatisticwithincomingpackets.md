@@ -20,9 +20,9 @@ Base for UNET transport statistics that also track incoming packets and incoming
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected NetworkStatisticWithIncomingPackets()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected NetworkStatisticWithIncomingPackets()"}</code> | Creates a `NetworkStatisticWithIncomingPackets` with default values. |
 
 ## Fields
 

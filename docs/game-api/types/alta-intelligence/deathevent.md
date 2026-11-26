@@ -19,9 +19,9 @@ Inspector event that passes a `DeathEffect`. Used for a death effect's start and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DeathEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DeathEvent()"}</code> | Creates a `DeathEvent` with default values. |
 
 ## Used in
 

@@ -21,9 +21,9 @@ Save data (version 3) for `ClimbingTowerTeleporterNode`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterNodeSaveData()"}</code> | Creates a `ClimbingTowerTeleporterNodeSaveData` with default values. |
 
 ## Fields
 

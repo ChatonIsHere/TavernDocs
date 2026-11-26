@@ -20,9 +20,9 @@ An `ISynchronizeInvoke` that queues calls from other threads and runs them on th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DeferredSynchronizeInvoke()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DeferredSynchronizeInvoke()"}</code> | Creates a `DeferredSynchronizeInvoke` with default values. |
 
 ## Fields
 
@@ -46,7 +46,7 @@ An `ISynchronizeInvoke` that queues calls from other threads and runs them on th
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-begininvoke" /><code>{"IAsyncResult BeginInvoke(Delegate method, object[] args)"}</code> |  |
-| <Link id="m-endinvoke" /><code>{"object EndInvoke(IAsyncResult result)"}</code> |  |
-| <Link id="m-invoke" /><code>{"object Invoke(Delegate method, object[] args)"}</code> |  |
+| <Link id="m-begininvoke" /><code>{"IAsyncResult BeginInvoke(Delegate method, object[] args)"}</code> | Queues the method to run on the main thread at the next `ProcessQueue`, and returns at once. |
+| <Link id="m-endinvoke" /><code>{"object EndInvoke(IAsyncResult result)"}</code> | Blocks until a queued call has run on the main thread, then returns its result. |
+| <Link id="m-invoke" /><code>{"object Invoke(Delegate method, object[] args)"}</code> | Runs the method now if this is the main thread; otherwise queues it and waits for it to run there. |
 | <Link id="m-processqueue" /><code>{"void ProcessQueue()"}</code> | Runs all queued calls and stores their results. Throws if not called from the creating thread. |

@@ -18,9 +18,9 @@ An attack a target is making: how much damage it would do and where it is. AI re
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttackParameters(float damage, Vector3 position)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttackParameters(float damage, Vector3 position)"}</code> | Creates an `AttackParameters` from `damage` and `position`. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Saved progression levels for one player, used in `OfflinePlayerProgressionHandle
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflinePlayerProgress()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflinePlayerProgress()"}</code> | Creates an `OfflinePlayerProgress` with default values. |
 
 ## Fields
 

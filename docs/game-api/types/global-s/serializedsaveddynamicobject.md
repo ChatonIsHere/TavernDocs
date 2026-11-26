@@ -19,9 +19,9 @@ A saved object (prefab hash plus its serialized state) in a form Unity can seria
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedSavedDynamicObject(List<uint[]> savingData, uint sizeBytes, uint prefabHash, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedSavedDynamicObject(List<uint[]> savingData, uint sizeBytes, uint prefabHash, "}<Link to="/game-api/types/alta-world/chunkversioning">{"ChunkVersioning"}</Link>{" chunkVersioning = null)"}</code> | Creates a `SerializedSavedDynamicObject` from `savingData`, `sizeBytes`, `prefabHash` and `chunkVersioning`. |
 
 ## Fields
 

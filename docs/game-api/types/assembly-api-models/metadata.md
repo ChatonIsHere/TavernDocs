@@ -18,9 +18,9 @@ Kubernetes object metadata as used in Agones requests and responses.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Metadata()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Metadata()"}</code> | Creates a `Metadata` with default values. |
 
 ## Properties
 

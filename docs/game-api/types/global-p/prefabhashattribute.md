@@ -19,6 +19,6 @@ Inspector marker attribute, probably for showing a field as a prefab hash. Nothi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PrefabHashAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PrefabHashAttribute()"}</code> | Creates a `PrefabHashAttribute` with default values. |

@@ -21,9 +21,9 @@ Save data for a `NetworkRigidbody`: its transform, motion and sleep state.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkRigidbodySaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkRigidbodySaveData()"}</code> | Creates a `NetworkRigidbodySaveData` with default values. |
 
 ## Fields
 

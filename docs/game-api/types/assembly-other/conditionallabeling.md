@@ -20,10 +20,10 @@ Base inspector attribute that labels a field one of two ways depending on a cond
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConditionalLabeling(string hasName, string dontHasName)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ConditionalLabeling(string hasName, string dontHasName, float hasDefaultValue, float dontHasDefaultValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConditionalLabeling(string hasName, string dontHasName)"}</code> | Creates a `ConditionalLabeling` from `hasName`, `dontHasName`, `hasDefaultValue` and `dontHasDefaultValue`. |
+| <Link id="m-ctor-2" /><code>{"ConditionalLabeling(string hasName, string dontHasName, float hasDefaultValue, float dontHasDefaultValue)"}</code> | Creates a `ConditionalLabeling` from `hasName`, `dontHasName`, `hasDefaultValue` and `dontHasDefaultValue`. |
 
 ## Properties
 

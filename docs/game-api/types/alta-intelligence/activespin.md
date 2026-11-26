@@ -19,9 +19,9 @@ Wyrm spin attack action, chosen more when the target is off to the side. Runs on
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveSpin()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveSpin()"}</code> | Creates an `ActiveSpin` with default values. |
 
 ## Methods
 

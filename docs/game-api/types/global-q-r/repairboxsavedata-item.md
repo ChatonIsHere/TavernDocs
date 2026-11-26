@@ -19,9 +19,9 @@ Saved settings for one required item slot of a `RepairBox`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `RepairBoxSaveData.Item` with default values. |
 
 ## Fields
 

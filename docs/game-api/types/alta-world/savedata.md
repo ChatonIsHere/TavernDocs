@@ -19,9 +19,9 @@ Base class for all save data versions. The saving system reads an old version, c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected SaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected SaveData()"}</code> | Creates a `SaveData` with default values. |
 
 ## Methods
 

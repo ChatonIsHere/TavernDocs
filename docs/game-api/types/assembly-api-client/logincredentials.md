@@ -18,9 +18,9 @@ The JWT tokens returned when a user or server logs in to the Alta API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LoginCredentials(JwtSecurityToken accessToken, JwtSecurityToken refreshToken, JwtSecurityToken identityToken)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LoginCredentials(JwtSecurityToken accessToken, JwtSecurityToken refreshToken, JwtSecurityToken identityToken)"}</code> | Creates a `LoginCredentials` from `accessToken`, `refreshToken` and `identityToken`. |
 
 ## Properties
 

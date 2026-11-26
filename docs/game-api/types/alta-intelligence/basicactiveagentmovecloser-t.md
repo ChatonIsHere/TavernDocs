@@ -20,9 +20,9 @@ Base for running actions that move a creature straight at its target without pat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected BasicActiveAgentMoveCloser()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected BasicActiveAgentMoveCloser()"}</code> | Creates a `BasicActiveAgentMoveCloser` with default values. |
 
 ## Fields
 

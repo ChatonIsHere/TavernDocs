@@ -20,9 +20,9 @@ Arrow flight modifier asset that only changes the deviance multiplier (how far a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ArrowFlightSettingsDevianceMultiplierModifier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ArrowFlightSettingsDevianceMultiplierModifier()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

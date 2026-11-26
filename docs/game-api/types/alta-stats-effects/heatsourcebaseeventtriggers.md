@@ -19,9 +19,9 @@ Exposes a `HeatSourceBase`'s events (toggled, extinguished, break extinguish) as
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HeatSourceBaseEventTriggers()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HeatSourceBaseEventTriggers()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

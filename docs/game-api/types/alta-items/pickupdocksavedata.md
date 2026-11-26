@@ -21,9 +21,9 @@ Save data for a `PickupDock` (version 2): what is docked and how many.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupDockSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupDockSaveData()"}</code> | Creates a `PickupDockSaveData` with default values. |
 
 ## Fields
 

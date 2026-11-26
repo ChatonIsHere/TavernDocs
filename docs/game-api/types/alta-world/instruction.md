@@ -21,9 +21,9 @@ One cached world-generation step (spawn, spline, forest core or river core) that
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Instruction("}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Instruction("}<Link to="/game-api/types/alta-world/instruction-type">{"Instruction.Type"}</Link>{" type)"}</code> | Creates an `Instruction` from `type`. |
 
 ## Fields
 

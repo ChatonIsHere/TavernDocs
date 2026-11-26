@@ -18,9 +18,9 @@ Inspector list of allowed impact types. An empty list allows everything.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ImpactTypeFilter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ImpactTypeFilter()"}</code> | Creates an `ImpactTypeFilter` with default values. |
 
 ## Fields
 

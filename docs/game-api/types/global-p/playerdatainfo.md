@@ -18,9 +18,9 @@ Leaderboard row returned by the leaderboard console command: player name and tim
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerDataInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerDataInfo()"}</code> | Creates a `PlayerDataInfo` with default values. |
 
 ## Properties
 

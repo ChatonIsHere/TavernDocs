@@ -19,9 +19,9 @@ Payload of the `TrialStarted` and `TrialFinished` console events, raised by `Tri
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TrialEventData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TrialEventData()"}</code> | Creates a `TrialEventData` with default values. |
 
 ## Fields
 

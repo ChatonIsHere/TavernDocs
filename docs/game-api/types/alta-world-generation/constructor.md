@@ -19,10 +19,10 @@ PAGaC's matcher: finds where rules fit in a 3D tag grid (in all four rotations) 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Constructor("}<Link to="/game-api/types/alta-world-generation/generator">{"Generator"}</Link>{" generator)"}</code> |
-| <Link id="m-ctor-2" /><code>{"Constructor("}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"[,,] tags)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Constructor("}<Link to="/game-api/types/alta-world-generation/generator">{"Generator"}</Link>{" generator)"}</code> | Creates a `Constructor` from `tags`. |
+| <Link id="m-ctor-2" /><code>{"Constructor("}<Link to="/game-api/types/alta-world-generation/tag">{"Tag"}</Link>{"[,,] tags)"}</code> | Creates a `Constructor` from `tags`. |
 
 ## Fields
 

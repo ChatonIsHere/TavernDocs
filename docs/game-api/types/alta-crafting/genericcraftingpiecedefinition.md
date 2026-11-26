@@ -18,9 +18,9 @@ One ghost piece in a generic crafting recipe: where it sits, its mesh, the item 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GenericCraftingPieceDefinition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GenericCraftingPieceDefinition()"}</code> | Creates a `GenericCraftingPieceDefinition` with default values. |
 
 ## Fields
 

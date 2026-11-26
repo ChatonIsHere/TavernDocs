@@ -19,9 +19,9 @@ Console module `websocket`: lets a websocket console client list and subscribe t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebSocketConsoleCommandModule()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebSocketConsoleCommandModule()"}</code> | Creates a `WebSocketConsoleCommandModule` with default values. |
 
 ## Methods
 

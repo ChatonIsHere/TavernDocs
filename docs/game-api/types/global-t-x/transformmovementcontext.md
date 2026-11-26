@@ -19,10 +19,10 @@ A movement context that converts positions and rotations to and from a transform
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TransformMovementContext("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
-| <Link id="m-ctor-2" /><code>{"TransformMovementContext("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Transform transform)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransformMovementContext("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Creates a `TransformMovementContext` from `entity` and `transform`. |
+| <Link id="m-ctor-2" /><code>{"TransformMovementContext("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity, Transform transform)"}</code> | Creates a `TransformMovementContext` from `entity` and `transform`. |
 
 ## Fields
 

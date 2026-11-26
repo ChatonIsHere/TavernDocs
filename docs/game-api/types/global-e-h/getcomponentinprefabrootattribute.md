@@ -19,9 +19,9 @@ Like `GetComponentAttribute`, but takes the component from the root `NetworkPref
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetComponentInPrefabRootAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetComponentInPrefabRootAttribute()"}</code> | Creates a `GetComponentInPrefabRootAttribute` with default values. |
 
 ## Methods
 

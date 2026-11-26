@@ -18,9 +18,9 @@ Alta API response to gifting a shop item to someone.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GiftResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GiftResult()"}</code> | Creates a `GiftResult` with default values. |
 
 ## Properties
 

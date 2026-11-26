@@ -18,9 +18,9 @@ The status of a shop transaction.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopTransactionStatusResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopTransactionStatusResponse()"}</code> | Creates a `ShopTransactionStatusResponse` with default values. |
 
 ## Properties
 

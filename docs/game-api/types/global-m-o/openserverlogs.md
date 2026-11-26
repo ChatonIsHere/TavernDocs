@@ -19,9 +19,9 @@ Unity editor menu item that opens the server folder (where server logs live) in 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OpenServerLogs()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OpenServerLogs()"}</code> | Creates an `OpenServerLogs` with default values. |
 
 ## Properties
 

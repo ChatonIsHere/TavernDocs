@@ -20,6 +20,6 @@ Editor menu entry that creates a `TreeSize` asset under Assets/Create/Township/F
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `TreeSize.Create` with default values. |

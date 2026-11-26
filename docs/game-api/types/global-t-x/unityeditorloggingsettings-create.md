@@ -20,6 +20,6 @@ Editor menu entry that creates a `UnityEditorLoggingSettings` asset under Global
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `UnityEditorLoggingSettings.Create` with default values. |

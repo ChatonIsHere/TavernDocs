@@ -19,9 +19,9 @@ Debug record of an LOD group and its LOD values, kept in a `LODChange` asset for
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LODLog(LODGroup group, float[] lods)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LODLog(LODGroup group, float[] lods)"}</code> | Creates a `LODChange.LODLog` from `group` and `lods`. |
 
 ## Fields
 

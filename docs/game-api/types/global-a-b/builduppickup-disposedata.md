@@ -19,9 +19,9 @@ Message the server sends to chunks when a `BuildupPickup` loses a child, so clie
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DisposeData(int index, bool isForced)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DisposeData(int index, bool isForced)"}</code> | Creates a `BuildupPickup.DisposeData` from `index` and `isForced`. |
 
 ## Properties
 

@@ -18,9 +18,9 @@ Server side of micro tutorials: starts and ends a tutorial per player, tracks th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerController("}<Link to="/game-api/types/game-other-namespaces/isynccontroller">{"ISyncController"}</Link>{" syncController, "}<Link to="/game-api/types/game-other-namespaces/imicrotutorialfactory">{"IMicroTutorialFactory"}</Link>{" tutorialFactory, "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerController("}<Link to="/game-api/types/game-other-namespaces/isynccontroller">{"ISyncController"}</Link>{" syncController, "}<Link to="/game-api/types/game-other-namespaces/imicrotutorialfactory">{"IMicroTutorialFactory"}</Link>{" tutorialFactory, "}<Link to="/game-api/types/assembly-other/ianalyticsservice">{"IAnalyticsService"}</Link>{" analyticsService)"}</code> | Built by the game's dependency injection (VContainer), which passes the services in. |
 
 ## Fields
 

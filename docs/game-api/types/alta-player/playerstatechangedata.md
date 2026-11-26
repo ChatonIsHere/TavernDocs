@@ -19,9 +19,9 @@ Payload of the `ConsoleEvents.PlayerStateChanged` console event, raised when a p
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerStateChangeData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" state, bool isEnter)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerStateChangeData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player, "}<Link to="/game-api/types/alta-player/playerstatetype">{"PlayerStateType"}</Link>{" state, bool isEnter)"}</code> | Creates a `PlayerStateChangeData` from `player`, `state` and `isEnter`. |
 
 ## Fields
 

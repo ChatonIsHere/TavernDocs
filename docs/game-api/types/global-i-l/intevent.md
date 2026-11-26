@@ -19,9 +19,9 @@ A serializable `AltaEvent` that passes an `int`, so it can be wired up in the in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IntEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IntEvent()"}</code> | Creates an `IntEvent` with default values. |
 
 ## Used in
 

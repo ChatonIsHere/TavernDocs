@@ -20,9 +20,9 @@ Server web module for the REST console: takes a POST with a bearer console token
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaConsoleModule(string path)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaConsoleModule(string path)"}</code> | Creates an `AltaConsoleModule` from `path`. |
 
 ## Fields
 

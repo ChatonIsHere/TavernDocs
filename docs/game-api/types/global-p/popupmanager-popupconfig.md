@@ -20,9 +20,9 @@ Private queued popup in `PopupManager`: the board prefab to use and a callback t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopupConfig("}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" prefab, Action<"}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{"> onSpawn)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopupConfig("}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{" prefab, Action<"}<Link to="/game-api/types/global-i-l/ipopupboard">{"IPopupBoard"}</Link>{"> onSpawn)"}</code> | Creates a `PopupManager.PopupConfig` from `prefab` and `onSpawn`. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Request body for getting a payment token to buy a shards package.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetShardsTokenRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetShardsTokenRequest()"}</code> | Creates a `GetShardsTokenRequest` with default values. |
 
 ## Properties
 

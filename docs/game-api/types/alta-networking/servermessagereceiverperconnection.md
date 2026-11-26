@@ -18,9 +18,9 @@ Server: per-connection receiver that holds incoming unreliable packets until the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerMessageReceiverPerConnection(int connectionIdentifier, "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerMessageReceiverPerConnection(int connectionIdentifier, "}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> | Creates a `ServerMessageReceiverPerConnection` from `connectionIdentifier` and `socket`. |
 
 ## Fields
 

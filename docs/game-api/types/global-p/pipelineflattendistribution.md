@@ -19,9 +19,9 @@ Object pipeline step that keeps picking from nested distributions until it reach
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PipelineFlattenDistribution()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PipelineFlattenDistribution()"}</code> | Creates a `PipelineFlattenDistribution` with default values. |
 
 ## Properties
 

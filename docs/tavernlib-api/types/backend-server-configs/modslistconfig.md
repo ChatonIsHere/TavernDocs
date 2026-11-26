@@ -20,6 +20,6 @@ The `ServerConfigFile` for a modlist file, read by `ModReconciler.ReconcileModLi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModsListConfig(string filePath)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModsListConfig(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |

@@ -20,6 +20,6 @@ Editor menu entry that creates an `Enchantment` asset under Township, Features, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `Enchantment.Create` with default values. |

@@ -19,9 +19,9 @@ A write-only `Stream` that only counts bits, used to measure how big a serialize
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StreamCounter(uint offset)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StreamCounter(uint offset)"}</code> | Creates a `StreamCounter` from `offset`. |
 
 ## Fields
 

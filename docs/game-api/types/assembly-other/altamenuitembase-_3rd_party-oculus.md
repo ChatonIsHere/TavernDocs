@@ -20,6 +20,6 @@ Editor menu folder `3rd Party/Oculus`: menu item classes inherit it to appear un
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Oculus()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Oculus()"}</code> | Creates an `AltaMenuItemBase._3rd_Party.Oculus` with default values. |

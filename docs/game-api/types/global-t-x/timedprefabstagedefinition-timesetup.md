@@ -19,9 +19,9 @@ One timed stage change: after a number of seconds, switch to a given stage.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimeSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimeSetup()"}</code> | Creates a `TimedPrefabStageDefinition.TimeSetup` with default values. |
 
 ## Fields
 

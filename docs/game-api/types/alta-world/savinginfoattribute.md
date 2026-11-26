@@ -19,10 +19,10 @@ Attribute that gives a type a fixed saving hash, from a string or a number. With
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SavingInfoAttribute(string hash, bool isTag = false)"}</code> |
-| <Link id="m-ctor-2" /><code>{"SavingInfoAttribute(uint hash = 0, bool isTag = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SavingInfoAttribute(string hash, bool isTag = false)"}</code> | Creates a `SavingInfoAttribute` from `hash` and `isTag`. |
+| <Link id="m-ctor-2" /><code>{"SavingInfoAttribute(uint hash = 0, bool isTag = false)"}</code> | Creates a `SavingInfoAttribute` from `hash` and `isTag`. |
 
 ## Fields
 

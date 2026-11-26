@@ -20,9 +20,9 @@ Base for an entry in the console command tree: a module or a command. Holds its 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CommandPart("}<Link to="/game-api/types/alta-console/module">{"Module"}</Link>{" parent, string name, string description)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CommandPart("}<Link to="/game-api/types/alta-console/module">{"Module"}</Link>{" parent, string name, string description)"}</code> | Creates a `CommandPart` from `parent`, `name` and `description`. |
 
 ## Properties
 

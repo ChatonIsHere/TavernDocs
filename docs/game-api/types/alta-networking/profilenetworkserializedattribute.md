@@ -19,6 +19,6 @@ Marks an `INetworkSerialized` type so `NetworkSerializedProfiler` picks up its s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProfileNetworkSerializedAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProfileNetworkSerializedAttribute()"}</code> | Creates a `ProfileNetworkSerializedAttribute` with default values. |

@@ -19,6 +19,6 @@ Property attribute for an editor drawer, probably one that shows an int as a sin
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LayerValueAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LayerValueAttribute()"}</code> | Creates a `LayerValueAttribute` with default values. |

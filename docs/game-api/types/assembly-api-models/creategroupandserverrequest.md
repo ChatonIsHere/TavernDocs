@@ -19,9 +19,9 @@ Body for the API's groups quick-create call, which makes a group and its server 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CreateGroupAndServerRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CreateGroupAndServerRequest()"}</code> | Creates a `CreateGroupAndServerRequest` with default values. |
 
 ## Properties
 
@@ -30,7 +30,7 @@ Body for the API's groups quick-create call, which makes a group and its server 
 | <Link id="m-description" /><code>{"string Description { get; set; }"}</code> | Group description. |
 | <Link id="m-grouptype" /><code><Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{"? "}<Link to="/game-api/types/assembly-api-models/grouptype">{"GroupType"}</Link>{" { get; set; }"}</code> | Group type (visibility), or null for the API default. |
 | <Link id="m-name" /><code>{"string Name { get; set; }"}</code> | Group name. |
-| <Link id="m-target" /><code>{"int Target { get; set; }"}</code> |  |
+| <Link id="m-target" /><code>{"int Target { get; set; }"}</code> | Sent to Alta's API as `target` when creating the group and server; nothing in the game says what it means. |
 
 ## Used in
 

@@ -19,9 +19,9 @@ Internal atlas blitter for the `Custom/StandardHeat` shader. `AtlasDefinition` u
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StandardHeatBlit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StandardHeatBlit()"}</code> | Creates a `StandardHeatBlit` with default values. |
 
 ## Fields
 

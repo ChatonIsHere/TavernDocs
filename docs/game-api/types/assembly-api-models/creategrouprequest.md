@@ -18,9 +18,9 @@ Request body for creating a group.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CreateGroupRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CreateGroupRequest()"}</code> | Creates a `CreateGroupRequest` with default values. |
 
 ## Properties
 

@@ -21,9 +21,9 @@ The player state for normally playing in the world. On the server, entering it s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingState()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingState()"}</code> | Creates a `PlayingState` with default values. |
 
 ## Properties
 

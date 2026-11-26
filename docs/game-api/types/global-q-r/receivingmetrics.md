@@ -19,9 +19,9 @@ Old read-only view of the incoming packet averages kept by `ServerPacketReceiver
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ReceivingMetrics()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ReceivingMetrics()"}</code> | Creates a `ReceivingMetrics` with default values. |
 
 ## Properties
 

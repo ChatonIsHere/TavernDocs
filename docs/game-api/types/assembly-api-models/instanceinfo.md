@@ -18,9 +18,9 @@ A running server instance in Alta's hosting, as listed by `IInstancesClient`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InstanceInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InstanceInfo()"}</code> | Creates an `InstanceInfo` with default values. |
 
 ## Properties
 

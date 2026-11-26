@@ -21,9 +21,9 @@ One point on a piece of forged metal that fills as it is hammered while hot. Syn
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForgedPoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForgedPoint()"}</code> | Creates a `ForgedPoint` with default values. |
 
 ## Fields
 

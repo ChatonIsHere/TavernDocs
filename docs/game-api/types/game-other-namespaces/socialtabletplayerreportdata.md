@@ -19,9 +19,9 @@ Payload of the `ConsoleEvents.SocialTabletPlayerReported` console event, raised 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SocialTabletPlayerReportData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SocialTabletPlayerReportData()"}</code> | Creates a `SocialTabletPlayerReportData` with default values. |
 
 ## Fields
 

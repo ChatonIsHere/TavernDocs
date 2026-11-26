@@ -21,9 +21,9 @@ Save data for `LogicIntReceiver`: which int sender it listens to.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicIntReceiverData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicIntReceiverData()"}</code> | Creates a `LogicIntReceiverData` with default values. |
 
 ## Properties
 

@@ -18,10 +18,10 @@ Tracks the ambient temperature for an entity from the location chunk it's in (23
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AmbientTemperatureChecker()"}</code> |
-| <Link id="m-ctor-2" /><code>{"AmbientTemperatureChecker("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AmbientTemperatureChecker()"}</code> | Creates an `AmbientTemperatureChecker` from `entity`. |
+| <Link id="m-ctor-2" /><code>{"AmbientTemperatureChecker("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" entity)"}</code> | Creates an `AmbientTemperatureChecker` from `entity`. |
 
 ## Fields
 

@@ -19,10 +19,10 @@ The effect and sound for one impact outcome (critical, good or bad) in `ImpactDe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ImpactSettings()"}</code> |
-| <Link id="m-ctor-2" /><code>{"ImpactSettings("}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound, "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ImpactSettings()"}</code> | Creates an `ImpactDetectorSettings.ImpactSettings` from `sound` and `objectDefinition`. |
+| <Link id="m-ctor-2" /><code>{"ImpactSettings("}<Link to="/game-api/types/global-s/soundeffect">{"SoundEffect"}</Link>{" sound, "}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" objectDefinition)"}</code> | Creates an `ImpactDetectorSettings.ImpactSettings` from `sound` and `objectDefinition`. |
 
 ## Fields
 

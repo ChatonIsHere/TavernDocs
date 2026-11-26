@@ -19,9 +19,9 @@ Offline stand-in for the launcher client.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineLauncherApiClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineLauncherApiClient()"}</code> | Creates an `OfflineLauncherApiClient` with default values. |
 
 ## Methods
 

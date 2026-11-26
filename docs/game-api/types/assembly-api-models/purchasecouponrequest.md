@@ -18,9 +18,9 @@ Request body for buying coupons for a currency package.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PurchaseCouponRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PurchaseCouponRequest()"}</code> | Creates a `PurchaseCouponRequest` with default values. |
 
 ## Properties
 

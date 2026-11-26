@@ -19,9 +19,9 @@ Obsolete: reads total CPU use and one process's memory. Marked to be replaced by
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProcessDiagnostics(Process processToTrack)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProcessDiagnostics(Process processToTrack)"}</code> | Creates a `ProcessDiagnostics` from `processToTrack`. |
 
 ## Fields
 

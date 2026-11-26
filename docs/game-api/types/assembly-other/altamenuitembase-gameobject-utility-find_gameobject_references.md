@@ -20,6 +20,6 @@ Editor menu folder `GameObject/Utility/Find GameObject References`: menu item cl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Find_GameObject_References()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Find_GameObject_References()"}</code> | Creates an `AltaMenuItemBase.GameObject.Utility.Find_GameObject_References` with default values. |

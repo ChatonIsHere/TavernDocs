@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Features/Logic`: menu item classes in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Logic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Logic()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Logic` with default values. |

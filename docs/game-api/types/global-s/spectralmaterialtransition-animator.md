@@ -19,9 +19,9 @@ Swaps one source material on a group of renderers between its normal, spectral a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Animator(Material original, Material baseSpectral, Material baseTransition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Animator(Material original, Material baseSpectral, Material baseTransition)"}</code> | Creates a `SpectralMaterialTransition.Animator` from `original`, `baseSpectral` and `baseTransition`. |
 
 ## Fields
 

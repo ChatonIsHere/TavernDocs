@@ -19,9 +19,9 @@ An in-game inspector entry for a method on a component. Interacting with it call
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MethodMember(MethodInfo method)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MethodMember(MethodInfo method)"}</code> | Creates a `MethodMember` from `method`. |
 
 ## Fields
 

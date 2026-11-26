@@ -20,6 +20,6 @@ Editor menu entry for creating a `MiningEchoIntensity` skill asset. Not used at 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `MiningEchoIntensity.Create` with default values. |

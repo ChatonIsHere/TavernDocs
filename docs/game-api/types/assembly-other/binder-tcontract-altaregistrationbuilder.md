@@ -21,9 +21,9 @@ VContainer registration builder used by `Binder<TContract>`. Builds the registra
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaRegistrationBuilder("}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> binder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaRegistrationBuilder("}<Link to="/game-api/types/assembly-other/binder-tcontract">{"Binder"}</Link>{"<TContract> binder)"}</code> | Creates a `Binder` from `binder`. |
 
 ## Fields
 

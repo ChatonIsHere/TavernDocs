@@ -19,9 +19,9 @@ Quick access menu action that cycles the Feature Test Gymnasium's `ChunkDisplayT
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VisualChunkQuickAccessMenuAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VisualChunkQuickAccessMenuAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Properties
 

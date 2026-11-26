@@ -19,6 +19,6 @@ Inspector attribute with no members; probably makes a field read only in the ins
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ReadOnlyInDebugAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ReadOnlyInDebugAttribute()"}</code> | Creates a `ReadOnlyInDebugAttribute` with default values. |

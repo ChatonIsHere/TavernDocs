@@ -19,9 +19,9 @@ Animator state behaviour that sets a float parameter (usually a blend tree value
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RandomTreeValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RandomTreeValue()"}</code> | Creates a `RandomTreeValue` with default values. |
 
 ## Fields
 

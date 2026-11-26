@@ -20,6 +20,6 @@ Editor menu entry that creates the `MenuSettings` global settings asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `MenuSettings.Create` with default values. |

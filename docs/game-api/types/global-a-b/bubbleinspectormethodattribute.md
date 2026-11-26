@@ -20,6 +20,6 @@ Marks a method to show as a callable entry in the in-game bubble inspector, read
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BubbleInspectorMethodAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BubbleInspectorMethodAttribute()"}</code> | Creates a `BubbleInspectorMethodAttribute` with default values. |

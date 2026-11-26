@@ -20,9 +20,9 @@ Unity Input System wrapper generated from the game's input actions asset. It has
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InputMap()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InputMap()"}</code> | Creates an `InputMap` with default values. |
 
 ## Fields
 

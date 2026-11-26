@@ -18,9 +18,9 @@ Where a glyph goes on a page: position, rotation and scale. Used by the generate
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GlyphPosition(Vector2 position, float rotation, float scale)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GlyphPosition(Vector2 position, float rotation, float scale)"}</code> | Creates a `GlyphPosition` from `position`, `rotation` and `scale`. |
 
 ## Fields
 

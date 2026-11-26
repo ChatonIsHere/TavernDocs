@@ -19,9 +19,9 @@ Optional range a stat's value must be in when set by a command. Used by `StatDef
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MinimumAndMaximumValues()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MinimumAndMaximumValues()"}</code> | Creates a `StatDefinition.MinimumAndMaximumValues` with default values. |
 
 ## Fields
 

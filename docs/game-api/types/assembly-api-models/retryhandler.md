@@ -19,9 +19,9 @@ HTTP handler for the API client that adds a timeout per attempt and retries fail
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RetryHandler(float timeOutInSeconds, int maxRetryAmount = 3)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RetryHandler(float timeOutInSeconds, int maxRetryAmount = 3)"}</code> | Creates a `RetryHandler` from `timeOutInSeconds` and `maxRetryAmount`. |
 
 ## Fields
 

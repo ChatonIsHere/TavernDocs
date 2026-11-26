@@ -19,9 +19,9 @@ Profiling list of bytes sent, one statistic per entity message type.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EntityMessageStatistics()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EntityMessageStatistics()"}</code> | Creates an `EntityMessageStatistics` with default values. |
 
 ## Methods
 

@@ -19,9 +19,9 @@ Passes an event on at most once per interval. Call `Invoke` as often as you like
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FrequencyLimiter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FrequencyLimiter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -38,6 +38,6 @@ Passes an event on at most once per interval. Call `Invoke` as often as you like
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"void Invoke()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"void Invoke()"}</code> | Fires `invoked` unless it already fired within the last `minimumInterval` seconds. |

@@ -20,9 +20,9 @@ The last chiselling stage of a `TimberBlock`. Finishing it releases the crafted 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CoreStage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CoreStage()"}</code> | Creates a `TimberBlock.CoreStage` with default values. |
 
 ## Properties
 

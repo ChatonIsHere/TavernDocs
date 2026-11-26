@@ -18,9 +18,9 @@ Player reports for one server, grouped into one summary per reported player. Bui
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerReportCollection()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerReportCollection()"}</code> | Creates a `ServerReportCollection` with default values. |
 
 ## Fields
 

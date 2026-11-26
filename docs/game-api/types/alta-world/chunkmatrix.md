@@ -18,9 +18,9 @@ Wraps a transform matrix and applies it in place to positions, rotations and dir
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkMatrix(Matrix4x4 matrix)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkMatrix(Matrix4x4 matrix)"}</code> | Creates a `ChunkMatrix` from `matrix`. |
 
 ## Fields
 

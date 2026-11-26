@@ -20,9 +20,9 @@ Base for a set of outgoing network transport stats (messages, packets, bytes) us
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportStatistic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportStatistic()"}</code> | Creates a `NetworkTransportStatistic` with default values. |
 
 ## Fields
 

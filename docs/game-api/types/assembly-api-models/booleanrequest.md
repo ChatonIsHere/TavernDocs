@@ -18,9 +18,9 @@ Request body holding a single true or false, sent as `value`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BooleanRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BooleanRequest()"}</code> | Creates a `BooleanRequest` with default values. |
 
 ## Properties
 

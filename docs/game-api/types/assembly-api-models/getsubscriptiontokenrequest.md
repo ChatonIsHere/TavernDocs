@@ -18,9 +18,9 @@ Request body for getting a payment token for a subscription plan.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetSubscriptionTokenRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetSubscriptionTokenRequest()"}</code> | Creates a `GetSubscriptionTokenRequest` with default values. |
 
 ## Properties
 

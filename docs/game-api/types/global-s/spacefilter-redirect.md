@@ -19,9 +19,9 @@ A rule on a `SpaceFilter`: points in these forest space types use another fill s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Redirect()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Redirect()"}</code> | Creates a `SpaceFilter.Redirect` with default values. |
 
 ## Fields
 

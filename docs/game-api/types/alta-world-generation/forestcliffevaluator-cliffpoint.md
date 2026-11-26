@@ -19,9 +19,9 @@ A sample point along a cliff found during forest generation, stepped along each 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CliffPoint(List<"}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{"> cliff, int pathIndex, Vector3 point, Vector2 direction, float height, float ray)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CliffPoint(List<"}<Link to="/game-api/types/alta-world-generation/path">{"Path"}</Link>{"> cliff, int pathIndex, Vector3 point, Vector2 direction, float height, float ray)"}</code> | Creates a `ForestCliffEvaluator.CliffPoint` from `cliff`, `pathIndex`, `point`, `direction`, `height` and `ray`. |
 
 ## Fields
 

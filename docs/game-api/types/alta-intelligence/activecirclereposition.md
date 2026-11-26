@@ -20,9 +20,9 @@ Server: running action that walks a creature to a spot rotated around its target
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveCircleReposition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveCircleReposition()"}</code> | Creates an `ActiveCircleReposition` with default values. |
 
 ## Methods
 

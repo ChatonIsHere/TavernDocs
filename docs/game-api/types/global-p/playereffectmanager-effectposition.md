@@ -19,9 +19,9 @@ A spot on a player's body where heat (smoke, burn) and stat effect particles are
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EffectPosition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EffectPosition()"}</code> | Creates a `PlayerEffectManager.EffectPosition` with default values. |
 
 ## Fields
 

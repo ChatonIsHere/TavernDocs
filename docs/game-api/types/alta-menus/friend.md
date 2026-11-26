@@ -18,9 +18,9 @@ A friend entry: the user's ID and display name.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Friend(ulong userID, string userDisplayName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Friend(ulong userID, string userDisplayName)"}</code> | Creates a `Friend` from `userID` and `userDisplayName`. |
 
 ## Properties
 

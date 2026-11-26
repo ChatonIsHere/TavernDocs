@@ -20,9 +20,9 @@ The server's config files, registered as a service: get it with `TavernServices.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TavernManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TavernManager()"}</code> | Creates and reads the config files, then starts the listing controller and auth manager when they are on. |
 
 ## Properties
 
@@ -48,9 +48,9 @@ The server's config files, registered as a service: get it with `TavernServices.
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-tryread" /><code>{"private static void TryRead(Action read, string path)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-tryread" /><code>{"private static void TryRead(Action read, string path)"}</code> | Runs a config read and logs an error instead of throwing if it fails. |
 
 </details>
 

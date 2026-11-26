@@ -21,9 +21,9 @@ Keeps the login tokens, remember-me flag and saved username in player preference
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LoginPreferences("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LoginPreferences("}<Link to="/game-api/types/assembly-api-client/ihighlevelapiclient">{"IHighLevelApiClient"}</Link>{" apiClient)"}</code> | Creates a `LoginPreferences` from `apiClient`. |
 
 ## Fields
 

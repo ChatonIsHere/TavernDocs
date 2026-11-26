@@ -20,9 +20,9 @@ NLog layout renderer `${entity-parent}`: the parent of a `NetworkEntity` passed 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityParentRenderer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityParentRenderer()"}</code> | Creates a `NetworkEntityParentRenderer` with default values. |
 
 ## Methods
 

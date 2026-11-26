@@ -19,9 +19,9 @@ A hit on an `ImpactDetector`, sent to the chunk by the client whose player hit s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ImpactSyncArguments("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ImpactSyncArguments("}<Link to="/game-api/types/alta-items/impacthitwithtool">{"ImpactHitWithTool"}</Link>{" impactWithTool)"}</code> | Creates an `ImpactDetector.ImpactSyncArguments` from `impactWithTool`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ A whitelist or blacklist in `users.json`. A player matches on any of their name,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ListConfig()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ListConfig()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 
@@ -35,9 +35,9 @@ A whitelist or blacklist in `users.json`. A player matches on any of their name,
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | Holds JSON keys TavernLib doesn't model, so they are written back unchanged. |
 
 </details>
 

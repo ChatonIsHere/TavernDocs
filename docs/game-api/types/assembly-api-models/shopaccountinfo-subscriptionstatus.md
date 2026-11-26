@@ -19,9 +19,9 @@ Supporter subscription state inside `ShopAccountInfo.MemberStatus`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SubscriptionStatus()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SubscriptionStatus()"}</code> | Creates a `ShopAccountInfo.SubscriptionStatus` with default values. |
 
 ## Properties
 

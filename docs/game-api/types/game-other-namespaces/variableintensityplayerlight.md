@@ -19,9 +19,9 @@ Light on the player that brightens with the number of orbs carried. Reached thro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VariableIntensityPlayerLight()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VariableIntensityPlayerLight()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data for a `PositionRestrictor` (save version 3): the allowed area and the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionRestrictorSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionRestrictorSaveData()"}</code> | Creates a `PositionRestrictorSaveData` with default values. |
 
 ## Fields
 

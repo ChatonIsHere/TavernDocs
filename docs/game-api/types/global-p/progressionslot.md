@@ -19,10 +19,10 @@ One slot in a profession skill tree: a skill, its cost in points, and the slots 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProgressionSlot()"}</code> |
-| <Link id="m-ctor-2" /><code>{"ProgressionSlot("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProgressionSlot()"}</code> | Creates a `ProgressionSlot` from `skill`. |
+| <Link id="m-ctor-2" /><code>{"ProgressionSlot("}<Link to="/game-api/types/global-p/professionskill">{"ProfessionSkill"}</Link>{" skill)"}</code> | Creates a `ProgressionSlot` from `skill`. |
 
 ## Fields
 

@@ -21,6 +21,6 @@ Base for an Assets/Create/Township/Features/Creatures menu entry that creates a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Creatures.ScriptableObject` with default values. |

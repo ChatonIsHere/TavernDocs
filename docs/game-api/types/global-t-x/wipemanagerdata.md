@@ -21,9 +21,9 @@ Save data for `WipeManager`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WipeManagerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WipeManagerData()"}</code> | Creates a `WipeManagerData` with default values. |
 
 ## Fields
 

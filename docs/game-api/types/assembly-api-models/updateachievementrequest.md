@@ -18,9 +18,9 @@ Body for updating one achievement for a user on the Alta web API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UpdateAchievementRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UpdateAchievementRequest()"}</code> | Creates an `UpdateAchievementRequest` with default values. |
 
 ## Properties
 

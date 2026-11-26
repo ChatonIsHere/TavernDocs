@@ -18,9 +18,9 @@ One hand's climbing state: grabbing a climbable surface, holding the grip and wo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingHand("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" handler, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingHand("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller, "}<Link to="/game-api/types/game-other-namespaces/climbinghandler">{"ClimbingHandler"}</Link>{" handler, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> | Creates a `ClimbingHand` from `controller`, `handler` and `unlock`. |
 
 ## Fields
 

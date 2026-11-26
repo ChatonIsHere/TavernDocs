@@ -19,9 +19,9 @@ A position and rotation a population can spawn at, with a free flag and an optio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnPoint(Vector3 position, Quaternion rotation, int index)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnPoint(Vector3 position, Quaternion rotation, int index)"}</code> | Creates a `SpawnPoint` from `position`, `rotation` and `index`. |
 
 ## Fields
 

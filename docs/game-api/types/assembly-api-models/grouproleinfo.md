@@ -18,9 +18,9 @@ A role in a group: id, name, colour, permissions and allowed console commands. C
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GroupRoleInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GroupRoleInfo()"}</code> | Creates a `GroupRoleInfo` with default values. |
 
 ## Fields
 

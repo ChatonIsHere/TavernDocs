@@ -21,6 +21,6 @@ Menu path node for Assets/Create/Township/Features/Cooking.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Cooking()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Cooking()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Cooking` with default values. |

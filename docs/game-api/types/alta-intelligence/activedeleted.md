@@ -20,9 +20,9 @@ Server: running action that removes the creature from the scene. Used as the las
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveDeleted()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveDeleted()"}</code> | Creates an `ActiveDeleted` with default values. |
 
 ## Methods
 

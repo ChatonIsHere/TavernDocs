@@ -22,9 +22,9 @@ Save data for `ModifiableStaticManager`: which static objects (by hash) are modi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModifiableStaticManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModifiableStaticManagerSaveData()"}</code> | Creates a `ModifiableStaticManagerSaveData` with default values. |
 
 ## Fields
 

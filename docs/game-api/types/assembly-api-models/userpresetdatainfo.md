@@ -18,9 +18,9 @@ A saved cosmetics preset from the web API, packed as an array of `uint` values.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserPresetDataInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserPresetDataInfo()"}</code> | Creates an `UserPresetDataInfo` with default values. |
 
 ## Properties
 

@@ -21,9 +21,9 @@ Save data for a `LogicFloatReset`, which eases a float sender back to a default 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatResetSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatResetSaveData()"}</code> | Creates a `LogicFloatResetSaveData` with default values. |
 
 ## Fields
 

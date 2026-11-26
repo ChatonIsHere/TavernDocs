@@ -19,9 +19,9 @@ Scoring rule that reads a sense with the creature as both requester and target, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InverseLerpSenseSelf("}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense, float from, float to)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InverseLerpSenseSelf("}<Link to="/game-api/types/alta-intelligence/sense">{"Sense"}</Link>{" sense, float from, float to)"}</code> | Creates an `InverseLerpSenseSelf` from `sense`, `from` and `to`. |
 
 ## Fields
 

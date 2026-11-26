@@ -19,9 +19,9 @@ Lets a Unity coroutine wait for a `Task`: yield one and the coroutine resumes wh
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TaskYield(Task task)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TaskYield(Task task)"}</code> | Creates a `TaskYield` from `task`. |
 
 ## Properties
 

@@ -21,9 +21,9 @@ Game task action argument sent when a player moves one item into a pickup contai
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TransferAmountArgument("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" transfer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransferAmountArgument("}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" transfer)"}</code> | Creates a `TransferAmountArgument` from `transfer`. |
 
 ## Properties
 

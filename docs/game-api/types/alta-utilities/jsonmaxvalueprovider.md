@@ -19,9 +19,9 @@ Value provider used by `JsonMaxAttribute`: caps a float property at `max` on get
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonMaxValueProvider(IValueProvider baseProvider, float max)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonMaxValueProvider(IValueProvider baseProvider, float max)"}</code> | Creates a `JsonMaxValueProvider` from `baseProvider` and `max`. |
 
 ## Fields
 

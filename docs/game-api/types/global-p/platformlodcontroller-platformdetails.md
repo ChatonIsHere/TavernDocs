@@ -19,9 +19,9 @@ Private: the LOD range to keep on one platform (default Android) when `PlatformL
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformDetails()"}</code> | Creates a `PlatformLODController.PlatformDetails` with default values. |
 
 ## Fields
 

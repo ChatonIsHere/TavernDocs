@@ -19,9 +19,9 @@ Network messages between server and client for micro tutorials: spawn, despawn a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SyncController("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" syncEntity)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SyncController("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" syncEntity)"}</code> | Creates a `SyncController` from `syncEntity`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Scoring rule on the creature's own speed: one value while its rigidbody is slowe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VelocityLimit(float maximimumVelocitySquared, float withinLimitValue, float outsideLimitValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VelocityLimit(float maximimumVelocitySquared, float withinLimitValue, float outsideLimitValue)"}</code> | Creates a `VelocityLimit` from `maximimumVelocitySquared`, `withinLimitValue` and `outsideLimitValue`. |
 
 ## Fields
 

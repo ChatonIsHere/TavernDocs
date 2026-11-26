@@ -20,7 +20,7 @@ Internal base class for player save errors. `CorruptPlayerSaveFileException` der
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerSaveException()"}</code> |
-| <Link id="m-ctor-2" /><code>{"PlayerSaveException(string message)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerSaveException()"}</code> | Creates the exception with `message`. |
+| <Link id="m-ctor-2" /><code>{"PlayerSaveException(string message)"}</code> | Creates the exception with `message`. |

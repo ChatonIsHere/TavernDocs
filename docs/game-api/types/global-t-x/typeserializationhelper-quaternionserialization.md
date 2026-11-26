@@ -20,9 +20,9 @@ Serializer for `Quaternion`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"QuaternionSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"QuaternionSerialization()"}</code> | Creates a `TypeSerializationHelper.QuaternionSerialization` with default values. |
 
 ## Methods
 

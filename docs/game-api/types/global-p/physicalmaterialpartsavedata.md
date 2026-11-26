@@ -21,9 +21,9 @@ Save format (version 1) for `PhysicalMaterialPart`, storing which physical mater
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PhysicalMaterialPartSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PhysicalMaterialPartSaveData()"}</code> | Creates a `PhysicalMaterialPartSaveData` with default values. |
 
 ## Fields
 

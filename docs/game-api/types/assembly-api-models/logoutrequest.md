@@ -18,10 +18,10 @@ Request body for logging out, which hands back the refresh token.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogoutRequest()"}</code> |
-| <Link id="m-ctor-2" /><code>{"LogoutRequest(JwtSecurityToken refreshToken)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogoutRequest()"}</code> | Creates a `LogoutRequest` from `refreshToken`. |
+| <Link id="m-ctor-2" /><code>{"LogoutRequest(JwtSecurityToken refreshToken)"}</code> | Creates a `LogoutRequest` from `refreshToken`. |
 
 ## Properties
 

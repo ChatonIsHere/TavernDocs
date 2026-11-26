@@ -20,9 +20,9 @@ Private inspector entry on `ModellingCharacter`: a free player cosmetic and its 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FreeDefinition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FreeDefinition()"}</code> | Creates a `ModellingCharacter.FreeDefinition` with default values. |
 
 ## Fields
 

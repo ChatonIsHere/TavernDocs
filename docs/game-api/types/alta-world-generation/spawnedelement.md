@@ -18,9 +18,9 @@ Server: one slot of a global population in a location chunk. It picks a spot, sp
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnedElement("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" locationChunk, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, "}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" populationDefinition, float decayTime)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnedElement("}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" locationChunk, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" prefab, "}<Link to="/game-api/types/alta-world-generation/globalpopulationdefinition">{"GlobalPopulationDefinition"}</Link>{" populationDefinition, float decayTime)"}</code> | Creates a `SpawnedElement` from `locationChunk`, `prefab`, `populationDefinition` and `decayTime`. |
 
 ## Fields
 

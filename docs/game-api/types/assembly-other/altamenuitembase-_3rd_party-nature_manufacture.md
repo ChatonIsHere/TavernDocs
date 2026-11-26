@@ -20,6 +20,6 @@ Editor menu folder `3rd Party/Nature Manufacture`: menu item classes inherit it 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Nature_Manufacture()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Nature_Manufacture()"}</code> | Creates an `AltaMenuItemBase._3rd_Party.Nature_Manufacture` with default values. |

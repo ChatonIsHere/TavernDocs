@@ -18,9 +18,9 @@ One growing plant inside a `GrowerGroup`: steps through a `GrowthDefinition`'s s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrowthItem()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrowthItem()"}</code> | Creates a `GrowthItem` with default values. |
 
 ## Fields
 
@@ -45,7 +45,7 @@ One growing plant inside a `GrowerGroup`: steps through a `GrowthDefinition`'s s
 | <Link id="m-colliders" /><code>{"private static Collider[] colliders"}</code> | Shared buffer for the radius check overlap. |
 | <Link id="m-handledrigidbodies" /><code>{"private static HashSet<Rigidbody> handledRigidbodies"}</code> | Shared set so the radius check looks at each rigidbody once. |
 | <Link id="m-hits" /><code>{"private static RaycastHit[] hits"}</code> | Shared buffer for the raycast check. |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 
 </details>
 

@@ -19,9 +19,9 @@ Key for a texture already packed into the cosmetics atlas, so parts with the sam
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ExistingBlit(int workingIndex, Texture2D texture, "}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorA, "}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorB)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ExistingBlit(int workingIndex, Texture2D texture, "}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorA, "}<Link to="/game-api/types/alta-customization/cosmeticcolor">{"CosmeticColor"}</Link>{" colorB)"}</code> | Creates a `TexturePacker.ExistingBlit` from `workingIndex`, `texture`, `colorA` and `colorB`. |
 
 ## Fields
 

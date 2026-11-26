@@ -22,9 +22,9 @@ A **class** in `Root.Township`, no namespace.
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private EmptyChildrenSerializer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private EmptyChildrenSerializer()"}</code> | Creates an `EmptyChildrenSerializer` with default values. |
 
 </details>
 

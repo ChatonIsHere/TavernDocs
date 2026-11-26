@@ -19,9 +19,9 @@ A named time of day, such as a keyword for the time command. `GameTimeManager.Up
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimeName()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimeName()"}</code> | Creates a `GameTimeManager.TimeName` with default values. |
 
 ## Fields
 

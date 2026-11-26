@@ -20,9 +20,9 @@ A light with its distance from the player's head, used to pick the eight nearest
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SortedLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light, Vector3 cameraPosition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SortedLight("}<Link to="/game-api/types/alta-world/platformlight">{"PlatformLight"}</Link>{" light, Vector3 cameraPosition)"}</code> | Creates an `AndroidLightsController.SortedLight` from `light` and `cameraPosition`. |
 
 ## Properties
 

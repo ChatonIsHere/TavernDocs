@@ -18,10 +18,10 @@ Message payload a `Book` sends to chunks when the server spawns a page into it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NewPageArguments()"}</code> |
-| <Link id="m-ctor-2" /><code>{"NewPageArguments("}<Link to="/game-api/types/alta-items/pageinstance">{"PageInstance"}</Link>{" page, int spawnedIndex, bool isInserting)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NewPageArguments()"}</code> | Creates a `NewPageArguments` from `page`, `spawnedIndex` and `isInserting`. |
+| <Link id="m-ctor-2" /><code>{"NewPageArguments("}<Link to="/game-api/types/alta-items/pageinstance">{"PageInstance"}</Link>{" page, int spawnedIndex, bool isInserting)"}</code> | Creates a `NewPageArguments` from `page`, `spawnedIndex` and `isInserting`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Device controller for the fly cam (spectator) player mode. Creates the fly cam's
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FlyCamDeviceController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FlyCamDeviceController()"}</code> | Creates a `FlyCamDeviceController` with default values. |
 
 ## Properties
 

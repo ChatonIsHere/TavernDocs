@@ -19,9 +19,9 @@ A Unity event an agent fires on one hook event channel (by array index in `Agent
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChannelEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChannelEvent()"}</code> | Creates an `Agent.ChannelEvent` with default values. |
 
 ## Fields
 

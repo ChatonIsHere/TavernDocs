@@ -19,6 +19,6 @@ Marker property attribute, probably for an editor drawer that forces a string fi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForcedCapitalizationAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForcedCapitalizationAttribute()"}</code> | Creates a `ForcedCapitalizationAttribute` with default values. |

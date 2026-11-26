@@ -19,9 +19,9 @@ One save data version of a saved type: the data class and its lazily built seria
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VersionSetup(Type type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VersionSetup(Type type)"}</code> | Creates a `SavingSystem.VersionSetup` from `type`. |
 
 ## Fields
 

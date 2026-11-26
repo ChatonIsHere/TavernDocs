@@ -20,9 +20,9 @@ VContainer instance provider that always returns one fixed object, used when a b
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InstanceProvider(object instance)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InstanceProvider(object instance)"}</code> | Creates a `Binder` from `instance`. |
 
 ## Fields
 

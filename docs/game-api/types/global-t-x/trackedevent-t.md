@@ -19,9 +19,9 @@ A delegate list you add to with `+` and fire with `Invoke`, which remembers whet
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TrackedEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TrackedEvent()"}</code> | Creates a `TrackedEvent` with default values. |
 
 ## Fields
 

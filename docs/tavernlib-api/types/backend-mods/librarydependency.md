@@ -19,9 +19,9 @@ A library a mod build needs in `UserLibs`, from the build's `library_dependencie
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LibraryDependency()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LibraryDependency()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Properties
 

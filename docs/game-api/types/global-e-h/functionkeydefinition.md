@@ -18,9 +18,9 @@ Inspector entry that binds a keyboard key to a `UnityEvent`, with an optional on
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FunctionKeyDefinition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FunctionKeyDefinition()"}</code> | Creates a `FunctionKeyDefinition` with default values. |
 
 ## Fields
 

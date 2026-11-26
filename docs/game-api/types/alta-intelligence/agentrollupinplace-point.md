@@ -19,10 +19,10 @@ A ground contact point found while working out how a fallen agent should turn up
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Point(Vector3 point)"}</code> |
-| <Link id="m-ctor-2" /><code>{"Point(Vector3 point, Vector3 normal)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Point(Vector3 point)"}</code> | Creates an `AgentRollUpInPlace.Point` from `point` and `normal`. |
+| <Link id="m-ctor-2" /><code>{"Point(Vector3 point, Vector3 normal)"}</code> | Creates an `AgentRollUpInPlace.Point` from `point` and `normal`. |
 
 ## Fields
 

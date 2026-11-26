@@ -18,9 +18,9 @@ An outgoing packet buffer that several messages are written into, each with a 2-
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Packet(int size)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Packet(int size)"}</code> | Creates a `Packet` from `size`. |
 
 ## Fields
 

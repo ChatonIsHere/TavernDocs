@@ -19,9 +19,9 @@ Remembers the `NetworkEntity.SyncChannel` that was active when it was made, so a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CachedSyncChannel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CachedSyncChannel()"}</code> | Creates a `CachedSyncChannel` with default values. |
 
 ## Fields
 

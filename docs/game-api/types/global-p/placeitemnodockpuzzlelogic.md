@@ -20,9 +20,9 @@ Puzzle trigger that checks whether the right item has been placed inside it (not
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockPuzzleLogic()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockPuzzleLogic()"}</code> | Creates a `PlaceItemNoDockPuzzleLogic` with default values. |
 
 ## Fields
 

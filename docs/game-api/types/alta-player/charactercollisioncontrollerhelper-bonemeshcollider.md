@@ -20,9 +20,9 @@ Settings for mesh colliders on a character bone. `CharacterCollisionControllerHe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoneMeshCollider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoneMeshCollider()"}</code> | Creates a `CharacterCollisionControllerHelper.BoneMeshCollider` with default values. |
 
 ## Fields
 

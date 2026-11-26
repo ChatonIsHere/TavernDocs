@@ -20,9 +20,9 @@ Loads, saves and unloads the saved entities of one chunk: reads the chunk's save
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DynamicChunkContentManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, bool isLogging = false)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DynamicChunkContentManager("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk, bool isLogging = false)"}</code> | Creates a `DynamicChunkContentManager` from `chunk` and `isLogging`. |
 
 ## Fields
 

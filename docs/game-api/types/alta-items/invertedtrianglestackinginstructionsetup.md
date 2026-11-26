@@ -20,9 +20,9 @@ Builds the stacking layout for the inverted triangle instruction: rows that get 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InvertedTriangleStackingInstructionSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InvertedTriangleStackingInstructionSetup()"}</code> | Creates an `InvertedTriangleStackingInstructionSetup` with default values. |
 
 ## Methods
 

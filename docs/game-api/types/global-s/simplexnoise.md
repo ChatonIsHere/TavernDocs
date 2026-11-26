@@ -19,9 +19,9 @@ Simplex noise in 2, 3 or 4 dimensions, with per-instance offsets added to the in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimplexNoise(double offsetX, double offsetY, double offsetZ, double offsetW)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimplexNoise(double offsetX, double offsetY, double offsetZ, double offsetW)"}</code> | Creates a `SimplexNoise` from `offsetX`, `offsetY`, `offsetZ` and `offsetW`. |
 
 ## Fields
 

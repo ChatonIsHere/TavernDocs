@@ -19,9 +19,9 @@ Base for an S3 file or folder: a bucket name and object key, with delete calls t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"S3StorageObject(string bucketName, string fullName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"S3StorageObject(string bucketName, string fullName)"}</code> | Creates a `S3StorageObject` from `bucketName` and `fullName`. |
 
 ## Fields
 

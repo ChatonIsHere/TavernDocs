@@ -19,9 +19,9 @@ Fast fixed-size priority queue of `StablePriorityQueueNode` items with float pri
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StablePriorityQueue(int maxNodes)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StablePriorityQueue(int maxNodes)"}</code> | Creates a `StablePriorityQueue` from `maxNodes`. |
 
 ## Fields
 

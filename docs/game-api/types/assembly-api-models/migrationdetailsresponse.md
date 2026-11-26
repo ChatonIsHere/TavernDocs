@@ -18,9 +18,9 @@ A server's latest save storage (EFS) migration, from `LowLevelApiClient.GetLates
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MigrationDetailsResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MigrationDetailsResponse()"}</code> | Creates a `MigrationDetailsResponse` with default values. |
 
 ## Properties
 

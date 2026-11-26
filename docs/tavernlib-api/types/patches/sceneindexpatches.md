@@ -20,9 +20,9 @@ Forces the scene a client joins from `/tutorialScene` or `/questScene`, with a p
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SceneIndexPatches()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SceneIndexPatches()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Methods
 

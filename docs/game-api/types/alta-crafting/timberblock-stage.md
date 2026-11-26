@@ -20,9 +20,9 @@ One carving stage of a `TimberBlock` with its own pieces. Subclassed as `OuterSt
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Stage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Stage()"}</code> | Creates a `TimberBlock.Stage` with default values. |
 
 ## Fields
 

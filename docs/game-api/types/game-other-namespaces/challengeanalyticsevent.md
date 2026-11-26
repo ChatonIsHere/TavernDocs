@@ -19,12 +19,12 @@ Analytics event for challenge progress (start, exit, respawn, checkpoint, comple
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChallengeAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ChallengeAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock, int numberOfOrbs)"}</code> |
-| <Link id="m-ctor-3" /><code>{"ChallengeAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock, int numberOfOrbs, int checkpointIndex)"}</code> |
-| <Link id="m-ctor-4" /><code>{"ChallengeAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock, int numberOfOrbs, string recentCheckpointName)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChallengeAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock)"}</code> | Creates a `ChallengeAnalyticsEvent` from `eventName`, `unlock`, `numberOfOrbs` and `recentCheckpointName`. |
+| <Link id="m-ctor-2" /><code>{"ChallengeAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock, int numberOfOrbs)"}</code> | Creates a `ChallengeAnalyticsEvent` from `eventName`, `unlock`, `numberOfOrbs` and `recentCheckpointName`. |
+| <Link id="m-ctor-3" /><code>{"ChallengeAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock, int numberOfOrbs, int checkpointIndex)"}</code> | Creates a `ChallengeAnalyticsEvent` from `eventName`, `unlock`, `numberOfOrbs` and `recentCheckpointName`. |
+| <Link id="m-ctor-4" /><code>{"ChallengeAnalyticsEvent(string eventName, "}<Link to="/game-api/types/global-p/playerunlock">{"PlayerUnlock"}</Link>{" unlock, int numberOfOrbs, string recentCheckpointName)"}</code> | Creates a `ChallengeAnalyticsEvent` from `eventName`, `unlock`, `numberOfOrbs` and `recentCheckpointName`. |
 
 ## Fields
 

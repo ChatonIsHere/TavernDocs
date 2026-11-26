@@ -18,9 +18,9 @@ Body of an Alta web API request to check a username.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UsernameValidationRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UsernameValidationRequest()"}</code> | Creates an `UsernameValidationRequest` with default values. |
 
 ## Properties
 

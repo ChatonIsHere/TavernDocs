@@ -20,9 +20,9 @@ Builds the stacking layout for the sphere in box instruction: a grid of randomly
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstructionSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SphereInBoxStackingInstructionSetup()"}</code> | Creates a `SphereInBoxStackingInstructionSetup` with default values. |
 
 ## Fields
 

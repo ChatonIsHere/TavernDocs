@@ -18,10 +18,10 @@ The set of save format versions a chunk was written with: a map from save type h
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkVersioning()"}</code> |
-| <Link id="m-ctor-2" /><code>{"ChunkVersioning(string version)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkVersioning()"}</code> | Creates a `ChunkVersioning` from `version`. |
+| <Link id="m-ctor-2" /><code>{"ChunkVersioning(string version)"}</code> | Creates a `ChunkVersioning` from `version`. |
 
 ## Fields
 

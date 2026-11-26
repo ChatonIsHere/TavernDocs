@@ -19,10 +19,10 @@ Biome generator for one cave layer: adds per-layer attribute growth by depth and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CaveGeneratingBiome("}<Link to="/game-api/types/alta-world-generation/section">{"Section"}</Link>{" section, int layer)"}</code> |
-| <Link id="m-ctor-2" /><code>{"CaveGeneratingBiome(int depth)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CaveGeneratingBiome("}<Link to="/game-api/types/alta-world-generation/section">{"Section"}</Link>{" section, int layer)"}</code> | Creates a `CaveGeneratingBiome` from `depth`. |
+| <Link id="m-ctor-2" /><code>{"CaveGeneratingBiome(int depth)"}</code> | Creates a `CaveGeneratingBiome` from `depth`. |
 
 ## Fields
 

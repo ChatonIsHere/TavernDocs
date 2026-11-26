@@ -23,9 +23,9 @@ Harmony patches on `CommandService.HandleMatchedCommand` and `PlayerListConverte
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-typed" /><code>{"private static readonly ConditionalWeakTable<"}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{", string> Typed"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-typed" /><code>{"private static readonly ConditionalWeakTable<"}<Link to="/game-api/types/global-p/playerlist">{"PlayerList"}</Link>{", string> Typed"}</code> | The text typed for each `PlayerList` argument, kept so a refusal can quote it. |
 
 </details>
 
@@ -40,8 +40,8 @@ Harmony patches on `CommandService.HandleMatchedCommand` and `PlayerListConverte
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-unwrap" /><code>{"private static async Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> Unwrap(Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> pending)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-unwrap" /><code>{"private static async Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> Unwrap(Task<"}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{"> pending)"}</code> | Awaits a command's result and swaps a `TargetInvocationException` for the exception inside it. |
 
 </details>

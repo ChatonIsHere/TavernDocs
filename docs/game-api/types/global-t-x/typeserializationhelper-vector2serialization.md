@@ -20,9 +20,9 @@ Serializer for `Vector2`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Vector2Serialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Vector2Serialization()"}</code> | Creates a `TypeSerializationHelper.Vector2Serialization` with default values. |
 
 ## Methods
 

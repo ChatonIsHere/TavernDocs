@@ -19,9 +19,9 @@ One name and value pair in an analytics event.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnalyticsProperty(string name, object value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnalyticsProperty(string name, object value)"}</code> | Creates an `AnalyticsProperty` from `name` and `value`. |
 
 ## Properties
 

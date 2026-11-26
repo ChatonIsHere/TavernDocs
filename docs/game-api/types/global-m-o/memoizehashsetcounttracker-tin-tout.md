@@ -19,9 +19,9 @@ A set of inputs mapped to outputs through a cached function, with a reference co
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MemoizeHashsetCountTracker("}<Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate, IEqualityComparer<TIn> inputComparer = null, IEqualityComparer<TOut> outputComparer = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MemoizeHashsetCountTracker("}<Link to="/game-api/types/global-m-o/memoizehashset-tin-tout-evaluate">{"MemoizeHashset"}</Link>{"<TIn, TOut> evaluate, IEqualityComparer<TIn> inputComparer = null, IEqualityComparer<TOut> outputComparer = null)"}</code> | Creates a `MemoizeHashsetCountTracker` from `evaluate`, `inputComparer` and `outputComparer`. |
 
 ## Fields
 

@@ -21,6 +21,6 @@ Base for an Assets/Create/Township/Features/Decay menu entry that creates a `T` 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected ScriptableObject()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Features.Decay.ScriptableObject` with default values. |

@@ -18,9 +18,9 @@ Request body reporting an install or update event to the API, probably from the 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InstallationEventRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InstallationEventRequest()"}</code> | Creates an `InstallationEventRequest` with default values. |
 
 ## Properties
 

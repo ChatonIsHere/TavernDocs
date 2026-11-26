@@ -18,9 +18,9 @@ Server: holds every registered map marker and one tracker per connected player f
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerLandmarkManager("}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" initialSync, "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" changeSync, "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerLandmarkManager("}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" initialSync, "}<Link to="/game-api/types/alta-networking/controlledwritesync">{"ControlledWriteSync"}</Link>{" changeSync, "}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map)"}</code> | Creates a `ServerLandmarkManager` from `initialSync`, `changeSync` and `map`. |
 
 ## Fields
 

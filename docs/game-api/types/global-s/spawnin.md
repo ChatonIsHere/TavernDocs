@@ -19,6 +19,6 @@ Empty MonoBehaviour with no code.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnIn()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnIn()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

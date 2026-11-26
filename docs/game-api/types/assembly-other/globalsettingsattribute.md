@@ -20,9 +20,9 @@ Marks a `GlobalSettings` class with the name of its settings asset, for example 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GlobalSettingsAttribute(string filePath)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GlobalSettingsAttribute(string filePath)"}</code> | Creates a `GlobalSettingsAttribute` from `filePath`. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Client copy of the map markers the server has told this player about. Reach it t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClientLandmarkManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClientLandmarkManager()"}</code> | Creates a `ClientLandmarkManager` with default values. |
 
 ## Fields
 

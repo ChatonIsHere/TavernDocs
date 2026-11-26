@@ -20,10 +20,10 @@ One saved entity (with its child entities) as a prefab hash plus a packed bit st
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SavedDynamicObject(uint[] savingData, uint sizeInBytes, uint prefabHash)"}</code> |
-| <Link id="m-ctor-2" /><code>{"SavedDynamicObject(List<uint[]> savingData, uint sizeInBytes, uint prefabHash)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SavedDynamicObject(uint[] savingData, uint sizeInBytes, uint prefabHash)"}</code> | Creates a `SavedDynamicObject` from `savingData`, `sizeInBytes` and `prefabHash`. |
+| <Link id="m-ctor-2" /><code>{"SavedDynamicObject(List<uint[]> savingData, uint sizeInBytes, uint prefabHash)"}</code> | Creates a `SavedDynamicObject` from `savingData`, `sizeInBytes` and `prefabHash`. |
 
 ## Fields
 

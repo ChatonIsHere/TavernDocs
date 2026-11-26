@@ -20,9 +20,9 @@ Version 1 save data for a `LogicBoolSender`, migrated to `LogicBoolSaveData` whe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicBoolSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicBoolSaveData1()"}</code> | Creates a `LogicBoolSaveData1` with default values. |
 
 ## Fields
 

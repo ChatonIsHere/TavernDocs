@@ -19,20 +19,20 @@ Fetches indexes and manifests from the trusted mod sources over `NativeHttp`. Ru
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModRepoClient("}<Link to="/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, List<string> repos, DateTime? deadlineUtc = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModRepoClient("}<Link to="/tavernlib-api/types/backend/nativehttp">{"NativeHttp"}</Link>{" http, List<string> repos, DateTime? deadlineUtc = null)"}</code> | Sets up the client with an HTTP helper, the repo URLs and an optional deadline. |
 
 ## Fields
 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-jsontimeoutseconds" /><code>{"private const int JsonTimeoutSeconds"}</code> |
-| <Link id="m-maxjsonbytes" /><code>{"private const long MaxJsonBytes"}</code> |
-| <Link id="m-supportedindexmajor" /><code>{"private const int SupportedIndexMajor"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-jsontimeoutseconds" /><code>{"private const int JsonTimeoutSeconds"}</code> | Time allowed for one JSON fetch (15 seconds), shortened if the pass deadline is nearer. |
+| <Link id="m-maxjsonbytes" /><code>{"private const long MaxJsonBytes"}</code> | Largest JSON download accepted (8 MB). |
+| <Link id="m-supportedindexmajor" /><code>{"private const int SupportedIndexMajor"}</code> | The repository index schema version this build reads (2). |
 
 </details>
 
@@ -49,12 +49,12 @@ Fetches indexes and manifests from the trusted mod sources over `NativeHttp`. Ru
 <details>
 <summary>4 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-fetchmanifestleaf" /><code>{"private "}<Link to="/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchManifestLeaf(string modId, string leaf, string preferRepo, string what, string expectedVersion)"}</code> |
-| <Link id="m-fetchrepoindex" /><code>{"private ValueTuple<List<"}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{">> FetchRepoIndex(string baseUrl)"}</code> |
-| <Link id="m-getjson" /><code>{"private JObject GetJson(string url)"}</code> |
-| <Link id="m-issupported" /><code>{"private static bool IsSupported(JObject index)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-fetchmanifestleaf" /><code>{"private "}<Link to="/tavernlib-api/types/backend-mods/modmanifest">{"ModManifest"}</Link>{" FetchManifestLeaf(string modId, string leaf, string preferRepo, string what, string expectedVersion)"}</code> | Fetches one manifest file for a mod, trying each repo with the preferred one first, and checks it names the right mod and version. |
+| <Link id="m-fetchrepoindex" /><code>{"private ValueTuple<List<"}<Link to="/tavernlib-api/types/backend-mods/modsummary">{"ModSummary"}</Link>{">, List<"}<Link to="/tavernlib-api/types/backend-mods/modreplacement">{"ModReplacement"}</Link>{">> FetchRepoIndex(string baseUrl)"}</code> | Fetches one repo's `repository.json` and returns its mod summaries and replacements; a bad repo is skipped with a warning. |
+| <Link id="m-getjson" /><code>{"private JObject GetJson(string url)"}</code> | Downloads and parses a JSON object from a URL; throws `ModManagerException` on any failure. |
+| <Link id="m-issupported" /><code>{"private static bool IsSupported(JObject index)"}</code> | Returns whether an index has the integer `index_version` this build supports. |
 
 </details>
 

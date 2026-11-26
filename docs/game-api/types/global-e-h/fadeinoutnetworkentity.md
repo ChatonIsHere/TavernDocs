@@ -21,9 +21,9 @@ Fader for a network entity: when the scene destroys the entity (not on chunk unl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FadeInOutNetworkEntity()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FadeInOutNetworkEntity()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

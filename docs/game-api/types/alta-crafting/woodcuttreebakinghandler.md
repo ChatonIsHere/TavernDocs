@@ -18,9 +18,9 @@ Static helpers that merge tree node meshes into combined LOD meshes and patch ve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeBakingHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeBakingHandler()"}</code> | Creates a `WoodcutTreeBakingHandler` with default values. |
 
 ## Fields
 

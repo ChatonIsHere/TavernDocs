@@ -20,6 +20,6 @@ Editor menu folder `Tools/Utility/Rendering`: menu item classes inherit it to ap
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Rendering()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Rendering()"}</code> | Creates an `AltaMenuItemBase.Tools.Utility.Rendering` with default values. |

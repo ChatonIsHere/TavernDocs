@@ -19,9 +19,9 @@ Object pool with a hard limit (`MaximumPoolSize`): when it runs out it recycles 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaxLimitPooledObjectPool("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaxLimitPooledObjectPool("}<Link to="/game-api/types/global-p/pooledobjectdefinition">{"PooledObjectDefinition"}</Link>{" definition)"}</code> | Creates a `MaxLimitPooledObjectPool` from `definition`. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ An `OptionSet` with a chance to run, used in an `OptionSet`'s list of sub-sets.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OptionSetChance()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OptionSetChance()"}</code> | Creates an `OptionSetChance` with default values. |
 
 ## Fields
 

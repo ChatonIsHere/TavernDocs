@@ -19,10 +19,10 @@ A stat modifier whose value follows a curve over a number of ticks, scaled by a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IndirectModifier(float baseValue, uint duration, "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration, uint tick)"}</code> |
-| <Link id="m-ctor-2" /><code>{"IndirectModifier(float baseValue, uint duration, "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IndirectModifier(float baseValue, uint duration, "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration, uint tick)"}</code> | Creates an `IndirectModifier` from `baseValue`, `duration` and `valueOverDuration`. |
+| <Link id="m-ctor-2" /><code>{"IndirectModifier(float baseValue, uint duration, "}<Link to="/game-api/types/global-c-d/curve">{"Curve"}</Link>{" valueOverDuration)"}</code> | Creates an `IndirectModifier` from `baseValue`, `duration` and `valueOverDuration`. |
 
 ## Fields
 

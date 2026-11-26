@@ -19,9 +19,9 @@ Echo settings for one mining echo skill level: size and how the echo grows over 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LevelDefinition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LevelDefinition()"}</code> | Creates a `MiningEcho.LevelDefinition` with default values. |
 
 ## Fields
 

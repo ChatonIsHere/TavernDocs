@@ -18,9 +18,9 @@ Makes a `Navigator` keep re-pathing to a moving target on an interval. Made by `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Follower("}<Link to="/game-api/types/alta-intelligence/navigator">{"Navigator"}</Link>{" navigator)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Follower("}<Link to="/game-api/types/alta-intelligence/navigator">{"Navigator"}</Link>{" navigator)"}</code> | Creates a `Follower` from `navigator`. |
 
 ## Fields
 

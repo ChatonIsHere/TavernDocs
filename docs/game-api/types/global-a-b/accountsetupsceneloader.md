@@ -19,9 +19,9 @@ Scene loader that opens the registration (account setup) scene.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AccountSetupSceneLoader()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AccountSetupSceneLoader()"}</code> | Creates an `AccountSetupSceneLoader` with default values. |
 
 ## Methods
 

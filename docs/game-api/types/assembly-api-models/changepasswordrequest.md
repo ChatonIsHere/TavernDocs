@@ -18,10 +18,10 @@ Body of an Alta web API request to change the account password. Sends hashes, no
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChangePasswordRequest(string oldPasswordHash, string newPasswordHash)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ChangePasswordRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChangePasswordRequest(string oldPasswordHash, string newPasswordHash)"}</code> | Creates a `ChangePasswordRequest` with default values. |
+| <Link id="m-ctor-2" /><code>{"ChangePasswordRequest()"}</code> | Creates a `ChangePasswordRequest` with default values. |
 
 ## Properties
 

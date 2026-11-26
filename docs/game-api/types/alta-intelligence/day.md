@@ -18,9 +18,9 @@ One day in an AI `History`, holding the events registered on it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Day("}<Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" history, int index)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Day("}<Link to="/game-api/types/alta-intelligence/history">{"History"}</Link>{" history, int index)"}</code> | Creates a `Day` from `history` and `index`. |
 
 ## Fields
 

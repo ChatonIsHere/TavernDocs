@@ -19,9 +19,9 @@ Serializable `AltaEvent` that passes an `Arrow`, for hooking arrow callbacks up 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ArrowEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ArrowEvent()"}</code> | Creates an `ArrowEvent` with default values. |
 
 ## Used in
 

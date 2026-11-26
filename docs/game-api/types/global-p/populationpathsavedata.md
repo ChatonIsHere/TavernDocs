@@ -21,9 +21,9 @@ Save data for a `PopulationPath`: its population setup, timer and creature count
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationPathSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationPathSaveData()"}</code> | Creates a `PopulationPathSaveData` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Pod template inside an Agones game server spec.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameServerTemplate()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameServerTemplate()"}</code> | Creates a `GameServerSpec.GameServerTemplate` with default values. |
 
 ## Properties
 

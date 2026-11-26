@@ -18,9 +18,9 @@ Settings for a two-burst death dissolve effect. `DeadStateSettings.AnimationSett
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DeathAnimationSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DeathAnimationSettings()"}</code> | Creates a `DeathAnimationSettings` with default values. |
 
 ## Fields
 

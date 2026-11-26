@@ -19,9 +19,9 @@ XML-serializable list of `SectorName` entries.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SectorNames()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SectorNames()"}</code> | Creates a `SectorNames` with default values. |
 
 ## Fields
 

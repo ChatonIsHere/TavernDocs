@@ -19,9 +19,9 @@ Body for logging in with a linked platform account (used for Oculus and Pico).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LoginViaLinkedAccountRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LoginViaLinkedAccountRequest()"}</code> | Creates a `LoginViaLinkedAccountRequest` with default values. |
 
 ## Properties
 

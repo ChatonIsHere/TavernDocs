@@ -19,9 +19,9 @@ A path and level pair, used only to log a player's levels as a table.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PathLevel(int path, int level)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PathLevel(int path, int level)"}</code> | Creates an `OfflinePlayerProgressionHandler.PathLevel` from `path` and `level`. |
 
 ## Fields
 

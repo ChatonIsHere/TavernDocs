@@ -18,9 +18,9 @@ Small result object for console commands that shows a chunk by its identifier.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkInfo()"}</code> | Creates a `ChunkInfo` with default values. |
 
 ## Properties
 

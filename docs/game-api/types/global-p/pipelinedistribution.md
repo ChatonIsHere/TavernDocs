@@ -19,9 +19,9 @@ Object pipeline step that picks one random entry from a distribution input.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PipelineDistribution()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PipelineDistribution()"}</code> | Creates a `PipelineDistribution` with default values. |
 
 ## Properties
 

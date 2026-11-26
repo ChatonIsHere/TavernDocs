@@ -18,9 +18,9 @@ Shrinks a pickup while it's held and scales it back up when released, optionally
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupInteractionScaler("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupInteractionScaler("}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup)"}</code> | Creates a `PickupInteractionScaler` from `pickup`. |
 
 ## Fields
 

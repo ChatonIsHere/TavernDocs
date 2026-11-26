@@ -21,9 +21,9 @@ Save data for a `SkillShrine` (version 1): stores the shrine's current progressi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SkillShrineSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SkillShrineSaveData()"}</code> | Creates a `SkillShrineSaveData` with default values. |
 
 ## Fields
 

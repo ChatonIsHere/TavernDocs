@@ -19,9 +19,9 @@ Base for one button-like input on a controller (see `ControllerInput`). It holds
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected InputSource()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected InputSource()"}</code> | Creates an `InputSource` with default values. |
 
 ## Fields
 

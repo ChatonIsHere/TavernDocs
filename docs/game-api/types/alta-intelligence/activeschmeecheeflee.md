@@ -19,9 +19,9 @@ Schmeechee action that runs away from its target until far enough, cancelling if
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveSchmeecheeFlee()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveSchmeecheeFlee()"}</code> | Creates an `ActiveSchmeecheeFlee` with default values. |
 
 ## Fields
 

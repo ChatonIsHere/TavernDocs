@@ -20,9 +20,9 @@ Old save data for a `ChisellingDeck` (version 2); migrates to `ChisellingDeckSav
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChisellingDeckSaveData2()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChisellingDeckSaveData2()"}</code> | Creates a `ChisellingDeckSaveData2` with default values. |
 
 ## Fields
 

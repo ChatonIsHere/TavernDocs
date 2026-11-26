@@ -18,9 +18,9 @@ The outcome of matching console input to a command: which command was found, whe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CommandSearchResult("}<Link to="/game-api/types/alta-console/commandresultsuccess">{"CommandResultSuccess"}</Link>{" success, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command, object[] arguments = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CommandSearchResult("}<Link to="/game-api/types/alta-console/commandresultsuccess">{"CommandResultSuccess"}</Link>{" success, "}<Link to="/game-api/types/alta-console/command">{"Command"}</Link>{" command, object[] arguments = null)"}</code> | Creates a `CommandSearchResult` from `success`, `command` and `arguments`. |
 
 ## Fields
 

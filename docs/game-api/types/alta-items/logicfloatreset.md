@@ -21,9 +21,9 @@ Logic component that passes a float through to its sender and, once nobody is in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatReset()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatReset()"}</code> | Creates a `LogicFloatReset` with default values. |
 
 ## Fields
 

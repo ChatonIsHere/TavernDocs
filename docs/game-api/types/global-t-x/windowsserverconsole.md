@@ -21,9 +21,9 @@ The local console window opened by `ServerConsoleManager`. It runs on its own th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WindowsServerConsole()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WindowsServerConsole()"}</code> | Creates a `WindowsServerConsole` with default values. |
 
 ## Fields
 

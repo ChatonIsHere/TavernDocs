@@ -18,9 +18,9 @@ A length of time as a count and a unit (day, month or year), used for subscripti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Duration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Duration()"}</code> | Creates a `Duration` with default values. |
 
 ## Properties
 

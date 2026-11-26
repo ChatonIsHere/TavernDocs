@@ -19,9 +19,9 @@ Runtime instance of the `RoomFixes` plugin part: fills in small pockets, joins t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RoomFixesInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/roomfixes">{"RoomFixes"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RoomFixesInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/roomfixes">{"RoomFixes"}</Link>{" part)"}</code> | Creates a `RoomFixesInstance` from `plugin` and `part`. |
 
 ## Methods
 

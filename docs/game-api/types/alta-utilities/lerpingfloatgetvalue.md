@@ -18,9 +18,9 @@ A float that eases from its current value towards a target over time. The target
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LerpingFloatGetValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LerpingFloatGetValue()"}</code> | Creates a `LerpingFloatGetValue` with default values. |
 
 ## Fields
 

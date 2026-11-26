@@ -21,9 +21,9 @@ Game task argument raised when a pickup is docked, for tasks on the `DockObject`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DockObjectTaskArgument(int count, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" dockSettings, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" dockPrefab, bool isSelf)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DockObjectTaskArgument(int count, "}<Link to="/game-api/types/global-p/pickup">{"Pickup"}</Link>{" pickup, "}<Link to="/game-api/types/alta-items/pickupdocksettings">{"PickupDockSettings"}</Link>{" dockSettings, "}<Link to="/game-api/types/alta-networking/networkprefab">{"NetworkPrefab"}</Link>{" dockPrefab, bool isSelf)"}</code> | Creates a `DockObjectTaskArgument` from `count`, `pickup`, `dockSettings`, `dockPrefab` and `isSelf`. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Wyrm action that catches a nearby fleshy target that isn't dangerous. Runs on th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveCatch()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveCatch()"}</code> | Creates an `ActiveCatch` with default values. |
 
 ## Methods
 

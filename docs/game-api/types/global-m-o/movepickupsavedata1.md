@@ -20,9 +20,9 @@ Old save data (version 1) for `MovePickup`. Migrating it throws all the values a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MovePickupSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MovePickupSaveData1()"}</code> | Creates a `MovePickupSaveData1` with default values. |
 
 ## Fields
 

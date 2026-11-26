@@ -19,9 +19,9 @@ Offline stand-in for the services client. Only the public IP lookup answers; the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineServicesApiClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineServicesApiClient()"}</code> | Creates an `OfflineServicesApiClient` with default values. |
 
 ## Methods
 

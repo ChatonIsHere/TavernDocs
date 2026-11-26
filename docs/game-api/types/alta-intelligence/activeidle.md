@@ -19,9 +19,9 @@ The running idle action for an agent, made from `AgentIdleSettings`. It waits a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveIdle()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveIdle()"}</code> | Creates an `ActiveIdle` with default values. |
 
 ## Fields
 

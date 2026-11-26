@@ -19,9 +19,9 @@ Server console for Linux builds: reads commands from standard input on a backgro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LinuxServerConsole()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LinuxServerConsole()"}</code> | Creates a `LinuxServerConsole` with default values. |
 
 ## Fields
 

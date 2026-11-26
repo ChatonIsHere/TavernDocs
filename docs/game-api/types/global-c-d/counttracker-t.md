@@ -19,9 +19,9 @@ Reference-counted set: tracks how many times each item was added and reports whe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CountTracker(IEqualityComparer<T> comparer = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CountTracker(IEqualityComparer<T> comparer = null)"}</code> | Creates a `CountTracker` from `comparer`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Writes a `uint` using a fixed number of bits.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BitSerialization(int bits)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BitSerialization(int bits)"}</code> | Creates a `TypeSerializationHelper.BitSerialization` from `bits`. |
 
 ## Fields
 

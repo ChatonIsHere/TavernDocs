@@ -20,9 +20,9 @@ Component on a cooking liquid visual that sets how far the container can tip bef
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CookingLiquidVisualTippingPointController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CookingLiquidVisualTippingPointController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

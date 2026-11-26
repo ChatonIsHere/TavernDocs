@@ -19,9 +19,9 @@ A **class** in `Root.Township`, `Features.Climbing`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FakeStaminaManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FakeStaminaManager()"}</code> | Creates a `FakeStaminaManager` with default values. |
 
 ## Properties
 

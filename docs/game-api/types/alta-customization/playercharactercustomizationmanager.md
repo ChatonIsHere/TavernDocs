@@ -19,9 +19,9 @@ A player's cosmetics and equipment visuals, shared by every handler (body or dum
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerCharacterCustomizationManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerCharacterCustomizationManager()"}</code> | Creates a `PlayerCharacterCustomizationManager` with default values. |
 
 ## Fields
 

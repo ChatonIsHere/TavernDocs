@@ -20,9 +20,9 @@ One hand to hand gesture: which hands it applies to, whether hands are open or c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandInteraction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandInteraction()"}</code> | Creates a `HandInteractor.HandInteraction` with default values. |
 
 ## Fields
 

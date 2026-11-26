@@ -19,9 +19,9 @@ Moves a playing player to Downed when their `Downed` event fires.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingToDownedTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingToDownedTransition()"}</code> | Creates a `PlayingToDownedTransition` with default values. |
 
 ## Fields
 

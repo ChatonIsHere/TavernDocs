@@ -19,9 +19,9 @@ Analytics event for leaving a trigger area, with the area name and time spent in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AreaTriggerAnalyticsEvent(string eventName, "}<Link to="/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int duration)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AreaTriggerAnalyticsEvent(string eventName, "}<Link to="/game-api/types/game-other-namespaces/itriggereventdata">{"ITriggerEventData"}</Link>{" eventData, int duration)"}</code> | Creates an `AreaTriggerAnalyticsEvent` from `eventName`, `eventData` and `duration`. |
 
 ## Fields
 

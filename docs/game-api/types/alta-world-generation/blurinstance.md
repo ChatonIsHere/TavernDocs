@@ -19,9 +19,9 @@ Runtime instance of the `Blur` plugin part: a 3 by 3 weighted blur on one Y slic
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BlurInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/blur">{"Blur"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BlurInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/blur">{"Blur"}</Link>{" part)"}</code> | Creates a `BlurInstance` from `plugin` and `part`. |
 
 ## Methods
 

@@ -19,9 +19,9 @@ Pair of sound sets for a skill input turning on and off, set in `ProgressionSett
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InputSystemSound()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InputSystemSound()"}</code> | Creates a `ProgressionSettings.InputSystemSound` with default values. |
 
 ## Fields
 

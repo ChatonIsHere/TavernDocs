@@ -19,9 +19,9 @@ Copy of `FastPriorityQueue` that uses a `TimeSpan` priority, earliest first. `Ti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FastPriorityQueueTimeSpan(int maxNodes)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FastPriorityQueueTimeSpan(int maxNodes)"}</code> | Creates a `FastPriorityQueueTimeSpan` from `maxNodes`. |
 
 ## Fields
 

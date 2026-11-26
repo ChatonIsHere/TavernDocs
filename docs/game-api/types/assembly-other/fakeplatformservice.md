@@ -20,9 +20,9 @@ Stand-in `IPlatformService` for platforms with no platform SDK to start. Always 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FakePlatformService()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FakePlatformService()"}</code> | Creates a `FakePlatformService` with default values. |
 
 ## Fields
 

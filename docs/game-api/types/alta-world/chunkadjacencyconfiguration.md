@@ -18,10 +18,10 @@ One forced link from a location chunk to another chunk, with a travel cost. Held
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkAdjacencyConfiguration(float connectionCost, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ChunkAdjacencyConfiguration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkAdjacencyConfiguration(float connectionCost, "}<Link to="/game-api/types/alta-world/locationchunk">{"LocationChunk"}</Link>{" chunk)"}</code> | Creates a `ChunkAdjacencyConfiguration` with default values. |
+| <Link id="m-ctor-2" /><code>{"ChunkAdjacencyConfiguration()"}</code> | Creates a `ChunkAdjacencyConfiguration` with default values. |
 
 ## Fields
 

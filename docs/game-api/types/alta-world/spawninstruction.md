@@ -19,10 +19,10 @@ Static environment instruction that places one `StaticEnvironmentPiece` at a pos
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnInstruction()"}</code> |
-| <Link id="m-ctor-2" /><code>{"SpawnInstruction("}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" content, Vector3 position, Quaternion rotation, Vector3 scale)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnInstruction()"}</code> | Creates a `SpawnInstruction` from `content`, `position`, `rotation` and `scale`. |
+| <Link id="m-ctor-2" /><code>{"SpawnInstruction("}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" content, Vector3 position, Quaternion rotation, Vector3 scale)"}</code> | Creates a `SpawnInstruction` from `content`, `position`, `rotation` and `scale`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ How the SA mesh collider builder (a third-party editor tool) splits a mesh into 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SplitProperty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SplitProperty()"}</code> | Creates a `SAMeshColliderCommon.SplitProperty` with default values. |
 
 ## Fields
 

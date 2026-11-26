@@ -18,9 +18,9 @@ Request body for a group role with a name and permissions.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GroupRoleRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GroupRoleRequest()"}</code> | Creates a `GroupRoleRequest` with default values. |
 
 ## Properties
 

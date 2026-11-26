@@ -18,9 +18,9 @@ Receives scene serialization data and passes it to the current network scene's s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SceneSerializationMessage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SceneSerializationMessage()"}</code> | Creates a `SceneSerializationMessage` with default values. |
 
 ## Methods
 

@@ -22,9 +22,9 @@ Scoring rule that always returns 0, so a required rule built from it switches it
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private FailTargetOperation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private FailTargetOperation()"}</code> | Creates a `FailTargetOperation` with default values. |
 
 </details>
 

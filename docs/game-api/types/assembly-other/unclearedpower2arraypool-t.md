@@ -19,9 +19,9 @@ Thread-safe pool of arrays in power-of-two sizes (16 and up). Arrays are not cle
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnclearedPower2ArrayPool()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnclearedPower2ArrayPool()"}</code> | Creates an `UnclearedPower2ArrayPool` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Old save format (version 4) for `LootModule`, which added `respawnFrequency`. Mi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LootModuleSaveData4()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LootModuleSaveData4()"}</code> | Creates a `LootModuleSaveData4` with default values. |
 
 ## Fields
 

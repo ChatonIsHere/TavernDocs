@@ -19,9 +19,9 @@ Steam backend for achievements and stats, built by `AchievementManager`. Does no
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SteamStats()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SteamStats()"}</code> | Creates a `SteamStats` with default values. |
 
 ## Fields
 

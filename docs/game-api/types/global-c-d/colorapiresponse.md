@@ -19,9 +19,9 @@ JSON shape for a colour name lookup response, with the name under `name.value`. 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColorApiResponse()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColorApiResponse()"}</code> | Creates a `ColorApiResponse` with default values. |
 
 ## Fields
 

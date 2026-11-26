@@ -19,22 +19,22 @@ Sends the server to the Community Servers listing every 3 seconds from a backgro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerListingController("}<Link to="/tavernlib-api/types/backend-api/tavernmanager">{"TavernManager"}</Link>{" manager)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerListingController("}<Link to="/tavernlib-api/types/backend-api/tavernmanager">{"TavernManager"}</Link>{" manager)"}</code> | Sets up the HTTP client, starts the heartbeat loop, and closes the listing when the game quits. |
 
 ## Fields
 
 <details>
 <summary>5 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-apiclient" /><code>{"private readonly HttpClient _apiClient"}</code> |
-| <Link id="m-closed" /><code>{"private bool _closed"}</code> |
-| <Link id="m-manager" /><code>{"private "}<Link to="/tavernlib-api/types/backend-api/tavernmanager">{"TavernManager"}</Link>{" _manager"}</code> |
-| <Link id="m-interval" /><code>{"private static readonly TimeSpan Interval"}</code> |
-| <Link id="m-longestwaitseconds" /><code>{"private const double LongestWaitSeconds"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-apiclient" /><code>{"private readonly HttpClient _apiClient"}</code> | HTTP client used to post to and delete from the community server listing. |
+| <Link id="m-closed" /><code>{"private bool _closed"}</code> | Set once the listing is closing, which ends the heartbeat loop. |
+| <Link id="m-manager" /><code>{"private "}<Link to="/tavernlib-api/types/backend-api/tavernmanager">{"TavernManager"}</Link>{" _manager"}</code> | The `TavernManager` that supplies the server and port configs. |
+| <Link id="m-interval" /><code>{"private static readonly TimeSpan Interval"}</code> | Time between listing heartbeats when they succeed (3 seconds). |
+| <Link id="m-longestwaitseconds" /><code>{"private const double LongestWaitSeconds"}</code> | Longest wait, in seconds, between heartbeats after repeated failures. |
 
 </details>
 
@@ -50,11 +50,11 @@ Sends the server to the Community Servers listing every 3 seconds from a backgro
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-heartbeatasync" /><code>{"private async Task HeartbeatAsync()"}</code> |
-| <Link id="m-jsonbody" /><code>{"private static StringContent JsonBody(object payload)"}</code> |
-| <Link id="m-post" /><code>{"private async Task<string> Post()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-heartbeatasync" /><code>{"private async Task HeartbeatAsync()"}</code> | Loop that posts the listing, logs only when the answer changes, and waits longer after each failure. |
+| <Link id="m-jsonbody" /><code>{"private static StringContent JsonBody(object payload)"}</code> | Wraps an object as a JSON request body without going through the game's own HTTP helpers. |
+| <Link id="m-post" /><code>{"private async Task<string> Post()"}</code> | Posts the current listing payload; returns null on success, otherwise a short description of what went wrong. |
 
 </details>
 

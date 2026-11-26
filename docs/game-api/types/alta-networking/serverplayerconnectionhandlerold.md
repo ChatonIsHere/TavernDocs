@@ -19,9 +19,9 @@ Server: checks join requests and accepts or refuses players. Despite the name, `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerPlayerConnectionHandlerOld("}<Link to="/game-api/types/alta-networking/serverhandler">{"ServerHandler"}</Link>{" server)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerPlayerConnectionHandlerOld("}<Link to="/game-api/types/alta-networking/serverhandler">{"ServerHandler"}</Link>{" server)"}</code> | Creates a `ServerPlayerConnectionHandlerOld` from `server`. |
 
 ## Fields
 

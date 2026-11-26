@@ -19,9 +19,9 @@ Spawn data for objects placed by forest generation on a node or edge of the fore
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForestNodeMapSpawnData("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" node, "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, bool isGenerating)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForestNodeMapSpawnData("}<Link to="/game-api/types/alta-world-generation/forestgeneration">{"ForestGeneration"}</Link>{" forest, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" node, "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge, bool isGenerating)"}</code> | Creates a `ForestNodeMapSpawnData` from `forest`, `node`, `edge` and `isGenerating`. |
 
 ## Properties
 

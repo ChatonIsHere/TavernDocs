@@ -19,9 +19,9 @@ JSON converter that writes an `IPAddress` as its string and parses it back.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IPAddressJsonConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IPAddressJsonConverter()"}</code> | Creates an `IPAddressJsonConverter` with default values. |
 
 ## Methods
 

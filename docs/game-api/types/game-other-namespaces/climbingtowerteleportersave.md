@@ -20,6 +20,6 @@ Per-player content wrapper for `ClimbingTowerTeleporterSaveData`. Nothing else i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterSave()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterSave()"}</code> | Creates a `ClimbingTowerTeleporterSave` with default values. |

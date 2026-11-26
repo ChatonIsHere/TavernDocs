@@ -18,9 +18,9 @@ Web API model for a group the user has joined, paired with their membership. Ret
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JoinedGroupInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JoinedGroupInfo()"}</code> | Creates a `JoinedGroupInfo` with default values. |
 
 ## Properties
 

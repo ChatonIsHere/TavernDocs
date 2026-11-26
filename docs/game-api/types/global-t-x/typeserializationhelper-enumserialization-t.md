@@ -20,9 +20,9 @@ Serializer for any enum, sent as its `int` value. Made on demand by `GetSerializ
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EnumSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EnumSerialization()"}</code> | Creates a `TypeSerializationHelper.EnumSerialization` with default values. |
 
 ## Methods
 

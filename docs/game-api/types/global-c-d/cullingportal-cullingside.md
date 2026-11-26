@@ -19,9 +19,9 @@ Client: one side of a `CullingPortal`. Turns on or off the static renderers of a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CullingSide(Transform cachedTransform, "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer, Bounds bounds)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CullingSide(Transform cachedTransform, "}<Link to="/game-api/types/alta-world/cavelayerstreamer">{"CaveLayerStreamer"}</Link>{" streamer, Bounds bounds)"}</code> | Creates a `CullingPortal.CullingSide` from `cachedTransform`, `streamer` and `bounds`. |
 
 ## Fields
 

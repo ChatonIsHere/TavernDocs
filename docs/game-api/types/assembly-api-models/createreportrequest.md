@@ -18,9 +18,9 @@ Body of an Alta web API request to report a player.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CreateReportRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CreateReportRequest()"}</code> | Creates a `CreateReportRequest` with default values. |
 
 ## Properties
 

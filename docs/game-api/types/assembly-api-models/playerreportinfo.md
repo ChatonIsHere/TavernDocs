@@ -18,9 +18,9 @@ A player report as stored by the web API: who reported whom, on which server, it
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerReportInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerReportInfo()"}</code> | Creates a `PlayerReportInfo` with default values. |
 
 ## Properties
 

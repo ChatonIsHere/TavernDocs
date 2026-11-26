@@ -20,9 +20,9 @@ NLog layout renderer `${entity-owned}` for a `NetworkEntity` passed as the first
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityOwnedRenderer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityOwnedRenderer()"}</code> | Creates a `NetworkEntityOwnedRenderer` with default values. |
 
 ## Methods
 

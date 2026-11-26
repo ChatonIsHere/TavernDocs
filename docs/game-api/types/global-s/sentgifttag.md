@@ -18,10 +18,10 @@ The sender and receiver of a gift sent by post box, saved with the `SentGift`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SentGiftTag()"}</code> |
-| <Link id="m-ctor-2" /><code>{"SentGiftTag(int from, int to)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SentGiftTag()"}</code> | Creates a `SentGiftTag` from `from` and `to`. |
+| <Link id="m-ctor-2" /><code>{"SentGiftTag(int from, int to)"}</code> | Creates a `SentGiftTag` from `from` and `to`. |
 
 ## Fields
 

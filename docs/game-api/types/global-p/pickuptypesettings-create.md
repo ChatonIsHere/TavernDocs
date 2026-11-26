@@ -20,6 +20,6 @@ Unity editor menu item that creates a `PickupTypeSettings` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PickupTypeSettings.Create` with default values. |

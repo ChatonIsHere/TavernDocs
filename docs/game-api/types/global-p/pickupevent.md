@@ -19,9 +19,9 @@ Serializable `AltaEvent` with a `Pickup` argument. Runs inspector-wired listener
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PickupEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PickupEvent()"}</code> | Creates a `PickupEvent` with default values. |
 
 ## Used in
 

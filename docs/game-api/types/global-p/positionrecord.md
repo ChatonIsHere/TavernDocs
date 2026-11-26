@@ -18,11 +18,11 @@ A saved position and rotation, either in world space or relative to another tran
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionRecord(Vector3 position, Quaternion rotation)"}</code> |
-| <Link id="m-ctor-2" /><code>{"PositionRecord(Transform transform)"}</code> |
-| <Link id="m-ctor-3" /><code>{"PositionRecord(Transform to, Transform from)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionRecord(Vector3 position, Quaternion rotation)"}</code> | Creates a `PositionRecord` from `to` and `from`. |
+| <Link id="m-ctor-2" /><code>{"PositionRecord(Transform transform)"}</code> | Creates a `PositionRecord` from `to` and `from`. |
+| <Link id="m-ctor-3" /><code>{"PositionRecord(Transform to, Transform from)"}</code> | Creates a `PositionRecord` from `to` and `from`. |
 
 ## Fields
 

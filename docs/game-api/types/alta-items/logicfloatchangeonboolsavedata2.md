@@ -20,9 +20,9 @@ Old save format (version 2) for `LogicFloatChangeOnBool`. Only read from old sav
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData2()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBoolSaveData2()"}</code> | Creates a `LogicFloatChangeOnBoolSaveData2` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data for `LogicFloatReceiver`: which float sender it listens to.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatReceiverData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatReceiverData()"}</code> | Creates a `LogicFloatReceiverData` with default values. |
 
 ## Properties
 

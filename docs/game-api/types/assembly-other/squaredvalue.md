@@ -19,6 +19,6 @@ Marker attribute for a serialized float that is stored as a squared value, such 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SquaredValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SquaredValue()"}</code> | Creates a `SquaredValue` with default values. |

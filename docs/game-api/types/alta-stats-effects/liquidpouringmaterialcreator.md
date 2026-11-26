@@ -19,9 +19,9 @@ Makes the material for a pouring liquid stream from the liquid's visual data.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LiquidPouringMaterialCreator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LiquidPouringMaterialCreator()"}</code> | Creates a `LiquidPouringMaterialCreator` with default values. |
 
 ## Fields
 

@@ -19,10 +19,10 @@ A serializable pair of an object and a float, for inspector lists of weighted or
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SingleValue()"}</code> |
-| <Link id="m-ctor-2" /><code>{"SingleValue(T topic, float value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SingleValue()"}</code> | Creates a `SingleValue` from `topic` and `value`. |
+| <Link id="m-ctor-2" /><code>{"SingleValue(T topic, float value)"}</code> | Creates a `SingleValue` from `topic` and `value`. |
 
 ## Fields
 

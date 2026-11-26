@@ -19,9 +19,9 @@ Moves a player from Spirit back to Playing once their unlock manager has no curr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpiritToPlayingTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpiritToPlayingTransition()"}</code> | Creates a `SpiritToPlayingTransition` with default values. |
 
 ## Methods
 

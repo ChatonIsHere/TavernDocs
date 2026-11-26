@@ -19,9 +19,9 @@ Debug record of how one AI action scored against a target. `ActionDecider` passe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Result()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Result()"}</code> | Creates a `TargetResult.Result` with default values. |
 
 ## Properties
 

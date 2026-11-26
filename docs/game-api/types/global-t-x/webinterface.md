@@ -18,9 +18,9 @@ Static helper that posts a JSON string to a URL in the background and ignores th
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebInterface()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebInterface()"}</code> | Creates a `WebInterface` with default values. |
 
 ## Fields
 

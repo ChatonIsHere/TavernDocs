@@ -18,9 +18,9 @@ Saved state of one `IndirectModifier`, a stat change that plays out over a curve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IndirectModifierSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IndirectModifierSaveData()"}</code> | Creates an `IndirectModifierSaveData` with default values. |
 
 ## Fields
 

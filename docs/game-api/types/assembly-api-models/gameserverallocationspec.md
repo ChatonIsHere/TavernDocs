@@ -19,9 +19,9 @@ Spec of an Agones game server allocation request: which servers may be picked an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameServerAllocationSpec()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameServerAllocationSpec()"}</code> | Creates a `GameServerAllocationSpec` with default values. |
 
 ## Properties
 

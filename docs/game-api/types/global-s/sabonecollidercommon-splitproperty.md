@@ -19,9 +19,9 @@ Settings for how the SA collider builder (a third-party editor tool) splits a sk
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SplitProperty()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SplitProperty()"}</code> | Creates a `SABoneColliderCommon.SplitProperty` with default values. |
 
 ## Fields
 

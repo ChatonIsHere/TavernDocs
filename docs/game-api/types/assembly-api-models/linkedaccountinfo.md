@@ -18,10 +18,10 @@ An external account linked to a user, returned by the web API's Discord account 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LinkedAccountInfo(string name, ulong identifier)"}</code> |
-| <Link id="m-ctor-2" /><code>{"LinkedAccountInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LinkedAccountInfo(string name, ulong identifier)"}</code> | Creates a `LinkedAccountInfo` with default values. |
+| <Link id="m-ctor-2" /><code>{"LinkedAccountInfo()"}</code> | Creates a `LinkedAccountInfo` with default values. |
 
 ## Properties
 

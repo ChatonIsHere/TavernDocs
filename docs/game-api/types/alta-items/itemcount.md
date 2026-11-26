@@ -18,9 +18,9 @@ An item and an amount, used for smelting recipe inputs and outputs.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ItemCount()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ItemCount()"}</code> | Creates an `ItemCount` with default values. |
 
 ## Fields
 

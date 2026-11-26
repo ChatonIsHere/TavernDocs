@@ -18,9 +18,9 @@ Works out how hard one climbing hand pushes against a surface and how much press
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingPressureCalculator("}<Link to="/game-api/types/global-c-d/climbingsettings">{"ClimbingSettings"}</Link>{" settings, "}<Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" thisHand, "}<Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" otherHand)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingPressureCalculator("}<Link to="/game-api/types/global-c-d/climbingsettings">{"ClimbingSettings"}</Link>{" settings, "}<Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" thisHand, "}<Link to="/game-api/types/game-other-namespaces/climbinghand">{"ClimbingHand"}</Link>{" otherHand)"}</code> | Creates a `ClimbingPressureCalculator` from `settings`, `thisHand` and `otherHand`. |
 
 ## Fields
 

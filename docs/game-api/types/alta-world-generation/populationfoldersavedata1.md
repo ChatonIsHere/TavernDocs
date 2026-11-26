@@ -20,9 +20,9 @@ Old version 1 save data for a `PopulationFolder`, kept so old saves can load.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PopulationFolderSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PopulationFolderSaveData1()"}</code> | Creates a `PopulationFolderSaveData1` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data (version 2) for a `RopeGrab`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RopeGrabSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RopeGrabSaveData()"}</code> | Creates a `RopeGrabSaveData` with default values. |
 
 ## Fields
 

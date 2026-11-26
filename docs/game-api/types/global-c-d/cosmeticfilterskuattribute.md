@@ -19,6 +19,6 @@ Cosmetic filter attribute for a string field that holds a cosmetic SKU, with no 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticFilterSkuAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticFilterSkuAttribute()"}</code> | Creates a `CosmeticFilterSkuAttribute` with default values. |

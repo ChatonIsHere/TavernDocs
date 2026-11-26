@@ -19,9 +19,9 @@ Runtime instance of the `Mask` plugin part: sets cells to a fail value where ano
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaskInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/mask">{"Mask"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaskInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/mask">{"Mask"}</Link>{" part)"}</code> | Creates a `MaskInstance` from `plugin` and `part`. |
 
 ## Methods
 

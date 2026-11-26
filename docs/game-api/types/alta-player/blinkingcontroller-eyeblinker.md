@@ -19,9 +19,9 @@ Private helper in `BlinkingController` that triggers the blink animation for one
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EyeBlinker(Animator animator, float blinkSpeed, bool isLeftEye)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EyeBlinker(Animator animator, float blinkSpeed, bool isLeftEye)"}</code> | Creates a `BlinkingController.EyeBlinker` from `animator`, `blinkSpeed` and `isLeftEye`. |
 
 ## Fields
 

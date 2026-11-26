@@ -19,9 +19,9 @@ An `ItemPurchaseRequest` with a reason, used to remove an item.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ItemDeleteRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ItemDeleteRequest()"}</code> | Creates an `ItemDeleteRequest` with default values. |
 
 ## Properties
 

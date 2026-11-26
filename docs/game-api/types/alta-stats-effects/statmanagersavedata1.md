@@ -21,9 +21,9 @@ Old version 1 save data for a `StatManager`, where modifier times were floats in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatManagerSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatManagerSaveData1()"}</code> | Creates a `StatManagerSaveData1` with default values. |
 
 ## Fields
 

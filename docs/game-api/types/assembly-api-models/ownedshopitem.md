@@ -19,9 +19,9 @@ A shop item a user owns, as returned by the web API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OwnedShopItem()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OwnedShopItem()"}</code> | Creates an `OwnedShopItem` with default values. |
 
 ## Properties
 

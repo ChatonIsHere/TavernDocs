@@ -19,9 +19,9 @@ Moves a player from Dead to Playing (respawn). `DeadState` triggers it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DeadToPlayingTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DeadToPlayingTransition()"}</code> | Creates a `DeadToPlayingTransition` with default values. |
 
 ## Methods
 

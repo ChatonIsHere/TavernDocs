@@ -19,9 +19,9 @@ Inspector pairing of one armour slot with the equipment references (detectors) t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SlotPairing()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SlotPairing()"}</code> | Creates an `ArmorManager` with default values. |
 
 ## Fields
 

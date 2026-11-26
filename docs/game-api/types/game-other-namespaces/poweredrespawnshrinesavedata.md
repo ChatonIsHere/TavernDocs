@@ -21,9 +21,9 @@ Save data for a `PoweredRespawnShrine`: which shrine settings it uses.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PoweredRespawnShrineSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PoweredRespawnShrineSaveData()"}</code> | Creates a `PoweredRespawnShrineSaveData` with default values. |
 
 ## Fields
 

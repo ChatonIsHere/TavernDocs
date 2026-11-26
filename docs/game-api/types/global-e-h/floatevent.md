@@ -19,9 +19,9 @@ A serializable `AltaEvent` carrying a `float`, for wiring in the inspector.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FloatEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatEvent()"}</code> | Creates a `FloatEvent` with default values. |
 
 ## Used in
 

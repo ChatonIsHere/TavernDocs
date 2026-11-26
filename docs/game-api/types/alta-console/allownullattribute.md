@@ -20,6 +20,6 @@ Put on a command parameter (or a type converter) to let the parameter's converte
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AllowNullAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AllowNullAttribute()"}</code> | Creates an `AllowNullAttribute` with default values. |

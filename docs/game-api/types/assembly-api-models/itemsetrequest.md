@@ -18,9 +18,9 @@ Request body for creating or updating a shop item set (a bundle) through Alta's 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ItemSetRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ItemSetRequest()"}</code> | Creates an `ItemSetRequest` with default values. |
 
 ## Properties
 

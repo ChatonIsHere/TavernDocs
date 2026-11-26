@@ -18,9 +18,9 @@ Running statistics for a series of float values: sum, count, average, min and ma
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BaseStatisticsMeasurer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BaseStatisticsMeasurer()"}</code> | Creates a `BaseStatisticsMeasurer` with default values. |
 
 ## Properties
 

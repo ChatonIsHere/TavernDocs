@@ -18,9 +18,9 @@ All admin reports against one player on one server, grouped by `ServerReportColl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerReportSummary("}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{" info)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerReportSummary("}<Link to="/game-api/types/assembly-api-models/playerreportinfo">{"PlayerReportInfo"}</Link>{" info)"}</code> | Creates a `PlayerReportSummary` from `info`. |
 
 ## Fields
 

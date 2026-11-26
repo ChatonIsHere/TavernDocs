@@ -19,6 +19,6 @@ Empty MonoBehaviour with no code. Package lookup and dropping is done by the sta
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DebugPackageManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DebugPackageManager()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

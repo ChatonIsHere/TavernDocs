@@ -21,9 +21,9 @@ Save data for a player's `PlayerUnlockManager`: the unlocks they have, their cur
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerUnlockManagerSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerUnlockManagerSaveData()"}</code> | Creates a `PlayerUnlockManagerSaveData` with default values. |
 
 ## Fields
 

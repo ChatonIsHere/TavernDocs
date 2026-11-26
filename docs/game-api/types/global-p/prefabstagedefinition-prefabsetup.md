@@ -19,9 +19,9 @@ One stage of a `PrefabStageDefinition`: the prefab to use and its local offset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PrefabSetup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PrefabSetup()"}</code> | Creates a `PrefabStageDefinition.PrefabSetup` with default values. |
 
 ## Fields
 

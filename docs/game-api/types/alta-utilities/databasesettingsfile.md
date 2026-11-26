@@ -19,9 +19,9 @@ A settings "file" stored through the Alta web API's settings endpoint instead of
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DatabaseSettingsFile(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DatabaseSettingsFile(string name)"}</code> | Creates a `DatabaseSettingsFile` from `name`. |
 
 ## Fields
 

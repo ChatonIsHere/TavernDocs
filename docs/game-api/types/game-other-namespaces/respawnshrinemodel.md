@@ -19,10 +19,10 @@ Data for one respawn shrine in the respawn system model: its id, fuel, empty fla
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RespawnShrineModel(Guid newShrineId)"}</code> |
-| <Link id="m-ctor-2" /><code>{"RespawnShrineModel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RespawnShrineModel(Guid newShrineId)"}</code> | Creates a `RespawnShrineModel` with default values. |
+| <Link id="m-ctor-2" /><code>{"RespawnShrineModel()"}</code> | Creates a `RespawnShrineModel` with default values. |
 
 ## Fields
 

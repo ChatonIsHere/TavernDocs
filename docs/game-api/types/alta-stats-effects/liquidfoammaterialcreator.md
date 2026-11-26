@@ -19,9 +19,9 @@ Makes liquid foam materials, setting the liquid's rim colour on a copy of the te
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LiquidFoamMaterialCreator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LiquidFoamMaterialCreator()"}</code> | Creates a `LiquidFoamMaterialCreator` with default values. |
 
 ## Fields
 

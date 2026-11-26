@@ -19,9 +19,9 @@ Static store of timing data per `BudgetedUpdateModule`, filled while allowance d
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfiler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BudgetedUpdateModuleProfiler()"}</code> | Creates a `BudgetedUpdateModuleProfiler` with default values. |
 
 ## Fields
 

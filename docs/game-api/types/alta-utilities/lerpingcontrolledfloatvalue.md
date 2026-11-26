@@ -18,9 +18,9 @@ A float that eases toward a target over time and writes each step through a sett
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LerpingControlledFloatValue(Action<float> setValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LerpingControlledFloatValue(Action<float> setValue)"}</code> | Creates a `LerpingControlledFloatValue` from `setValue`. |
 
 ## Fields
 

@@ -20,6 +20,6 @@ Editor menu folder `3rd Party/Pathfinding`: menu item classes inherit it to appe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Pathfinding()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Pathfinding()"}</code> | Creates an `AltaMenuItemBase._3rd_Party.Pathfinding` with default values. |

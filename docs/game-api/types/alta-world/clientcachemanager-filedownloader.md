@@ -19,9 +19,9 @@ Client: downloads one file from the joined server's web server (port 1761 unless
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FileDownloader(string name, string serverFolder, "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" clientFolder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FileDownloader(string name, string serverFolder, "}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" clientFolder)"}</code> | Creates a `ClientCacheManager.FileDownloader` from `name`, `serverFolder` and `clientFolder`. |
 
 ## Fields
 

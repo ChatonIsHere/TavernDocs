@@ -20,9 +20,9 @@ Sends each joining player their roles and limits who may change server settings 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerSettingsRolePatch()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerSettingsRolePatch()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Methods
 

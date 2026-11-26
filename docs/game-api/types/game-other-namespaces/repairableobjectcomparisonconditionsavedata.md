@@ -21,9 +21,9 @@ Save data (version 1) for `RepairableObjectComparisonCondition`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RepairableObjectComparisonConditionSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RepairableObjectComparisonConditionSaveData()"}</code> | Creates a `RepairableObjectComparisonConditionSaveData` with default values. |
 
 ## Fields
 

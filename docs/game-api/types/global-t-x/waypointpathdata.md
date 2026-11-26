@@ -21,9 +21,9 @@ Save data for `WayPointPath`: its point positions and rotations.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WayPointPathData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WayPointPathData()"}</code> | Creates a `WayPointPathData` with default values. |
 
 ## Fields
 

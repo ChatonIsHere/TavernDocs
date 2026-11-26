@@ -19,9 +19,9 @@ Console requirement: the command only runs in play mode.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayOnlyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayOnlyAttribute()"}</code> | Creates a `PlayOnlyAttribute` with default values. |
 
 ## Methods
 

@@ -19,10 +19,10 @@ A player's chunk and head position as sent by `FarAwayController`, so clients ca
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" targetPlayer)"}</code> |
-| <Link id="m-ctor-2" /><code>{"PlayerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerData("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" targetPlayer)"}</code> | Creates a `FarAwayController.PlayerData` with default values. |
+| <Link id="m-ctor-2" /><code>{"PlayerData()"}</code> | Creates a `FarAwayController.PlayerData` with default values. |
 
 ## Fields
 

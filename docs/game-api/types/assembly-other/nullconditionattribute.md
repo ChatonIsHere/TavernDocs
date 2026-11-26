@@ -19,9 +19,9 @@ Inspector attribute that shows, hides or locks a field depending on whether anot
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NullConditionAttribute(string objectValue, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" notNullMode = 2, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" nullMode = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NullConditionAttribute(string objectValue, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" notNullMode = 2, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" nullMode = 0)"}</code> | Creates a `NullConditionAttribute` from `objectValue`, `notNullMode` and `nullMode`. |
 
 ## Properties
 

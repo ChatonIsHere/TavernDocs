@@ -20,6 +20,6 @@ Editor menu entry that creates a new `AchievementDefinition` asset. Editor only,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `AchievementDefinition.Create` with default values. |

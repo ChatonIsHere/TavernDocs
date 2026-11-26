@@ -19,9 +19,9 @@ Scoring rule on the creature itself, not the target: one value when its walker i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Grounded(float groundedValue, float airValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Grounded(float groundedValue, float airValue)"}</code> | Creates a `Grounded` from `groundedValue` and `airValue`. |
 
 ## Fields
 

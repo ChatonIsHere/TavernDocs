@@ -20,6 +20,6 @@ Editor menu entry that creates a new `StatDefinition` asset. Not used at runtime
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StatDefinition.Create` with default values. |

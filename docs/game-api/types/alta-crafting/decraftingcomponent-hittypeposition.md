@@ -19,9 +19,9 @@ Message the server sends to clients when a decrafting component is hit, so they 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HitTypePosition(Vector3 position, bool isEffective)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HitTypePosition(Vector3 position, bool isEffective)"}</code> | Creates a `DecraftingComponent.HitTypePosition` from `position` and `isEffective`. |
 
 ## Fields
 

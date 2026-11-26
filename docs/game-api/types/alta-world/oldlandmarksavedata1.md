@@ -20,9 +20,9 @@ Old save format (version 1) for `Landmark`. Migrated to `LandmarkSaveData` with 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OldLandmarkSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OldLandmarkSaveData1()"}</code> | Creates an `OldLandmarkSaveData1` with default values. |
 
 ## Properties
 

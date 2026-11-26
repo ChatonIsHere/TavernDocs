@@ -21,6 +21,6 @@ Editor menu folder `Assets/Create/Township/Misc`: menu item classes inherit it t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Misc()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Misc()"}</code> | Creates an `AltaMenuItemBase.Assets.Create.Township.Misc` with default values. |

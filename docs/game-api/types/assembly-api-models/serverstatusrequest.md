@@ -18,9 +18,9 @@ Request body for setting a game server's status.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerStatusRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerStatusRequest()"}</code> | Creates a `ServerStatusRequest` with default values. |
 
 ## Properties
 

@@ -19,19 +19,19 @@ A gradient vector for `SimplexNoise` (3D, with `w` used only for 4D noise). Priv
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Grad(double x, double y, double z)"}</code> |
-| <Link id="m-ctor-2" /><code>{"Grad(double x, double y, double z, double w)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Grad(double x, double y, double z)"}</code> | Creates a `SimplexNoise.Grad` from `x`, `y`, `z` and `w`. |
+| <Link id="m-ctor-2" /><code>{"Grad(double x, double y, double z, double w)"}</code> | Creates a `SimplexNoise.Grad` from `x`, `y`, `z` and `w`. |
 
 ## Fields
 
 | Member | What it is |
 | --- | --- |
 | <Link id="m-w" /><code>{"double w"}</code> | Fourth component, 0 for 3D gradients. |
-| <Link id="m-x" /><code>{"double x"}</code> |  |
-| <Link id="m-y" /><code>{"double y"}</code> |  |
-| <Link id="m-z" /><code>{"double z"}</code> |  |
+| <Link id="m-x" /><code>{"double x"}</code> | X part of the gradient vector. |
+| <Link id="m-y" /><code>{"double y"}</code> | Y part of the gradient vector. |
+| <Link id="m-z" /><code>{"double z"}</code> | Z part of the gradient vector. |
 
 ## Used in
 

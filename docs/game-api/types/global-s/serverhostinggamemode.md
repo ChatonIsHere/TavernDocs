@@ -19,9 +19,9 @@ Game mode for running as the server: loads the server's scene and starts it here
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerHostingGameMode("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server, bool isHeadless, bool isExternalLaunch = false, int port = 1757, bool isRunningLocally = true)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerHostingGameMode("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" server, bool isHeadless, bool isExternalLaunch = false, int port = 1757, bool isRunningLocally = true)"}</code> | Creates a `ServerHostingGameMode` from `server`, `isHeadless`, `isExternalLaunch`, `port` and `isRunningLocally`. |
 
 ## Fields
 

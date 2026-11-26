@@ -20,9 +20,9 @@ Server: running action that switches the creature to a different action set when
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveSwapActionSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveSwapActionSet()"}</code> | Creates an `ActiveSwapActionSet` with default values. |
 
 ## Methods
 

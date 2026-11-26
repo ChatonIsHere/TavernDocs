@@ -20,9 +20,9 @@ Old version 2 save data for a `PositionRestrictor`, kept so old saves can load.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionRestrictorSaveData2()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionRestrictorSaveData2()"}</code> | Creates a `PositionRestrictorSaveData2` with default values. |
 
 ## Fields
 

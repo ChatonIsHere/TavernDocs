@@ -20,9 +20,9 @@ Writes a `float` packed into a range with a fixed number of bits. Used by `SyncF
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FloatBitsSerialization(float minimum, float maximum, int bits)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatBitsSerialization(float minimum, float maximum, int bits)"}</code> | Creates a `TypeSerializationHelper.FloatBitsSerialization` from `minimum`, `maximum` and `bits`. |
 
 ## Fields
 

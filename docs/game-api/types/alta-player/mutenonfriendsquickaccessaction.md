@@ -20,9 +20,9 @@ Quick access menu action that cycles the voice chat audible scope (everyone, fri
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MuteNonFriendsQuickAccessAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MuteNonFriendsQuickAccessAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Precomputed tag bitmasks for one rule or part in each of its configurations, whi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlacingData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlacingData()"}</code> | Creates a `Constructor.PlacingData` with default values. |
 
 ## Fields
 

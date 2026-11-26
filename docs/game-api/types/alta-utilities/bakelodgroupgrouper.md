@@ -19,9 +19,9 @@ Bake-time component that merges the `LODGroup`s of its children into one `LODGro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BakeLODGroupGrouper()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BakeLODGroupGrouper()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

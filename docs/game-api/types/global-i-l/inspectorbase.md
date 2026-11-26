@@ -19,9 +19,9 @@ Base for the debug bubble inspector's entries (component, method, value and inte
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected InspectorBase()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected InspectorBase()"}</code> | Creates an `InspectorBase` with default values. |
 
 ## Properties
 

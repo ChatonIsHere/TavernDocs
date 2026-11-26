@@ -21,9 +21,9 @@ Version 1 save data for `LeaderboardManager`, which stored definition assets ins
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LeaderboardManagerDataOld()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LeaderboardManagerDataOld()"}</code> | Creates a `LeaderboardManagerDataOld` with default values. |
 
 ## Fields
 

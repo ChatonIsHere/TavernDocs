@@ -20,9 +20,9 @@ NLog target `ServerConsoleTarget` that raises static events for each log line. T
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerConsoleLogTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerConsoleLogTarget()"}</code> | Creates a `ServerConsoleLogTarget` with default values. |
 
 ## Events
 

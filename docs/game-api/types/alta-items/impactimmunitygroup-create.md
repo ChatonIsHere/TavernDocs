@@ -20,6 +20,6 @@ Editor menu entry that creates a new `ImpactImmunityGroup` asset under the Towns
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `ImpactImmunityGroup.Create` with default values. |

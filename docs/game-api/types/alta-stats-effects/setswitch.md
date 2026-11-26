@@ -18,9 +18,9 @@ Internal helper that keeps at most one `ModifierSet` applied at a time.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SetSwitch()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SetSwitch()"}</code> | Creates a `SetSwitch` with default values. |
 
 ## Fields
 

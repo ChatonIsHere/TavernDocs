@@ -20,9 +20,9 @@ A capsule collider set up on one bone of the character, part of `CharacterCollis
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoneCapsuleCollider()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoneCapsuleCollider()"}</code> | Creates a `CharacterCollisionControllerHelper.BoneCapsuleCollider` with default values. |
 
 ## Fields
 

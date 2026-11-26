@@ -19,9 +19,9 @@ Which part of a mesh an `SAMeshCollider` covers (submesh, triangle or polygon), 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SplitMesh()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SplitMesh()"}</code> | Creates a `SAMeshColliderCommon.SplitMesh` with default values. |
 
 ## Fields
 

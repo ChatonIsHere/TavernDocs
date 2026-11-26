@@ -20,16 +20,16 @@ The running server's handler: owns the socket and join handler, runs bootup and 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor-2" /><code>{"ServerHandler("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket, "}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess, bool isRunningLocally)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor-2" /><code>{"ServerHandler("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket, "}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess, bool isRunningLocally)"}</code> | Creates a `ServerHandler` from `socket`, `serverAccess` and `isRunningLocally`. |
 
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private ServerHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private ServerHandler()"}</code> | Creates a `ServerHandler` from `socket`, `serverAccess` and `isRunningLocally`. |
 
 </details>
 

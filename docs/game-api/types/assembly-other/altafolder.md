@@ -20,9 +20,9 @@ A folder on disk that caches its `AltaFile` and `AltaFolder` children by name. C
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaFolder("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" parent, DirectoryInfo info)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaFolder("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" parent, DirectoryInfo info)"}</code> | Creates an `AltaFolder` from `parent` and `info`. |
 
 ## Fields
 

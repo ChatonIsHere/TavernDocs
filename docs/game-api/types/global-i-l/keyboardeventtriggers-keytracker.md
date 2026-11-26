@@ -19,9 +19,9 @@ Tracks one keyboard key and raises down and up events for it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"KeyTracker(Key key)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"KeyTracker(Key key)"}</code> | Creates a `KeyboardEventTriggers.KeyTracker` from `key`. |
 
 ## Properties
 

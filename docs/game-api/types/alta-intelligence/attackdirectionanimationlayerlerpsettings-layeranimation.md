@@ -20,9 +20,9 @@ Per-creature driver made by `AttackDirectionAnimationLayerLerpSettings`: sets a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LayerAnimation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LayerAnimation()"}</code> | Creates an `AttackDirectionAnimationLayerLerpSettings.LayerAnimation` with default values. |
 
 ## Fields
 

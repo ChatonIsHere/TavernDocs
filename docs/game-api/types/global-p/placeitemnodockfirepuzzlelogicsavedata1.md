@@ -20,9 +20,9 @@ Old save format (version 1) for `PlaceItemNoDockFirePuzzleLogic`, migrated on lo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaceItemNoDockFirePuzzleLogicSaveData1()"}</code> | Creates a `PlaceItemNoDockFirePuzzleLogicSaveData1` with default values. |
 
 ## Methods
 

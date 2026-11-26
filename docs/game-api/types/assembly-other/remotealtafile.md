@@ -19,9 +19,9 @@ Remote-backed save file where the remote copy is another path on disk (a mounted
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RemoteAltaFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, FileInfo remoteFileInfo)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RemoteAltaFile("}<Link to="/game-api/types/assembly-other/ialtafile">{"IAltaFile"}</Link>{" internalFile, FileInfo remoteFileInfo)"}</code> | Creates a `RemoteAltaFile` from `internalFile` and `remoteFileInfo`. |
 
 ## Methods
 

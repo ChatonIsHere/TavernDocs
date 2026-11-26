@@ -19,9 +19,9 @@ Client: fades one hand's stamina bars and notches in while stamina is below maxi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandStaminaView("}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] staminaStatBars, Material notchesMaterial, float alphaLerpSpeed)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandStaminaView("}<Link to="/game-api/types/alta-stats-effects/statbarbase">{"StatBarBase"}</Link>{"[] staminaStatBars, Material notchesMaterial, float alphaLerpSpeed)"}</code> | Creates a `StaminaBarVisibility.HandStaminaView` from `staminaStatBars`, `notchesMaterial` and `alphaLerpSpeed`. |
 
 ## Fields
 

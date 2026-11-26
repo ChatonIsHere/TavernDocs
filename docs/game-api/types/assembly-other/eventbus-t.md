@@ -20,9 +20,9 @@ A simple in-process event bus for one event type `T`: listeners subscribe, and `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EventBus()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EventBus()"}</code> | Creates an `EventBus` with default values. |
 
 ## Fields
 

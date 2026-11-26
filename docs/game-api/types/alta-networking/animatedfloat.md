@@ -20,9 +20,9 @@ A synced float parameter on a `NetworkAnimator`, sent compressed within a range 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedFloat(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedFloat(string name)"}</code> | Creates an `AnimatedFloat` from `name`. |
 
 ## Fields
 

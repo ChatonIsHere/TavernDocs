@@ -18,9 +18,9 @@ Debounced call on a `Timeline`: runs an action once `Offset` hasn't been called 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OffsetEvent("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OffsetEvent("}<Link to="/game-api/types/assembly-other/timeline">{"Timeline"}</Link>{" timeline, TimeSpan minimumDelay, TimeSpan offsetDelay, Action delayedEvent)"}</code> | Creates an `OffsetEvent` from `timeline`, `minimumDelay`, `offsetDelay` and `delayedEvent`. |
 
 ## Fields
 

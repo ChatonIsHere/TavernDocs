@@ -19,9 +19,9 @@ Tracks one heat point's burn level for `HeatManager`: -1 below the hot temperatu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HeatPointDamageLevel(float hotTemperature, float ignitionTemperature, "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HeatPointDamageLevel(float hotTemperature, float ignitionTemperature, "}<Link to="/game-api/types/alta-stats-effects/heatpoint">{"HeatPoint"}</Link>{" point)"}</code> | Creates a `HeatManager.HeatPointDamageLevel` from `hotTemperature`, `ignitionTemperature` and `point`. |
 
 ## Fields
 

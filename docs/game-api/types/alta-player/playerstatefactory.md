@@ -20,9 +20,9 @@ Creates player state objects by `PlayerStateType`. Injected through VContainer a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerStateFactory(IPostProcessController postProcessController)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerStateFactory(IPostProcessController postProcessController)"}</code> | Creates a `PlayerStateFactory` from `postProcessController`. |
 
 ## Fields
 

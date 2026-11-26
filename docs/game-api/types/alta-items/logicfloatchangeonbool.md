@@ -21,9 +21,9 @@ Logic component that moves a float output from a start value to an end value ove
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBool()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LogicFloatChangeOnBool()"}</code> | Creates a `LogicFloatChangeOnBool` with default values. |
 
 ## Fields
 

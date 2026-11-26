@@ -19,9 +19,9 @@ Runs an external program hidden, logs its output with a prefix, and lets the cal
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProcessRunner(string processPrefix)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProcessRunner(string processPrefix)"}</code> | Creates a `ProcessRunner` from `processPrefix`. |
 
 ## Fields
 

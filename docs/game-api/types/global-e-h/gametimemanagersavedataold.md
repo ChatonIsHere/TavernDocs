@@ -20,9 +20,9 @@ Version 1 save data for `GameTimeManager`, migrated on load.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameTimeManagerSaveDataOld()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameTimeManagerSaveDataOld()"}</code> | Creates a `GameTimeManagerSaveDataOld` with default values. |
 
 ## Fields
 

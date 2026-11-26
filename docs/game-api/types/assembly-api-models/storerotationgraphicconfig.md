@@ -18,9 +18,9 @@ One graphic in the shop page's rotation (`ShopPageConfiguration.Graphics`).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StoreRotationGraphicConfig()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StoreRotationGraphicConfig()"}</code> | Creates a `StoreRotationGraphicConfig` with default values. |
 
 ## Properties
 

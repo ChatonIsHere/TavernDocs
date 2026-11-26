@@ -19,6 +19,6 @@ Inspector marker for a value that spans the full day cycle.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FullCycle()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FullCycle()"}</code> | Creates a `FullCycle` with default values. |

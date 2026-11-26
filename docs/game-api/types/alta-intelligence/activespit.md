@@ -19,9 +19,9 @@ Wyrm ranged spit attack action, preferring targets near `BestRange`. Runs on the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveSpit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveSpit()"}</code> | Creates an `ActiveSpit` with default values. |
 
 ## Fields
 

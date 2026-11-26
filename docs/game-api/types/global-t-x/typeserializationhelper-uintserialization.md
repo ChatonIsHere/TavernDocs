@@ -20,9 +20,9 @@ Serializer for `uint`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UintSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UintSerialization()"}</code> | Creates a `TypeSerializationHelper.UintSerialization` with default values. |
 
 ## Methods
 

@@ -19,9 +19,9 @@ Private helper for `StaticObjectCombiner` that gathers the vertices, triangles a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IncrementalMesh()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IncrementalMesh()"}</code> | Creates a `StaticObjectCombiner.IncrementalMesh` with default values. |
 
 ## Properties
 

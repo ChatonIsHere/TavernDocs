@@ -19,9 +19,9 @@ A named atom in the AI knowledge system that takes one typed term. Other version
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Atom(string name)"}</code> | Creates an `Atom` from `name`. |
 
 ## Methods
 

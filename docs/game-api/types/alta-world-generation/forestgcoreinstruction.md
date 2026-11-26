@@ -20,10 +20,10 @@ A forest generation instruction that places one generation core (a static enviro
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForestGCoreInstruction()"}</code> |
-| <Link id="m-ctor-2" /><code>{"ForestGCoreInstruction("}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" core, uint seed, Vector3 position, Quaternion rotation, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" node, "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForestGCoreInstruction()"}</code> | Creates a `ForestGCoreInstruction` from `core`, `seed`, `position`, `rotation`, `node` and `edge`. |
+| <Link id="m-ctor-2" /><code>{"ForestGCoreInstruction("}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" core, uint seed, Vector3 position, Quaternion rotation, "}<Link to="/game-api/types/alta-world-generation/node">{"Node"}</Link>{" node, "}<Link to="/game-api/types/alta-world-generation/edge">{"Edge"}</Link>{" edge)"}</code> | Creates a `ForestGCoreInstruction` from `core`, `seed`, `position`, `rotation`, `node` and `edge`. |
 
 ## Fields
 

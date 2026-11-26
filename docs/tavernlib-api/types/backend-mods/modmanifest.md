@@ -19,9 +19,9 @@ One version of one mod, from a source's `manifests` folder (schema version 2 onl
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModManifest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModManifest()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 
@@ -62,8 +62,8 @@ One version of one mod, from a source's `manifests` folder (schema version 2 onl
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-readparity" /><code>{"private static bool ReadParity(JToken value, string idForMsg)"}</code> |  |
-| <Link id="m-readscenes" /><code>{"private static List<string> ReadScenes(JToken value, string idForMsg)"}</code> |  |
+| <Link id="m-readparity" /><code>{"private static bool ReadParity(JToken value, string idForMsg)"}</code> | Reads `parity_required`; throws if it isn't a boolean rather than guessing. |
+| <Link id="m-readscenes" /><code>{"private static List<string> ReadScenes(JToken value, string idForMsg)"}</code> | Reads the `scenes` list; null means every scene, and an empty or non-string list throws. |
 | <Link id="m-sha256field" /><code>{"internal static string Sha256Field(JObject d, string where)"}</code> | Internal: reads and checks a `sha256` field: 64 hex characters, returned lower case. |
 | <Link id="m-text" /><code>{"internal static string Text(JObject d, string key, string fallback, string where)"}</code> | Internal: reads a string field, using the fallback when it's absent or null. Throws for any other type. |
 

@@ -19,9 +19,9 @@ Type converter that turns a stat name into a `StatList` of stat and player pairs
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatListConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatListConverter()"}</code> | Creates a `StatListConverter` with default values. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Runtime instance of the `OperationPart` plugin part: combines two plugins' layer
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OperationPartInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/operationpart">{"OperationPart"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OperationPartInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/operationpart">{"OperationPart"}</Link>{" part)"}</code> | Creates an `OperationPartInstance` from `plugin` and `part`. |
 
 ## Fields
 

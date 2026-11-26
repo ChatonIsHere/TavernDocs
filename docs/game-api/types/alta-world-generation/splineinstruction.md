@@ -20,10 +20,10 @@ Generation instruction that builds a bezier spline and lays a static environment
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SplineInstruction()"}</code> |
-| <Link id="m-ctor-2" /><code>{"SplineInstruction(Vector3 a, Vector3 b, Vector3 c, Vector3 d, "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" content)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SplineInstruction()"}</code> | Creates a `SplineInstruction` from `a`, `b`, `c`, `d` and `content`. |
+| <Link id="m-ctor-2" /><code>{"SplineInstruction(Vector3 a, Vector3 b, Vector3 c, Vector3 d, "}<Link to="/game-api/types/alta-world/staticenvironmentpiece">{"StaticEnvironmentPiece"}</Link>{" content)"}</code> | Creates a `SplineInstruction` from `a`, `b`, `c`, `d` and `content`. |
 
 ## Fields
 

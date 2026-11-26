@@ -19,9 +19,9 @@ Animator state behaviour that tells the animator's `IAnimationEndCallbackReceive
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimationEnded()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimationEnded()"}</code> | Creates an `AnimationEnded` with default values. |
 
 ## Methods
 

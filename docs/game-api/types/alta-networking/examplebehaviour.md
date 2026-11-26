@@ -18,9 +18,9 @@ Example code showing how to set up syncs with `SyncFactory`. Not a component and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ExampleBehaviour()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ExampleBehaviour()"}</code> | Creates an `ExampleBehaviour` with default values. |
 
 ## Fields
 

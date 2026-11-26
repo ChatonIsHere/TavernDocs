@@ -19,9 +19,9 @@ Editor asset holding a reference to the project lifetime scope. Has no behaviour
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DependencyInjectionEditorInitializer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DependencyInjectionEditorInitializer()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

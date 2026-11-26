@@ -20,9 +20,9 @@ A queued job in `MainThreadJobHandler`: the function that makes the steps, its r
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InternalEntry()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InternalEntry()"}</code> | Creates a `MainThreadJobHandler.InternalEntry` with default values. |
 
 ## Fields
 

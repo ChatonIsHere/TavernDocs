@@ -19,9 +19,9 @@ A shop item with details for one user: whether they own it and the price they wo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopItemDetailedForUser()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopItemDetailedForUser()"}</code> | Creates a `ShopItemDetailedForUser` with default values. |
 
 ## Properties
 

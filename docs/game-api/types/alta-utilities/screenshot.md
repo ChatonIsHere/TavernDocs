@@ -18,9 +18,9 @@ Takes a photo through a hand camera into a texture and saves it as a PNG (Window
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Screenshot("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, int width = 1920, int height = 1080)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Screenshot("}<Link to="/game-api/types/alta-customization/handcamera">{"HandCamera"}</Link>{" camera, int width = 1920, int height = 1080)"}</code> | Creates a `Screenshot` from `camera`, `width` and `height`. |
 
 ## Fields
 

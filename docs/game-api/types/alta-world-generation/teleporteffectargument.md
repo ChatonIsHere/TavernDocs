@@ -18,9 +18,9 @@ What the server sends to the chunk when a player uses a cave teleporter, so clie
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TeleportEffectArgument(bool isDeparture, int layer, Vector3 position, uint teleportingPlayer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TeleportEffectArgument(bool isDeparture, int layer, Vector3 position, uint teleportingPlayer)"}</code> | Creates a `TeleportEffectArgument` from `isDeparture`, `layer`, `position` and `teleportingPlayer`. |
 
 ## Fields
 

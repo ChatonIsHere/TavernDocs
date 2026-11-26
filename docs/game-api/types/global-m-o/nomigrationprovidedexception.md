@@ -19,6 +19,6 @@ Logged (not thrown) by `NewSaveData` when something asks the newest save data ve
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NoMigrationProvidedException()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NoMigrationProvidedException()"}</code> | Creates the exception. |

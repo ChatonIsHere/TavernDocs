@@ -18,9 +18,9 @@ Ring buffer of recent position and rotation records for an `ImpactTool`, which `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionRecorder()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionRecorder()"}</code> | Creates a `PositionRecorder` with default values. |
 
 ## Fields
 

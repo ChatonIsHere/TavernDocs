@@ -20,9 +20,9 @@ Navigation action that makes the agent wander, up to `HeuristicMaximum`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveWander()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveWander()"}</code> | Creates an `ActiveWander` with default values. |
 
 ## Methods
 

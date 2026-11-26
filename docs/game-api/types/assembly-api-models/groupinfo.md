@@ -19,9 +19,9 @@ API model with the basic public info for a group (server group): name, descripti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GroupInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GroupInfo()"}</code> | Creates a `GroupInfo` with default values. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Message payload a `NetworkColliderGroup` sends to chunks to make collisions with
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CollisionIgnoreArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" otherEntity, bool isIgnoring)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CollisionIgnoreArguments("}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" otherEntity, bool isIgnoring)"}</code> | Creates a `NetworkColliderGroup.CollisionIgnoreArguments` from `otherEntity` and `isIgnoring`. |
 
 ## Fields
 

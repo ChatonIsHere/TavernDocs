@@ -18,10 +18,10 @@ A serializable reference to a chunk by its identifier string, resolved through `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkReference("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ChunkReference()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkReference("}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Creates a `ChunkReference` with default values. |
+| <Link id="m-ctor-2" /><code>{"ChunkReference()"}</code> | Creates a `ChunkReference` with default values. |
 
 ## Fields
 

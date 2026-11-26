@@ -21,9 +21,9 @@ Save data (version 5) for `LootModule`, a loot spawner on a dock group. Internal
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LootModuleSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LootModuleSaveData()"}</code> | Creates a `LootModuleSaveData` with default values. |
 
 ## Fields
 

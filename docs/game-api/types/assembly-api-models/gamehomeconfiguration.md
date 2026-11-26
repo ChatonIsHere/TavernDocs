@@ -18,9 +18,9 @@ API response describing what the game's home screen shows.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GameHomeConfiguration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GameHomeConfiguration()"}</code> | Creates a `GameHomeConfiguration` with default values. |
 
 ## Properties
 

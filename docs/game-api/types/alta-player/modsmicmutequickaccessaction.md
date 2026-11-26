@@ -20,9 +20,9 @@ Quick access menu action for moderators that toggles a mod mic mute through `Mod
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MODSMicMuteQuickAccessAction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MODSMicMuteQuickAccessAction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

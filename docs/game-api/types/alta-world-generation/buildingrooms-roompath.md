@@ -19,9 +19,9 @@ Private helper of `BuildingRooms`: a possible link between two overlapping rooms
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RoomPath("}<Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" to)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RoomPath("}<Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" from, "}<Link to="/game-api/types/alta-world-generation/buildingrooms-roomnode">{"BuildingRooms.RoomNode"}</Link>{" to)"}</code> | Creates a `BuildingRooms.RoomPath` from `from` and `to`. |
 
 ## Properties
 

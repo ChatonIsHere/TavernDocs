@@ -20,9 +20,9 @@ Server: running action that waits a set time, then switches the creature to anot
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveDelayEnterSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveDelayEnterSet()"}</code> | Creates an `ActiveDelayEnterSet` with default values. |
 
 ## Methods
 

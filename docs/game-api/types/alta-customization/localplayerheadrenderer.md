@@ -18,9 +18,9 @@ Turns the local player's head renderers on while a hand camera renders, so selfi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LocalPlayerHeadRenderer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LocalPlayerHeadRenderer()"}</code> | Creates a `LocalPlayerHeadRenderer` with default values. |
 
 ## Fields
 

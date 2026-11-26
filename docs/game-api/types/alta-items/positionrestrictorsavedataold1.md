@@ -20,9 +20,9 @@ Old version 1 save data for a `PositionRestrictor`, holding only a radius.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionRestrictorSaveDataOld1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionRestrictorSaveDataOld1()"}</code> | Creates a `PositionRestrictorSaveDataOld1` with default values. |
 
 ## Fields
 

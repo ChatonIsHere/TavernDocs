@@ -19,9 +19,9 @@ In-game bubble inspector node for one component. Interacting with it spreads bub
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ComponentInspector(MonoBehaviour component)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ComponentInspector(MonoBehaviour component)"}</code> | Creates a `ComponentInspector` from `component`. |
 
 ## Fields
 

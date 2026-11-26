@@ -19,11 +19,11 @@ A plain position and rotation, for sending a place over the network (for example
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TransformProxy()"}</code> |
-| <Link id="m-ctor-2" /><code>{"TransformProxy(Vector3 position, Quaternion rotation)"}</code> |
-| <Link id="m-ctor-3" /><code>{"TransformProxy(Transform target)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TransformProxy()"}</code> | Creates a `TransformProxy` from `target`. |
+| <Link id="m-ctor-2" /><code>{"TransformProxy(Vector3 position, Quaternion rotation)"}</code> | Creates a `TransformProxy` from `target`. |
+| <Link id="m-ctor-3" /><code>{"TransformProxy(Transform target)"}</code> | Creates a `TransformProxy` from `target`. |
 
 ## Properties
 

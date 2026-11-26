@@ -21,9 +21,9 @@ A scoring rule for schmeechee actions that returns one value when the critter is
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Operation("}<Link to="/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation, float trueValue, float falseValue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Operation("}<Link to="/game-api/types/alta-intelligence/schmeechee-operationtype">{"Schmeechee.OperationType"}</Link>{" operation, float trueValue, float falseValue)"}</code> | Creates a `Schmeechee.Operation` from `operation`, `trueValue` and `falseValue`. |
 
 ## Fields
 

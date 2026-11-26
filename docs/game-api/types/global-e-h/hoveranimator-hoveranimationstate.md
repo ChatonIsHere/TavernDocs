@@ -19,9 +19,9 @@ Private per-object state for `HoverAnimator`: one per hovering child transform.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HoverAnimationState()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HoverAnimationState()"}</code> | Creates a `HoverAnimator.HoverAnimationState` with default values. |
 
 ## Properties
 

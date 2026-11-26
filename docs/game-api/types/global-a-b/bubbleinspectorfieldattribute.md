@@ -20,9 +20,9 @@ Marks a field or property to show in the in-game bubble inspector, read by `Bubb
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BubbleInspectorFieldAttribute("}<Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" interaction = 0)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BubbleInspectorFieldAttribute("}<Link to="/game-api/types/global-i-l/interactiontype">{"InteractionType"}</Link>{" interaction = 0)"}</code> | Creates a `BubbleInspectorFieldAttribute` from `interaction`. |
 
 ## Properties
 

@@ -22,9 +22,9 @@ A small registry holding one object per type, where TavernLib keeps `TavernManag
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-serviceentries" /><code>{"private static readonly Dictionary<Type, "}<Link to="/tavernlib-api/types/services/iservice">{"IService"}</Link>{"> ServiceEntries"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-serviceentries" /><code>{"private static readonly Dictionary<Type, "}<Link to="/tavernlib-api/types/services/iservice">{"IService"}</Link>{"> ServiceEntries"}</code> | The registered services, keyed by their type. |
 
 </details>
 

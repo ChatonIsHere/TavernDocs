@@ -20,9 +20,9 @@ Forest fill step that scatters objects on a grid across the forest, outside path
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForestFill()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForestFill()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -31,7 +31,7 @@ Forest fill step that scatters objects on a grid across the forest, outside path
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-logger" /><code>{"private static Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static Logger logger"}</code> | Logger for this class. |
 | <Link id="m-step" /><code>{"private float step"}</code> | Grid spacing in metres. |
 
 </details>

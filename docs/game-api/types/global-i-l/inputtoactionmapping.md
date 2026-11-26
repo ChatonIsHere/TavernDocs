@@ -19,9 +19,9 @@ One binding from a VR input or keyboard key (with an optional second input) to a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InputToActionMapping()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InputToActionMapping()"}</code> | Creates an `InputToActionMapping` with default values. |
 
 ## Fields
 

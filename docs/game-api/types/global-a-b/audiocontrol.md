@@ -19,9 +19,9 @@ Plays one Wwise event on a game object and lets you stop, seek or reapply sound 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AudioControl()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AudioControl()"}</code> | Creates an `AudioControl` with default values. |
 
 ## Fields
 

@@ -18,11 +18,11 @@ Stands in for one layer's cave teleporter in `CaveTeleporterManager`, holding it
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CaveTeleporterProxy("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" data)"}</code> |
-| <Link id="m-ctor-2" /><code>{"CaveTeleporterProxy(int layer, int fuel)"}</code> |
-| <Link id="m-ctor-3" /><code>{"CaveTeleporterProxy(int layer, Vector3 position, int fuel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CaveTeleporterProxy("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" data)"}</code> | Creates a `CaveTeleporterProxy` from `layer`, `position` and `fuel`. |
+| <Link id="m-ctor-2" /><code>{"CaveTeleporterProxy(int layer, int fuel)"}</code> | Creates a `CaveTeleporterProxy` from `layer`, `position` and `fuel`. |
+| <Link id="m-ctor-3" /><code>{"CaveTeleporterProxy(int layer, Vector3 position, int fuel)"}</code> | Creates a `CaveTeleporterProxy` from `layer`, `position` and `fuel`. |
 
 ## Fields
 

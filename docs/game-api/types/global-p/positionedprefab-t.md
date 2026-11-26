@@ -19,9 +19,9 @@ Serializable base for a saved prefab reference with a local position and rotatio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected PositionedPrefab()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PositionedPrefab()"}</code> | Creates a `PositionedPrefab` with default values. |
 
 ## Fields
 

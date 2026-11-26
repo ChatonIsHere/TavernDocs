@@ -20,9 +20,9 @@ TavernLib's `MelonPlugin`. It registers TavernLib's services, collects its conso
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Tavern()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Tavern()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 
@@ -33,10 +33,10 @@ TavernLib's `MelonPlugin`. It registers TavernLib's services, collects its conso
 <details>
 <summary>2 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-didinitiallogarchive" /><code>{"private bool _didInitialLogArchive"}</code> |
-| <Link id="m-logarchivetimer" /><code>{"private Timer _logArchiveTimer"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-didinitiallogarchive" /><code>{"private bool _didInitialLogArchive"}</code> | Set after the timer's first tick, which archives the log once at startup. |
+| <Link id="m-logarchivetimer" /><code>{"private Timer _logArchiveTimer"}</code> | Timer that checks every 60 seconds whether `unity-log.csv` needs archiving; started on servers that TavernLib manages auth for. |
 
 </details>
 
@@ -62,10 +62,10 @@ TavernLib's `MelonPlugin`. It registers TavernLib's services, collects its conso
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-setupselectionfixpatch" /><code>{"private void SetupSelectionFixPatch()"}</code> |
-| <Link id="m-setupservices" /><code>{"private void SetupServices()"}</code> |
-| <Link id="m-startlogarchivetimer" /><code>{"private void StartLogArchiveTimer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-setupselectionfixpatch" /><code>{"private void SetupSelectionFixPatch()"}</code> | Hooks `SelectionCommandModule.FindObjects` so `select find` runs `SelectFixPatch.SelectionFix` instead. |
+| <Link id="m-setupservices" /><code>{"private void SetupServices()"}</code> | Registers TavernLib's services at early init: console tokens, mod reconcile, `TavernManager`, roles and backups on a server, and quick join on a client, plus `EntranceMessageHandler` on both. |
+| <Link id="m-startlogarchivetimer" /><code>{"private void StartLogArchiveTimer()"}</code> | Starts the timer that archives the log on its first tick (10 s after start) and then whenever it passes the size limit. |
 
 </details>

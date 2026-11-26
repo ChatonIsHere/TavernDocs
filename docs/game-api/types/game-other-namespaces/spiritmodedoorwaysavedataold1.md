@@ -20,9 +20,9 @@ Version 1 save data for a `SpiritModeDoorway`, from before one-way doors.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveDataOld1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpiritModeDoorwaySaveDataOld1()"}</code> | Creates a `SpiritModeDoorwaySaveDataOld1` with default values. |
 
 ## Fields
 

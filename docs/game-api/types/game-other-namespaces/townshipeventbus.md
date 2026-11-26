@@ -19,6 +19,6 @@ The game's main event bus, a plain `Alta.Core.EventBus.EventBus`. `ProjectLifeti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TownshipEventBus()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TownshipEventBus()"}</code> | Creates a `TownshipEventBus` with default values. |

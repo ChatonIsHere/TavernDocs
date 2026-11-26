@@ -19,10 +19,10 @@ A list of GameObjects turned on or off at bake time depending on the runtime pla
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformObjectSetup()"}</code> |
-| <Link id="m-ctor-2" /><code>{"PlatformObjectSetup("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime, List<GameObject> targets)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformObjectSetup()"}</code> | Creates a `PlatformObjects.PlatformObjectSetup` from `runtime` and `targets`. |
+| <Link id="m-ctor-2" /><code>{"PlatformObjectSetup("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" runtime, List<GameObject> targets)"}</code> | Creates a `PlatformObjects.PlatformObjectSetup` from `runtime` and `targets`. |
 
 ## Fields
 

@@ -26,7 +26,7 @@ Static entry point for the console command system. Parses a command line, finds 
 | --- | --- |
 | <Link id="m-collection" /><code>{"private static "}<Link to="/game-api/types/alta-console/commandcollection">{"CommandCollection"}</Link>{" collection"}</code> | Cached collection behind `CommandCollection`. |
 | <Link id="m-defaultcontext" /><code>{"private static "}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" defaultContext"}</code> | Context made for the logged-in user, used when `Handle` gets no context. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Logger for this class. |
 
 </details>
 

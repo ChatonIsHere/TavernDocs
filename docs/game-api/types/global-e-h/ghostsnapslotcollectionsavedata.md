@@ -22,6 +22,6 @@ Save data for a `GhostSnapSlotCollection`. Its elements hold no fields.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GhostSnapSlotCollectionSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GhostSnapSlotCollectionSaveData()"}</code> | Creates a `GhostSnapSlotCollectionSaveData` with default values. |

@@ -19,10 +19,10 @@ Body of an Alta web API login with an email, password hash and device id.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LoginWithEmailRequest(string email, string passwordHash, string deviceIdentifier)"}</code> |
-| <Link id="m-ctor-2" /><code>{"LoginWithEmailRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LoginWithEmailRequest(string email, string passwordHash, string deviceIdentifier)"}</code> | Creates a `LoginWithEmailRequest` with default values. |
+| <Link id="m-ctor-2" /><code>{"LoginWithEmailRequest()"}</code> | Creates a `LoginWithEmailRequest` with default values. |
 
 ## Properties
 

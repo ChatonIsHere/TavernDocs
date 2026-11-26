@@ -19,9 +19,9 @@ Offline stand-in for the shop client. Ownership checks always pass; shop configu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineShopApiClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineShopApiClient()"}</code> | Creates an `OfflineShopApiClient` with default values. |
 
 ## Properties
 

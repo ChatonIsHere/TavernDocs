@@ -19,10 +19,10 @@ Client: the server you are joined to, sent by the server in `ConfirmJoinMessage`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JoinedServerInfo("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" serverInfo)"}</code> |
-| <Link id="m-ctor-2" /><code>{"JoinedServerInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JoinedServerInfo("}<Link to="/game-api/types/assembly-api-models/gameserverinfo">{"GameServerInfo"}</Link>{" serverInfo)"}</code> | Creates a `JoinedServerInfo` with default values. |
+| <Link id="m-ctor-2" /><code>{"JoinedServerInfo()"}</code> | Creates a `JoinedServerInfo` with default values. |
 
 ## Fields
 

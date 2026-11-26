@@ -19,9 +19,9 @@ A serializable `AltaEvent` that passes a `ServerElement`, for wiring server list
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerElementEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerElementEvent()"}</code> | Creates a `ServerElementEvent` with default values. |
 
 ## Used in
 

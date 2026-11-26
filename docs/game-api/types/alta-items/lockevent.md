@@ -19,9 +19,9 @@ A serializable event with a `Lock` argument, such as a lock's locked or broken e
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LockEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LockEvent()"}</code> | Creates a `LockEvent` with default values. |
 
 ## Used in
 

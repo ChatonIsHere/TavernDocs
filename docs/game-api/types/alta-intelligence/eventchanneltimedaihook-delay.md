@@ -19,9 +19,9 @@ One delayed event in an `EventChannelTimedAiHook`: fires a hook event channel a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Delay()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Delay()"}</code> | Creates an `EventChannelTimedAiHook.Delay` with default values. |
 
 ## Fields
 

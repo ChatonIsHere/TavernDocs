@@ -19,9 +19,9 @@ Thrown when an API call fails with an HTTP status other than 400 or 403. Carries
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HttpException(HttpStatusCode statusCode)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HttpException(HttpStatusCode statusCode)"}</code> | Creates the exception with `statusCode`. |
 
 ## Properties
 

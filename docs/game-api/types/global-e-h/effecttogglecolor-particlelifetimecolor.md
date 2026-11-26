@@ -20,9 +20,9 @@ A particle system whose start colour and colour-over-lifetime gradient switch be
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ParticleLifetimeColor(ParticleSystem system)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ParticleLifetimeColor(ParticleSystem system)"}</code> | Creates an `EffectToggleColor.ParticleLifetimeColor` from `system`. |
 
 ## Fields
 

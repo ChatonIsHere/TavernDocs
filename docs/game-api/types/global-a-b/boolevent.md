@@ -19,9 +19,9 @@ Serializable `AltaEvent` with a bool argument. Runs both inspector-wired listene
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoolEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoolEvent()"}</code> | Creates a `BoolEvent` with default values. |
 
 ## Used in
 

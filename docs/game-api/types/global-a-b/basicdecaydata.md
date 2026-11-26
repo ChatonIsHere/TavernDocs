@@ -21,9 +21,9 @@ Current save data for `BasicDecay` (version 3): the decay timer and whether deca
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicDecayData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicDecayData()"}</code> | Creates a `BasicDecayData` with default values. |
 
 ## Fields
 

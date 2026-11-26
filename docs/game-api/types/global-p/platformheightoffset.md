@@ -18,9 +18,9 @@ A player height offset for one set of platforms, listed in `PlatformHeightOffset
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformHeightOffset("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform, float offset)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformHeightOffset("}<Link to="/game-api/types/assembly-other/platformflags">{"PlatformFlags"}</Link>{" platform, float offset)"}</code> | Creates a `PlatformHeightOffset` from `platform` and `offset`. |
 
 ## Fields
 

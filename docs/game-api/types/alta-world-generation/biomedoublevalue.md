@@ -19,6 +19,6 @@ Serializable pair of float values (`Value` and `Value2`) tied to a `Biome`, for 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BiomeDoubleValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BiomeDoubleValue()"}</code> | Creates a `BiomeDoubleValue` with default values. |

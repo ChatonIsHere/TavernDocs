@@ -19,9 +19,9 @@ A stand-in controller action that forwards the state and events of whichever `Co
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ControllerActionProxy()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ControllerActionProxy()"}</code> | Creates a `ControllerActionProxy` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data for `BasicDynamicPath` (version 1): enough to find the forest and edge
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicDynamicPathSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicDynamicPathSaveData()"}</code> | Creates a `BasicDynamicPathSaveData` with default values. |
 
 ## Fields
 

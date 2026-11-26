@@ -18,9 +18,9 @@ A form served by the Alta API, with its pages of questions and the dates it's op
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Form()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Form()"}</code> | Creates a `Form` with default values. |
 
 ## Properties
 

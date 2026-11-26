@@ -19,9 +19,9 @@ Private: one joint in a `NetworkStarer` chain that turns to look at a target, wi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RotatingJoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RotatingJoint()"}</code> | Creates a `NetworkStarer.RotatingJoint` with default values. |
 
 ## Fields
 

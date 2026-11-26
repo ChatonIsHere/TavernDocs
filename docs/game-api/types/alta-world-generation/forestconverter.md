@@ -19,9 +19,9 @@ A `TypeConverter` that turns a string into a `ForestGenerator` by matching its `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ForestConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ForestConverter()"}</code> | Creates a `ForestConverter` with default values. |
 
 ## Methods
 

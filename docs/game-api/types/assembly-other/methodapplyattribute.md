@@ -20,6 +20,6 @@ Empty marker attribute for methods. Nothing in the server build reads it; probab
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MethodApplyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MethodApplyAttribute()"}</code> | Creates a `MethodApplyAttribute` with default values. |

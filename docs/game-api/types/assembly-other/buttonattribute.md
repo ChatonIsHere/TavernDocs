@@ -20,9 +20,9 @@ Inspector attribute that draws a button for a bool field and calls a method on t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ButtonAttribute(string text, string method = null, bool isDelayedCall = true, string validationMethod = null)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ButtonAttribute(string text, string method = null, bool isDelayedCall = true, string validationMethod = null)"}</code> | Creates a `ButtonAttribute` from `text`, `method`, `isDelayedCall` and `validationMethod`. |
 
 ## Properties
 

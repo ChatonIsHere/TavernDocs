@@ -20,9 +20,9 @@ Class attribute that sets the order of a class's shutdown handlers. `ShutdownOrd
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ApplicationShutdownOrderAttribute(int order)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ApplicationShutdownOrderAttribute(int order)"}</code> | Creates an `ApplicationShutdownOrderAttribute` from `order`. |
 
 ## Properties
 

@@ -21,9 +21,9 @@ Save data for the global communal storage: parallel lists of storage data, their
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GlobalCommunalStorageValuesData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GlobalCommunalStorageValuesData()"}</code> | Creates a `GlobalCommunalStorageValuesData` with default values. |
 
 ## Fields
 

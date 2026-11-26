@@ -20,18 +20,18 @@ The `ServerConfigFile` for `server_settings.json`. Hashes plain passwords and ma
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerSettingsConfig(string filePath)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerSettingsConfig(string filePath)"}</code> | Created by TavernLib to read and write this config file at the given path. |
 
 ## Fields
 
 <details>
 <summary>1 private and internal field</summary>
 
-| Member |
-| --- |
-| <Link id="m-sha256hex" /><code>{"private static readonly Regex Sha256Hex"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-sha256hex" /><code>{"private static readonly Regex Sha256Hex"}</code> | Regex for a 64 character lowercase hex string, used to tell a stored hash from a plain password. |
 
 </details>
 
@@ -45,9 +45,9 @@ The `ServerConfigFile` for `server_settings.json`. Hashes plain passwords and ma
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-hash" /><code>{"private static string Hash(string password)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hash" /><code>{"private static string Hash(string password)"}</code> | Hashes a password twice with SHA-256, the form stored in `password_hash`. |
 
 </details>
 

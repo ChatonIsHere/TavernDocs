@@ -18,9 +18,9 @@ Body of an Alta web API request to give a user a role.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GiveRoleRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GiveRoleRequest()"}</code> | Creates a `GiveRoleRequest` with default values. |
 
 ## Properties
 

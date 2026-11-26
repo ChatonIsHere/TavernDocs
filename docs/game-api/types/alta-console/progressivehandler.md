@@ -18,9 +18,9 @@ Empty marker type. A console command whose first parameter is a `ProgressiveHand
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ProgressiveHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ProgressiveHandler()"}</code> | Creates a `ProgressiveHandler` with default values. |
 
 ## Used in
 

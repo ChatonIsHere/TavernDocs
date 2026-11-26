@@ -19,6 +19,6 @@ Empty MonoBehaviour with no code; probably a marker on popup objects.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Popup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Popup()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

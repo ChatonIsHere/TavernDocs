@@ -19,9 +19,9 @@ One named console token's row in `console_tokens.json`. Only its id and generati
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConsoleToken()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConsoleToken()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 
@@ -47,9 +47,9 @@ One named console token's row in `console_tokens.json`. Only its id and generati
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-extra" /><code>{"private IDictionary<string, JToken> Extra { get; set; }"}</code> | Holds JSON keys TavernLib doesn't model, so they are written back unchanged. |
 
 </details>
 

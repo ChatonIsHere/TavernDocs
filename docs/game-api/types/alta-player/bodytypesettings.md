@@ -18,9 +18,9 @@ Per-body-type distances for belt docks and stat bars on a character dummy. Set b
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BodyTypeSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BodyTypeSettings()"}</code> | Creates a `BodyTypeSettings` with default values. |
 
 ## Fields
 

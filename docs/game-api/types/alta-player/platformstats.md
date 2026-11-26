@@ -19,9 +19,9 @@ Base for a platform's achievements and stats backend. `AchievementManager` creat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected PlatformStats()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected PlatformStats()"}</code> | Creates a `PlatformStats` with default values. |
 
 ## Methods
 

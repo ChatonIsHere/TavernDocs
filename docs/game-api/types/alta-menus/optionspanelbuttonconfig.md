@@ -18,9 +18,9 @@ Pairs a UI button type with the button prefab an `OptionsPanel` uses for it.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OptionsPanelButtonConfig()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OptionsPanelButtonConfig()"}</code> | Creates an `OptionsPanelButtonConfig` with default values. |
 
 ## Fields
 

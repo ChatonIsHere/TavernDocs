@@ -20,6 +20,6 @@ Editor menu folder `Township/Features/Crafting`: menu item classes inherit it to
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Crafting()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Crafting()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Crafting` with default values. |

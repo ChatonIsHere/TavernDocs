@@ -22,9 +22,9 @@ A mod version, exactly `MAJOR.MINOR.PATCH` in ASCII digits with no pre-release o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModVersion(int major, int minor, int patch)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModVersion(int major, int minor, int patch)"}</code> | Creates a version from major, minor and patch numbers. |
 
 ## Properties
 
@@ -50,9 +50,9 @@ A mod version, exactly `MAJOR.MINOR.PATCH` in ASCII digits with no pre-release o
 <details>
 <summary>1 private and internal method</summary>
 
-| Member |
-| --- |
-| <Link id="m-segment" /><code>{"private static int Segment(string v, string part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-segment" /><code>{"private static int Segment(string v, string part)"}</code> | Parses one version segment, accepting ASCII digits only and throwing on anything else or on overflow. |
 
 </details>
 

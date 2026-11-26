@@ -19,9 +19,9 @@ Private helper in climbing analytics that adds up how much stamina a hand's stat
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StaminaTracker("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" staminaStat)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StaminaTracker("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" staminaStat)"}</code> | Creates a `ClimbingHandlerAnalytics.StaminaTracker` from `staminaStat`. |
 
 ## Fields
 

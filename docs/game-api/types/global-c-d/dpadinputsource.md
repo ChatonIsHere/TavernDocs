@@ -19,9 +19,9 @@ An `InputSource` that counts as pressed while the player's D-pad touch is on one
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DPadInputSource(int direction, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DPadInputSource(int direction, "}<Link to="/game-api/types/global-p/playerinput">{"PlayerInput"}</Link>{" controller)"}</code> | Creates a `DPadInputSource` from `direction` and `controller`. |
 
 ## Fields
 

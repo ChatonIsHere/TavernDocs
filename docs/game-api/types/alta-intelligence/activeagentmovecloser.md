@@ -20,9 +20,9 @@ Server: running action that slides a creature's rigidbody straight towards its t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveAgentMoveCloser()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveAgentMoveCloser()"}</code> | Creates an `ActiveAgentMoveCloser` with default values. |
 
 ## Methods
 

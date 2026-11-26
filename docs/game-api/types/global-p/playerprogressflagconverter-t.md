@@ -19,9 +19,9 @@ Type converter that looks up a `PlayerProgressFlag` of type `T` by name or hash,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerProgressFlagConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerProgressFlagConverter()"}</code> | Creates a `PlayerProgressFlagConverter` with default values. |
 
 ## Fields
 

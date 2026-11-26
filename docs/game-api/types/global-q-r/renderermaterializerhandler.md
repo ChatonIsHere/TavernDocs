@@ -18,9 +18,9 @@ Helper that fades a set of renderers in or out with a dissolve shader, then puts
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RendererMaterializerHandler(Shader shader, Texture dissolveTexture)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RendererMaterializerHandler(Shader shader, Texture dissolveTexture)"}</code> | Creates a `RendererMaterializerHandler` from `shader` and `dissolveTexture`. |
 
 ## Fields
 

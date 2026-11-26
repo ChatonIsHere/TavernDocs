@@ -20,10 +20,10 @@ State of every respawn shrine (fuel and bound players), saved and sent to client
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RespawnSystemModel()"}</code> |
-| <Link id="m-ctor-2" /><code>{"RespawnSystemModel("}<Link to="/game-api/types/game-other-namespaces/respawnsystemsavedata">{"RespawnSystemSaveData"}</Link>{" saveData)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RespawnSystemModel()"}</code> | Creates a `RespawnSystemModel` from `saveData`. |
+| <Link id="m-ctor-2" /><code>{"RespawnSystemModel("}<Link to="/game-api/types/game-other-namespaces/respawnsystemsavedata">{"RespawnSystemSaveData"}</Link>{" saveData)"}</code> | Creates a `RespawnSystemModel` from `saveData`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ One rule in `ImportSettings`: an asset path regex, the asset type, and settings 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Filter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Filter()"}</code> | Creates an `ImportSettings.Filter` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ A tree attachment saved in a preset step: its prefab hash and its local position
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Attachment()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Attachment()"}</code> | Creates a `PresetTree.Step.Attachment` with default values. |
 
 ## Fields
 

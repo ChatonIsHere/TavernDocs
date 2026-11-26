@@ -19,9 +19,9 @@ Prefab-apply attribute meant for removing null entries from a list field. In thi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CleanNullsAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CleanNullsAttribute()"}</code> | Creates a `CleanNullsAttribute` with default values. |
 
 ## Methods
 

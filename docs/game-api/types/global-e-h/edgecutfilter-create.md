@@ -20,6 +20,6 @@ Editor menu entry for creating an `EdgeCutFilter` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `EdgeCutFilter.Create` with default values. |

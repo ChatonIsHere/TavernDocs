@@ -21,9 +21,9 @@ Save data for a `ColoredExplosive`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColoredExplosiveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColoredExplosiveData()"}</code> | Creates a `ColoredExplosiveData` with default values. |
 
 ## Fields
 

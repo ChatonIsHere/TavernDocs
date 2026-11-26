@@ -19,6 +19,6 @@ Inspector attribute for a field holding a network prefab hash. No behaviour of i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkPrefabHashAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkPrefabHashAttribute()"}</code> | Creates a `NetworkPrefabHashAttribute` with default values. |

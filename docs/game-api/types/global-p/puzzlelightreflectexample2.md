@@ -19,9 +19,9 @@ Leftover example script for predicting light reflections with gizmos. `OnDrawGiz
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PuzzleLightReflectExample2()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PuzzleLightReflectExample2()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Serializable single value of an `Element`, used for the element list on a `Biome
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ElementSingleValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ElementSingleValue()"}</code> | Creates an `ElementSingleValue` with default values. |
 
 ## Used in
 

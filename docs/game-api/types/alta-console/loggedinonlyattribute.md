@@ -19,9 +19,9 @@ Console requirement: the command needs the game to be logged in to the Alta API.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LoggedInOnlyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LoggedInOnlyAttribute()"}</code> | Creates a `LoggedInOnlyAttribute` with default values. |
 
 ## Methods
 

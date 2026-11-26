@@ -20,9 +20,9 @@ A `HeatSourceBase` variant that adds energy to its heat point instead of conduct
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EnergyBasedHeatSource()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EnergyBasedHeatSource()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Methods
 

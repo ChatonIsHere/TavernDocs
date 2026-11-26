@@ -20,9 +20,9 @@ Operator that drives a particle system's emission rate over distance.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EmissionRateOverDistanceOperator()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EmissionRateOverDistanceOperator()"}</code> | Creates a `ValueOperatedParticleSystem.EmissionRateOverDistanceOperator` with default values. |
 
 ## Methods
 

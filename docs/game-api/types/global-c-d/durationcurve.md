@@ -18,9 +18,9 @@ A serializable animation curve paired with a duration in seconds.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DurationCurve(AnimationCurve curve, float duration)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DurationCurve(AnimationCurve curve, float duration)"}</code> | Creates a `DurationCurve` from `curve` and `duration`. |
 
 ## Fields
 

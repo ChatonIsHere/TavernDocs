@@ -19,9 +19,9 @@ Network payload the server sends back after running a command from the quick acc
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CommandSyncInfo("}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{" commandResult)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CommandSyncInfo("}<Link to="/game-api/types/alta-console/commandresult">{"CommandResult"}</Link>{" commandResult)"}</code> | Creates a `CommandSync.CommandSyncInfo` from `commandResult`. |
 
 ## Fields
 

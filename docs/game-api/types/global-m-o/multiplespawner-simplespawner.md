@@ -19,9 +19,9 @@ One spawn rule inside a `MultipleSpawner`: a prefab or random distribution, how 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimpleSpawner()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimpleSpawner()"}</code> | Creates a `MultipleSpawner.SimpleSpawner` with default values. |
 
 ## Fields
 

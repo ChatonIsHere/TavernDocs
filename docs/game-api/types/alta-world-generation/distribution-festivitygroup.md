@@ -21,6 +21,6 @@ Concrete festivity group for `Distribution`: items that only join the draw while
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FestivityGroup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FestivityGroup()"}</code> | Creates a `Distribution.FestivityGroup` with default values. |

@@ -19,17 +19,17 @@ Handler for `HeatPoint.TemperatureModifier`. Can change a new temperature by ref
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TemperatureModifier(object object, IntPtr method)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TemperatureModifier(object object, IntPtr method)"}</code> | Made by the compiler when you assign a method to this delegate; you don't call it directly. |
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(ref float newtemperature, AsyncCallback callback, object object)"}</code> |
-| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(ref float newtemperature, IAsyncResult result)"}</code> |
-| <Link id="m-invoke" /><code>{"virtual void Invoke(ref float newtemperature)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-begininvoke" /><code>{"virtual IAsyncResult BeginInvoke(ref float newtemperature, AsyncCallback callback, object object)"}</code> | Starts the call on another thread; not supported in Unity, so use `Invoke`. |
+| <Link id="m-endinvoke" /><code>{"virtual void EndInvoke(ref float newtemperature, IAsyncResult result)"}</code> | Waits for a call started with `BeginInvoke`; not supported in Unity. |
+| <Link id="m-invoke" /><code>{"virtual void Invoke(ref float newtemperature)"}</code> | Calls every method on this delegate with these arguments. |
 
 ## Used in
 

@@ -19,9 +19,9 @@ For one sender, how many more gifts they can post to each other player.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PerPlayerSendingCount()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PerPlayerSendingCount()"}</code> | Creates a `PostBoxSenderManager.PerPlayerSendingCount` with default values. |
 
 ## Properties
 

@@ -18,9 +18,9 @@ One saved mesh part of a `NameBoardShield`: mesh, material and local transform.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShieldPartDefinition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShieldPartDefinition()"}</code> | Creates a `ShieldPartDefinition` with default values. |
 
 ## Fields
 

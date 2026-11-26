@@ -20,9 +20,9 @@ One scoring rule a creature action uses to rate a possible target (a sense, a st
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected TargetOperation()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected TargetOperation()"}</code> | Creates a `TargetOperation` with default values. |
 
 ## Properties
 

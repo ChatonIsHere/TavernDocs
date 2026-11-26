@@ -19,9 +19,9 @@ Playing to Dead transition. Its listeners are empty and nothing adds it, so in t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingToDeadTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingToDeadTransition()"}</code> | Creates a `PlayingToDeadTransition` with default values. |
 
 ## Fields
 

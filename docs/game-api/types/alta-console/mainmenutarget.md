@@ -21,9 +21,9 @@ NLog target named `MainMenuTarget` that sends log lines to the `MainMenuLogger` 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MainMenuTarget()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MainMenuTarget()"}</code> | Creates a `MainMenuTarget` with default values. |
 
 ## Methods
 

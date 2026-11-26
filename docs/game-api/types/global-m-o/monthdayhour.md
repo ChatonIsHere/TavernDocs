@@ -20,9 +20,9 @@ A point in the year (month, day, hour) with no year, used for seasonal or dated 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MonthDayHour("}<Link to="/game-api/types/global-m-o/month">{"Month"}</Link>{" month, int day, int hour)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MonthDayHour("}<Link to="/game-api/types/global-m-o/month">{"Month"}</Link>{" month, int day, int hour)"}</code> | Creates a `MonthDayHour` from `month`, `day` and `hour`. |
 
 ## Fields
 

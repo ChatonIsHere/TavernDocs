@@ -21,9 +21,9 @@ Save data for a `Fire` (save structure version 2).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FireSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FireSaveData()"}</code> | Creates a `FireSaveData` with default values. |
 
 ## Fields
 

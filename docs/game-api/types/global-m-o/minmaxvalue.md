@@ -18,9 +18,9 @@ A serializable float range (min and max) for inspector settings.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MinMaxValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MinMaxValue()"}</code> | Creates a `MinMaxValue` with default values. |
 
 ## Fields
 

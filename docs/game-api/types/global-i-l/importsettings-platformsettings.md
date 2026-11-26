@@ -19,9 +19,9 @@ Asset import settings for one group of platforms, picked by `ImportSettings.Find
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformSettings()"}</code> | Creates an `ImportSettings.PlatformSettings` with default values. |
 
 ## Fields
 

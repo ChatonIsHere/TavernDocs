@@ -20,9 +20,9 @@ Serializer for a full `float`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FloatSerialization()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatSerialization()"}</code> | Creates a `TypeSerializationHelper.FloatSerialization` with default values. |
 
 ## Methods
 

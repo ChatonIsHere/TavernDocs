@@ -20,9 +20,9 @@ Web module that serves files from an `IAltaFolder`. Remote backed files are copi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaFolderModule("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string path)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaFolderModule("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" folder, string path)"}</code> | Creates an `AltaFolderModule` from `folder` and `path`. |
 
 ## Fields
 

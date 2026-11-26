@@ -20,6 +20,6 @@ Editor menu entry (Assets, Create, Township, Features, Items) that makes a new `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PresetLootSet.Create` with default values. |

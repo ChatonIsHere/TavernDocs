@@ -18,10 +18,10 @@ Network message for a pickup docking into or leaving a dock, sent by `PickupDock
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RequestDockArguments("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, bool isDocking, bool isFirstForced, bool isSnapping)"}</code> |
-| <Link id="m-ctor-2" /><code>{"RequestDockArguments("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, uint dockEntityIdentifier, bool isDocking, bool isFirstForced, bool isSnapping)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RequestDockArguments("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, "}<Link to="/game-api/types/alta-items/pickupdock">{"PickupDock"}</Link>{" dock, bool isDocking, bool isFirstForced, bool isSnapping)"}</code> | Creates a `RequestDockArguments` from `interactor`, `dockEntityIdentifier`, `isDocking`, `isFirstForced` and `isSnapping`. |
+| <Link id="m-ctor-2" /><code>{"RequestDockArguments("}<Link to="/game-api/types/global-i-l/interactor">{"Interactor"}</Link>{" interactor, uint dockEntityIdentifier, bool isDocking, bool isFirstForced, bool isSnapping)"}</code> | Creates a `RequestDockArguments` from `interactor`, `dockEntityIdentifier`, `isDocking`, `isFirstForced` and `isSnapping`. |
 
 ## Fields
 

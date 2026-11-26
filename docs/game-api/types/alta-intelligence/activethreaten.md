@@ -19,9 +19,9 @@ Action where the agent faces and threatens its target. If the target comes too c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveThreaten()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveThreaten()"}</code> | Creates an `ActiveThreaten` with default values. |
 
 ## Fields
 

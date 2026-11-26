@@ -18,9 +18,9 @@ Collects the logged-in player's playtime, platform and many comfort, locomotion 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserSettingsReport(string reportTitle)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserSettingsReport(string reportTitle)"}</code> | Creates an `UserSettingsReport` from `reportTitle`. |
 
 ## Fields
 

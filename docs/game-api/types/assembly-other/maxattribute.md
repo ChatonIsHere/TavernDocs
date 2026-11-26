@@ -19,9 +19,9 @@ Inspector attribute that sets a maximum for a float field. The drawer that enfor
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaxAttribute(float max)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaxAttribute(float max)"}</code> | Creates a `MaxAttribute` from `max`. |
 
 ## Fields
 

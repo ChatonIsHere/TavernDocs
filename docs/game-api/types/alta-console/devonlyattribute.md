@@ -19,9 +19,9 @@ Console requirement: the command (or settings property) is only for users whose 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DevOnlyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DevOnlyAttribute()"}</code> | Creates a `DevOnlyAttribute` with default values. |
 
 ## Methods
 

@@ -20,9 +20,9 @@ Networked root for static generation: picks a seed on the server, saves it, send
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StaticGenerationParent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StaticGenerationParent()"}</code> | Creates a `StaticGenerationParent` with default values. |
 
 ## Fields
 

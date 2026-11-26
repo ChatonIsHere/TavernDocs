@@ -18,9 +18,9 @@ Body of an Alta web API request to change a report's status.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModifyReportRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModifyReportRequest()"}</code> | Creates a `ModifyReportRequest` with default values. |
 
 ## Properties
 

@@ -20,9 +20,9 @@ Stores generated data (such as forest nodes) as cache files. `Instance` is a `Se
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected CacheManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected CacheManager()"}</code> | Creates a `CacheManager` with default values. |
 
 ## Properties
 

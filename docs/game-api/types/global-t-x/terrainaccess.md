@@ -19,16 +19,16 @@ A copied rectangle of a terrain's heightmap and splat (paint) map that can be ed
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TerrainAccess("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" terrain)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TerrainAccess("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" terrain)"}</code> | Creates a `TerrainAccess` from `terrain`, `x`, `y`, `width`, `height`, `isHeight` and `isSplat`. |
 
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor-2" /><code>{"internal TerrainAccess("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" terrain, int x, int y, int width, int height, bool isHeight, bool isSplat)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor-2" /><code>{"internal TerrainAccess("}<Link to="/game-api/types/global-t-x/terraininfo">{"TerrainInfo"}</Link>{" terrain, int x, int y, int width, int height, bool isHeight, bool isSplat)"}</code> | Creates a `TerrainAccess` from `terrain`, `x`, `y`, `width`, `height`, `isHeight` and `isSplat`. |
 
 </details>
 

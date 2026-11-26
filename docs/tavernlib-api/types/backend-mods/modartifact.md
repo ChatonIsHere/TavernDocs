@@ -19,20 +19,20 @@ One build of a mod from its manifest: which targets it's for, where to download 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModArtifact()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModArtifact()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-raw" /><code>{"private JObject _raw"}</code> |
-| <Link id="m-keyorder" /><code>{"private static readonly string[] KeyOrder"}</code> |
-| <Link id="m-librarykeyorder" /><code>{"private static readonly string[] LibraryKeyOrder"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-raw" /><code>{"private JObject _raw"}</code> | The artifact's original JSON object, kept so a record can write it back. |
+| <Link id="m-keyorder" /><code>{"private static readonly string[] KeyOrder"}</code> | Key order of an artifact in the compiled manifest, which a record keeps. |
+| <Link id="m-librarykeyorder" /><code>{"private static readonly string[] LibraryKeyOrder"}</code> | Key order of a library dependency entry in a record. |
 
 </details>
 
@@ -60,7 +60,7 @@ One build of a mod from its manifest: which targets it's for, where to download 
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-reordered" /><code>{"private static JObject Reordered(JObject source, string[] order)"}</code> |  |
+| <Link id="m-reordered" /><code>{"private static JObject Reordered(JObject source, string[] order)"}</code> | Copies a JSON object with the listed keys first, in that order, then any other keys. |
 | <Link id="m-torecordjson" /><code>{"internal JObject ToRecordJson()"}</code> | Internal: the artifact's original JSON with keys in the manifest's order, for writing into a mod record. |
 
 </details>

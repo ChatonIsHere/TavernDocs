@@ -22,9 +22,9 @@ Save data for `PlayerInteractionManager`: how many interactions each player has 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerInteractionManagerData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerInteractionManagerData()"}</code> | Creates a `PlayerInteractionManagerData` with default values. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Saved state of one recycler output slot: its index, fill amount and material.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SaveData()"}</code> | Creates a `RecyclerOutputSlot.SaveData` with default values. |
 
 ## Fields
 

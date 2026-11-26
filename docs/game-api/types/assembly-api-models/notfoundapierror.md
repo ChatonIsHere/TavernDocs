@@ -19,6 +19,6 @@ An `ApiError` preset for a missing object: message `Not found`, code `ObjectNotF
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NotFoundApiError()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NotFoundApiError()"}</code> | Creates a `NotFoundApiError` with default values. |

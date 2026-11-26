@@ -19,9 +19,9 @@ Game mode that runs a server in the same process and joins it as a client, for l
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LocalTestGameMode("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LocalTestGameMode("}<Link to="/game-api/types/assembly-api-client/iserveraccess">{"IServerAccess"}</Link>{" serverAccess)"}</code> | Creates a `LocalTestGameMode` from `serverAccess`. |
 
 ## Fields
 

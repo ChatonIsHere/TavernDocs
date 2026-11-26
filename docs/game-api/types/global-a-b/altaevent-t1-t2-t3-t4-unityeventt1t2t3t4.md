@@ -20,9 +20,9 @@ Event with four arguments that runs both an inspector `UnityEvent` and a C# even
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaEvent()"}</code> | Creates an `AltaEvent` with default values. |
 
 ## Fields
 

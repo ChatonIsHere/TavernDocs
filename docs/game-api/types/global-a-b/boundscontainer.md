@@ -18,9 +18,9 @@ A `Bounds` with a world rotation, for testing whether a point lies inside a rota
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoundsContainer()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoundsContainer()"}</code> | Creates a `BoundsContainer` with default values. |
 
 ## Fields
 

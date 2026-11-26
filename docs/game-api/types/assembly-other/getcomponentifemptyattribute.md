@@ -19,9 +19,9 @@ Like `GetComponentAttribute`, but only fills the field when it is empty.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetComponentIfEmptyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetComponentIfEmptyAttribute()"}</code> | Creates a `GetComponentIfEmptyAttribute` with default values. |
 
 ## Methods
 

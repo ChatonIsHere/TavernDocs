@@ -21,9 +21,9 @@ Save data for a `LockableHinge`: whether it has a lock and its state.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LockableHingeSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LockableHingeSaveData()"}</code> | Creates a `LockableHingeSaveData` with default values. |
 
 ## Fields
 

@@ -20,6 +20,6 @@ Editor menu entry for creating an `EmberComposer` skill asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `EmberComposer.Create` with default values. |

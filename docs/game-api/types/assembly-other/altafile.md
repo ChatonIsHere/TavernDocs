@@ -19,9 +19,9 @@ A file on disk with cached typed content (`IAltaFileFormat`), background reads, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaFile("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" parent, FileInfo info)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaFile("}<Link to="/game-api/types/assembly-other/ialtafolder">{"IAltaFolder"}</Link>{" parent, FileInfo info)"}</code> | Creates an `AltaFile` from `parent` and `info`. |
 
 ## Fields
 

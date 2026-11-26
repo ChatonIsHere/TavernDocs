@@ -19,9 +19,9 @@ Client: connects a UI `InputField` to the in-world VR `TouchScreenKeyboard`, sho
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InputFieldWithKeyboard()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InputFieldWithKeyboard()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Snapshot of an `UltimateRope` (third party Ultimate Rope Editor) with its skin m
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RopeData("}<Link to="/game-api/types/global-t-x/ultimaterope">{"UltimateRope"}</Link>{" rope)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RopeData("}<Link to="/game-api/types/global-t-x/ultimaterope">{"UltimateRope"}</Link>{" rope)"}</code> | Creates a `RopePersistManager.RopeData` from `rope`. |
 
 ## Fields
 

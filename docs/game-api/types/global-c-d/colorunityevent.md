@@ -20,6 +20,6 @@ Serializable `UnityEvent` that passes a `Color`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColorUnityEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColorUnityEvent()"}</code> | Creates a `ColorUnityEvent` with default values. |

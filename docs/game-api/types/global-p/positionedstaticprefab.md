@@ -19,9 +19,9 @@ A saved plain prefab with a local position and rotation, spawned under a parent 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionedStaticPrefab()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionedStaticPrefab()"}</code> | Creates a `PositionedStaticPrefab` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Settings shared with the launcher, read through `SettingsManager.LauncherConfig`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LauncherSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LauncherSettings()"}</code> | Creates a `LauncherSettings` with default values. |
 
 ## Properties
 

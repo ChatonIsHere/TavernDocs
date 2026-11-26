@@ -20,9 +20,9 @@ A circle on the ground where things (or players) spawn. Gives repeatable positio
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SpawnArea()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SpawnArea()"}</code> | Creates a `SpawnArea` with default values. |
 
 ## Fields
 

@@ -21,9 +21,9 @@ Save data (version 1) for `NetworkedFloatStream`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkedFloatStreamSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkedFloatStreamSaveData()"}</code> | Creates a `NetworkedFloatStreamSaveData` with default values. |
 
 ## Fields
 

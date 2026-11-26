@@ -19,9 +19,9 @@ Scoring rule on the creature's age: seconds since it was created, mapped from mi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Lifetime(float minimum, float maximum)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Lifetime(float minimum, float maximum)"}</code> | Creates a `Lifetime` from `minimum` and `maximum`. |
 
 ## Fields
 

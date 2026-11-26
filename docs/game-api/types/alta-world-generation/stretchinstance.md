@@ -19,9 +19,9 @@ Runtime instance of the `Stretch` plugin part: extends a height map into the Y a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StretchInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/stretch">{"Stretch"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StretchInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/stretch">{"Stretch"}</Link>{" part)"}</code> | Creates a `StretchInstance` from `plugin` and `part`. |
 
 ## Methods
 

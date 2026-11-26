@@ -19,9 +19,9 @@ A triangle of three forest nodes in a `ForestInfo`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Space()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Space()"}</code> | Creates a `WorldCommandModule.ForestCommandModule.ForestInfo.Space` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Serializable `UnityEvent` with a string argument, for inspector wiring. Used by 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StringHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StringHandler()"}</code> | Creates a `StringHandler` with default values. |
 
 ## Used in
 

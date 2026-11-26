@@ -19,9 +19,9 @@ One running mining echo pulse: a sphere that grows from where a tool hit, used b
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MiningEchoExecution(Vector3 center, "}<Link to="/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MiningEchoExecution(Vector3 center, "}<Link to="/game-api/types/global-m-o/miningecho-leveldefinition">{"MiningEcho.LevelDefinition"}</Link>{" levelDefinition)"}</code> | Creates a `MiningEcho.MiningEchoExecution` from `center` and `levelDefinition`. |
 
 ## Fields
 

@@ -23,12 +23,12 @@ Client patches on `JoinServerPipeline` and `JoinResult` that record a server's m
 <details>
 <summary>4 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-quickjoin" /><code>{"private static MelonPreferences_Entry<bool> _quickJoin"}</code> |
-| <Link id="m-refusedat" /><code>{"private static DateTime _refusedAt"}</code> |
-| <Link id="m-refusedby" /><code>{"private static string _refusedBy"}</code> |
-| <Link id="m-shown" /><code>{"private static string _shown"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-quickjoin" /><code>{"private static MelonPreferences_Entry<bool> _quickJoin"}</code> | The "Quick join" mod preference, which mirrors the `quick_join` file. |
+| <Link id="m-refusedat" /><code>{"private static DateTime _refusedAt"}</code> | When that refusal happened, UTC; a handover only counts within 10 minutes. |
+| <Link id="m-refusedby" /><code>{"private static string _refusedBy"}</code> | Name of the server that last refused this client over mods, or null when a handover isn't possible. |
+| <Link id="m-shown" /><code>{"private static string _shown"}</code> | The rejection text TavernLib put in the join message, so `ShowWhy` can recognise it. |
 
 </details>
 
@@ -37,10 +37,10 @@ Client patches on `JoinServerPipeline` and `JoinResult` that record a server's m
 <details>
 <summary>2 private and internal properties</summary>
 
-| Member |
-| --- |
-| <Link id="m-launcherexe" /><code>{"private static string LauncherExe { get; }"}</code> |
-| <Link id="m-launcherwatching" /><code>{"private static bool LauncherWatching { get; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-launcherexe" /><code>{"private static string LauncherExe { get; }"}</code> | Path to the launcher read from the launcher path file, or null if it is missing or gone. |
+| <Link id="m-launcherwatching" /><code>{"private static bool LauncherWatching { get; }"}</code> | True when the game was started with `/force_offline`, which the launcher passes and watches for. |
 
 </details>
 
@@ -56,10 +56,10 @@ Client patches on `JoinServerPipeline` and `JoinResult` that record a server's m
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-handover" /><code>{"private static bool HandOver()"}</code> |
-| <Link id="m-handoversoon" /><code>{"private static IEnumerator HandOverSoon() (iterator)"}</code> |
-| <Link id="m-save" /><code>{"private static void Save(string json)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-handover" /><code>{"private static bool HandOver()"}</code> | Marks the rejection record to rejoin, starts the launcher if it isn't watching, and quits the game; false if that fails. |
+| <Link id="m-handoversoon" /><code>{"private static IEnumerator HandOverSoon() (iterator)"}</code> | Coroutine that waits 4 seconds so the player can read the message, then calls `HandOver`. |
+| <Link id="m-save" /><code>{"private static void Save(string json)"}</code> | Writes the rejection JSON to `last_rejection.json` through a temp file. |
 
 </details>

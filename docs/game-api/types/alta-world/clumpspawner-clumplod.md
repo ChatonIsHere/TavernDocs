@@ -19,9 +19,9 @@ One LOD step of a `ClumpSpawner`: the prefab spawned at that level and the rende
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClumpLOD()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClumpLOD()"}</code> | Creates a `ClumpSpawner.ClumpLOD` with default values. |
 
 ## Fields
 

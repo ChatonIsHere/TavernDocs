@@ -20,6 +20,6 @@ Editor menu folder `Township/Features/Forging`: menu item classes inherit it to 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Forging()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Forging()"}</code> | Creates an `AltaMenuItemBase.Township.Features.Forging` with default values. |

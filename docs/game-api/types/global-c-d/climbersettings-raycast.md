@@ -19,9 +19,9 @@ A start and end point for one climbing raycast, listed in `ClimberSettings.rayca
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Raycast()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Raycast()"}</code> | Creates a `ClimberSettings.Raycast` with default values. |
 
 ## Fields
 

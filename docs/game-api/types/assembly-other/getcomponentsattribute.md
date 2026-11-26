@@ -20,9 +20,9 @@ Array field attribute that fills the field with all matching components on the s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GetComponentsAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GetComponentsAttribute()"}</code> | Creates a `GetComponentsAttribute` with default values. |
 
 ## Fields
 

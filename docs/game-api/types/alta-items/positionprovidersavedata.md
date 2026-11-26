@@ -21,9 +21,9 @@ Save data for `PositionProvider`, which sends its transform's position as a logi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PositionProviderSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PositionProviderSaveData()"}</code> | Creates a `PositionProviderSaveData` with default values. |
 
 ## Fields
 

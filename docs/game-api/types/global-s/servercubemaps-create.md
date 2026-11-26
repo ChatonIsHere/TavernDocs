@@ -20,6 +20,6 @@ Editor menu entry for creating a `ServerCubeMaps` asset under the Township meta 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ServerCubeMaps.Create` with default values. |

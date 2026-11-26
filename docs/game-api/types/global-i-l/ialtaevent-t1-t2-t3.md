@@ -19,6 +19,6 @@ An event with three values, raised with `Invoke`.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"void Invoke(T1 argument1, T2 argument2, T3 arguments3)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"void Invoke(T1 argument1, T2 argument2, T3 arguments3)"}</code> | Fires the event with all three arguments. |

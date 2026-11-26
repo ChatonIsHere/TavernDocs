@@ -21,17 +21,17 @@ Damage data for a physical hit (tool, particle and so on) on an `ImpactDetector`
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor-3" /><code>{"ImpactHit(float baseHealthDamage, float baseCrippleDamage, float multipliers, float effectiveness, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" impactType, Vector3 point, Vector3 normal, Vector3 direction, Collider struckCollider, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder)"}</code> |
-| <Link id="m-ctor-2" /><code>{"protected ImpactHit(float baseHealthDamage, float baseCrippleDamage, float multipliers, float effectiveness, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" impactType, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor-3" /><code>{"ImpactHit(float baseHealthDamage, float baseCrippleDamage, float multipliers, float effectiveness, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" impactType, Vector3 point, Vector3 normal, Vector3 direction, Collider struckCollider, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder)"}</code> | Creates an `ImpactHit` from `baseHealthDamage`, `baseCrippleDamage`, `multipliers`, `effectiveness`, `detector`, `impactType`, `point`, `normal`, `direction`, `struckCollider`, `wielder` and `playerWielder`. |
+| <Link id="m-ctor-2" /><code>{"protected ImpactHit(float baseHealthDamage, float baseCrippleDamage, float multipliers, float effectiveness, "}<Link to="/game-api/types/alta-items/impactdetector">{"ImpactDetector"}</Link>{" detector, "}<Link to="/game-api/types/alta-items/impacttype">{"ImpactType"}</Link>{" impactType, "}<Link to="/game-api/types/alta-networking/networkentity">{"NetworkEntity"}</Link>{" wielder, "}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" playerWielder)"}</code> | Creates an `ImpactHit` from `baseHealthDamage`, `baseCrippleDamage`, `multipliers`, `effectiveness`, `detector`, `impactType`, `point`, `normal`, `direction`, `struckCollider`, `wielder` and `playerWielder`. |
 
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private ImpactHit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private ImpactHit()"}</code> | Creates an `ImpactHit` from `baseHealthDamage`, `baseCrippleDamage`, `multipliers`, `effectiveness`, `detector`, `impactType`, `point`, `normal`, `direction`, `struckCollider`, `wielder` and `playerWielder`. |
 
 </details>
 

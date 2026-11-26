@@ -19,9 +19,9 @@ One float in an `EnvironmentLerp` that blends from a start value to a target.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Variable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Variable()"}</code> | Creates an `EnvironmentLerp.Variable` with default values. |
 
 ## Properties
 

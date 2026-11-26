@@ -19,9 +19,9 @@ Base class for items in a `StablePriorityQueue`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StablePriorityQueueNode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StablePriorityQueueNode()"}</code> | Creates a `StablePriorityQueueNode` with default values. |
 
 ## Properties
 

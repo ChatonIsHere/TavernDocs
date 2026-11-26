@@ -20,6 +20,6 @@ Editor menu folder `GameObject/3rd Party/Gena`: menu item classes inherit it to 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Gena()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Gena()"}</code> | Creates an `AltaMenuItemBase.GameObject._3rd_Party.Gena` with default values. |

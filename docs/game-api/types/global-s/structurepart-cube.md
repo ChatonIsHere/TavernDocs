@@ -19,9 +19,9 @@ Old per-tile side data for a `StructurePart`. Now only read in the editor to con
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Cube()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Cube()"}</code> | Creates a `StructurePart.Cube` with default values. |
 
 ## Fields
 

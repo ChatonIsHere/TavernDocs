@@ -20,9 +20,9 @@ Serializable `UnityEvent` with a float argument, so float events can be wired in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FloatUnityEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FloatUnityEvent()"}</code> | Creates a `FloatUnityEvent` with default values. |
 
 ## Used in
 

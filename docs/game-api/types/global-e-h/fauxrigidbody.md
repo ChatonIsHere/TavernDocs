@@ -18,9 +18,9 @@ Moves a transform by a velocity and angular velocity each time `Update` is calle
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FauxRigidbody(Transform targetTransform)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FauxRigidbody(Transform targetTransform)"}</code> | Creates a `FauxRigidbody` from `targetTransform`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ A cave teleporter whose destination layer is picked with a `LevelSelector`. Each
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LevelSelectCaveTeleporter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LevelSelectCaveTeleporter()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 

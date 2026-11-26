@@ -21,9 +21,9 @@ Save data for a `CookingPot` (version 1): its current cooking stage.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CookingPotSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CookingPotSaveData()"}</code> | Creates a `CookingPotSaveData` with default values. |
 
 ## Fields
 

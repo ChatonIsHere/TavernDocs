@@ -18,9 +18,9 @@ Tracks the pose of one SteamVR tracked device index. `SteamVRDeviceLifecycle` ke
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SteamVRPose(SteamVR_TrackedObject.EIndex index)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SteamVRPose(SteamVR_TrackedObject.EIndex index)"}</code> | Creates a `SteamVRPose` from `index`. |
 
 ## Fields
 

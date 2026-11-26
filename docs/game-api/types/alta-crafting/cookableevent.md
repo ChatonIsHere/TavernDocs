@@ -19,9 +19,9 @@ A serialized event that passes a `Cookable`, set up in the Inspector. `CookingPo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CookableEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CookableEvent()"}</code> | Creates a `CookableEvent` with default values. |
 
 ## Used in
 

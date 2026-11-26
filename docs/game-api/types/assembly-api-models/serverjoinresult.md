@@ -18,9 +18,9 @@ Web API reply to a request to join a game server: whether it's allowed, why not,
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerJoinResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerJoinResult()"}</code> | Creates a `ServerJoinResult` with default values. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Look of the shell drawn around a player for a stat buff or debuff: colours, wave
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatEffectShellSetting(bool isBuff)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatEffectShellSetting(bool isBuff)"}</code> | Creates a `StatEffectShellSetting` from `isBuff`. |
 
 ## Fields
 

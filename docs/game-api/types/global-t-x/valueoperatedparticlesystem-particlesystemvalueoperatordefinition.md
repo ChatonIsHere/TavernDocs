@@ -19,9 +19,9 @@ Inspector entry pairing a particle system value with a curve. Builds the matchin
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ParticleSystemValueOperatorDefinition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ParticleSystemValueOperatorDefinition()"}</code> | Creates a `ValueOperatedParticleSystem.ParticleSystemValueOperatorDefinition` with default values. |
 
 ## Fields
 

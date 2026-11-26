@@ -19,9 +19,9 @@ One recorded position and rotation of a tracked object, with which update loop r
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ObjectSnapshot()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ObjectSnapshot()"}</code> | Creates an `ObjectHistory.ObjectSnapshot` with default values. |
 
 ## Properties
 

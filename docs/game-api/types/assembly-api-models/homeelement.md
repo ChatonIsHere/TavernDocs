@@ -18,9 +18,9 @@ Web API model for one element of the game's home screen layout (`GameHomeConfigu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HomeElement()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HomeElement()"}</code> | Creates a `HomeElement` with default values. |
 
 ## Properties
 

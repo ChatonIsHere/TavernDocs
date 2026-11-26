@@ -19,9 +19,9 @@ Skill input method made by a `HandPositionStructure`: turns active after the hel
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandPositionInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandPositionInput()"}</code> | Creates a `HandPositionInput` with default values. |
 
 ## Fields
 

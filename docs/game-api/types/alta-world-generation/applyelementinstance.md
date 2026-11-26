@@ -19,9 +19,9 @@ Runtime instance of the `ApplyElement` plugin part: combines every cell of the l
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ApplyElementInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/applyelement">{"ApplyElement"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ApplyElementInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/applyelement">{"ApplyElement"}</Link>{" part)"}</code> | Creates an `ApplyElementInstance` from `plugin` and `part`. |
 
 ## Fields
 

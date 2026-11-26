@@ -19,9 +19,9 @@ Console requirement: the command runs freely on non-simple servers; on a simple 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NonSimpleServerAttribute(params string[] roles)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NonSimpleServerAttribute(params string[] roles)"}</code> | Creates a `NonSimpleServerAttribute` from `roles`. |
 
 ## Fields
 

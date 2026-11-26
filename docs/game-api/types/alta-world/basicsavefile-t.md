@@ -19,9 +19,9 @@ File format that stores one `BasicSaveData` object in an Alta file, through a `B
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BasicSaveFile()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BasicSaveFile()"}</code> | Creates a `BasicSaveFile` with default values. |
 
 ## Fields
 

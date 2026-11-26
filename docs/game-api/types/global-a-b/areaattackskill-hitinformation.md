@@ -19,11 +19,11 @@ Where an area attack hit something and which chunk that point is in, kept by `Ar
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HitInformation()"}</code> |
-| <Link id="m-ctor-2" /><code>{"HitInformation(Vector3 position)"}</code> |
-| <Link id="m-ctor-3" /><code>{"HitInformation(Vector3 position, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HitInformation()"}</code> | Creates an `AreaAttackSkill.HitInformation` from `position` and `chunk`. |
+| <Link id="m-ctor-2" /><code>{"HitInformation(Vector3 position)"}</code> | Creates an `AreaAttackSkill.HitInformation` from `position` and `chunk`. |
+| <Link id="m-ctor-3" /><code>{"HitInformation(Vector3 position, "}<Link to="/game-api/types/alta-world/chunk">{"Chunk"}</Link>{" chunk)"}</code> | Creates an `AreaAttackSkill.HitInformation` from `position` and `chunk`. |
 
 ## Fields
 

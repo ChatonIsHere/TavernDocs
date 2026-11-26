@@ -18,9 +18,9 @@ Internal pair of integer coordinates used by `LineDraw` and the room flood fill.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Point(int x, int y)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Point(int x, int y)"}</code> | Creates a `Point` from `x` and `y`. |
 
 ## Fields
 

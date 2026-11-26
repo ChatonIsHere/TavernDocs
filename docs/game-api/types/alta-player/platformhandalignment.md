@@ -18,9 +18,9 @@ A hand offset for one platform (player mode), listed per hand in `ControllerOffs
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformHandAlignment()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformHandAlignment()"}</code> | Creates a `PlatformHandAlignment` with default values. |
 
 ## Fields
 

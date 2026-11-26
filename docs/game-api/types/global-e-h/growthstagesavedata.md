@@ -21,9 +21,9 @@ Save data for a `GrowthStageComponent`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrowthStageSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrowthStageSaveData()"}</code> | Creates a `GrowthStageSaveData` with default values. |
 
 ## Fields
 

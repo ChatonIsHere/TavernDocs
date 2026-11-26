@@ -18,9 +18,9 @@ Body for asking the API whether a user has permissions in a group or on a server
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GroupPermissionsCheckRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GroupPermissionsCheckRequest()"}</code> | Creates a `GroupPermissionsCheckRequest` with default values. |
 
 ## Properties
 

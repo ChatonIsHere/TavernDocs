@@ -23,9 +23,9 @@ Disposable that does nothing. Used for `Disposable.Empty`.
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private EmptyDisposable()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private EmptyDisposable()"}</code> | Creates a `Disposable.EmptyDisposable` with default values. |
 
 </details>
 

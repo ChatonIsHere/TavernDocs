@@ -18,10 +18,10 @@ Result of a Talem shop purchase: success, or a `PurchaseError` saying why it fai
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> |
-| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" error)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PurchaseResult()"}</code> | Creates a `PurchaseResult` from `error`. |
+| <Link id="m-ctor-2" /><code>{"PurchaseResult("}<Link to="/game-api/types/game-other-namespaces/purchaseerror">{"PurchaseError"}</Link>{" error)"}</code> | Creates a `PurchaseResult` from `error`. |
 
 ## Fields
 

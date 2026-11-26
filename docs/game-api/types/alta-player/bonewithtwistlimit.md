@@ -19,9 +19,9 @@ A bone and how far it may twist, set in the inspector. `ShoulderTwistControllerH
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BoneWithTwistLimit()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BoneWithTwistLimit()"}</code> | Creates a `BoneWithTwistLimit` with default values. |
 
 ## Fields
 

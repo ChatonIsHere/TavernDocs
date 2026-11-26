@@ -21,9 +21,9 @@ Server: one remote console connection over WebSocket (Fleck). The first message 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebSocketCommandHandler(IWebSocketConnection connection)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebSocketCommandHandler(IWebSocketConnection connection)"}</code> | Creates a `WebSocketCommandHandler` from `connection`. |
 
 ## Fields
 
@@ -37,7 +37,7 @@ Server: one remote console connection over WebSocket (Fleck). The first message 
 | <Link id="m-connectionstring" /><code>{"private readonly string connectionString"}</code> | Private: the client's IP and port, used in log lines. |
 | <Link id="m-context" /><code>{"private "}<Link to="/game-api/types/alta-console/commandcontext">{"CommandContext"}</Link>{" context"}</code> | Private: the command context (user plus server permissions) every command from this connection runs with. |
 | <Link id="m-jsonsettings" /><code>{"private static readonly JsonSerializerSettings jsonSettings"}</code> | Private: JSON settings for responses, with converters for Unity vectors and nullable types. |
-| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> |  |
+| <Link id="m-logger" /><code>{"private static readonly Logger logger"}</code> | Logger for this class. |
 | <Link id="m-subscriptions" /><code>{"private readonly HashSet<string> subscriptions"}</code> | Private: the console event types this connection is subscribed to. |
 
 </details>

@@ -19,9 +19,9 @@ Static folder roots the game reads and writes: the storage folder (AppData `A To
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AltaIO()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AltaIO()"}</code> | Creates an `AltaIO` with default values. |
 
 ## Fields
 

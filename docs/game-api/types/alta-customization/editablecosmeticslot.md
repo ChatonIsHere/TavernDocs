@@ -19,9 +19,9 @@ An `EditableSlot` for cosmetics, used by `CosmeticCustomizationManager`. Adds no
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EditableCosmeticSlot()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EditableCosmeticSlot()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Used in
 

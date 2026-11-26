@@ -19,9 +19,9 @@ A serializable `AltaEvent` that passes a `LockableHinge`, used for lock and ches
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"LockableEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"LockableEvent()"}</code> | Creates a `LockableEvent` with default values. |
 
 ## Used in
 

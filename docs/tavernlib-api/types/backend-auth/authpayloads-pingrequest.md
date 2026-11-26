@@ -23,8 +23,8 @@ A `ping` request. Any payload with a `ping` key is answered with a `PingResponse
 <details>
 <summary>1 private and internal property</summary>
 
-| Member |
-| --- |
-| <Link id="m-ping" /><code>{"private bool Ping { get; set; }"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ping" /><code>{"private bool Ping { get; set; }"}</code> | The `ping` field of a ping request. |
 
 </details>

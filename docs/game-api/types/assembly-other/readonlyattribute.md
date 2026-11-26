@@ -19,10 +19,10 @@ Inspector attribute that shows a field as read only, with separate modes for in 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ReadOnlyAttribute("}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" mode = 1)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ReadOnlyAttribute("}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" outOfPlayMode, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" inPlayMode)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ReadOnlyAttribute("}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" mode = 1)"}</code> | Creates a `ReadOnlyAttribute` from `outOfPlayMode` and `inPlayMode`. |
+| <Link id="m-ctor-2" /><code>{"ReadOnlyAttribute("}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" outOfPlayMode, "}<Link to="/game-api/types/assembly-other/readonlymode">{"ReadOnlyMode"}</Link>{" inPlayMode)"}</code> | Creates a `ReadOnlyAttribute` from `outOfPlayMode` and `inPlayMode`. |
 
 ## Properties
 

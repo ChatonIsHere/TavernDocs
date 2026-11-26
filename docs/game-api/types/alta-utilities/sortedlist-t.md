@@ -19,9 +19,9 @@ List kept in ascending order by a comparer, with linear time inserts. Not `Syste
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SortedList(IComparer<T> comparer)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SortedList(IComparer<T> comparer)"}</code> | Creates a `SortedList` from `comparer`. |
 
 ## Fields
 

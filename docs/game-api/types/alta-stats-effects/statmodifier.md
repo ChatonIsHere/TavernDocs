@@ -20,10 +20,10 @@ A modifier that adds to or multiplies one stat while it's applied. Buff and non-
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StatModifier("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition, float value, bool isMultiplier = false, bool isBuff = true)"}</code> |
-| <Link id="m-ctor-2" /><code>{"StatModifier("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float value, bool isMultiplier = false, bool isBuff = true)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StatModifier("}<Link to="/game-api/types/alta-stats-effects/statdefinition">{"StatDefinition"}</Link>{" statDefinition, float value, bool isMultiplier = false, bool isBuff = true)"}</code> | Creates a `StatModifier` from `stat`, `value`, `isMultiplier` and `isBuff`. |
+| <Link id="m-ctor-2" /><code>{"StatModifier("}<Link to="/game-api/types/alta-stats-effects/stat">{"Stat"}</Link>{" stat, float value, bool isMultiplier = false, bool isBuff = true)"}</code> | Creates a `StatModifier` from `stat`, `value`, `isMultiplier` and `isBuff`. |
 
 ## Fields
 

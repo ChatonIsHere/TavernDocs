@@ -19,9 +19,9 @@ Moves a player from FirstJoin straight to Playing. `FirstJoinState` triggers it 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FirstJoinToPlayingTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FirstJoinToPlayingTransition()"}</code> | Creates a `FirstJoinToPlayingTransition` with default values. |
 
 ## Methods
 

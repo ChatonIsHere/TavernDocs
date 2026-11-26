@@ -21,9 +21,9 @@ A one-shot scheduled callback in a `Timeline` priority queue, ordered by target 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Entry(Action callback)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Entry(Action callback)"}</code> | Creates a `Timeline.Entry` from `callback`. |
 
 ## Fields
 

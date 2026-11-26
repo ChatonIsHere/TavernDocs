@@ -19,9 +19,9 @@ Synchronous factory taking three parameters. Subclasses build the object in `Cre
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Factory()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Factory()"}</code> | Creates a `Factory` with default values. |
 
 ## Methods
 

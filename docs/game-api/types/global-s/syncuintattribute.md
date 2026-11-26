@@ -20,6 +20,6 @@ Obsolete `SyncAttribute` that marks a `uint` field for syncing, with a chosen nu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SyncUintAttribute(int bits = 32)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SyncUintAttribute(int bits = 32)"}</code> | Creates a `SyncUintAttribute` from `bits`. |

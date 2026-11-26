@@ -20,9 +20,9 @@ A notification list entry for a status message from the Alta API. Has no accept 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"APIStatusNotification("}<Link to="/game-api/types/assembly-api-client/status">{"Status"}</Link>{" status, "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"APIStatusNotification("}<Link to="/game-api/types/assembly-api-client/status">{"Status"}</Link>{" status, "}<Link to="/game-api/types/alta-menus/panel">{"Panel"}</Link>{" panel)"}</code> | Creates an `APIStatusNotification` from `status` and `panel`. |
 
 ## Fields
 

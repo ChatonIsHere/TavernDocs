@@ -19,9 +19,9 @@ Protected helper that pairs a regeneration amount with a duration. Nothing in `H
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RegenUnit(float amount, int duration)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RegenUnit(float amount, int duration)"}</code> | Creates a `HealthObject.RegenUnit` from `amount` and `duration`. |
 
 ## Fields
 

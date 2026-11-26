@@ -20,9 +20,9 @@ Old duration effect stub from the earlier alchemy code. It stores a strength and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DamageOverTime(float strength, float frequency)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DamageOverTime(float strength, float frequency)"}</code> | Creates a `DamageOverTime` from `strength` and `frequency`. |
 
 ## Properties
 

@@ -21,9 +21,9 @@ Stacking instructions asset that piles items in an inverted triangle inside a do
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InvertedTriangleStackingInstruction()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InvertedTriangleStackingInstruction()"}</code> | Use `ScriptableObject.CreateInstance` instead of `new`; Unity loads the saved ones from assets. |
 
 ## Fields
 

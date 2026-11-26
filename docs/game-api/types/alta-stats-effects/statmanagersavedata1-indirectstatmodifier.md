@@ -19,9 +19,9 @@ Version 1 save record of indirect modifiers on one stat, with time in seconds. M
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IndirectStatModifier()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IndirectStatModifier()"}</code> | Creates a `StatManagerSaveData1.IndirectStatModifier` with default values. |
 
 ## Fields
 

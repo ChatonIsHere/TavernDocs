@@ -19,9 +19,9 @@ Heats one pickup's `HeatPointCollection` for an `EmberComposer` skill input.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HeatPointCollectionHandler("}<Link to="/game-api/types/global-e-h/embercomposer">{"EmberComposer"}</Link>{" composer, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HeatPointCollectionHandler("}<Link to="/game-api/types/global-e-h/embercomposer">{"EmberComposer"}</Link>{" composer, "}<Link to="/game-api/types/global-i-l/iskillinputmethod">{"ISkillInputMethod"}</Link>{" input)"}</code> | Creates an `EmberComposer.HeatPointCollectionHandler` from `composer` and `input`. |
 
 ## Fields
 

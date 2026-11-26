@@ -18,9 +18,9 @@ Network message that tells remote players' copies whether a player's IK body con
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IKControllerMessage()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IKControllerMessage()"}</code> | Creates an `IKControllerMessage` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Obsolete static service locator for platform services, used until dependency inj
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InterfaceResolver()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InterfaceResolver()"}</code> | Creates an `InterfaceResolver` with default values. |
 
 ## Fields
 

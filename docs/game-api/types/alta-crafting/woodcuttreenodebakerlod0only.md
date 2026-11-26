@@ -19,9 +19,9 @@ Node baker that only bakes LOD 0. Use the shared `Instance`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WoodcutTreeNodeBakerLod0Only()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WoodcutTreeNodeBakerLod0Only()"}</code> | Creates a `WoodcutTreeNodeBakerLod0Only` with default values. |
 
 ## Properties
 

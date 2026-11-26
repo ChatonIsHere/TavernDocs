@@ -19,9 +19,9 @@ A loaded population child waiting to be re-added to its population, with the spa
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SerializedChild(int spawnPointIndex)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SerializedChild(int spawnPointIndex)"}</code> | Creates a `PopulationFolderBase.SerializedChild` from `spawnPointIndex`. |
 
 ## Properties
 

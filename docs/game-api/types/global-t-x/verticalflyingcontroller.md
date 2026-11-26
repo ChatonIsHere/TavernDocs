@@ -19,9 +19,9 @@ Makes a flying object bob up and down over the ground. The server picks random t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"VerticalFlyingController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"VerticalFlyingController()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -31,7 +31,7 @@ Makes a flying object bob up and down over the ground. The server picks random t
 | Member | What it is |
 | --- | --- |
 | <Link id="m-acceleration" /><code>{"private float acceleration"}</code> | Vertical acceleration per second toward the target. |
-| <Link id="m-cachedposition" /><code>{"private Vector3 cachedPosition"}</code> |  |
+| <Link id="m-cachedposition" /><code>{"private Vector3 cachedPosition"}</code> | Declared but never used. |
 | <Link id="m-isheldordocked" /><code>{"private bool isHeldOrDocked"}</code> | Whether the pickup is held or docked right now. |
 | <Link id="m-maxvelocity" /><code>{"private float maxVelocity"}</code> | Cap on vertical speed. |
 | <Link id="m-modulator" /><code>{"private AnimationCurve modulator"}</code> | Curve sampled with a random value to size each move, as a fraction of `movementAmplitude`. |

@@ -19,9 +19,9 @@ A **class** in `Root.Township`, `Alta.Pages`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PageCollectionConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PageCollectionConverter()"}</code> | Creates a `PageCollectionConverter` with default values. |
 
 ## Methods
 

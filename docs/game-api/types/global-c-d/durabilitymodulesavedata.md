@@ -21,9 +21,9 @@ Save data for a `DurabilityModule`: its remaining integrity.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DurabilityModuleSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DurabilityModuleSaveData()"}</code> | Creates a `DurabilityModuleSaveData` with default values. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ Web API model that wraps a single JWT.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimpleTokenResultResponse(JwtSecurityToken token)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimpleTokenResultResponse(JwtSecurityToken token)"}</code> | Creates a `SimpleTokenResultResponse` from `token`. |
 
 ## Properties
 

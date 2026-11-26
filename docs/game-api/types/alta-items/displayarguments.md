@@ -18,10 +18,10 @@ Message payload a `Book` sends to chunks to update its page counter: pages found
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DisplayArguments()"}</code> |
-| <Link id="m-ctor-2" /><code>{"DisplayArguments(int displayPageFound, int displayPageTotal, int pageNumber)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DisplayArguments()"}</code> | Creates a `DisplayArguments` from `displayPageFound`, `displayPageTotal` and `pageNumber`. |
+| <Link id="m-ctor-2" /><code>{"DisplayArguments(int displayPageFound, int displayPageTotal, int pageNumber)"}</code> | Creates a `DisplayArguments` from `displayPageFound`, `displayPageTotal` and `pageNumber`. |
 
 ## Fields
 

@@ -20,9 +20,9 @@ Old save format (version 1) for `GeneratedLoot`, with the refill timer in float 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GeneratedLootSaveData1()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GeneratedLootSaveData1()"}</code> | Creates a `GeneratedLootSaveData1` with default values. |
 
 ## Fields
 

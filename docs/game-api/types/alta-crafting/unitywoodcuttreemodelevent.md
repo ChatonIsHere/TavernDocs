@@ -20,6 +20,6 @@ Serializable Unity event that passes a `WoodcutTreeModel`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UnityWoodcutTreeModelEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UnityWoodcutTreeModelEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |

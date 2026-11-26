@@ -18,9 +18,9 @@ One rename entry in the XML `SectorNames` file: an original sector name and what
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SectorName()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SectorName()"}</code> | Creates a `SectorName` with default values. |
 
 ## Fields
 

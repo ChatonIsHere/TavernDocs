@@ -20,9 +20,9 @@ The server's packet receiver. Each frame it takes packets from the transport, ha
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerPacketReceiver("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerPacketReceiver("}<Link to="/game-api/types/alta-networking/isocket">{"ISocket"}</Link>{" socket)"}</code> | Creates a `ServerPacketReceiver` from `socket`. |
 
 ## Fields
 

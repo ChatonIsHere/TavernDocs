@@ -20,6 +20,6 @@ Editor menu item under Assets/Create/Township/Features/Stats that makes a new `S
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StatEffectsDefinition.Create` with default values. |

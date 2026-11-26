@@ -20,9 +20,9 @@ A list that raises events when items are added or removed. Adding through the `I
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ListenedList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ListenedList()"}</code> | Creates a `ListenedList` with default values. |
 
 ## Fields
 

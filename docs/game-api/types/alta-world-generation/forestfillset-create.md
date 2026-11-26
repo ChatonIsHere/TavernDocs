@@ -20,6 +20,6 @@ Editor menu entry that creates a new `ForestFillSet` asset under the Township Ge
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `ForestFillSet.Create` with default values. |

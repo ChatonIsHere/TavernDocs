@@ -21,9 +21,9 @@ The state a player starts in on their first join. Its only job is to move them o
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FirstJoinState()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FirstJoinState()"}</code> | Creates a `FirstJoinState` with default values. |
 
 ## Properties
 

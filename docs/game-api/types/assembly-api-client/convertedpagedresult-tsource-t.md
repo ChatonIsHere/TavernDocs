@@ -19,9 +19,9 @@ Wraps a paged API result and converts each item with a function, so a page of on
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ConvertedPagedResult("}<Link to="/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<TSource> pagedResult, Func<TSource, T> p)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ConvertedPagedResult("}<Link to="/game-api/types/assembly-api-client/ipagedresult-t">{"IPagedResult"}</Link>{"<TSource> pagedResult, Func<TSource, T> p)"}</code> | Creates a `ConvertedPagedResult` from `pagedResult` and `p`. |
 
 ## Fields
 

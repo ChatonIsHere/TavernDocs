@@ -18,9 +18,9 @@ Data sent with `GrabAssistController.GrabAssistUpdated` each time the grab assis
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GrabAssistEventData(bool success, Vector3 origin, Vector3 target, float length)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GrabAssistEventData(bool success, Vector3 origin, Vector3 target, float length)"}</code> | Creates a `GrabAssistEventData` from `success`, `origin`, `target` and `length`. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Details of a rope break, sent to the rope's events receiver when a link joint br
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RopeBreakEventInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RopeBreakEventInfo()"}</code> | Creates an `UltimateRope.RopeBreakEventInfo` with default values. |
 
 ## Fields
 

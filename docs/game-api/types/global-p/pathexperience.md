@@ -19,9 +19,9 @@ A player's progress on one progression path (forging, mining and so on): XP, lev
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PathExperience("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager, Action<bool> leveledUp, Action<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> updatedPoints)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PathExperience("}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{" path, "}<Link to="/game-api/types/global-p/playerprogressionmanager">{"PlayerProgressionManager"}</Link>{" manager, Action<bool> leveledUp, Action<"}<Link to="/game-api/types/global-p/progressionpath">{"ProgressionPath"}</Link>{"> updatedPoints)"}</code> | Creates a `PathExperience` from `path`, `manager`, `leveledUp` and `updatedPoints`. |
 
 ## Fields
 

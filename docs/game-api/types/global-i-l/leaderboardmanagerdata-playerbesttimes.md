@@ -19,9 +19,9 @@ Saved best times for one player across leaderboards.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerBestTimes()"}</code> | Creates a `LeaderboardManagerData.PlayerBestTimes` with default values. |
 
 ## Fields
 

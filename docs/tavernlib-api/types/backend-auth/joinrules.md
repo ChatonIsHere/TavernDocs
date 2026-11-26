@@ -35,9 +35,9 @@ Internal: who may join, checked on the auth port and again at the game port, whi
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-hasentries" /><code>{"private static bool HasEntries("}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" list)"}</code> |
-| <Link id="m-matches" /><code>{"private static bool Matches("}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" list, string username, ulong? userId, string address, string registeredFrom)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-hasentries" /><code>{"private static bool HasEntries("}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" list)"}</code> | Returns whether a list has any username, address or user id. |
+| <Link id="m-matches" /><code>{"private static bool Matches("}<Link to="/tavernlib-api/types/backend-server-configs/userconfig-listconfig">{"UserConfig.ListConfig"}</Link>{" list, string username, ulong? userId, string address, string registeredFrom)"}</code> | Returns whether a list holds the username (ignoring case), user id, address, or the address the account registered from. |
 
 </details>

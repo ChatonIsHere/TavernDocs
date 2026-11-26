@@ -19,9 +19,9 @@ JSON shape for the hardcoded chest loot list `OWLoot` reads: loot module setting
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkData()"}</code> | Creates a `WackyCommandModule.ChunkData` with default values. |
 
 ## Fields
 

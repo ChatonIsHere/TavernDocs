@@ -19,9 +19,9 @@ A renderer's original material and the swapped copy a hand camera filter shows i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaterialTuple()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaterialTuple()"}</code> | Creates a `PlayerSwapMaterialFilter.MaterialTuple` with default values. |
 
 ## Fields
 

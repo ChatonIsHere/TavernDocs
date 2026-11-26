@@ -18,9 +18,9 @@ A timeline of days and knowledge events for the experimental AI reasoning system
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"History()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"History()"}</code> | Creates a `History` with default values. |
 
 ## Fields
 

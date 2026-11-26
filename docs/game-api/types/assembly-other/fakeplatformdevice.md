@@ -19,9 +19,9 @@ Do-nothing `IPlatformDevice` for platforms without device features.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FakePlatformDevice()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FakePlatformDevice()"}</code> | Creates a `FakePlatformDevice` with default values. |
 
 ## Methods
 

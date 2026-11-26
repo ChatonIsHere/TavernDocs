@@ -19,9 +19,9 @@ One skill orb holder on the skill display, with the bought-skill orb placed in i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OrbHolderHandle("}<Link to="/game-api/types/global-s/skillorbholder">{"SkillOrbHolder"}</Link>{" holder, Vector3 orbOffset)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OrbHolderHandle("}<Link to="/game-api/types/global-s/skillorbholder">{"SkillOrbHolder"}</Link>{" holder, Vector3 orbOffset)"}</code> | Creates a `BoughtSkillVisualizer.OrbHolderHandle` from `holder` and `orbOffset`. |
 
 ## Fields
 

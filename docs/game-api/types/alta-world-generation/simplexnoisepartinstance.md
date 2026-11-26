@@ -19,9 +19,9 @@ Runtime instance of the `SimplexNoisePart` plugin part: 3D simplex noise remappe
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SimplexNoisePartInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/simplexnoisepart">{"SimplexNoisePart"}</Link>{" part)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SimplexNoisePartInstance("}<Link to="/game-api/types/alta-world-generation/plugininstance">{"PluginInstance"}</Link>{" plugin, "}<Link to="/game-api/types/alta-world-generation/simplexnoisepart">{"SimplexNoisePart"}</Link>{" part)"}</code> | Creates a `SimplexNoisePartInstance` from `plugin` and `part`. |
 
 ## Methods
 

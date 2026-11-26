@@ -18,9 +18,9 @@ The character dummy's skin colours and skin blit materials, held on `CharacterDu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SkinSettings()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SkinSettings()"}</code> | Creates a `SkinSettings` with default values. |
 
 ## Fields
 

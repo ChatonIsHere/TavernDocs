@@ -21,9 +21,9 @@ Server: reads per-player save files of one format from a save subfolder named af
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private PlayerDataFileHelper()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private PlayerDataFileHelper()"}</code> | Creates a `PlayerDataFileHelper` with default values. |
 
 </details>
 

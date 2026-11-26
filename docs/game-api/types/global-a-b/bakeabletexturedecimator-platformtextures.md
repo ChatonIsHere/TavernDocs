@@ -19,9 +19,9 @@ Lists the textures a `BakeableTextureDecimator` reduces for one platform.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformTextures()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformTextures()"}</code> | Creates a `BakeableTextureDecimator.PlatformTextures` with default values. |
 
 ## Fields
 

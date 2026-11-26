@@ -18,10 +18,10 @@ A sphere of one biome in a procedural forest, with a seed, origin, radius and st
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BiomeSphere(int seed, Vector3 origin, float radius, float strength, "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" biome)"}</code> |
-| <Link id="m-ctor-2" /><code>{"BiomeSphere("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BiomeSphere(int seed, Vector3 origin, float radius, float strength, "}<Link to="/game-api/types/global-e-h/forestbiome">{"ForestBiome"}</Link>{" biome)"}</code> | Creates a `BiomeSphere` from `stream`. |
+| <Link id="m-ctor-2" /><code>{"BiomeSphere("}<Link to="/game-api/types/assembly-other/stream">{"Stream"}</Link>{" stream)"}</code> | Creates a `BiomeSphere` from `stream`. |
 
 ## Fields
 

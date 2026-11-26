@@ -18,10 +18,10 @@ List of field validation errors, attached to an `ApiError` for a bad request.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ValidationResultModel()"}</code> |
-| <Link id="m-ctor-2" /><code>{"ValidationResultModel(List<"}<Link to="/game-api/types/assembly-api-models/validationerror">{"ValidationError"}</Link>{"> errors)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ValidationResultModel()"}</code> | Creates a `ValidationResultModel` from `errors`. |
+| <Link id="m-ctor-2" /><code>{"ValidationResultModel(List<"}<Link to="/game-api/types/assembly-api-models/validationerror">{"ValidationError"}</Link>{"> errors)"}</code> | Creates a `ValidationResultModel` from `errors`. |
 
 ## Properties
 

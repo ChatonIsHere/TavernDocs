@@ -20,9 +20,9 @@ Private `Timeline` entry that queues itself again after each run, for callbacks 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RepeatableEntry(Action callback)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RepeatableEntry(Action callback)"}</code> | Creates a `Timeline.RepeatableEntry` from `callback`. |
 
 ## Fields
 

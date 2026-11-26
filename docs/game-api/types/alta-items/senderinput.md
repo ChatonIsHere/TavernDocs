@@ -20,9 +20,9 @@ Base for a receiver's link to one logic sender: holds the manager and lets the r
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected SenderInput()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected SenderInput()"}</code> | Creates a `SenderInput` with default values. |
 
 ## Properties
 

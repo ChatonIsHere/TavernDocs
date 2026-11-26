@@ -19,9 +19,9 @@ One required item in version 3 of the `RepairBox` save format, which added the m
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Item()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Item()"}</code> | Creates a `RepairBoxSaveDataOld3.Item` with default values. |
 
 ## Fields
 

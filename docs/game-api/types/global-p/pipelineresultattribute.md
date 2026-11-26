@@ -19,9 +19,9 @@ Attribute on an `ObjectPipeline` field that states which types the pipeline shou
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PipelineResultAttribute(params Type[] types)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PipelineResultAttribute(params Type[] types)"}</code> | Creates a `PipelineResultAttribute` from `types`. |
 
 ## Properties
 

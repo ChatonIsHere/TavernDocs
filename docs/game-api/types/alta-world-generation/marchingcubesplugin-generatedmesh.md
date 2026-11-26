@@ -19,10 +19,10 @@ Mesh made by the marching cubes plugin for one map chunk. Holds either an existi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GeneratedMesh(Mesh existing)"}</code> |
-| <Link id="m-ctor-2" /><code>{"GeneratedMesh(List<Vector3> vertices, int[] indices)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GeneratedMesh(Mesh existing)"}</code> | Creates a `MarchingCubesPlugin.GeneratedMesh` from `vertices` and `indices`. |
+| <Link id="m-ctor-2" /><code>{"GeneratedMesh(List<Vector3> vertices, int[] indices)"}</code> | Creates a `MarchingCubesPlugin.GeneratedMesh` from `vertices` and `indices`. |
 
 ## Fields
 

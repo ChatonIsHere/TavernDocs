@@ -18,9 +18,9 @@ Each `Player` has one. Holds that player's friend list, and on the client, wheth
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FriendshipManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FriendshipManager()"}</code> | Creates a `FriendshipManager` with default values. |
 
 ## Fields
 

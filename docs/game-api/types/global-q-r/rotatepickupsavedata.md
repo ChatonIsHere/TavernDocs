@@ -21,9 +21,9 @@ Save data (version 1) for a `RotatePickup`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RotatePickupSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RotatePickupSaveData()"}</code> | Creates a `RotatePickupSaveData` with default values. |
 
 ## Fields
 

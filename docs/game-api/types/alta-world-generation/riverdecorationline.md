@@ -19,9 +19,9 @@ A straight piece of a river's decoration outline, used to place decorations at e
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RiverDecorationLine(Vector2 start, Vector2 direction, float priorLinear, float priorAngle, float length, float density)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RiverDecorationLine(Vector2 start, Vector2 direction, float priorLinear, float priorAngle, float length, float density)"}</code> | Creates a `RiverDecorationLine` from `start`, `direction`, `priorLinear`, `priorAngle`, `length` and `density`. |
 
 ## Fields
 

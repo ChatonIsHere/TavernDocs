@@ -20,9 +20,9 @@ A named list of network traffic statistics with per-frame and per-second byte to
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected NetworkingStatisticsList()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected NetworkingStatisticsList()"}</code> | Creates a `NetworkingStatisticsList` with default values. |
 
 ## Fields
 

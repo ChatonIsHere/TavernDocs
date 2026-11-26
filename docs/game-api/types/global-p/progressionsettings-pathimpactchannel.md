@@ -20,9 +20,9 @@ Private per-path entry in `ProgressionSettings` that links a path to an impact c
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PathImpactChannel()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PathImpactChannel()"}</code> | Creates a `ProgressionSettings.PathImpactChannel` with default values. |
 
 ## Fields
 

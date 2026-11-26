@@ -22,11 +22,11 @@ Moves the game's `unity-log.csv` into a numbered file in an `Archives` folder ne
 <details>
 <summary>3 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-maxarchivefiles" /><code>{"private const int MaxArchiveFiles"}</code> |
-| <Link id="m-sizethresholdbytes" /><code>{"private const long SizeThresholdBytes"}</code> |
-| <Link id="m-targetname" /><code>{"private const string TargetName"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-maxarchivefiles" /><code>{"private const int MaxArchiveFiles"}</code> | Most archived logs kept, 20; the oldest are deleted first. |
+| <Link id="m-sizethresholdbytes" /><code>{"private const long SizeThresholdBytes"}</code> | Log size at which `ShouldAutoArchive` is true, 10,000,000 bytes. |
+| <Link id="m-targetname" /><code>{"private const string TargetName"}</code> | The NLog target name assumed for the Unity log, "unity-log". |
 
 </details>
 
@@ -40,10 +40,10 @@ Moves the game's `unity-log.csv` into a numbered file in an `Archives` folder ne
 <details>
 <summary>3 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-findunitylogtarget" /><code>{"private static FileTarget FindUnityLogTarget()"}</code> |
-| <Link id="m-renderfilepath" /><code>{"private static string RenderFilePath(FileTarget target)"}</code> |
-| <Link id="m-tryparsesequencenumber" /><code>{"private static int? TryParseSequenceNumber(string path, string stem, string ext)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-findunitylogtarget" /><code>{"private static FileTarget FindUnityLogTarget()"}</code> | Finds the NLog file target for the Unity log by name, or by a file name ending in `unity-log.csv`. |
+| <Link id="m-renderfilepath" /><code>{"private static string RenderFilePath(FileTarget target)"}</code> | Returns the file path a target writes to, or null if it can't be worked out. |
+| <Link id="m-tryparsesequencenumber" /><code>{"private static int? TryParseSequenceNumber(string path, string stem, string ext)"}</code> | Reads the sequence number from an archived log's file name, or null if it doesn't match. |
 
 </details>

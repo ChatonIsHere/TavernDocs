@@ -18,9 +18,9 @@ The set of editable equipment slots on a player's customisation handler, switche
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"EditableEquipmentManager()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"EditableEquipmentManager()"}</code> | Creates an `EditableEquipmentManager` with default values. |
 
 ## Fields
 

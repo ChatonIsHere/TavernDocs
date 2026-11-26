@@ -26,15 +26,15 @@ Players' roles from `users.json`, kept in memory and re-read about a second afte
 <details>
 <summary>7 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-loadedstamp" /><code>{"private static DateTime _loadedStamp"}</code> |
-| <Link id="m-nextpoll" /><code>{"private static float _nextPoll"}</code> |
-| <Link id="m-roles" /><code>{"private static Dictionary<string, IReadOnlyList<string>> _roles"}</code> |
-| <Link id="m-seenstamp" /><code>{"private static DateTime _seenStamp"}</code> |
-| <Link id="m-warnedstamp" /><code>{"private static DateTime _warnedStamp"}</code> |
-| <Link id="m-noroles" /><code>{"private static readonly IReadOnlyList<string> NoRoles"}</code> |
-| <Link id="m-usersfile" /><code>{"private static readonly string UsersFile"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-loadedstamp" /><code>{"private static DateTime _loadedStamp"}</code> | Write time of `users.json` when the roles were last loaded. |
+| <Link id="m-nextpoll" /><code>{"private static float _nextPoll"}</code> | Earliest `Time.realtimeSinceStartup` for the next poll. |
+| <Link id="m-roles" /><code>{"private static Dictionary<string, IReadOnlyList<string>> _roles"}</code> | Roles by username (case-insensitive), as last read from `users.json`. |
+| <Link id="m-seenstamp" /><code>{"private static DateTime _seenStamp"}</code> | Write time of `users.json` at the last poll. |
+| <Link id="m-warnedstamp" /><code>{"private static DateTime _warnedStamp"}</code> | Write time of the `users.json` that last failed to read, so the warning isn't repeated. |
+| <Link id="m-noroles" /><code>{"private static readonly IReadOnlyList<string> NoRoles"}</code> | Empty role list returned for users with no roles. |
+| <Link id="m-usersfile" /><code>{"private static readonly string UsersFile"}</code> | Path of `users.json`, which the roles are read from. |
 
 </details>
 
@@ -51,10 +51,10 @@ Players' roles from `users.json`, kept in memory and re-read about a second afte
 
 | Member | What it is |
 | --- | --- |
-| <Link id="m-announce" /><code>{"private static void Announce("}<Link to="/tavernlib-api/types/moddingapi/roleschange">{"RolesChange"}</Link>{" change)"}</code> |  |
-| <Link id="m-poll" /><code>{"private static void Poll()"}</code> |  |
-| <Link id="m-read" /><code>{"private static Dictionary<string, IReadOnlyList<string>> Read()"}</code> |  |
-| <Link id="m-reload" /><code>{"private static void Reload(DateTime stamp)"}</code> |  |
+| <Link id="m-announce" /><code>{"private static void Announce("}<Link to="/tavernlib-api/types/moddingapi/roleschange">{"RolesChange"}</Link>{" change)"}</code> | Sends the new roles to the user if online and raises `RolesChanged`. |
+| <Link id="m-poll" /><code>{"private static void Poll()"}</code> | Once a second, reloads the roles if `users.json` changed and has stopped changing. |
+| <Link id="m-read" /><code>{"private static Dictionary<string, IReadOnlyList<string>> Read()"}</code> | Reads `users.json` and returns each user's non-blank roles. |
+| <Link id="m-reload" /><code>{"private static void Reload(DateTime stamp)"}</code> | Rereads the roles and announces each user whose roles changed; keeps the old roles if the file can't be read. |
 | <Link id="m-start" /><code>{"internal static void Start()"}</code> | Internal, server: reads `users.json` and starts the once-a-second poll from `MelonEvents.OnUpdate`. |
 
 </details>

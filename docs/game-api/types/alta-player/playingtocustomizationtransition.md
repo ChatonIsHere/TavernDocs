@@ -19,9 +19,9 @@ Sends a playing player back to the customization room. Fired from outside with `
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayingToCustomizationTransition()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayingToCustomizationTransition()"}</code> | Creates a `PlayingToCustomizationTransition` with default values. |
 
 ## Events
 

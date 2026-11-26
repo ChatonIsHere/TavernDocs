@@ -20,9 +20,9 @@ Internal: per-address limits on the auth port and console logins. 8 failures, or
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AuthLimits()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AuthLimits()"}</code> | Created by TavernLib; mods don't make one. |
 
 ## Fields
 
@@ -36,17 +36,17 @@ Internal: per-address limits on the auth port and console logins. 8 failures, or
 <details>
 <summary>9 private and internal fields</summary>
 
-| Member |
-| --- |
-| <Link id="m-caplogged" /><code>{"private readonly HashSet<string> _capLogged"}</code> |
-| <Link id="m-fails" /><code>{"private readonly Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> _fails"}</code> |
-| <Link id="m-open" /><code>{"private readonly Dictionary<string, int> _open"}</code> |
-| <Link id="m-opentotal" /><code>{"private int _openTotal"}</code> |
-| <Link id="m-passwordfails" /><code>{"private readonly Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> _passwordFails"}</code> |
-| <Link id="m-sync" /><code>{"private readonly object _sync"}</code> |
-| <Link id="m-totalcaplogged" /><code>{"private bool _totalCapLogged"}</code> |
-| <Link id="m-pruneabove" /><code>{"private const int PruneAbove"}</code> |
-| <Link id="m-window" /><code>{"private static readonly TimeSpan Window"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-caplogged" /><code>{"private readonly HashSet<string> _capLogged"}</code> | Addresses whose connection cap has been logged. |
+| <Link id="m-fails" /><code>{"private readonly Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> _fails"}</code> | Failure counts by address. |
+| <Link id="m-open" /><code>{"private readonly Dictionary<string, int> _open"}</code> | Open connection count by address. |
+| <Link id="m-opentotal" /><code>{"private int _openTotal"}</code> | Open connections across all addresses. |
+| <Link id="m-passwordfails" /><code>{"private readonly Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> _passwordFails"}</code> | Wrong password counts by address. |
+| <Link id="m-sync" /><code>{"private readonly object _sync"}</code> | Lock around the counters. |
+| <Link id="m-totalcaplogged" /><code>{"private bool _totalCapLogged"}</code> | Whether the total connection cap has been logged. |
+| <Link id="m-pruneabove" /><code>{"private const int PruneAbove"}</code> | Number of tracked addresses above which stale entries are dropped. |
+| <Link id="m-window" /><code>{"private static readonly TimeSpan Window"}</code> | The 60 second window failures are counted in. |
 
 </details>
 
@@ -64,10 +64,10 @@ Internal: per-address limits on the auth port and console logins. 8 failures, or
 <details>
 <summary>2 private and internal methods</summary>
 
-| Member |
-| --- |
-| <Link id="m-add" /><code>{"private int Add(Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> strikes, string address)"}</code> |
-| <Link id="m-count" /><code>{"private int Count(Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> strikes, string address)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-add" /><code>{"private int Add(Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> strikes, string address)"}</code> | Adds a strike for an address, pruning stale entries first, and returns the new count. |
+| <Link id="m-count" /><code>{"private int Count(Dictionary<string, "}<Link to="/tavernlib-api/types/backend-auth/authlimits-strikes">{"AuthLimits.Strikes"}</Link>{"> strikes, string address)"}</code> | Returns an address's recent strike count, or 0 if its last strike is outside the window. |
 
 </details>
 

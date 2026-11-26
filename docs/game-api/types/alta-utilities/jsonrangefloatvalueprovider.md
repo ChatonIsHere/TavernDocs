@@ -19,9 +19,9 @@ Value provider used by `JsonRangeFloatAttribute`: clamps a float property betwee
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonRangeFloatValueProvider(IValueProvider baseProvider, float min, float max)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonRangeFloatValueProvider(IValueProvider baseProvider, float min, float max)"}</code> | Creates a `JsonRangeFloatValueProvider` from `baseProvider`, `min` and `max`. |
 
 ## Fields
 

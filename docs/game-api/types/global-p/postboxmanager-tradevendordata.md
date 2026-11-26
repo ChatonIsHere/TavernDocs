@@ -19,9 +19,9 @@ Server: coins and items gathered from one player's trade vendors during a wipe, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TradeVendorData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TradeVendorData()"}</code> | Creates a `PostboxManager.TradeVendorData` with default values. |
 
 ## Fields
 

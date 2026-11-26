@@ -19,9 +19,9 @@ Animator state behaviour that sets a bool parameter when its state or state mach
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"SetBoolean()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"SetBoolean()"}</code> | Creates a `SetBoolean` with default values. |
 
 ## Fields
 

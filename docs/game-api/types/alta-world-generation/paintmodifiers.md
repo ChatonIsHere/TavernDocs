@@ -19,9 +19,9 @@ Spawn modifier that paints up to two terrain splat layers, scaled by a 0 to 1 sc
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PaintModifiers()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PaintModifiers()"}</code> | Creates a `PaintModifiers` with default values. |
 
 ## Fields
 

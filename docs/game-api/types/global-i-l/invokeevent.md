@@ -19,9 +19,9 @@ Holds a list of Unity events and invokes one by index, unless turned off.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"InvokeEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"InvokeEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -43,6 +43,6 @@ Holds a list of Unity events and invokes one by index, unless turned off.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"void Invoke(int index)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"void Invoke(int index)"}</code> | Fires the event at that index in the list, if this component is enabled. |

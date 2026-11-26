@@ -18,11 +18,11 @@ One slot in the entity manager's fixed table of 100,000 entity identifiers. On t
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkEntityLink(uint index)"}</code> |
-| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"(uint index, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" previous)"}</code> |
-| <Link id="m-ctor-3" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"(uint index, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" previous, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" next)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkEntityLink(uint index)"}</code> | Creates a `NetworkEntityLink` from `index`, `previous` and `next`. |
+| <Link id="m-ctor-2" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"(uint index, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" previous)"}</code> | Creates a `NetworkEntityLink` from `index`, `previous` and `next`. |
+| <Link id="m-ctor-3" /><code><Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{"(uint index, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" previous, "}<Link to="/game-api/types/alta-networking/networkentitylink">{"NetworkEntityLink"}</Link>{" next)"}</code> | Creates a `NetworkEntityLink` from `index`, `previous` and `next`. |
 
 ## Fields
 

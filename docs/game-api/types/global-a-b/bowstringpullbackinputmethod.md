@@ -19,9 +19,9 @@ Skill input that activates when a bow string with an arrow nocked is pulled past
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BowStringPullbackInputMethod()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BowStringPullbackInputMethod()"}</code> | Creates a `BowStringPullbackInputMethod` with default values. |
 
 ## Fields
 

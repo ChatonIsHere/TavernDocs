@@ -19,9 +19,9 @@ A cosmetic category and the item hashes in it, stored in `PurchasableMap`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CosmeticCategory()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CosmeticCategory()"}</code> | Creates a `PurchasableMap.CosmeticCategory` with default values. |
 
 ## Fields
 

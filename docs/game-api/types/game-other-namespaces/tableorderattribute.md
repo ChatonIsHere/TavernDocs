@@ -19,9 +19,9 @@ Sets a property's column position when `ToStringTable` prints a list of objects 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TableOrderAttribute(int order)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TableOrderAttribute(int order)"}</code> | Creates a `TableOrderAttribute` from `order`. |
 
 ## Properties
 

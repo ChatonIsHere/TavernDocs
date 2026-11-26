@@ -18,9 +18,9 @@ One controller input mode (for example a held item's mode) with action mappings 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ControllerActionMode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ControllerActionMode()"}</code> | Creates a `ControllerActionMode` with default values. |
 
 ## Fields
 

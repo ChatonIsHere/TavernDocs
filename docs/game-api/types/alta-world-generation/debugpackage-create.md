@@ -20,6 +20,6 @@ Editor menu entry (Assets, Create, Township, Debug) that makes a new `DebugPacka
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `DebugPackage.Create` with default values. |

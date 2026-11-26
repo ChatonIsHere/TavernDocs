@@ -21,9 +21,9 @@ Save data for a `StageBasedPrefab` (version 1).
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StageBasedPrefabSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StageBasedPrefabSaveData()"}</code> | Creates a `StageBasedPrefabSaveData` with default values. |
 
 ## Fields
 

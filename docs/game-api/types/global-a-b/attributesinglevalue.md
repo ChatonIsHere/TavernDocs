@@ -19,9 +19,9 @@ Serializable single value tied to a `BiomeAttribute`, used in biome generation s
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AttributeSingleValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AttributeSingleValue()"}</code> | Creates an `AttributeSingleValue` with default values. |
 
 ## Used in
 

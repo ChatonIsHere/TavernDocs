@@ -20,6 +20,6 @@ Obsolete. Marked a field or property for the old `AnalyticsTools.Serialize` to i
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnalyticsRecordAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnalyticsRecordAttribute()"}</code> | Creates an `AnalyticsRecordAttribute` with default values. |

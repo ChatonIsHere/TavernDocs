@@ -20,6 +20,6 @@ Editor menu entry for creating a `BiomeSwitchFilter` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `BiomeSwitchFilter.Create` with default values. |

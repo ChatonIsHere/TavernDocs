@@ -20,6 +20,6 @@ Serializable `UnityEvent` that passes a float.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandleHandler()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandleHandler()"}</code> | Creates a `HandleHandler` with default values. |

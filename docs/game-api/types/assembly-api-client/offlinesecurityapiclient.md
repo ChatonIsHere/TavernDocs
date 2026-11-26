@@ -19,9 +19,9 @@ Offline stand-in for the security client. Bans are unavailable and every token a
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"OfflineSecurityApiClient()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"OfflineSecurityApiClient()"}</code> | Creates an `OfflineSecurityApiClient` with default values. |
 
 ## Methods
 

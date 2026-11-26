@@ -18,9 +18,9 @@ A body holding one comment, used when giving a reward.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"GiftRewardComment()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"GiftRewardComment()"}</code> | Creates a `GiftRewardComment` with default values. |
 
 ## Properties
 

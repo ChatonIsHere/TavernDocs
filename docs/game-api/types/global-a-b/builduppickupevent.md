@@ -19,9 +19,9 @@ Serializable `AltaEvent` that passes a `BuildupPickup`, for inspector-wired call
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BuildupPickupEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BuildupPickupEvent()"}</code> | Creates a `BuildupPickupEvent` with default values. |
 
 ## Used in
 

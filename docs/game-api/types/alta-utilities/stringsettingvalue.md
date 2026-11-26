@@ -18,9 +18,9 @@ Serializable check that a string game setting does, or does not, equal an expect
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StringSettingValue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StringSettingValue()"}</code> | Creates a `StringSettingValue` with default values. |
 
 ## Fields
 

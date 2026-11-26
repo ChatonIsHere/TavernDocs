@@ -18,9 +18,9 @@ Request body for stopping a game server instance.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"StopInstanceRequest()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"StopInstanceRequest()"}</code> | Creates a `StopInstanceRequest` with default values. |
 
 ## Properties
 

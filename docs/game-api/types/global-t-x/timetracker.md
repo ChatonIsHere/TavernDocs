@@ -18,6 +18,6 @@ An empty class with no members and no users in the code.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"TimeTracker()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"TimeTracker()"}</code> | Creates a `TimeTracker` with default values. |

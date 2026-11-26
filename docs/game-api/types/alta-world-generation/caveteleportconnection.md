@@ -19,18 +19,18 @@ A link between two cave teleporter layers and its fuel costs. Watches fuel on bo
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor-2" /><code>{"CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" toLayer, int fromCost, int toCost)"}</code> |
-| <Link id="m-ctor-3" /><code>{"CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, int toLayer, int fromCost, int toCost)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor-2" /><code>{"CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, "}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" toLayer, int fromCost, int toCost)"}</code> | Creates a `CaveTeleportConnection` from `fromLayer`, `toLayer`, `fromCost`, `toCost`, `hasTo` and `hasFuelTo`. |
+| <Link id="m-ctor-3" /><code>{"CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, int toLayer, int fromCost, int toCost)"}</code> | Creates a `CaveTeleportConnection` from `fromLayer`, `toLayer`, `fromCost`, `toCost`, `hasTo` and `hasFuelTo`. |
 
 <details>
 <summary>2 private and internal constructors</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private CaveTeleportConnection()"}</code> |
-| <Link id="m-ctor-4" /><code>{"private CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, int toLayer, int fromCost, int toCost, bool hasTo, bool hasFuelTo)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private CaveTeleportConnection()"}</code> | Creates a `CaveTeleportConnection` from `fromLayer`, `toLayer`, `fromCost`, `toCost`, `hasTo` and `hasFuelTo`. |
+| <Link id="m-ctor-4" /><code>{"private CaveTeleportConnection("}<Link to="/game-api/types/alta-world-generation/caveteleporterproxydata">{"CaveTeleporterProxyData"}</Link>{" fromLayer, int toLayer, int fromCost, int toCost, bool hasTo, bool hasFuelTo)"}</code> | Creates a `CaveTeleportConnection` from `fromLayer`, `toLayer`, `fromCost`, `toCost`, `hasTo` and `hasFuelTo`. |
 
 </details>
 

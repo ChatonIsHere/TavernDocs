@@ -18,10 +18,10 @@ A row returned by the mod list console command: a loaded script bundle's name an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ModInfo(string name, bool isActive)"}</code> |
-| <Link id="m-ctor-2" /><code>{"ModInfo()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ModInfo(string name, bool isActive)"}</code> | Creates a `ModInfo` with default values. |
+| <Link id="m-ctor-2" /><code>{"ModInfo()"}</code> | Creates a `ModInfo` with default values. |
 
 ## Properties
 

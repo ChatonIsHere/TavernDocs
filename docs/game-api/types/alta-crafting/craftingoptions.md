@@ -21,9 +21,9 @@ A possible connection between two crafting parts the local player is holding tog
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"private CraftingOptions("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insertPart, "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slotPart)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"private CraftingOptions("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" player, "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" insertPart, "}<Link to="/game-api/types/alta-crafting/craftingpart">{"CraftingPart"}</Link>{" slotPart)"}</code> | Creates a `CraftingOptions` from `player`, `insertPart` and `slotPart`. |
 
 </details>
 

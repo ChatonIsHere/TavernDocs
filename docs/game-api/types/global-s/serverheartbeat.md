@@ -19,9 +19,9 @@ Starts an external heartbeat monitor process for a dedicated server and logs a h
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerHeartbeat()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerHeartbeat()"}</code> | Creates a `ServerHeartbeat` with default values. |
 
 ## Fields
 

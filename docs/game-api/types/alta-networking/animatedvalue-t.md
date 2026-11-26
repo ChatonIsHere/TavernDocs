@@ -20,9 +20,9 @@ Base for one synced animator parameter (bool, float, trigger) on a `NetworkAnima
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AnimatedValue(string name)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AnimatedValue(string name)"}</code> | Creates an `AnimatedValue` from `name`. |
 
 ## Fields
 

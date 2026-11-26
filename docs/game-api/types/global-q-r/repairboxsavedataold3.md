@@ -21,9 +21,9 @@ Version 3 save data for `RepairBox`, with cost slots that have a physical materi
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RepairBoxSaveDataOld3()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RepairBoxSaveDataOld3()"}</code> | Creates a `RepairBoxSaveDataOld3` with default values. |
 
 ## Fields
 

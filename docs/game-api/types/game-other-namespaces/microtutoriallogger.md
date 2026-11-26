@@ -18,9 +18,9 @@ Wrapper around a logger for the micro tutorial code that drops messages below a 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MicroTutorialLogger(ILogger logger)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MicroTutorialLogger(ILogger logger)"}</code> | Creates a `MicroTutorialLogger` from `logger`. |
 
 ## Fields
 

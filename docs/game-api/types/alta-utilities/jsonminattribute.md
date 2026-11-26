@@ -19,9 +19,9 @@ JSON property attribute that keeps a float at or above a minimum whenever the pr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"JsonMinAttribute(float min)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"JsonMinAttribute(float min)"}</code> | Creates a `JsonMinAttribute` from `min`. |
 
 ## Fields
 

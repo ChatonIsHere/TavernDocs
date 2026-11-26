@@ -20,6 +20,6 @@ Editor menu entry for creating a `PooledMeshReplaceObjectDefinition` asset.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PooledMeshReplaceObjectDefinition.Create` with default values. |

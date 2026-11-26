@@ -22,9 +22,9 @@ A join request to a group known only by id. Revoke it to withdraw.
 <details>
 <summary>1 private and internal constructor</summary>
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"internal OutgoingPrivateGroupJoinRequest("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, int groupId)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"internal OutgoingPrivateGroupJoinRequest("}<Link to="/game-api/types/assembly-api-client/lowlevelapiclient">{"LowLevelApiClient"}</Link>{" api, int groupId)"}</code> | Creates an `OutgoingPrivateGroupJoinRequest` from `api` and `groupId`. |
 
 </details>
 

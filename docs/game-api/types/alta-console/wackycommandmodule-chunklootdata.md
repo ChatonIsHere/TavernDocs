@@ -19,9 +19,9 @@ Loot module data for one chunk, used by the `ow-loot` command that restores Over
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ChunkLootData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ChunkLootData()"}</code> | Creates a `WackyCommandModule.ChunkLootData` with default values. |
 
 ## Fields
 

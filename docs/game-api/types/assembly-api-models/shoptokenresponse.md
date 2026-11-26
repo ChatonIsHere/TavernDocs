@@ -18,9 +18,9 @@ Web API model for a shop purchase token from the Xsolla payment provider.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShopTokenResponse(string token, int transactionIdentifier)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShopTokenResponse(string token, int transactionIdentifier)"}</code> | Creates a `ShopTokenResponse` from `token` and `transactionIdentifier`. |
 
 ## Properties
 

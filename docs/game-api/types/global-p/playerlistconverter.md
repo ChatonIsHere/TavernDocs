@@ -19,9 +19,9 @@ Type converter that turns a comma-separated string into a `PlayerList`, used for
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerListConverter()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerListConverter()"}</code> | Creates a `PlayerListConverter` with default values. |
 
 ## Methods
 

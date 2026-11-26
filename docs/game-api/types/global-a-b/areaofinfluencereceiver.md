@@ -20,9 +20,9 @@ Trigger volume that checks the values of `AreaOfInfluenceSender` objects inside 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"AreaOfInfluenceReceiver()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"AreaOfInfluenceReceiver()"}</code> | Creates an `AreaOfInfluenceReceiver` with default values. |
 
 ## Fields
 

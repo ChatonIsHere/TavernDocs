@@ -21,9 +21,9 @@ Save data for `HealthBasedDigable`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HealthBasedDigableData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HealthBasedDigableData()"}</code> | Creates a `HealthBasedDigableData` with default values. |
 
 ## Fields
 

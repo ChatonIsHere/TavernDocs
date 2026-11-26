@@ -19,9 +19,9 @@ Do-nothing `IServerHostController`, bound as the singleton in `ApplicationLifeti
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FakeHostController()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FakeHostController()"}</code> | Creates a `FakeHostController` with default values. |
 
 ## Properties
 

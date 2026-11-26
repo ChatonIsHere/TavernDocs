@@ -18,9 +18,9 @@ Plain helper that tracks how hard a rigidbody is being shaken back and forth and
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ShakeDetectorHelper(float velocityThresholdSquared, float threshold, float fadePerSecond, float jumpPerChange, Rigidbody targetRigidBody)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ShakeDetectorHelper(float velocityThresholdSquared, float threshold, float fadePerSecond, float jumpPerChange, Rigidbody targetRigidBody)"}</code> | Creates a `ShakeDetectorHelper` from `velocityThresholdSquared`, `threshold`, `fadePerSecond`, `jumpPerChange` and `targetRigidBody`. |
 
 ## Fields
 

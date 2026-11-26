@@ -19,9 +19,9 @@ One node of a `CurveWall` Bezier spline: a position and its back and forward han
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CurvePoint()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CurvePoint()"}</code> | Creates a `CurveWall.CurvePoint` with default values. |
 
 ## Fields
 

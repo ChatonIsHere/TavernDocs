@@ -18,9 +18,9 @@ Reads values bit by bit from a buffer of 32 bit words, the reading half of the g
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"BitReader()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"BitReader()"}</code> | Creates a `BitReader` with default values. |
 
 ## Fields
 

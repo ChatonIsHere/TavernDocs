@@ -20,6 +20,6 @@ Editor menu entry that creates a `StringGameSettingsAccess` asset under Assets/C
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `StringGameSettingsAccess.Create` with default values. |

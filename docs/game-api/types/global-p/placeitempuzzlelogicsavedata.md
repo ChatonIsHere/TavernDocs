@@ -22,9 +22,9 @@ Saved config for `PlaceItemPuzzleLogic`: which items give which output value, an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlaceItemPuzzleLogicSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlaceItemPuzzleLogicSaveData()"}</code> | Creates a `PlaceItemPuzzleLogicSaveData` with default values. |
 
 ## Fields
 

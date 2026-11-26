@@ -20,9 +20,9 @@ Per-player binary save holding the last climbing tower teleporter destination. U
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterSaveData()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ClimbingTowerTeleporterSaveData()"}</code> | Creates a `ClimbingTowerTeleporterSaveData` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ A map plus a piece index. The message payload `MapManager` sends when a player d
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MapPieceIdentifier("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, int index)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MapPieceIdentifier("}<Link to="/game-api/types/alta-world/map">{"Map"}</Link>{" map, int index)"}</code> | Creates a `MapManager.MapPieceIdentifier` from `map` and `index`. |
 
 ## Fields
 

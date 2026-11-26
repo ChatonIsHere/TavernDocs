@@ -19,9 +19,9 @@ A server's join list, saved as JSON in the server's `server_config` file. The ol
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerConfiguration()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerConfiguration()"}</code> | Creates a `ServerConfiguration` with default values. |
 
 ## Fields
 

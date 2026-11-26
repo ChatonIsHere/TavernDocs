@@ -20,6 +20,6 @@ Editor menu entry that creates an `AtmosphereSet` asset under Global Settings.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates an `AtmosphereSet.Create` with default values. |

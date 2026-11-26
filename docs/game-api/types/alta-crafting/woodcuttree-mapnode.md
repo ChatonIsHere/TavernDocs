@@ -20,9 +20,9 @@ One segment in a `WoodcutTree`'s layout: its model, the connection it hangs from
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MapNode()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MapNode()"}</code> | Creates a `WoodcutTree.MapNode` with default values. |
 
 ## Fields
 

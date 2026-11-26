@@ -20,6 +20,6 @@ Editor menu entry that creates a `PresetTree` asset under Assets/Create/Township
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Create()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Create()"}</code> | Creates a `PresetTree.Create` with default values. |

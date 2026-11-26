@@ -19,9 +19,9 @@ Console requirement: the command only runs on a server (when `ServerHandler.Curr
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ServerOnlyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ServerOnlyAttribute()"}</code> | Creates a `ServerOnlyAttribute` with default values. |
 
 ## Methods
 

@@ -21,9 +21,9 @@ Version 2 save data for `RepairBox`, with item cost slots that have no material.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RepairBoxSaveDataOld2()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RepairBoxSaveDataOld2()"}</code> | Creates a `RepairBoxSaveDataOld2` with default values. |
 
 ## Fields
 

@@ -19,9 +19,9 @@ Inspector event with a `Color` argument.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ColorEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ColorEvent()"}</code> | Creates a `ColorEvent` with default values. |
 
 ## Used in
 

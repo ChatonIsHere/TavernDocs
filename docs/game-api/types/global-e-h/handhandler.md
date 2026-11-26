@@ -18,9 +18,9 @@ Client: per-hand state for smooth locomotion, with the hand's controller and its
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HandHandler("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HandHandler("}<Link to="/game-api/types/global-c-d/controller">{"Controller"}</Link>{" controller)"}</code> | Creates a `HandHandler` from `controller`. |
 
 ## Properties
 

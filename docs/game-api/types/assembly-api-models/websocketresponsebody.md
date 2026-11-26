@@ -18,9 +18,9 @@ A message received from the Alta API over its WebSocket, either a reply or a sub
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"WebsocketResponseBody()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"WebsocketResponseBody()"}</code> | Creates a `WebsocketResponseBody` with default values. |
 
 ## Properties
 

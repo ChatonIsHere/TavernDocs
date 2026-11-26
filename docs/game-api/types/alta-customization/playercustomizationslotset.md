@@ -18,9 +18,9 @@ A list of customization slot numbers. `EditableSlot` uses one to know which slot
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerCustomizationSlotSet()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerCustomizationSlotSet()"}</code> | Creates a `PlayerCustomizationSlotSet` with default values. |
 
 ## Fields
 

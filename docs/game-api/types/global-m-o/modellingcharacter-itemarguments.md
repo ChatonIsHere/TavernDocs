@@ -19,9 +19,9 @@ Editor data for one item of a cosmetic override set on `ModellingCharacter`: the
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ItemArguments()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ItemArguments()"}</code> | Creates a `ModellingCharacter.ItemArguments` with default values. |
 
 ## Fields
 

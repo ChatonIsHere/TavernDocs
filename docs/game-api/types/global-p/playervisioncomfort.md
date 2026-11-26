@@ -18,9 +18,9 @@ Client: the movement comfort vignette. It fades in while the player is moved art
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlayerVisionComfort("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice, IPostProcessController postProcessController)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlayerVisionComfort("}<Link to="/game-api/types/global-p/playercontroller">{"PlayerController"}</Link>{" controller, "}<Link to="/game-api/types/assembly-other/iplatformdevice">{"IPlatformDevice"}</Link>{" platformDevice, IPostProcessController postProcessController)"}</code> | Creates a `PlayerVisionComfort` from `controller`, `platformDevice` and `postProcessController`. |
 
 ## Fields
 

@@ -18,9 +18,9 @@ A circular doubly linked queue of elements that link themselves (`IDynamicQueueE
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"DynamicQueue()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"DynamicQueue()"}</code> | Creates a `DynamicQueue` with default values. |
 
 ## Properties
 

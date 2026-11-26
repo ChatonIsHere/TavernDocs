@@ -21,11 +21,11 @@ A user given by id or username, looked up through Alta's web API on first use an
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"UserInfoAccess(int userIdentifier)"}</code> |
-| <Link id="m-ctor-2" /><code>{"UserInfoAccess(string username)"}</code> |
-| <Link id="m-ctor-3" /><code>{"UserInfoAccess("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"UserInfoAccess(int userIdentifier)"}</code> | Creates an `UserInfoAccess` from `userInfo`. |
+| <Link id="m-ctor-2" /><code>{"UserInfoAccess(string username)"}</code> | Creates an `UserInfoAccess` from `userInfo`. |
+| <Link id="m-ctor-3" /><code>{"UserInfoAccess("}<Link to="/game-api/types/assembly-api-models/userinfo">{"UserInfo"}</Link>{" userInfo)"}</code> | Creates an `UserInfoAccess` from `userInfo`. |
 
 ## Fields
 

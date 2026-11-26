@@ -20,6 +20,6 @@ Editor menu folder `Township/Networking`: menu item classes inherit it to appear
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Networking()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Networking()"}</code> | Creates an `AltaMenuItemBase.Township.Networking` with default values. |

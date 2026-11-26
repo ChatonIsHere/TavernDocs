@@ -20,6 +20,6 @@ Marker attribute for classes; it holds no data.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"HasMethodApplyAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"HasMethodApplyAttribute()"}</code> | Creates a `HasMethodApplyAttribute` with default values. |

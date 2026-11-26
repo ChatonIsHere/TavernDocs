@@ -21,9 +21,9 @@ Game task action argument carrying a value for max-count tasks. Sent with the ca
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"MaxValueTaskArgument(int value)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"MaxValueTaskArgument(int value)"}</code> | Creates a `MaxValueTaskArgument` from `value`. |
 
 ## Properties
 

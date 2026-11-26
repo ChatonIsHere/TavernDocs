@@ -19,6 +19,6 @@ Empty marker attribute from the Ultimate Rope Editor asset. Nothing in this code
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"RopePersistAttribute()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"RopePersistAttribute()"}</code> | Creates a `RopePersistAttribute` with default values. |

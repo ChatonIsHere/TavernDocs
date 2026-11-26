@@ -19,9 +19,9 @@ Non-generic base of `Binder<TContract>`, the fluent binding helper used with `bu
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Binder()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Binder()"}</code> | Creates a `Binder` with default values. |
 
 ## Fields
 

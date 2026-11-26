@@ -18,10 +18,10 @@ Which cosmetic hashes the local player owns or can pick, built from default cosm
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PurchasedList(int playerIdentifier, "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status)"}</code> |
-| <Link id="m-ctor-2" /><code>{"PurchasedList("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PurchasedList(int playerIdentifier, "}<Link to="/game-api/types/assembly-other/playersubscriberstatus">{"PlayerSubscriberStatus"}</Link>{" status)"}</code> | Creates a `PurchasedList` from `player`. |
+| <Link id="m-ctor-2" /><code>{"PurchasedList("}<Link to="/game-api/types/global-p/player">{"Player"}</Link>{" player)"}</code> | Creates a `PurchasedList` from `player`. |
 
 ## Fields
 

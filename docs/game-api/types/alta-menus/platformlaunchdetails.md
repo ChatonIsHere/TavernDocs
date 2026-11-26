@@ -18,9 +18,9 @@ Fake Oculus launch details for testing deep link joins. The constructor fills in
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"PlatformLaunchDetails("}<Link to="/game-api/types/alta-menus/errortesttype">{"ErrorTestType"}</Link>{" type)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"PlatformLaunchDetails("}<Link to="/game-api/types/alta-menus/errortesttype">{"ErrorTestType"}</Link>{" type)"}</code> | Creates a `PlatformLaunchDetails` from `type`. |
 
 ## Fields
 

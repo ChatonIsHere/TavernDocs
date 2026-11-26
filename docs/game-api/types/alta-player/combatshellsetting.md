@@ -19,9 +19,9 @@ Shell effect settings for combat: two ramp textures and a dissolve strength push
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"CombatShellSetting()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"CombatShellSetting()"}</code> | Creates a `CombatShellSetting` with default values. |
 
 ## Fields
 

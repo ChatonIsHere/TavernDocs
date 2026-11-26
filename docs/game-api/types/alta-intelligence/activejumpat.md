@@ -19,9 +19,9 @@ Action where the agent leaps at its target with set velocity and gravity, finish
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"ActiveJumpAt()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"ActiveJumpAt()"}</code> | Creates an `ActiveJumpAt` with default values. |
 
 ## Fields
 

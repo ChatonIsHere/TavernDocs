@@ -19,9 +19,9 @@ One projectile in a `SeedSpray` shot: the pooled object, its impact tool, and wh
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"Seed()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"Seed()"}</code> | Creates a `SeedSpray.Seed` with default values. |
 
 ## Fields
 

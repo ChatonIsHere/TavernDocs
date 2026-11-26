@@ -20,9 +20,9 @@ Base for the VContainer factories. Holds the injected container and a disposer, 
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"protected Factory()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"protected Factory()"}</code> | Creates a `Factory` with default values. |
 
 ## Fields
 

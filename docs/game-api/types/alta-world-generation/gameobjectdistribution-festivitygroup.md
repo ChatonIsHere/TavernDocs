@@ -21,6 +21,6 @@ Concrete festivity group for `GameObjectDistribution`.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"FestivityGroup()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"FestivityGroup()"}</code> | Creates a `GameObjectDistribution.FestivityGroup` with default values. |

@@ -19,9 +19,9 @@ Simple success or error result returned by transport calls such as `ProcessIncom
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"NetworkTransportResult()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"NetworkTransportResult()"}</code> | Creates a `NetworkTransportResult` with default values. |
 
 ## Properties
 

@@ -19,9 +19,9 @@ Raises one of two events depending on a bool, for wiring up in the inspector.
 
 ## Constructors
 
-| Member |
-| --- |
-| <Link id="m-ctor" /><code>{"IfEvent()"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-ctor" /><code>{"IfEvent()"}</code> | Unity makes components itself; use `AddComponent` or spawn a prefab instead of `new`. |
 
 ## Fields
 
@@ -37,6 +37,6 @@ Raises one of two events depending on a bool, for wiring up in the inspector.
 
 ## Methods
 
-| Member |
-| --- |
-| <Link id="m-invoke" /><code>{"void Invoke(bool isTrue)"}</code> |
+| Member | What it is |
+| --- | --- |
+| <Link id="m-invoke" /><code>{"void Invoke(bool isTrue)"}</code> | Fires `ifTrue` or `ifFalse` depending on the value. |
