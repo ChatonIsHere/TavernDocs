@@ -4,6 +4,8 @@ import { IndexLoader } from '../index/loader.service';
 import type { LoadedIndex } from '../index/loaded-index';
 import { SOURCE_CLASSES } from './index';
 import { ReferenceSource } from './reference/reference.source';
+import { SemanticService, type Chunk } from '../semantic/semantic.service';
+import { shortKey } from '../search/key';
 import type { Hit, Source } from './source';
 
 /** Sources whose entries answer a question outright: troubleshooting fixes, FAQ answers and snippets. */
@@ -28,6 +30,7 @@ export class SourcesService implements OnModuleInit {
     constructor(
         private readonly loader: IndexLoader,
         private readonly moduleRef: ModuleRef,
+        private readonly semantic: SemanticService,
     ) {}
 
     onModuleInit() {
@@ -95,6 +98,55 @@ export class SourcesService implements OnModuleInit {
                 return !seen.has(k) && !!seen.add(k);
             })
             .slice(0, limit);
+    }
+
+    /** The bot entry a semantic chunk stands for (see the site's semantic/lib.mjs for the ids), or null. */
+    entryForChunk(chunk: Chunk): AnyHit | null {
+        const [kind, ...rest] = chunk.id.split(':');
+        const id = rest.join(':');
+        const hit = (source: Source | undefined, entry: unknown): AnyHit | null => (source && entry ? { source, hit: { entry, score: 0 } } : null);
+        if (kind === 'g') {
+            const [guideId, sectionId] = id.split('#');
+            const g = this.byId('g');
+            return hit(g, (sectionId && g?.get(shortKey(`${guideId}#${sectionId}`))) || g?.get(shortKey(guideId)));
+        }
+        if (kind === 's') return hit(this.byId('s'), this.byId('s')?.get(id));
+        if (kind === 'r') {
+            const table = this.table(id.slice(0, id.indexOf(':')));
+            return hit(table, table?.get(shortKey(id.slice(id.indexOf(':') + 1))));
+        }
+        if (kind === 't') return hit(this.byId('t'), this.byId('t')?.get(shortKey(`${id.startsWith('TavernLib.') ? 'tavernlib' : 'game'}:${id}`)));
+        return null;
+    }
+
+    /** Word matches and meaning matches merged by rank (reciprocal rank fusion): high in both comes first. */
+    private fuse(lists: AnyHit[][], limit: number): AnyHit[] {
+        const scores = new Map<string, { hit: AnyHit; score: number }>();
+        for (const list of lists) {
+            list.forEach((h, rank) => {
+                const k = h.source.id + ':' + h.source.keyOf(h.hit.entry as never);
+                const s = scores.get(k) ?? { hit: h, score: 0 };
+                s.score += 1 / (10 + rank);
+                scores.set(k, s);
+            });
+        }
+        return [...scores.values()].sort((a, b) => b.score - a.score).slice(0, limit).map((s) => ({ source: s.hit.source, hit: { ...s.hit.hit, score: -s.score } }));
+    }
+
+    private async meaning(text: string, limit: number): Promise<AnyHit[]> {
+        return (await this.semantic.search(text, limit)).map((h) => this.entryForChunk(h.chunk)).filter((h): h is AnyHit => !!h);
+    }
+
+    /** findForText plus matches by meaning. A type the message names stays first. */
+    async findForTextSmart(text: string, limit = 5): Promise<AnyHit[]> {
+        const words = this.findForText(text, 8);
+        const named = words.filter((h) => h.source.id === 't').slice(0, 1);
+        return this.fuse([named, words, await this.meaning(text, 8)], limit);
+    }
+
+    /** searchAll plus matches by meaning, for /search's results (autocomplete uses plain searchAll). */
+    async searchAllSmart(query: string, limit = 8): Promise<AnyHit[]> {
+        return this.fuse([this.searchAll(query, 10), await this.meaning(query, 10)], limit);
     }
 
     /** The best matches across every source, merged by score. Long lists like log lines count a little less. */

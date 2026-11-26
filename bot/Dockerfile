@@ -1,5 +1,5 @@
 # TavernDocs bot. Build from this folder: docker build -t taverndocs-bot .
-FROM node:24.13.1-alpine AS builder
+FROM node:24.13.1-slim AS builder
 WORKDIR /bot
 COPY package.json package-lock.json ./
 RUN npm ci
@@ -7,7 +7,8 @@ COPY tsconfig.json tsconfig.build.json ./
 COPY src ./src
 RUN npm run build
 
-FROM node:24.13.1-alpine
+# Debian, not Alpine: the semantic model's runtime (onnxruntime-node) needs glibc.
+FROM node:24.13.1-slim
 ENV NODE_ENV=production DATA_DIR=/data HEALTH_PORT=8080
 WORKDIR /app
 COPY --from=builder /bot/package.json /bot/package-lock.json ./

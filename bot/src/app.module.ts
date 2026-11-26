@@ -19,6 +19,7 @@ import { ReplyService } from './discord/reply.service';
 import { DeleteButton } from './discord/delete.button';
 import { GapsService } from './gaps/gaps.service';
 import { HealthService } from './health/health.service';
+import { SemanticService } from './semantic/semantic.service';
 
 @Module({
     imports: [
@@ -36,6 +37,7 @@ import { HealthService } from './health/health.service';
     providers: [
         IndexLoader,
         SourcesService,
+        SemanticService,
         ...SOURCE_CLASSES,
         DocsAutocomplete,
         CooldownService,

@@ -56,8 +56,10 @@ export default {
                 returnMetadata: 'all',
                 ...(AREAS.has(area) ? { filter: { area } } : {}),
             });
+            const seen = new Set<string>();
             const results = found.matches
-                .filter((m) => m.score >= MIN_SCORE && m.metadata?.url)
+                // One result per page: a troubleshooting entry and the guide section it lives in share a URL.
+                .filter((m) => m.score >= MIN_SCORE && m.metadata?.url && !seen.has(m.metadata.url) && !!seen.add(m.metadata.url))
                 .map((m) => ({ title: m.metadata!.title, url: m.metadata!.url, kind: m.metadata!.kind, area: m.metadata!.area, score: Math.round(m.score * 1000) / 1000 }));
             // Only answers with something in them are kept: an empty one may just mean the index is still updating.
             // matched and best say how the lookup went (how many came back, the closest score), not what was searched.

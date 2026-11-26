@@ -5,6 +5,8 @@ export const envSchema = Joi.object({
     DISCORD_TOKEN: Joi.string().required(),
     /** Where the site publishes the index (the folder holding manifest.json). */
     INDEX_URL: Joi.string().uri().default('https://townshiptale.dev/bot'),
+    /** The site's semantic vectors (chunks.json, vectors.bin). Empty: INDEX_URL with /bot swapped for /semantic. */
+    SEMANTIC_URL: Joi.string().uri().allow('').default(''),
     TAVERNMODS_URL: Joi.string().uri().allow('').default('https://raw.githubusercontent.com/ModdingTavern/TavernMods/main/repository.json'),
     TAVERNMODS_PAGE: Joi.string().uri().default('https://moddingtavern.github.io/TavernMods/#mods'),
     /** Register commands in this server only (instant), for development. Unset: global commands. */

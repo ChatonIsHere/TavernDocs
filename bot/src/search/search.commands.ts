@@ -58,7 +58,7 @@ export class SearchCommands {
         const picked = source && source.get(choice!.key);
         if (source && picked) return this.replies.send(interaction, source.render(picked, { userId: interaction.user.id }));
 
-        const hits = this.sources.searchAll(query, 8);
+        const hits = await this.sources.searchAllSmart(query, 8);
         if (!hits.length) {
             this.gaps.record('search', query);
             return this.replies.fail(interaction, 'NOT_FOUND');
@@ -70,7 +70,7 @@ export class SearchCommands {
     async onFind(@Context() [interaction]: MessageCommandContext, @TargetMessage() message: Message) {
         if (!this.sources.ready) return this.replies.fail(interaction, 'NOT_READY');
         const text = searchableText(message.content ?? '');
-        const hits = text ? this.sources.findForText(text, 5) : [];
+        const hits = text ? await this.sources.findForTextSmart(text, 5) : [];
         if (!hits.length) {
             this.gaps.record('find', text || '(empty)');
             return this.replies.fail(interaction, 'NOT_FOUND');
