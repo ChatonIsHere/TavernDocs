@@ -1,0 +1,16 @@
+// Cloudflare: serves the built site (build/) at townshiptale.dev. Deployed by .github/workflows/deploy.yml with the
+// CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets; nothing here names an account, so moving the domain to
+// another Cloudflare account only needs those two secrets changed.
+// Static files only: requests for them are free and don't count against the Workers request limit.
+{
+    "name": "taverndocs",
+    "compatibility_date": "2026-11-20",
+    "assets": {
+        "directory": "./build",
+        // /play/welcome serves play/welcome.html, the way Docusaurus links with trailingSlash: false.
+        "html_handling": "auto-trailing-slash",
+        "not_found_handling": "404-page"
+    },
+    "routes": [{ "pattern": "townshiptale.dev", "custom_domain": true }],
+    "workers_dev": false
+}

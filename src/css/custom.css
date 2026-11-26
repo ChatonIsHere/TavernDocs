@@ -272,3 +272,146 @@ html.docs-wrapper main .container {
     gap: 0.75rem;
     margin: 1rem 0 1.25rem;
 }
+
+/* Site search (src/theme/SearchBar): a navbar button that opens a dialog. */
+.tavern-search-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0.35rem 0.6rem 0.35rem 0.75rem;
+    border: 1px solid var(--tavern-input);
+    border-radius: 999px;
+    background: var(--tavern-card);
+    color: var(--tavern-muted-foreground);
+    font: inherit;
+    font-size: 0.9375rem;
+    cursor: pointer;
+}
+.tavern-search-button:hover {
+    color: var(--tavern-foreground);
+    border-color: var(--tavern-primary);
+}
+.tavern-search-button kbd {
+    padding: 0 0.35rem;
+    border: 1px solid var(--tavern-border);
+    border-radius: 4px;
+    background: var(--tavern-muted);
+    box-shadow: none;
+    font-size: 0.75rem;
+    color: var(--tavern-muted-foreground);
+}
+@media (max-width: 996px) {
+    .tavern-search-button span,
+    .tavern-search-button kbd {
+        display: none;
+    }
+}
+.tavern-search-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8vh 1rem 1rem;
+    background: rgba(10, 7, 5, 0.75);
+}
+.tavern-search-dialog {
+    width: min(44rem, 100%);
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--tavern-border);
+    border-radius: 12px;
+    background: var(--tavern-popover);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.tavern-search-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--tavern-border);
+}
+.tavern-search-top input {
+    flex: 1 1 16rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    background: var(--tavern-background);
+    color: var(--tavern-foreground);
+    font: inherit;
+    font-size: 1.0625rem;
+}
+.tavern-search-scope {
+    display: inline-flex;
+    border: 1px solid var(--tavern-input);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.tavern-search-scope button {
+    padding: 0.4rem 0.8rem;
+    border: 0;
+    background: transparent;
+    color: var(--tavern-muted-foreground);
+    font: inherit;
+    cursor: pointer;
+}
+.tavern-search-scope button[aria-pressed='true'] {
+    background: var(--tavern-primary);
+    color: var(--tavern-primary-foreground);
+}
+.tavern-search-results {
+    margin: 0;
+    padding: 0.5rem;
+    list-style: none;
+    overflow-y: auto;
+}
+.tavern-search-results li {
+    padding: 0.5rem 0.65rem;
+    border-radius: 8px;
+}
+.tavern-search-results li.active {
+    background: var(--tavern-muted);
+}
+.tavern-search-result {
+    display: block;
+    color: var(--tavern-foreground);
+}
+.tavern-search-result:hover {
+    text-decoration: none;
+}
+.tavern-search-result strong {
+    display: block;
+    color: var(--tavern-primary);
+}
+.tavern-search-result span {
+    display: block;
+    font-size: 0.9375rem;
+    color: var(--tavern-muted-foreground);
+}
+.tavern-search-result mark {
+    background: rgba(240, 178, 74, 0.25);
+    color: var(--tavern-foreground);
+    border-radius: 2px;
+}
+.tavern-search-sub {
+    display: block;
+    margin-top: 0.2rem;
+    padding-left: 0.9rem;
+    font-size: 0.875rem;
+    color: var(--tavern-muted-foreground);
+}
+.tavern-search-sub::before {
+    content: '› ';
+}
+.tavern-search-status {
+    margin: 0;
+    padding: 0.5rem 1rem 0.75rem;
+    font-size: 0.875rem;
+    color: var(--tavern-muted-foreground);
+}
+.tavern-search-status:empty {
+    display: none;
+}

@@ -11,7 +11,7 @@ export interface Manifest {
     /** The commit the site was built from, or "local". */
     build: string;
     generatedAt: string;
-    /** Site address with base path and no trailing slash, e.g. https://chatonishere.github.io/TavernDocs */
+    /** Site address with base path and no trailing slash, e.g. https://townshiptale.dev */
     baseUrl: string;
     files: Record<IndexFileName, { path: string; sha256: string; bytes: number }>;
 }

@@ -4,7 +4,7 @@ import Joi from 'joi';
 export const envSchema = Joi.object({
     DISCORD_TOKEN: Joi.string().required(),
     /** Where the site publishes the index (the folder holding manifest.json). */
-    INDEX_URL: Joi.string().uri().default('https://chatonishere.github.io/TavernDocs/bot'),
+    INDEX_URL: Joi.string().uri().default('https://townshiptale.dev/bot'),
     TAVERNMODS_URL: Joi.string().uri().allow('').default('https://raw.githubusercontent.com/ModdingTavern/TavernMods/main/repository.json'),
     TAVERNMODS_PAGE: Joi.string().uri().default('https://moddingtavern.github.io/TavernMods/#mods'),
     /** Register commands in this server only (instant), for development. Unset: global commands. */

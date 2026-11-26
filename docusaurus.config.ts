@@ -1,5 +1,6 @@
 import apiLinks from './src/remark/api-links.mjs';
 import botIndex from './src/plugins/bot-index';
+import searchIndex from './src/plugins/search-index';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -11,11 +12,11 @@ const config: Config = {
     tagline: 'Play, host and mod A Township Tale',
     titleDelimiter: '-',
     favicon: 'img/favicon.ico',
-    headTags: [{tagName: 'link', attributes: {rel: 'apple-touch-icon', href: '/TavernDocs/img/apple-touch-icon.png'}}],
+    headTags: [{tagName: 'link', attributes: {rel: 'apple-touch-icon', href: '/img/apple-touch-icon.png'}}],
 
-    // Where the site lives now. Switch these three to ModdingTavern when the repo moves to the org.
-    url: 'https://chatonishere.github.io',
-    baseUrl: '/TavernDocs/',
+    // Served by Cloudflare (wrangler.jsonc). The old GitHub Pages address redirects here (pages-redirect/).
+    url: 'https://townshiptale.dev',
+    baseUrl: '/',
     organizationName: 'ChatonIsHere',
     projectName: 'TavernDocs',
     trailingSlash: false,
@@ -68,34 +69,8 @@ const config: Config = {
         ],
     ],
 
-    // Writes build/bot/*.json for the Discord bot (bot/).
-    plugins: [botIndex],
-
-    themes: [
-        [
-            require.resolve('@easyops-cn/docusaurus-search-local'),
-            {
-                hashed: true,
-                docsRouteBasePath: '/',
-                indexBlog: false,
-                highlightSearchTermsOnTargetPage: true,
-                explicitSearchResultPath: true,
-                // Each section searches only itself; the front page and other pages outside them search everything.
-                searchContextByPaths: [
-                    {label: 'Play', path: 'play'},
-                    {label: 'Host', path: 'host'},
-                    {label: 'Mod', path: 'mod'},
-                    {label: 'Help', path: 'help'},
-                ],
-                useAllContextsWithNoSearchContext: true,
-                // The type indexes are one long list of names; search finds each type's own page instead.
-                ignoreFiles: [/type-index$/],
-                // Type pages stay findable by name, summary and public member names. Member descriptions, the folded
-                // private members and the Used in lists made up most of a 57 MB index.
-                ignoreCssSelectors: ['.api-desc', '.api-private', '.api-used-in'],
-            },
-        ],
-    ],
+    // botIndex writes build/bot/*.json for the Discord bot (bot/); searchIndex builds the site search (build/pagefind).
+    plugins: [botIndex, searchIndex],
 
     themeConfig: {
         colorMode: {
@@ -124,6 +99,7 @@ const config: Config = {
                 {type: 'docSidebar', sidebarId: 'help', position: 'left', label: 'Help'},
                 {href: discord, label: 'Discord', position: 'right'},
                 {href: 'https://github.com/ModdingTavern', label: 'GitHub', position: 'right'},
+                {type: 'search', position: 'right'},
             ],
         },
         footer: {

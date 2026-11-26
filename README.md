@@ -19,7 +19,7 @@ Each section has its own sidebar in `sidebars.ts`. Screenshots sit in an `img/` 
 
 ```bash
 npm install
-npm start          # preview at http://localhost:3000/TavernDocs/
+npm start          # preview at http://localhost:3000/
 npm run build      # fails on broken links and images
 ```
 
