@@ -44,18 +44,6 @@ Start SteamVR or the Meta Quest Link app before you join a server.
 
 **Fly** is a flatscreen mode for moving around a world. A server only lets you in with it if its owner gave you the role for it. Otherwise you get kicked with "Bizarre mode detected."
 
-</TabItem>
-<TabItem value="quest" label="Quest">
-
-:::note[Coming soon]
-
-Picking your name in the standalone Quest version.
-
-:::
-
-</TabItem>
-</Tabs>
-
 ## Your token: the key to your account
 
 There's no password. Instead, the first time you join a server, the launcher makes a **token file** for you and shows **About Your Token File**:
@@ -73,6 +61,43 @@ Think of the token like a house key:
 - **Back it up.** Copy the `%APPDATA%\TheModdingTavern\tokens` folder somewhere safe now and then. Paste that path into File Explorer's address bar to find it.
 
 If you move to a new PC, copy the `tokens` folder across and your accounts come with you.
+
+</TabItem>
+<TabItem value="quest" label="Quest">
+
+The first time you start the Quest build, it asks two things: how you want to play, and the name you'll play under.
+
+## How you play
+
+Pick **Standing** or **Sitting**. You can change the accessibility options later on the Settings panel, so either is fine to start with.
+
+![The play mode screen: Standing or Sitting](img/quest-playmode.jpg)
+
+## Your name
+
+On the account screen, press **Link existing account**. (**Create a new account** does the same thing, with a few more steps.)
+
+![The account screen with Create a new account and Link existing account](img/quest-account.jpg)
+
+Type the name you want and a password, then press **Submit**.
+
+- 3 to 20 characters.
+- Letters, numbers, `_` and `-`.
+
+Every server keeps its own list of players, so someone else might already have your name on a server. Pick something unusual.
+
+A red warning says the accounts "cannot be changed once linked." That text is left over from the old game. You can log out and use a different name later, from the **Quest login** page on the Mods board.
+
+![The red linking warning, with Back and Submit](img/quest-link-warning.jpg)
+
+:::note[Your name and password are your login]
+
+Unlike the PC launcher, the Quest build has no token file. Your name and the password you set are how you log back in, so keep the password somewhere safe. If you forget it, a server's owner can reset your account on their server.
+
+:::
+
+</TabItem>
+</Tabs>
 
 ## Next
 

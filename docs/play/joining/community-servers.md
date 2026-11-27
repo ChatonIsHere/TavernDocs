@@ -49,11 +49,25 @@ Like one? Pick it and click **Save as Favorite** to find it again in [Saved](sav
 </TabItem>
 <TabItem value="quest" label="Quest">
 
-:::note[Coming soon]
+On Quest you join servers from a board in town, not from a separate window. The board is built in, so there's nothing to install.
 
-Finding servers in the standalone Quest version.
+## Joining one
 
-:::
+1. Walk up to the **server board** in the Tavern.
+2. Turn the **wheel** on the table to move the highlight up and down the list.
+3. When your server is highlighted, grab the **orb** that appears next to it to join.
+
+![The in-game server board listing servers with their player counts](img/quest-server-board.jpg)
+
+The screen fades and the game loads you into the server. The first time, it can take a minute.
+
+## Reading the board
+
+- Each server shows **how many people are on it**.
+- A **`*`** after a name means one of your friends is playing there.
+- The **levers** by the board switch between the different lists, and the **keypad** filters the list by name as you type.
+
+If a server turns you away, it tells you why (for example, that it's full). A server that doesn't answer sends you back to town after about 20 seconds.
 
 </TabItem>
 </Tabs>

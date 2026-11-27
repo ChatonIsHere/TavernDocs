@@ -65,9 +65,51 @@ The launcher opens. On the right edge there's a small **📖** tab. Click it any
 </TabItem>
 <TabItem value="quest" label="Quest">
 
-:::note[Coming soon]
+On Quest there's no separate launcher. You install the game itself, as a single `.apk` file, straight from the headset. You only do this once; after that, updates install from inside the game.
 
-How to install the standalone Quest version on your headset.
+## 1. Uninstall the Store version
+
+The community build replaces the Store's A Township Tale, and the headset won't install it while the Store copy is there.
+
+Open your **Library**, find A Township Tale, open its **⋯** menu and choose **Uninstall**. Your characters live on the servers you play on, so you won't lose them.
+
+![The Uninstall A Township Tale dialog on the Quest](img/quest-uninstall.jpg)
+
+## 2. Download the game
+
+The download link is posted in our [Discord](https://discord.gg/jNQUUDAYSj). Each new build has a new link, so get the latest one from there.
+
+1. Open the **Browser** in your headset.
+2. Type the link in and open it.
+3. Press **Download** under `att-v1.apk`. The browser warns that `.apk` files can be harmful; press **I understand, download anyway**.
+
+The file is around 790 MB, so give it a few minutes.
+
+:::warning
+
+Only install the game from a link the staff posted. An `.apk` from anywhere else could be anything.
+
+:::
+
+## 3. Install it
+
+1. Open the **Files** app and go to **Downloads**. If an older `att-v1.apk` is still there, delete it so you install the right one.
+2. Press the **⋯** next to `att-v1.apk`, then **Open with** → **Package installer**.
+3. When it asks *"Do you want to install this app?"* for **Att_Quest**, press **Install** and wait.
+
+![The Files app, opening att-v1.apk with the Package installer](img/quest-package-installer.jpg)
+
+![The install prompt for Att_Quest](img/quest-install.jpg)
+
+## 4. Start it the right way
+
+Start A Township Tale from your **Library** as usual. Because this isn't the Store version, the headset shows a **Restore App** message every time. Press **Open App**.
+
+![The Restore App message, with Restore, Open App and Close](img/quest-restore.jpg)
+
+:::danger[Don't press Restore]
+
+**Restore** puts the Store version back, which can't reach community servers. If you press it by mistake, you'll have to install the `.apk` again from step 1.
 
 :::
 

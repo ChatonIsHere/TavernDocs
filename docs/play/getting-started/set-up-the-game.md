@@ -74,11 +74,23 @@ When there's an update to any of the three, the **Setup** button flashes again. 
 </TabItem>
 <TabItem value="quest" label="Quest">
 
-:::note[Coming soon]
+There's nothing to set up. The Quest build already has everything in it: the game, the parts that let it join community servers, and the mods you need. Once you've [installed it](install-the-launcher.md?client=quest) and picked your name, you're ready to play.
 
-How to set up the standalone Quest version.
+## Keeping it up to date
 
-:::
+You never download the game by hand again. Mods update themselves, and game updates take one lever pull.
+
+**When a game update is ready**, a *Game update att-v1* notice appears in town after a minute or so. To install it:
+
+1. On the Settings panel, pull the **Mods** lever (the one with the gear).
+2. Go to **Installed mods** and pull **Install att-v1**.
+3. When the headset asks *"Do you want to update this app?"*, press **Update**. The game closes; start it again (and press **Open App**).
+
+![The update prompt over the Mods board](img/quest-update.jpg)
+
+Your name and settings stay. The Mods board then says **Up to date**.
+
+**Mod updates** install on the next start: start the game, wait a minute in town, close it, and start it again.
 
 </TabItem>
 </Tabs>

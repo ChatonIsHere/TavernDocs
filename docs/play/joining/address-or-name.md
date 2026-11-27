@@ -57,11 +57,9 @@ Some servers only let in players on their whitelist. If you're not on it, the la
 </TabItem>
 <TabItem value="quest" label="Quest">
 
-:::note[Coming soon]
+The Quest build joins servers from the in-game board rather than by typing an address. See [Community Servers](community-servers.md?client=quest).
 
-Joining by address in the standalone Quest version.
-
-:::
+To reach a particular server, find it on the board with the **keypad filter** (type part of its name). If it isn't listed, ask whoever runs it to [get it listed](../../host/getting-listed.md); that's what puts it on the board.
 
 </TabItem>
 </Tabs>

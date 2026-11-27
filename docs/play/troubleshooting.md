@@ -95,11 +95,28 @@ That's normal. The game logs a lot of errors even when it works fine. Lines abou
 </TabItem>
 <TabItem value="quest" label="Quest">
 
-:::note[Coming soon]
+## The game won't install
 
-Fixes for the standalone Quest version.
+- **"App not installed", or Install does nothing.** The Store version is probably still there. Uninstall it, then install `att-v1.apk` again from the **Files** app.
+- **Package installer isn't in the Open with menu, or the file won't open.** The download most likely didn't finish. Delete the part-downloaded `att-v1.apk` from **Downloads** and download it again.
 
-:::
+## After installing
+
+- **The game shows "Restore App" every time.** That's normal for a build that isn't from the Store. Press **Open App**. Don't press **Restore**, which puts the Store version back.
+- **I pressed Restore by mistake.** The headset put the Store version back. Uninstall it, then install `att-v1.apk` again from **Files**. The file is still in your **Downloads**.
+
+## Playing
+
+- **Nobody can hear me.** Allow the microphone: Quest **Settings** → **Privacy & safety** → **Att_Quest**, and turn on **Microphone**.
+
+  ![Quest app permissions with the Microphone toggle](img/quest-microphone.jpg)
+
+- **"That name is taken."** Someone already has that name on the server. Pick another. If it's yours and you've lost the password, ask the server's owner to reset your account.
+- **The game closes by itself, or won't start.** On the Mods board, open the **Bug report** page; it saves your logs to the headset's **Download** folder (and the game saves one by itself if it fails to start). Send that file on [Discord](https://discord.gg/jNQUUDAYSj) and say which build you're on.
+
+## Updating
+
+- **New mods or updates don't show up.** Your build may be too old for the current mod list. Install the game update (see [Set up the game](getting-started/set-up-the-game.md?client=quest)). If no update notice ever appears, download and install the latest `att-v1.apk` again.
 
 </TabItem>
 </Tabs>

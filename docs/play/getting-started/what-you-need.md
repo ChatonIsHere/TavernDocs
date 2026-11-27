@@ -57,27 +57,26 @@ The first setup downloads a few things, so you need to be online for it.
 </TabItem>
 <TabItem value="quest" label="Quest">
 
-:::note[Coming soon]
-
-A version that runs on the Quest by itself, with no PC, is on its way. These pages will cover it when it's ready.
-
-Until then, you can play on a Quest connected to your PC. Pick the **PC** tab above.
-
-:::
+There's a build of the game that runs on a Meta Quest by itself, with no PC. You install it on the headset and join community servers from inside the game.
 
 ## A Meta Quest headset
 
-:::note[Coming soon]
+A **Quest 2, Quest 3, Quest 3S or Quest Pro**. The original Quest 1 isn't supported.
 
-Which Quest headsets work.
+You'll also need:
 
-:::
+- **About 2 GB of free space.** The download is around 790 MB, and the installed game needs room on top of that.
+- **Wi-Fi**, for the download and for playing.
 
 ## The game
 
-:::note[Coming soon]
+Nothing to buy or copy across. The Quest build is a single file (an `.apk`) that already has the game and the mods you need inside it. The next page walks you through installing it.
 
-What you need to install on the headset.
+You don't need a PC, the launcher, or your own copy of A Township Tale. Those are only for the PC way of playing.
+
+:::note[Not the same as Quest Link]
+
+This is the standalone build that runs on the headset on its own. If you'd rather play with your Quest plugged into a PC, use the **PC** tab above, with the Meta Quest Link app.
 
 :::
 
