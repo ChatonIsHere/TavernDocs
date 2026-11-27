@@ -68,7 +68,7 @@ Steps 1 and 2 run on whichever side sees the trigger, the client included. Only 
 
 `PlayerDrinkingMouth` is a liquid container at the mouth. Its `AddFilter` refuses liquid that `ConsumptionManager.CanConsumeLiquid` refuses, so the mouth won't take it. On the server, when its level goes up (`LiquidAmountChanged`), it empties itself, calls `HandleConsumptionEffects` with the liquid's effects, and adds journal pages for any cookables in the liquid (a stew's ingredients). See [Liquids](liquids.md).
 
-The mouth fills a unit at a time when a drink is poured in and several units at once when a container is dunked into it ([Pouring](liquids.md#pouring)), but the effects apply once per fill event, not once per unit.
+A pour adds to the mouth a unit at a time, while a dunk ([Pouring](liquids.md#pouring)) can fill it in a single step; either way the effects run once for each `LiquidAmountChanged`, however many units it carried.
 
 ## ConsumptionManager
 
