@@ -41,6 +41,20 @@ export function siteUrl(index: Pick<LoadedIndex, 'baseUrl'>, path: string): stri
     return index.baseUrl + (path.startsWith('/') ? path : '/' + path);
 }
 
+/**
+ * The query + hash to append to a page url for one heading or section. A tab (e.g. "Quest") selects that client tab
+ * with ?client=quest, so a Quest section opens on the Quest tab rather than the PC default. All the site's tabs are
+ * the "client" group (values pc/quest), so the value is the tab label lowercased.
+ */
+export function anchor(id: string, tab?: string): string {
+    return (tab ? `?client=${tab.toLowerCase()}` : '') + (id ? '#' + id : '');
+}
+
+/** A heading's or section's label with its tab in brackets, e.g. "Updating (Quest)". */
+export function withTab(text: string, tab?: string): string {
+    return tab ? `${text} (${tab})` : text;
+}
+
 /** An image path from the HTML (already includes the base path) as a full URL. */
 export function imageUrl(index: Pick<LoadedIndex, 'baseUrl'>, src: string): string {
     if (/^https?:\/\//.test(src)) return src;

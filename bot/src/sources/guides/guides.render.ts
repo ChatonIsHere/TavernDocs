@@ -1,6 +1,6 @@
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle } from 'discord.js';
 import type { Guide } from '../../index/schema';
-import { imageUrl, siteUrl, type LoadedIndex } from '../../index/loaded-index';
+import { anchor, imageUrl, siteUrl, withTab, type LoadedIndex } from '../../index/loaded-index';
 import { addFields, embed, trail } from '../../discord/style';
 import { LIMITS, truncate } from '../../discord/limits';
 import { shortKey } from '../../search/key';
@@ -14,7 +14,7 @@ export function renderGuide(index: LoadedIndex, entry: GuideEntry, url: string, 
     if (heading) {
         // A heading: the text of its section when it's an h2, else the page's description.
         const section = guide.sections.find((s) => s.id === heading.id);
-        const e = embed({ title: `${guide.title} › ${heading.text}`, url, description: section?.text || guide.description, footer, image: section?.image ? imageUrl(index, section.image) : null });
+        const e = embed({ title: `${guide.title} › ${withTab(heading.text, heading.tab)}`, url, description: section?.text || guide.description, footer, image: section?.image ? imageUrl(index, section.image) : null });
         return { embeds: [e], url, urlLabel: 'Open section' };
     }
     const e = embed({ title: guide.title, url, description: guide.description, footer });
@@ -33,7 +33,7 @@ export function outline(index: LoadedIndex, guide: Guide): string {
     const lines: string[] = [];
     let length = 0;
     for (const h of guide.headings.filter((x) => x.level === 2)) {
-        const line = `- [${h.text.replace(/[[\]]/g, '')}](${siteUrl(index, guide.url + '#' + h.id)})`;
+        const line = `- [${withTab(h.text.replace(/[[\]]/g, ''), h.tab)}](${siteUrl(index, guide.url + anchor(h.id, h.tab))})`;
         if (length + line.length + 1 > LIMITS.fieldValue - 2) break;
         lines.push(line);
         length += line.length + 1;
@@ -59,8 +59,8 @@ export function renderStep(index: LoadedIndex, guide: Guide, step: number, owner
     const steps = stepsOf(guide);
     const n = Number.isFinite(step) ? Math.max(0, Math.min(Math.trunc(step), steps.length - 1)) : 0;
     const s = steps[n];
-    const url = siteUrl(index, guide.url + (s?.id ? '#' + s.id : ''));
-    const title = s && s.title !== guide.title ? `${guide.title} › ${s.title}` : guide.title;
+    const url = siteUrl(index, guide.url + (s ? anchor(s.id, s.tab) : ''));
+    const title = s && s.title !== guide.title ? `${guide.title} › ${withTab(s.title, s.tab)}` : guide.title;
     const e = embed({
         title,
         url,

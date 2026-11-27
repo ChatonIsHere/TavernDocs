@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import type { Guide, Heading } from '../../index/schema';
-import { siteUrl, type LoadedIndex } from '../../index/loaded-index';
+import { anchor, siteUrl, withTab, type LoadedIndex } from '../../index/loaded-index';
 import { SearchIndex, type Aliases } from '../../search/rank';
 import { shortKey } from '../../search/key';
 import { TextIndex, terms, textScore } from '../../search/text';
@@ -34,12 +34,17 @@ export class GuidesSource implements Source<GuideEntry> {
         for (const guide of index.guides.guides) {
             const page: GuideEntry = { guide };
             this.byKey.set(this.keyOf(page), page);
+            // Tabs on the page (e.g. "PC", "Quest") are search words too, so "quest mods" finds the Quest tab.
+            const tabs = [...new Set(guide.headings.map((h) => h.tab).filter((t): t is string => !!t))];
             // Pages rank above their own headings; hand-written guides above the long reference pages.
-            items.push({ value: page, name: guide.title, also: [...guide.aliases, trail([...guide.path, guide.title])], boost: guide.area === 'mod' ? 0.6 : 0.8 });
+            items.push({ value: page, name: guide.title, also: [...guide.aliases, trail([...guide.path, guide.title]), ...tabs], boost: guide.area === 'mod' ? 0.6 : 0.8 });
             for (const heading of guide.headings) {
                 const entry: GuideEntry = { guide, heading };
                 this.byKey.set(this.keyOf(entry), entry);
-                items.push({ value: entry, name: heading.text, also: [`${guide.title} ${heading.text}`], boost: heading.level === 2 ? 0.3 : 0.1 });
+                const also = heading.tab
+                    ? [`${guide.title} ${heading.text}`, `${heading.tab} ${heading.text}`, `${guide.title} ${heading.tab} ${heading.text}`]
+                    : [`${guide.title} ${heading.text}`];
+                items.push({ value: entry, name: heading.text, also, boost: heading.level === 2 ? 0.3 : 0.1 });
             }
         }
         this.search_ = new SearchIndex(items);
@@ -91,11 +96,11 @@ export class GuidesSource implements Source<GuideEntry> {
     }
 
     title(entry: GuideEntry): string {
-        return entry.heading ? `${entry.guide.title} › ${entry.heading.text}` : trail([entry.guide.section, ...entry.guide.path, entry.guide.title]);
+        return entry.heading ? `${entry.guide.title} › ${withTab(entry.heading.text, entry.heading.tab)}` : trail([entry.guide.section, ...entry.guide.path, entry.guide.title]);
     }
 
     url(entry: GuideEntry): string {
-        return siteUrl(this.index, entry.guide.url + (entry.heading ? '#' + entry.heading.id : ''));
+        return siteUrl(this.index, entry.guide.url + (entry.heading ? anchor(entry.heading.id, entry.heading.tab) : ''));
     }
 
     render(entry: GuideEntry, opts: RenderOptions): Reply {

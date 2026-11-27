@@ -26,10 +26,12 @@ interface SourceEntry {
 }
 
 // A page as an ordered list of headings and content, read through tabs and other wrappers.
-type Block =
+// `tab` is the client tab a block sits under (e.g. "Quest"), or undefined for content shared across tabs.
+type Block = {tab?: string} & (
     | {type: 'heading'; level: number; id: string; text: string}
     | {type: 'text'; text: string; image: string | null}
-    | {type: 'table'; headers: string[]; rows: string[][]};
+    | {type: 'table'; headers: string[]; rows: string[][]}
+);
 
 export default function botIndex(context: LoadContext): Plugin {
     let docs: any[] = [];
@@ -104,7 +106,14 @@ const clean = (s: string) => s.replace(/​/g, '').replace(/\s+/g, ' ').trim();
 function readBlocks(html: string): Block[] {
     const $ = loadHtml(html);
     const root = $('article .theme-doc-markdown').first();
-    root.find('[role="tabpanel"][hidden], ul[role="tablist"], a.hash-link, header, nav, button, script, style').remove();
+    // Tag each tab panel with its tab's label before stripping the tab strip, so both the shown and the hidden tabs
+    // (e.g. PC and Quest) are read, each attributed to its tab. The labels are the tablist's items, in panel order.
+    root.find('ul[role="tablist"]').each((_, ul) => {
+        const labels = $(ul).children('li').map((_, li) => clean($(li).text())).get();
+        const panels = $(ul).parent().find('[role="tabpanel"]').toArray();
+        if (labels.length === panels.length) panels.forEach((p, i) => void $(p).attr('data-tab', labels[i]));
+    });
+    root.find('ul[role="tablist"], a.hash-link, header, nav, button, script, style').remove();
     // Keep bold (button names) and inline code as markdown, which Discord embeds show. Not inside headings or tables.
     root.find('p strong, li strong, blockquote strong, .theme-admonition strong').each((_, el) => void $(el).replaceWith(`**${clean($(el).text())}**`));
     root.find('p code, li code, blockquote code, .theme-admonition code').filter((_, el) => !$(el).closest('pre').length)
@@ -112,29 +121,31 @@ function readBlocks(html: string): Block[] {
     const blocks: Block[] = [];
     const text = (el: any) => clean($(el).text());
     const imageIn = (el: any): string | null => $(el).is('img') ? ($(el).attr('src') ?? null) : ($(el).find('img').first().attr('src') ?? null);
-    const walk = (el: any) => {
+    const walk = (el: any, tab?: string) => {
         $(el).children().each((_, child) => {
             const tag = (child as any).tagName?.toLowerCase();
             if (tag === 'h1') return;
-            if (/^h[2-4]$/.test(tag)) {
-                blocks.push({type: 'heading', level: Number(tag[1]), id: $(child).attr('id') ?? '', text: text(child)});
+            if (tag === 'div' && $(child).attr('role') === 'tabpanel') {
+                walk(child, $(child).attr('data-tab') ?? tab);
+            } else if (/^h[2-4]$/.test(tag)) {
+                blocks.push({type: 'heading', level: Number(tag[1]), id: $(child).attr('id') ?? '', text: text(child), tab});
             } else if (tag === 'p' || tag === 'blockquote' || tag === 'img') {
                 const t = text(child);
-                if (t || imageIn(child)) blocks.push({type: 'text', text: t, image: imageIn(child)});
+                if (t || imageIn(child)) blocks.push({type: 'text', text: t, image: imageIn(child), tab});
             } else if (tag === 'ol' || tag === 'ul') {
                 const items = $(child).children('li').map((i, li) => (tag === 'ol' ? `${i + 1}. ` : '- ') + text(li)).get();
-                blocks.push({type: 'text', text: items.join('\n'), image: imageIn(child)});
+                blocks.push({type: 'text', text: items.join('\n'), image: imageIn(child), tab});
             } else if (tag === 'table') {
                 const headers = $(child).find('thead th').map((_, th) => text(th)).get();
                 const rows = $(child).find('tbody tr').map((_, tr) => [$(tr).children('td').map((__, td) => text(td)).get()]).get() as string[][];
-                blocks.push({type: 'table', headers, rows});
+                blocks.push({type: 'table', headers, rows, tab});
             } else if (tag === 'pre' || (tag === 'div' && $(child).find('pre').length && !$(child).find('p, ol, ul, table, h2, h3').length)) {
                 const code = $(child).find('code').first().text().trim() || $(child).text().trim();
-                if (code && code.length <= 300) blocks.push({type: 'text', text: '```\n' + code + '\n```', image: null});
+                if (code && code.length <= 300) blocks.push({type: 'text', text: '```\n' + code + '\n```', image: null, tab});
             } else if (tag === 'div' && $(child).hasClass('theme-admonition')) {
-                blocks.push({type: 'text', text: text(child), image: imageIn(child)});
+                blocks.push({type: 'text', text: text(child), image: imageIn(child), tab});
             } else {
-                walk(child);
+                walk(child, tab);
             }
         });
     };
@@ -162,7 +173,7 @@ function sidebarPath(sidebar: any[] | undefined, id: string): string[] {
 function toGuide(doc: any, blocks: Block[], base: string, sidebars: Record<string, any[]>, skip: Set<string>): Guide {
     // Headings like "Something went wrong?" or "Next" (skip_headings in sources.yml) aren't worth finding.
     const headings: Heading[] = blocks.filter((b): b is Extract<Block, {type: 'heading'}> => b.type === 'heading' && (b.level === 2 || b.level === 3) && !!b.id && !skip.has(b.text.toLowerCase()))
-        .map((b) => ({id: b.id, text: b.text, level: b.level as 2 | 3}));
+        .map((b) => ({id: b.id, text: b.text, level: b.level as 2 | 3, ...(b.tab ? {tab: b.tab} : {})}));
     const sections: GuideSection[] = [];
     let current: GuideSection = {id: '', title: doc.title, text: '', image: null};
     const push = () => {
@@ -172,7 +183,7 @@ function toGuide(doc: any, blocks: Block[], base: string, sidebars: Record<strin
     for (const b of blocks) {
         if (b.type === 'heading' && b.level === 2) {
             push();
-            current = {id: b.id, title: b.text, text: '', image: null};
+            current = {id: b.id, title: b.text, text: '', image: null, ...(b.tab ? {tab: b.tab} : {})};
         } else if (b.type === 'heading') {
             current.text += `\n**${b.text}**`;
         } else if (b.type === 'text') {
@@ -221,16 +232,18 @@ function toTable(s: SourceEntry, pages: Map<string, {doc: any; blocks: Block[]}>
             }
         } else {
             const levels = new Set(s.levels ?? [2]);
-            let open: {id: string; text: string; parts: string[]} | null = null;
+            let open: {id: string; text: string; tab?: string; parts: string[]} | null = null;
             const close = () => {
                 if (open && open.parts.length && !skip.has(open.text.toLowerCase()))
-                    rows.push({key: open.text, text: open.parts.join('\n').slice(0, SECTION_TEXT_MAX), extra: {}, context: page.doc.title, url: url + '#' + open.id});
+                    rows.push({key: open.text, text: open.parts.join('\n').slice(0, SECTION_TEXT_MAX), extra: {},
+                        context: open.tab ? `${page.doc.title} (${open.tab})` : page.doc.title,
+                        url: url + (open.tab ? `?client=${open.tab.toLowerCase()}` : '') + '#' + open.id});
                 open = null;
             };
             for (const b of page.blocks) {
                 if (b.type === 'heading') {
                     close();
-                    if (levels.has(b.level) && b.id) open = {id: b.id, text: b.text, parts: []};
+                    if (levels.has(b.level) && b.id) open = {id: b.id, text: b.text, tab: b.tab, parts: []};
                 } else if (open) {
                     open.parts.push(b.type === 'text' ? b.text : b.rows.map((r) => r.filter(Boolean).join(': ')).join('\n'));
                 }

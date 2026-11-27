@@ -3,7 +3,7 @@
 // reads them; both import this file, so a change here is a change to both. Bump SCHEMA_VERSION when a field's meaning
 // changes or a required field is added, so an old bot refuses a new index instead of misreading it.
 
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 /** build/bot/manifest.json */
 export interface Manifest {
@@ -54,6 +54,8 @@ export interface Heading {
     id: string;
     text: string;
     level: 2 | 3;
+    /** The tab this heading is under, e.g. "Quest", when the page uses client tabs. Absent for shared headings. */
+    tab?: string;
 }
 
 export interface GuideSection {
@@ -64,6 +66,8 @@ export interface GuideSection {
     text: string;
     /** First image in the section, path below the site root (starts with the base path), or null. */
     image: string | null;
+    /** The tab this section is under, e.g. "Quest", when the page uses client tabs. Absent for shared sections. */
+    tab?: string;
 }
 
 // ── types-game.json, types-tavernlib.json ───────────────
@@ -152,6 +156,7 @@ type Check = (value: unknown, where: string, problems: string[]) => void;
 const isObj = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v);
 const str: Check = (v, w, p) => void (typeof v !== 'string' && p.push(`${w}: expected text`));
 const strOrNull: Check = (v, w, p) => void (v !== null && typeof v !== 'string' && p.push(`${w}: expected text or null`));
+const optStr: Check = (v, w, p) => void (v !== undefined && typeof v !== 'string' && p.push(`${w}: expected text`));
 const strList: Check = (v, w, p) => (Array.isArray(v) ? v.forEach((x, i) => str(x, `${w}[${i}]`, p)) : p.push(`${w}: expected a list`));
 const listOf =
     (item: Check): Check =>
@@ -168,8 +173,8 @@ const record =
     (v, w, p) =>
         isObj(v) ? Object.entries(v).forEach(([k, x]) => item(x, `${w}.${k}`, p)) : p.push(`${w}: expected an object`);
 
-const heading = obj({ id: str, text: str, level: (v, w, p) => void (v !== 2 && v !== 3 && p.push(`${w}: expected 2 or 3`)) });
-const section = obj({ id: str, title: str, text: str, image: strOrNull });
+const heading = obj({ id: str, text: str, level: (v, w, p) => void (v !== 2 && v !== 3 && p.push(`${w}: expected 2 or 3`)), tab: optStr });
+const section = obj({ id: str, title: str, text: str, image: strOrNull, tab: optStr });
 const guide = obj({
     id: str, title: str, area: str, section: str, path: strList, description: str, url: str,
     aliases: strList, summary: strList, headings: listOf(heading), sections: listOf(section),
