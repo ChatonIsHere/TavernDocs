@@ -76,3 +76,12 @@ sources:
       kind: headings
       pages: [play/troubleshooting, host/troubleshooting, mod/troubleshooting, help/general-troubleshooting]
       levels: [2, 3]
+
+    - id: item
+      label: Items
+      description: "Every item with its hash and prefab. Spawn with `spawn <prefab name>` or `spawn <prefab hash>` (the prefab, not the item hash)."
+      kind: table
+      pages: [mod/game-api/reference/items-and-materials]
+      key: Item
+      text: Category
+      extra: [Hash, Prefab, Material, Tags]

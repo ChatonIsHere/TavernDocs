@@ -19,6 +19,7 @@ export const REFERENCE_COMMANDS: { name: string; table: string; description: str
     { name: 'log', table: 'log', description: 'What a line in the game log means', option: 'Part of the log line' },
     { name: 'faq', table: 'faq', description: 'Answer a common question', option: 'The question' },
     { name: 'troubleshoot', table: 'troubleshoot', description: 'Find the fix for a common problem', option: 'What went wrong' },
+    { name: 'item', table: 'item', description: 'Look up an item: its hash and how to spawn it', option: 'The item, e.g. Iron Ingot' },
 ];
 
 /** Shared by the generated commands and /lookup. */
