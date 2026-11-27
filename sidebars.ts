@@ -52,6 +52,7 @@ const sidebars: SidebarsConfig = {
         },
         'host/wine',
         'host/mods-on-your-server',
+        'host/server-performance',
         'host/getting-listed',
         'host/srv-records',
         'host/console-and-tokens',
