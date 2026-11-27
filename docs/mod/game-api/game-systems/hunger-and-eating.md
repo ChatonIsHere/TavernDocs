@@ -68,6 +68,8 @@ Steps 1 and 2 run on whichever side sees the trigger, the client included. Only 
 
 `PlayerDrinkingMouth` is a liquid container at the mouth. Its `AddFilter` refuses liquid that `ConsumptionManager.CanConsumeLiquid` refuses, so the mouth won't take it. On the server, when its level goes up (`LiquidAmountChanged`), it empties itself, calls `HandleConsumptionEffects` with the liquid's effects, and adds journal pages for any cookables in the liquid (a stew's ingredients). See [Liquids](liquids.md).
 
+The mouth fills a unit at a time when a drink is poured in and several units at once when a container is dunked into it ([Pouring](liquids.md#pouring)), but the effects apply once per fill event, not once per unit.
+
 ## ConsumptionManager
 
 `ConsumptionManager : MonoBehaviour`, top level, no namespace. One per player body. `Player` gives the body's `PlayerController`.
@@ -80,7 +82,7 @@ Steps 1 and 2 run on whichever side sees the trigger, the client included. Only 
 | `bool AreValidEffects(IEnumerable<EffectDefinitionApplication> effects)` | The fullness check: adds up the strengths of `StatChangeEffect`s on the monitored stat and says whether they fit under its maximum. | Prefab flags can allow eating when full or "wastefully". |
 | `internal void HandleConsumptionEffects(IEnumerable<EffectDefinitionApplication> effects)` | Applies each effect to the body's `EffectHandler`. | Server. Internal: patch by name or use publicized stubs. |
 
-On the player body (asset values, build `main-1.7.2.1.42203`) the monitored stat is `Fullness Stat`, `effectHandlingStrength` is 1, and both `canConsumeWastefully` and `canConsumeWhenStatIsFull` are off. So food is refused when its effects on fullness would take it past 6.
+On the player body (asset values, build `main-1.7.2.1.42203`) the monitored stat is `Fullness Stat`, `effectHandlingStrength` is 1, and both `canConsumeWastefully` and `canConsumeWhenStatIsFull` are off. So food is refused when its effects on fullness would take it past 6. (The mouth container has its own `effectHandlingStrength` field, but nothing reads it; the one that matters is `ConsumptionManager`'s, used both to apply the effects and for the fullness check.)
 
 What food does when eaten (`EdibleObject.ConsumptionEffects` on a few food prefabs). The [cookables table](../reference/recipes.md#cookables-and-garnishes) lists a different set, the `CookableItem` effects an item adds to a stew, so don't read eating values from it:
 
@@ -111,7 +113,7 @@ What food does when eaten (`EdibleObject.ConsumptionEffects` on a few food prefa
 ## Hooking it
 
 - **`ConsumptionManager.HandleConsumptionEffects`** is the best single hook: server only, called for both food and drink, with the effects list. CookingLib and Hydrate or Dierate both hook this area.
-- **`PlayerDrinkingMouth.LiquidAmountChanged`** (private) runs on the server when a player drinks, with the container still holding the liquid until the method empties it. A prefix can read `container.ContainedLiquid`.
+- **`PlayerDrinkingMouth.LiquidAmountChanged`** (private) runs on the server when a player drinks, with the container still holding the liquid until the method empties it. A prefix can read `container.ContainedLiquid`. Type any liquid-container parameter as `ILiquidContainer`, since both `LiquidContainer` and `StaticLiquidContainer` implement it.
 - **`EdibleObject.StartEating`** is a coroutine (an iterator), so a patch on it only runs when the coroutine is created. Patch `StartEat` or `HandleConsumptionEffects` instead.
 - Changing what's allowed (`AreValidEffects`, `CanConsumeEdible`) on the server is enough for effects. A vanilla client still runs its own check for the bite effects and the reject sound.
 - Hosts can already change drain, regeneration and starvation with `HungerTick`, `HealthRegenMultiplier`, `HungerDealsDamage` and `IsResetingHungerOnDeath`. Check those before writing a patch.

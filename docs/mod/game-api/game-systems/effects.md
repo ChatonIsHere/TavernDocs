@@ -20,6 +20,8 @@ An effect is a `ScriptableObject` that does one thing to whatever receives it: c
 | `protected abstract void Apply(EffectHandler target, float strength)` | Does the effect. |
 | `Glyph effectGlyph` | The icon shown for it. |
 
+What `strength` means depends on the subclass: a size for `StatChangeEffect` and `StatSetEffect`, a duration in seconds for `StatMultiplierEffect`, a probability for `ChanceBasedEffectDefinition` and `TeleportEffect`, and a poison stack for `PoisonEffect`.
+
 Subclasses in `Alta.Alchemy`:
 
 | Type | What it does with `strength` |
@@ -30,10 +32,10 @@ Subclasses in `Alta.Alchemy`:
 | `StatMultiplierEffect` | Applies a timed `StatModifier` of its own `modifierValue`, lasting `strength` seconds. |
 | `PoisonEffect` | Positive strength adds a poison stack, negative removes one. Needs `target.Health`. |
 | `BurnEffect` | Positive strength starts adding to the `"burn"` stat every tick, negative stops it. The game has no `BurnEffect` asset and the player body has no `"burn"` stat, so it does nothing in vanilla. |
-| `TeleportEffect` | A `ChanceBasedEffectDefinition`: with chance `strength * chanceMultiplier`, teleports the target home or to a spawn area. |
+| `TeleportEffect` | A `ChanceBasedEffectDefinition`: with chance `strength * chanceMultiplier`, teleports the target to its baked-in `landingTarget` (a `SpawnAreaIdentifier`). `Home` uses the player's spawn point (not for spirits), a missing area falls back to `RespawnPoint`, and the rest resolve through `SpawnArea.InstanceMap`. |
 | `RevealEffect` | Raises the handler's `OnReveal`. |
 | `InateEffect` | Does nothing. |
-| `ChanceBasedEffectDefinition`, `BuildUpconcoctionEffect` | Bases that gate on a random roll, or add strengths applied within `buildupDuration`. |
+| `ChanceBasedEffectDefinition`, `BuildUpconcoctionEffect` | Bases that gate on a random roll, or add up strengths and fire once they pass `minStrengthToApply` (0.8 on `BuildupTeleportToOverworld`), clearing after `buildupDuration` (1 second). |
 
 `IndirectStatModifierDefinition` (in `Alta.StatSystem`) is also an `EffectDefinition`: it adds an indirect, curve-shaped modifier to a stat.
 
@@ -56,6 +58,8 @@ Build `main-1.7.2.1.42203`, checked against a live server's registry (13 effects
 | `Inate` | `InateEffect` | Nothing. |
 
 Liquids carry these too: the `Health Potion` liquid is one `Heal` at strength 1 (half of the 2 health), with `isConsumableThroughSkin` set.
+
+The four indirect modifiers are saved with the player's `StatManager`, and their timers carry over a logout (`IndirectStatModifier`, `TimedStatModifier`), so a running buff keeps going after a reconnect.
 
 ## EffectDefinitionApplication
 
@@ -89,9 +93,19 @@ Prefabs can make a handler immune to poison, teleport or reveal.
 ## Who applies effects
 
 - Eating and drinking, through `ConsumptionManager.HandleConsumptionEffects`. See [Hunger, eating and drinking](hunger-and-eating.md).
-- `LiquidData.Apply`, when a container's liquid splashes onto something on impact (`ImpactDetector`, the thrown potion case).
+- `LiquidData.Apply`, when a container's liquid splashes onto something on impact (`ImpactDetector`, the thrown potion case). Only liquids with `isConsumableThroughSkin` set apply this way, and it bypasses the mouth.
 - `EffectVolumeTrigger`: applies its effects when something enters, and the same effects at negative strength when it leaves (which is how a poison stack comes off).
 - `EffectArea`: applies a liquid's effects on enter and the negative on exit, on the server.
+
+## Client visuals
+
+The buff and debuff glow a player wears is drawn only on clients. `PlayerEffectManager`, on the player's body, destroys itself on a headless server, so none of this runs there. It holds a `StatEffectsDefinition` asset: a list of `StatEffectHolder`s, one per watched stat, each pairing a buff and a debuff `StatDrivenEffect` (a pooled particle effect, a value-to-size curve and a shell setting).
+
+For each, a `PlayerEffectManager.StatEffectApplication` (two per stat, buff and debuff) listens to the stat's `Changed` event. Its `ValueChanged` works out the *buff part* of the value and turns the glow on, off or resizes it. So the glow keys off the stat's buff channel (see [Stats](stats.md)), not the drink: two potions that raise the same stat look the same, and writing the stat's `Base` directly shows no glow at all.
+
+There are two layers. The floating particles come from the `StatDrivenEffect`. The shell is a second skin: `StatEffectShellAnimator` (a `ShellAnimator`) clones the player's clothing renderers with a shell material and animates its `_Progress`, tuned by a `StatEffectShellSetting`. Only one shell shows at a time; `StatEffectShellAnimator` is a priority queue, so overlapping effects wait their turn. The shared shell material comes from `PlayerSpecialEffectsController`.
+
+A server mod changes effects and stats, which clients then render; it can't change how the glow looks for a vanilla client, because none of this runs on the server.
 
 ## Hooking it
 
